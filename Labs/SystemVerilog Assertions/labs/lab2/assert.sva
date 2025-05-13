@@ -1,0 +1,66 @@
+module assert_inputs(input clk, reset_n, logic[15:0] frame_n, valid_n, din);
+	parameter port_no = 0;
+
+//Task 5 Steps 2,3 - Create a named property that checks the input protocol for the pad phase
+//ToDo
+	property p_valid_during_pad(fr_n, vld_n, data);
+		@(posedge clk) $fell(fr_n) |-> ##4 (vld_n && data) [*5];
+	endproperty
+//Task 6 Step 1 - Assert the property that checks the input protocol for the pad phase
+//ToDo
+	a_vld_hi_in_pad: assert property (
+		disable iff(!reset_n)
+		p_valid_during_pad(frame_n[port_no], valid_n[port_no], din[port_no])
+	)
+//Task 6 Step 2 - Add else clause to assertion
+//ToDo
+	else begin
+		$fatal(1,"[FATAL] %m: Pad protocol violation on port %0d at %t", port_no, $realtime);
+	end
+endmodule //assert_inputs
+
+module assert_outputs(input clk, reset_n, logic[15:0] frameo_n, valido_n, dout);
+parameter port_no = 0;
+
+int unsigned bit_cntr;
+
+//Task 9 Steps 3,4 - create a general error message handler that prints the error message 
+//along with simulation time and port of failure
+//ToDo
+function void protocol_error_handler(string msg);
+	$display("[ERROR]%t Port %0d: %s", $realtime, port_no, msg);
+endfunction
+
+dout_unknown_check: assert property (@(posedge clk) !valido_n[port_no] |-> (!$isunknown(dout[port_no])));
+
+always@(posedge clk or negedge reset_n) begin: bit_counter
+  if (!reset_n) bit_cntr = 0;
+  else if (!valido_n[port_no]) bit_cntr++;
+end : bit_counter
+
+//Task 10 Steps 1,2 - Create a Named Sequence called s_frame to detect the period in which
+//the signal frameo_n stays low.
+//ToDo
+sequence s_frame;
+	$fell(frameo_n[port_no]) ##1 $rose(frameo_n[port_no])[->1];
+endsequence
+//Task 11 Steps 1,2,3 - Create a Named Property p_vld_lo_data_aligned_rsng_frm to use the 
+//Named Sequence s_frame to detect the end of a packet coming out of DUT
+//ToDo
+property p_vld_lo_data_aligned_rsng_frm;
+	s_frame |-> ##0 ((bit_cntr%8 == 7) && (!valido_n[port_no]));
+endproperty
+//Task 12 Steps 1,2,3 - Write a concurrent assertion using the Named Property created earlier
+//ToDo
+a_vld_lo_data_aligned_rsng_frm: assert property (@(posedge clk)
+	disable iff (!reset_n) p_vld_lo_data_aligned_rsng_frm
+) begin
+		$display("[NOTE]%t End of frame successfully checked", $realtime);
+		bit_cntr = 0;
+	end else begin
+		bit_cntr = 0;
+		protocol_error_handler("Bit Alignment Error Found");
+		$fatal;
+	end
+
+endmodule //assert_outputs
