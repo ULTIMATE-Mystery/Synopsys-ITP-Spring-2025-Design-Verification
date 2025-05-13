@@ -1,0 +1,11 @@
+Tests
+
+Total Coverage Summary 
+SCORE  LINE   TOGGLE FSM    GROUP  
+ 95.72  94.27  92.89 --     100.00 
+
+
+Total tests in report: 1
+-------------------------------------------------------------------------------
+Data from the following tests was used to generate this report
+simv/test 

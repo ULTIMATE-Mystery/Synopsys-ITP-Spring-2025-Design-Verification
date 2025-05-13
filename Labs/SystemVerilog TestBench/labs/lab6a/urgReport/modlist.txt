@@ -1,0 +1,15 @@
+Design Module List
+
+Total Module Definition Coverage Summary 
+SCORE  LINE   TOGGLE FSM    
+ 71.62  59.32  83.92 --     
+
+
+Total modules in report: 5
+-------------------------------------------------------------------------------
+SCORE  LINE   TOGGLE FSM    NAME            
+  0.00   0.00   0.00 --     rtslicef        
+ 98.33 100.00  96.67 --     rtslice         
+ 99.56 --      99.56 --     router_io       
+ 99.89 100.00  99.79 --     router          
+100.00 100.00 100.00 --     router_test_top 

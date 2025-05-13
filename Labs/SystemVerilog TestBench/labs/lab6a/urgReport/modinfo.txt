@@ -1,0 +1,2925 @@
+===============================================================================
+Module : rtslicef
+===============================================================================
+SCORE  LINE   TOGGLE FSM    
+  0.00   0.00   0.00 --     
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs_Test/ces_svtb_2019.06/labs/lab6a/../../rtl/router.v
+
+Module self-instances :
+
+SCORE  LINE   TOGGLE FSM    NAME     
+  0.00   0.00   0.00 --     rtslicef 
+
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Module : rtslicef
+
+             Line No.   Total   Covered  Percent
+TOTAL                       24        0     0.00
+ALWAYS            498        4        0     0.00
+ALWAYS            508       20        0     0.00
+
+497                         begin
+498        0/1     ==>  	if (reset == 1'b1)
+499                     	begin
+500        0/1     ==>  	    addrsel <= 5'b0;
+501        0/1     ==>  	    addrfsr  <= 6'b0;
+502        0/1     ==>  	    arbena <= 1'b0;
+503                     	end
+                   ==>  MISSING_ELSE
+504                         end
+505                     
+506                         always @(posedge clock)
+507                         begin
+508        0/1     ==>  	frame1_n <= frame_n;
+509        0/1     ==>  	frame2_n <= frame1_n;
+510        0/1     ==>  	busy_n <= busy1_n;
+511        0/1     ==>  	din1 <= din;
+512        0/1     ==>  	vald1_n <= valid_n | ~busy_n ;
+513                     
+514        0/1     ==>  	if (reset == 1'b0)
+515                     	begin
+516        0/1     ==>  	    if (frame1_n != frame_n && frame_n == 1'b0)
+517        0/1     ==>  		addrfsr <= 6'b11_1111;		
+                   ==>  MISSING_ELSE
+518                     
+519        0/1     ==>  	    if (frame2_n != frame1_n && frame1_n == 1'b1)
+520                     	    begin	// frame is now inactive
+521        0/1     ==>  		addrsel <= 5'b0;	// clear the address register
+522        0/1     ==>  		addrfsr <= 6'b0;	// clear the address flag reg.
+523        0/1     ==>  		arbena <= 1'b0;
+524                     	    end
+525                     	    else
+526                     	    begin
+527        0/1     ==>  	    if (addrsel[4] == 1'b1 && frameo_n[addrsel[3:0]] == 1'b1)
+528        0/1     ==>  		arbena <= 1'b1;
+                   ==>  MISSING_ELSE
+529                     	    end
+530                     
+531        0/1     ==>  	    if (addrfsr[5:4] == 2'b10)
+532        0/1     ==>  		addrsel <= {addrsf[0],addrsf[1],addrsf[2],addrsf[3],addrsf[4]};
+                   ==>  MISSING_ELSE
+533        0/2     ==>  	    if (addrfsr[4] == 1'b1) addrsf <= (addrsf << 1) | { 4'b0, din1 };
+                   ==>  MISSING_ELSE
+534        0/2     ==>  	    if (addrfsr[5] == 1'b1) addrfsr <= addrfsr << 1;
+                   ==>  MISSING_ELSE
+535                     	end
+                   ==>  MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Module : rtslicef
+                Total Covered Percent 
+Totals          24    0       0.00    
+Total Bits      262   0       0.00    
+Total Bits 0->1 131   0       0.00    
+Total Bits 1->0 131   0       0.00    
+
+                            
+Ports          13  0 0.00   
+Port Bits      176 0 0.00   
+Port Bits 0->1 88  0 0.00   
+Port Bits 1->0 88  0 0.00   
+
+                             
+Signals          11 0 0.00   
+Signal Bits      86 0 0.00   
+Signal Bits 0->1 43 0 0.00   
+Signal Bits 1->0 43 0 0.00   
+
+Port Details
+               Toggle Toggle 1->0 Toggle 0->1 Direction 
+reset          No     No          No          INPUT     
+clock          No     No          No          INPUT     
+frame_n        No     No          No          INPUT     
+valid_n        No     No          No          INPUT     
+din            No     No          No          INPUT     
+arbhead        No     No          No          INPUT     
+busy_n         No     No          No          OUTPUT    
+okstep         No     No          No          OUTPUT    
+iarbin[15:0]   No     No          No          INPUT     
+arbout[15:0]   No     No          No          OUTPUT    
+dout[15:0]     No     No          No          OUTPUT    
+valido_n[15:0] No     No          No          OUTPUT    
+frameo_n[15:0] No     No          No          INOUT     
+
+Signal Details
+               Toggle Toggle 1->0 Toggle 0->1 
+addrsf[4:0]    No     No          No          
+addrsel[4:0]   No     No          No          
+addrfsr[5:0]   No     No          No          
+din1           No     No          No          
+frame1_n       No     No          No          
+frame2_n       No     No          No          
+vald1_n        No     No          No          
+arbena         No     No          No          
+arbin[15:0]    No     No          No          
+busy1_n        No     No          No          
+addrsel_g[4:0] No     No          No          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : rtslicef
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    
+  0.00   0.00   0.00 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    
+  0.00   0.00   0.00 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    NAME     
+  0.00   0.00   0.00 --     rtslicef 
+
+
+Parent : 
+
+none
+----------------
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Since this is the module's only instance, the coverage report is the same as for the module.
+===============================================================================
+Module : rtslice
+===============================================================================
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs_Test/ces_svtb_2019.06/labs/lab6a/../../rtl/router.v
+
+Module self-instances :
+
+SCORE  LINE   TOGGLE FSM    NAME                      
+ 98.33 100.00  96.67 --     router_test_top.dut.rts0  
+ 98.33 100.00  96.67 --     router_test_top.dut.rts1  
+ 98.33 100.00  96.67 --     router_test_top.dut.rts2  
+ 98.33 100.00  96.67 --     router_test_top.dut.rts3  
+ 98.33 100.00  96.67 --     router_test_top.dut.rts4  
+ 98.33 100.00  96.67 --     router_test_top.dut.rts5  
+ 98.33 100.00  96.67 --     router_test_top.dut.rts6  
+ 98.33 100.00  96.67 --     router_test_top.dut.rts7  
+ 98.33 100.00  96.67 --     router_test_top.dut.rts8  
+ 98.33 100.00  96.67 --     router_test_top.dut.rts9  
+ 98.33 100.00  96.67 --     router_test_top.dut.rts10 
+ 98.33 100.00  96.67 --     router_test_top.dut.rts11 
+ 98.33 100.00  96.67 --     router_test_top.dut.rts12 
+ 98.33 100.00  96.67 --     router_test_top.dut.rts13 
+ 98.33 100.00  96.67 --     router_test_top.dut.rts14 
+ 98.33 100.00  96.67 --     router_test_top.dut.rts15 
+
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Module : rtslice
+
+             Line No.   Total   Covered  Percent
+TOTAL                       24       24   100.00
+ALWAYS            295        4        4   100.00
+ALWAYS            305       20       20   100.00
+
+294                         begin
+295        1/1          	if (reset == 1'b1)
+296                     	begin
+297        1/1          	    addrsel <= 5'b0;
+298        1/1          	    addrfsr  <= 6'b0;
+299        1/1          	    arbena <= 1'b0;
+300                     	end
+                   ==>  MISSING_ELSE
+301                         end
+302                     
+303                         always @(posedge clock)
+304                         begin
+305        1/1          	frame1_n <= frame_n;
+306        1/1          	frame2_n <= frame1_n;
+307        1/1          	busy_n <= busy1_n;
+308        1/1          	din1 <= din;
+309        1/1          	vald1_n <= valid_n | ~busy_n ;
+310                     
+311        1/1          	if (reset == 1'b0)
+312                     	begin
+313        1/1          	    if (frame2_n != frame1_n && frame1_n == 1'b1)
+314                     	    begin	// frame is now inactive
+315        1/1          		addrsel <= 5'b0;	// clear the address register
+316        1/1          		addrfsr <= 6'b0;	// clear the address flag reg.
+317        1/1          		arbena <= 1'b0;
+318                     	    end
+319                     	    else
+320                     	    begin
+321        1/1          	    if (addrsel[4] == 1'b1 && frameo_n[addrsel[3:0]] == 1'b1)
+322        1/1          		arbena <= 1'b1;
+                        MISSING_ELSE
+323                     	    end
+324                     
+325        1/1          	    if (frame1_n != frame_n && frame_n == 1'b0)
+326        1/1          		addrfsr <= 6'b11_1111;		
+                        MISSING_ELSE
+327                     
+328        1/1          	    if (addrfsr[5:4] == 2'b10)
+329        1/1          		addrsel <= {addrsf[0],addrsf[1],addrsf[2],addrsf[3],addrsf[4]};
+                        MISSING_ELSE
+330        2/2          	    if (addrfsr[4] == 1'b1) addrsf <= (addrsf << 1) | { 4'b0, din1 };
+                        MISSING_ELSE
+331        2/2          	    if (addrfsr[5] == 1'b1) addrfsr <= addrfsr << 1;
+                        MISSING_ELSE
+332                     	end
+                        MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Module : rtslice
+                Total Covered Percent 
+Totals          25    23      92.00   
+Total Bits      270   261     96.67   
+Total Bits 0->1 135   130     96.30   
+Total Bits 1->0 135   131     97.04   
+
+                              
+Ports          13  12  92.31  
+Port Bits      176 175 99.43  
+Port Bits 0->1 88  87  98.86  
+Port Bits 1->0 88  88  100.00 
+
+                              
+Signals          12 11 91.67  
+Signal Bits      94 86 91.49  
+Signal Bits 0->1 47 43 91.49  
+Signal Bits 1->0 47 43 91.49  
+
+Port Details
+               Toggle Toggle 1->0 Toggle 0->1 Direction 
+reset          No     Yes         No          INPUT     
+clock          Yes    Yes         Yes         INPUT     
+frame_n        Yes    Yes         Yes         INPUT     
+valid_n        Yes    Yes         Yes         INPUT     
+din            Yes    Yes         Yes         INPUT     
+arbhead        Yes    Yes         Yes         INPUT     
+busy_n         Yes    Yes         Yes         OUTPUT    
+okstep         Yes    Yes         Yes         OUTPUT    
+iarbin[15:0]   Yes    Yes         Yes         INPUT     
+arbout[15:0]   Yes    Yes         Yes         OUTPUT    
+dout[15:0]     Yes    Yes         Yes         OUTPUT    
+valido_n[15:0] Yes    Yes         Yes         OUTPUT    
+frameo_n[15:0] Yes    Yes         Yes         INOUT     
+
+Signal Details
+               Toggle Toggle 1->0 Toggle 0->1 
+addrsf[4:0]    Yes    Yes         Yes         
+addrsel[4:0]   Yes    Yes         Yes         
+addrfsr[5:0]   Yes    Yes         Yes         
+din1           Yes    Yes         Yes         
+frame1_n       Yes    Yes         Yes         
+frame2_n       Yes    Yes         Yes         
+vald1_n        Yes    Yes         Yes         
+arbena         Yes    Yes         Yes         
+arbin[15:0]    Yes    Yes         Yes         
+busy1_n        Yes    Yes         Yes         
+addrsel_g[4:0] Yes    Yes         Yes         
+i[3:0]         No     No          No          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.rts0
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    NAME    
+ 98.33 100.00  96.67 --     rtslice 
+
+
+Parent : 
+
+SCORE  LINE   TOGGLE FSM    NAME 
+ 99.89 100.00  99.79 --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Instance : router_test_top.dut.rts0
+
+             Line No.   Total   Covered  Percent
+TOTAL                       24       24   100.00
+ALWAYS            295        4        4   100.00
+ALWAYS            305       20       20   100.00
+
+294                         begin
+295        1/1          	if (reset == 1'b1)
+296                     	begin
+297        1/1          	    addrsel <= 5'b0;
+298        1/1          	    addrfsr  <= 6'b0;
+299        1/1          	    arbena <= 1'b0;
+300                     	end
+                   ==>  MISSING_ELSE
+301                         end
+302                     
+303                         always @(posedge clock)
+304                         begin
+305        1/1          	frame1_n <= frame_n;
+306        1/1          	frame2_n <= frame1_n;
+307        1/1          	busy_n <= busy1_n;
+308        1/1          	din1 <= din;
+309        1/1          	vald1_n <= valid_n | ~busy_n ;
+310                     
+311        1/1          	if (reset == 1'b0)
+312                     	begin
+313        1/1          	    if (frame2_n != frame1_n && frame1_n == 1'b1)
+314                     	    begin	// frame is now inactive
+315        1/1          		addrsel <= 5'b0;	// clear the address register
+316        1/1          		addrfsr <= 6'b0;	// clear the address flag reg.
+317        1/1          		arbena <= 1'b0;
+318                     	    end
+319                     	    else
+320                     	    begin
+321        1/1          	    if (addrsel[4] == 1'b1 && frameo_n[addrsel[3:0]] == 1'b1)
+322        1/1          		arbena <= 1'b1;
+                        MISSING_ELSE
+323                     	    end
+324                     
+325        1/1          	    if (frame1_n != frame_n && frame_n == 1'b0)
+326        1/1          		addrfsr <= 6'b11_1111;		
+                        MISSING_ELSE
+327                     
+328        1/1          	    if (addrfsr[5:4] == 2'b10)
+329        1/1          		addrsel <= {addrsf[0],addrsf[1],addrsf[2],addrsf[3],addrsf[4]};
+                        MISSING_ELSE
+330        2/2          	    if (addrfsr[4] == 1'b1) addrsf <= (addrsf << 1) | { 4'b0, din1 };
+                        MISSING_ELSE
+331        2/2          	    if (addrfsr[5] == 1'b1) addrfsr <= addrfsr << 1;
+                        MISSING_ELSE
+332                     	end
+                        MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Instance : router_test_top.dut.rts0
+                Total Covered Percent 
+Totals          25    23      92.00   
+Total Bits      270   261     96.67   
+Total Bits 0->1 135   130     96.30   
+Total Bits 1->0 135   131     97.04   
+
+                              
+Ports          13  12  92.31  
+Port Bits      176 175 99.43  
+Port Bits 0->1 88  87  98.86  
+Port Bits 1->0 88  88  100.00 
+
+                              
+Signals          12 11 91.67  
+Signal Bits      94 86 91.49  
+Signal Bits 0->1 47 43 91.49  
+Signal Bits 1->0 47 43 91.49  
+
+Port Details
+               Toggle Toggle 1->0 Toggle 0->1 Direction 
+reset          No     Yes         No          INPUT     
+clock          Yes    Yes         Yes         INPUT     
+frame_n        Yes    Yes         Yes         INPUT     
+valid_n        Yes    Yes         Yes         INPUT     
+din            Yes    Yes         Yes         INPUT     
+arbhead        Yes    Yes         Yes         INPUT     
+busy_n         Yes    Yes         Yes         OUTPUT    
+okstep         Yes    Yes         Yes         OUTPUT    
+iarbin[15:0]   Yes    Yes         Yes         INPUT     
+arbout[15:0]   Yes    Yes         Yes         OUTPUT    
+dout[15:0]     Yes    Yes         Yes         OUTPUT    
+valido_n[15:0] Yes    Yes         Yes         OUTPUT    
+frameo_n[15:0] Yes    Yes         Yes         INOUT     
+
+Signal Details
+               Toggle Toggle 1->0 Toggle 0->1 
+addrsf[4:0]    Yes    Yes         Yes         
+addrsel[4:0]   Yes    Yes         Yes         
+addrfsr[5:0]   Yes    Yes         Yes         
+din1           Yes    Yes         Yes         
+frame1_n       Yes    Yes         Yes         
+frame2_n       Yes    Yes         Yes         
+vald1_n        Yes    Yes         Yes         
+arbena         Yes    Yes         Yes         
+arbin[15:0]    Yes    Yes         Yes         
+busy1_n        Yes    Yes         Yes         
+addrsel_g[4:0] Yes    Yes         Yes         
+i[3:0]         No     No          No          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.rts1
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    NAME    
+ 98.33 100.00  96.67 --     rtslice 
+
+
+Parent : 
+
+SCORE  LINE   TOGGLE FSM    NAME 
+ 99.89 100.00  99.79 --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Instance : router_test_top.dut.rts1
+
+             Line No.   Total   Covered  Percent
+TOTAL                       24       24   100.00
+ALWAYS            295        4        4   100.00
+ALWAYS            305       20       20   100.00
+
+294                         begin
+295        1/1          	if (reset == 1'b1)
+296                     	begin
+297        1/1          	    addrsel <= 5'b0;
+298        1/1          	    addrfsr  <= 6'b0;
+299        1/1          	    arbena <= 1'b0;
+300                     	end
+                   ==>  MISSING_ELSE
+301                         end
+302                     
+303                         always @(posedge clock)
+304                         begin
+305        1/1          	frame1_n <= frame_n;
+306        1/1          	frame2_n <= frame1_n;
+307        1/1          	busy_n <= busy1_n;
+308        1/1          	din1 <= din;
+309        1/1          	vald1_n <= valid_n | ~busy_n ;
+310                     
+311        1/1          	if (reset == 1'b0)
+312                     	begin
+313        1/1          	    if (frame2_n != frame1_n && frame1_n == 1'b1)
+314                     	    begin	// frame is now inactive
+315        1/1          		addrsel <= 5'b0;	// clear the address register
+316        1/1          		addrfsr <= 6'b0;	// clear the address flag reg.
+317        1/1          		arbena <= 1'b0;
+318                     	    end
+319                     	    else
+320                     	    begin
+321        1/1          	    if (addrsel[4] == 1'b1 && frameo_n[addrsel[3:0]] == 1'b1)
+322        1/1          		arbena <= 1'b1;
+                        MISSING_ELSE
+323                     	    end
+324                     
+325        1/1          	    if (frame1_n != frame_n && frame_n == 1'b0)
+326        1/1          		addrfsr <= 6'b11_1111;		
+                        MISSING_ELSE
+327                     
+328        1/1          	    if (addrfsr[5:4] == 2'b10)
+329        1/1          		addrsel <= {addrsf[0],addrsf[1],addrsf[2],addrsf[3],addrsf[4]};
+                        MISSING_ELSE
+330        2/2          	    if (addrfsr[4] == 1'b1) addrsf <= (addrsf << 1) | { 4'b0, din1 };
+                        MISSING_ELSE
+331        2/2          	    if (addrfsr[5] == 1'b1) addrfsr <= addrfsr << 1;
+                        MISSING_ELSE
+332                     	end
+                        MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Instance : router_test_top.dut.rts1
+                Total Covered Percent 
+Totals          25    23      92.00   
+Total Bits      270   261     96.67   
+Total Bits 0->1 135   130     96.30   
+Total Bits 1->0 135   131     97.04   
+
+                              
+Ports          13  12  92.31  
+Port Bits      176 175 99.43  
+Port Bits 0->1 88  87  98.86  
+Port Bits 1->0 88  88  100.00 
+
+                              
+Signals          12 11 91.67  
+Signal Bits      94 86 91.49  
+Signal Bits 0->1 47 43 91.49  
+Signal Bits 1->0 47 43 91.49  
+
+Port Details
+               Toggle Toggle 1->0 Toggle 0->1 Direction 
+reset          No     Yes         No          INPUT     
+clock          Yes    Yes         Yes         INPUT     
+frame_n        Yes    Yes         Yes         INPUT     
+valid_n        Yes    Yes         Yes         INPUT     
+din            Yes    Yes         Yes         INPUT     
+arbhead        Yes    Yes         Yes         INPUT     
+busy_n         Yes    Yes         Yes         OUTPUT    
+okstep         Yes    Yes         Yes         OUTPUT    
+iarbin[15:0]   Yes    Yes         Yes         INPUT     
+arbout[15:0]   Yes    Yes         Yes         OUTPUT    
+dout[15:0]     Yes    Yes         Yes         OUTPUT    
+valido_n[15:0] Yes    Yes         Yes         OUTPUT    
+frameo_n[15:0] Yes    Yes         Yes         INOUT     
+
+Signal Details
+               Toggle Toggle 1->0 Toggle 0->1 
+addrsf[4:0]    Yes    Yes         Yes         
+addrsel[4:0]   Yes    Yes         Yes         
+addrfsr[5:0]   Yes    Yes         Yes         
+din1           Yes    Yes         Yes         
+frame1_n       Yes    Yes         Yes         
+frame2_n       Yes    Yes         Yes         
+vald1_n        Yes    Yes         Yes         
+arbena         Yes    Yes         Yes         
+arbin[15:0]    Yes    Yes         Yes         
+busy1_n        Yes    Yes         Yes         
+addrsel_g[4:0] Yes    Yes         Yes         
+i[3:0]         No     No          No          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.rts2
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    NAME    
+ 98.33 100.00  96.67 --     rtslice 
+
+
+Parent : 
+
+SCORE  LINE   TOGGLE FSM    NAME 
+ 99.89 100.00  99.79 --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Instance : router_test_top.dut.rts2
+
+             Line No.   Total   Covered  Percent
+TOTAL                       24       24   100.00
+ALWAYS            295        4        4   100.00
+ALWAYS            305       20       20   100.00
+
+294                         begin
+295        1/1          	if (reset == 1'b1)
+296                     	begin
+297        1/1          	    addrsel <= 5'b0;
+298        1/1          	    addrfsr  <= 6'b0;
+299        1/1          	    arbena <= 1'b0;
+300                     	end
+                   ==>  MISSING_ELSE
+301                         end
+302                     
+303                         always @(posedge clock)
+304                         begin
+305        1/1          	frame1_n <= frame_n;
+306        1/1          	frame2_n <= frame1_n;
+307        1/1          	busy_n <= busy1_n;
+308        1/1          	din1 <= din;
+309        1/1          	vald1_n <= valid_n | ~busy_n ;
+310                     
+311        1/1          	if (reset == 1'b0)
+312                     	begin
+313        1/1          	    if (frame2_n != frame1_n && frame1_n == 1'b1)
+314                     	    begin	// frame is now inactive
+315        1/1          		addrsel <= 5'b0;	// clear the address register
+316        1/1          		addrfsr <= 6'b0;	// clear the address flag reg.
+317        1/1          		arbena <= 1'b0;
+318                     	    end
+319                     	    else
+320                     	    begin
+321        1/1          	    if (addrsel[4] == 1'b1 && frameo_n[addrsel[3:0]] == 1'b1)
+322        1/1          		arbena <= 1'b1;
+                        MISSING_ELSE
+323                     	    end
+324                     
+325        1/1          	    if (frame1_n != frame_n && frame_n == 1'b0)
+326        1/1          		addrfsr <= 6'b11_1111;		
+                        MISSING_ELSE
+327                     
+328        1/1          	    if (addrfsr[5:4] == 2'b10)
+329        1/1          		addrsel <= {addrsf[0],addrsf[1],addrsf[2],addrsf[3],addrsf[4]};
+                        MISSING_ELSE
+330        2/2          	    if (addrfsr[4] == 1'b1) addrsf <= (addrsf << 1) | { 4'b0, din1 };
+                        MISSING_ELSE
+331        2/2          	    if (addrfsr[5] == 1'b1) addrfsr <= addrfsr << 1;
+                        MISSING_ELSE
+332                     	end
+                        MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Instance : router_test_top.dut.rts2
+                Total Covered Percent 
+Totals          25    23      92.00   
+Total Bits      270   261     96.67   
+Total Bits 0->1 135   130     96.30   
+Total Bits 1->0 135   131     97.04   
+
+                              
+Ports          13  12  92.31  
+Port Bits      176 175 99.43  
+Port Bits 0->1 88  87  98.86  
+Port Bits 1->0 88  88  100.00 
+
+                              
+Signals          12 11 91.67  
+Signal Bits      94 86 91.49  
+Signal Bits 0->1 47 43 91.49  
+Signal Bits 1->0 47 43 91.49  
+
+Port Details
+               Toggle Toggle 1->0 Toggle 0->1 Direction 
+reset          No     Yes         No          INPUT     
+clock          Yes    Yes         Yes         INPUT     
+frame_n        Yes    Yes         Yes         INPUT     
+valid_n        Yes    Yes         Yes         INPUT     
+din            Yes    Yes         Yes         INPUT     
+arbhead        Yes    Yes         Yes         INPUT     
+busy_n         Yes    Yes         Yes         OUTPUT    
+okstep         Yes    Yes         Yes         OUTPUT    
+iarbin[15:0]   Yes    Yes         Yes         INPUT     
+arbout[15:0]   Yes    Yes         Yes         OUTPUT    
+dout[15:0]     Yes    Yes         Yes         OUTPUT    
+valido_n[15:0] Yes    Yes         Yes         OUTPUT    
+frameo_n[15:0] Yes    Yes         Yes         INOUT     
+
+Signal Details
+               Toggle Toggle 1->0 Toggle 0->1 
+addrsf[4:0]    Yes    Yes         Yes         
+addrsel[4:0]   Yes    Yes         Yes         
+addrfsr[5:0]   Yes    Yes         Yes         
+din1           Yes    Yes         Yes         
+frame1_n       Yes    Yes         Yes         
+frame2_n       Yes    Yes         Yes         
+vald1_n        Yes    Yes         Yes         
+arbena         Yes    Yes         Yes         
+arbin[15:0]    Yes    Yes         Yes         
+busy1_n        Yes    Yes         Yes         
+addrsel_g[4:0] Yes    Yes         Yes         
+i[3:0]         No     No          No          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.rts3
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    NAME    
+ 98.33 100.00  96.67 --     rtslice 
+
+
+Parent : 
+
+SCORE  LINE   TOGGLE FSM    NAME 
+ 99.89 100.00  99.79 --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Instance : router_test_top.dut.rts3
+
+             Line No.   Total   Covered  Percent
+TOTAL                       24       24   100.00
+ALWAYS            295        4        4   100.00
+ALWAYS            305       20       20   100.00
+
+294                         begin
+295        1/1          	if (reset == 1'b1)
+296                     	begin
+297        1/1          	    addrsel <= 5'b0;
+298        1/1          	    addrfsr  <= 6'b0;
+299        1/1          	    arbena <= 1'b0;
+300                     	end
+                   ==>  MISSING_ELSE
+301                         end
+302                     
+303                         always @(posedge clock)
+304                         begin
+305        1/1          	frame1_n <= frame_n;
+306        1/1          	frame2_n <= frame1_n;
+307        1/1          	busy_n <= busy1_n;
+308        1/1          	din1 <= din;
+309        1/1          	vald1_n <= valid_n | ~busy_n ;
+310                     
+311        1/1          	if (reset == 1'b0)
+312                     	begin
+313        1/1          	    if (frame2_n != frame1_n && frame1_n == 1'b1)
+314                     	    begin	// frame is now inactive
+315        1/1          		addrsel <= 5'b0;	// clear the address register
+316        1/1          		addrfsr <= 6'b0;	// clear the address flag reg.
+317        1/1          		arbena <= 1'b0;
+318                     	    end
+319                     	    else
+320                     	    begin
+321        1/1          	    if (addrsel[4] == 1'b1 && frameo_n[addrsel[3:0]] == 1'b1)
+322        1/1          		arbena <= 1'b1;
+                        MISSING_ELSE
+323                     	    end
+324                     
+325        1/1          	    if (frame1_n != frame_n && frame_n == 1'b0)
+326        1/1          		addrfsr <= 6'b11_1111;		
+                        MISSING_ELSE
+327                     
+328        1/1          	    if (addrfsr[5:4] == 2'b10)
+329        1/1          		addrsel <= {addrsf[0],addrsf[1],addrsf[2],addrsf[3],addrsf[4]};
+                        MISSING_ELSE
+330        2/2          	    if (addrfsr[4] == 1'b1) addrsf <= (addrsf << 1) | { 4'b0, din1 };
+                        MISSING_ELSE
+331        2/2          	    if (addrfsr[5] == 1'b1) addrfsr <= addrfsr << 1;
+                        MISSING_ELSE
+332                     	end
+                        MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Instance : router_test_top.dut.rts3
+                Total Covered Percent 
+Totals          25    23      92.00   
+Total Bits      270   261     96.67   
+Total Bits 0->1 135   130     96.30   
+Total Bits 1->0 135   131     97.04   
+
+                              
+Ports          13  12  92.31  
+Port Bits      176 175 99.43  
+Port Bits 0->1 88  87  98.86  
+Port Bits 1->0 88  88  100.00 
+
+                              
+Signals          12 11 91.67  
+Signal Bits      94 86 91.49  
+Signal Bits 0->1 47 43 91.49  
+Signal Bits 1->0 47 43 91.49  
+
+Port Details
+               Toggle Toggle 1->0 Toggle 0->1 Direction 
+reset          No     Yes         No          INPUT     
+clock          Yes    Yes         Yes         INPUT     
+frame_n        Yes    Yes         Yes         INPUT     
+valid_n        Yes    Yes         Yes         INPUT     
+din            Yes    Yes         Yes         INPUT     
+arbhead        Yes    Yes         Yes         INPUT     
+busy_n         Yes    Yes         Yes         OUTPUT    
+okstep         Yes    Yes         Yes         OUTPUT    
+iarbin[15:0]   Yes    Yes         Yes         INPUT     
+arbout[15:0]   Yes    Yes         Yes         OUTPUT    
+dout[15:0]     Yes    Yes         Yes         OUTPUT    
+valido_n[15:0] Yes    Yes         Yes         OUTPUT    
+frameo_n[15:0] Yes    Yes         Yes         INOUT     
+
+Signal Details
+               Toggle Toggle 1->0 Toggle 0->1 
+addrsf[4:0]    Yes    Yes         Yes         
+addrsel[4:0]   Yes    Yes         Yes         
+addrfsr[5:0]   Yes    Yes         Yes         
+din1           Yes    Yes         Yes         
+frame1_n       Yes    Yes         Yes         
+frame2_n       Yes    Yes         Yes         
+vald1_n        Yes    Yes         Yes         
+arbena         Yes    Yes         Yes         
+arbin[15:0]    Yes    Yes         Yes         
+busy1_n        Yes    Yes         Yes         
+addrsel_g[4:0] Yes    Yes         Yes         
+i[3:0]         No     No          No          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.rts4
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    NAME    
+ 98.33 100.00  96.67 --     rtslice 
+
+
+Parent : 
+
+SCORE  LINE   TOGGLE FSM    NAME 
+ 99.89 100.00  99.79 --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Instance : router_test_top.dut.rts4
+
+             Line No.   Total   Covered  Percent
+TOTAL                       24       24   100.00
+ALWAYS            295        4        4   100.00
+ALWAYS            305       20       20   100.00
+
+294                         begin
+295        1/1          	if (reset == 1'b1)
+296                     	begin
+297        1/1          	    addrsel <= 5'b0;
+298        1/1          	    addrfsr  <= 6'b0;
+299        1/1          	    arbena <= 1'b0;
+300                     	end
+                   ==>  MISSING_ELSE
+301                         end
+302                     
+303                         always @(posedge clock)
+304                         begin
+305        1/1          	frame1_n <= frame_n;
+306        1/1          	frame2_n <= frame1_n;
+307        1/1          	busy_n <= busy1_n;
+308        1/1          	din1 <= din;
+309        1/1          	vald1_n <= valid_n | ~busy_n ;
+310                     
+311        1/1          	if (reset == 1'b0)
+312                     	begin
+313        1/1          	    if (frame2_n != frame1_n && frame1_n == 1'b1)
+314                     	    begin	// frame is now inactive
+315        1/1          		addrsel <= 5'b0;	// clear the address register
+316        1/1          		addrfsr <= 6'b0;	// clear the address flag reg.
+317        1/1          		arbena <= 1'b0;
+318                     	    end
+319                     	    else
+320                     	    begin
+321        1/1          	    if (addrsel[4] == 1'b1 && frameo_n[addrsel[3:0]] == 1'b1)
+322        1/1          		arbena <= 1'b1;
+                        MISSING_ELSE
+323                     	    end
+324                     
+325        1/1          	    if (frame1_n != frame_n && frame_n == 1'b0)
+326        1/1          		addrfsr <= 6'b11_1111;		
+                        MISSING_ELSE
+327                     
+328        1/1          	    if (addrfsr[5:4] == 2'b10)
+329        1/1          		addrsel <= {addrsf[0],addrsf[1],addrsf[2],addrsf[3],addrsf[4]};
+                        MISSING_ELSE
+330        2/2          	    if (addrfsr[4] == 1'b1) addrsf <= (addrsf << 1) | { 4'b0, din1 };
+                        MISSING_ELSE
+331        2/2          	    if (addrfsr[5] == 1'b1) addrfsr <= addrfsr << 1;
+                        MISSING_ELSE
+332                     	end
+                        MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Instance : router_test_top.dut.rts4
+                Total Covered Percent 
+Totals          25    23      92.00   
+Total Bits      270   261     96.67   
+Total Bits 0->1 135   130     96.30   
+Total Bits 1->0 135   131     97.04   
+
+                              
+Ports          13  12  92.31  
+Port Bits      176 175 99.43  
+Port Bits 0->1 88  87  98.86  
+Port Bits 1->0 88  88  100.00 
+
+                              
+Signals          12 11 91.67  
+Signal Bits      94 86 91.49  
+Signal Bits 0->1 47 43 91.49  
+Signal Bits 1->0 47 43 91.49  
+
+Port Details
+               Toggle Toggle 1->0 Toggle 0->1 Direction 
+reset          No     Yes         No          INPUT     
+clock          Yes    Yes         Yes         INPUT     
+frame_n        Yes    Yes         Yes         INPUT     
+valid_n        Yes    Yes         Yes         INPUT     
+din            Yes    Yes         Yes         INPUT     
+arbhead        Yes    Yes         Yes         INPUT     
+busy_n         Yes    Yes         Yes         OUTPUT    
+okstep         Yes    Yes         Yes         OUTPUT    
+iarbin[15:0]   Yes    Yes         Yes         INPUT     
+arbout[15:0]   Yes    Yes         Yes         OUTPUT    
+dout[15:0]     Yes    Yes         Yes         OUTPUT    
+valido_n[15:0] Yes    Yes         Yes         OUTPUT    
+frameo_n[15:0] Yes    Yes         Yes         INOUT     
+
+Signal Details
+               Toggle Toggle 1->0 Toggle 0->1 
+addrsf[4:0]    Yes    Yes         Yes         
+addrsel[4:0]   Yes    Yes         Yes         
+addrfsr[5:0]   Yes    Yes         Yes         
+din1           Yes    Yes         Yes         
+frame1_n       Yes    Yes         Yes         
+frame2_n       Yes    Yes         Yes         
+vald1_n        Yes    Yes         Yes         
+arbena         Yes    Yes         Yes         
+arbin[15:0]    Yes    Yes         Yes         
+busy1_n        Yes    Yes         Yes         
+addrsel_g[4:0] Yes    Yes         Yes         
+i[3:0]         No     No          No          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.rts5
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    NAME    
+ 98.33 100.00  96.67 --     rtslice 
+
+
+Parent : 
+
+SCORE  LINE   TOGGLE FSM    NAME 
+ 99.89 100.00  99.79 --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Instance : router_test_top.dut.rts5
+
+             Line No.   Total   Covered  Percent
+TOTAL                       24       24   100.00
+ALWAYS            295        4        4   100.00
+ALWAYS            305       20       20   100.00
+
+294                         begin
+295        1/1          	if (reset == 1'b1)
+296                     	begin
+297        1/1          	    addrsel <= 5'b0;
+298        1/1          	    addrfsr  <= 6'b0;
+299        1/1          	    arbena <= 1'b0;
+300                     	end
+                   ==>  MISSING_ELSE
+301                         end
+302                     
+303                         always @(posedge clock)
+304                         begin
+305        1/1          	frame1_n <= frame_n;
+306        1/1          	frame2_n <= frame1_n;
+307        1/1          	busy_n <= busy1_n;
+308        1/1          	din1 <= din;
+309        1/1          	vald1_n <= valid_n | ~busy_n ;
+310                     
+311        1/1          	if (reset == 1'b0)
+312                     	begin
+313        1/1          	    if (frame2_n != frame1_n && frame1_n == 1'b1)
+314                     	    begin	// frame is now inactive
+315        1/1          		addrsel <= 5'b0;	// clear the address register
+316        1/1          		addrfsr <= 6'b0;	// clear the address flag reg.
+317        1/1          		arbena <= 1'b0;
+318                     	    end
+319                     	    else
+320                     	    begin
+321        1/1          	    if (addrsel[4] == 1'b1 && frameo_n[addrsel[3:0]] == 1'b1)
+322        1/1          		arbena <= 1'b1;
+                        MISSING_ELSE
+323                     	    end
+324                     
+325        1/1          	    if (frame1_n != frame_n && frame_n == 1'b0)
+326        1/1          		addrfsr <= 6'b11_1111;		
+                        MISSING_ELSE
+327                     
+328        1/1          	    if (addrfsr[5:4] == 2'b10)
+329        1/1          		addrsel <= {addrsf[0],addrsf[1],addrsf[2],addrsf[3],addrsf[4]};
+                        MISSING_ELSE
+330        2/2          	    if (addrfsr[4] == 1'b1) addrsf <= (addrsf << 1) | { 4'b0, din1 };
+                        MISSING_ELSE
+331        2/2          	    if (addrfsr[5] == 1'b1) addrfsr <= addrfsr << 1;
+                        MISSING_ELSE
+332                     	end
+                        MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Instance : router_test_top.dut.rts5
+                Total Covered Percent 
+Totals          25    23      92.00   
+Total Bits      270   261     96.67   
+Total Bits 0->1 135   130     96.30   
+Total Bits 1->0 135   131     97.04   
+
+                              
+Ports          13  12  92.31  
+Port Bits      176 175 99.43  
+Port Bits 0->1 88  87  98.86  
+Port Bits 1->0 88  88  100.00 
+
+                              
+Signals          12 11 91.67  
+Signal Bits      94 86 91.49  
+Signal Bits 0->1 47 43 91.49  
+Signal Bits 1->0 47 43 91.49  
+
+Port Details
+               Toggle Toggle 1->0 Toggle 0->1 Direction 
+reset          No     Yes         No          INPUT     
+clock          Yes    Yes         Yes         INPUT     
+frame_n        Yes    Yes         Yes         INPUT     
+valid_n        Yes    Yes         Yes         INPUT     
+din            Yes    Yes         Yes         INPUT     
+arbhead        Yes    Yes         Yes         INPUT     
+busy_n         Yes    Yes         Yes         OUTPUT    
+okstep         Yes    Yes         Yes         OUTPUT    
+iarbin[15:0]   Yes    Yes         Yes         INPUT     
+arbout[15:0]   Yes    Yes         Yes         OUTPUT    
+dout[15:0]     Yes    Yes         Yes         OUTPUT    
+valido_n[15:0] Yes    Yes         Yes         OUTPUT    
+frameo_n[15:0] Yes    Yes         Yes         INOUT     
+
+Signal Details
+               Toggle Toggle 1->0 Toggle 0->1 
+addrsf[4:0]    Yes    Yes         Yes         
+addrsel[4:0]   Yes    Yes         Yes         
+addrfsr[5:0]   Yes    Yes         Yes         
+din1           Yes    Yes         Yes         
+frame1_n       Yes    Yes         Yes         
+frame2_n       Yes    Yes         Yes         
+vald1_n        Yes    Yes         Yes         
+arbena         Yes    Yes         Yes         
+arbin[15:0]    Yes    Yes         Yes         
+busy1_n        Yes    Yes         Yes         
+addrsel_g[4:0] Yes    Yes         Yes         
+i[3:0]         No     No          No          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.rts6
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    NAME    
+ 98.33 100.00  96.67 --     rtslice 
+
+
+Parent : 
+
+SCORE  LINE   TOGGLE FSM    NAME 
+ 99.89 100.00  99.79 --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Instance : router_test_top.dut.rts6
+
+             Line No.   Total   Covered  Percent
+TOTAL                       24       24   100.00
+ALWAYS            295        4        4   100.00
+ALWAYS            305       20       20   100.00
+
+294                         begin
+295        1/1          	if (reset == 1'b1)
+296                     	begin
+297        1/1          	    addrsel <= 5'b0;
+298        1/1          	    addrfsr  <= 6'b0;
+299        1/1          	    arbena <= 1'b0;
+300                     	end
+                   ==>  MISSING_ELSE
+301                         end
+302                     
+303                         always @(posedge clock)
+304                         begin
+305        1/1          	frame1_n <= frame_n;
+306        1/1          	frame2_n <= frame1_n;
+307        1/1          	busy_n <= busy1_n;
+308        1/1          	din1 <= din;
+309        1/1          	vald1_n <= valid_n | ~busy_n ;
+310                     
+311        1/1          	if (reset == 1'b0)
+312                     	begin
+313        1/1          	    if (frame2_n != frame1_n && frame1_n == 1'b1)
+314                     	    begin	// frame is now inactive
+315        1/1          		addrsel <= 5'b0;	// clear the address register
+316        1/1          		addrfsr <= 6'b0;	// clear the address flag reg.
+317        1/1          		arbena <= 1'b0;
+318                     	    end
+319                     	    else
+320                     	    begin
+321        1/1          	    if (addrsel[4] == 1'b1 && frameo_n[addrsel[3:0]] == 1'b1)
+322        1/1          		arbena <= 1'b1;
+                        MISSING_ELSE
+323                     	    end
+324                     
+325        1/1          	    if (frame1_n != frame_n && frame_n == 1'b0)
+326        1/1          		addrfsr <= 6'b11_1111;		
+                        MISSING_ELSE
+327                     
+328        1/1          	    if (addrfsr[5:4] == 2'b10)
+329        1/1          		addrsel <= {addrsf[0],addrsf[1],addrsf[2],addrsf[3],addrsf[4]};
+                        MISSING_ELSE
+330        2/2          	    if (addrfsr[4] == 1'b1) addrsf <= (addrsf << 1) | { 4'b0, din1 };
+                        MISSING_ELSE
+331        2/2          	    if (addrfsr[5] == 1'b1) addrfsr <= addrfsr << 1;
+                        MISSING_ELSE
+332                     	end
+                        MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Instance : router_test_top.dut.rts6
+                Total Covered Percent 
+Totals          25    23      92.00   
+Total Bits      270   261     96.67   
+Total Bits 0->1 135   130     96.30   
+Total Bits 1->0 135   131     97.04   
+
+                              
+Ports          13  12  92.31  
+Port Bits      176 175 99.43  
+Port Bits 0->1 88  87  98.86  
+Port Bits 1->0 88  88  100.00 
+
+                              
+Signals          12 11 91.67  
+Signal Bits      94 86 91.49  
+Signal Bits 0->1 47 43 91.49  
+Signal Bits 1->0 47 43 91.49  
+
+Port Details
+               Toggle Toggle 1->0 Toggle 0->1 Direction 
+reset          No     Yes         No          INPUT     
+clock          Yes    Yes         Yes         INPUT     
+frame_n        Yes    Yes         Yes         INPUT     
+valid_n        Yes    Yes         Yes         INPUT     
+din            Yes    Yes         Yes         INPUT     
+arbhead        Yes    Yes         Yes         INPUT     
+busy_n         Yes    Yes         Yes         OUTPUT    
+okstep         Yes    Yes         Yes         OUTPUT    
+iarbin[15:0]   Yes    Yes         Yes         INPUT     
+arbout[15:0]   Yes    Yes         Yes         OUTPUT    
+dout[15:0]     Yes    Yes         Yes         OUTPUT    
+valido_n[15:0] Yes    Yes         Yes         OUTPUT    
+frameo_n[15:0] Yes    Yes         Yes         INOUT     
+
+Signal Details
+               Toggle Toggle 1->0 Toggle 0->1 
+addrsf[4:0]    Yes    Yes         Yes         
+addrsel[4:0]   Yes    Yes         Yes         
+addrfsr[5:0]   Yes    Yes         Yes         
+din1           Yes    Yes         Yes         
+frame1_n       Yes    Yes         Yes         
+frame2_n       Yes    Yes         Yes         
+vald1_n        Yes    Yes         Yes         
+arbena         Yes    Yes         Yes         
+arbin[15:0]    Yes    Yes         Yes         
+busy1_n        Yes    Yes         Yes         
+addrsel_g[4:0] Yes    Yes         Yes         
+i[3:0]         No     No          No          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.rts7
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    NAME    
+ 98.33 100.00  96.67 --     rtslice 
+
+
+Parent : 
+
+SCORE  LINE   TOGGLE FSM    NAME 
+ 99.89 100.00  99.79 --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Instance : router_test_top.dut.rts7
+
+             Line No.   Total   Covered  Percent
+TOTAL                       24       24   100.00
+ALWAYS            295        4        4   100.00
+ALWAYS            305       20       20   100.00
+
+294                         begin
+295        1/1          	if (reset == 1'b1)
+296                     	begin
+297        1/1          	    addrsel <= 5'b0;
+298        1/1          	    addrfsr  <= 6'b0;
+299        1/1          	    arbena <= 1'b0;
+300                     	end
+                   ==>  MISSING_ELSE
+301                         end
+302                     
+303                         always @(posedge clock)
+304                         begin
+305        1/1          	frame1_n <= frame_n;
+306        1/1          	frame2_n <= frame1_n;
+307        1/1          	busy_n <= busy1_n;
+308        1/1          	din1 <= din;
+309        1/1          	vald1_n <= valid_n | ~busy_n ;
+310                     
+311        1/1          	if (reset == 1'b0)
+312                     	begin
+313        1/1          	    if (frame2_n != frame1_n && frame1_n == 1'b1)
+314                     	    begin	// frame is now inactive
+315        1/1          		addrsel <= 5'b0;	// clear the address register
+316        1/1          		addrfsr <= 6'b0;	// clear the address flag reg.
+317        1/1          		arbena <= 1'b0;
+318                     	    end
+319                     	    else
+320                     	    begin
+321        1/1          	    if (addrsel[4] == 1'b1 && frameo_n[addrsel[3:0]] == 1'b1)
+322        1/1          		arbena <= 1'b1;
+                        MISSING_ELSE
+323                     	    end
+324                     
+325        1/1          	    if (frame1_n != frame_n && frame_n == 1'b0)
+326        1/1          		addrfsr <= 6'b11_1111;		
+                        MISSING_ELSE
+327                     
+328        1/1          	    if (addrfsr[5:4] == 2'b10)
+329        1/1          		addrsel <= {addrsf[0],addrsf[1],addrsf[2],addrsf[3],addrsf[4]};
+                        MISSING_ELSE
+330        2/2          	    if (addrfsr[4] == 1'b1) addrsf <= (addrsf << 1) | { 4'b0, din1 };
+                        MISSING_ELSE
+331        2/2          	    if (addrfsr[5] == 1'b1) addrfsr <= addrfsr << 1;
+                        MISSING_ELSE
+332                     	end
+                        MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Instance : router_test_top.dut.rts7
+                Total Covered Percent 
+Totals          25    23      92.00   
+Total Bits      270   261     96.67   
+Total Bits 0->1 135   130     96.30   
+Total Bits 1->0 135   131     97.04   
+
+                              
+Ports          13  12  92.31  
+Port Bits      176 175 99.43  
+Port Bits 0->1 88  87  98.86  
+Port Bits 1->0 88  88  100.00 
+
+                              
+Signals          12 11 91.67  
+Signal Bits      94 86 91.49  
+Signal Bits 0->1 47 43 91.49  
+Signal Bits 1->0 47 43 91.49  
+
+Port Details
+               Toggle Toggle 1->0 Toggle 0->1 Direction 
+reset          No     Yes         No          INPUT     
+clock          Yes    Yes         Yes         INPUT     
+frame_n        Yes    Yes         Yes         INPUT     
+valid_n        Yes    Yes         Yes         INPUT     
+din            Yes    Yes         Yes         INPUT     
+arbhead        Yes    Yes         Yes         INPUT     
+busy_n         Yes    Yes         Yes         OUTPUT    
+okstep         Yes    Yes         Yes         OUTPUT    
+iarbin[15:0]   Yes    Yes         Yes         INPUT     
+arbout[15:0]   Yes    Yes         Yes         OUTPUT    
+dout[15:0]     Yes    Yes         Yes         OUTPUT    
+valido_n[15:0] Yes    Yes         Yes         OUTPUT    
+frameo_n[15:0] Yes    Yes         Yes         INOUT     
+
+Signal Details
+               Toggle Toggle 1->0 Toggle 0->1 
+addrsf[4:0]    Yes    Yes         Yes         
+addrsel[4:0]   Yes    Yes         Yes         
+addrfsr[5:0]   Yes    Yes         Yes         
+din1           Yes    Yes         Yes         
+frame1_n       Yes    Yes         Yes         
+frame2_n       Yes    Yes         Yes         
+vald1_n        Yes    Yes         Yes         
+arbena         Yes    Yes         Yes         
+arbin[15:0]    Yes    Yes         Yes         
+busy1_n        Yes    Yes         Yes         
+addrsel_g[4:0] Yes    Yes         Yes         
+i[3:0]         No     No          No          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.rts8
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    NAME    
+ 98.33 100.00  96.67 --     rtslice 
+
+
+Parent : 
+
+SCORE  LINE   TOGGLE FSM    NAME 
+ 99.89 100.00  99.79 --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Instance : router_test_top.dut.rts8
+
+             Line No.   Total   Covered  Percent
+TOTAL                       24       24   100.00
+ALWAYS            295        4        4   100.00
+ALWAYS            305       20       20   100.00
+
+294                         begin
+295        1/1          	if (reset == 1'b1)
+296                     	begin
+297        1/1          	    addrsel <= 5'b0;
+298        1/1          	    addrfsr  <= 6'b0;
+299        1/1          	    arbena <= 1'b0;
+300                     	end
+                   ==>  MISSING_ELSE
+301                         end
+302                     
+303                         always @(posedge clock)
+304                         begin
+305        1/1          	frame1_n <= frame_n;
+306        1/1          	frame2_n <= frame1_n;
+307        1/1          	busy_n <= busy1_n;
+308        1/1          	din1 <= din;
+309        1/1          	vald1_n <= valid_n | ~busy_n ;
+310                     
+311        1/1          	if (reset == 1'b0)
+312                     	begin
+313        1/1          	    if (frame2_n != frame1_n && frame1_n == 1'b1)
+314                     	    begin	// frame is now inactive
+315        1/1          		addrsel <= 5'b0;	// clear the address register
+316        1/1          		addrfsr <= 6'b0;	// clear the address flag reg.
+317        1/1          		arbena <= 1'b0;
+318                     	    end
+319                     	    else
+320                     	    begin
+321        1/1          	    if (addrsel[4] == 1'b1 && frameo_n[addrsel[3:0]] == 1'b1)
+322        1/1          		arbena <= 1'b1;
+                        MISSING_ELSE
+323                     	    end
+324                     
+325        1/1          	    if (frame1_n != frame_n && frame_n == 1'b0)
+326        1/1          		addrfsr <= 6'b11_1111;		
+                        MISSING_ELSE
+327                     
+328        1/1          	    if (addrfsr[5:4] == 2'b10)
+329        1/1          		addrsel <= {addrsf[0],addrsf[1],addrsf[2],addrsf[3],addrsf[4]};
+                        MISSING_ELSE
+330        2/2          	    if (addrfsr[4] == 1'b1) addrsf <= (addrsf << 1) | { 4'b0, din1 };
+                        MISSING_ELSE
+331        2/2          	    if (addrfsr[5] == 1'b1) addrfsr <= addrfsr << 1;
+                        MISSING_ELSE
+332                     	end
+                        MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Instance : router_test_top.dut.rts8
+                Total Covered Percent 
+Totals          25    23      92.00   
+Total Bits      270   261     96.67   
+Total Bits 0->1 135   130     96.30   
+Total Bits 1->0 135   131     97.04   
+
+                              
+Ports          13  12  92.31  
+Port Bits      176 175 99.43  
+Port Bits 0->1 88  87  98.86  
+Port Bits 1->0 88  88  100.00 
+
+                              
+Signals          12 11 91.67  
+Signal Bits      94 86 91.49  
+Signal Bits 0->1 47 43 91.49  
+Signal Bits 1->0 47 43 91.49  
+
+Port Details
+               Toggle Toggle 1->0 Toggle 0->1 Direction 
+reset          No     Yes         No          INPUT     
+clock          Yes    Yes         Yes         INPUT     
+frame_n        Yes    Yes         Yes         INPUT     
+valid_n        Yes    Yes         Yes         INPUT     
+din            Yes    Yes         Yes         INPUT     
+arbhead        Yes    Yes         Yes         INPUT     
+busy_n         Yes    Yes         Yes         OUTPUT    
+okstep         Yes    Yes         Yes         OUTPUT    
+iarbin[15:0]   Yes    Yes         Yes         INPUT     
+arbout[15:0]   Yes    Yes         Yes         OUTPUT    
+dout[15:0]     Yes    Yes         Yes         OUTPUT    
+valido_n[15:0] Yes    Yes         Yes         OUTPUT    
+frameo_n[15:0] Yes    Yes         Yes         INOUT     
+
+Signal Details
+               Toggle Toggle 1->0 Toggle 0->1 
+addrsf[4:0]    Yes    Yes         Yes         
+addrsel[4:0]   Yes    Yes         Yes         
+addrfsr[5:0]   Yes    Yes         Yes         
+din1           Yes    Yes         Yes         
+frame1_n       Yes    Yes         Yes         
+frame2_n       Yes    Yes         Yes         
+vald1_n        Yes    Yes         Yes         
+arbena         Yes    Yes         Yes         
+arbin[15:0]    Yes    Yes         Yes         
+busy1_n        Yes    Yes         Yes         
+addrsel_g[4:0] Yes    Yes         Yes         
+i[3:0]         No     No          No          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.rts9
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    NAME    
+ 98.33 100.00  96.67 --     rtslice 
+
+
+Parent : 
+
+SCORE  LINE   TOGGLE FSM    NAME 
+ 99.89 100.00  99.79 --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Instance : router_test_top.dut.rts9
+
+             Line No.   Total   Covered  Percent
+TOTAL                       24       24   100.00
+ALWAYS            295        4        4   100.00
+ALWAYS            305       20       20   100.00
+
+294                         begin
+295        1/1          	if (reset == 1'b1)
+296                     	begin
+297        1/1          	    addrsel <= 5'b0;
+298        1/1          	    addrfsr  <= 6'b0;
+299        1/1          	    arbena <= 1'b0;
+300                     	end
+                   ==>  MISSING_ELSE
+301                         end
+302                     
+303                         always @(posedge clock)
+304                         begin
+305        1/1          	frame1_n <= frame_n;
+306        1/1          	frame2_n <= frame1_n;
+307        1/1          	busy_n <= busy1_n;
+308        1/1          	din1 <= din;
+309        1/1          	vald1_n <= valid_n | ~busy_n ;
+310                     
+311        1/1          	if (reset == 1'b0)
+312                     	begin
+313        1/1          	    if (frame2_n != frame1_n && frame1_n == 1'b1)
+314                     	    begin	// frame is now inactive
+315        1/1          		addrsel <= 5'b0;	// clear the address register
+316        1/1          		addrfsr <= 6'b0;	// clear the address flag reg.
+317        1/1          		arbena <= 1'b0;
+318                     	    end
+319                     	    else
+320                     	    begin
+321        1/1          	    if (addrsel[4] == 1'b1 && frameo_n[addrsel[3:0]] == 1'b1)
+322        1/1          		arbena <= 1'b1;
+                        MISSING_ELSE
+323                     	    end
+324                     
+325        1/1          	    if (frame1_n != frame_n && frame_n == 1'b0)
+326        1/1          		addrfsr <= 6'b11_1111;		
+                        MISSING_ELSE
+327                     
+328        1/1          	    if (addrfsr[5:4] == 2'b10)
+329        1/1          		addrsel <= {addrsf[0],addrsf[1],addrsf[2],addrsf[3],addrsf[4]};
+                        MISSING_ELSE
+330        2/2          	    if (addrfsr[4] == 1'b1) addrsf <= (addrsf << 1) | { 4'b0, din1 };
+                        MISSING_ELSE
+331        2/2          	    if (addrfsr[5] == 1'b1) addrfsr <= addrfsr << 1;
+                        MISSING_ELSE
+332                     	end
+                        MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Instance : router_test_top.dut.rts9
+                Total Covered Percent 
+Totals          25    23      92.00   
+Total Bits      270   261     96.67   
+Total Bits 0->1 135   130     96.30   
+Total Bits 1->0 135   131     97.04   
+
+                              
+Ports          13  12  92.31  
+Port Bits      176 175 99.43  
+Port Bits 0->1 88  87  98.86  
+Port Bits 1->0 88  88  100.00 
+
+                              
+Signals          12 11 91.67  
+Signal Bits      94 86 91.49  
+Signal Bits 0->1 47 43 91.49  
+Signal Bits 1->0 47 43 91.49  
+
+Port Details
+               Toggle Toggle 1->0 Toggle 0->1 Direction 
+reset          No     Yes         No          INPUT     
+clock          Yes    Yes         Yes         INPUT     
+frame_n        Yes    Yes         Yes         INPUT     
+valid_n        Yes    Yes         Yes         INPUT     
+din            Yes    Yes         Yes         INPUT     
+arbhead        Yes    Yes         Yes         INPUT     
+busy_n         Yes    Yes         Yes         OUTPUT    
+okstep         Yes    Yes         Yes         OUTPUT    
+iarbin[15:0]   Yes    Yes         Yes         INPUT     
+arbout[15:0]   Yes    Yes         Yes         OUTPUT    
+dout[15:0]     Yes    Yes         Yes         OUTPUT    
+valido_n[15:0] Yes    Yes         Yes         OUTPUT    
+frameo_n[15:0] Yes    Yes         Yes         INOUT     
+
+Signal Details
+               Toggle Toggle 1->0 Toggle 0->1 
+addrsf[4:0]    Yes    Yes         Yes         
+addrsel[4:0]   Yes    Yes         Yes         
+addrfsr[5:0]   Yes    Yes         Yes         
+din1           Yes    Yes         Yes         
+frame1_n       Yes    Yes         Yes         
+frame2_n       Yes    Yes         Yes         
+vald1_n        Yes    Yes         Yes         
+arbena         Yes    Yes         Yes         
+arbin[15:0]    Yes    Yes         Yes         
+busy1_n        Yes    Yes         Yes         
+addrsel_g[4:0] Yes    Yes         Yes         
+i[3:0]         No     No          No          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.rts10
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    NAME    
+ 98.33 100.00  96.67 --     rtslice 
+
+
+Parent : 
+
+SCORE  LINE   TOGGLE FSM    NAME 
+ 99.89 100.00  99.79 --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Instance : router_test_top.dut.rts10
+
+             Line No.   Total   Covered  Percent
+TOTAL                       24       24   100.00
+ALWAYS            295        4        4   100.00
+ALWAYS            305       20       20   100.00
+
+294                         begin
+295        1/1          	if (reset == 1'b1)
+296                     	begin
+297        1/1          	    addrsel <= 5'b0;
+298        1/1          	    addrfsr  <= 6'b0;
+299        1/1          	    arbena <= 1'b0;
+300                     	end
+                   ==>  MISSING_ELSE
+301                         end
+302                     
+303                         always @(posedge clock)
+304                         begin
+305        1/1          	frame1_n <= frame_n;
+306        1/1          	frame2_n <= frame1_n;
+307        1/1          	busy_n <= busy1_n;
+308        1/1          	din1 <= din;
+309        1/1          	vald1_n <= valid_n | ~busy_n ;
+310                     
+311        1/1          	if (reset == 1'b0)
+312                     	begin
+313        1/1          	    if (frame2_n != frame1_n && frame1_n == 1'b1)
+314                     	    begin	// frame is now inactive
+315        1/1          		addrsel <= 5'b0;	// clear the address register
+316        1/1          		addrfsr <= 6'b0;	// clear the address flag reg.
+317        1/1          		arbena <= 1'b0;
+318                     	    end
+319                     	    else
+320                     	    begin
+321        1/1          	    if (addrsel[4] == 1'b1 && frameo_n[addrsel[3:0]] == 1'b1)
+322        1/1          		arbena <= 1'b1;
+                        MISSING_ELSE
+323                     	    end
+324                     
+325        1/1          	    if (frame1_n != frame_n && frame_n == 1'b0)
+326        1/1          		addrfsr <= 6'b11_1111;		
+                        MISSING_ELSE
+327                     
+328        1/1          	    if (addrfsr[5:4] == 2'b10)
+329        1/1          		addrsel <= {addrsf[0],addrsf[1],addrsf[2],addrsf[3],addrsf[4]};
+                        MISSING_ELSE
+330        2/2          	    if (addrfsr[4] == 1'b1) addrsf <= (addrsf << 1) | { 4'b0, din1 };
+                        MISSING_ELSE
+331        2/2          	    if (addrfsr[5] == 1'b1) addrfsr <= addrfsr << 1;
+                        MISSING_ELSE
+332                     	end
+                        MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Instance : router_test_top.dut.rts10
+                Total Covered Percent 
+Totals          25    23      92.00   
+Total Bits      270   261     96.67   
+Total Bits 0->1 135   130     96.30   
+Total Bits 1->0 135   131     97.04   
+
+                              
+Ports          13  12  92.31  
+Port Bits      176 175 99.43  
+Port Bits 0->1 88  87  98.86  
+Port Bits 1->0 88  88  100.00 
+
+                              
+Signals          12 11 91.67  
+Signal Bits      94 86 91.49  
+Signal Bits 0->1 47 43 91.49  
+Signal Bits 1->0 47 43 91.49  
+
+Port Details
+               Toggle Toggle 1->0 Toggle 0->1 Direction 
+reset          No     Yes         No          INPUT     
+clock          Yes    Yes         Yes         INPUT     
+frame_n        Yes    Yes         Yes         INPUT     
+valid_n        Yes    Yes         Yes         INPUT     
+din            Yes    Yes         Yes         INPUT     
+arbhead        Yes    Yes         Yes         INPUT     
+busy_n         Yes    Yes         Yes         OUTPUT    
+okstep         Yes    Yes         Yes         OUTPUT    
+iarbin[15:0]   Yes    Yes         Yes         INPUT     
+arbout[15:0]   Yes    Yes         Yes         OUTPUT    
+dout[15:0]     Yes    Yes         Yes         OUTPUT    
+valido_n[15:0] Yes    Yes         Yes         OUTPUT    
+frameo_n[15:0] Yes    Yes         Yes         INOUT     
+
+Signal Details
+               Toggle Toggle 1->0 Toggle 0->1 
+addrsf[4:0]    Yes    Yes         Yes         
+addrsel[4:0]   Yes    Yes         Yes         
+addrfsr[5:0]   Yes    Yes         Yes         
+din1           Yes    Yes         Yes         
+frame1_n       Yes    Yes         Yes         
+frame2_n       Yes    Yes         Yes         
+vald1_n        Yes    Yes         Yes         
+arbena         Yes    Yes         Yes         
+arbin[15:0]    Yes    Yes         Yes         
+busy1_n        Yes    Yes         Yes         
+addrsel_g[4:0] Yes    Yes         Yes         
+i[3:0]         No     No          No          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.rts11
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    NAME    
+ 98.33 100.00  96.67 --     rtslice 
+
+
+Parent : 
+
+SCORE  LINE   TOGGLE FSM    NAME 
+ 99.89 100.00  99.79 --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Instance : router_test_top.dut.rts11
+
+             Line No.   Total   Covered  Percent
+TOTAL                       24       24   100.00
+ALWAYS            295        4        4   100.00
+ALWAYS            305       20       20   100.00
+
+294                         begin
+295        1/1          	if (reset == 1'b1)
+296                     	begin
+297        1/1          	    addrsel <= 5'b0;
+298        1/1          	    addrfsr  <= 6'b0;
+299        1/1          	    arbena <= 1'b0;
+300                     	end
+                   ==>  MISSING_ELSE
+301                         end
+302                     
+303                         always @(posedge clock)
+304                         begin
+305        1/1          	frame1_n <= frame_n;
+306        1/1          	frame2_n <= frame1_n;
+307        1/1          	busy_n <= busy1_n;
+308        1/1          	din1 <= din;
+309        1/1          	vald1_n <= valid_n | ~busy_n ;
+310                     
+311        1/1          	if (reset == 1'b0)
+312                     	begin
+313        1/1          	    if (frame2_n != frame1_n && frame1_n == 1'b1)
+314                     	    begin	// frame is now inactive
+315        1/1          		addrsel <= 5'b0;	// clear the address register
+316        1/1          		addrfsr <= 6'b0;	// clear the address flag reg.
+317        1/1          		arbena <= 1'b0;
+318                     	    end
+319                     	    else
+320                     	    begin
+321        1/1          	    if (addrsel[4] == 1'b1 && frameo_n[addrsel[3:0]] == 1'b1)
+322        1/1          		arbena <= 1'b1;
+                        MISSING_ELSE
+323                     	    end
+324                     
+325        1/1          	    if (frame1_n != frame_n && frame_n == 1'b0)
+326        1/1          		addrfsr <= 6'b11_1111;		
+                        MISSING_ELSE
+327                     
+328        1/1          	    if (addrfsr[5:4] == 2'b10)
+329        1/1          		addrsel <= {addrsf[0],addrsf[1],addrsf[2],addrsf[3],addrsf[4]};
+                        MISSING_ELSE
+330        2/2          	    if (addrfsr[4] == 1'b1) addrsf <= (addrsf << 1) | { 4'b0, din1 };
+                        MISSING_ELSE
+331        2/2          	    if (addrfsr[5] == 1'b1) addrfsr <= addrfsr << 1;
+                        MISSING_ELSE
+332                     	end
+                        MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Instance : router_test_top.dut.rts11
+                Total Covered Percent 
+Totals          25    23      92.00   
+Total Bits      270   261     96.67   
+Total Bits 0->1 135   130     96.30   
+Total Bits 1->0 135   131     97.04   
+
+                              
+Ports          13  12  92.31  
+Port Bits      176 175 99.43  
+Port Bits 0->1 88  87  98.86  
+Port Bits 1->0 88  88  100.00 
+
+                              
+Signals          12 11 91.67  
+Signal Bits      94 86 91.49  
+Signal Bits 0->1 47 43 91.49  
+Signal Bits 1->0 47 43 91.49  
+
+Port Details
+               Toggle Toggle 1->0 Toggle 0->1 Direction 
+reset          No     Yes         No          INPUT     
+clock          Yes    Yes         Yes         INPUT     
+frame_n        Yes    Yes         Yes         INPUT     
+valid_n        Yes    Yes         Yes         INPUT     
+din            Yes    Yes         Yes         INPUT     
+arbhead        Yes    Yes         Yes         INPUT     
+busy_n         Yes    Yes         Yes         OUTPUT    
+okstep         Yes    Yes         Yes         OUTPUT    
+iarbin[15:0]   Yes    Yes         Yes         INPUT     
+arbout[15:0]   Yes    Yes         Yes         OUTPUT    
+dout[15:0]     Yes    Yes         Yes         OUTPUT    
+valido_n[15:0] Yes    Yes         Yes         OUTPUT    
+frameo_n[15:0] Yes    Yes         Yes         INOUT     
+
+Signal Details
+               Toggle Toggle 1->0 Toggle 0->1 
+addrsf[4:0]    Yes    Yes         Yes         
+addrsel[4:0]   Yes    Yes         Yes         
+addrfsr[5:0]   Yes    Yes         Yes         
+din1           Yes    Yes         Yes         
+frame1_n       Yes    Yes         Yes         
+frame2_n       Yes    Yes         Yes         
+vald1_n        Yes    Yes         Yes         
+arbena         Yes    Yes         Yes         
+arbin[15:0]    Yes    Yes         Yes         
+busy1_n        Yes    Yes         Yes         
+addrsel_g[4:0] Yes    Yes         Yes         
+i[3:0]         No     No          No          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.rts12
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    NAME    
+ 98.33 100.00  96.67 --     rtslice 
+
+
+Parent : 
+
+SCORE  LINE   TOGGLE FSM    NAME 
+ 99.89 100.00  99.79 --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Instance : router_test_top.dut.rts12
+
+             Line No.   Total   Covered  Percent
+TOTAL                       24       24   100.00
+ALWAYS            295        4        4   100.00
+ALWAYS            305       20       20   100.00
+
+294                         begin
+295        1/1          	if (reset == 1'b1)
+296                     	begin
+297        1/1          	    addrsel <= 5'b0;
+298        1/1          	    addrfsr  <= 6'b0;
+299        1/1          	    arbena <= 1'b0;
+300                     	end
+                   ==>  MISSING_ELSE
+301                         end
+302                     
+303                         always @(posedge clock)
+304                         begin
+305        1/1          	frame1_n <= frame_n;
+306        1/1          	frame2_n <= frame1_n;
+307        1/1          	busy_n <= busy1_n;
+308        1/1          	din1 <= din;
+309        1/1          	vald1_n <= valid_n | ~busy_n ;
+310                     
+311        1/1          	if (reset == 1'b0)
+312                     	begin
+313        1/1          	    if (frame2_n != frame1_n && frame1_n == 1'b1)
+314                     	    begin	// frame is now inactive
+315        1/1          		addrsel <= 5'b0;	// clear the address register
+316        1/1          		addrfsr <= 6'b0;	// clear the address flag reg.
+317        1/1          		arbena <= 1'b0;
+318                     	    end
+319                     	    else
+320                     	    begin
+321        1/1          	    if (addrsel[4] == 1'b1 && frameo_n[addrsel[3:0]] == 1'b1)
+322        1/1          		arbena <= 1'b1;
+                        MISSING_ELSE
+323                     	    end
+324                     
+325        1/1          	    if (frame1_n != frame_n && frame_n == 1'b0)
+326        1/1          		addrfsr <= 6'b11_1111;		
+                        MISSING_ELSE
+327                     
+328        1/1          	    if (addrfsr[5:4] == 2'b10)
+329        1/1          		addrsel <= {addrsf[0],addrsf[1],addrsf[2],addrsf[3],addrsf[4]};
+                        MISSING_ELSE
+330        2/2          	    if (addrfsr[4] == 1'b1) addrsf <= (addrsf << 1) | { 4'b0, din1 };
+                        MISSING_ELSE
+331        2/2          	    if (addrfsr[5] == 1'b1) addrfsr <= addrfsr << 1;
+                        MISSING_ELSE
+332                     	end
+                        MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Instance : router_test_top.dut.rts12
+                Total Covered Percent 
+Totals          25    23      92.00   
+Total Bits      270   261     96.67   
+Total Bits 0->1 135   130     96.30   
+Total Bits 1->0 135   131     97.04   
+
+                              
+Ports          13  12  92.31  
+Port Bits      176 175 99.43  
+Port Bits 0->1 88  87  98.86  
+Port Bits 1->0 88  88  100.00 
+
+                              
+Signals          12 11 91.67  
+Signal Bits      94 86 91.49  
+Signal Bits 0->1 47 43 91.49  
+Signal Bits 1->0 47 43 91.49  
+
+Port Details
+               Toggle Toggle 1->0 Toggle 0->1 Direction 
+reset          No     Yes         No          INPUT     
+clock          Yes    Yes         Yes         INPUT     
+frame_n        Yes    Yes         Yes         INPUT     
+valid_n        Yes    Yes         Yes         INPUT     
+din            Yes    Yes         Yes         INPUT     
+arbhead        Yes    Yes         Yes         INPUT     
+busy_n         Yes    Yes         Yes         OUTPUT    
+okstep         Yes    Yes         Yes         OUTPUT    
+iarbin[15:0]   Yes    Yes         Yes         INPUT     
+arbout[15:0]   Yes    Yes         Yes         OUTPUT    
+dout[15:0]     Yes    Yes         Yes         OUTPUT    
+valido_n[15:0] Yes    Yes         Yes         OUTPUT    
+frameo_n[15:0] Yes    Yes         Yes         INOUT     
+
+Signal Details
+               Toggle Toggle 1->0 Toggle 0->1 
+addrsf[4:0]    Yes    Yes         Yes         
+addrsel[4:0]   Yes    Yes         Yes         
+addrfsr[5:0]   Yes    Yes         Yes         
+din1           Yes    Yes         Yes         
+frame1_n       Yes    Yes         Yes         
+frame2_n       Yes    Yes         Yes         
+vald1_n        Yes    Yes         Yes         
+arbena         Yes    Yes         Yes         
+arbin[15:0]    Yes    Yes         Yes         
+busy1_n        Yes    Yes         Yes         
+addrsel_g[4:0] Yes    Yes         Yes         
+i[3:0]         No     No          No          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.rts13
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    NAME    
+ 98.33 100.00  96.67 --     rtslice 
+
+
+Parent : 
+
+SCORE  LINE   TOGGLE FSM    NAME 
+ 99.89 100.00  99.79 --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Instance : router_test_top.dut.rts13
+
+             Line No.   Total   Covered  Percent
+TOTAL                       24       24   100.00
+ALWAYS            295        4        4   100.00
+ALWAYS            305       20       20   100.00
+
+294                         begin
+295        1/1          	if (reset == 1'b1)
+296                     	begin
+297        1/1          	    addrsel <= 5'b0;
+298        1/1          	    addrfsr  <= 6'b0;
+299        1/1          	    arbena <= 1'b0;
+300                     	end
+                   ==>  MISSING_ELSE
+301                         end
+302                     
+303                         always @(posedge clock)
+304                         begin
+305        1/1          	frame1_n <= frame_n;
+306        1/1          	frame2_n <= frame1_n;
+307        1/1          	busy_n <= busy1_n;
+308        1/1          	din1 <= din;
+309        1/1          	vald1_n <= valid_n | ~busy_n ;
+310                     
+311        1/1          	if (reset == 1'b0)
+312                     	begin
+313        1/1          	    if (frame2_n != frame1_n && frame1_n == 1'b1)
+314                     	    begin	// frame is now inactive
+315        1/1          		addrsel <= 5'b0;	// clear the address register
+316        1/1          		addrfsr <= 6'b0;	// clear the address flag reg.
+317        1/1          		arbena <= 1'b0;
+318                     	    end
+319                     	    else
+320                     	    begin
+321        1/1          	    if (addrsel[4] == 1'b1 && frameo_n[addrsel[3:0]] == 1'b1)
+322        1/1          		arbena <= 1'b1;
+                        MISSING_ELSE
+323                     	    end
+324                     
+325        1/1          	    if (frame1_n != frame_n && frame_n == 1'b0)
+326        1/1          		addrfsr <= 6'b11_1111;		
+                        MISSING_ELSE
+327                     
+328        1/1          	    if (addrfsr[5:4] == 2'b10)
+329        1/1          		addrsel <= {addrsf[0],addrsf[1],addrsf[2],addrsf[3],addrsf[4]};
+                        MISSING_ELSE
+330        2/2          	    if (addrfsr[4] == 1'b1) addrsf <= (addrsf << 1) | { 4'b0, din1 };
+                        MISSING_ELSE
+331        2/2          	    if (addrfsr[5] == 1'b1) addrfsr <= addrfsr << 1;
+                        MISSING_ELSE
+332                     	end
+                        MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Instance : router_test_top.dut.rts13
+                Total Covered Percent 
+Totals          25    23      92.00   
+Total Bits      270   261     96.67   
+Total Bits 0->1 135   130     96.30   
+Total Bits 1->0 135   131     97.04   
+
+                              
+Ports          13  12  92.31  
+Port Bits      176 175 99.43  
+Port Bits 0->1 88  87  98.86  
+Port Bits 1->0 88  88  100.00 
+
+                              
+Signals          12 11 91.67  
+Signal Bits      94 86 91.49  
+Signal Bits 0->1 47 43 91.49  
+Signal Bits 1->0 47 43 91.49  
+
+Port Details
+               Toggle Toggle 1->0 Toggle 0->1 Direction 
+reset          No     Yes         No          INPUT     
+clock          Yes    Yes         Yes         INPUT     
+frame_n        Yes    Yes         Yes         INPUT     
+valid_n        Yes    Yes         Yes         INPUT     
+din            Yes    Yes         Yes         INPUT     
+arbhead        Yes    Yes         Yes         INPUT     
+busy_n         Yes    Yes         Yes         OUTPUT    
+okstep         Yes    Yes         Yes         OUTPUT    
+iarbin[15:0]   Yes    Yes         Yes         INPUT     
+arbout[15:0]   Yes    Yes         Yes         OUTPUT    
+dout[15:0]     Yes    Yes         Yes         OUTPUT    
+valido_n[15:0] Yes    Yes         Yes         OUTPUT    
+frameo_n[15:0] Yes    Yes         Yes         INOUT     
+
+Signal Details
+               Toggle Toggle 1->0 Toggle 0->1 
+addrsf[4:0]    Yes    Yes         Yes         
+addrsel[4:0]   Yes    Yes         Yes         
+addrfsr[5:0]   Yes    Yes         Yes         
+din1           Yes    Yes         Yes         
+frame1_n       Yes    Yes         Yes         
+frame2_n       Yes    Yes         Yes         
+vald1_n        Yes    Yes         Yes         
+arbena         Yes    Yes         Yes         
+arbin[15:0]    Yes    Yes         Yes         
+busy1_n        Yes    Yes         Yes         
+addrsel_g[4:0] Yes    Yes         Yes         
+i[3:0]         No     No          No          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.rts14
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    NAME    
+ 98.33 100.00  96.67 --     rtslice 
+
+
+Parent : 
+
+SCORE  LINE   TOGGLE FSM    NAME 
+ 99.89 100.00  99.79 --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Instance : router_test_top.dut.rts14
+
+             Line No.   Total   Covered  Percent
+TOTAL                       24       24   100.00
+ALWAYS            295        4        4   100.00
+ALWAYS            305       20       20   100.00
+
+294                         begin
+295        1/1          	if (reset == 1'b1)
+296                     	begin
+297        1/1          	    addrsel <= 5'b0;
+298        1/1          	    addrfsr  <= 6'b0;
+299        1/1          	    arbena <= 1'b0;
+300                     	end
+                   ==>  MISSING_ELSE
+301                         end
+302                     
+303                         always @(posedge clock)
+304                         begin
+305        1/1          	frame1_n <= frame_n;
+306        1/1          	frame2_n <= frame1_n;
+307        1/1          	busy_n <= busy1_n;
+308        1/1          	din1 <= din;
+309        1/1          	vald1_n <= valid_n | ~busy_n ;
+310                     
+311        1/1          	if (reset == 1'b0)
+312                     	begin
+313        1/1          	    if (frame2_n != frame1_n && frame1_n == 1'b1)
+314                     	    begin	// frame is now inactive
+315        1/1          		addrsel <= 5'b0;	// clear the address register
+316        1/1          		addrfsr <= 6'b0;	// clear the address flag reg.
+317        1/1          		arbena <= 1'b0;
+318                     	    end
+319                     	    else
+320                     	    begin
+321        1/1          	    if (addrsel[4] == 1'b1 && frameo_n[addrsel[3:0]] == 1'b1)
+322        1/1          		arbena <= 1'b1;
+                        MISSING_ELSE
+323                     	    end
+324                     
+325        1/1          	    if (frame1_n != frame_n && frame_n == 1'b0)
+326        1/1          		addrfsr <= 6'b11_1111;		
+                        MISSING_ELSE
+327                     
+328        1/1          	    if (addrfsr[5:4] == 2'b10)
+329        1/1          		addrsel <= {addrsf[0],addrsf[1],addrsf[2],addrsf[3],addrsf[4]};
+                        MISSING_ELSE
+330        2/2          	    if (addrfsr[4] == 1'b1) addrsf <= (addrsf << 1) | { 4'b0, din1 };
+                        MISSING_ELSE
+331        2/2          	    if (addrfsr[5] == 1'b1) addrfsr <= addrfsr << 1;
+                        MISSING_ELSE
+332                     	end
+                        MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Instance : router_test_top.dut.rts14
+                Total Covered Percent 
+Totals          25    23      92.00   
+Total Bits      270   261     96.67   
+Total Bits 0->1 135   130     96.30   
+Total Bits 1->0 135   131     97.04   
+
+                              
+Ports          13  12  92.31  
+Port Bits      176 175 99.43  
+Port Bits 0->1 88  87  98.86  
+Port Bits 1->0 88  88  100.00 
+
+                              
+Signals          12 11 91.67  
+Signal Bits      94 86 91.49  
+Signal Bits 0->1 47 43 91.49  
+Signal Bits 1->0 47 43 91.49  
+
+Port Details
+               Toggle Toggle 1->0 Toggle 0->1 Direction 
+reset          No     Yes         No          INPUT     
+clock          Yes    Yes         Yes         INPUT     
+frame_n        Yes    Yes         Yes         INPUT     
+valid_n        Yes    Yes         Yes         INPUT     
+din            Yes    Yes         Yes         INPUT     
+arbhead        Yes    Yes         Yes         INPUT     
+busy_n         Yes    Yes         Yes         OUTPUT    
+okstep         Yes    Yes         Yes         OUTPUT    
+iarbin[15:0]   Yes    Yes         Yes         INPUT     
+arbout[15:0]   Yes    Yes         Yes         OUTPUT    
+dout[15:0]     Yes    Yes         Yes         OUTPUT    
+valido_n[15:0] Yes    Yes         Yes         OUTPUT    
+frameo_n[15:0] Yes    Yes         Yes         INOUT     
+
+Signal Details
+               Toggle Toggle 1->0 Toggle 0->1 
+addrsf[4:0]    Yes    Yes         Yes         
+addrsel[4:0]   Yes    Yes         Yes         
+addrfsr[5:0]   Yes    Yes         Yes         
+din1           Yes    Yes         Yes         
+frame1_n       Yes    Yes         Yes         
+frame2_n       Yes    Yes         Yes         
+vald1_n        Yes    Yes         Yes         
+arbena         Yes    Yes         Yes         
+arbin[15:0]    Yes    Yes         Yes         
+busy1_n        Yes    Yes         Yes         
+addrsel_g[4:0] Yes    Yes         Yes         
+i[3:0]         No     No          No          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.rts15
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.33 100.00  96.67 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    NAME    
+ 98.33 100.00  96.67 --     rtslice 
+
+
+Parent : 
+
+SCORE  LINE   TOGGLE FSM    NAME 
+ 99.89 100.00  99.79 --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Instance : router_test_top.dut.rts15
+
+             Line No.   Total   Covered  Percent
+TOTAL                       24       24   100.00
+ALWAYS            295        4        4   100.00
+ALWAYS            305       20       20   100.00
+
+294                         begin
+295        1/1          	if (reset == 1'b1)
+296                     	begin
+297        1/1          	    addrsel <= 5'b0;
+298        1/1          	    addrfsr  <= 6'b0;
+299        1/1          	    arbena <= 1'b0;
+300                     	end
+                   ==>  MISSING_ELSE
+301                         end
+302                     
+303                         always @(posedge clock)
+304                         begin
+305        1/1          	frame1_n <= frame_n;
+306        1/1          	frame2_n <= frame1_n;
+307        1/1          	busy_n <= busy1_n;
+308        1/1          	din1 <= din;
+309        1/1          	vald1_n <= valid_n | ~busy_n ;
+310                     
+311        1/1          	if (reset == 1'b0)
+312                     	begin
+313        1/1          	    if (frame2_n != frame1_n && frame1_n == 1'b1)
+314                     	    begin	// frame is now inactive
+315        1/1          		addrsel <= 5'b0;	// clear the address register
+316        1/1          		addrfsr <= 6'b0;	// clear the address flag reg.
+317        1/1          		arbena <= 1'b0;
+318                     	    end
+319                     	    else
+320                     	    begin
+321        1/1          	    if (addrsel[4] == 1'b1 && frameo_n[addrsel[3:0]] == 1'b1)
+322        1/1          		arbena <= 1'b1;
+                        MISSING_ELSE
+323                     	    end
+324                     
+325        1/1          	    if (frame1_n != frame_n && frame_n == 1'b0)
+326        1/1          		addrfsr <= 6'b11_1111;		
+                        MISSING_ELSE
+327                     
+328        1/1          	    if (addrfsr[5:4] == 2'b10)
+329        1/1          		addrsel <= {addrsf[0],addrsf[1],addrsf[2],addrsf[3],addrsf[4]};
+                        MISSING_ELSE
+330        2/2          	    if (addrfsr[4] == 1'b1) addrsf <= (addrsf << 1) | { 4'b0, din1 };
+                        MISSING_ELSE
+331        2/2          	    if (addrfsr[5] == 1'b1) addrfsr <= addrfsr << 1;
+                        MISSING_ELSE
+332                     	end
+                        MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Instance : router_test_top.dut.rts15
+                Total Covered Percent 
+Totals          25    23      92.00   
+Total Bits      270   261     96.67   
+Total Bits 0->1 135   130     96.30   
+Total Bits 1->0 135   131     97.04   
+
+                              
+Ports          13  12  92.31  
+Port Bits      176 175 99.43  
+Port Bits 0->1 88  87  98.86  
+Port Bits 1->0 88  88  100.00 
+
+                              
+Signals          12 11 91.67  
+Signal Bits      94 86 91.49  
+Signal Bits 0->1 47 43 91.49  
+Signal Bits 1->0 47 43 91.49  
+
+Port Details
+               Toggle Toggle 1->0 Toggle 0->1 Direction 
+reset          No     Yes         No          INPUT     
+clock          Yes    Yes         Yes         INPUT     
+frame_n        Yes    Yes         Yes         INPUT     
+valid_n        Yes    Yes         Yes         INPUT     
+din            Yes    Yes         Yes         INPUT     
+arbhead        Yes    Yes         Yes         INPUT     
+busy_n         Yes    Yes         Yes         OUTPUT    
+okstep         Yes    Yes         Yes         OUTPUT    
+iarbin[15:0]   Yes    Yes         Yes         INPUT     
+arbout[15:0]   Yes    Yes         Yes         OUTPUT    
+dout[15:0]     Yes    Yes         Yes         OUTPUT    
+valido_n[15:0] Yes    Yes         Yes         OUTPUT    
+frameo_n[15:0] Yes    Yes         Yes         INOUT     
+
+Signal Details
+               Toggle Toggle 1->0 Toggle 0->1 
+addrsf[4:0]    Yes    Yes         Yes         
+addrsel[4:0]   Yes    Yes         Yes         
+addrfsr[5:0]   Yes    Yes         Yes         
+din1           Yes    Yes         Yes         
+frame1_n       Yes    Yes         Yes         
+frame2_n       Yes    Yes         Yes         
+vald1_n        Yes    Yes         Yes         
+arbena         Yes    Yes         Yes         
+arbin[15:0]    Yes    Yes         Yes         
+busy1_n        Yes    Yes         Yes         
+addrsel_g[4:0] Yes    Yes         Yes         
+i[3:0]         No     No          No          
+
+
+===============================================================================
+Module : router_io
+===============================================================================
+SCORE  LINE   TOGGLE FSM    
+ 99.56 --      99.56 --     
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs_Test/ces_svtb_2019.06/labs/lab6a/./router_io.sv
+
+Module self-instances :
+
+SCORE  LINE   TOGGLE FSM    NAME                   
+ 99.56 --      99.56 --     router_test_top.top_io 
+
+
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Module : router_io
+                Total Covered Percent 
+Totals          9     8       88.89   
+Total Bits      228   227     99.56   
+Total Bits 0->1 114   114     100.00  
+Total Bits 1->0 114   113     99.12   
+
+                          
+Ports          1 1 100.00 
+Port Bits      2 2 100.00 
+Port Bits 0->1 1 1 100.00 
+Port Bits 1->0 1 1 100.00 
+
+                                
+Signals          8   7   87.50  
+Signal Bits      226 225 99.56  
+Signal Bits 0->1 113 113 100.00 
+Signal Bits 1->0 113 112 99.12  
+
+Port Details
+      Toggle Toggle 1->0 Toggle 0->1 Direction 
+clock Yes    Yes         Yes         INPUT     
+
+Signal Details
+               Toggle Toggle 1->0 Toggle 0->1 
+reset_n        No     No          Yes         
+din[15:0]      Yes    Yes         Yes         
+frame_n[15:0]  Yes    Yes         Yes         
+valid_n[15:0]  Yes    Yes         Yes         
+dout[15:0]     Yes    Yes         Yes         
+valido_n[15:0] Yes    Yes         Yes         
+busy_n[15:0]   Yes    Yes         Yes         
+frameo_n[15:0] Yes    Yes         Yes         
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.top_io
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    
+ 99.56 --      99.56 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    
+ 99.56 --      99.56 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    NAME      
+ 99.56 --      99.56 --     router_io 
+
+
+Parent : 
+
+SCORE  LINE   TOGGLE FSM    NAME            
+100.00 100.00 100.00 --     router_test_top 
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Since this is the module's only instance, the coverage report is the same as for the module.
+===============================================================================
+Module : router
+===============================================================================
+SCORE  LINE   TOGGLE FSM    
+ 99.89 100.00  99.79 --     
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs_Test/ces_svtb_2019.06/labs/lab6a/../../rtl/router.v
+
+Module self-instances :
+
+SCORE  LINE   TOGGLE FSM    NAME                
+ 99.89 100.00  99.79 --     router_test_top.dut 
+
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Module : router
+
+             Line No.   Total   Covered  Percent
+TOTAL                        7        7   100.00
+ALWAYS            112        1        1   100.00
+ALWAYS            117        6        6   100.00
+
+111                     begin
+112        1/1              arb_head_num <= 4'b0;
+113                     end
+114                     
+115                     always @(posedge clock)
+116                     begin
+117        1/1              dout <= doint;
+118        1/1              valido_n <= valdoint_n;
+119        1/1              frameo_n <= frameoint_n;
+120        1/1              if (reset == 1'b0)
+121                         begin
+122        1/1          	if (okstep[arb_head_num] == 1'b1)
+123        1/1          	    arb_head_num <= arb_head_num + 1;
+                        MISSING_ELSE
+124                         end
+                        MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Module : router
+                Total Covered Percent 
+Totals          33    31      93.94   
+Total Bits      942   940     99.79   
+Total Bits 0->1 471   470     99.79   
+Total Bits 1->0 471   470     99.79   
+
+                              
+Ports          9   8   88.89  
+Port Bits      228 227 99.56  
+Port Bits 0->1 114 114 100.00 
+Port Bits 1->0 114 113 99.12  
+
+                                
+Signals          24  23  95.83  
+Signal Bits      714 713 99.86  
+Signal Bits 0->1 357 356 99.72  
+Signal Bits 1->0 357 357 100.00 
+
+Port Details
+               Toggle Toggle 1->0 Toggle 0->1 Direction 
+reset_n        No     No          Yes         INPUT     
+clock          Yes    Yes         Yes         INPUT     
+din[15:0]      Yes    Yes         Yes         INPUT     
+frame_n[15:0]  Yes    Yes         Yes         INPUT     
+valid_n[15:0]  Yes    Yes         Yes         INPUT     
+dout[15:0]     Yes    Yes         Yes         OUTPUT    
+valido_n[15:0] Yes    Yes         Yes         OUTPUT    
+busy_n[15:0]   Yes    Yes         Yes         OUTPUT    
+frameo_n[15:0] Yes    Yes         Yes         OUTPUT    
+
+Signal Details
+                  Toggle Toggle 1->0 Toggle 0->1 
+reset             No     Yes         No          
+arb0[15:0]        Yes    Yes         Yes         
+arb1[15:0]        Yes    Yes         Yes         
+arb2[15:0]        Yes    Yes         Yes         
+arb3[15:0]        Yes    Yes         Yes         
+arb4[15:0]        Yes    Yes         Yes         
+arb5[15:0]        Yes    Yes         Yes         
+arb6[15:0]        Yes    Yes         Yes         
+arb7[15:0]        Yes    Yes         Yes         
+di[15:0]          Yes    Yes         Yes         
+arb8[15:0]        Yes    Yes         Yes         
+arb9[15:0]        Yes    Yes         Yes         
+arb10[15:0]       Yes    Yes         Yes         
+arb11[15:0]       Yes    Yes         Yes         
+arb12[15:0]       Yes    Yes         Yes         
+arb13[15:0]       Yes    Yes         Yes         
+arb14[15:0]       Yes    Yes         Yes         
+arb15[15:0]       Yes    Yes         Yes         
+arb_head[15:0]    Yes    Yes         Yes         
+okstep[15:0]      Yes    Yes         Yes         
+doint[15:0]       Yes    Yes         Yes         
+valdoint_n[15:0]  Yes    Yes         Yes         
+frameoint_n[15:0] Yes    Yes         Yes         
+arb_head_num[3:0] Yes    Yes         Yes         
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    
+ 99.89 100.00  99.79 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.61 100.00  97.23 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    NAME   
+ 99.89 100.00  99.79 --     router 
+
+
+Parent : 
+
+SCORE  LINE   TOGGLE FSM    NAME            
+100.00 100.00 100.00 --     router_test_top 
+
+
+Subtrees :
+
+SCORE  LINE   TOGGLE FSM    NAME  
+ 98.33 100.00  96.67 --     rts0  
+ 98.33 100.00  96.67 --     rts1  
+ 98.33 100.00  96.67 --     rts10 
+ 98.33 100.00  96.67 --     rts11 
+ 98.33 100.00  96.67 --     rts12 
+ 98.33 100.00  96.67 --     rts13 
+ 98.33 100.00  96.67 --     rts14 
+ 98.33 100.00  96.67 --     rts15 
+ 98.33 100.00  96.67 --     rts2  
+ 98.33 100.00  96.67 --     rts3  
+ 98.33 100.00  96.67 --     rts4  
+ 98.33 100.00  96.67 --     rts5  
+ 98.33 100.00  96.67 --     rts6  
+ 98.33 100.00  96.67 --     rts7  
+ 98.33 100.00  96.67 --     rts8  
+ 98.33 100.00  96.67 --     rts9  
+
+
+
+-------------------------------------------------------------------------------
+Since this is the module's only instance, the coverage report is the same as for the module.
+===============================================================================
+Module : router_test_top
+===============================================================================
+SCORE  LINE   TOGGLE FSM    
+100.00 100.00 100.00 --     
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs_Test/ces_svtb_2019.06/labs/lab6a/./router_test_top.sv
+
+Module self-instances :
+
+SCORE  LINE   TOGGLE FSM    NAME            
+100.00 100.00 100.00 --     router_test_top 
+
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Module : router_test_top
+
+             Line No.   Total   Covered  Percent
+TOTAL                        4        4   100.00
+INITIAL            26        2        2   100.00
+ALWAYS             31        2        2   100.00
+
+25                        initial begin
+26         1/1              $timeformat(-9, 1, "ns", 10);
+27         1/1              $fsdbDumpvars;
+28                        end
+29                      
+30                        always begin
+31         2/2              #(simulation_cycle/2) SystemClock = ~SystemClock;
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Module : router_test_top
+                Total Covered Percent 
+Totals          1     1       100.00  
+Total Bits      2     2       100.00  
+Total Bits 0->1 1     1       100.00  
+Total Bits 1->0 1     1       100.00  
+
+                            
+Signals          1 1 100.00 
+Signal Bits      2 2 100.00 
+Signal Bits 0->1 1 1 100.00 
+Signal Bits 1->0 1 1 100.00 
+
+Signal Details
+            Toggle Toggle 1->0 Toggle 0->1 
+SystemClock Yes    Yes         Yes         
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    
+100.00 100.00 100.00 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    
+ 98.66 100.00  97.32 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    NAME            
+100.00 100.00 100.00 --     router_test_top 
+
+
+Parent : 
+
+none
+----------------
+
+
+Subtrees :
+
+SCORE  LINE   TOGGLE FSM    NAME   
+ 98.61 100.00  97.23 --     dut    
+ 99.56 --      99.56 --     top_io 
+
+
+
+-------------------------------------------------------------------------------
+Since this is the module's only instance, the coverage report is the same as for the module.

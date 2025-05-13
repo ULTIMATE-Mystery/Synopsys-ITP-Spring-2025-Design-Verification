@@ -1,0 +1,32 @@
+<session version="1.1" release="W-2024.09-SP1-1" timestp="2025-05-06 22:57:01 GMT">
+  <info>
+    <attr name="datetime" value="Tue May  6 15:53:43 2025
+"/>
+    <attr name="command" value="urg -dir simv.vdb -format text"/>
+    <attr name="top_instance" value="rtslicef,router_test_top"/>
+  </info>
+  <hvp>
+    <datadef>
+      <metdef name="Line" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Toggle" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="FSM" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Group" type="percent" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Line" value="395/419" />
+    <metric name="Toggle" value="5345/5754" />
+    <metric name="Group" value="100%" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+    <scope type="group" name="router_test_top.t::Scoreboard::router_cov">
+      <metric name="Group" value="100%" />
+    </scope>
+  </scope>
+  <scope type="assert" name="Statistics">
+  </scope>
+  </old_coverage>
+</session>
