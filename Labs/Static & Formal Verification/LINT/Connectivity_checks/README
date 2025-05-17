@@ -1,0 +1,11 @@
+Summary
+----------------------------------------------------------------------
+This testcase exercises for VC Lint rule "CONN_NET_UNDRIVEN" which flags when 
+there is a undriven nets are there in the design. This testcase represents a scenario
+where there are undriven nets are present in the design
+
+Testcase Details
+----------------------------------------------------------------------
+Design      : Connectivity_checks.v
+VC Lint     : vc_lint.tcl
+Command     : make lint 

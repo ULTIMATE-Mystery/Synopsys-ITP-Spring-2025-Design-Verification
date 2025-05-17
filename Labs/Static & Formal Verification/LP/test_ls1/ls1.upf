@@ -1,0 +1,83 @@
+# Top domain, vdd, vss
+create_power_domain d_top  -include_scope
+create_supply_net   vdd    -domain d_top
+create_supply_port  vdd    -direction in
+connect_supply_net  vdd    -ports vdd
+create_supply_net   vss    -domain d_top
+create_supply_port  vss    -direction in
+connect_supply_net  vss    -ports vss
+add_port_state vdd  -state {HV  1.32}
+add_port_state vdd  -state {LV  1.08}
+add_port_state vss  -state {ZV  0.0}
+set_domain_supply_net d_top -primary_power_net vdd  -primary_ground_net vss
+
+# Domain A: test shifter connections
+create_power_domain d_a    -elements ua
+# vdda
+create_supply_net   vdda   -domain d_a
+create_supply_port  vdda   -direction in
+connect_supply_net  vdda   -ports vdda
+add_port_state vdda -state {HV  1.32}
+add_port_state vdda -state {LV  1.08}
+# primaries
+create_supply_net   vdd    -domain d_a  -reuse
+create_supply_net   vss    -domain d_a  -reuse
+set_domain_supply_net d_a   -primary_power_net vdda -primary_ground_net vss
+# Needed by mvrc to connect to LS in top
+create_supply_net   vdda   -domain d_top -reuse
+
+# Domain B: more tests of shifter connections
+create_power_domain d_b    -elements ub
+create_supply_net   vddb   -domain d_b
+create_supply_port  vddb   -direction in
+connect_supply_net  vddb   -ports vddb
+create_supply_net   vdd    -domain d_b  -reuse
+create_supply_net   vss    -domain d_b  -reuse
+add_port_state vddb -state {HV  1.32}
+add_port_state vddb -state {LV  0.50} ;# very low
+set_domain_supply_net d_b   -primary_power_net vddb -primary_ground_net vss
+
+# Domain C: no policy
+create_power_domain d_c    -elements uc
+create_supply_net   vddc   -domain d_c
+create_supply_port  vddc   -direction in
+connect_supply_net  vddc   -ports vddc
+create_supply_net   vdd    -domain d_c  -reuse
+create_supply_net   vss    -domain d_c  -reuse
+add_port_state vddc -state {HV  1.32}
+add_port_state vddc -state {LV  1.08}
+set_domain_supply_net d_c   -primary_power_net vddc -primary_ground_net vss
+
+# Domain D: always at same voltage to introduce redundant policy
+create_power_domain d_d    -elements ud
+create_supply_net   vddd   -domain d_d
+create_supply_port  vddd   -direction in
+connect_supply_net  vddd   -ports vddd
+create_supply_net   vdd    -domain d_d  -reuse
+create_supply_net   vss    -domain d_d  -reuse
+add_port_state vddd -state {HV  1.32}
+set_domain_supply_net d_d   -primary_power_net vddd -primary_ground_net vss
+
+# Domain E: reuses vdd just to introduce a domain-domain crossing
+create_power_domain d_e    -elements ue
+create_supply_net   vdd    -domain d_e  -reuse
+create_supply_net   vss    -domain d_e  -reuse
+set_domain_supply_net d_e   -primary_power_net vdd -primary_ground_net vss
+
+# States
+create_pst my_pst -supplies         {vss vdd vdda vddb vddc vddd}
+add_pst_state S1 -pst my_pst -state {ZV  HV  HV    HV   HV   HV}
+add_pst_state S2 -pst my_pst -state {ZV  HV  LV    LV   LV   HV}
+
+# Shifter strategies
+set_level_shifter s_ai -domain d_a -location parent -applies_to inputs \
+   -rule low_to_high ;# wrong
+set_level_shifter s_ao -domain d_a -location parent -applies_to outputs
+set_level_shifter s_bi -domain d_b -location parent -applies_to inputs
+set_level_shifter s_bn -domain d_a -no_shift -elements ua/ao0
+set_level_shifter s_bo -domain d_b -location parent -applies_to outputs
+# redundant to s_bo on crossing be1:
+set_level_shifter s_e  -domain d_e -location parent -applies_to inputs
+
+# Connect lower voltage to level shifters for bit 0 not bit 1
+connect_supply_net vdda -ports {si0/VDD so0/VDDI}

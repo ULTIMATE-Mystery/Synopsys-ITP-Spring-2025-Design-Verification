@@ -1,0 +1,3 @@
+../design/traffic.v 
+../design/vlog_street_ctrl_fsm.v 
+-sverilog 

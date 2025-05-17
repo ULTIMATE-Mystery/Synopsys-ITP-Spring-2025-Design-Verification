@@ -1,0 +1,133 @@
+# ------------------------------------------------------------------------------------------
+# COMMENTS
+# ------------------------------------------------------------------------------------------
+# Make sure to have below commands in VCF setup
+# 
+#                                    Current convention          |  Alternative convention 
+#                                    ||                          |  ||   
+#                                    ||               VCF step   |  ||   VCF description
+# fusa_map_status  SNO  -sff_status  UU   (reuse)    (Step-1)    |  SX   Structurally not observed
+# fusa_map_status  CNC  -sff_status  UT   (reuse)    (Step-2)    |  CC   Controllability Non-controllable
+# fusa_map_status  SND  -sff_status  NF   (reuse)    (Step-3)    |  XS   Structurally not detected
+# fusa_map_status  SSF  -sff_status  UU   (reuse)    (Step-3)    |  SS   Structurally not observed not detected
+# fusa_map_status  OOB  -sff_status  ON   (reuse)    (Step-4)    |  WX   Observability observed
+# fusa_map_status  ONO  -sff_status  UB   (reuse)    (Step-4)    |  FX   Observability non-observable
+# fusa_map_status  ODT  -sff_status  OD   (reuse)    (Step-5)    |  WW   Observable and detected
+# fusa_map_status  OND  -sff_status  OF   (new)      (Step-5)    |  WF   Observable and not-detected
+# fusa_map_status  NOD  -sff_status  UB   (reuse)    (Step-5)    |  FW   Non-observable and detected
+# fusa_map_status  NON  -sff_status  UB   (reuse)    (Step-5)    |  FF   Non-observable and not detected
+# fusa_map_status  DDT  -sff_status  ND   (reuse)    (Step-5)    |  XW   Detectability detected
+# fusa_map_status  DND  -sff_status  NF   (new)      (Step-5)    |  XF   Detectability non detected
+# fusa_map_status  FNR  -sff_status  NN   (reuse)    (Unknown)   |  XX   Formal no result
+# ------------------------------------------------------------------------------------------
+
+StatusDefinitions
+{
+
+    Redefine ND NX "Previously Not Detected"
+    Redefine DD DX "Previously Dangerous Detected";
+    
+    # Z01X + VCF
+    # VCF: "Unknown": Inconclusive or Not available or No status change
+    # 
+    #                       # Z01X                        # VCF
+    NN "Not Obs & Not Det"; # Not Observed | Not Detected # Unknown             | Unknown
+    ND "Not Obs & Det";     # Not Observed |     Detected # Unknown             | Formally Detectable
+    ON "Obs & Not Det";     #     Observed | Not Detected # Formally Observable | Unknown
+    OD "Obs & Det";         #     Observed |     Detected # Formally Observable | Formally Detectable 
+    
+    # VCF only
+    OF "Formally Obs & Formally Not Det"; # Formally Observable | Formally Non-Detectable 
+    NF "Unknown & Formally Not Det";      # Unknown | Formally Non-Detectable
+    
+    # Z01X only
+    NP "Not Obs & Pot Det"; # Not Observed       | Potential Detected
+    PN "Pot Obs & Not Det"; # Potential Observed | Not Detected
+    OP "Obs & Pot Det";     # Observed           | Potentially Detected
+    
+    # These are Z01X-native status and reused for VCF
+    #    Z01X               # VCF
+    # UT Untestable Tied    # Formally Non-Controllable
+    # UB Untestable Blocked # Formally Non-Observable or
+                            # Formally Non-Observable and Detectable or
+                            # Formally Non-Observable and Formally Non-Detectable
+    # UU Untestable         # Structurally Non-Observable or
+                            # Structurally Non-Observable and Structurally Non-Detectability
+    
+    EE "INVALID PROMOTION";
+    
+    StatusGroups
+    {
+        SA "Safe"                             ( UT < UB < UR < UU );                          # P10182440-20367
+        DU "Dangerous Unobserved"             ( NC < NO < NT );                               # P10182440-20367
+        DA "Dangerous Assumed"                ( HA < HM < HT < OA < OZ < IA < IP < IF < IX ); # P10182440-20367
+        DN "Dangerous Not Diagnosed"          ( NN < NP < PN < ON < OP );
+        DD "Dangerous Diagnosed"              ( ND < OD );
+        FN "Formally Dangerous Not Diagnosed" ( NF < OF );
+    }
+    
+    DefaultStatus ( NN )
+    
+    Selected ( NA, NN, NP, PN, ON, OP, NF )
+    
+    PromotionTable
+    {
+        PromoteOrder( DU < DA < DN < DD < FN < SA < EE )
+        
+        # ERRORS
+        # We check for errors between tools (Z01X vs VCF)
+        
+        # SA(*) from Z01X vs DN(ON) from VCF or opposite
+        Promote( UT + ON => EE )
+        Promote( UB + ON => EE )
+        Promote( UR + ON => EE )
+        Promote( UU + ON => EE )
+        
+        # SA(*) from Z01X vs DD(OD) from VCF or opposite
+        Promote( UT + OD => EE )
+        Promote( UB + OD => EE )
+        Promote( UR + OD => EE )
+        Promote( UU + OD => EE )
+        
+        # SA(*) from Z01X vs FN(OF) from VCF
+        Promote( UT + OF => EE )
+        Promote( UB + OF => EE )
+        Promote( UR + OF => EE )
+        Promote( UU + OF => EE )
+        
+        # DD(*) from Z01X vs FN(*) from VCF
+        Promote( DD + FN => EE )
+    
+    }
+
+}
+
+Coverage {
+    "Fsafe  " = "( SA ) / ( NA + SA + DU + DA + DN + DD + FN )";
+    "DC(Krf)" = "( DD ) / ( NA +      DU + DA + DN + DD + FN )";
+}
+
+
+SafetyMechanism PSM_0004 {
+    Detect {
+        "test.DUT.Error"
+    }
+}
+
+FailureMode FM_007 {
+    Observe {
+        "test.DUT.DataOut"
+    }
+    SafetyMechanisms (PSM_0004)
+}
+
+# This is a template. Please edit as desired.
+#
+# 1- Set stuck-at fault type (0/1)
+# 2- Choose fault classes
+
+FaultGenerate FM_007 {
+    NA [0, 1] { PORT "FIFO.sdpram_i1.sdpram_i1.**" }
+    NA [0, 1] { VARI "FIFO.sdpram_i1.sdpram_i1.**" }
+}
+

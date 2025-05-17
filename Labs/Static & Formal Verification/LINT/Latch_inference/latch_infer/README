@@ -1,0 +1,10 @@
+Summary
+----------------------------------------------------------------------
+This testcase exercieses for VC Lint rule "CODING_LATCH_INFER" which flags when there is a latch inferance
+This testcase reprensents a scenario for which infer a Latch in the design.
+
+Testcase Details
+----------------------------------------------------------------------
+Design 		: latch_infer_with_if.v
+VC Lint 	: vc_lint.tcl
+Command     : make lint 

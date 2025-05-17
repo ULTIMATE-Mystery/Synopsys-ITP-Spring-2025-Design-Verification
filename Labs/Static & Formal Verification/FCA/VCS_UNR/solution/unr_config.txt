@@ -1,0 +1,5 @@
+-top traffic
+-covInput simv.vdb
+-covDUT TB.T1
+-clock clk 100
+-reset rst 1

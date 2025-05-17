@@ -1,0 +1,11 @@
+Summary
+----------------------------------------------------------------------
+This testcase exercises VC-LP for various UPF and design issues 
+possible for isolation implementation. This testcase represents a scenario
+for a post-synthesis netlist
+
+Testcase Details
+----------------------------------------------------------------------
+Design      : iso2.v
+UPF         : iso2.upf
+Command     : make vcst

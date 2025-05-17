@@ -1,0 +1,119 @@
+
+
+### MasterSourceFile	Num_calls 1	Total_time 00:00:00.783088	Total malloc-M 25
+1	Shell:	Time:00:00:00.783088	CpuTime:0.47	 Malloc-MB:25
+
+### action	Num_calls 6	Total_time 00:00:00.495226	Total malloc-M 0
+1	Shell:	Time:00:00:00.401449	CpuTime:0.00	 Malloc-MB:0
+2	Shell:	Time:00:00:00.040715	CpuTime:0.00	 Malloc-MB:0
+3	Shell:	Time:00:00:00.040589	CpuTime:0.00	 Malloc-MB:0
+4	Shell:	Time:00:00:00.005100	CpuTime:0.01	 Malloc-MB:0
+5	Shell:	Time:00:00:00.003705	CpuTime:0.00	 Malloc-MB:0
+6	Shell:	Time:00:00:00.003668	CpuTime:0.00	 Malloc-MB:0
+
+### check_fv	Num_calls 2	Total_time 00:00:00.486113	Total malloc-M 0
+1	Shell:	Time:00:00:00.252411	CpuTime:0.01	 Malloc-MB:0
+2	Shell:	Time:00:00:00.233702	CpuTime:0.01	 Malloc-MB:0
+
+### configure_read_tag	Num_calls 1	Total_time 00:00:00.156984	Total malloc-M 5
+1	File:/home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/auxx/monet/tcl/merge_commands.tcl::0	Time:00:00:00.156984	CpuTime:0.06	 Malloc-MB:5
+
+### create_clock	Num_calls 1	Total_time 00:00:00.010188	Total malloc-M 0
+1	File:run.tcl::6	Time:00:00:00.010188	CpuTime:0.01	 Malloc-MB:0
+
+### create_proc_command	Num_calls 130	Total_time 00:00:00.009826	Total malloc-M 0
+
+### create_reset	Num_calls 1	Total_time 00:00:00.001489	Total malloc-M 0
+1	File:run.tcl::7	Time:00:00:00.001489	CpuTime:0.00	 Malloc-MB:0
+
+### define_proc_attributes	Num_calls 140	Total_time 00:00:00.004250	Total malloc-M 0
+
+### get_app_var	Num_calls 2	Total_time 00:00:00.000015	Total malloc-M 0
+
+### get_blackbox	Num_calls 1	Total_time 00:00:00.000045	Total malloc-M 0
+
+### get_fml_var	Num_calls 2	Total_time 00:00:00.000326	Total malloc-M 0
+
+### get_glassbox	Num_calls 1	Total_time 00:00:00.000072	Total malloc-M 0
+
+### get_message_db_ptr	Num_calls 1	Total_time 00:00:00.000008	Total malloc-M 0
+
+### get_report_db_ptr	Num_calls 1	Total_time 00:00:00.000006	Total malloc-M 0
+
+### get_snips	Num_calls 1	Total_time 00:00:00.000546	Total malloc-M 0
+
+### gui_log_cmd	Num_calls 1	Total_time 00:00:00.000107	Total malloc-M 0
+
+### read_file	Num_calls 1	Total_time 00:00:00.748641	Total malloc-M 11
+1	File:run.tcl::3	Time:00:00:00.748641	CpuTime:0.44	 Malloc-MB:11
+
+### redirect	Num_calls 3	Total_time 00:00:00.014892	Total malloc-M 0
+1	Shell:	Time:00:00:00.014154	CpuTime:0.02	 Malloc-MB:0
+
+### rename	Num_calls 2	Total_time 00:00:00.000077	Total malloc-M 0
+
+### report_assertion_density	Num_calls 1	Total_time 00:00:00.014048	Total malloc-M 0
+1	Shell:	Time:00:00:00.014048	CpuTime:0.02	 Malloc-MB:0
+
+### report_constant	Num_calls 3	Total_time 00:00:00.000378	Total malloc-M 0
+
+### report_fv_complexity	Num_calls 2	Total_time 00:00:00.011117	Total malloc-M 0
+1	Shell:	Time:00:00:00.007697	CpuTime:0.01	 Malloc-MB:0
+2	Shell:	Time:00:00:00.003420	CpuTime:0.00	 Malloc-MB:0
+
+### report_grid_usage	Num_calls 2	Total_time 00:00:00.000293	Total malloc-M 0
+
+### restore_session	Num_calls 1	Total_time 00:00:00.000064	Total malloc-M 0
+
+### set_app_var	Num_calls 8	Total_time 00:00:00.001032	Total malloc-M 0
+
+### set_fml_appmode	Num_calls 1	Total_time 00:00:00.000041	Total malloc-M 0
+
+### sim_run	Num_calls 1	Total_time 00:00:00.013183	Total malloc-M 12
+1	File:run.tcl::8	Time:00:00:00.013183	CpuTime:0.01	 Malloc-MB:12
+
+### sim_save_reset	Num_calls 1	Total_time 00:00:00.008802	Total malloc-M 1
+1	File:run.tcl::9	Time:00:00:00.008802	CpuTime:0.01	 Malloc-MB:1
+
+### source	Num_calls 49	Total_time 00:00:01.219603	Total malloc-M 41
+1	Shell:	Time:00:00:00.782852	CpuTime:0.47	 Malloc-MB:25
+2	Shell:	Time:00:00:00.189730	CpuTime:0.07	 Malloc-MB:6
+3	File:/home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/auxx/monet/tcl/lowpower.tcl::30	Time:00:00:00.160031	CpuTime:0.07	 Malloc-MB:5
+4	Shell:	Time:00:00:00.018081	CpuTime:0.01	 Malloc-MB:1
+5	File:/home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/auxx/monet/tcl/fv.tcl::6	Time:00:00:00.005676	CpuTime:0.00	 Malloc-MB:0
+6	File:/home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/auxx/monet/tcl/lowpower.tcl::28	Time:00:00:00.004949	CpuTime:0.00	 Malloc-MB:0
+7	Shell:	Time:00:00:00.004106	CpuTime:0.00	 Malloc-MB:0
+8	File:/home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/auxx/monet/tcl/lowpower.tcl::31	Time:00:00:00.003972	CpuTime:0.00	 Malloc-MB:0
+9	Shell:	Time:00:00:00.003766	CpuTime:0.00	 Malloc-MB:0
+10	File:/home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/auxx/monet/tcl/fv.tcl::12	Time:00:00:00.002389	CpuTime:0.00	 Malloc-MB:0
+11	File:/home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/auxx/monet/tcl/fv.tcl::7	Time:00:00:00.002281	CpuTime:0.00	 Malloc-MB:0
+12	File:/home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/auxx/monet/tcl/fv.tcl::10	Time:00:00:00.002223	CpuTime:0.01	 Malloc-MB:0
+13	Shell:	Time:00:00:00.002218	CpuTime:0.01	 Malloc-MB:0
+14	File:/home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/auxx/monet/tcl/lowpower.tcl::12	Time:00:00:00.001826	CpuTime:0.00	 Malloc-MB:0
+15	File:/home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/auxx/monet/tcl/cdc_scripts/cdc_default_settings.tcl::111	Time:00:00:00.001636	CpuTime:0.00	 Malloc-MB:0
+16	File:/home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/auxx/monet/tcl/lowpower.tcl::10	Time:00:00:00.001623	CpuTime:0.00	 Malloc-MB:0
+17	File:/home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/auxx/monet/tcl/fv.tcl::8	Time:00:00:00.001355	CpuTime:0.00	 Malloc-MB:0
+18	File:/home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/auxx/monet/tcl/lowpower.tcl::13	Time:00:00:00.001246	CpuTime:0.00	 Malloc-MB:0
+19	Shell:	Time:00:00:00.001243	CpuTime:0.00	 Malloc-MB:0
+20	File:/home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/auxx/monet/tcl/lowpower.tcl::11	Time:00:00:00.001209	CpuTime:0.00	 Malloc-MB:0
+21	File:/home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/auxx/monet/tcl/fv.tcl::13	Time:00:00:00.001147	CpuTime:0.00	 Malloc-MB:0
+22	File:/home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/auxx/monet/tcl/lowpower.tcl::20	Time:00:00:00.001137	CpuTime:0.00	 Malloc-MB:0
+23	File:/home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/auxx/monet/tcl/cdc_scripts/cdc_default_settings.tcl::112	Time:00:00:00.001129	CpuTime:0.00	 Malloc-MB:0
+24	Shell:	Time:00:00:00.001119	CpuTime:0.00	 Malloc-MB:0
+25	File:/home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/auxx/monet/tcl/lowpower.tcl::9	Time:00:00:00.001076	CpuTime:0.00	 Malloc-MB:0
+26	Shell:	Time:00:00:00.001066	CpuTime:0.00	 Malloc-MB:0
+27	Shell:	Time:00:00:00.001052	CpuTime:0.00	 Malloc-MB:0
+28	File:/home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/auxx/monet/tcl/lowpower.tcl::29	Time:00:00:00.001041	CpuTime:0.00	 Malloc-MB:0
+29	Shell:	Time:00:00:00.001006	CpuTime:0.00	 Malloc-MB:0
+
+### verdi_cmd	Num_calls 7	Total_time 00:00:00.611027	Total malloc-M 0
+1	Shell:	Time:00:00:00.466906	CpuTime:0.00	 Malloc-MB:0
+2	Shell:	Time:00:00:00.046265	CpuTime:0.00	 Malloc-MB:0
+3	Shell:	Time:00:00:00.041232	CpuTime:0.00	 Malloc-MB:0
+4	Shell:	Time:00:00:00.021529	CpuTime:0.00	 Malloc-MB:0
+5	Shell:	Time:00:00:00.018074	CpuTime:0.00	 Malloc-MB:0
+6	Shell:	Time:00:00:00.015588	CpuTime:0.00	 Malloc-MB:0
+7	Shell:	Time:00:00:00.001433	CpuTime:0.00	 Malloc-MB:0
+
+ ****************************Shell commands Recording************************
+___fvReportGridUsage /home/shtp/ITP2025/Labs/FPV/FPV/run/vcst_rtdb/.internal/verdi/gridUsage.xml1

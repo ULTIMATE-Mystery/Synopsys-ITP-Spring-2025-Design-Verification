@@ -1,0 +1,65 @@
+# Top domain, vdd, vss
+create_power_domain d_top  -include_scope
+create_supply_net   vdd    -domain d_top
+create_supply_port  vdd    -direction in
+connect_supply_net  vdd    -ports vdd
+create_supply_net   vss    -domain d_top
+create_supply_port  vss    -direction in
+connect_supply_net  vss    -ports vss
+add_port_state vdd  -state {HV  1.32}
+add_port_state vss  -state {ZV  0.0}
+set_domain_supply_net d_top -primary_power_net vdd  -primary_ground_net vss
+
+# Domain A
+create_power_domain d_a    -elements ua
+# vdda
+create_supply_net   vdda   -domain d_a
+create_supply_port  vdda   -direction in
+connect_supply_net  vdda   -ports vdda
+add_port_state vdda -state {HV  1.32}
+# primaries
+create_supply_net   vdd    -domain d_a  -reuse
+create_supply_net   vss    -domain d_a  -reuse
+set_domain_supply_net d_a   -primary_power_net vdda -primary_ground_net vss
+
+# Domain B
+create_power_domain d_b    -elements ub
+create_supply_net   vddb   -domain d_b
+create_supply_port  vddb   -direction in
+connect_supply_net  vddb   -ports vddb
+create_supply_net   vdd    -domain d_b  -reuse
+create_supply_net   vss    -domain d_b  -reuse
+add_port_state vddb -state {HV  1.32}
+add_port_state vddb -state {OFF off}
+set_domain_supply_net d_b   -primary_power_net vddb -primary_ground_net vss
+
+# Supply C
+create_supply_net   vddc   -domain d_top
+create_supply_port  vddc   -direction in
+connect_supply_net  vddc   -ports vddc
+add_port_state vddc -state {HV  1.32}
+add_port_state vddc -state {OFF off}
+create_supply_net   vddc   -domain d_b  -reuse
+
+# States
+create_pst my_pst -supplies         {vss vdd vdda vddb vddc}
+add_pst_state S1 -pst my_pst -state {ZV  HV  HV    HV   HV}
+add_pst_state S2 -pst my_pst -state {ZV  HV  HV    HV   OFF}
+add_pst_state S3 -pst my_pst -state {ZV  HV  HV    OFF  OFF}
+
+# Retention strategies
+set_retention ra -domain d_a  -retention_power_net vdd \
+   -retention_ground_net vss
+set_retention rb -domain d_b -retention_power_net vdd \
+   -retention_ground_net vss
+set_retention_control ra -domain d_a -save_signal {save low} \
+   -restore_signal {rest high}
+set_retention_control rb -domain d_b -save_signal {save low} \
+   -restore_signal {rest high}
+map_retention_cell rb -domain d_b -lib_cells RETFF
+
+# AOB connect supplies, matching verilog
+connect_supply_net vdd  -ports {ua/u1/VDDAON}
+connect_supply_net vdda -ports {ua/u2/VDDAON}
+connect_supply_net vddb -ports {ub/u1/VDDAON}
+connect_supply_net vddc -ports {ub/u2/VDDAON}

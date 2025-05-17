@@ -1,0 +1,11 @@
+Summary
+----------------------------------------------------------------------
+This testcase exercises VC-LP for various UPF and design issues 
+possible for retention and always-on buffer implementation. This testcase represents a scenario
+for a post-layout netlist (also called PG netlist)
+
+Testcase Details
+----------------------------------------------------------------------
+Design      : ret1.v
+UPF         : ret1.upf
+Command     : make vcst

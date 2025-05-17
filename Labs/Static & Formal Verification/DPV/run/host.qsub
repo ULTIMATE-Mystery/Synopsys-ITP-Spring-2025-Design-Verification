@@ -1,0 +1,1 @@
+1 |  | 250 | /SCRATCH | SGE | qsub -P bnormal -l qsc=m -l arch=glinux

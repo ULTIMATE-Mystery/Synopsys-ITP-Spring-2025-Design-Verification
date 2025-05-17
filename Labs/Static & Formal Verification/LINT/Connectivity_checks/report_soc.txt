@@ -1,0 +1,53 @@
+
+  -----------------------------------------------------------------------------
+  Report Summary
+  -----------------------------------------------------------------------------
+  Product Info
+    Name    : VC Static Master Shell
+    Version : J-2015.09-Alpha -- Aug 24, 2014
+
+  Report Info
+    Created : Aug 25, 2014  02:14:52
+
+
+  -----------------------------------------------------------------------------
+  Management Summary
+  -----------------------------------------------------------------------------
+  Stage    Family      Errors  Warnings     Infos
+  -----    --------  --------  --------  --------
+  NETLIST  CONN             2         0         0
+  -----    --------  --------  --------  --------
+  Total                     2         0         0
+
+
+  -----------------------------------------------------------------------------
+  Tree Summary
+  -----------------------------------------------------------------------------
+  Severity  Stage    Tag                  Count
+  --------  -----    -------------------  -----
+  error     NETLIST  CONN_NET_UNDRIVEN        2
+  --------  -----    -------------------  -----
+  Total                                       2
+
+
+
+  -----------------------------------------------------------------------------
+  CONN_NET_UNDRIVEN  (2 errors/0 waived)
+  -----------------------------------------------------------------------------
+  Tag          : CONN_NET_UNDRIVEN
+  Description  : Undriven net [Signal]
+  Violation    : Lint:1
+  Module       : top
+  Signal       : Clkout
+  FileName     : Connectivity_checks.v
+  LineNumber   : 3
+  LhsSize      : 0
+  RhsSize      : 0
+  -----------------------------------------------------------------------------
+  Tag          : CONN_NET_UNDRIVEN
+  Description  : Undriven net [Signal]
+  Violation    : Lint:2
+  Module       : top
+  Signal       : Net_undriven
+  LhsSize      : 0
+  RhsSize      : 0

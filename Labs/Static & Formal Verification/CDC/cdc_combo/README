@@ -1,0 +1,16 @@
+Summary
+----------------------------------------------------------------------
+This testcase exercises VC SG CDC for Combinatorial Logic in CDC Path 
+Good circuit
+2-FF synchronizer
+Buffer/Inverter allowed
+
+Bad circuit
+Logic between crossing path
+Logic between synchronizer flops
+
+Testcase Details
+----------------------------------------------------------------------
+Design      : cdc_combo.v
+SDC         : clk.sdc
+Command     : make vcst

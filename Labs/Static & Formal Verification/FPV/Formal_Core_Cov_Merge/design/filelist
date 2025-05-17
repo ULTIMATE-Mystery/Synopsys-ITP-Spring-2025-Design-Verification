@@ -1,0 +1,6 @@
+../design/traffic.v 
+../design/vlog_street_ctrl_fsm.v 
+-sverilog 
+../sva/traffic.sva 
+../sva/traffic_vlog_bind.sva 
++define+INLINE_SVA

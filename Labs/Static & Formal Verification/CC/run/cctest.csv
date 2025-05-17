@@ -1,0 +1,12 @@
+ENABLE, SOURCE, DESTINATION, NAME
+chip_top.test_ctl[5],chip_top.test_ctl[4],chip_top.ds, to_ds
+chip_top.test_ctl[5],chip_top.test_ctl[3],chip_top.sr, to_sr
+chip_top.test_ctl[5],chip_top.test_ctl[2],chip_top.se, to_se
+chip_top.test_ctl[5],chip_top.test_ctl[1],chip_top.pe, to_pe
+chip_top.test_ctl[5],chip_top.test_ctl[0],chip_top.pd, to_pd
+chip_top.test_ctl[5],chip_top.test_in,{chip_top.ibe,chip_top.din,chip_top.obe,chip_top.dout}, from_test
+(chip_top.test_ctl[5] && ~chip_top.port_ctl[6]),chip_top.moda_in,{chip_top.ibe,chip_top.din,chip_top.obe,chip_top.dout}, from_moda
+(chip_top.test_ctl[5] && chip_top.port_ctl[5] && ~chip_top.port_ctl[6]),chip_top.modb_in,{chip_top.ibe,chip_top.din,chip_top.obe,chip_top.dout}, from_modb
+(chip_top.test_ctl[5] && chip_top.port_ctl[5] && ~chip_top.port_ctl[6]),chip_top.modb_in[3],chip_top.ibe, from_modb3
+(chip_top.test_ctl[5] && chip_top.port_ctl[5] && chip_top.port_ctl[6]),chip_top.gpio_in,{chip_top.ibe,chip_top.din,chip_top.obe,chip_top.dout}, from_gpio
+~chip_top.test_ctl[5],chip_top.port_ctl[4:0],{chip_top.ds,chip_top.sr,chip_top.se,chip_top.pe,chip_top.pd}, from_port_ctl

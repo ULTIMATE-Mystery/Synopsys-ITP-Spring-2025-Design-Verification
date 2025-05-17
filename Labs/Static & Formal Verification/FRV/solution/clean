@@ -1,0 +1,1 @@
+rm -rf *rtdb* verdi* *.log* novas* certitudeDB certitudeTmp .certitude* VACOI_WORK* vcst_* .vcst_* vdCovLog evaluate_result.fsdb* elabcomLog *.lib++ *.rpt report*.txt *vdb no_trace* results.txt *.ses *.ses.* frv.sv

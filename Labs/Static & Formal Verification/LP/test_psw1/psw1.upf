@@ -1,0 +1,96 @@
+create_power_domain TOP -include_scope
+
+create_supply_port VDD  -domain TOP
+create_supply_port VDD1 -domain TOP
+create_supply_port VDD2 -domain TOP
+create_supply_port VDD4 -domain TOP
+#NOTE: VDD5 is not used in any PST
+create_supply_port VDD5 -domain TOP
+create_supply_port VDD6 -domain TOP
+create_supply_port VDD7 -domain TOP
+create_supply_port VSS  -domain TOP
+
+create_supply_net VDD  -domain TOP
+create_supply_net VDD1 -domain TOP -resolve parallel
+create_supply_net VDD2 -domain TOP -resolve parallel
+create_supply_net VDD4 -domain TOP -resolve parallel
+create_supply_net VDD5 -domain TOP -resolve parallel
+create_supply_net VDD6 -domain TOP -resolve parallel
+create_supply_net VDD7 -domain TOP -resolve parallel
+create_supply_net VSS  -domain TOP
+
+connect_supply_net VDD  -ports {VDD}
+connect_supply_net VDD1 -ports {VDD1 psw1/VDDSW}
+connect_supply_net VDD2 -ports {VDD2 psw2/VDDSW}
+
+# connect_supply_net VDD4 -ports {VDD2 psw2/VDDSW}
+connect_supply_net VDD4 -ports {VDD4}
+
+connect_supply_net VDD5 -ports {VDD5 psw5/VDDSW}
+connect_supply_net VDD6 -ports {VDD6 psw6/VDDSW}
+connect_supply_net VDD7 -ports {VDD7}
+connect_supply_net VSS  -ports {VSS}
+
+set_domain_supply_net TOP -primary_power_net VDD -primary_ground_net VSS
+
+create_power_switch psw1_strat -domain TOP  \
+   -output_supply_port {VDDSW VDD1} \
+   -input_supply_port {VDD VDD} \
+   -control_port {NSLEEPIN1  i11} \
+   -control_port {NSLEEPIN2  i12} \
+   -on_state {on1 VDD {NSLEEPIN1 && NSLEEPIN2}} \
+   -off_state {off1 {!NSLEEPIN1 && !NSLEEPIN2}}
+
+# has ack port
+create_power_switch psw2_strat -domain TOP \
+   -output_supply_port {VDDSW VDD2} \
+   -input_supply_port {VDD VDD} \
+   -control_port {NSLEEPIN1  i21} \
+   -control_port {NSLEEPIN2  i22} \
+   -on_state {on1 VDD {NSLEEPIN1 && NSLEEPIN2}} \
+   -off_state {off1 {!NSLEEPIN1 && !NSLEEPIN2}} \
+   -ack_port {NSLEEPOUT1 o21} \
+   -ack_port {NSLEEPOUT2 o22}
+
+# never used in design
+create_power_switch psw4_strat -domain TOP \
+   -output_supply_port {VDDSW VDD4} \
+   -input_supply_port {VDD VDD} \
+   -control_port {NSLEEPIN1  i41} \
+   -control_port {NSLEEPIN2  i42} \
+   -on_state {on1 VDD {NSLEEPIN1 && NSLEEPIN2}} \
+   -off_state {off1 {!NSLEEPIN1 && !NSLEEPIN2}} 
+
+# never used in PST
+#NOTE: psw5/VDDSW not used in any PST
+create_power_switch psw5_strat -domain TOP \
+   -output_supply_port {VDDSW VDD5} \
+   -input_supply_port {VDD VDD} \
+   -control_port {NSLEEPIN1  i51} \
+   -control_port {NSLEEPIN2  i52} \
+   -on_state {on1 VDD {NSLEEPIN1 && NSLEEPIN2}} \
+   -off_state {off1 {!NSLEEPIN1 && !NSLEEPIN2}} 
+
+# for rail order violation
+create_power_switch psw6_strat -domain TOP \
+   -output_supply_port {VDDSW VDD6} \
+   -input_supply_port {VDD VDD} \
+   -control_port {NSLEEPIN1  w61} \
+   -control_port {NSLEEPIN2  w62} \
+   -on_state {on1 VDD {NSLEEPIN1 && NSLEEPIN2}} \
+   -off_state {off1 {!NSLEEPIN1 && !NSLEEPIN2}} 
+
+add_port_state VDD  -state {HV 1.0} -state {OFF off}
+add_port_state VDD1 -state {HV 1.0} -state {OFF off}
+add_port_state VDD2 -state {HV 1.0} -state {OFF off}
+add_port_state VDD4 -state {HV 1.0} -state {OFF off}
+add_port_state VDD5 -state {HV 1.0} -state {OFF off}
+add_port_state VDD6 -state {HV 1.0} -state {OFF off}
+add_port_state VDD7 -state {HV 1.0} -state {OFF off}
+add_port_state VSS  -state {ZV 0.0}
+
+create_pst             pst -supplies {VSS VDD  VDD1 VDD2 VDD4 VDD6 VDD7}
+add_pst_state s0  -pst pst -state    { ZV  HV   HV   HV  HV   HV   OFF}
+add_pst_state s1  -pst pst -state    { ZV  HV   OFF  OFF OFF  OFF  OFF}
+add_pst_state s2  -pst pst -state    { ZV  OFF  OFF  OFF OFF  HV   OFF}
+add_pst_state s2d -pst pst -state    { ZV  OFF  OFF  OFF OFF  HV   OFF}

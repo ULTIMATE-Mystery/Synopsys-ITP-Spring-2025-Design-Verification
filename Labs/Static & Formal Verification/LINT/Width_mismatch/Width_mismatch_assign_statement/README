@@ -1,0 +1,11 @@
+Summary
+----------------------------------------------------------------------
+This testcase exercises for VC Lint rule "CODING_WIDTH_UNEQ_SIZE" which flags when 
+there is width mismatch in the RHS and LHS of design. This tescase represents a scenario
+which is having width mismatch in the desing.
+
+Testcase Details
+----------------------------------------------------------------------
+Design      : Width_mismatch_assign_statement.v
+VC Lint     : vc_lint.tcl
+Command     : make lint

@@ -1,0 +1,9 @@
+Summary
+----------------------------------------------------------------------
+This testcase exercises VC SG CDC for logic synchronizer
+
+Testcase Details
+----------------------------------------------------------------------
+Design      : logic_sync.v
+SDC         : clk.sdc
+Command     : make vcst

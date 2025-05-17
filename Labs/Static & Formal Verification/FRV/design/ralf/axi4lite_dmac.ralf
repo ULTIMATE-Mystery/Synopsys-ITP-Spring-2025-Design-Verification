@@ -1,0 +1,114 @@
+# RALF for axi4lite_dmac register
+
+system axi4lite_dmac_ralf {
+    bytes 4;
+
+    block DMAC @0x0000 {
+        bytes 4;
+        register INTR_CTRL @0x00 {
+            bytes 4;
+            field INTRENB (axi4lite_dmac.intr_en) @'h0 {
+                bits 1;
+                access rw;
+                hard_reset 'b0;
+            }
+            field INTRSTS (axi4lite_dmac.o_intr) @'h1 {
+                bits 1;
+                access ro;
+                hard_reset 'b0;
+                volatile 1
+            }
+            field INTRCLR (axi4lite_dmac.o_intr) @'h1f {
+                bits 1;
+                access w1c;
+                volatile 1
+                attributes {
+                   fieldHWupdates start,
+                      fieldHWupdate start,
+                         id "hw_intrclr",
+                         trigger "axi4lite_dmac.dma_done",
+                         value "axi4lite_dmac.intr_en",
+                         latency "1",
+                         function "load",
+                      fieldHWupdate end,
+                      priority "hw_intrclr, sww, swr",
+                   fieldHWupdates end
+                }
+            }
+        }
+        register DMA_CTRL @0x04 {
+            bytes 4;
+            field TLENGTH (axi4lite_dmac.set_length) @'h0 {
+                bits 8;
+                access rw;
+                hard_reset 'b0;
+            }
+            field KICKDMA (axi4lite_dmac.s_active) @'h1f {
+                bits 1;
+                access w1s;
+                volatile 1
+                attributes {
+                   fieldHWupdates start,
+                      fieldHWupdate start,
+                         id "hw_active",
+                         trigger "axi4lite_dmac.dma_done",
+                         value "1'b0",
+                         latency "1",
+                         function "load",
+                      fieldHWupdate end,
+                      priority "hw_active, sww, swr",
+                   fieldHWupdates end
+                }
+            }
+        }
+        register DMA_STS @0x08 {
+            bytes 4;
+            field CUR_LEN (axi4lite_dmac.dst_length) @'h0 {
+                bits 8;
+                access ro;
+                volatile 1
+                hard_reset 'b0;
+            }
+            field ACTIVE (axi4lite_dmac.s_active) @'h1f {
+                bits 1;
+                access ro;
+                volatile 1
+                hard_reset 'b0;
+            }
+        }
+        register SRC_ADDR @0x10 {
+            bytes 4;
+            field SRCADDR (axi4lite_dmac.src_addr) @'h2 {
+                bits 30;
+                access rw;
+                hard_reset 'b0;
+            }
+        }
+        register CUR_SRC_ADDR @0x14 {
+            bytes 4;
+            field CUR_SADDR (axi4lite_dmac.cur_srca) @'h2 {
+                bits 30;
+                access ro;
+                volatile 1
+                hard_reset 'b0;
+            }
+        }
+        register DST_ADDR @0x18 {
+            bytes 4;
+            field DSTADDR (axi4lite_dmac.dst_addr) @'h2 {
+                bits 30;
+                access rw;
+                hard_reset 'b0;
+            }
+        }
+        register CUR_DST_ADDR @0x1c {
+            bytes 4;
+            field CUR_DADDR (axi4lite_dmac.cur_dsta) @'h2 {
+                bits 30;
+                access ro;
+                volatile 1
+                hard_reset 'b0;
+            }
+        }
+    }
+}

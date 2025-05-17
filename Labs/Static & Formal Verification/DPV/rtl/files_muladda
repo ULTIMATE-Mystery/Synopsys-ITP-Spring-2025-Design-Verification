@@ -1,0 +1,3 @@
+../rtl/muladda.sv
+../rtl/booth4.sv
+../rtl/clzmadd.sv

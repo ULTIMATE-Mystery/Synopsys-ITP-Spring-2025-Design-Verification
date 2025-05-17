@@ -1,0 +1,11 @@
+Summary
+----------------------------------------------------------------------
+This testcase exercises VC-LP for various UPF and design issues 
+possible for power-switch implementation. This testcase represents a scenario
+for a post-layout netlist (also called PG netlist)
+
+Testcase Details
+----------------------------------------------------------------------
+Design      : psw1.v
+UPF         : psw1.upf
+Command     : make vcst

@@ -1,0 +1,4 @@
+MODULE: traffic
+INSTANCE:
+SRC: testbench.traffic_dut
+DST: traffic

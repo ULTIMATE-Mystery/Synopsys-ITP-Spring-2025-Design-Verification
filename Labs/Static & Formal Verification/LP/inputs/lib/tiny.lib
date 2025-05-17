@@ -1,0 +1,971 @@
+library (tiny) {
+    /*     library head: tcbn65lphvt    */
+    technology("cmos");
+    delay_model : "table_lookup";
+    date : "Tue Nov 14 16:01:17 CST 2006 ";
+    comment : "Copyright TSMC";
+    revision : 121.000000;
+    simulation : true;
+    nom_process : 1.000000;
+    nom_temperature : 0.000000;
+    nom_voltage : 1.320000;
+    capacitive_load_unit(1.000000, "pf");
+    voltage_unit : "1V";
+    current_unit : "1mA";
+    time_unit : "1ns";
+    pulling_resistance_unit : "1kohm";
+    define_cell_area("pad_drivers", "pad_driver_sites");
+    define_cell_area("bond_pads", "pad_slots");
+    library_features("report_delay_calculation");
+    default_leakage_power_density : 0.000000;
+    default_fanout_load : 1.000000;
+    default_wire_load_mode : "segmented";
+    in_place_swap_mode : "match_footprint";
+    default_max_transition : 0.460000;
+    default_inout_pin_cap : 0.001307;
+    default_input_pin_cap : 0.001307;
+    default_output_pin_cap : 0.000000;
+    slew_lower_threshold_pct_rise : 30.000000;
+    slew_upper_threshold_pct_rise : 70.000000;
+    slew_derate_from_library : 0.500000;
+    input_threshold_pct_fall : 50.000000;
+    output_threshold_pct_fall : 50.000000;
+    input_threshold_pct_rise : 50.000000;
+    output_threshold_pct_rise : 50.000000;
+    slew_lower_threshold_pct_fall : 30.000000;
+    voltage_map(VDD, 1.32);
+    voltage_map(VDD2, 1.32);
+    voltage_map(VSS, 0.00);
+    operating_conditions (BCCOM) {
+        process : 1.000000;
+        temperature : 0.000000;
+        voltage : 1.320000;
+        tree_type : "balanced_tree";
+    }
+    default_operating_conditions : "BCCOM";
+    slew_upper_threshold_pct_fall : 70.000000;
+
+    lu_table_template ("delay_template_3x3") {
+        variable_1 : "input_net_transition";
+        variable_2 : "total_output_net_capacitance";
+        index_1("1000.0, 1001.0, 1006.0");
+        index_2("1000.0, 1001.0, 1006.0");
+    }
+
+    cell (INV) {
+        pg_pin(VDD) {
+            voltage_name : VDD;
+            pg_type : primary_power;
+        }
+        pg_pin(VSS) {
+            voltage_name : VSS;
+            pg_type : primary_ground;
+        }
+        cell_leakage_power : 0.054000;
+        area : 2.160000;
+        cell_footprint : "an2d1";
+        pin (I) {
+            direction : "input";
+            capacitance : 0.000859;
+        }
+        pin (ZN) {
+            power_down_function : "!VDD + VSS";
+            direction : "output";
+            max_capacitance : 0.029500;
+            function : "!I";
+            timing () {
+                related_pin : "I";
+                timing_sense : "negative_unate";
+                cell_rise ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0477, 0.0521, 0.0599", "0.0744, 0.1021, 0.1567", "0.2651, 0.0939, 0.3153");
+                }
+                rise_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0224, 0.0279, 0.0390", "0.0621, 0.1097, 0.2069", "0.4005, 0.0321, 0.4016");
+                }
+                cell_fall ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0369, 0.0399, 0.0453", "0.0549, 0.0733, 0.1096", "0.1818, 0.1210, 0.2717");
+                }
+                fall_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0154, 0.0189, 0.0262", "0.0410, 0.0719, 0.1354", "0.2621, 0.0297, 0.2628");
+                }
+            }
+        }
+    }
+
+    cell (DTINV) {
+        dont_touch : true; /* so that dangling input is not opt away */
+        pg_pin(VDD) {
+            voltage_name : VDD;
+            pg_type : primary_power;
+        }
+        pg_pin(VSS) {
+            voltage_name : VSS;
+            pg_type : primary_ground;
+        }
+        cell_leakage_power : 0.054000;
+        area : 2.160000;
+        cell_footprint : "an2d1";
+        pin (I) {
+            direction : "input";
+            capacitance : 0.000859;
+        }
+        pin (ZN) {
+            power_down_function : "!VDD + VSS";
+            direction : "output";
+            max_capacitance : 0.029500;
+            function : "!I";
+            timing () {
+                related_pin : "I";
+                timing_sense : "negative_unate";
+                cell_rise ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0477, 0.0521, 0.0599", "0.0744, 0.1021, 0.1567", "0.2651, 0.0939, 0.3153");
+                }
+                rise_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0224, 0.0279, 0.0390", "0.0621, 0.1097, 0.2069", "0.4005, 0.0321, 0.4016");
+                }
+                cell_fall ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0369, 0.0399, 0.0453", "0.0549, 0.0733, 0.1096", "0.1818, 0.1210, 0.2717");
+                }
+                fall_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0154, 0.0189, 0.0262", "0.0410, 0.0719, 0.1354", "0.2621, 0.0297, 0.2628");
+                }
+            }
+        }
+    }
+
+    cell (AND2) {
+        pg_pin(VDD) {
+            voltage_name : VDD;
+            pg_type : primary_power;
+        }
+        pg_pin(VSS) {
+            voltage_name : VSS;
+            pg_type : primary_ground;
+        }
+        cell_leakage_power : 0.054000;
+        area : 2.160000;
+        cell_footprint : "an2d1";
+        pin (I1) {
+            direction : "input";
+            capacitance : 0.000859;
+        }
+        pin (I2) {
+            direction : "input";
+            capacitance : 0.000886;
+        }
+        pin (Z) {
+            power_down_function : "!VDD + VSS";
+            direction : "output";
+            max_capacitance : 0.029500;
+            function : "(I1 I2)";
+            timing () {
+                related_pin : "I2";
+                timing_sense : "positive_unate";
+                cell_rise ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0477, 0.0521, 0.0599", "0.0744, 0.1021, 0.1567", "0.2651, 0.0939, 0.3153");
+                }
+                rise_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0224, 0.0279, 0.0390", "0.0621, 0.1097, 0.2069", "0.4005, 0.0321, 0.4016");
+                }
+                cell_fall ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0369, 0.0399, 0.0453", "0.0549, 0.0733, 0.1096", "0.1818, 0.1210, 0.2717");
+                }
+                fall_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0154, 0.0189, 0.0262", "0.0410, 0.0719, 0.1354", "0.2621, 0.0297, 0.2628");
+                }
+            }
+            timing () {
+                related_pin : "I1";
+                timing_sense : "positive_unate";
+                cell_rise ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0452, 0.0495, 0.0574", "0.0718, 0.0995, 0.1541", "0.2627, 0.0988, 0.3200");
+                }
+                rise_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0224, 0.0279, 0.0390", "0.0621, 0.1098, 0.2069", "0.4006, 0.0354, 0.4015");
+                }
+                cell_fall ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0340, 0.0370, 0.0423", "0.0520, 0.0703, 0.1064", "0.1787, 0.1124, 0.2637");
+                }
+                fall_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0151, 0.0186, 0.0259", "0.0408, 0.0717, 0.1350", "0.2620, 0.0307, 0.2624");
+                }
+            }
+        }
+    }
+
+    cell (OR2) {
+        pg_pin(VDD) {
+            voltage_name : VDD;
+            pg_type : primary_power;
+        }
+        pg_pin(VSS) {
+            voltage_name : VSS;
+            pg_type : primary_ground;
+        }
+        cell_leakage_power : 0.054000;
+        area : 2.160000;
+        cell_footprint : "an2d1";
+        pin (I1) {
+            direction : "input";
+            capacitance : 0.000859;
+        }
+        pin (I2) {
+            direction : "input";
+            capacitance : 0.000886;
+        }
+        pin (Z) {
+            power_down_function : "!VDD + VSS";
+            direction : "output";
+            max_capacitance : 0.029500;
+            function : "(I1+I2)";
+            timing () {
+                related_pin : "I2";
+                timing_sense : "positive_unate";
+                cell_rise ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0477, 0.0521, 0.0599", "0.0744, 0.1021, 0.1567", "0.2651, 0.0939, 0.3153");
+                }
+                rise_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0224, 0.0279, 0.0390", "0.0621, 0.1097, 0.2069", "0.4005, 0.0321, 0.4016");
+                }
+                cell_fall ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0369, 0.0399, 0.0453", "0.0549, 0.0733, 0.1096", "0.1818, 0.1210, 0.2717");
+                }
+                fall_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0154, 0.0189, 0.0262", "0.0410, 0.0719, 0.1354", "0.2621, 0.0297, 0.2628");
+                }
+            }
+            timing () {
+                related_pin : "I1";
+                timing_sense : "positive_unate";
+                cell_rise ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0452, 0.0495, 0.0574", "0.0718, 0.0995, 0.1541", "0.2627, 0.0988, 0.3200");
+                }
+                rise_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0224, 0.0279, 0.0390", "0.0621, 0.1098, 0.2069", "0.4006, 0.0354, 0.4015");
+                }
+                cell_fall ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0340, 0.0370, 0.0423", "0.0520, 0.0703, 0.1064", "0.1787, 0.1124, 0.2637");
+                }
+                fall_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0151, 0.0186, 0.0259", "0.0408, 0.0717, 0.1350", "0.2620, 0.0307, 0.2624");
+                }
+            }
+        }
+    }
+    cell (ISOLO) {
+        pg_pin(VDD) {
+            voltage_name : VDD;
+            pg_type : primary_power;
+        }
+        pg_pin(VDDAON) {
+            voltage_name : VDD;
+            pg_type : backup_power;
+        }
+        pg_pin(VSS) {
+            voltage_name : VSS;
+            pg_type : primary_ground;
+        }
+        cell_leakage_power : 0.158 ;
+        area : 2.52 ;
+        cell_footprint : "isolod1"
+        is_isolation_cell : true;
+        pin(I)  {
+            isolation_cell_data_pin : true;
+            related_power_pin : VDD;
+            related_ground_pin : VSS;
+            direction : input;
+            capacitance : 0.001145;
+        }
+        pin(ISO)  {
+            related_power_pin : VDDAON;
+            related_ground_pin : VSS;
+            direction : input;
+            capacitance : 0.000771;
+            isolation_cell_enable_pin : true;
+        }
+        pin(Z)  {
+            related_power_pin : VDDAON;
+            related_ground_pin : VSS;
+            power_down_function : "!VDD + VSS";
+            direction : output;
+            max_capacitance : 0.0591;
+            function : "((!ISO) I)";
+            timing() {
+                related_pin : "ISO";
+                timing_sense : negative_unate;
+                cell_rise(delay_template_3x3) {
+                    index_1 ("0.0136, 0.0312,  1.1184");
+                    index_2 ("0.0008, 0.0017,  0.0591");
+                    values("0.1987, 0.2108, 0.2322", "0.2720, 0.3490, 0.5020", "0.8072, 0.5733, 1.1812");
+                }
+                rise_transition(delay_template_3x3) {
+                    index_1 ("0.0136, 0.0312,  1.1184");
+                    index_2 ("0.0008, 0.0017,  0.0591");
+                    values("0.0505, 0.0664, 0.0985", "0.1651, 0.3021, 0.5775", "1.1289, 0.0514, 1.1286");
+                }
+                cell_fall(delay_template_3x3) {
+                    index_1 ("0.0136, 0.0312,  1.1184");
+                    index_2 ("0.0008, 0.0017,  0.0591");
+                    values("0.1459, 0.1549, 0.1708", "0.2004, 0.2577, 0.3711", "0.5975, 0.4921, 0.9438");
+                }
+                fall_transition(delay_template_3x3) {
+                    index_1 ("0.0136, 0.0312,  1.1184");
+                    index_2 ("0.0008, 0.0017,  0.0591");
+                    values("0.0370, 0.0492, 0.0734", "0.1227, 0.2242, 0.4275", "0.8351, 0.0384, 0.8347");
+                }
+            }
+            timing() {
+                related_pin : "I";
+                timing_sense : positive_unate;
+                cell_rise(delay_template_3x3) {
+                    index_1 ("0.0136, 0.0312,  1.1184");
+                    index_2 ("0.0008, 0.0017,  0.0591");
+                    values("0.1198, 0.1319, 0.1534", "0.1932, 0.2701, 0.4229", "0.7277, 0.4272, 1.0414");
+                }
+                rise_transition(delay_template_3x3) {
+                    index_1 ("0.0136, 0.0312,  1.1184");
+                    index_2 ("0.0008, 0.0017,  0.0591");
+                    values("0.0503, 0.0663, 0.0987", "0.1648, 0.3024, 0.5771", "1.1296, 0.0749, 1.1281");
+                }
+                cell_fall(delay_template_3x3) {
+                    index_1 ("0.0136, 0.0312,  1.1184");
+                    index_2 ("0.0008, 0.0017,  0.0591");
+                    values("0.0820, 0.0907, 0.1064", "0.1355, 0.1924, 0.3055", "0.5316, 0.4218, 0.8802");
+                }
+                fall_transition(delay_template_3x3) {
+                    index_1 ("0.0136, 0.0312,  1.1184");
+                    index_2 ("0.0008, 0.0017,  0.0591");
+                    values("0.0354, 0.0476, 0.0720", "0.1213, 0.2227, 0.4262", "0.8340, 0.0635, 0.8340");
+                }
+            }
+        }
+    }
+    cell (ISOHI) {
+      pg_pin(VDD) {
+        voltage_name : VDD;
+        pg_type : primary_power;
+      }
+      pg_pin(VDDAON) {
+        voltage_name : VDD;
+        pg_type : backup_power;
+      }
+      pg_pin(VSS) {
+        voltage_name : VSS;
+        pg_type : primary_ground;
+      }
+      cell_leakage_power : 0.158 ;
+      area : 2.52 ;
+      cell_footprint : "isolod1"
+      is_isolation_cell : true;
+      pin(I)  {
+        isolation_cell_data_pin : true;
+        related_power_pin : VDD;
+        related_ground_pin : VSS;
+        direction : input;
+        capacitance : 0.001145;
+      }
+      pin(ISO)  {
+        related_power_pin : VDDAON;
+        related_ground_pin : VSS;
+        direction : input;
+        capacitance : 0.000771;
+        isolation_cell_enable_pin : true;
+      }
+      pin(Z)  {
+        related_power_pin : VDDAON;
+        related_ground_pin : VSS;
+        power_down_function : "!VDD + VSS";
+        direction : output;
+        max_capacitance : 0.0591;
+        function : "(ISO + I)";
+        timing() {
+          related_pin : "ISO";
+          timing_sense : positive_unate;
+          cell_rise(delay_template_3x3) {
+            index_1 ("0.0136, 0.0312,  1.1184");
+            index_2 ("0.0008, 0.0017,  0.0591");
+            values("0.1987, 0.2108, 0.2322", "0.2720, 0.3490, 0.5020", "0.8072, 0.5733, 1.1812");
+          }
+          rise_transition(delay_template_3x3) {
+            index_1 ("0.0136, 0.0312,  1.1184");
+            index_2 ("0.0008, 0.0017,  0.0591");
+            values("0.0505, 0.0664, 0.0985", "0.1651, 0.3021, 0.5775", "1.1289, 0.0514, 1.1286");
+          }
+          cell_fall(delay_template_3x3) {
+            index_1 ("0.0136, 0.0312,  1.1184");
+            index_2 ("0.0008, 0.0017,  0.0591");
+            values("0.1459, 0.1549, 0.1708", "0.2004, 0.2577, 0.3711", "0.5975, 0.4921, 0.9438");
+          }
+          fall_transition(delay_template_3x3) {
+            index_1 ("0.0136, 0.0312,  1.1184");
+            index_2 ("0.0008, 0.0017,  0.0591");
+            values("0.0370, 0.0492, 0.0734", "0.1227, 0.2242, 0.4275", "0.8351, 0.0384, 0.8347");
+          }
+        }
+        timing() {
+          related_pin : "I";
+          timing_sense : positive_unate;
+          cell_rise(delay_template_3x3) {
+            index_1 ("0.0136, 0.0312,  1.1184");
+            index_2 ("0.0008, 0.0017,  0.0591");
+            values("0.1198, 0.1319, 0.1534", "0.1932, 0.2701, 0.4229", "0.7277, 0.4272, 1.0414");
+          }
+          rise_transition(delay_template_3x3) {
+            index_1 ("0.0136, 0.0312,  1.1184");
+            index_2 ("0.0008, 0.0017,  0.0591");
+            values("0.0503, 0.0663, 0.0987", "0.1648, 0.3024, 0.5771", "1.1296, 0.0749, 1.1281");
+          }
+          cell_fall(delay_template_3x3) {
+            index_1 ("0.0136, 0.0312,  1.1184");
+            index_2 ("0.0008, 0.0017,  0.0591");
+            values("0.0820, 0.0907, 0.1064", "0.1355, 0.1924, 0.3055", "0.5316, 0.4218, 0.8802");
+          }
+          fall_transition(delay_template_3x3) {
+            index_1 ("0.0136, 0.0312,  1.1184");
+            index_2 ("0.0008, 0.0017,  0.0591");
+            values("0.0354, 0.0476, 0.0720", "0.1213, 0.2227, 0.4262", "0.8340, 0.0635, 0.8340");
+          }
+        }
+      }
+    }
+    
+    cell (PSW) {
+      switch_cell_type : coarse_grain;
+      pg_pin(VDD) {
+        voltage_name : VDD;
+        pg_type : primary_power;
+        direction : input;
+      }
+      pg_pin(VDDSW) {
+        voltage_name : VDD;
+        pg_type : internal_power;
+        switch_function : "!NSLEEPIN1 + !NSLEEPIN2";
+        pg_function : "VDD";
+        direction : output;
+      }
+      pg_pin(VSS) {
+        voltage_name : VSS;
+        pg_type : primary_ground;
+        direction : input;
+      }
+      cell_leakage_power : 2.149 ;
+      leakage_power() {
+       when : "!NSLEEPIN1 !NSLEEPIN2" ;
+       value : 2.149 ;
+      }
+      area : 34.56 ;
+      cell_footprint : "hdrdid1"
+      pin(NSLEEPIN1)  {
+        /* gs u05.1 */
+        switch_pin : true;
+        related_power_pin : VDD;
+        related_ground_pin : VSS;
+        direction : input;
+        capacitance : 0.0049;
+        rise_capacitance : 0.0049;
+        fall_capacitance : 0.0047;
+      }
+      pin(NSLEEPIN2)  {
+        /* gs u05.1 */
+        switch_pin : true;
+        related_power_pin : VDD;
+        related_ground_pin : VSS;
+        direction : input;
+        capacitance : 0.0017;
+        rise_capacitance : 0.0017;
+        fall_capacitance : 0.0017;
+      }
+      pin(NSLEEPOUT1)  {
+        /* gs u05.2 */
+        power_down_function : "!VDD + VSS";
+        related_power_pin : VDD;
+        related_ground_pin : VSS;
+        direction : output;
+        max_capacitance : 0.1694;
+        function : "NSLEEPIN1";
+        timing() {
+          related_pin : "NSLEEPIN1";
+          timing_sense : positive_unate;
+          cell_rise(delay_template_3x3) {
+            index_1 ("0.0136, 0.0312,  1.1184");
+            index_2 ("0.0008, 0.0017,  0.0591");
+            values("0.1987, 0.2108, 0.2322", "0.2720, 0.3490, 0.5020", "0.8072, 0.5733, 1.1812");
+          }
+          rise_transition(delay_template_3x3) {
+            index_1 ("0.0136, 0.0312,  1.1184");
+            index_2 ("0.0008, 0.0017,  0.0591");
+            values("0.0505, 0.0664, 0.0985", "0.1651, 0.3021, 0.5775", "1.1289, 0.0514, 1.1286");
+          }
+          cell_fall(delay_template_3x3) {
+            index_1 ("0.0136, 0.0312,  1.1184");
+            index_2 ("0.0008, 0.0017,  0.0591");
+            values("0.1459, 0.1549, 0.1708", "0.2004, 0.2577, 0.3711", "0.5975, 0.4921, 0.9438");
+          }
+          fall_transition(delay_template_3x3) {
+            index_1 ("0.0136, 0.0312,  1.1184");
+            index_2 ("0.0008, 0.0017,  0.0591");
+            values("0.0370, 0.0492, 0.0734", "0.1227, 0.2242, 0.4275", "0.8351, 0.0384, 0.8347");
+          }
+        }
+      }
+      pin(NSLEEPOUT2)  {
+        /* gs u05.2 */
+        power_down_function : "!VDD + VSS";
+        related_power_pin : VDD;
+        related_ground_pin : VSS;
+        direction : output;
+        max_capacitance : 0.1554;
+        function : "NSLEEPIN2";
+        timing() {
+          related_pin : "NSLEEPIN2";
+          timing_sense : positive_unate;
+          cell_rise(delay_template_3x3) {
+            index_1 ("0.0136, 0.0312,  1.1184");
+            index_2 ("0.0008, 0.0017,  0.0591");
+            values("0.1987, 0.2108, 0.2322", "0.2720, 0.3490, 0.5020", "0.8072, 0.5733, 1.1812");
+          }
+          rise_transition(delay_template_3x3) {
+            index_1 ("0.0136, 0.0312,  1.1184");
+            index_2 ("0.0008, 0.0017,  0.0591");
+            values("0.0505, 0.0664, 0.0985", "0.1651, 0.3021, 0.5775", "1.1289, 0.0514, 1.1286");
+          }
+          cell_fall(delay_template_3x3) {
+            index_1 ("0.0136, 0.0312,  1.1184");
+            index_2 ("0.0008, 0.0017,  0.0591");
+            values("0.1459, 0.1549, 0.1708", "0.2004, 0.2577, 0.3711", "0.5975, 0.4921, 0.9438");
+          }
+          fall_transition(delay_template_3x3) {
+            index_1 ("0.0136, 0.0312,  1.1184");
+            index_2 ("0.0008, 0.0017,  0.0591");
+            values("0.0370, 0.0492, 0.0734", "0.1227, 0.2242, 0.4275", "0.8351, 0.0384, 0.8347");
+          }
+        }
+      }
+    }
+
+    cell (LSLH) {
+        pg_pin(VDD) {
+            voltage_name : VDD;
+            pg_type : primary_power;
+            std_cell_main_rail : true;
+        }
+        pg_pin(VDDI) {
+            voltage_name : VDD2;
+            pg_type : primary_power;
+        }
+        pg_pin(VSS) {
+            voltage_name : VSS;
+            pg_type : primary_ground;
+        }
+        level_shifter_type : LH;
+        cell_leakage_power : 3.712 ;
+        area : 15.84 ;
+        cell_footprint : "lvllhd1" ;
+        is_level_shifter : true;
+        dont_touch : true;
+        dont_use : true;
+        pin(I)  {
+            related_power_pin : VDDI;
+            input_voltage_range (0.85, 1.32);
+            related_ground_pin : VSS;
+            direction : input;
+            capacitance : 0.004028;
+            rise_capacitance : 0.003923;
+            fall_capacitance : 0.004028;
+        }
+        pin(Z)  {
+            related_power_pin : VDD;
+            related_ground_pin : VSS;
+            power_down_function : "!VDD + !VDDI + VSS";
+            output_voltage_range (0.85, 1.32);
+            direction : output;
+            max_capacitance : 0.4728;
+            function : "I";
+            timing() {
+                related_pin : "I";
+                timing_sense : positive_unate;
+                cell_rise ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0477, 0.0521, 0.0599", "0.0744, 0.1021, 0.1567", "0.2651, 0.0939, 0.3153");
+                }
+                rise_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0224, 0.0279, 0.0390", "0.0621, 0.1097, 0.2069", "0.4005, 0.0321, 0.4016");
+                }
+                cell_fall ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0369, 0.0399, 0.0453", "0.0549, 0.0733, 0.1096", "0.1818, 0.1210, 0.2717");
+                }
+                fall_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0154, 0.0189, 0.0262", "0.0410, 0.0719, 0.1354", "0.2621, 0.0297, 0.2628");
+                }
+            }
+        }
+    }
+    
+    cell (LSHL) {
+        pg_pin(VDD) {
+            voltage_name : VDD;
+            pg_type : primary_power;
+            std_cell_main_rail : true;
+        }
+        pg_pin(VDDI) {
+            voltage_name : VDD2;
+            pg_type : primary_power;
+        }
+        pg_pin(VSS) {
+            voltage_name : VSS;
+            pg_type : primary_ground;
+        }
+        level_shifter_type : HL;
+        cell_leakage_power : 3.712 ;
+        area : 15.84 ;
+        cell_footprint : "lvllhd1" ;
+        is_level_shifter : true;
+        dont_touch : true;
+        dont_use : true;
+        pin(I)  {
+            related_power_pin : VDDI;
+            input_voltage_range (0.85, 1.32);
+            related_ground_pin : VSS;
+            direction : input;
+            capacitance : 0.004028;
+            rise_capacitance : 0.003923;
+            fall_capacitance : 0.004028;
+        }
+        pin(Z)  {
+            related_power_pin : VDD;
+            related_ground_pin : VSS;
+            power_down_function : "!VDD + !VDDI + VSS";
+            output_voltage_range (0.85, 1.32);
+            direction : output;
+            max_capacitance : 0.4728;
+            function : "I";
+            timing() {
+                related_pin : "I";
+                timing_sense : positive_unate;
+                cell_rise ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0477, 0.0521, 0.0599", "0.0744, 0.1021, 0.1567", "0.2651, 0.0939, 0.3153");
+                }
+                rise_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0224, 0.0279, 0.0390", "0.0621, 0.1097, 0.2069", "0.4005, 0.0321, 0.4016");
+                }
+                cell_fall ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0369, 0.0399, 0.0453", "0.0549, 0.0733, 0.1096", "0.1818, 0.1210, 0.2717");
+                }
+                fall_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0154, 0.0189, 0.0262", "0.0410, 0.0719, 0.1354", "0.2621, 0.0297, 0.2628");
+                }
+            }
+        }
+    }
+
+    cell (AONBUF) {
+        pg_pin(VDD) {
+            voltage_name : VDD;
+            pg_type : primary_power;
+        }
+        pg_pin(VDDAON) {
+            voltage_name : VDD2;
+            pg_type : backup_power;
+        }
+        pg_pin(VSS) {
+            voltage_name : VSS;
+            pg_type : primary_ground;
+        }
+        always_on : true;
+        cell_leakage_power : 0.054000;
+        area : 2.160000;
+        cell_footprint : "an2d1";
+        pin (I) {
+            direction : "input";
+            related_power_pin : VDDAON;
+            capacitance : 0.000859;
+            always_on : true;
+        }
+        pin (Z) {
+            always_on : true;
+            related_power_pin : VDDAON;
+            power_down_function : "!VDDAON + VSS";
+            direction : "output";
+            max_capacitance : 0.029500;
+            function : "I";
+            timing () {
+                related_pin : "I";
+                timing_sense : "positive_unate";
+                cell_rise ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0477, 0.0521, 0.0599", "0.0744, 0.1021, 0.1567", "0.2651, 0.0939, 0.3153");
+                }
+                rise_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0224, 0.0279, 0.0390", "0.0621, 0.1097, 0.2069", "0.4005, 0.0321, 0.4016");
+                }
+                cell_fall ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0369, 0.0399, 0.0453", "0.0549, 0.0733, 0.1096", "0.1818, 0.1210, 0.2717");
+                }
+                fall_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0154, 0.0189, 0.0262", "0.0410, 0.0719, 0.1354", "0.2621, 0.0297, 0.2628");
+                }
+            }
+        }
+    }
+
+    cell (RETFF) {
+        pg_pin(VDD) {
+          voltage_name : VDD;
+          pg_type : primary_power;
+        }
+        pg_pin(VDDAON) {
+          voltage_name : VDD2;
+          pg_type : backup_power;
+        }
+        pg_pin(VSS) {
+          voltage_name : VSS;
+          pg_type : primary_ground;
+        }
+        retention_cell : "mystyle";
+        cell_leakage_power : 0.175000;
+        area : 8.640000;
+        cell_footprint : "dfcnd1";
+        ff (IQ,IQN) {
+            next_state : "D";
+            clocked_on : "CP";
+        }
+        pin (CP) {
+            direction : "input";
+            related_power_pin : VDD;
+            capacitance : 0.000854;
+            rise_capacitance : 0.000854;
+            fall_capacitance : 0.000841;
+            clock : true;
+        }
+        pin (D) {
+            direction : "input";
+            related_power_pin : VDD;
+            capacitance : 0.001102;
+            rise_capacitance : 0.001102;
+            fall_capacitance : 0.001078;
+            nextstate_type : "data";
+        }
+        pin (R) {
+            retention_pin (restore, "0");
+            direction : "input";
+            related_power_pin : VDDAON;
+            capacitance : 0.001102;
+            rise_capacitance : 0.001102;
+            fall_capacitance : 0.001078;
+        }
+        pin (S) {
+            retention_pin (save, "0");
+            direction : "input";
+            related_power_pin : VDDAON;
+            capacitance : 0.001102;
+            rise_capacitance : 0.001102;
+            fall_capacitance : 0.001078;
+        }
+        pin (Q) {
+            power_down_function : "!VDD + VSS";
+            related_power_pin : VDD;
+            direction : "output";
+            max_capacitance : 0.059100;
+            function : "IQ";
+            timing () {
+                related_pin : "CP";
+                timing_sense : "non_unate";
+                timing_type : "rising_edge";
+                cell_rise ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0477, 0.0521, 0.0599", "0.0744, 0.1021, 0.1567", "0.2651, 0.0939, 0.3153");
+                }
+                rise_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0224, 0.0279, 0.0390", "0.0621, 0.1097, 0.2069", "0.4005, 0.0321, 0.4016");
+                }
+                cell_fall ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0369, 0.0399, 0.0453", "0.0549, 0.0733, 0.1096", "0.1818, 0.1210, 0.2717");
+                }
+                fall_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0154, 0.0189, 0.0262", "0.0410, 0.0719, 0.1354", "0.2621, 0.0297, 0.2628");
+                }
+            }
+        }
+    }
+
+    cell (INTOBUF) {
+        pg_pin(VDD) {
+            voltage_name : VDD;
+            pg_type : primary_power;
+        }
+        pg_pin(VSS) {
+            voltage_name : VSS;
+            pg_type : primary_ground;
+        }
+        is_macro_cell : true;
+        cell_leakage_power : 0.054000;
+        area : 2.160000;
+        cell_footprint : "an2d1";
+        pin (I) {
+            direction : "input";
+            related_power_pin : VDD;
+            capacitance : 0.000859;
+        }
+        pin (Z) {
+            is_isolated : true;
+            related_power_pin : VDD;
+            power_down_function : "!VDD + VSS";
+            direction : "output";
+            max_capacitance : 0.029500;
+            function : "I";
+            timing () {
+                related_pin : "I";
+                timing_sense : "positive_unate";
+                cell_rise ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0477, 0.0521, 0.0599", "0.0744, 0.1021, 0.1567", "0.2651, 0.0939, 0.3153");
+                }
+                rise_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0224, 0.0279, 0.0390", "0.0621, 0.1097, 0.2069", "0.4005, 0.0321, 0.4016");
+                }
+                cell_fall ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0369, 0.0399, 0.0453", "0.0549, 0.0733, 0.1096", "0.1818, 0.1210, 0.2717");
+                }
+                fall_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0154, 0.0189, 0.0262", "0.0410, 0.0719, 0.1354", "0.2621, 0.0297, 0.2628");
+                }
+            }
+        }
+    }
+    cell (INTIBUF) {
+        pg_pin(VDD) {
+            voltage_name : VDD;
+            pg_type : primary_power;
+        }
+        pg_pin(VSS) {
+            voltage_name : VSS;
+            pg_type : primary_ground;
+        }
+        is_macro_cell : true;
+        cell_leakage_power : 0.054000;
+        area : 2.160000;
+        cell_footprint : "an2d1";
+        pin (I) {
+            direction : "input";
+            related_power_pin : VDD;
+            capacitance : 0.000859;
+            is_isolated : true;
+        }
+        pin (Z) {
+            related_power_pin : VDD;
+            power_down_function : "!VDD + VSS";
+            direction : "output";
+            max_capacitance : 0.029500;
+            function : "I";
+            timing () {
+                related_pin : "I";
+                timing_sense : "positive_unate";
+                cell_rise ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0477, 0.0521, 0.0599", "0.0744, 0.1021, 0.1567", "0.2651, 0.0939, 0.3153");
+                }
+                rise_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0224, 0.0279, 0.0390", "0.0621, 0.1097, 0.2069", "0.4005, 0.0321, 0.4016");
+                }
+                cell_fall ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0369, 0.0399, 0.0453", "0.0549, 0.0733, 0.1096", "0.1818, 0.1210, 0.2717");
+                }
+                fall_transition ("delay_template_3x3") {
+                    index_1("0.0056, 0.0128,  0.4600");
+                    index_2("0.0005, 0.0010,  0.0295");
+                    values("0.0154, 0.0189, 0.0262", "0.0410, 0.0719, 0.1354", "0.2621, 0.0297, 0.2628");
+                }
+            }
+        }
+    }
+
+}

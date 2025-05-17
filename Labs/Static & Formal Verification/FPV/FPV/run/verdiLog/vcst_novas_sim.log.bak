@@ -1,0 +1,45 @@
+                                   VC Static 
+              Version R-2020.12-SP2-13 for linux64 - Dec 08, 2022
+                    Copyright (c) 2010 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+#MasterSourceFile run.tcl
+set_fml_appmode FPV
+1
+set design traffic
+traffic
+read_file -top $design -format sverilog -sva -vcs {-f ../design/filelist +define+INLINE_SVA ../sva/traffic.sva ../sva/bind_traffic.sva}
+Info: Invoking New SVA Compiler Instrument...
+Info: SVAC-NC Start
+Info: SVAC-NC Finished
+Info: Invoking Simon...
+Info: Simon VCS Start
+=======================================================
+VCS CPU Time(s)     :0.13
+SIMON CPU Time(s)   :0.11
+SIMON Total Time(s) :0.05
+Peak Memory(MB)     :341
+=======================================================
+Info: Simon VCS Finished
+Info: Simon call complete 
+Info: Exiting after Simon Analysis 
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
+[Info] DB_COPT045: Vcs analyzer task has finished.
+[Info] PROP_I_COLLECT: Collecting Source Properties from the view:traffic.
+# Gate Counts 
+Number of Flat Instances = 609
+Number of Operator = 609
+Number of Libcells = 0
+Number of Black-Box Instances = 0
+1
+/* analyze -format sverilog -vcs {-f ../design/filelist +define+INLINE_SVA ../sva/traffic.sva ../sva/bind_traffic.sva}
+Error: unknown command '/*' (CMD-005)
+Information: script 'run.tcl'
+	stopped at line 4 due to error. (CMD-081)
+Extended error info:
+    while executing
+"/* analyze -format sverilog -vcs {-f ../design/filelist +define+INLINE_SVA ../sva/traffic.sva ../sva/bind_traffic.sva}"
+    (file "run.tcl" line 4)
+ -- End Extended Error Info

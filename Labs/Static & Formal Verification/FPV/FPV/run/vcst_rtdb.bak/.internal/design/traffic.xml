@@ -1,0 +1,73 @@
+<SVI>
+<SVI_SIMON>
+  <option data="full_hier"/>
+  <option data="vcstaticStabilityMode=1"/>
+  <option data="circWriteFile=/home/shtp/ITP2025/Labs/FPV/FPV/run/vcst_rtdb/.internal/design/traffic.scm"/>
+  <option data="outputWorkDir=/home/shtp/ITP2025/Labs/FPV/FPV/run/vcst_rtdb/.internal/design"/>
+  <option data="vsiLogDir=/home/shtp/ITP2025/Labs/FPV/FPV/run/vcst_rtdb/logs"/>
+  <option data="exitPostAnalysis"/>
+  <option data="noRemoveConstants"/>
+  <option data="2valued"/>
+  <option data="preserveSigs"/>
+  <option data="trackLocations"/>
+  <option data="oneDeep"/>
+  <option data="nxgAutoGlassBox"/>
+  <option data="wholeSignalsInSupport"/>
+  <option data="directIfFull"/>
+  <option data="designAttribute"/>
+  <option data="storeScopeForSvaInGen"/>
+  <option data="useOrigVhdlGenBracket"/>
+  <option data="highLevelForm=0"/>
+  <option data="ndmerge"/>
+  <option data="inferComplexSyncControls"/>
+  <option data="enablePortConnectAttr"/>
+  <option data="noSkipSimMemModels"/>
+  <option data="contFeedBackToLatch"/>
+  <option data="genPrimHierarchy"/>
+  <option data="useDot"/>
+  <option data="enableSVAMarking"/>
+  <option data="markRawSigs"/>
+  <option data="treatInitialBlockAsNonSynth=0"/>
+  <option data="top=traffic"/>
+  <option data="addInputResolution"/>
+  <option data="disableAEPs"/>
+  <option data="dumpVsiLib"/>
+  <option data="generateDontCares"/>
+  <option data="q"/>
+  <option data="buildTop=1"/>
+  <option data="j=4"/>
+  <option data="alwaysGenLogicForPartialCombCell"/>
+  <option data="memLatchLimit=16"/>
+  <option data="doControlIdentify=1"/>
+  <option data="numWallSeconds=3000"/>
+  <option data="ignoreCoverage"/>
+  <option data="fastScmRead"/>
+  <option data="preserveDBZ"/>
+  <option data="preserveCaseEq=2"/>
+  <option data="loadBasicDbViews"/>
+</SVI_SIMON>
+<SVI_VCS>
+  <option data="elab_summary_report_max_inst=5"/>
+  <option data="top=traffic"/>
+  <option data="portCoercionsLog=/home/shtp/ITP2025/Labs/FPV/FPV/run/vcst_rtdb/.internal/port_coercions.rpt"/>
+</SVI_VCS>
+<SVI_NEW_SVAC>
+  <option data="svacTop=traffic"/>
+  <option data="svacStopAtTop=1"/>
+  <option data="vsiFlow=1"/>
+  <option data="svacVacuity=1"/>
+  <option data="svacLatchedVacuity=1"/>
+  <option data="svacOutputXmlIcd=1"/>
+  <option data="removeVcsAutomata=1"/>
+  <option data="svacIcdFileName=/home/shtp/ITP2025/Labs/FPV/FPV/run/vcst_rtdb/.internal/design/svac.icd"/>
+  <option data="svacUqsFileName=/home/shtp/ITP2025/Labs/FPV/FPV/run/vcst_rtdb/.internal/design/svac.uqs"/>
+  <option data="svacPureLiveness=1"/>
+  <option data="svacImmediateAssert=1"/>
+  <option data="svacWitness=1"/>
+  <option data="svacLatchedWitness=1"/>
+  <option data="svacAllowImmAssertInFuncTask=1"/>
+  <option data="svacUseVhdlGenerateStyle=1"/>
+  <option data="svacRewriteAsyncReset=1"/>
+  <option data="svacUseDfgExpr=1"/>
+</SVI_NEW_SVAC>
+</SVI>

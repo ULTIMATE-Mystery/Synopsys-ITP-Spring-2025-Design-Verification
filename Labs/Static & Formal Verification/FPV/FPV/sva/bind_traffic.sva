@@ -1,0 +1,2 @@
+// SVA binding
+bind traffic sva_checker #(4) chk (.*);

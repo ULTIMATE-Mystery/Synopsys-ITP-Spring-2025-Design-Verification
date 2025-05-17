@@ -1,0 +1,45 @@
+
+  -----------------------------------------------------------------------------
+  Report Summary
+  -----------------------------------------------------------------------------
+  Product Info
+    Name    : VC Static Master Shell
+    Version : J-2015.09-Alpha -- Aug 24, 2014
+
+  Report Info
+    Created : Aug 25, 2014  02:26:18
+
+
+  -----------------------------------------------------------------------------
+  Management Summary
+  -----------------------------------------------------------------------------
+  Stage       Family      Errors  Warnings     Infos
+  -----       --------  --------  --------  --------
+  QUICK_LINT  CODING           0         1         0
+  -----       --------  --------  --------  --------
+  Total                        0         1         0
+
+
+  -----------------------------------------------------------------------------
+  Tree Summary
+  -----------------------------------------------------------------------------
+  Severity  Stage       Tag                       Count
+  --------  -----       ------------------------  -----
+  warning   QUICK_LINT  CODING_WIDTH_UNEQ_SIZE        1
+  --------  -----       ------------------------  -----
+  Total                                               1
+
+
+
+  -----------------------------------------------------------------------------
+  CODING_WIDTH_UNEQ_SIZE  (1 warning/0 waived)
+  -----------------------------------------------------------------------------
+  Tag          : CODING_WIDTH_UNEQ_SIZE
+  Description  : Unequal length LHS and RHS in assignment  [LhsSize] , [RhsSize]
+  Violation    : Lint:1
+  Module       : top
+  Statement    : assign out1 = in1 + in2; // VC Lint flags here
+  FileName     : /remote/vtghome11/prashanj/VC_LINT_EXAMPLES/Verilog/Width_mismatch/Width_mismatch_assign_statement/Width_mismatch_assign_statement.v
+  LineNumber   : 3
+  LhsSize      : 4(/remote/vtghome11/prashanj/VC_LINT_EXAMPLES/Verilog/Width_mismatch/Width_mismatch_assign_statement/Width_mismatch_assign_statement.v:3)
+  RhsSize      : 3(/remote/vtghome11/prashanj/VC_LINT_EXAMPLES/Verilog/Width_mismatch/Width_mismatch_assign_statement/Width_mismatch_assign_statement.v:3)

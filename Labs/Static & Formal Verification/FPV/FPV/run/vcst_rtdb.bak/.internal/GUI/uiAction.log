@@ -1,0 +1,14 @@
+action aaMonetActionReplayMode -trigger
+
+action aaMonetViewDone:0 -reset
+action aaMonetView:0 -guimode {1} -trigger
+waitfor aaMonetViewDone:0
+
+action aaHierViewSrc:0 -reset
+action aaHierViewSrc:0 -trigger
+waitfor aaHierViewSrc:0
+
+action aaMonetAvClickedDone:0 -reset
+action aaMonetAvClicked:0 -trigger
+waitfor aaMonetAvClickedDone:0
+

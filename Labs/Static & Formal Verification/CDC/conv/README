@@ -1,0 +1,9 @@
+Summary
+----------------------------------------------------------------------
+This testcase exercises VC SG CDC for convergence of NFF synchronizers
+
+Testcase Details
+----------------------------------------------------------------------
+Design      : conv.v
+SDC         : clk.sdc
+Command     : make vcst

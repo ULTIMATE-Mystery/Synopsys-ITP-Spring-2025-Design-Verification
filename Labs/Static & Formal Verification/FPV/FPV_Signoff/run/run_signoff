@@ -1,0 +1,5 @@
+#!/bin/csh -f
+
+setenv STEP_DEFINE 5
+
+vcf -verdi -f run.tcl

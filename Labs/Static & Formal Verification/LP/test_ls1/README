@@ -1,0 +1,11 @@
+Summary
+----------------------------------------------------------------------
+This testcase exercises VC-LP for various UPF and design issues 
+possible for level-shifter implementation. This testcase represents a scenario
+for a post-synthesis netlist
+
+Testcase Details
+----------------------------------------------------------------------
+Design      : ls1.v
+UPF         : ls1.upf
+Command     : make vcst

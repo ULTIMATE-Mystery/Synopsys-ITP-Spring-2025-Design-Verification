@@ -1,0 +1,8 @@
+Summary
+----------------------------------------------------------------------
+This examples directory contains a set of sample testcases that showcase
+the typical use-model for VC Static and different design and UPF issues
+that could be seen in a design.
+
+Each testcase directory (test_<name>) contains a README that outlines a
+brief description of that testcase and the steps to run VC Static.

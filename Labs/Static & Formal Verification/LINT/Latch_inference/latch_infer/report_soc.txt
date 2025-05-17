@@ -1,0 +1,44 @@
+
+  -----------------------------------------------------------------------------
+  Report Summary
+  -----------------------------------------------------------------------------
+  Product Info
+    Name    : VC Static Master Shell
+    Version : J-2015.09-Alpha -- Aug 24, 2014
+
+  Report Info
+    Created : Aug 25, 2014  02:18:27
+
+
+  -----------------------------------------------------------------------------
+  Management Summary
+  -----------------------------------------------------------------------------
+  Stage           Family      Errors  Warnings     Infos
+  -----           --------  --------  --------  --------
+  LANGUAGE_CHECK  CODING           0         1         0
+  -----           --------  --------  --------  --------
+  Total                            0         1         0
+
+
+  -----------------------------------------------------------------------------
+  Tree Summary
+  -----------------------------------------------------------------------------
+  Severity  Stage           Tag                   Count
+  --------  -----           --------------------  -----
+  warning   LANGUAGE_CHECK  CODING_LATCH_INFER        1
+  --------  -----           --------------------  -----
+  Total                                               1
+
+
+
+  -----------------------------------------------------------------------------
+  CODING_LATCH_INFER  (1 warning/0 waived)
+  -----------------------------------------------------------------------------
+  Tag          : CODING_LATCH_INFER
+  Description  : Latch inferred for  [SignalName]
+  Violation    : Lint:1
+  Module       : top
+  Statement    :       out <= in;  // VC Lint flags here
+  FileName     : /remote/vtghome11/prashanj/VC_LINT_EXAMPLES/Verilog/Latch_inference/latch_infer/latch_infer_with_if.v
+  LineNumber   : 7
+  SignalName   : out(/remote/vtghome11/prashanj/VC_LINT_EXAMPLES/Verilog/Latch_inference/latch_infer/latch_infer_with_if.v:7)

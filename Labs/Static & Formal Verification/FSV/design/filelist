@@ -1,0 +1,9 @@
+../design/timescale.v
+../design/aes.v
+../design/byte_mixcolum.v
+../design/keysched.v
+../design/mixcolum.v
+../design/sbox.v
+../design/subbytes.v
+../design/wb_aescontroller.v
+../design/word_mixcolum.v

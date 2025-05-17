@@ -1,0 +1,11 @@
+Summary
+----------------------------------------------------------------------
+This testcase exercises for VC Lint rule "SYN_STMT_UNSYNTH_FOREVER" which flags when 
+there is a unsynthasizable construct used in the design. This testcase represents a scenario 
+which is used a unsynthasizable consrunct in the design.
+
+Testcase Details
+----------------------------------------------------------------------
+Design      : forever_loop_in_always.v
+VC Lint     : vc_lint.tcl
+Command     : make lint 

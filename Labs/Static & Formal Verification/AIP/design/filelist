@@ -1,0 +1,3 @@
+../design/ahb_apb_bridge.v
+../design/ahb_if.v
+../design/apb_if.v

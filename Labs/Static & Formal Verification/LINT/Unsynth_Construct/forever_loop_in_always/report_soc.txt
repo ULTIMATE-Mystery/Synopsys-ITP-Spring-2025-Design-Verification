@@ -1,0 +1,43 @@
+
+  -----------------------------------------------------------------------------
+  Report Summary
+  -----------------------------------------------------------------------------
+  Product Info
+    Name    : VC Static Master Shell
+    Version : J-2015.09-Alpha -- Aug 24, 2014
+
+  Report Info
+    Created : Aug 25, 2014  02:20:24
+
+
+  -----------------------------------------------------------------------------
+  Management Summary
+  -----------------------------------------------------------------------------
+  Stage       Family      Errors  Warnings     Infos
+  -----       --------  --------  --------  --------
+  QUICK_LINT  SYN              1         0         0
+  -----       --------  --------  --------  --------
+  Total                        1         0         0
+
+
+  -----------------------------------------------------------------------------
+  Tree Summary
+  -----------------------------------------------------------------------------
+  Severity  Stage       Tag                         Count
+  --------  -----       --------------------------  -----
+  error     QUICK_LINT  SYN_STMT_UNSYNTH_FOREVER        1
+  --------  -----       --------------------------  -----
+  Total                                                 1
+
+
+
+  -----------------------------------------------------------------------------
+  SYN_STMT_UNSYNTH_FOREVER  (1 error/0 waived)
+  -----------------------------------------------------------------------------
+  Tag          : SYN_STMT_UNSYNTH_FOREVER
+  Description  : Forever loop statements are not supported for synthesis
+  Violation    : Lint:1
+  Module       : top
+  Statement    :   forever   // VCL flags here for SYN9_23 
+  FileName     : /remote/vtghome11/prashanj/VC_LINT_EXAMPLES/Verilog/Unsynth_Construct/forever_loop_in_always/forever_loop_in_always.v
+  LineNumber   : 11

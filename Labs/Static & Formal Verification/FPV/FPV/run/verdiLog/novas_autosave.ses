@@ -1,0 +1,68 @@
+@verdi rc file Version 1.0
+[General]
+saveDB = TRUE
+relativePath = FALSE
+saveSingleView = FALSE
+saveNWaveWinId = 
+VerdiVersion = Verdi_R-2020.12-SP2-11-T-20220930
+[KeyNote]
+Line1 = Automatic Backup 0
+Line2 = Save Open Database Information: Yes
+Line3 = Path Option: Absolute Paths
+Line4 = Windows Option: All Windows
+[OneSearch]
+isExisted = FALSE
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+Console = FALSE
+powerDumped = 0
+[Verdi_1]
+workMode = FormalVerification
+[Xprop_Option]
+Xprop_Value = tmerge
+[fusa]
+fdb_server = 
+fdb_proj = 
+fdb_campaign = 
+fdb_tool = 
+[hb]
+viewport = 0 0 1252 839 0 0 299 1250
+activeNode = "traffic"
+activeScope = "traffic"
+activeFile = "../design/traffic.v"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 0
+baMode = False
+srcLineNum = True
+AutoWrap = True
+IdentifyFalseLogic = True
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = True
+powerAwareAnnot = False
+safetyAwareAnnot = True
+amsAnnot = True
+DnDtraceCrossHierOnly = True
+leadingZero = False
+signalPane = False
+userAnnot = False
+userAnnotField = 0
+SourceVerticalScrollLines = 5
+Scope1 = "traffic"
+multipleSelection = 1 0 2 0 0
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.design]
+importCmd = "-simflow" "-smart_load_kdb" "-dbdir" "/home/shtp/ITP2025/Labs/FPV/FPV/run/vcst_rtdb/.internal/design/simv.daidir" 
+invokeDir = /home/shtp/ITP2025/Labs/FPV/FPV/run
+[hb.sourceTab.1]
+scope = traffic
+File = /home/shtp/ITP2025/Labs/FPV/FPV/design/traffic.v
+Line = 1

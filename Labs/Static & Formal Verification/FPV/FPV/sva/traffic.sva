@@ -1,0 +1,86 @@
+module sva_checker #( parameter MAX_WAIT = 4) (input wire clk,
+                       input wire rst,
+                       input wire waiting_main,
+                       input wire waiting_first,
+                       input wire green_main,
+                       input wire green_first,
+                       input wire yellow_main,
+                       input wire yellow_first,
+                       input wire red_main, 
+                       input wire red_first,
+                       input wire [4:0] state_main, 
+                       input wire [4:0] state_first );
+
+// Check for crash hazards
+// 1)   No simultaneous through  lights
+   assert_no_both_green: assert property ( @(posedge clk) 
+        !(green_main && green_first) );
+   assert_no_both_yellow: assert property ( @(posedge clk) 
+        !(yellow_main && yellow_first) );
+
+// 2)   When a green or yellow light is showing, the cross street must get a red light.
+  assert_hazard_in_main: assert property( @(posedge clk) 
+        (green_main || yellow_main) |-> red_first);
+  assert_hazard_in_first: assert property( @(posedge clk) 
+        (green_first || yellow_first) |-> red_main);
+
+// 3)   Lights must change in the conventional green, yellow, red sequence.
+// Check for proper light sequencing
+  assert_signal_sequencing_on_main : assert property( @(posedge clk) 
+        yellow_main |=> red_main[*1:$] ##1 green_main[*1:$] ##1 yellow_main);
+  assert_signal_sequencing_on_first : assert property( @(posedge clk) 
+        yellow_first |=> red_first[*1:$] ##1 green_first[*1:$] ##1 yellow_first);
+
+// 4)   When traffic is waiting at a red light, it must be given a green light if there is no traffic on the cross street.
+  assert_green_no_waiting_first: assert property ( @(posedge clk)
+        (!waiting_main && red_first && waiting_first) |-> green_first);
+  assert_green_no_waiting_main: assert property ( @(posedge clk)
+        (!waiting_first && red_main && waiting_first) |-> green_main);
+
+// 5)   Traffic must not wait more than 5 ticks at a red light, even if the cross street has traffic.
+// Check for timely reaction to waiting traffic
+  assert_honor_waiting_main: assert property( @(posedge clk) 
+        $rose(waiting_main)  |-> ##[0:MAX_WAIT] green_main);
+  assert_honor_waiting_first: assert property( @(posedge clk) 
+        $rose(waiting_first) |-> ##[0:MAX_WAIT] green_first);
+
+// 6)   Red, green and yellow mutex
+  assert_gyr_oh_first: assert property ( @(posedge clk)
+        $onehot({green_first,red_first,yellow_first}));
+  assert_gyr_oh_main: assert property ( @(posedge clk)
+        $onehot({green_main,red_main,yellow_main})); 
+
+// 7)   State_first / state_main are onehot
+  assert_state_oh_first: assert property ( @(posedge clk)
+        $onehot(state_first));
+  assert_state_oh_main: assert property ( @(posedge clk)
+        $onehot(state_main));
+
+// Assumptions about sensor behavior:
+//      When sensors indicate traffic, they do not reset until a green light appears. (No Right-On-Red!)
+//      Once traffic is waiting, it must continue waiting until it gets a green light
+
+  assume_continuous_waiting_main: assume property ( @(posedge clk) 
+        waiting_main && ~green_main |=> waiting_main);
+  assume_continuous_waiting_first: assume property ( @(posedge clk) 
+        waiting_first && ~green_first |=> waiting_first);
+
+// Functional coverage scenarios
+  cov_both_red: cover property ( @(posedge clk)
+        red_main && red_first);
+  cov_waiting_on_both_streets_for_max_wait: cover property ( @(posedge clk)
+        (waiting_first && waiting_main)[*MAX_WAIT]);
+  cov_green_main_for_one_cycle: cover property ( @(posedge clk) 
+        $rose(green_main) ##1 $fell(green_main));
+  cov_green_first_for_one_cycle: cover property ( @(posedge clk) 
+        $rose(green_first) ##2 $fell(green_first));
+  cov_green_with_waiting_on_main : cover property ( @(posedge clk) 
+        ($rose(green_main) && waiting_main));
+  cov_green_with_waiting_on_first : cover property ( @(posedge clk) 
+        ($rose(green_first) && waiting_first));
+  cov_green_without_waiting_on_main : cover property ( @(posedge clk) 
+        ($rose(green_main) && !waiting_main));
+  cov_green_without_waiting_on_first : cover property ( @(posedge clk) 
+        ($rose(green_first) && !waiting_first));
+
+endmodule

@@ -1,0 +1,5 @@
+../design/traffic.v 
+../design/vlog_street_ctrl_fsm.v 
+../TB/tb.v
+-sverilog 
+

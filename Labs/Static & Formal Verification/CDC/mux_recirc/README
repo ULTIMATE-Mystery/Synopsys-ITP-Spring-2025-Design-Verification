@@ -1,0 +1,9 @@
+Summary
+----------------------------------------------------------------------
+This testcase exercises VC SG CDC for MUX recirculation synchronization scheme
+
+Testcase Details
+----------------------------------------------------------------------
+Design      : mux_recirc.v
+SDC         : clk.sdc
+Command     : make vcst

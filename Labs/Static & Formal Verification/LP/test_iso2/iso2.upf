@@ -1,0 +1,38 @@
+# Top domain, vdd, vss
+create_power_domain d_top  -include_scope
+create_supply_net   vdd    -domain d_top
+create_supply_port  vdd    -direction in
+connect_supply_net  vdd    -ports vdd
+create_supply_net   vss    -domain d_top
+create_supply_port  vss    -direction in
+connect_supply_net  vss    -ports vss
+add_port_state vdd  -state {HV  1.32}
+add_port_state vss  -state {ZV  0.0}
+set_domain_supply_net d_top -primary_power_net vdd  -primary_ground_net vss
+
+# Domain A
+create_power_domain d_a    -elements ua
+# vdda
+create_supply_net   vdda   -domain d_a
+create_supply_port  vdda   -direction in
+connect_supply_net  vdda   -ports vdda
+add_port_state vdda -state {HV  1.32}
+add_port_state vdda -state {OFF off}
+# primaries
+create_supply_net   vdd    -domain d_a  -reuse
+create_supply_net   vss    -domain d_a  -reuse
+set_domain_supply_net d_a   -primary_power_net vdda -primary_ground_net vss
+
+# States
+create_pst my_pst -supplies         {vss vdd vdda}
+add_pst_state S1 -pst my_pst -state {ZV  HV  HV}
+add_pst_state S2 -pst my_pst -state {ZV  HV  OFF}
+
+# Base strategy to isolate outputs of a
+set_isolation s_a -domain d_a -clamp_value 0 \
+   -applies_to outputs -isolation_power_net vdd
+set_isolation_control s_a -domain d_a -isolation_signal iso
+
+# Override on one port with internal iso
+set_isolation s_a2 -domain d_a -no_isolation \
+   -elements ua/ao6

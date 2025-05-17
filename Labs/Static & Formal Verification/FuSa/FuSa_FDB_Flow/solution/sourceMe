@@ -1,0 +1,16 @@
+#! /bin/csh -f
+
+# Set VC_STAIC_HOME VCS_HOME and ZOIXHOME
+# ZOIXHOME required only when the compilation is done using ZOIX
+
+setenv VC_STATIC_HOME $VC_STATIC_HOME
+setenv ZOIXHOME $ZOIXHOME
+
+setenv VCS_HOME $VC_STATIC_HOME/vcs-mx/
+set path=($VC_STATIC_HOME/bin $ZOIXHOME/bin $path $VCS_HOME/bin)
+
+# Change project/storage_path/campaign as needed
+setenv SNPS_FDB_PROJECT fifo
+setenv SNPS_FDB_STORAGE_PATH $PWD/fdb_data
+setenv SNPS_FDB_FAULT_CAMPAIGN fc1
+

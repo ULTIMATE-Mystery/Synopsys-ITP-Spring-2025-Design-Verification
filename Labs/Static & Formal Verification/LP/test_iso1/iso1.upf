@@ -1,0 +1,69 @@
+create_power_domain d_top  -include_scope
+create_supply_net   vdd    -domain d_top
+create_supply_port  vdd    -direction in
+connect_supply_net  vdd    -ports vdd
+create_supply_net   vss    -domain d_top
+create_supply_port  vss    -direction in
+connect_supply_net  vss    -ports vss
+add_port_state vdd  -state {HV  1.32}
+add_port_state vdd  -state {OFF off}
+add_port_state vss  -state {ZV  0.0}
+set_domain_supply_net d_top -primary_power_net vdd  -primary_ground_net vss
+
+# Domain A
+create_power_domain d_a    -elements ua
+# vdda
+create_supply_net   vdda   -domain d_a
+create_supply_port  vdda   -direction in
+connect_supply_net  vdda   -ports vdda
+add_port_state vdda -state {HV  1.32}
+add_port_state vdda -state {OFF off}
+# vdda2
+create_supply_net   vdda2   -domain d_a
+create_supply_port  vdda2   -direction in
+connect_supply_net  vdda2   -ports vdda2
+add_port_state vdda2 -state {HV  1.32}
+add_port_state vdda2 -state {OFF off}
+# vdda3
+create_supply_net   vdda3  -domain d_a
+create_supply_port  vdda3  -direction in
+connect_supply_net  vdda3  -ports vdda3
+add_port_state vdda3 -state {HV  1.32}
+add_port_state vdda3 -state {OFF off}
+# primaries
+create_supply_net   vdd    -domain d_a  -reuse
+create_supply_net   vss    -domain d_a  -reuse
+set_domain_supply_net d_a   -primary_power_net vdda -primary_ground_net vss
+
+# Domain B
+create_power_domain d_b    -elements ub
+create_supply_net   vddb   -domain d_b
+create_supply_port  vddb   -direction in
+connect_supply_net  vddb   -ports vddb
+create_supply_net   vdd    -domain d_b  -reuse
+create_supply_net   vss    -domain d_b  -reuse
+add_port_state vddb -state {HV  1.32}
+add_port_state vddb -state {OFF off}
+set_domain_supply_net d_b   -primary_power_net vddb -primary_ground_net vss
+
+# States
+create_pst my_pst -supplies         {vss vdd vdda vdda2 vdda3 vddb}
+add_pst_state S1 -pst my_pst -state {ZV  HV  HV    HV    HV    HV}
+add_pst_state S2 -pst my_pst -state {ZV  HV  OFF   OFF   HV    HV}
+add_pst_state S3 -pst my_pst -state {ZV  OFF OFF   OFF   HV    OFF}
+
+# Base strategy to isolate outputs of a
+set_isolation s_a -domain d_a -clamp_value 0 \
+   -applies_to outputs -isolation_power_net vdd
+set_isolation_control s_a -domain d_a -isolation_signal iso1 \
+   -location parent
+# Special for one output to correctly connect wrong power
+set_isolation s_a2 -domain d_a -clamp_value 0 \
+   -elements {ua/ao1} -isolation_power_net vdda
+set_isolation_control s_a2 -domain d_a -isolation_signal iso1 \
+   -location parent
+
+# Strategy to isolate outputs of b
+set_isolation s_b -domain d_b -clamp_value 0 \
+   -elements {ub/bo2 ub/bo3} -isolation_power_net vdd
+set_isolation_control s_b -domain d_b -isolation_signal iso1
