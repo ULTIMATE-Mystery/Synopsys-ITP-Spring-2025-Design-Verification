@@ -1,0 +1,11 @@
+-sverilog
+-l simv.log
+-assert enable_diag
+-assert dve
+-suppress=FLWSA
+router_test_top.sv
+../../rtl/router.v
+router_io.sv
+assert.sva
+assert_binds.sva
+test.sv

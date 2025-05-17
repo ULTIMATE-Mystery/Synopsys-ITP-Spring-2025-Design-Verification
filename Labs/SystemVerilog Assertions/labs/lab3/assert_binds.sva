@@ -1,0 +1,37 @@
+module assert_binds;
+
+bind router_test_top.dut assert_inputs #(.port_no(0)) a_iport0(clock, reset_n, frame_n, valid_n, din);
+bind router_test_top.dut assert_inputs #(.port_no(1)) a_iport1(clock, reset_n, frame_n, valid_n, din);
+bind router_test_top.dut assert_inputs #(.port_no(2)) a_iport2(clock, reset_n, frame_n, valid_n, din);
+bind router_test_top.dut assert_inputs #(.port_no(3)) a_iport3(clock, reset_n, frame_n, valid_n, din);
+bind router_test_top.dut assert_inputs #(.port_no(4)) a_iport4(clock, reset_n, frame_n, valid_n, din);
+bind router_test_top.dut assert_inputs #(.port_no(5)) a_iport5(clock, reset_n, frame_n, valid_n, din);
+bind router_test_top.dut assert_inputs #(.port_no(6)) a_iport6(clock, reset_n, frame_n, valid_n, din);
+bind router_test_top.dut assert_inputs #(.port_no(7)) a_iport7(clock, reset_n, frame_n, valid_n, din);
+bind router_test_top.dut assert_inputs #(.port_no(8)) a_iport8(clock, reset_n, frame_n, valid_n, din);
+bind router_test_top.dut assert_inputs #(.port_no(9)) a_iport9(clock, reset_n, frame_n, valid_n, din);
+bind router_test_top.dut assert_inputs #(.port_no(10)) a_iport10(clock, reset_n, frame_n, valid_n, din);
+bind router_test_top.dut assert_inputs #(.port_no(11)) a_iport11(clock, reset_n, frame_n, valid_n, din);
+bind router_test_top.dut assert_inputs #(.port_no(12)) a_iport12(clock, reset_n, frame_n, valid_n, din);
+bind router_test_top.dut assert_inputs #(.port_no(13)) a_iport13(clock, reset_n, frame_n, valid_n, din);
+bind router_test_top.dut assert_inputs #(.port_no(14)) a_iport14(clock, reset_n, frame_n, valid_n, din);
+bind router_test_top.dut assert_inputs #(.port_no(15)) a_iport15(clock, reset_n, frame_n, valid_n, din);
+
+bind router_test_top.dut assert_outputs #(.port_no(0)) a_oport0(clock, reset_n, frameo_n, valido_n, dout);
+bind router_test_top.dut assert_outputs #(.port_no(1)) a_oport1(clock, reset_n, frameo_n, valido_n, dout);
+bind router_test_top.dut assert_outputs #(.port_no(2)) a_oport2(clock, reset_n, frameo_n, valido_n, dout);
+bind router_test_top.dut assert_outputs #(.port_no(3)) a_oport3(clock, reset_n, frameo_n, valido_n, dout);
+bind router_test_top.dut assert_outputs #(.port_no(4)) a_oport4(clock, reset_n, frameo_n, valido_n, dout);
+bind router_test_top.dut assert_outputs #(.port_no(5)) a_oport5(clock, reset_n, frameo_n, valido_n, dout);
+bind router_test_top.dut assert_outputs #(.port_no(6)) a_oport6(clock, reset_n, frameo_n, valido_n, dout);
+bind router_test_top.dut assert_outputs #(.port_no(7)) a_oport7(clock, reset_n, frameo_n, valido_n, dout);
+bind router_test_top.dut assert_outputs #(.port_no(8)) a_oport8(clock, reset_n, frameo_n, valido_n, dout);
+bind router_test_top.dut assert_outputs #(.port_no(9)) a_oport9(clock, reset_n, frameo_n, valido_n, dout);
+bind router_test_top.dut assert_outputs #(.port_no(10)) a_oport10(clock, reset_n, frameo_n, valido_n, dout);
+bind router_test_top.dut assert_outputs #(.port_no(11)) a_oport11(clock, reset_n, frameo_n, valido_n, dout);
+bind router_test_top.dut assert_outputs #(.port_no(12)) a_oport12(clock, reset_n, frameo_n, valido_n, dout);
+bind router_test_top.dut assert_outputs #(.port_no(13)) a_oport13(clock, reset_n, frameo_n, valido_n, dout);
+bind router_test_top.dut assert_outputs #(.port_no(14)) a_oport14(clock, reset_n, frameo_n, valido_n, dout);
+bind router_test_top.dut assert_outputs #(.port_no(15)) a_oport15(clock, reset_n, frameo_n, valido_n, dout);
+
+endmodule //assert_binds
