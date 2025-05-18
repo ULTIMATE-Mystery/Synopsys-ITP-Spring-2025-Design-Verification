@@ -1,0 +1,15 @@
+# Isolation policy
+set_isolation ${domain_name}_iso \
+  -domain ${domain_name} \
+  -applies_to outputs \
+  -isolation_power_net VDD \
+  -isolation_ground_net VSS \
+  -clamp_value 1 
+
+# Isolation control - deprecated, now part of set_isolation
+# The location of the isolation is inside power domain
+set_isolation_control ${domain_name}_iso \
+  -domain ${domain_name}   \
+  -isolation_signal pwr.ipwrcon_iso_n[3] \
+  -isolation_sense low \
+  -location self

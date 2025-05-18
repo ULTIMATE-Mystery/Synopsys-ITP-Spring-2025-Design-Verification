@@ -1,0 +1,68 @@
+##decoder.upf
+##
+if {![info exists port_id]} {
+  set port_id = 0
+  puts "No port_id defined. Using ${port_id}"
+}
+
+if {![info exists domain_name]} {
+  set domain_name = decoder_PD${port_id}
+  puts "No domain_name defined. Using ${domain_name}"
+}
+
+## Define power_domain
+##
+create_power_domain ${domain_name}
+
+## Create power and ground ports and nets. We will connect to nets at a higher level using these ports.
+##
+create_supply_port VDD
+create_supply_port VSS
+create_supply_net VDD
+create_supply_net VDD_${port_id}
+create_supply_net VSS
+
+## Connect ports and nets
+##
+connect_supply_net VDD -ports VDD
+connect_supply_net VSS -ports VSS
+
+## Define the primary power and ground for this domain using set_domain_supply_net
+##
+set_domain_supply_net ${domain_name} -primary_power_net VDD_${port_id} -primary_ground_net VSS
+
+## Define a power switch for this domain using the two power supplies just created as primary power and ground
+##
+
+create_power_switch decoder_SW_${port_id} \
+  -domain ${domain_name} \
+  -output_supply_port "out VDD_${port_id}" \
+  -input_supply_port "in VDD" \
+  -control_port "ctrl pwr/ipwrcon_pd_n[${port_id}]" \
+  -on_state "${domain_name}_SW_ON in {!ctrl}" \
+  -off_state "${domain_name}_SW_OFF ctrl" 
+
+##
+## Task 2 step 2
+##
+## Isolation policy
+##
+## Combine the deprecated set_isolation_control with set_isolation.
+##
+## Todo
+##
+set_isolation ${domain_name}_iso \
+  -domain ${domain_name} \
+  -source ${domain_name}.primary \
+  -clamp_value 1 \
+  -isolation_signal pwr/ipwrcon_iso_n[${port_id}] \
+  -isolation_sense low \
+  -location self 
+
+## Isolation control - deprecated, now part of set_isolation
+##
+## The location of the isolation is inside power domain
+## Delete after combining with set_isolation
+##
+## ToDO
+##

@@ -1,0 +1,51 @@
+#set_design_top router
+create_power_domain router -include_scope
+create_supply_net VDD
+create_supply_net VSS
+#implicitly connnected to net VDD.
+#Use connect_supply_net VDD -ports VDD to connect explicitly
+create_supply_port VDD
+#implicitly connnected to net VSS
+create_supply_port VSS
+
+set_domain_supply_net router  -primary_power_net VDD  -primary_ground_net VSS
+
+set i 3
+set domain_name "Input_PD${i}"
+set elem "ip${i}"
+puts "$domain_name $elem"
+create_power_domain $domain_name -elements $elem
+create_supply_net VDD_${i} -domain $domain_name
+create_supply_net VSS  -reuse -domain $domain_name
+set_domain_supply_net $domain_name  -primary_power_net VDD_${i}  -primary_ground_net VSS
+ create_power_switch Input_SW_${i} \
+   -domain $domain_name \
+   -output_supply_port {out VDD_3} \
+   -input_supply_port {in VDD} \
+   -control_port {ctrl pwr.ipwrcon_pd_n[3]} \
+   -on_state {Input_PD3_SW_ON in {!ctrl}} \
+   -off_state {Input_PD3_SW_OFF ctrl}
+
+#set_isolation ${domain_name}_iso \
+-domain ${domain_name} \
+-applies_to outputs \
+-isolation_power_net VDD \
+-isolation_ground_net VSS \
+-clamp_value 1 
+
+#The location of the isolation is inside power domain 
+#set_isolation_control ${domain_name}_iso \
+-domain ${domain_name}	 \
+-isolation_signal pwr.ipwrcon_iso_n[3] \
+-isolation_sense low \
+-location self 
+
+
+add_port_state VDD -state {HV 1.08} -state {OFF off}
+add_port_state VSS -state {GND 0.0}
+add_port_state Input_SW_${i}/out -state {HV 1.08} -state {OFF off}
+#
+create_pst router_pst -supplies {VDD Input_SW_3/out VSS}
+add_pst_state all_off -pst router_pst -state {OFF OFF GND}
+add_pst_state all_on -pst router_pst -state {HV HV GND}
+add_pst_state ip3_off -pst router_pst -state {HV OFF GND}

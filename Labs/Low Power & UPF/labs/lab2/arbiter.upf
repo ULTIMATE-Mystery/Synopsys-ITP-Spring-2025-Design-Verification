@@ -1,0 +1,92 @@
+##arbiter.upf
+##
+if {![info exists port_id]} {
+  set port_id = 0
+  puts "No port_id defined. Using ${port_id}"
+}
+
+if {![info exists domain_name]} {
+  set domain_name = arbiter_PD${port_id}
+  puts "No domain_name defined. Using ${domain_name}"
+}
+
+## Task 3 step 2
+##
+## Define an explicit supply set using create_supply_set command. This is the external input supply to the domain
+##
+## Todo
+##
+create_supply_set SS_${domain_name}
+##
+## Task 3 step 3
+##
+## Define a  supply net that will be the switched supply to the arbiter domain.
+## Use the domain name to create a unique name.
+##
+## Todo
+##
+create_supply_net VDD_${domain_name}_switched
+##
+## Task 3 step 4
+##
+## create arbiter power domain
+##
+## Todo
+##
+create_power_domain ${domain_name}
+##
+## Task 3 step 5
+##
+## set arbiter power domain supply net using
+## the net created as primary supply and the external input supply-set's ground as it's ground.
+##
+## Todo
+##
+set_domain_supply_net ${domain_name} \
+	-primary_power_net VDD_${domain_name}_switched \
+	-primary_ground_net SS_${domain_name}.ground
+##
+## create power switch
+## Uses the nets and supply sets created earlier to connect the switch's input and output ports 
+
+create_power_switch Output_SW_${port_id} \
+  -domain ${domain_name} \
+  -output_supply_port "out VDD_${domain_name}_switched" \
+  -input_supply_port "in SS_${domain_name}.power" \
+  -control_port "ctrl pwr/opwrcon_pd_n[${port_id}]" \
+  -on_state "${domain_name}_SW_ON in {!ctrl}" \
+  -off_state "${domain_name}_SW_OFF ctrl"
+
+
+## output isolation
+##
+## Note the isolation policy is also using the ROUTER domain default supply set
+## Use the domain's external input supply as the isolation supply
+##
+set_isolation ${domain_name}_iso \
+  -domain ${domain_name} \
+  -applies_to outputs \
+  -isolation_supply_set SS_${domain_name} \
+  -clamp_value 1 \
+  -isolation_signal pwr/opwrcon_iso_n[${port_id}] \
+  -isolation_sense low \
+  -location self
+
+##
+## Task 6 step 2
+##
+## State retention
+##
+## Add retention to the domain using set_retention command 
+##
+## Use the domain's external input supply set as the retention supply set
+##
+## Add retention control save and restore signals
+##
+## Todo
+##
+set_retention ${domain_name}_ret \
+	-domain ${domain_name} \
+	-retention_supply_set SS_${domain_name} \
+	-save_signal "pwr/opwrcon_save_n[${port_id}] low" \
+	-restore_signal "pwr/opwrcon_restore_n[${port_id}] low"

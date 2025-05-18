@@ -1,0 +1,110 @@
+Synopsys Customer Education Services
+======================================================================
+Power-Aware Verification with VCS-NLP and UPF
+Lab Notes Rev 2019.06
+Last Update: 06-19-2019
+======================================================================
+
+
+These Instructions are intended to help you with the installation of 
+the tools needed to successfully run the labs, and with the installation 
+of the lab database itself. If using outside Synopsys do not follow these
+intructions. Instead make sure you have the correct tools installed and
+setup for your use.
+
+CONTENTS
+================================
+
+1. Software installation
+2. Lab database installation
+3. Lab database configuration and testing
+
+
+**********************************************************************
+1. Software installation
+======================================================================
+
+This workshop needs the following tool(s) to be installed:
+
+- VCS  P-2019.06
+- VERDI Verdi_P-2019.06
+- VC_STATIC P-2019.06
+
+
+**********************************************************************
+2. Lab database Installation
+======================================================================
+
+Execute the following command to unpack the archive:
+
+        unix$  gzip -dc ces_nlp_2019.06.tar.gz | tar xf -
+
+   Or if you are using gtar:
+
+        unix$  gtar xzf ces_nlp_2019.06.tar.gz
+
+Note:  Archives were created using GNU tar.
+
+Multiple account installation:
+Since the lab directory structure may contain symbolic links that 
+should be preserved instead of being expanded, it is strongly 
+recommended that you untar the file directly into each account.
+Repeat the following for every user account:
+
+unix$ cd /path/to/user/account1
+unix$ gtar xzf /path/to/ces_nlp_2019.06.tar.gz
+
+
+**********************************************************************
+3. Lab database configuration and testing
+======================================================================
+
+Testing
+==============================
+
+To verify the functionality of the lab files, it is recommended that
+you run the supplied test script (the current directory has to be
+the "ces_nlp_2019.06" directory):
+
+
+        unix$  ./.testscript
+
+
+This will run a series of tests to verify that all files exist, and that
+the tool can be invoked.
+
+If everything is ok, you should see output similar to:
+
+
+------------------------------------------------------------
+ 
+ ******************************************************
+ Running the Synopsys Workshop Installation Test Script
+ 
+       Course Name:             VCS-NLP
+       VCS Version:             2019.06
+       Verdi Version:           Verdi3_P-2019.06
+       VC Static Version:       P-2019.06
+       Last Update:             06-19-2019
+ ******************************************************
+
+ Running  Test 1 - installation integrity check
+ Running  Tests 2a,b,c - availability of VCS executables
+ Running  Test 2d - availability of verdi executables
+ Running  Test 2e - availability of vc_static executables
+ Running  Test 3a - vcs invocation test
+ Running  Test 3b - verdi invocation test
+ Running  Test 3c - vc_static invocation test
+ Running  Test 4 - vcs SystemVerilog simulation test
+ Skipping Test 5 - GUI (dve)
+
+ Installation Test PASSED for VCS-NLP Course
+
+------------------------------------------------------------
+Note:
+By default, the GUI (dve) test is skipped.
+To include the GUI test, edit the file ".testscript" and change the
+variable $test_vcs_gui to "1" at the top of the file. 
+Rerun the test after that.
+Make sure that you have the DISPLAY environment variable set
+correctly, otherwise the test will fail.

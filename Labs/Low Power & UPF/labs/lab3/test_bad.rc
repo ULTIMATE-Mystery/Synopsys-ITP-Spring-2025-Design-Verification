@@ -1,0 +1,171 @@
+Magic 271485
+Revision Verdi_W-2024.09-SP1-1
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 33 1920 986 190 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / -i 0 "" "/evprj153/projects/DuyQuang_DV1/Labs/ces_nlp_2019.06/labs/lab3/novas.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+windowTimeUnit 1ns
+
+; waveform viewport range
+zoom 0.000000 269114.500000 1n
+cursor 150250.00000000003
+marker 0.000000
+
+; visible top row signal index
+top 0
+; marker line index
+markerPos 32
+
+; logical expression list
+; addExprSig expr_name expression_string
+activeDirFile "" "/evprj153/projects/DuyQuang_DV1/Labs/ces_nlp_2019.06/labs/lab3/novas.fsdb"
+
+addExprSig -b 1 -n U \_power_off_mask_upf_simstate[31:0]  (("/router_test_top/dut/ROUTER/upf_simstate[31:0]"==1))
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_driving_power_off_mask_upf_simstate[31:0]  ((((("/router_test_top/dut/ROUTER/upf_simstate[31:0]"==1)))))
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \!{pwr/opwrcon_iso_n[2]}  !{"/router_test_top/dut/op2/pwr/opwrcon_iso_n[2]"}
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n UUU \_driving_power_off_mask_upf_simstate[31:0]_upf_simstate[31:0]  (((("/\!{pwr/opwrcon_iso_n[2]} "==1))?((("/router_test_top/dut/op2/arb\
+iter_PD2/upf_simstate[31:0]"==1))):(((("/router_test_top/dut/op2/arbit\
+er_PD2/upf_simstate[31:0]"==1))))))
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_iso_power_off_mask_upf_simstate[31:0]  (("/router_test_top/dut/op2/SS_arbiter_PD2/upf_simstate[31:0]"==1))
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_isolation_mask_\!{pwr/opwrcon_iso_n[2]}  "/\!{pwr/opwrcon_iso_n[2]} "
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_retention_level_mask_/router_test_top/dut/op2/pwr/opwrcon_save_n[2]  "/router_test_top/dut/op2/pwr/opwrcon_save_n[2]"==0
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_retention_level_mask_/router_test_top/dut/op2/pwr/opwrcon_restore_n[2]  "/router_test_top/dut/op2/pwr/opwrcon_restore_n[2]"==0
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_retention_level_mask_/router_test_top/dut/op2/pwr/opwrcon_save_n[2](2)  ("/router_test_top/dut/op2/pwr/opwrcon_save_n[2]"==0)
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_retention_level_mask_/router_test_top/dut/op2/pwr/opwrcon_restore_n[2](2)  ("/router_test_top/dut/op2/pwr/opwrcon_restore_n[2]"==0)
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_power_off_mask_upf_simstate[31:0](2)  (("/router_test_top/dut/op2/arbiter_PD2/upf_simstate[31:0]"==1))
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_driving_power_off_mask_upf_simstate[31:0](2)  ((((("/router_test_top/dut/op2/arbiter_PD2/upf_simstate[31:0]"==1)))))
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByValue
+
+
+aliasmapname Power_AddPowerState_Alias_Table_0
+nalias GND|HV		6		NULL
+nalias #undefined		0		NULL
+nalias DEFAULT_NORMAL		1		NULL
+nalias NORMAL		4		NULL
+nalias CORRUPT		5		NULL
+nalias DEFAULT_CORRUPT		2		NULL
+nalias HV|GND		3		NULL
+
+addGroup "G1" -e FALSE
+addSubGroup "router_if(router_io)"
+activeDirFile "" "/evprj153/projects/DuyQuang_DV1/Labs/ces_nlp_2019.06/labs/lab3/novas.fsdb"
+addSignal -h 15 /router_test_top/router_if/clk
+addSignal -h 15 -UNSIGNED -HEX -holdScope frame_n[15:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope valid_n[15:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope din[15:0]
+addSignal -expanded -h 15 -UNSIGNED -HEX -holdScope dout[15:0]
+addSignal -h 15 -holdScope dout[15]
+addSignal -h 15 -holdScope dout[14]
+addSignal -h 15 -holdScope dout[13]
+addSignal -h 15 -holdScope dout[12]
+addSignal -h 15 -holdScope dout[11]
+addSignal -h 15 -holdScope dout[10]
+addSignal -h 15 -holdScope dout[9]
+addSignal -h 15 -holdScope dout[8]
+addSignal -h 15 -holdScope dout[7]
+addSignal -h 15 -holdScope dout[6]
+addSignal -h 15 -holdScope dout[5]
+addSignal -h 15 -holdScope dout[4]
+addSignal -h 15 -holdScope dout[3]
+addSignal -h 15 -holdScope dout[2]
+addSignal -h 15 -holdScope dout[1]
+addSignal -h 15 -holdScope dout[0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope busy_n[15:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope valido_n[15:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope frameo_n[15:0]
+endSubGroup "router_if(router_io)"
+addGroup "G2"
+addSignal -h 15 /router_test_top/router_if/dout[2]
+addGroup "dout#150250.000_traceX"
+addSignal -h 15 /router_test_top/router_if/dout[2]
+addSignal -h 15 -mark ID_YELLOW5 -tri 1 { 15015000 } /router_test_top/dut/dout_int[2]
+addSignal -h 15 -UNSIGNED -HEX -mark ID_YELLOW5 -tri 1 { 15015000 } -holdScope ip_src_op[2][3:0]
+addSignal -c ID_YELLOW2 -ls solid -lw 1 -not_apply_wf_color -h 15 -UNSIGNED -HEX -mark ID_YELLOW5 -tri 1 { 15015000 } /router_test_top/dut/op2/ip_src_op[3:0]
+addSubGroup "/router_test_top/dut/op2/ip_src_op[3:0]#RET#Instrumented_Signal"
+addSignal -h 15 -UNSIGNED -HEX /router_test_top/dut/op2/save____ip_src_op[3:0]
+addSignal -h 15 -holdScope __nlp_instance_specific_retention___state
+endSubGroup "/router_test_top/dut/op2/ip_src_op[3:0]#RET#Instrumented_Signal"
+addSubGroup "/router_test_top/dut/op2/ip_src_op[3:0]#RET#arbiter_PD2_ret_Save_Ctrl"
+addSignal -h 15 /router_test_top/dut/op2/pwr/opwrcon_save_n[2]
+endSubGroup "/router_test_top/dut/op2/ip_src_op[3:0]#RET#arbiter_PD2_ret_Save_Ctrl"
+addSubGroup "/router_test_top/dut/op2/ip_src_op[3:0]#RET#arbiter_PD2_ret_Restore_Ctrl"
+addSignal -h 15 /router_test_top/dut/op2/pwr/opwrcon_restore_n[2]
+endSubGroup "/router_test_top/dut/op2/ip_src_op[3:0]#RET#arbiter_PD2_ret_Restore_Ctrl"
+addSignal -h 15 /router_test_top/dut/op2/isolation_enable_arbiter_PD2_iso
+addSignal -c ID_RED6 -ls solid -lw 1 -not_apply_wf_color -h 15 -UNSIGNED -HEX -holdScope ip_src_op_UPF_ISO_PRE[3:0]
+addSignal -h 15 -UNSIGNED /router_test_top/dut/op2/arbiter_PD2/upf_simstate[31:0]
+addGroup "G3"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm

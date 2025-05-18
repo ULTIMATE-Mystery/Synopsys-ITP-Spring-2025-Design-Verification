@@ -1,0 +1,212 @@
+Magic 271485
+Revision Verdi_W-2024.09-SP1-1
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 33 1920 986 249 50
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / -i 0 "" "/evprj153/projects/DuyQuang_DV1/Labs/ces_nlp_2019.06/labs/lab3/novas.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 54344599.102210 85293349.102210
+cursor 70636451.96111862361
+marker 0.000000
+
+; visible top row signal index
+top 0
+; marker line index
+markerPos 34
+
+; logical expression list
+; addExprSig expr_name expression_string
+activeDirFile "" "/evprj153/projects/DuyQuang_DV1/Labs/ces_nlp_2019.06/labs/lab3/novas.fsdb"
+
+addExprSig -b 1 -n U \_driving_power_off_mask_upf_power_domain_state[31:0]  ((((("/router_test_top/dut/ROUTER/upf_power_domain_state[31:0]"==1))))\
+)
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_toggle_mask_upf_power_domain_state[31:0]  (("/router_test_top/dut/ip0/decoder_PD0/upf_power_domain_state[31:0]"=\
+=1))
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_iso_power_off_mask_upf_simstate[31:0]  (("/router_test_top/dut/ip0/decoder_PD0/decoder_PD0_iso/isolation_supp\
+ly_set/upf_simstate[31:0]"==1))
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \!{pwr.ipwrcon_iso_n[0]}  !{"/router_test_top/dut/ip0/pwr/ipwrcon_iso_n[15:0]"}
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_isolation_mask_\!{pwr.ipwrcon_iso_n[0]}  "/\!{pwr.ipwrcon_iso_n[0]} "
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n UUU \_driving_power_off_mask_upf_power_domain_state[31:0]_upf_power_domain_state[31:0]  (((("/\!{pwr.ipwrcon_iso_n[0]} "==1))?((("/router_test_top/dut/ip0/dec\
+oder_PD0/upf_power_domain_state[31:0]"==1))):(((("/router_test_top/dut\
+/ip0/decoder_PD0/upf_power_domain_state[31:0]"==1))))))
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_power_off_mask_upf_power_domain_state[31:0]  (("/router_test_top/dut/ip0/decoder_PD0/upf_power_domain_state[31:0]"=\
+=1))
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_driving_power_off_mask_upf_power_domain_state[31:0](2)  ((((("/router_test_top/dut/ip0/decoder_PD0/upf_power_domain_state[31:0\
+]"==1)))))
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_toggle_mask_upf_power_domain_state[31:0](2)  (("/router_test_top/dut/ip1/decoder_PD1/upf_power_domain_state[31:0]"=\
+=1))
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_iso_power_off_mask_upf_simstate[31:0](2)  (("/router_test_top/dut/ip1/decoder_PD1/decoder_PD1_iso/isolation_supp\
+ly_set/upf_simstate[31:0]"==1))
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \!{pwr.ipwrcon_iso_n[1]}  !{"/router_test_top/dut/ip1/pwr/ipwrcon_iso_n[15:0]"}
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_isolation_mask_\!{pwr.ipwrcon_iso_n[1]}  "/\!{pwr.ipwrcon_iso_n[1]} "
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n UUU \_driving_power_off_mask_upf_power_domain_state[31:0]_upf_power_domain_state[31:0](2)  (((("/\!{pwr.ipwrcon_iso_n[1]} "==1))?((("/router_test_top/dut/ip1/dec\
+oder_PD1/upf_power_domain_state[31:0]"==1))):(((("/router_test_top/dut\
+/ip1/decoder_PD1/upf_power_domain_state[31:0]"==1))))))
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_power_off_mask_upf_power_domain_state[31:0](2)  (("/router_test_top/dut/ip1/decoder_PD1/upf_power_domain_state[31:0]"=\
+=1))
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_driving_power_off_mask_upf_power_domain_state[31:0](3)  ((((("/router_test_top/dut/ip1/decoder_PD1/upf_power_domain_state[31:0\
+]"==1)))))
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_driving_power_off_mask_upf_simstate[31:0]  ((((("/router_test_top/dut/ROUTER/upf_simstate[31:0]"==1)))))
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_toggle_mask_upf_simstate[31:0]  (("/router_test_top/dut/ip0/decoder_PD0/upf_simstate[31:0]"==1))
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \!{pwr/ipwrcon_iso_n[0]}  !{"/router_test_top/dut/ip0/pwr/ipwrcon_iso_n[0]"}
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_isolation_mask_\!{pwr/ipwrcon_iso_n[0]}  "/\!{pwr/ipwrcon_iso_n[0]} "
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n UUU \_driving_power_off_mask_upf_simstate[31:0]_upf_simstate[31:0]  (((("/\!{pwr/ipwrcon_iso_n[0]} "==1))?((("/router_test_top/dut/ip0/dec\
+oder_PD0/upf_simstate[31:0]"==1))):(((("/router_test_top/dut/ip0/decod\
+er_PD0/upf_simstate[31:0]"==1))))))
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_power_off_mask_upf_simstate[31:0]  (("/router_test_top/dut/ip0/decoder_PD0/upf_simstate[31:0]"==1))
+
+; logical expression list
+; addExprSig expr_name expression_string
+
+addExprSig -b 1 -n U \_driving_power_off_mask_upf_simstate[31:0](2)  ((((("/router_test_top/dut/ip0/decoder_PD0/upf_simstate[31:0]"==1)))))
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "ip0"
+activeDirFile "" "/evprj153/projects/DuyQuang_DV1/Labs/ces_nlp_2019.06/labs/lab3/novas.fsdb"
+addSignal -h 15 /router_test_top/dut/ip0/clk
+addSignal -h 15 -holdScope reset_n
+addSignal -h 15 -UNSIGNED -HEX -holdScope din[15:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope frame_n[15:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope lock[15:0]
+addSignal -c ID_RED6 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope request_n[15:0]
+addSubGroup "/router_test_top/dut/ip0/request_n[15:0]#ISO#Instrumented_Signal"
+addSignal -expanded -c ID_RED6 -ls solid -lw 1 -h 15 -UNSIGNED -HEX /router_test_top/dut/ip0/request_n_UPF_ISO_PRE[15:0]
+addSignal -c ID_RED6 -ls solid -lw 1 -h 15 -holdScope request_n_UPF_ISO_PRE[15]
+addSignal -c ID_RED6 -ls solid -lw 1 -h 15 -holdScope request_n_UPF_ISO_PRE[14]
+addSignal -c ID_RED6 -ls solid -lw 1 -h 15 -holdScope request_n_UPF_ISO_PRE[13]
+addSignal -c ID_RED6 -ls solid -lw 1 -h 15 -holdScope request_n_UPF_ISO_PRE[12]
+addSignal -c ID_RED6 -ls solid -lw 1 -h 15 -holdScope request_n_UPF_ISO_PRE[11]
+addSignal -c ID_RED6 -ls solid -lw 1 -h 15 -holdScope request_n_UPF_ISO_PRE[10]
+addSignal -c ID_RED6 -ls solid -lw 1 -h 15 -holdScope request_n_UPF_ISO_PRE[9]
+addSignal -c ID_RED6 -ls solid -lw 1 -h 15 -holdScope request_n_UPF_ISO_PRE[8]
+addSignal -c ID_RED6 -ls solid -lw 1 -h 15 -holdScope request_n_UPF_ISO_PRE[7]
+addSignal -c ID_RED6 -ls solid -lw 1 -h 15 -holdScope request_n_UPF_ISO_PRE[6]
+addSignal -c ID_RED6 -ls solid -lw 1 -h 15 -holdScope request_n_UPF_ISO_PRE[5]
+addSignal -c ID_RED6 -ls solid -lw 1 -h 15 -holdScope request_n_UPF_ISO_PRE[4]
+addSignal -c ID_RED6 -ls solid -lw 1 -h 15 -holdScope request_n_UPF_ISO_PRE[3]
+addSignal -c ID_RED6 -ls solid -lw 1 -h 15 -holdScope request_n_UPF_ISO_PRE[2]
+addSignal -c ID_RED6 -ls solid -lw 1 -h 15 -holdScope request_n_UPF_ISO_PRE[1]
+addSignal -c ID_RED6 -ls solid -lw 1 -h 15 -holdScope request_n_UPF_ISO_PRE[0]
+addSignal -h 15 -holdScope isolation_enable_decoder_PD0_iso
+addSignal -h 15 -holdScope isolation_ground_state_decoder_PD0_iso
+addSignal -h 15 -holdScope isolation_power_state_decoder_PD0_iso
+endSubGroup "/router_test_top/dut/ip0/request_n[15:0]#ISO#Instrumented_Signal"
+addSignal -c ID_RED6 -ls solid -lw 1 -h 15 /router_test_top/dut/ip0/busy_n
+addSignal -h 15 -UNSIGNED -HEX /router_test_top/dut/ip0/pwr/ipwrcon_pd_n[15:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope opwrcon_pd_n[15:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope ipwrcon_iso_n[15:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope opwrcon_iso_n[15:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope opwrcon_save_n[15:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope opwrcon_restore_n[15:0]
+addGroup "G3"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm

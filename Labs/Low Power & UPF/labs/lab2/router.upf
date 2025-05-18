@@ -1,0 +1,93 @@
+## router.upf
+## set_design_top router_test_top.dut  - now using -power_top at compile
+create_power_domain ROUTER
+
+## added for backward compatibility - power state tables are deprecated
+## needed starting VCS 2017.03
+set_design_attributes -elements {.} \
+  -attribute enable_state_propagation_in_add_power_state TRUE
+
+
+create_supply_net VDD
+create_supply_net VSS
+
+create_supply_port VDD
+create_supply_port VSS
+
+connect_supply_net VDD -ports VDD
+connect_supply_net VSS -ports VSS
+
+set_domain_supply_net ROUTER -primary_power_net VDD -primary_ground_net VSS
+
+## arbiter power domains
+for {set i 0} {$i < 16} {incr i} { 
+  set port_id "${i}"
+  set domain_name "arbiter_PD${port_id}"
+  set elem "op${port_id}"
+  load_upf "arbiter.upf" -scope ${elem}
+
+## Task 4 Step 3
+## Update the arbiter's input supply to connect to the ROUTER domain's power and ground functions
+## Todo
+	create_supply_set ${elem}/SS_${domain_name} \
+		-function {power ROUTER.primary.power} \
+		-function {ground ROUTER.primary.ground} -update
+}
+
+## Task 2 step 5
+## create sixteen decoder power domains in a for loop
+## create variables port_id, domain_name to pass to decoder.upf and elem for scope.
+## Todo
+## decoder power domains
+for {set i 0} {$i < 16} {incr i} {
+	set port_id "${i}"
+	set domain_name "decoder_PD${port_id}"
+	set elem "ip${port_id}"
+	load_upf "decoder.upf" -scope ${elem}
+
+## Task 2 step 6
+## In the same for loop Connect the ROUTER power and ground nets to
+## the power and ground ports of the decoder domain respectively
+## Todo
+	connect_supply_net VDD -ports ${elem}/VDD
+	connect_supply_net VSS -ports ${elem}/VSS
+}
+## Task 9 Step 2
+## Add power states for the three power domains. The power ports of import are
+## ROUTER domain's primary supply set ROUTER.primary and
+## the decoder's and arbiter's primary supply sets 
+## For simplicity we will only use ROUTER.primary, ip0/decoder_PD0.primary, op2/SS_arbiter_PD2
+## Todo
+add_power_state ROUTER.primary \
+	-state HV {-supply_expr {power == `{FULL_ON, 1.08}}} \
+	-state GND {-supply_expr {ground == `{FULL_ON, 0.0}}}
+add_power_state ip0/decoder_PD0.primary \
+	-state decoder_PD0_ON {-supply_expr {power == `{FULL_ON, 1.08}}} \
+	-state decoder_PD0_OFF {-supply_expr {power == `{OFF}}}
+add_power_state op2/arbiter_PD2.primary \
+	-state arbiter_PD2_ON {-supply_expr {power == `{FULL_ON, 1.08}}} \
+	-state arbiter_PD2_OFF {-supply_expr {power == `{OFF}}}
+## Task 9 Step 4
+## Create a power state table for the 4 chosen supply ports
+## ROUTER.primary.power and ground are always on.
+## We need to add a state for decoder_PD0 ON and OFF and
+## arbiter_PD2 ON and OFF
+## Note that if we were to create a table with all the domains we defined above
+## we will end up with 2**32 states. this shows you the complexity of verifying for power.
+## Todo
+##
+create_pst router_pst -supplies {ROUTER.primary.power \
+	ip0/decoder_PD0.primary.power \
+	op2/arbiter_PD2.primary.power ROUTER.primary.ground}
+
+add_pst_state all_on -pst router_pst \
+	-state {HV decoder_PD0_ON arbiter_PD2_ON GND}
+add_pst_state ip0_off -pst router_pst \
+	-state {HV decoder_PD0_OFF arbiter_PD2_ON GND}
+add_pst_state op2_off -pst router_pst \
+	-state {HV decoder_PD0_ON arbiter_PD2_OFF GND}
+## Task 10 Step 5
+## Add the missing power state to remove the simulation warning on illegal state
+## Todo
+add_pst_state ip0_op2_off -pst router_pst \
+	-state {HV decoder_PD0_OFF arbiter_PD2_OFF GND}

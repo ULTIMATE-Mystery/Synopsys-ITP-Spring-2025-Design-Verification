@@ -1,0 +1,60 @@
+# Task 2 Step 2 - set the top level design module to router_test_top/dut
+# Todo
+set_design_top router_test_top/dut
+# Task 2 Step 3  - create a power domain named ROUTER
+# Todo
+create_power_domain ROUTER
+# Task 2 Step 4  - create power and ground supply nets named VDD and VSS respectively
+# create supply ports corresponding to the supply nets
+# Todo
+create_supply_net VDD
+create_supply_net VSS
+
+create_supply_port VDD
+create_supply_port VSS
+# We are going to target module instance ip3 for our first controlled power domain
+# Task 2 Step 5 - set TCL variables elem(ip3) and domain_name(decoder_PD3) for the target module and its domain
+# Todo
+set domain_name "decoder_PD3"
+set elem "ip3"
+# optional - for debugging print the two variables elem and domain_name
+puts "${domain_name} ${elem}"
+# Task 2 Step 6 - create the power domain with the target element (use TCL variables)
+# Todo
+create_power_domain ${domain_name} -elements ${elem}
+# Task 2 Step 7 - For this domain create a power supply net and reuse the ground supply net already created in domain ROUTER
+# Todo
+create_supply_net VDD_3 -domain ${domain_name}
+create_supply_net VSS -domain ${domain_name} -reuse
+# Task 2 Step 8 - define the primary power and ground for this domain using set_domain_supply_net
+# Todo
+set_domain_supply_net ${domain_name} -primary_power_net VDD_3 -primary_ground_net VSS
+# Task 2 Step 9 - create a power switch decoder_SW_3 for this domain using the two power supplies just created as primary power and ground
+# Todo
+create_power_switch decoder_SW_3 \
+	-domain ${domain_name} \
+	-output_supply_port {out VDD_3} \
+	-input_supply_port {in VDD} \
+	-control_port {ctrl pwr.ipwrcon_pd_n[3]} \
+	-on_state {decoder_PD3_SW_ON in {!ctrl}} \
+	-off_state {decoder_PD3_SW_OFF ctrl}
+
+# Do this next task as a continuation of the create_power_switch command using a \ for next-line continuation
+# Task 2 Steps 11 and 12 - create the power and control signals for the switch as follows
+# output supply is the domain power supply net created above
+# input supply is the power supply net for the ROUTER domain
+# control is ipwrcon_pd_n[3] net defined in the power interface instance (see router_test_top.sv for instance name)
+# define the on and off states for this switch.
+# The switch is on when control is low and off when control is high
+# Todo
+
+#	-domain ${domain_name} \
+#	-output_supply_port {out VDD_3} \
+#	-input_supply_port {in VDD} \
+#	-control_port {ctrl pwr.ipwrcon_pd_n[3]} \
+#	-on_state {decoder_PD3_SW_ON in {!ctrl}} \
+#	-off_state {decoder_PD3_SW_OFF ctrl}
+
+# Task 8 Step 3 - load the router.iso.upf to add the isolation policy using load_upf
+# Todo
+load_upf "router.iso.upf"
