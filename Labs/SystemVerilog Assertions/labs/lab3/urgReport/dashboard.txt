@@ -1,0 +1,33 @@
+Dashboard
+
+Date: Tue May 20 14:08:03 2025
+
+User: trng7tusr8
+
+Version: W-2024.09-SP1-1
+Command line: urg -dir simv.vdb -format text 
+
+Number of tests: 1
+
+-------------------------------------------------------------------------------
+Total Coverage Summary 
+SCORE  ASSERT GROUP  
+ 52.60  75.19  30.00 
+
+
+-------------------------------------------------------------------------------
+Hierarchical coverage data for top-level instances 
+SCORE  ASSERT NAME            
+ 75.19  75.19 router_test_top 
+
+
+-------------------------------------------------------------------------------
+Total Module Definition Coverage Summary 
+SCORE  ASSERT 
+ 77.78  77.78 
+
+
+-------------------------------------------------------------------------------
+Total Groups Coverage Summary 
+SCORE  WEIGHT 
+ 30.00 1      

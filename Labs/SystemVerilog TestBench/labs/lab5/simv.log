@@ -1,0 +1,2016 @@
+Command: /evprj153/projects/DuyQuang_DV1/Labs/ces_svtb_2019.06/labs/lab5/./simv -l simv.log +ntb_random_seed=1
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP1-1; Runtime version W-2024.09-SP1-1;  May 20 13:37 2025
+*Verdi* Loading libsscore_vcs202409.so
+FSDB Dumper for VCS, Release Verdi_W-2024.09-SP1-1, Linux, 01/11/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'novas.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+VCD+ Writer W-2024.09-SP1-1 Copyright (c) 1991-2024 by Synopsys Inc.
+[NOTE]  4350.0ns Packet #0 Successfully Compared
+[NOTE]  4350.0ns Packet #1 Successfully Compared
+[NOTE]  4350.0ns Packet #2 Successfully Compared
+[NOTE]  4350.0ns Packet #3 Successfully Compared
+[NOTE]  4350.0ns Packet #4 Successfully Compared
+[NOTE]  5150.0ns Packet #5 Successfully Compared
+[NOTE]  5150.0ns Packet #6 Successfully Compared
+[NOTE]  5150.0ns Packet #7 Successfully Compared
+[NOTE]  5950.0ns Packet #8 Successfully Compared
+[NOTE]  5950.0ns Packet #9 Successfully Compared
+[NOTE]  6850.0ns Packet #10 Successfully Compared
+[NOTE]  8450.0ns Packet #11 Successfully Compared
+[NOTE]  8450.0ns Packet #12 Successfully Compared
+[NOTE]  8450.0ns Packet #13 Successfully Compared
+[NOTE]  8450.0ns Packet #14 Successfully Compared
+[NOTE]  9250.0ns Packet #15 Successfully Compared
+[NOTE]  9250.0ns Packet #16 Successfully Compared
+[NOTE] 10050.0ns Packet #17 Successfully Compared
+[NOTE] 10050.0ns Packet #18 Successfully Compared
+[NOTE] 10050.0ns Packet #19 Successfully Compared
+[NOTE] 10950.0ns Packet #20 Successfully Compared
+[NOTE] 11750.0ns Packet #21 Successfully Compared
+[NOTE] 12550.0ns Packet #22 Successfully Compared
+[NOTE] 12550.0ns Packet #23 Successfully Compared
+[NOTE] 12550.0ns Packet #24 Successfully Compared
+[NOTE] 12550.0ns Packet #25 Successfully Compared
+[NOTE] 12550.0ns Packet #26 Successfully Compared
+[NOTE] 13350.0ns Packet #27 Successfully Compared
+[NOTE] 13350.0ns Packet #28 Successfully Compared
+[NOTE] 13350.0ns Packet #29 Successfully Compared
+[NOTE] 13350.0ns Packet #30 Successfully Compared
+[NOTE] 13450.0ns Packet #31 Successfully Compared
+[NOTE] 15050.0ns Packet #32 Successfully Compared
+[NOTE] 15850.0ns Packet #33 Successfully Compared
+[NOTE] 15850.0ns Packet #34 Successfully Compared
+[NOTE] 15950.0ns Packet #35 Successfully Compared
+[NOTE] 16650.0ns Packet #36 Successfully Compared
+[NOTE] 16650.0ns Packet #37 Successfully Compared
+[NOTE] 16650.0ns Packet #38 Successfully Compared
+[NOTE] 16650.0ns Packet #39 Successfully Compared
+[NOTE] 16650.0ns Packet #40 Successfully Compared
+[NOTE] 16650.0ns Packet #41 Successfully Compared
+[NOTE] 16650.0ns Packet #42 Successfully Compared
+[NOTE] 17550.0ns Packet #43 Successfully Compared
+[NOTE] 19150.0ns Packet #44 Successfully Compared
+[NOTE] 19150.0ns Packet #45 Successfully Compared
+[NOTE] 19150.0ns Packet #46 Successfully Compared
+[NOTE] 19250.0ns Packet #47 Successfully Compared
+[NOTE] 19950.0ns Packet #48 Successfully Compared
+[NOTE] 19950.0ns Packet #49 Successfully Compared
+[NOTE] 19950.0ns Packet #50 Successfully Compared
+[NOTE] 20750.0ns Packet #51 Successfully Compared
+[NOTE] 20750.0ns Packet #52 Successfully Compared
+[NOTE] 21650.0ns Packet #53 Successfully Compared
+[NOTE] 21650.0ns Packet #54 Successfully Compared
+[NOTE] 22450.0ns Packet #55 Successfully Compared
+[NOTE] 22450.0ns Packet #56 Successfully Compared
+[NOTE] 22450.0ns Packet #57 Successfully Compared
+[NOTE] 22450.0ns Packet #58 Successfully Compared
+[NOTE] 22550.0ns Packet #59 Successfully Compared
+[NOTE] 23250.0ns Packet #60 Successfully Compared
+[NOTE] 23350.0ns Packet #61 Successfully Compared
+[NOTE] 24050.0ns Packet #62 Successfully Compared
+[NOTE] 24950.0ns Packet #63 Successfully Compared
+[NOTE] 24950.0ns Packet #64 Successfully Compared
+[NOTE] 24950.0ns Packet #65 Successfully Compared
+[NOTE] 24950.0ns Packet #66 Successfully Compared
+[NOTE] 25750.0ns Packet #67 Successfully Compared
+[NOTE] 25750.0ns Packet #68 Successfully Compared
+[NOTE] 26550.0ns Packet #69 Successfully Compared
+[NOTE] 26650.0ns Packet #70 Successfully Compared
+[NOTE] 27450.0ns Packet #71 Successfully Compared
+[NOTE] 27450.0ns Packet #72 Successfully Compared
+[NOTE] 27450.0ns Packet #73 Successfully Compared
+[NOTE] 28150.0ns Packet #74 Successfully Compared
+[NOTE] 28250.0ns Packet #75 Successfully Compared
+[NOTE] 29050.0ns Packet #76 Successfully Compared
+[NOTE] 29850.0ns Packet #77 Successfully Compared
+[NOTE] 29950.0ns Packet #78 Successfully Compared
+[NOTE] 29950.0ns Packet #79 Successfully Compared
+[NOTE] 30650.0ns Packet #80 Successfully Compared
+[NOTE] 30650.0ns Packet #81 Successfully Compared
+[NOTE] 30750.0ns Packet #82 Successfully Compared
+[NOTE] 32350.0ns Packet #83 Successfully Compared
+[NOTE] 32450.0ns Packet #84 Successfully Compared
+[NOTE] 33150.0ns Packet #85 Successfully Compared
+[NOTE] 33950.0ns Packet #86 Successfully Compared
+[NOTE] 34050.0ns Packet #87 Successfully Compared
+[NOTE] 34050.0ns Packet #88 Successfully Compared
+[NOTE] 34050.0ns Packet #89 Successfully Compared
+[NOTE] 34050.0ns Packet #90 Successfully Compared
+[NOTE] 34750.0ns Packet #91 Successfully Compared
+[NOTE] 35650.0ns Packet #92 Successfully Compared
+[NOTE] 35750.0ns Packet #93 Successfully Compared
+[NOTE] 36550.0ns Packet #94 Successfully Compared
+[NOTE] 36550.0ns Packet #95 Successfully Compared
+[NOTE] 37250.0ns Packet #96 Successfully Compared
+[NOTE] 37250.0ns Packet #97 Successfully Compared
+[NOTE] 38150.0ns Packet #98 Successfully Compared
+[NOTE] 38150.0ns Packet #99 Successfully Compared
+[NOTE] 38150.0ns Packet #100 Successfully Compared
+[NOTE] 38250.0ns Packet #101 Successfully Compared
+[NOTE] 38850.0ns Packet #102 Successfully Compared
+[NOTE] 39050.0ns Packet #103 Successfully Compared
+[NOTE] 39050.0ns Packet #104 Successfully Compared
+[NOTE] 39750.0ns Packet #105 Successfully Compared
+[NOTE] 39750.0ns Packet #106 Successfully Compared
+[NOTE] 39750.0ns Packet #107 Successfully Compared
+[NOTE] 41350.0ns Packet #108 Successfully Compared
+[NOTE] 41350.0ns Packet #109 Successfully Compared
+[NOTE] 42250.0ns Packet #110 Successfully Compared
+[NOTE] 42250.0ns Packet #111 Successfully Compared
+[NOTE] 42250.0ns Packet #112 Successfully Compared
+[NOTE] 42250.0ns Packet #113 Successfully Compared
+[NOTE] 42250.0ns Packet #114 Successfully Compared
+[NOTE] 42350.0ns Packet #115 Successfully Compared
+[NOTE] 42350.0ns Packet #116 Successfully Compared
+[NOTE] 43150.0ns Packet #117 Successfully Compared
+[NOTE] 43850.0ns Packet #118 Successfully Compared
+[NOTE] 44650.0ns Packet #119 Successfully Compared
+[NOTE] 44750.0ns Packet #120 Successfully Compared
+[NOTE] 44750.0ns Packet #121 Successfully Compared
+[NOTE] 44850.0ns Packet #122 Successfully Compared
+[NOTE] 45650.0ns Packet #123 Successfully Compared
+[NOTE] 46350.0ns Packet #124 Successfully Compared
+[NOTE] 46350.0ns Packet #125 Successfully Compared
+[NOTE] 46350.0ns Packet #126 Successfully Compared
+[NOTE] 46350.0ns Packet #127 Successfully Compared
+[NOTE] 46450.0ns Packet #128 Successfully Compared
+[NOTE] 47150.0ns Packet #129 Successfully Compared
+[NOTE] 47150.0ns Packet #130 Successfully Compared
+[NOTE] 48850.0ns Packet #131 Successfully Compared
+[NOTE] 48850.0ns Packet #132 Successfully Compared
+[NOTE] 48850.0ns Packet #133 Successfully Compared
+[NOTE] 48950.0ns Packet #134 Successfully Compared
+[NOTE] 49650.0ns Packet #135 Successfully Compared
+[NOTE] 49650.0ns Packet #136 Successfully Compared
+[NOTE] 49650.0ns Packet #137 Successfully Compared
+[NOTE] 50550.0ns Packet #138 Successfully Compared
+[NOTE] 51250.0ns Packet #139 Successfully Compared
+[NOTE] 51250.0ns Packet #140 Successfully Compared
+[NOTE] 52150.0ns Packet #141 Successfully Compared
+[NOTE] 52150.0ns Packet #142 Successfully Compared
+[NOTE] 52150.0ns Packet #143 Successfully Compared
+[NOTE] 52250.0ns Packet #144 Successfully Compared
+[NOTE] 53850.0ns Packet #145 Successfully Compared
+[NOTE] 54650.0ns Packet #146 Successfully Compared
+[NOTE] 54650.0ns Packet #147 Successfully Compared
+[NOTE] 54650.0ns Packet #148 Successfully Compared
+[NOTE] 54650.0ns Packet #149 Successfully Compared
+[NOTE] 55450.0ns Packet #150 Successfully Compared
+[NOTE] 55450.0ns Packet #151 Successfully Compared
+[NOTE] 55550.0ns Packet #152 Successfully Compared
+[NOTE] 57150.0ns Packet #153 Successfully Compared
+[NOTE] 57950.0ns Packet #154 Successfully Compared
+[NOTE] 57950.0ns Packet #155 Successfully Compared
+[NOTE] 57950.0ns Packet #156 Successfully Compared
+[NOTE] 57950.0ns Packet #157 Successfully Compared
+[NOTE] 57950.0ns Packet #158 Successfully Compared
+[NOTE] 58750.0ns Packet #159 Successfully Compared
+[NOTE] 58750.0ns Packet #160 Successfully Compared
+[NOTE] 58750.0ns Packet #161 Successfully Compared
+[NOTE] 60450.0ns Packet #162 Successfully Compared
+[NOTE] 60450.0ns Packet #163 Successfully Compared
+[NOTE] 61250.0ns Packet #164 Successfully Compared
+[NOTE] 61250.0ns Packet #165 Successfully Compared
+[NOTE] 61250.0ns Packet #166 Successfully Compared
+[NOTE] 61250.0ns Packet #167 Successfully Compared
+[NOTE] 62050.0ns Packet #168 Successfully Compared
+[NOTE] 62050.0ns Packet #169 Successfully Compared
+[NOTE] 62050.0ns Packet #170 Successfully Compared
+[NOTE] 62050.0ns Packet #171 Successfully Compared
+[NOTE] 62850.0ns Packet #172 Successfully Compared
+[NOTE] 62950.0ns Packet #173 Successfully Compared
+[NOTE] 63750.0ns Packet #174 Successfully Compared
+[NOTE] 64550.0ns Packet #175 Successfully Compared
+[NOTE] 64550.0ns Packet #176 Successfully Compared
+[NOTE] 65350.0ns Packet #177 Successfully Compared
+[NOTE] 65350.0ns Packet #178 Successfully Compared
+[NOTE] 65350.0ns Packet #179 Successfully Compared
+[NOTE] 65350.0ns Packet #180 Successfully Compared
+[NOTE] 65350.0ns Packet #181 Successfully Compared
+[NOTE] 66150.0ns Packet #182 Successfully Compared
+[NOTE] 66250.0ns Packet #183 Successfully Compared
+[NOTE] 67050.0ns Packet #184 Successfully Compared
+[NOTE] 67850.0ns Packet #185 Successfully Compared
+[NOTE] 67850.0ns Packet #186 Successfully Compared
+[NOTE] 67850.0ns Packet #187 Successfully Compared
+[NOTE] 68650.0ns Packet #188 Successfully Compared
+[NOTE] 68650.0ns Packet #189 Successfully Compared
+[NOTE] 68750.0ns Packet #190 Successfully Compared
+[NOTE] 68750.0ns Packet #191 Successfully Compared
+[NOTE] 69450.0ns Packet #192 Successfully Compared
+[NOTE] 69450.0ns Packet #193 Successfully Compared
+[NOTE] 70250.0ns Packet #194 Successfully Compared
+[NOTE] 70350.0ns Packet #195 Successfully Compared
+[NOTE] 70350.0ns Packet #196 Successfully Compared
+[NOTE] 71950.0ns Packet #197 Successfully Compared
+[NOTE] 71950.0ns Packet #198 Successfully Compared
+[NOTE] 72750.0ns Packet #199 Successfully Compared
+[NOTE] 72750.0ns Packet #200 Successfully Compared
+[NOTE] 72750.0ns Packet #201 Successfully Compared
+[NOTE] 72850.0ns Packet #202 Successfully Compared
+[NOTE] 72850.0ns Packet #203 Successfully Compared
+[NOTE] 72850.0ns Packet #204 Successfully Compared
+[NOTE] 74450.0ns Packet #205 Successfully Compared
+[NOTE] 75250.0ns Packet #206 Successfully Compared
+[NOTE] 75250.0ns Packet #207 Successfully Compared
+[NOTE] 75250.0ns Packet #208 Successfully Compared
+[NOTE] 75350.0ns Packet #209 Successfully Compared
+[NOTE] 75350.0ns Packet #210 Successfully Compared
+[NOTE] 76050.0ns Packet #211 Successfully Compared
+[NOTE] 76050.0ns Packet #212 Successfully Compared
+[NOTE] 76150.0ns Packet #213 Successfully Compared
+[NOTE] 76850.0ns Packet #214 Successfully Compared
+[NOTE] 76950.0ns Packet #215 Successfully Compared
+[NOTE] 77750.0ns Packet #216 Successfully Compared
+[NOTE] 77750.0ns Packet #217 Successfully Compared
+[NOTE] 77750.0ns Packet #218 Successfully Compared
+[NOTE] 79350.0ns Packet #219 Successfully Compared
+[NOTE] 79450.0ns Packet #220 Successfully Compared
+[NOTE] 80150.0ns Packet #221 Successfully Compared
+[NOTE] 80150.0ns Packet #222 Successfully Compared
+[NOTE] 80150.0ns Packet #223 Successfully Compared
+[NOTE] 80250.0ns Packet #224 Successfully Compared
+[NOTE] 81050.0ns Packet #225 Successfully Compared
+[NOTE] 81850.0ns Packet #226 Successfully Compared
+[NOTE] 81850.0ns Packet #227 Successfully Compared
+[NOTE] 82650.0ns Packet #228 Successfully Compared
+[NOTE] 82750.0ns Packet #229 Successfully Compared
+[NOTE] 83450.0ns Packet #230 Successfully Compared
+[NOTE] 84250.0ns Packet #231 Successfully Compared
+[NOTE] 84350.0ns Packet #232 Successfully Compared
+[NOTE] 84350.0ns Packet #233 Successfully Compared
+[NOTE] 84350.0ns Packet #234 Successfully Compared
+[NOTE] 85150.0ns Packet #235 Successfully Compared
+[NOTE] 85950.0ns Packet #236 Successfully Compared
+[NOTE] 86750.0ns Packet #237 Successfully Compared
+[NOTE] 86850.0ns Packet #238 Successfully Compared
+[NOTE] 86850.0ns Packet #239 Successfully Compared
+[NOTE] 87550.0ns Packet #240 Successfully Compared
+[NOTE] 87650.0ns Packet #241 Successfully Compared
+[NOTE] 88350.0ns Packet #242 Successfully Compared
+[NOTE] 88450.0ns Packet #243 Successfully Compared
+[NOTE] 88450.0ns Packet #244 Successfully Compared
+[NOTE] 88450.0ns Packet #245 Successfully Compared
+[NOTE] 89250.0ns Packet #246 Successfully Compared
+[NOTE] 89350.0ns Packet #247 Successfully Compared
+[NOTE] 90050.0ns Packet #248 Successfully Compared
+[NOTE] 90150.0ns Packet #249 Successfully Compared
+[NOTE] 90950.0ns Packet #250 Successfully Compared
+[NOTE] 90950.0ns Packet #251 Successfully Compared
+[NOTE] 90950.0ns Packet #252 Successfully Compared
+[NOTE] 90950.0ns Packet #253 Successfully Compared
+[NOTE] 90950.0ns Packet #254 Successfully Compared
+[NOTE] 91750.0ns Packet #255 Successfully Compared
+[NOTE] 91750.0ns Packet #256 Successfully Compared
+[NOTE] 92450.0ns Packet #257 Successfully Compared
+[NOTE] 92550.0ns Packet #258 Successfully Compared
+[NOTE] 92650.0ns Packet #259 Successfully Compared
+[NOTE] 93450.0ns Packet #260 Successfully Compared
+[NOTE] 94250.0ns Packet #261 Successfully Compared
+[NOTE] 94950.0ns Packet #262 Successfully Compared
+[NOTE] 95050.0ns Packet #263 Successfully Compared
+[NOTE] 95050.0ns Packet #264 Successfully Compared
+[NOTE] 95050.0ns Packet #265 Successfully Compared
+[NOTE] 95150.0ns Packet #266 Successfully Compared
+[NOTE] 96650.0ns Packet #267 Successfully Compared
+[NOTE] 96750.0ns Packet #268 Successfully Compared
+[NOTE] 97550.0ns Packet #269 Successfully Compared
+[NOTE] 97550.0ns Packet #270 Successfully Compared
+[NOTE] 98350.0ns Packet #271 Successfully Compared
+[NOTE] 99050.0ns Packet #272 Successfully Compared
+[NOTE] 99150.0ns Packet #273 Successfully Compared
+[NOTE] 99150.0ns Packet #274 Successfully Compared
+[NOTE] 99250.0ns Packet #275 Successfully Compared
+[NOTE] 99950.0ns Packet #276 Successfully Compared
+[NOTE]100050.0ns Packet #277 Successfully Compared
+[NOTE]100850.0ns Packet #278 Successfully Compared
+[NOTE]100850.0ns Packet #279 Successfully Compared
+[NOTE]100850.0ns Packet #280 Successfully Compared
+[NOTE]101650.0ns Packet #281 Successfully Compared
+[NOTE]101650.0ns Packet #282 Successfully Compared
+[NOTE]102450.0ns Packet #283 Successfully Compared
+[NOTE]103150.0ns Packet #284 Successfully Compared
+[NOTE]103250.0ns Packet #285 Successfully Compared
+[NOTE]103350.0ns Packet #286 Successfully Compared
+[NOTE]103350.0ns Packet #287 Successfully Compared
+[NOTE]104150.0ns Packet #288 Successfully Compared
+[NOTE]104150.0ns Packet #289 Successfully Compared
+[NOTE]104950.0ns Packet #290 Successfully Compared
+[NOTE]105750.0ns Packet #291 Successfully Compared
+[NOTE]105750.0ns Packet #292 Successfully Compared
+[NOTE]106550.0ns Packet #293 Successfully Compared
+[NOTE]106650.0ns Packet #294 Successfully Compared
+[NOTE]106650.0ns Packet #295 Successfully Compared
+[NOTE]106650.0ns Packet #296 Successfully Compared
+[NOTE]107450.0ns Packet #297 Successfully Compared
+[NOTE]107450.0ns Packet #298 Successfully Compared
+[NOTE]109050.0ns Packet #299 Successfully Compared
+[NOTE]109050.0ns Packet #300 Successfully Compared
+[NOTE]109150.0ns Packet #301 Successfully Compared
+[NOTE]109150.0ns Packet #302 Successfully Compared
+[NOTE]109850.0ns Packet #303 Successfully Compared
+[NOTE]109950.0ns Packet #304 Successfully Compared
+[NOTE]109950.0ns Packet #305 Successfully Compared
+[NOTE]110750.0ns Packet #306 Successfully Compared
+[NOTE]110750.0ns Packet #307 Successfully Compared
+[NOTE]110750.0ns Packet #308 Successfully Compared
+[NOTE]110750.0ns Packet #309 Successfully Compared
+[NOTE]111550.0ns Packet #310 Successfully Compared
+[NOTE]112450.0ns Packet #311 Successfully Compared
+[NOTE]113250.0ns Packet #312 Successfully Compared
+[NOTE]113250.0ns Packet #313 Successfully Compared
+[NOTE]113250.0ns Packet #314 Successfully Compared
+[NOTE]113950.0ns Packet #315 Successfully Compared
+[NOTE]114050.0ns Packet #316 Successfully Compared
+[NOTE]114050.0ns Packet #317 Successfully Compared
+[NOTE]114850.0ns Packet #318 Successfully Compared
+[NOTE]114850.0ns Packet #319 Successfully Compared
+[NOTE]115650.0ns Packet #320 Successfully Compared
+[NOTE]115750.0ns Packet #321 Successfully Compared
+[NOTE]116450.0ns Packet #322 Successfully Compared
+[NOTE]116550.0ns Packet #323 Successfully Compared
+[NOTE]116550.0ns Packet #324 Successfully Compared
+[NOTE]116550.0ns Packet #325 Successfully Compared
+[NOTE]117350.0ns Packet #326 Successfully Compared
+[NOTE]117350.0ns Packet #327 Successfully Compared
+[NOTE]118150.0ns Packet #328 Successfully Compared
+[NOTE]118150.0ns Packet #329 Successfully Compared
+[NOTE]118250.0ns Packet #330 Successfully Compared
+[NOTE]118950.0ns Packet #331 Successfully Compared
+[NOTE]119050.0ns Packet #332 Successfully Compared
+[NOTE]119750.0ns Packet #333 Successfully Compared
+[NOTE]120650.0ns Packet #334 Successfully Compared
+[NOTE]121450.0ns Packet #335 Successfully Compared
+[NOTE]121450.0ns Packet #336 Successfully Compared
+[NOTE]121450.0ns Packet #337 Successfully Compared
+[NOTE]122250.0ns Packet #338 Successfully Compared
+[NOTE]122350.0ns Packet #339 Successfully Compared
+[NOTE]123050.0ns Packet #340 Successfully Compared
+[NOTE]123150.0ns Packet #341 Successfully Compared
+[NOTE]123150.0ns Packet #342 Successfully Compared
+[NOTE]123950.0ns Packet #343 Successfully Compared
+[NOTE]124750.0ns Packet #344 Successfully Compared
+[NOTE]124750.0ns Packet #345 Successfully Compared
+[NOTE]125550.0ns Packet #346 Successfully Compared
+[NOTE]125550.0ns Packet #347 Successfully Compared
+[NOTE]125550.0ns Packet #348 Successfully Compared
+[NOTE]125650.0ns Packet #349 Successfully Compared
+[NOTE]126450.0ns Packet #350 Successfully Compared
+[NOTE]127250.0ns Packet #351 Successfully Compared
+[NOTE]127250.0ns Packet #352 Successfully Compared
+[NOTE]128050.0ns Packet #353 Successfully Compared
+[NOTE]128050.0ns Packet #354 Successfully Compared
+[NOTE]128050.0ns Packet #355 Successfully Compared
+[NOTE]128850.0ns Packet #356 Successfully Compared
+[NOTE]128850.0ns Packet #357 Successfully Compared
+[NOTE]128950.0ns Packet #358 Successfully Compared
+[NOTE]128950.0ns Packet #359 Successfully Compared
+[NOTE]129750.0ns Packet #360 Successfully Compared
+[NOTE]129750.0ns Packet #361 Successfully Compared
+[NOTE]130550.0ns Packet #362 Successfully Compared
+[NOTE]131350.0ns Packet #363 Successfully Compared
+[NOTE]131350.0ns Packet #364 Successfully Compared
+[NOTE]131350.0ns Packet #365 Successfully Compared
+[NOTE]131350.0ns Packet #366 Successfully Compared
+[NOTE]131450.0ns Packet #367 Successfully Compared
+[NOTE]133050.0ns Packet #368 Successfully Compared
+[NOTE]133050.0ns Packet #369 Successfully Compared
+[NOTE]133050.0ns Packet #370 Successfully Compared
+[NOTE]133050.0ns Packet #371 Successfully Compared
+[NOTE]133850.0ns Packet #372 Successfully Compared
+[NOTE]133850.0ns Packet #373 Successfully Compared
+[NOTE]133950.0ns Packet #374 Successfully Compared
+[NOTE]134650.0ns Packet #375 Successfully Compared
+[NOTE]134650.0ns Packet #376 Successfully Compared
+[NOTE]134750.0ns Packet #377 Successfully Compared
+[NOTE]135450.0ns Packet #378 Successfully Compared
+[NOTE]137150.0ns Packet #379 Successfully Compared
+[NOTE]137150.0ns Packet #380 Successfully Compared
+[NOTE]137150.0ns Packet #381 Successfully Compared
+[NOTE]137150.0ns Packet #382 Successfully Compared
+[NOTE]137150.0ns Packet #383 Successfully Compared
+[NOTE]137150.0ns Packet #384 Successfully Compared
+[NOTE]137150.0ns Packet #385 Successfully Compared
+[NOTE]137950.0ns Packet #386 Successfully Compared
+[NOTE]138850.0ns Packet #387 Successfully Compared
+[NOTE]139650.0ns Packet #388 Successfully Compared
+[NOTE]140450.0ns Packet #389 Successfully Compared
+[NOTE]140450.0ns Packet #390 Successfully Compared
+[NOTE]140450.0ns Packet #391 Successfully Compared
+[NOTE]141250.0ns Packet #392 Successfully Compared
+[NOTE]141250.0ns Packet #393 Successfully Compared
+[NOTE]141250.0ns Packet #394 Successfully Compared
+[NOTE]141250.0ns Packet #395 Successfully Compared
+[NOTE]141250.0ns Packet #396 Successfully Compared
+[NOTE]142150.0ns Packet #397 Successfully Compared
+[NOTE]143750.0ns Packet #398 Successfully Compared
+[NOTE]143750.0ns Packet #399 Successfully Compared
+[NOTE]143750.0ns Packet #400 Successfully Compared
+[NOTE]143750.0ns Packet #401 Successfully Compared
+[NOTE]143750.0ns Packet #402 Successfully Compared
+[NOTE]144550.0ns Packet #403 Successfully Compared
+[NOTE]144550.0ns Packet #404 Successfully Compared
+[NOTE]145350.0ns Packet #405 Successfully Compared
+[NOTE]145350.0ns Packet #406 Successfully Compared
+[NOTE]145350.0ns Packet #407 Successfully Compared
+[NOTE]146250.0ns Packet #408 Successfully Compared
+[NOTE]146250.0ns Packet #409 Successfully Compared
+[NOTE]146250.0ns Packet #410 Successfully Compared
+[NOTE]147050.0ns Packet #411 Successfully Compared
+[NOTE]147850.0ns Packet #412 Successfully Compared
+[NOTE]148750.0ns Packet #413 Successfully Compared
+[NOTE]148750.0ns Packet #414 Successfully Compared
+[NOTE]149450.0ns Packet #415 Successfully Compared
+[NOTE]149450.0ns Packet #416 Successfully Compared
+[NOTE]149450.0ns Packet #417 Successfully Compared
+[NOTE]149550.0ns Packet #418 Successfully Compared
+[NOTE]149550.0ns Packet #419 Successfully Compared
+[NOTE]150350.0ns Packet #420 Successfully Compared
+[NOTE]151150.0ns Packet #421 Successfully Compared
+[NOTE]151150.0ns Packet #422 Successfully Compared
+[NOTE]151250.0ns Packet #423 Successfully Compared
+[NOTE]151950.0ns Packet #424 Successfully Compared
+[NOTE]151950.0ns Packet #425 Successfully Compared
+[NOTE]152050.0ns Packet #426 Successfully Compared
+[NOTE]152050.0ns Packet #427 Successfully Compared
+[NOTE]152850.0ns Packet #428 Successfully Compared
+[NOTE]152850.0ns Packet #429 Successfully Compared
+[NOTE]153650.0ns Packet #430 Successfully Compared
+[NOTE]153650.0ns Packet #431 Successfully Compared
+[NOTE]153650.0ns Packet #432 Successfully Compared
+[NOTE]154450.0ns Packet #433 Successfully Compared
+[NOTE]154450.0ns Packet #434 Successfully Compared
+[NOTE]155250.0ns Packet #435 Successfully Compared
+[NOTE]155250.0ns Packet #436 Successfully Compared
+[NOTE]155350.0ns Packet #437 Successfully Compared
+[NOTE]155350.0ns Packet #438 Successfully Compared
+[NOTE]156950.0ns Packet #439 Successfully Compared
+[NOTE]156950.0ns Packet #440 Successfully Compared
+[NOTE]156950.0ns Packet #441 Successfully Compared
+[NOTE]156950.0ns Packet #442 Successfully Compared
+[NOTE]157750.0ns Packet #443 Successfully Compared
+[NOTE]157750.0ns Packet #444 Successfully Compared
+[NOTE]157750.0ns Packet #445 Successfully Compared
+[NOTE]157750.0ns Packet #446 Successfully Compared
+[NOTE]158650.0ns Packet #447 Successfully Compared
+[NOTE]159450.0ns Packet #448 Successfully Compared
+[NOTE]159450.0ns Packet #449 Successfully Compared
+[NOTE]160250.0ns Packet #450 Successfully Compared
+[NOTE]161050.0ns Packet #451 Successfully Compared
+[NOTE]161050.0ns Packet #452 Successfully Compared
+[NOTE]161050.0ns Packet #453 Successfully Compared
+[NOTE]161050.0ns Packet #454 Successfully Compared
+[NOTE]161850.0ns Packet #455 Successfully Compared
+[NOTE]161850.0ns Packet #456 Successfully Compared
+[NOTE]161850.0ns Packet #457 Successfully Compared
+[NOTE]161950.0ns Packet #458 Successfully Compared
+[NOTE]162750.0ns Packet #459 Successfully Compared
+[NOTE]163550.0ns Packet #460 Successfully Compared
+[NOTE]163550.0ns Packet #461 Successfully Compared
+[NOTE]164350.0ns Packet #462 Successfully Compared
+[NOTE]164350.0ns Packet #463 Successfully Compared
+[NOTE]164350.0ns Packet #464 Successfully Compared
+[NOTE]164450.0ns Packet #465 Successfully Compared
+[NOTE]165150.0ns Packet #466 Successfully Compared
+[NOTE]165150.0ns Packet #467 Successfully Compared
+[NOTE]165150.0ns Packet #468 Successfully Compared
+[NOTE]165150.0ns Packet #469 Successfully Compared
+[NOTE]166050.0ns Packet #470 Successfully Compared
+[NOTE]166850.0ns Packet #471 Successfully Compared
+[NOTE]166950.0ns Packet #472 Successfully Compared
+[NOTE]167650.0ns Packet #473 Successfully Compared
+[NOTE]167650.0ns Packet #474 Successfully Compared
+[NOTE]167650.0ns Packet #475 Successfully Compared
+[NOTE]167650.0ns Packet #476 Successfully Compared
+[NOTE]167750.0ns Packet #477 Successfully Compared
+[NOTE]168450.0ns Packet #478 Successfully Compared
+[NOTE]168450.0ns Packet #479 Successfully Compared
+[NOTE]169250.0ns Packet #480 Successfully Compared
+[NOTE]169250.0ns Packet #481 Successfully Compared
+[NOTE]169350.0ns Packet #482 Successfully Compared
+[NOTE]170950.0ns Packet #483 Successfully Compared
+[NOTE]170950.0ns Packet #484 Successfully Compared
+[NOTE]171050.0ns Packet #485 Successfully Compared
+[NOTE]171750.0ns Packet #486 Successfully Compared
+[NOTE]171750.0ns Packet #487 Successfully Compared
+[NOTE]171750.0ns Packet #488 Successfully Compared
+[NOTE]172550.0ns Packet #489 Successfully Compared
+[NOTE]172550.0ns Packet #490 Successfully Compared
+[NOTE]173350.0ns Packet #491 Successfully Compared
+[NOTE]173450.0ns Packet #492 Successfully Compared
+[NOTE]174250.0ns Packet #493 Successfully Compared
+[NOTE]174250.0ns Packet #494 Successfully Compared
+[NOTE]175050.0ns Packet #495 Successfully Compared
+[NOTE]175050.0ns Packet #496 Successfully Compared
+[NOTE]175850.0ns Packet #497 Successfully Compared
+[NOTE]175850.0ns Packet #498 Successfully Compared
+[NOTE]175850.0ns Packet #499 Successfully Compared
+[NOTE]176650.0ns Packet #500 Successfully Compared
+[NOTE]176650.0ns Packet #501 Successfully Compared
+[NOTE]176650.0ns Packet #502 Successfully Compared
+[NOTE]176750.0ns Packet #503 Successfully Compared
+[NOTE]176750.0ns Packet #504 Successfully Compared
+[NOTE]178350.0ns Packet #505 Successfully Compared
+[NOTE]178350.0ns Packet #506 Successfully Compared
+[NOTE]179150.0ns Packet #507 Successfully Compared
+[NOTE]179150.0ns Packet #508 Successfully Compared
+[NOTE]179150.0ns Packet #509 Successfully Compared
+[NOTE]179150.0ns Packet #510 Successfully Compared
+[NOTE]179150.0ns Packet #511 Successfully Compared
+[NOTE]179150.0ns Packet #512 Successfully Compared
+[NOTE]180750.0ns Packet #513 Successfully Compared
+[NOTE]180850.0ns Packet #514 Successfully Compared
+[NOTE]180850.0ns Packet #515 Successfully Compared
+[NOTE]180850.0ns Packet #516 Successfully Compared
+[NOTE]181650.0ns Packet #517 Successfully Compared
+[NOTE]181650.0ns Packet #518 Successfully Compared
+[NOTE]181650.0ns Packet #519 Successfully Compared
+[NOTE]181650.0ns Packet #520 Successfully Compared
+[NOTE]182450.0ns Packet #521 Successfully Compared
+[NOTE]182450.0ns Packet #522 Successfully Compared
+[NOTE]182450.0ns Packet #523 Successfully Compared
+[NOTE]183250.0ns Packet #524 Successfully Compared
+[NOTE]183350.0ns Packet #525 Successfully Compared
+[NOTE]183350.0ns Packet #526 Successfully Compared
+[NOTE]184050.0ns Packet #527 Successfully Compared
+[NOTE]184050.0ns Packet #528 Successfully Compared
+[NOTE]184950.0ns Packet #529 Successfully Compared
+[NOTE]184950.0ns Packet #530 Successfully Compared
+[NOTE]184950.0ns Packet #531 Successfully Compared
+[NOTE]185750.0ns Packet #532 Successfully Compared
+[NOTE]185750.0ns Packet #533 Successfully Compared
+[NOTE]185750.0ns Packet #534 Successfully Compared
+[NOTE]185750.0ns Packet #535 Successfully Compared
+[NOTE]186550.0ns Packet #536 Successfully Compared
+[NOTE]186550.0ns Packet #537 Successfully Compared
+[NOTE]186650.0ns Packet #538 Successfully Compared
+[NOTE]188250.0ns Packet #539 Successfully Compared
+[NOTE]188250.0ns Packet #540 Successfully Compared
+[NOTE]188250.0ns Packet #541 Successfully Compared
+[NOTE]188250.0ns Packet #542 Successfully Compared
+[NOTE]189050.0ns Packet #543 Successfully Compared
+[NOTE]189050.0ns Packet #544 Successfully Compared
+[NOTE]189050.0ns Packet #545 Successfully Compared
+[NOTE]189850.0ns Packet #546 Successfully Compared
+[NOTE]190750.0ns Packet #547 Successfully Compared
+[NOTE]190750.0ns Packet #548 Successfully Compared
+[NOTE]191550.0ns Packet #549 Successfully Compared
+[NOTE]191550.0ns Packet #550 Successfully Compared
+[NOTE]192350.0ns Packet #551 Successfully Compared
+[NOTE]192350.0ns Packet #552 Successfully Compared
+[NOTE]193150.0ns Packet #553 Successfully Compared
+[NOTE]193150.0ns Packet #554 Successfully Compared
+[NOTE]193250.0ns Packet #555 Successfully Compared
+[NOTE]194050.0ns Packet #556 Successfully Compared
+[NOTE]194850.0ns Packet #557 Successfully Compared
+[NOTE]195650.0ns Packet #558 Successfully Compared
+[NOTE]195650.0ns Packet #559 Successfully Compared
+[NOTE]195650.0ns Packet #560 Successfully Compared
+[NOTE]195650.0ns Packet #561 Successfully Compared
+[NOTE]195650.0ns Packet #562 Successfully Compared
+[NOTE]196450.0ns Packet #563 Successfully Compared
+[NOTE]197250.0ns Packet #564 Successfully Compared
+[NOTE]198150.0ns Packet #565 Successfully Compared
+[NOTE]198150.0ns Packet #566 Successfully Compared
+[NOTE]199750.0ns Packet #567 Successfully Compared
+[NOTE]199750.0ns Packet #568 Successfully Compared
+[NOTE]199750.0ns Packet #569 Successfully Compared
+[NOTE]199750.0ns Packet #570 Successfully Compared
+[NOTE]199750.0ns Packet #571 Successfully Compared
+[NOTE]200550.0ns Packet #572 Successfully Compared
+[NOTE]200650.0ns Packet #573 Successfully Compared
+[NOTE]201350.0ns Packet #574 Successfully Compared
+[NOTE]201450.0ns Packet #575 Successfully Compared
+[NOTE]202250.0ns Packet #576 Successfully Compared
+[NOTE]202250.0ns Packet #577 Successfully Compared
+[NOTE]203050.0ns Packet #578 Successfully Compared
+[NOTE]203050.0ns Packet #579 Successfully Compared
+[NOTE]203150.0ns Packet #580 Successfully Compared
+[NOTE]203850.0ns Packet #581 Successfully Compared
+[NOTE]203850.0ns Packet #582 Successfully Compared
+[NOTE]204750.0ns Packet #583 Successfully Compared
+[NOTE]205450.0ns Packet #584 Successfully Compared
+[NOTE]205550.0ns Packet #585 Successfully Compared
+[NOTE]205550.0ns Packet #586 Successfully Compared
+[NOTE]206350.0ns Packet #587 Successfully Compared
+[NOTE]206350.0ns Packet #588 Successfully Compared
+[NOTE]206350.0ns Packet #589 Successfully Compared
+[NOTE]206450.0ns Packet #590 Successfully Compared
+[NOTE]207950.0ns Packet #591 Successfully Compared
+[NOTE]207950.0ns Packet #592 Successfully Compared
+[NOTE]208050.0ns Packet #593 Successfully Compared
+[NOTE]208750.0ns Packet #594 Successfully Compared
+[NOTE]208850.0ns Packet #595 Successfully Compared
+[NOTE]208850.0ns Packet #596 Successfully Compared
+[NOTE]208950.0ns Packet #597 Successfully Compared
+[NOTE]209650.0ns Packet #598 Successfully Compared
+[NOTE]209650.0ns Packet #599 Successfully Compared
+[NOTE]210450.0ns Packet #600 Successfully Compared
+[NOTE]210450.0ns Packet #601 Successfully Compared
+[NOTE]210550.0ns Packet #602 Successfully Compared
+[NOTE]210550.0ns Packet #603 Successfully Compared
+[NOTE]211350.0ns Packet #604 Successfully Compared
+[NOTE]212050.0ns Packet #605 Successfully Compared
+[NOTE]212150.0ns Packet #606 Successfully Compared
+[NOTE]212950.0ns Packet #607 Successfully Compared
+[NOTE]212950.0ns Packet #608 Successfully Compared
+[NOTE]213750.0ns Packet #609 Successfully Compared
+[NOTE]213850.0ns Packet #610 Successfully Compared
+[NOTE]214550.0ns Packet #611 Successfully Compared
+[NOTE]214550.0ns Packet #612 Successfully Compared
+[NOTE]215450.0ns Packet #613 Successfully Compared
+[NOTE]215450.0ns Packet #614 Successfully Compared
+[NOTE]216150.0ns Packet #615 Successfully Compared
+[NOTE]216250.0ns Packet #616 Successfully Compared
+[NOTE]216250.0ns Packet #617 Successfully Compared
+[NOTE]217050.0ns Packet #618 Successfully Compared
+[NOTE]217850.0ns Packet #619 Successfully Compared
+[NOTE]217950.0ns Packet #620 Successfully Compared
+[NOTE]218650.0ns Packet #621 Successfully Compared
+[NOTE]218650.0ns Packet #622 Successfully Compared
+[NOTE]218750.0ns Packet #623 Successfully Compared
+[NOTE]219450.0ns Packet #624 Successfully Compared
+[NOTE]219550.0ns Packet #625 Successfully Compared
+[NOTE]219550.0ns Packet #626 Successfully Compared
+[NOTE]221150.0ns Packet #627 Successfully Compared
+[NOTE]221150.0ns Packet #628 Successfully Compared
+[NOTE]221250.0ns Packet #629 Successfully Compared
+[NOTE]221950.0ns Packet #630 Successfully Compared
+[NOTE]222750.0ns Packet #631 Successfully Compared
+[NOTE]222850.0ns Packet #632 Successfully Compared
+[NOTE]223650.0ns Packet #633 Successfully Compared
+[NOTE]223650.0ns Packet #634 Successfully Compared
+[NOTE]223750.0ns Packet #635 Successfully Compared
+[NOTE]224450.0ns Packet #636 Successfully Compared
+[NOTE]224550.0ns Packet #637 Successfully Compared
+[NOTE]225250.0ns Packet #638 Successfully Compared
+[NOTE]225250.0ns Packet #639 Successfully Compared
+[NOTE]225250.0ns Packet #640 Successfully Compared
+[NOTE]225250.0ns Packet #641 Successfully Compared
+[NOTE]225350.0ns Packet #642 Successfully Compared
+[NOTE]225350.0ns Packet #643 Successfully Compared
+[NOTE]226050.0ns Packet #644 Successfully Compared
+[NOTE]226150.0ns Packet #645 Successfully Compared
+[NOTE]226950.0ns Packet #646 Successfully Compared
+[NOTE]227750.0ns Packet #647 Successfully Compared
+[NOTE]227850.0ns Packet #648 Successfully Compared
+[NOTE]228550.0ns Packet #649 Successfully Compared
+[NOTE]228650.0ns Packet #650 Successfully Compared
+[NOTE]229350.0ns Packet #651 Successfully Compared
+[NOTE]229350.0ns Packet #652 Successfully Compared
+[NOTE]229350.0ns Packet #653 Successfully Compared
+[NOTE]229450.0ns Packet #654 Successfully Compared
+[NOTE]229450.0ns Packet #655 Successfully Compared
+[NOTE]230150.0ns Packet #656 Successfully Compared
+[NOTE]231150.0ns Packet #657 Successfully Compared
+[NOTE]231850.0ns Packet #658 Successfully Compared
+[NOTE]231850.0ns Packet #659 Successfully Compared
+[NOTE]231950.0ns Packet #660 Successfully Compared
+[NOTE]231950.0ns Packet #661 Successfully Compared
+[NOTE]232650.0ns Packet #662 Successfully Compared
+[NOTE]232650.0ns Packet #663 Successfully Compared
+[NOTE]233450.0ns Packet #664 Successfully Compared
+[NOTE]234350.0ns Packet #665 Successfully Compared
+[NOTE]234350.0ns Packet #666 Successfully Compared
+[NOTE]234350.0ns Packet #667 Successfully Compared
+[NOTE]234450.0ns Packet #668 Successfully Compared
+[NOTE]235150.0ns Packet #669 Successfully Compared
+[NOTE]235250.0ns Packet #670 Successfully Compared
+[NOTE]235250.0ns Packet #671 Successfully Compared
+[NOTE]235950.0ns Packet #672 Successfully Compared
+[NOTE]236750.0ns Packet #673 Successfully Compared
+[NOTE]236750.0ns Packet #674 Successfully Compared
+[NOTE]236850.0ns Packet #675 Successfully Compared
+[NOTE]236850.0ns Packet #676 Successfully Compared
+[NOTE]236850.0ns Packet #677 Successfully Compared
+[NOTE]237650.0ns Packet #678 Successfully Compared
+[NOTE]238450.0ns Packet #679 Successfully Compared
+[NOTE]238550.0ns Packet #680 Successfully Compared
+[NOTE]239350.0ns Packet #681 Successfully Compared
+[NOTE]239350.0ns Packet #682 Successfully Compared
+[NOTE]239350.0ns Packet #683 Successfully Compared
+[NOTE]240850.0ns Packet #684 Successfully Compared
+[NOTE]240950.0ns Packet #685 Successfully Compared
+[NOTE]240950.0ns Packet #686 Successfully Compared
+[NOTE]241050.0ns Packet #687 Successfully Compared
+[NOTE]242550.0ns Packet #688 Successfully Compared
+[NOTE]242550.0ns Packet #689 Successfully Compared
+[NOTE]242650.0ns Packet #690 Successfully Compared
+[NOTE]242650.0ns Packet #691 Successfully Compared
+[NOTE]243350.0ns Packet #692 Successfully Compared
+[NOTE]243450.0ns Packet #693 Successfully Compared
+[NOTE]243450.0ns Packet #694 Successfully Compared
+[NOTE]243550.0ns Packet #695 Successfully Compared
+[NOTE]244250.0ns Packet #696 Successfully Compared
+[NOTE]245050.0ns Packet #697 Successfully Compared
+[NOTE]245150.0ns Packet #698 Successfully Compared
+[NOTE]245150.0ns Packet #699 Successfully Compared
+[NOTE]245850.0ns Packet #700 Successfully Compared
+[NOTE]245950.0ns Packet #701 Successfully Compared
+[NOTE]246650.0ns Packet #702 Successfully Compared
+[NOTE]247550.0ns Packet #703 Successfully Compared
+[NOTE]248350.0ns Packet #704 Successfully Compared
+[NOTE]248350.0ns Packet #705 Successfully Compared
+[NOTE]248450.0ns Packet #706 Successfully Compared
+[NOTE]248450.0ns Packet #707 Successfully Compared
+[NOTE]248450.0ns Packet #708 Successfully Compared
+[NOTE]249150.0ns Packet #709 Successfully Compared
+[NOTE]249250.0ns Packet #710 Successfully Compared
+[NOTE]249950.0ns Packet #711 Successfully Compared
+[NOTE]249950.0ns Packet #712 Successfully Compared
+[NOTE]250050.0ns Packet #713 Successfully Compared
+[NOTE]250750.0ns Packet #714 Successfully Compared
+[NOTE]250850.0ns Packet #715 Successfully Compared
+[NOTE]250950.0ns Packet #716 Successfully Compared
+[NOTE]251750.0ns Packet #717 Successfully Compared
+[NOTE]251750.0ns Packet #718 Successfully Compared
+[NOTE]251750.0ns Packet #719 Successfully Compared
+[NOTE]252450.0ns Packet #720 Successfully Compared
+[NOTE]252550.0ns Packet #721 Successfully Compared
+[NOTE]253250.0ns Packet #722 Successfully Compared
+[NOTE]253250.0ns Packet #723 Successfully Compared
+[NOTE]253250.0ns Packet #724 Successfully Compared
+[NOTE]253250.0ns Packet #725 Successfully Compared
+[NOTE]253350.0ns Packet #726 Successfully Compared
+[NOTE]254250.0ns Packet #727 Successfully Compared
+[NOTE]255750.0ns Packet #728 Successfully Compared
+[NOTE]255850.0ns Packet #729 Successfully Compared
+[NOTE]255850.0ns Packet #730 Successfully Compared
+[NOTE]256550.0ns Packet #731 Successfully Compared
+[NOTE]256550.0ns Packet #732 Successfully Compared
+[NOTE]256650.0ns Packet #733 Successfully Compared
+[NOTE]257350.0ns Packet #734 Successfully Compared
+[NOTE]257450.0ns Packet #735 Successfully Compared
+[NOTE]258350.0ns Packet #736 Successfully Compared
+[NOTE]258350.0ns Packet #737 Successfully Compared
+[NOTE]258350.0ns Packet #738 Successfully Compared
+[NOTE]259050.0ns Packet #739 Successfully Compared
+[NOTE]259050.0ns Packet #740 Successfully Compared
+[NOTE]259850.0ns Packet #741 Successfully Compared
+[NOTE]259850.0ns Packet #742 Successfully Compared
+[NOTE]259850.0ns Packet #743 Successfully Compared
+[NOTE]260750.0ns Packet #744 Successfully Compared
+[NOTE]260750.0ns Packet #745 Successfully Compared
+[NOTE]261550.0ns Packet #746 Successfully Compared
+[NOTE]261550.0ns Packet #747 Successfully Compared
+[NOTE]261650.0ns Packet #748 Successfully Compared
+[NOTE]261650.0ns Packet #749 Successfully Compared
+[NOTE]262350.0ns Packet #750 Successfully Compared
+[NOTE]263150.0ns Packet #751 Successfully Compared
+[NOTE]263250.0ns Packet #752 Successfully Compared
+[NOTE]264050.0ns Packet #753 Successfully Compared
+[NOTE]264050.0ns Packet #754 Successfully Compared
+[NOTE]264150.0ns Packet #755 Successfully Compared
+[NOTE]264850.0ns Packet #756 Successfully Compared
+[NOTE]264850.0ns Packet #757 Successfully Compared
+[NOTE]265650.0ns Packet #758 Successfully Compared
+[NOTE]265650.0ns Packet #759 Successfully Compared
+[NOTE]265750.0ns Packet #760 Successfully Compared
+[NOTE]266450.0ns Packet #761 Successfully Compared
+[NOTE]266550.0ns Packet #762 Successfully Compared
+[NOTE]266650.0ns Packet #763 Successfully Compared
+[NOTE]266650.0ns Packet #764 Successfully Compared
+[NOTE]267350.0ns Packet #765 Successfully Compared
+[NOTE]267350.0ns Packet #766 Successfully Compared
+[NOTE]268150.0ns Packet #767 Successfully Compared
+[NOTE]268150.0ns Packet #768 Successfully Compared
+[NOTE]268150.0ns Packet #769 Successfully Compared
+[NOTE]268950.0ns Packet #770 Successfully Compared
+[NOTE]268950.0ns Packet #771 Successfully Compared
+[NOTE]269150.0ns Packet #772 Successfully Compared
+[NOTE]269750.0ns Packet #773 Successfully Compared
+[NOTE]269850.0ns Packet #774 Successfully Compared
+[NOTE]269950.0ns Packet #775 Successfully Compared
+[NOTE]270650.0ns Packet #776 Successfully Compared
+[NOTE]271450.0ns Packet #777 Successfully Compared
+[NOTE]271450.0ns Packet #778 Successfully Compared
+[NOTE]272250.0ns Packet #779 Successfully Compared
+[NOTE]272250.0ns Packet #780 Successfully Compared
+[NOTE]273050.0ns Packet #781 Successfully Compared
+[NOTE]273250.0ns Packet #782 Successfully Compared
+[NOTE]273250.0ns Packet #783 Successfully Compared
+[NOTE]273950.0ns Packet #784 Successfully Compared
+[NOTE]274050.0ns Packet #785 Successfully Compared
+[NOTE]274750.0ns Packet #786 Successfully Compared
+[NOTE]274750.0ns Packet #787 Successfully Compared
+[NOTE]274750.0ns Packet #788 Successfully Compared
+[NOTE]275550.0ns Packet #789 Successfully Compared
+[NOTE]275550.0ns Packet #790 Successfully Compared
+[NOTE]275550.0ns Packet #791 Successfully Compared
+[NOTE]275750.0ns Packet #792 Successfully Compared
+[NOTE]276450.0ns Packet #793 Successfully Compared
+[NOTE]276550.0ns Packet #794 Successfully Compared
+[NOTE]277250.0ns Packet #795 Successfully Compared
+[NOTE]277250.0ns Packet #796 Successfully Compared
+[NOTE]277350.0ns Packet #797 Successfully Compared
+[NOTE]278050.0ns Packet #798 Successfully Compared
+[NOTE]278050.0ns Packet #799 Successfully Compared
+[NOTE]278050.0ns Packet #800 Successfully Compared
+[NOTE]278850.0ns Packet #801 Successfully Compared
+[NOTE]279050.0ns Packet #802 Successfully Compared
+[NOTE]279050.0ns Packet #803 Successfully Compared
+[NOTE]279050.0ns Packet #804 Successfully Compared
+[NOTE]279650.0ns Packet #805 Successfully Compared
+[NOTE]280550.0ns Packet #806 Successfully Compared
+[NOTE]280550.0ns Packet #807 Successfully Compared
+[NOTE]280550.0ns Packet #808 Successfully Compared
+[NOTE]280550.0ns Packet #809 Successfully Compared
+[NOTE]280650.0ns Packet #810 Successfully Compared
+[NOTE]281350.0ns Packet #811 Successfully Compared
+[NOTE]282150.0ns Packet #812 Successfully Compared
+[NOTE]282150.0ns Packet #813 Successfully Compared
+[NOTE]282350.0ns Packet #814 Successfully Compared
+[NOTE]282350.0ns Packet #815 Successfully Compared
+[NOTE]283050.0ns Packet #816 Successfully Compared
+[NOTE]283050.0ns Packet #817 Successfully Compared
+[NOTE]283150.0ns Packet #818 Successfully Compared
+[NOTE]283750.0ns Packet #819 Successfully Compared
+[NOTE]284650.0ns Packet #820 Successfully Compared
+[NOTE]284650.0ns Packet #821 Successfully Compared
+[NOTE]284650.0ns Packet #822 Successfully Compared
+[NOTE]284650.0ns Packet #823 Successfully Compared
+[NOTE]284850.0ns Packet #824 Successfully Compared
+[NOTE]285550.0ns Packet #825 Successfully Compared
+[NOTE]285550.0ns Packet #826 Successfully Compared
+[NOTE]285650.0ns Packet #827 Successfully Compared
+[NOTE]286250.0ns Packet #828 Successfully Compared
+[NOTE]286350.0ns Packet #829 Successfully Compared
+[NOTE]286450.0ns Packet #830 Successfully Compared
+[NOTE]287150.0ns Packet #831 Successfully Compared
+[NOTE]287150.0ns Packet #832 Successfully Compared
+[NOTE]287150.0ns Packet #833 Successfully Compared
+[NOTE]288050.0ns Packet #834 Successfully Compared
+[NOTE]288050.0ns Packet #835 Successfully Compared
+[NOTE]288750.0ns Packet #836 Successfully Compared
+[NOTE]288750.0ns Packet #837 Successfully Compared
+[NOTE]288750.0ns Packet #838 Successfully Compared
+[NOTE]288850.0ns Packet #839 Successfully Compared
+[NOTE]288950.0ns Packet #840 Successfully Compared
+[NOTE]289650.0ns Packet #841 Successfully Compared
+[NOTE]289750.0ns Packet #842 Successfully Compared
+[NOTE]290450.0ns Packet #843 Successfully Compared
+[NOTE]290550.0ns Packet #844 Successfully Compared
+[NOTE]291250.0ns Packet #845 Successfully Compared
+[NOTE]291250.0ns Packet #846 Successfully Compared
+[NOTE]291350.0ns Packet #847 Successfully Compared
+[NOTE]292050.0ns Packet #848 Successfully Compared
+[NOTE]292050.0ns Packet #849 Successfully Compared
+[NOTE]292950.0ns Packet #850 Successfully Compared
+[NOTE]292950.0ns Packet #851 Successfully Compared
+[NOTE]293050.0ns Packet #852 Successfully Compared
+[NOTE]293050.0ns Packet #853 Successfully Compared
+[NOTE]294550.0ns Packet #854 Successfully Compared
+[NOTE]294550.0ns Packet #855 Successfully Compared
+[NOTE]294650.0ns Packet #856 Successfully Compared
+[NOTE]294650.0ns Packet #857 Successfully Compared
+[NOTE]294650.0ns Packet #858 Successfully Compared
+[NOTE]295350.0ns Packet #859 Successfully Compared
+[NOTE]296150.0ns Packet #860 Successfully Compared
+[NOTE]296250.0ns Packet #861 Successfully Compared
+[NOTE]296350.0ns Packet #862 Successfully Compared
+[NOTE]297050.0ns Packet #863 Successfully Compared
+[NOTE]297150.0ns Packet #864 Successfully Compared
+[NOTE]297850.0ns Packet #865 Successfully Compared
+[NOTE]297950.0ns Packet #866 Successfully Compared
+[NOTE]298750.0ns Packet #867 Successfully Compared
+[NOTE]298750.0ns Packet #868 Successfully Compared
+[NOTE]299450.0ns Packet #869 Successfully Compared
+[NOTE]299450.0ns Packet #870 Successfully Compared
+[NOTE]299450.0ns Packet #871 Successfully Compared
+[NOTE]300350.0ns Packet #872 Successfully Compared
+[NOTE]300450.0ns Packet #873 Successfully Compared
+[NOTE]300450.0ns Packet #874 Successfully Compared
+[NOTE]300450.0ns Packet #875 Successfully Compared
+[NOTE]300450.0ns Packet #876 Successfully Compared
+[NOTE]301150.0ns Packet #877 Successfully Compared
+[NOTE]302050.0ns Packet #878 Successfully Compared
+[NOTE]302750.0ns Packet #879 Successfully Compared
+[NOTE]302850.0ns Packet #880 Successfully Compared
+[NOTE]302950.0ns Packet #881 Successfully Compared
+[NOTE]302950.0ns Packet #882 Successfully Compared
+[NOTE]303550.0ns Packet #883 Successfully Compared
+[NOTE]303650.0ns Packet #884 Successfully Compared
+[NOTE]303750.0ns Packet #885 Successfully Compared
+[NOTE]303750.0ns Packet #886 Successfully Compared
+[NOTE]304550.0ns Packet #887 Successfully Compared
+[NOTE]304550.0ns Packet #888 Successfully Compared
+[NOTE]305350.0ns Packet #889 Successfully Compared
+[NOTE]305350.0ns Packet #890 Successfully Compared
+[NOTE]306050.0ns Packet #891 Successfully Compared
+[NOTE]306050.0ns Packet #892 Successfully Compared
+[NOTE]306150.0ns Packet #893 Successfully Compared
+[NOTE]306250.0ns Packet #894 Successfully Compared
+[NOTE]307650.0ns Packet #895 Successfully Compared
+[NOTE]307750.0ns Packet #896 Successfully Compared
+[NOTE]307850.0ns Packet #897 Successfully Compared
+[NOTE]308650.0ns Packet #898 Successfully Compared
+[NOTE]309350.0ns Packet #899 Successfully Compared
+[NOTE]309350.0ns Packet #900 Successfully Compared
+[NOTE]309550.0ns Packet #901 Successfully Compared
+[NOTE]310250.0ns Packet #902 Successfully Compared
+[NOTE]310350.0ns Packet #903 Successfully Compared
+[NOTE]310950.0ns Packet #904 Successfully Compared
+[NOTE]311050.0ns Packet #905 Successfully Compared
+[NOTE]311150.0ns Packet #906 Successfully Compared
+[NOTE]311150.0ns Packet #907 Successfully Compared
+[NOTE]311850.0ns Packet #908 Successfully Compared
+[NOTE]312650.0ns Packet #909 Successfully Compared
+[NOTE]312750.0ns Packet #910 Successfully Compared
+[NOTE]312850.0ns Packet #911 Successfully Compared
+[NOTE]313550.0ns Packet #912 Successfully Compared
+[NOTE]313550.0ns Packet #913 Successfully Compared
+[NOTE]314450.0ns Packet #914 Successfully Compared
+[NOTE]315150.0ns Packet #915 Successfully Compared
+[NOTE]315150.0ns Packet #916 Successfully Compared
+[NOTE]315150.0ns Packet #917 Successfully Compared
+[NOTE]315250.0ns Packet #918 Successfully Compared
+[NOTE]316050.0ns Packet #919 Successfully Compared
+[NOTE]316850.0ns Packet #920 Successfully Compared
+[NOTE]316950.0ns Packet #921 Successfully Compared
+[NOTE]317650.0ns Packet #922 Successfully Compared
+[NOTE]317650.0ns Packet #923 Successfully Compared
+[NOTE]317750.0ns Packet #924 Successfully Compared
+[NOTE]318450.0ns Packet #925 Successfully Compared
+[NOTE]318550.0ns Packet #926 Successfully Compared
+[NOTE]319250.0ns Packet #927 Successfully Compared
+[NOTE]319250.0ns Packet #928 Successfully Compared
+[NOTE]319350.0ns Packet #929 Successfully Compared
+[NOTE]320150.0ns Packet #930 Successfully Compared
+[NOTE]320950.0ns Packet #931 Successfully Compared
+[NOTE]320950.0ns Packet #932 Successfully Compared
+[NOTE]320950.0ns Packet #933 Successfully Compared
+[NOTE]321050.0ns Packet #934 Successfully Compared
+[NOTE]321850.0ns Packet #935 Successfully Compared
+[NOTE]322650.0ns Packet #936 Successfully Compared
+[NOTE]322650.0ns Packet #937 Successfully Compared
+[NOTE]323350.0ns Packet #938 Successfully Compared
+[NOTE]323450.0ns Packet #939 Successfully Compared
+[NOTE]323450.0ns Packet #940 Successfully Compared
+[NOTE]324250.0ns Packet #941 Successfully Compared
+[NOTE]324250.0ns Packet #942 Successfully Compared
+[NOTE]325050.0ns Packet #943 Successfully Compared
+[NOTE]325150.0ns Packet #944 Successfully Compared
+[NOTE]325150.0ns Packet #945 Successfully Compared
+[NOTE]325150.0ns Packet #946 Successfully Compared
+[NOTE]325950.0ns Packet #947 Successfully Compared
+[NOTE]325950.0ns Packet #948 Successfully Compared
+[NOTE]326650.0ns Packet #949 Successfully Compared
+[NOTE]326750.0ns Packet #950 Successfully Compared
+[NOTE]326750.0ns Packet #951 Successfully Compared
+[NOTE]327550.0ns Packet #952 Successfully Compared
+[NOTE]328350.0ns Packet #953 Successfully Compared
+[NOTE]328450.0ns Packet #954 Successfully Compared
+[NOTE]328450.0ns Packet #955 Successfully Compared
+[NOTE]329150.0ns Packet #956 Successfully Compared
+[NOTE]329250.0ns Packet #957 Successfully Compared
+[NOTE]329950.0ns Packet #958 Successfully Compared
+[NOTE]330050.0ns Packet #959 Successfully Compared
+[NOTE]330050.0ns Packet #960 Successfully Compared
+[NOTE]330850.0ns Packet #961 Successfully Compared
+[NOTE]331650.0ns Packet #962 Successfully Compared
+[NOTE]331650.0ns Packet #963 Successfully Compared
+[NOTE]331650.0ns Packet #964 Successfully Compared
+[NOTE]332550.0ns Packet #965 Successfully Compared
+[NOTE]332550.0ns Packet #966 Successfully Compared
+[NOTE]333350.0ns Packet #967 Successfully Compared
+[NOTE]334050.0ns Packet #968 Successfully Compared
+[NOTE]334150.0ns Packet #969 Successfully Compared
+[NOTE]334950.0ns Packet #970 Successfully Compared
+[NOTE]334950.0ns Packet #971 Successfully Compared
+[NOTE]334950.0ns Packet #972 Successfully Compared
+[NOTE]334950.0ns Packet #973 Successfully Compared
+[NOTE]335050.0ns Packet #974 Successfully Compared
+[NOTE]335850.0ns Packet #975 Successfully Compared
+[NOTE]335850.0ns Packet #976 Successfully Compared
+[NOTE]336650.0ns Packet #977 Successfully Compared
+[NOTE]336650.0ns Packet #978 Successfully Compared
+[NOTE]337350.0ns Packet #979 Successfully Compared
+[NOTE]337350.0ns Packet #980 Successfully Compared
+[NOTE]337450.0ns Packet #981 Successfully Compared
+[NOTE]337550.0ns Packet #982 Successfully Compared
+[NOTE]338250.0ns Packet #983 Successfully Compared
+[NOTE]338350.0ns Packet #984 Successfully Compared
+[NOTE]339850.0ns Packet #985 Successfully Compared
+[NOTE]339950.0ns Packet #986 Successfully Compared
+[NOTE]339950.0ns Packet #987 Successfully Compared
+[NOTE]340050.0ns Packet #988 Successfully Compared
+[NOTE]340650.0ns Packet #989 Successfully Compared
+[NOTE]340750.0ns Packet #990 Successfully Compared
+[NOTE]340750.0ns Packet #991 Successfully Compared
+[NOTE]340850.0ns Packet #992 Successfully Compared
+[NOTE]341450.0ns Packet #993 Successfully Compared
+[NOTE]342350.0ns Packet #994 Successfully Compared
+[NOTE]343250.0ns Packet #995 Successfully Compared
+[NOTE]343250.0ns Packet #996 Successfully Compared
+[NOTE]343350.0ns Packet #997 Successfully Compared
+[NOTE]343950.0ns Packet #998 Successfully Compared
+[NOTE]344750.0ns Packet #999 Successfully Compared
+[NOTE]344850.0ns Packet #1000 Successfully Compared
+[NOTE]344850.0ns Packet #1001 Successfully Compared
+[NOTE]344950.0ns Packet #1002 Successfully Compared
+[NOTE]344950.0ns Packet #1003 Successfully Compared
+[NOTE]345550.0ns Packet #1004 Successfully Compared
+[NOTE]347250.0ns Packet #1005 Successfully Compared
+[NOTE]348050.0ns Packet #1006 Successfully Compared
+[NOTE]348050.0ns Packet #1007 Successfully Compared
+[NOTE]348150.0ns Packet #1008 Successfully Compared
+[NOTE]348250.0ns Packet #1009 Successfully Compared
+[NOTE]348250.0ns Packet #1010 Successfully Compared
+[NOTE]349050.0ns Packet #1011 Successfully Compared
+[NOTE]350550.0ns Packet #1012 Successfully Compared
+[NOTE]350550.0ns Packet #1013 Successfully Compared
+[NOTE]350650.0ns Packet #1014 Successfully Compared
+[NOTE]351350.0ns Packet #1015 Successfully Compared
+[NOTE]351350.0ns Packet #1016 Successfully Compared
+[NOTE]351450.0ns Packet #1017 Successfully Compared
+[NOTE]353050.0ns Packet #1018 Successfully Compared
+[NOTE]353850.0ns Packet #1019 Successfully Compared
+[NOTE]353850.0ns Packet #1020 Successfully Compared
+[NOTE]353950.0ns Packet #1021 Successfully Compared
+[NOTE]354650.0ns Packet #1022 Successfully Compared
+[NOTE]354650.0ns Packet #1023 Successfully Compared
+[NOTE]354650.0ns Packet #1024 Successfully Compared
+[NOTE]354750.0ns Packet #1025 Successfully Compared
+[NOTE]356350.0ns Packet #1026 Successfully Compared
+[NOTE]357150.0ns Packet #1027 Successfully Compared
+[NOTE]357150.0ns Packet #1028 Successfully Compared
+[NOTE]357250.0ns Packet #1029 Successfully Compared
+[NOTE]357950.0ns Packet #1030 Successfully Compared
+[NOTE]357950.0ns Packet #1031 Successfully Compared
+[NOTE]358750.0ns Packet #1032 Successfully Compared
+[NOTE]358750.0ns Packet #1033 Successfully Compared
+[NOTE]358850.0ns Packet #1034 Successfully Compared
+[NOTE]358850.0ns Packet #1035 Successfully Compared
+[NOTE]359650.0ns Packet #1036 Successfully Compared
+[NOTE]359650.0ns Packet #1037 Successfully Compared
+[NOTE]360450.0ns Packet #1038 Successfully Compared
+[NOTE]360450.0ns Packet #1039 Successfully Compared
+[NOTE]361250.0ns Packet #1040 Successfully Compared
+[NOTE]361350.0ns Packet #1041 Successfully Compared
+[NOTE]362050.0ns Packet #1042 Successfully Compared
+[NOTE]362150.0ns Packet #1043 Successfully Compared
+[NOTE]362850.0ns Packet #1044 Successfully Compared
+[NOTE]362950.0ns Packet #1045 Successfully Compared
+[NOTE]362950.0ns Packet #1046 Successfully Compared
+[NOTE]362950.0ns Packet #1047 Successfully Compared
+[NOTE]363750.0ns Packet #1048 Successfully Compared
+[NOTE]363850.0ns Packet #1049 Successfully Compared
+[NOTE]364550.0ns Packet #1050 Successfully Compared
+[NOTE]365350.0ns Packet #1051 Successfully Compared
+[NOTE]365450.0ns Packet #1052 Successfully Compared
+[NOTE]365450.0ns Packet #1053 Successfully Compared
+[NOTE]366250.0ns Packet #1054 Successfully Compared
+[NOTE]366250.0ns Packet #1055 Successfully Compared
+[NOTE]366250.0ns Packet #1056 Successfully Compared
+[NOTE]367850.0ns Packet #1057 Successfully Compared
+[NOTE]367950.0ns Packet #1058 Successfully Compared
+[NOTE]367950.0ns Packet #1059 Successfully Compared
+[NOTE]367950.0ns Packet #1060 Successfully Compared
+[NOTE]368650.0ns Packet #1061 Successfully Compared
+[NOTE]368750.0ns Packet #1062 Successfully Compared
+[NOTE]368750.0ns Packet #1063 Successfully Compared
+[NOTE]369450.0ns Packet #1064 Successfully Compared
+[NOTE]370350.0ns Packet #1065 Successfully Compared
+[NOTE]370450.0ns Packet #1066 Successfully Compared
+[NOTE]371150.0ns Packet #1067 Successfully Compared
+[NOTE]371150.0ns Packet #1068 Successfully Compared
+[NOTE]371250.0ns Packet #1069 Successfully Compared
+[NOTE]371250.0ns Packet #1070 Successfully Compared
+[NOTE]371950.0ns Packet #1071 Successfully Compared
+[NOTE]372050.0ns Packet #1072 Successfully Compared
+[NOTE]372850.0ns Packet #1073 Successfully Compared
+[NOTE]372950.0ns Packet #1074 Successfully Compared
+[NOTE]373650.0ns Packet #1075 Successfully Compared
+[NOTE]373750.0ns Packet #1076 Successfully Compared
+[NOTE]373750.0ns Packet #1077 Successfully Compared
+[NOTE]374450.0ns Packet #1078 Successfully Compared
+[NOTE]374450.0ns Packet #1079 Successfully Compared
+[NOTE]374450.0ns Packet #1080 Successfully Compared
+[NOTE]374450.0ns Packet #1081 Successfully Compared
+[NOTE]376150.0ns Packet #1082 Successfully Compared
+[NOTE]376150.0ns Packet #1083 Successfully Compared
+[NOTE]376150.0ns Packet #1084 Successfully Compared
+[NOTE]376150.0ns Packet #1085 Successfully Compared
+[NOTE]376950.0ns Packet #1086 Successfully Compared
+[NOTE]377750.0ns Packet #1087 Successfully Compared
+[NOTE]377750.0ns Packet #1088 Successfully Compared
+[NOTE]377850.0ns Packet #1089 Successfully Compared
+[NOTE]377850.0ns Packet #1090 Successfully Compared
+[NOTE]378550.0ns Packet #1091 Successfully Compared
+[NOTE]378550.0ns Packet #1092 Successfully Compared
+[NOTE]378650.0ns Packet #1093 Successfully Compared
+[NOTE]378650.0ns Packet #1094 Successfully Compared
+[NOTE]379450.0ns Packet #1095 Successfully Compared
+[NOTE]379450.0ns Packet #1096 Successfully Compared
+[NOTE]379450.0ns Packet #1097 Successfully Compared
+[NOTE]380250.0ns Packet #1098 Successfully Compared
+[NOTE]381050.0ns Packet #1099 Successfully Compared
+[NOTE]381050.0ns Packet #1100 Successfully Compared
+[NOTE]381950.0ns Packet #1101 Successfully Compared
+[NOTE]381950.0ns Packet #1102 Successfully Compared
+[NOTE]381950.0ns Packet #1103 Successfully Compared
+[NOTE]381950.0ns Packet #1104 Successfully Compared
+[NOTE]382650.0ns Packet #1105 Successfully Compared
+[NOTE]382750.0ns Packet #1106 Successfully Compared
+[NOTE]383550.0ns Packet #1107 Successfully Compared
+[NOTE]383550.0ns Packet #1108 Successfully Compared
+[NOTE]384450.0ns Packet #1109 Successfully Compared
+[NOTE]384450.0ns Packet #1110 Successfully Compared
+[NOTE]384450.0ns Packet #1111 Successfully Compared
+[NOTE]385150.0ns Packet #1112 Successfully Compared
+[NOTE]385150.0ns Packet #1113 Successfully Compared
+[NOTE]385250.0ns Packet #1114 Successfully Compared
+[NOTE]385950.0ns Packet #1115 Successfully Compared
+[NOTE]386050.0ns Packet #1116 Successfully Compared
+[NOTE]386050.0ns Packet #1117 Successfully Compared
+[NOTE]386850.0ns Packet #1118 Successfully Compared
+[NOTE]386850.0ns Packet #1119 Successfully Compared
+[NOTE]386950.0ns Packet #1120 Successfully Compared
+[NOTE]387750.0ns Packet #1121 Successfully Compared
+[NOTE]388450.0ns Packet #1122 Successfully Compared
+[NOTE]389250.0ns Packet #1123 Successfully Compared
+[NOTE]389250.0ns Packet #1124 Successfully Compared
+[NOTE]389350.0ns Packet #1125 Successfully Compared
+[NOTE]389350.0ns Packet #1126 Successfully Compared
+[NOTE]389350.0ns Packet #1127 Successfully Compared
+[NOTE]390150.0ns Packet #1128 Successfully Compared
+[NOTE]390250.0ns Packet #1129 Successfully Compared
+[NOTE]391750.0ns Packet #1130 Successfully Compared
+[NOTE]391750.0ns Packet #1131 Successfully Compared
+[NOTE]391850.0ns Packet #1132 Successfully Compared
+[NOTE]392550.0ns Packet #1133 Successfully Compared
+[NOTE]392750.0ns Packet #1134 Successfully Compared
+[NOTE]393350.0ns Packet #1135 Successfully Compared
+[NOTE]393350.0ns Packet #1136 Successfully Compared
+[NOTE]393450.0ns Packet #1137 Successfully Compared
+[NOTE]393450.0ns Packet #1138 Successfully Compared
+[NOTE]393550.0ns Packet #1139 Successfully Compared
+[NOTE]394250.0ns Packet #1140 Successfully Compared
+[NOTE]394350.0ns Packet #1141 Successfully Compared
+[NOTE]395850.0ns Packet #1142 Successfully Compared
+[NOTE]395850.0ns Packet #1143 Successfully Compared
+[NOTE]396050.0ns Packet #1144 Successfully Compared
+[NOTE]396650.0ns Packet #1145 Successfully Compared
+[NOTE]396750.0ns Packet #1146 Successfully Compared
+[NOTE]396850.0ns Packet #1147 Successfully Compared
+[NOTE]397450.0ns Packet #1148 Successfully Compared
+[NOTE]397550.0ns Packet #1149 Successfully Compared
+[NOTE]397550.0ns Packet #1150 Successfully Compared
+[NOTE]397650.0ns Packet #1151 Successfully Compared
+[NOTE]397650.0ns Packet #1152 Successfully Compared
+[NOTE]398350.0ns Packet #1153 Successfully Compared
+[NOTE]398350.0ns Packet #1154 Successfully Compared
+[NOTE]398450.0ns Packet #1155 Successfully Compared
+[NOTE]399950.0ns Packet #1156 Successfully Compared
+[NOTE]399950.0ns Packet #1157 Successfully Compared
+[NOTE]400050.0ns Packet #1158 Successfully Compared
+[NOTE]400050.0ns Packet #1159 Successfully Compared
+[NOTE]400850.0ns Packet #1160 Successfully Compared
+[NOTE]400850.0ns Packet #1161 Successfully Compared
+[NOTE]400950.0ns Packet #1162 Successfully Compared
+[NOTE]400950.0ns Packet #1163 Successfully Compared
+[NOTE]401650.0ns Packet #1164 Successfully Compared
+[NOTE]401650.0ns Packet #1165 Successfully Compared
+[NOTE]401750.0ns Packet #1166 Successfully Compared
+[NOTE]402450.0ns Packet #1167 Successfully Compared
+[NOTE]402450.0ns Packet #1168 Successfully Compared
+[NOTE]403250.0ns Packet #1169 Successfully Compared
+[NOTE]404050.0ns Packet #1170 Successfully Compared
+[NOTE]404150.0ns Packet #1171 Successfully Compared
+[NOTE]404150.0ns Packet #1172 Successfully Compared
+[NOTE]404250.0ns Packet #1173 Successfully Compared
+[NOTE]404250.0ns Packet #1174 Successfully Compared
+[NOTE]404250.0ns Packet #1175 Successfully Compared
+[NOTE]404950.0ns Packet #1176 Successfully Compared
+[NOTE]406550.0ns Packet #1177 Successfully Compared
+[NOTE]406550.0ns Packet #1178 Successfully Compared
+[NOTE]406650.0ns Packet #1179 Successfully Compared
+[NOTE]407550.0ns Packet #1180 Successfully Compared
+[NOTE]407550.0ns Packet #1181 Successfully Compared
+[NOTE]408150.0ns Packet #1182 Successfully Compared
+[NOTE]408250.0ns Packet #1183 Successfully Compared
+[NOTE]408350.0ns Packet #1184 Successfully Compared
+[NOTE]409850.0ns Packet #1185 Successfully Compared
+[NOTE]409950.0ns Packet #1186 Successfully Compared
+[NOTE]410650.0ns Packet #1187 Successfully Compared
+[NOTE]410650.0ns Packet #1188 Successfully Compared
+[NOTE]410750.0ns Packet #1189 Successfully Compared
+[NOTE]410850.0ns Packet #1190 Successfully Compared
+[NOTE]410850.0ns Packet #1191 Successfully Compared
+[NOTE]410850.0ns Packet #1192 Successfully Compared
+[NOTE]411650.0ns Packet #1193 Successfully Compared
+[NOTE]411650.0ns Packet #1194 Successfully Compared
+[NOTE]411650.0ns Packet #1195 Successfully Compared
+[NOTE]413150.0ns Packet #1196 Successfully Compared
+[NOTE]413150.0ns Packet #1197 Successfully Compared
+[NOTE]413150.0ns Packet #1198 Successfully Compared
+[NOTE]413350.0ns Packet #1199 Successfully Compared
+[NOTE]413350.0ns Packet #1200 Successfully Compared
+[NOTE]415650.0ns Packet #1201 Successfully Compared
+[NOTE]415650.0ns Packet #1202 Successfully Compared
+[NOTE]415750.0ns Packet #1203 Successfully Compared
+[NOTE]415750.0ns Packet #1204 Successfully Compared
+[NOTE]416450.0ns Packet #1205 Successfully Compared
+[NOTE]416450.0ns Packet #1206 Successfully Compared
+[NOTE]416650.0ns Packet #1207 Successfully Compared
+[NOTE]416650.0ns Packet #1208 Successfully Compared
+[NOTE]417450.0ns Packet #1209 Successfully Compared
+[NOTE]418250.0ns Packet #1210 Successfully Compared
+[NOTE]418250.0ns Packet #1211 Successfully Compared
+[NOTE]419150.0ns Packet #1212 Successfully Compared
+[NOTE]419750.0ns Packet #1213 Successfully Compared
+[NOTE]419750.0ns Packet #1214 Successfully Compared
+[NOTE]419850.0ns Packet #1215 Successfully Compared
+[NOTE]420550.0ns Packet #1216 Successfully Compared
+[NOTE]420750.0ns Packet #1217 Successfully Compared
+[NOTE]421650.0ns Packet #1218 Successfully Compared
+[NOTE]422250.0ns Packet #1219 Successfully Compared
+[NOTE]422250.0ns Packet #1220 Successfully Compared
+[NOTE]422450.0ns Packet #1221 Successfully Compared
+[NOTE]423050.0ns Packet #1222 Successfully Compared
+[NOTE]423250.0ns Packet #1223 Successfully Compared
+[NOTE]423950.0ns Packet #1224 Successfully Compared
+[NOTE]424150.0ns Packet #1225 Successfully Compared
+[NOTE]424750.0ns Packet #1226 Successfully Compared
+[NOTE]424750.0ns Packet #1227 Successfully Compared
+[NOTE]424850.0ns Packet #1228 Successfully Compared
+[NOTE]424950.0ns Packet #1229 Successfully Compared
+[NOTE]425550.0ns Packet #1230 Successfully Compared
+[NOTE]427250.0ns Packet #1231 Successfully Compared
+[NOTE]427350.0ns Packet #1232 Successfully Compared
+[NOTE]427350.0ns Packet #1233 Successfully Compared
+[NOTE]428050.0ns Packet #1234 Successfully Compared
+[NOTE]428250.0ns Packet #1235 Successfully Compared
+[NOTE]428850.0ns Packet #1236 Successfully Compared
+[NOTE]428850.0ns Packet #1237 Successfully Compared
+[NOTE]428950.0ns Packet #1238 Successfully Compared
+[NOTE]429750.0ns Packet #1239 Successfully Compared
+[NOTE]429850.0ns Packet #1240 Successfully Compared
+[NOTE]430650.0ns Packet #1241 Successfully Compared
+[NOTE]430650.0ns Packet #1242 Successfully Compared
+[NOTE]430650.0ns Packet #1243 Successfully Compared
+[NOTE]431350.0ns Packet #1244 Successfully Compared
+[NOTE]432150.0ns Packet #1245 Successfully Compared
+[NOTE]433150.0ns Packet #1246 Successfully Compared
+[NOTE]433850.0ns Packet #1247 Successfully Compared
+[NOTE]433850.0ns Packet #1248 Successfully Compared
+[NOTE]433950.0ns Packet #1249 Successfully Compared
+[NOTE]433950.0ns Packet #1250 Successfully Compared
+[NOTE]433950.0ns Packet #1251 Successfully Compared
+[NOTE]433950.0ns Packet #1252 Successfully Compared
+[NOTE]433950.0ns Packet #1253 Successfully Compared
+[NOTE]434650.0ns Packet #1254 Successfully Compared
+[NOTE]434750.0ns Packet #1255 Successfully Compared
+[NOTE]436250.0ns Packet #1256 Successfully Compared
+[NOTE]436350.0ns Packet #1257 Successfully Compared
+[NOTE]437150.0ns Packet #1258 Successfully Compared
+[NOTE]437250.0ns Packet #1259 Successfully Compared
+[NOTE]437250.0ns Packet #1260 Successfully Compared
+[NOTE]437250.0ns Packet #1261 Successfully Compared
+[NOTE]437950.0ns Packet #1262 Successfully Compared
+[NOTE]438050.0ns Packet #1263 Successfully Compared
+[NOTE]438750.0ns Packet #1264 Successfully Compared
+[NOTE]438850.0ns Packet #1265 Successfully Compared
+[NOTE]439750.0ns Packet #1266 Successfully Compared
+[NOTE]439750.0ns Packet #1267 Successfully Compared
+[NOTE]440350.0ns Packet #1268 Successfully Compared
+[NOTE]440450.0ns Packet #1269 Successfully Compared
+[NOTE]440550.0ns Packet #1270 Successfully Compared
+[NOTE]441250.0ns Packet #1271 Successfully Compared
+[NOTE]441350.0ns Packet #1272 Successfully Compared
+[NOTE]442050.0ns Packet #1273 Successfully Compared
+[NOTE]442850.0ns Packet #1274 Successfully Compared
+[NOTE]442950.0ns Packet #1275 Successfully Compared
+[NOTE]443050.0ns Packet #1276 Successfully Compared
+[NOTE]443750.0ns Packet #1277 Successfully Compared
+[NOTE]443850.0ns Packet #1278 Successfully Compared
+[NOTE]443850.0ns Packet #1279 Successfully Compared
+[NOTE]443850.0ns Packet #1280 Successfully Compared
+[NOTE]444550.0ns Packet #1281 Successfully Compared
+[NOTE]444650.0ns Packet #1282 Successfully Compared
+[NOTE]444650.0ns Packet #1283 Successfully Compared
+[NOTE]445350.0ns Packet #1284 Successfully Compared
+[NOTE]445550.0ns Packet #1285 Successfully Compared
+[NOTE]445550.0ns Packet #1286 Successfully Compared
+[NOTE]446350.0ns Packet #1287 Successfully Compared
+[NOTE]447150.0ns Packet #1288 Successfully Compared
+[NOTE]447150.0ns Packet #1289 Successfully Compared
+[NOTE]447950.0ns Packet #1290 Successfully Compared
+[NOTE]447950.0ns Packet #1291 Successfully Compared
+[NOTE]447950.0ns Packet #1292 Successfully Compared
+[NOTE]448050.0ns Packet #1293 Successfully Compared
+[NOTE]448850.0ns Packet #1294 Successfully Compared
+[NOTE]448850.0ns Packet #1295 Successfully Compared
+[NOTE]449450.0ns Packet #1296 Successfully Compared
+[NOTE]449650.0ns Packet #1297 Successfully Compared
+[NOTE]450450.0ns Packet #1298 Successfully Compared
+[NOTE]450450.0ns Packet #1299 Successfully Compared
+[NOTE]450450.0ns Packet #1300 Successfully Compared
+[NOTE]450450.0ns Packet #1301 Successfully Compared
+[NOTE]450450.0ns Packet #1302 Successfully Compared
+[NOTE]451350.0ns Packet #1303 Successfully Compared
+[NOTE]451950.0ns Packet #1304 Successfully Compared
+[NOTE]452150.0ns Packet #1305 Successfully Compared
+[NOTE]452150.0ns Packet #1306 Successfully Compared
+[NOTE]452750.0ns Packet #1307 Successfully Compared
+[NOTE]452950.0ns Packet #1308 Successfully Compared
+[NOTE]452950.0ns Packet #1309 Successfully Compared
+[NOTE]453750.0ns Packet #1310 Successfully Compared
+[NOTE]454550.0ns Packet #1311 Successfully Compared
+[NOTE]454550.0ns Packet #1312 Successfully Compared
+[NOTE]454650.0ns Packet #1313 Successfully Compared
+[NOTE]454650.0ns Packet #1314 Successfully Compared
+[NOTE]455250.0ns Packet #1315 Successfully Compared
+[NOTE]455450.0ns Packet #1316 Successfully Compared
+[NOTE]455450.0ns Packet #1317 Successfully Compared
+[NOTE]456050.0ns Packet #1318 Successfully Compared
+[NOTE]456250.0ns Packet #1319 Successfully Compared
+[NOTE]456250.0ns Packet #1320 Successfully Compared
+[NOTE]456850.0ns Packet #1321 Successfully Compared
+[NOTE]457050.0ns Packet #1322 Successfully Compared
+[NOTE]457150.0ns Packet #1323 Successfully Compared
+[NOTE]457850.0ns Packet #1324 Successfully Compared
+[NOTE]457950.0ns Packet #1325 Successfully Compared
+[NOTE]458550.0ns Packet #1326 Successfully Compared
+[NOTE]458650.0ns Packet #1327 Successfully Compared
+[NOTE]458750.0ns Packet #1328 Successfully Compared
+[NOTE]458750.0ns Packet #1329 Successfully Compared
+[NOTE]459550.0ns Packet #1330 Successfully Compared
+[NOTE]459650.0ns Packet #1331 Successfully Compared
+[NOTE]460150.0ns Packet #1332 Successfully Compared
+[NOTE]460350.0ns Packet #1333 Successfully Compared
+[NOTE]461150.0ns Packet #1334 Successfully Compared
+[NOTE]461250.0ns Packet #1335 Successfully Compared
+[NOTE]461250.0ns Packet #1336 Successfully Compared
+[NOTE]461250.0ns Packet #1337 Successfully Compared
+[NOTE]461950.0ns Packet #1338 Successfully Compared
+[NOTE]462050.0ns Packet #1339 Successfully Compared
+[NOTE]462650.0ns Packet #1340 Successfully Compared
+[NOTE]462850.0ns Packet #1341 Successfully Compared
+[NOTE]463750.0ns Packet #1342 Successfully Compared
+[NOTE]464450.0ns Packet #1343 Successfully Compared
+[NOTE]464550.0ns Packet #1344 Successfully Compared
+[NOTE]464550.0ns Packet #1345 Successfully Compared
+[NOTE]464550.0ns Packet #1346 Successfully Compared
+[NOTE]465150.0ns Packet #1347 Successfully Compared
+[NOTE]465150.0ns Packet #1348 Successfully Compared
+[NOTE]466150.0ns Packet #1349 Successfully Compared
+[NOTE]466950.0ns Packet #1350 Successfully Compared
+[NOTE]466950.0ns Packet #1351 Successfully Compared
+[NOTE]468450.0ns Packet #1352 Successfully Compared
+[NOTE]468550.0ns Packet #1353 Successfully Compared
+[NOTE]468650.0ns Packet #1354 Successfully Compared
+[NOTE]469450.0ns Packet #1355 Successfully Compared
+[NOTE]469450.0ns Packet #1356 Successfully Compared
+[NOTE]470250.0ns Packet #1357 Successfully Compared
+[NOTE]470950.0ns Packet #1358 Successfully Compared
+[NOTE]471050.0ns Packet #1359 Successfully Compared
+[NOTE]471050.0ns Packet #1360 Successfully Compared
+[NOTE]471850.0ns Packet #1361 Successfully Compared
+[NOTE]471950.0ns Packet #1362 Successfully Compared
+[NOTE]471950.0ns Packet #1363 Successfully Compared
+[NOTE]472750.0ns Packet #1364 Successfully Compared
+[NOTE]473550.0ns Packet #1365 Successfully Compared
+[NOTE]474350.0ns Packet #1366 Successfully Compared
+[NOTE]474350.0ns Packet #1367 Successfully Compared
+[NOTE]474450.0ns Packet #1368 Successfully Compared
+[NOTE]475050.0ns Packet #1369 Successfully Compared
+[NOTE]475150.0ns Packet #1370 Successfully Compared
+[NOTE]475250.0ns Packet #1371 Successfully Compared
+[NOTE]475950.0ns Packet #1372 Successfully Compared
+[NOTE]476850.0ns Packet #1373 Successfully Compared
+[NOTE]476850.0ns Packet #1374 Successfully Compared
+[NOTE]477650.0ns Packet #1375 Successfully Compared
+[NOTE]477650.0ns Packet #1376 Successfully Compared
+[NOTE]477650.0ns Packet #1377 Successfully Compared
+[NOTE]478450.0ns Packet #1378 Successfully Compared
+[NOTE]478450.0ns Packet #1379 Successfully Compared
+[NOTE]479150.0ns Packet #1380 Successfully Compared
+[NOTE]479350.0ns Packet #1381 Successfully Compared
+[NOTE]479350.0ns Packet #1382 Successfully Compared
+[NOTE]480950.0ns Packet #1383 Successfully Compared
+[NOTE]480950.0ns Packet #1384 Successfully Compared
+[NOTE]481650.0ns Packet #1385 Successfully Compared
+[NOTE]481750.0ns Packet #1386 Successfully Compared
+[NOTE]481750.0ns Packet #1387 Successfully Compared
+[NOTE]481750.0ns Packet #1388 Successfully Compared
+[NOTE]481750.0ns Packet #1389 Successfully Compared
+[NOTE]482550.0ns Packet #1390 Successfully Compared
+[NOTE]482650.0ns Packet #1391 Successfully Compared
+[NOTE]483450.0ns Packet #1392 Successfully Compared
+[NOTE]484250.0ns Packet #1393 Successfully Compared
+[NOTE]484250.0ns Packet #1394 Successfully Compared
+[NOTE]485050.0ns Packet #1395 Successfully Compared
+[NOTE]485050.0ns Packet #1396 Successfully Compared
+[NOTE]485050.0ns Packet #1397 Successfully Compared
+[NOTE]485150.0ns Packet #1398 Successfully Compared
+[NOTE]487550.0ns Packet #1399 Successfully Compared
+[NOTE]487550.0ns Packet #1400 Successfully Compared
+[NOTE]487550.0ns Packet #1401 Successfully Compared
+[NOTE]488350.0ns Packet #1402 Successfully Compared
+[NOTE]488350.0ns Packet #1403 Successfully Compared
+[NOTE]488350.0ns Packet #1404 Successfully Compared
+[NOTE]488350.0ns Packet #1405 Successfully Compared
+[NOTE]488450.0ns Packet #1406 Successfully Compared
+[NOTE]489150.0ns Packet #1407 Successfully Compared
+[NOTE]489150.0ns Packet #1408 Successfully Compared
+[NOTE]490850.0ns Packet #1409 Successfully Compared
+[NOTE]490850.0ns Packet #1410 Successfully Compared
+[NOTE]491650.0ns Packet #1411 Successfully Compared
+[NOTE]491650.0ns Packet #1412 Successfully Compared
+[NOTE]491650.0ns Packet #1413 Successfully Compared
+[NOTE]491650.0ns Packet #1414 Successfully Compared
+[NOTE]491650.0ns Packet #1415 Successfully Compared
+[NOTE]491750.0ns Packet #1416 Successfully Compared
+[NOTE]492450.0ns Packet #1417 Successfully Compared
+[NOTE]492450.0ns Packet #1418 Successfully Compared
+[NOTE]493250.0ns Packet #1419 Successfully Compared
+[NOTE]494150.0ns Packet #1420 Successfully Compared
+[NOTE]494150.0ns Packet #1421 Successfully Compared
+[NOTE]494150.0ns Packet #1422 Successfully Compared
+[NOTE]494950.0ns Packet #1423 Successfully Compared
+[NOTE]494950.0ns Packet #1424 Successfully Compared
+[NOTE]494950.0ns Packet #1425 Successfully Compared
+[NOTE]495750.0ns Packet #1426 Successfully Compared
+[NOTE]495850.0ns Packet #1427 Successfully Compared
+[NOTE]495850.0ns Packet #1428 Successfully Compared
+[NOTE]496550.0ns Packet #1429 Successfully Compared
+[NOTE]496650.0ns Packet #1430 Successfully Compared
+[NOTE]497450.0ns Packet #1431 Successfully Compared
+[NOTE]497450.0ns Packet #1432 Successfully Compared
+[NOTE]497450.0ns Packet #1433 Successfully Compared
+[NOTE]497450.0ns Packet #1434 Successfully Compared
+[NOTE]498250.0ns Packet #1435 Successfully Compared
+[NOTE]498250.0ns Packet #1436 Successfully Compared
+[NOTE]498250.0ns Packet #1437 Successfully Compared
+[NOTE]498350.0ns Packet #1438 Successfully Compared
+[NOTE]499050.0ns Packet #1439 Successfully Compared
+[NOTE]499150.0ns Packet #1440 Successfully Compared
+[NOTE]499950.0ns Packet #1441 Successfully Compared
+[NOTE]499950.0ns Packet #1442 Successfully Compared
+[NOTE]499950.0ns Packet #1443 Successfully Compared
+[NOTE]500750.0ns Packet #1444 Successfully Compared
+[NOTE]500750.0ns Packet #1445 Successfully Compared
+[NOTE]501550.0ns Packet #1446 Successfully Compared
+[NOTE]501550.0ns Packet #1447 Successfully Compared
+[NOTE]501550.0ns Packet #1448 Successfully Compared
+[NOTE]502450.0ns Packet #1449 Successfully Compared
+[NOTE]502450.0ns Packet #1450 Successfully Compared
+[NOTE]503150.0ns Packet #1451 Successfully Compared
+[NOTE]503250.0ns Packet #1452 Successfully Compared
+[NOTE]504050.0ns Packet #1453 Successfully Compared
+[NOTE]504850.0ns Packet #1454 Successfully Compared
+[NOTE]504850.0ns Packet #1455 Successfully Compared
+[NOTE]504850.0ns Packet #1456 Successfully Compared
+[NOTE]505650.0ns Packet #1457 Successfully Compared
+[NOTE]505650.0ns Packet #1458 Successfully Compared
+[NOTE]505750.0ns Packet #1459 Successfully Compared
+[NOTE]506550.0ns Packet #1460 Successfully Compared
+[NOTE]507250.0ns Packet #1461 Successfully Compared
+[NOTE]507350.0ns Packet #1462 Successfully Compared
+[NOTE]507350.0ns Packet #1463 Successfully Compared
+[NOTE]507350.0ns Packet #1464 Successfully Compared
+[NOTE]508150.0ns Packet #1465 Successfully Compared
+[NOTE]508950.0ns Packet #1466 Successfully Compared
+[NOTE]508950.0ns Packet #1467 Successfully Compared
+[NOTE]508950.0ns Packet #1468 Successfully Compared
+[NOTE]508950.0ns Packet #1469 Successfully Compared
+[NOTE]509050.0ns Packet #1470 Successfully Compared
+[NOTE]509850.0ns Packet #1471 Successfully Compared
+[NOTE]509850.0ns Packet #1472 Successfully Compared
+[NOTE]509850.0ns Packet #1473 Successfully Compared
+[NOTE]511450.0ns Packet #1474 Successfully Compared
+[NOTE]511450.0ns Packet #1475 Successfully Compared
+[NOTE]511450.0ns Packet #1476 Successfully Compared
+[NOTE]511450.0ns Packet #1477 Successfully Compared
+[NOTE]511550.0ns Packet #1478 Successfully Compared
+[NOTE]512250.0ns Packet #1479 Successfully Compared
+[NOTE]513150.0ns Packet #1480 Successfully Compared
+[NOTE]513150.0ns Packet #1481 Successfully Compared
+[NOTE]513950.0ns Packet #1482 Successfully Compared
+[NOTE]513950.0ns Packet #1483 Successfully Compared
+[NOTE]515550.0ns Packet #1484 Successfully Compared
+[NOTE]515550.0ns Packet #1485 Successfully Compared
+[NOTE]515550.0ns Packet #1486 Successfully Compared
+[NOTE]515650.0ns Packet #1487 Successfully Compared
+[NOTE]516350.0ns Packet #1488 Successfully Compared
+[NOTE]516450.0ns Packet #1489 Successfully Compared
+[NOTE]517250.0ns Packet #1490 Successfully Compared
+[NOTE]517250.0ns Packet #1491 Successfully Compared
+[NOTE]517250.0ns Packet #1492 Successfully Compared
+[NOTE]517250.0ns Packet #1493 Successfully Compared
+[NOTE]518850.0ns Packet #1494 Successfully Compared
+[NOTE]518850.0ns Packet #1495 Successfully Compared
+[NOTE]518850.0ns Packet #1496 Successfully Compared
+[NOTE]518850.0ns Packet #1497 Successfully Compared
+[NOTE]519750.0ns Packet #1498 Successfully Compared
+[NOTE]520550.0ns Packet #1499 Successfully Compared
+[NOTE]520550.0ns Packet #1500 Successfully Compared
+[NOTE]520550.0ns Packet #1501 Successfully Compared
+[NOTE]521350.0ns Packet #1502 Successfully Compared
+[NOTE]521350.0ns Packet #1503 Successfully Compared
+[NOTE]521350.0ns Packet #1504 Successfully Compared
+[NOTE]522150.0ns Packet #1505 Successfully Compared
+[NOTE]522950.0ns Packet #1506 Successfully Compared
+[NOTE]522950.0ns Packet #1507 Successfully Compared
+[NOTE]522950.0ns Packet #1508 Successfully Compared
+[NOTE]523850.0ns Packet #1509 Successfully Compared
+[NOTE]523850.0ns Packet #1510 Successfully Compared
+[NOTE]524650.0ns Packet #1511 Successfully Compared
+[NOTE]524650.0ns Packet #1512 Successfully Compared
+[NOTE]524650.0ns Packet #1513 Successfully Compared
+[NOTE]524650.0ns Packet #1514 Successfully Compared
+[NOTE]525450.0ns Packet #1515 Successfully Compared
+[NOTE]525450.0ns Packet #1516 Successfully Compared
+[NOTE]526250.0ns Packet #1517 Successfully Compared
+[NOTE]527050.0ns Packet #1518 Successfully Compared
+[NOTE]527050.0ns Packet #1519 Successfully Compared
+[NOTE]527150.0ns Packet #1520 Successfully Compared
+[NOTE]527150.0ns Packet #1521 Successfully Compared
+[NOTE]527950.0ns Packet #1522 Successfully Compared
+[NOTE]528750.0ns Packet #1523 Successfully Compared
+[NOTE]528750.0ns Packet #1524 Successfully Compared
+[NOTE]528750.0ns Packet #1525 Successfully Compared
+[NOTE]529650.0ns Packet #1526 Successfully Compared
+[NOTE]529650.0ns Packet #1527 Successfully Compared
+[NOTE]530350.0ns Packet #1528 Successfully Compared
+[NOTE]530350.0ns Packet #1529 Successfully Compared
+[NOTE]531250.0ns Packet #1530 Successfully Compared
+[NOTE]531250.0ns Packet #1531 Successfully Compared
+[NOTE]531250.0ns Packet #1532 Successfully Compared
+[NOTE]531250.0ns Packet #1533 Successfully Compared
+[NOTE]531250.0ns Packet #1534 Successfully Compared
+[NOTE]532050.0ns Packet #1535 Successfully Compared
+[NOTE]532150.0ns Packet #1536 Successfully Compared
+[NOTE]532950.0ns Packet #1537 Successfully Compared
+[NOTE]532950.0ns Packet #1538 Successfully Compared
+[NOTE]533650.0ns Packet #1539 Successfully Compared
+[NOTE]534450.0ns Packet #1540 Successfully Compared
+[NOTE]534550.0ns Packet #1541 Successfully Compared
+[NOTE]534550.0ns Packet #1542 Successfully Compared
+[NOTE]534550.0ns Packet #1543 Successfully Compared
+[NOTE]534650.0ns Packet #1544 Successfully Compared
+[NOTE]536150.0ns Packet #1545 Successfully Compared
+[NOTE]536150.0ns Packet #1546 Successfully Compared
+[NOTE]536250.0ns Packet #1547 Successfully Compared
+[NOTE]536950.0ns Packet #1548 Successfully Compared
+[NOTE]537050.0ns Packet #1549 Successfully Compared
+[NOTE]537750.0ns Packet #1550 Successfully Compared
+[NOTE]537750.0ns Packet #1551 Successfully Compared
+[NOTE]537850.0ns Packet #1552 Successfully Compared
+[NOTE]537850.0ns Packet #1553 Successfully Compared
+[NOTE]538650.0ns Packet #1554 Successfully Compared
+[NOTE]539450.0ns Packet #1555 Successfully Compared
+[NOTE]539550.0ns Packet #1556 Successfully Compared
+[NOTE]539550.0ns Packet #1557 Successfully Compared
+[NOTE]540250.0ns Packet #1558 Successfully Compared
+[NOTE]540250.0ns Packet #1559 Successfully Compared
+[NOTE]540250.0ns Packet #1560 Successfully Compared
+[NOTE]540250.0ns Packet #1561 Successfully Compared
+[NOTE]541050.0ns Packet #1562 Successfully Compared
+[NOTE]541950.0ns Packet #1563 Successfully Compared
+[NOTE]542050.0ns Packet #1564 Successfully Compared
+[NOTE]542750.0ns Packet #1565 Successfully Compared
+[NOTE]542750.0ns Packet #1566 Successfully Compared
+[NOTE]543550.0ns Packet #1567 Successfully Compared
+[NOTE]543550.0ns Packet #1568 Successfully Compared
+[NOTE]543650.0ns Packet #1569 Successfully Compared
+[NOTE]543650.0ns Packet #1570 Successfully Compared
+[NOTE]544350.0ns Packet #1571 Successfully Compared
+[NOTE]544350.0ns Packet #1572 Successfully Compared
+[NOTE]544450.0ns Packet #1573 Successfully Compared
+[NOTE]545250.0ns Packet #1574 Successfully Compared
+[NOTE]545250.0ns Packet #1575 Successfully Compared
+[NOTE]545250.0ns Packet #1576 Successfully Compared
+[NOTE]546050.0ns Packet #1577 Successfully Compared
+[NOTE]546850.0ns Packet #1578 Successfully Compared
+[NOTE]547650.0ns Packet #1579 Successfully Compared
+[NOTE]547650.0ns Packet #1580 Successfully Compared
+[NOTE]547650.0ns Packet #1581 Successfully Compared
+[NOTE]547650.0ns Packet #1582 Successfully Compared
+[NOTE]547750.0ns Packet #1583 Successfully Compared
+[NOTE]547750.0ns Packet #1584 Successfully Compared
+[NOTE]548550.0ns Packet #1585 Successfully Compared
+[NOTE]549350.0ns Packet #1586 Successfully Compared
+[NOTE]550150.0ns Packet #1587 Successfully Compared
+[NOTE]551050.0ns Packet #1588 Successfully Compared
+[NOTE]551750.0ns Packet #1589 Successfully Compared
+[NOTE]551750.0ns Packet #1590 Successfully Compared
+[NOTE]551750.0ns Packet #1591 Successfully Compared
+[NOTE]551750.0ns Packet #1592 Successfully Compared
+[NOTE]551850.0ns Packet #1593 Successfully Compared
+[NOTE]551850.0ns Packet #1594 Successfully Compared
+[NOTE]552650.0ns Packet #1595 Successfully Compared
+[NOTE]552650.0ns Packet #1596 Successfully Compared
+[NOTE]553450.0ns Packet #1597 Successfully Compared
+[NOTE]554250.0ns Packet #1598 Successfully Compared
+[NOTE]554250.0ns Packet #1599 Successfully Compared
+[NOTE]554250.0ns Packet #1600 Successfully Compared
+[NOTE]555050.0ns Packet #1601 Successfully Compared
+[NOTE]555150.0ns Packet #1602 Successfully Compared
+[NOTE]555150.0ns Packet #1603 Successfully Compared
+[NOTE]555850.0ns Packet #1604 Successfully Compared
+[NOTE]555950.0ns Packet #1605 Successfully Compared
+[NOTE]556750.0ns Packet #1606 Successfully Compared
+[NOTE]556750.0ns Packet #1607 Successfully Compared
+[NOTE]557550.0ns Packet #1608 Successfully Compared
+[NOTE]557550.0ns Packet #1609 Successfully Compared
+[NOTE]558350.0ns Packet #1610 Successfully Compared
+[NOTE]558350.0ns Packet #1611 Successfully Compared
+[NOTE]558450.0ns Packet #1612 Successfully Compared
+[NOTE]559150.0ns Packet #1613 Successfully Compared
+[NOTE]559250.0ns Packet #1614 Successfully Compared
+[NOTE]559950.0ns Packet #1615 Successfully Compared
+[NOTE]560050.0ns Packet #1616 Successfully Compared
+[NOTE]560850.0ns Packet #1617 Successfully Compared
+[NOTE]560850.0ns Packet #1618 Successfully Compared
+[NOTE]560850.0ns Packet #1619 Successfully Compared
+[NOTE]560950.0ns Packet #1620 Successfully Compared
+[NOTE]561650.0ns Packet #1621 Successfully Compared
+[NOTE]561650.0ns Packet #1622 Successfully Compared
+[NOTE]563250.0ns Packet #1623 Successfully Compared
+[NOTE]563250.0ns Packet #1624 Successfully Compared
+[NOTE]563350.0ns Packet #1625 Successfully Compared
+[NOTE]563350.0ns Packet #1626 Successfully Compared
+[NOTE]564150.0ns Packet #1627 Successfully Compared
+[NOTE]564150.0ns Packet #1628 Successfully Compared
+[NOTE]564250.0ns Packet #1629 Successfully Compared
+[NOTE]565050.0ns Packet #1630 Successfully Compared
+[NOTE]565750.0ns Packet #1631 Successfully Compared
+[NOTE]565750.0ns Packet #1632 Successfully Compared
+[NOTE]565750.0ns Packet #1633 Successfully Compared
+[NOTE]566650.0ns Packet #1634 Successfully Compared
+[NOTE]567350.0ns Packet #1635 Successfully Compared
+[NOTE]567350.0ns Packet #1636 Successfully Compared
+[NOTE]567450.0ns Packet #1637 Successfully Compared
+[NOTE]567550.0ns Packet #1638 Successfully Compared
+[NOTE]568250.0ns Packet #1639 Successfully Compared
+[NOTE]569050.0ns Packet #1640 Successfully Compared
+[NOTE]569150.0ns Packet #1641 Successfully Compared
+[NOTE]569850.0ns Packet #1642 Successfully Compared
+[NOTE]570650.0ns Packet #1643 Successfully Compared
+[NOTE]570750.0ns Packet #1644 Successfully Compared
+[NOTE]571450.0ns Packet #1645 Successfully Compared
+[NOTE]571550.0ns Packet #1646 Successfully Compared
+[NOTE]571550.0ns Packet #1647 Successfully Compared
+[NOTE]571650.0ns Packet #1648 Successfully Compared
+[NOTE]572450.0ns Packet #1649 Successfully Compared
+[NOTE]572450.0ns Packet #1650 Successfully Compared
+[NOTE]573150.0ns Packet #1651 Successfully Compared
+[NOTE]573150.0ns Packet #1652 Successfully Compared
+[NOTE]573950.0ns Packet #1653 Successfully Compared
+[NOTE]574050.0ns Packet #1654 Successfully Compared
+[NOTE]574150.0ns Packet #1655 Successfully Compared
+[NOTE]574850.0ns Packet #1656 Successfully Compared
+[NOTE]574850.0ns Packet #1657 Successfully Compared
+[NOTE]574850.0ns Packet #1658 Successfully Compared
+[NOTE]574850.0ns Packet #1659 Successfully Compared
+[NOTE]575550.0ns Packet #1660 Successfully Compared
+[NOTE]575550.0ns Packet #1661 Successfully Compared
+[NOTE]576450.0ns Packet #1662 Successfully Compared
+[NOTE]576550.0ns Packet #1663 Successfully Compared
+[NOTE]576650.0ns Packet #1664 Successfully Compared
+[NOTE]577250.0ns Packet #1665 Successfully Compared
+[NOTE]577250.0ns Packet #1666 Successfully Compared
+[NOTE]577350.0ns Packet #1667 Successfully Compared
+[NOTE]577350.0ns Packet #1668 Successfully Compared
+[NOTE]577350.0ns Packet #1669 Successfully Compared
+[NOTE]577350.0ns Packet #1670 Successfully Compared
+[NOTE]577450.0ns Packet #1671 Successfully Compared
+[NOTE]578050.0ns Packet #1672 Successfully Compared
+[NOTE]579750.0ns Packet #1673 Successfully Compared
+[NOTE]579850.0ns Packet #1674 Successfully Compared
+[NOTE]579850.0ns Packet #1675 Successfully Compared
+[NOTE]579850.0ns Packet #1676 Successfully Compared
+[NOTE]579950.0ns Packet #1677 Successfully Compared
+[NOTE]580550.0ns Packet #1678 Successfully Compared
+[NOTE]581450.0ns Packet #1679 Successfully Compared
+[NOTE]581450.0ns Packet #1680 Successfully Compared
+[NOTE]581450.0ns Packet #1681 Successfully Compared
+[NOTE]581550.0ns Packet #1682 Successfully Compared
+[NOTE]582150.0ns Packet #1683 Successfully Compared
+[NOTE]582250.0ns Packet #1684 Successfully Compared
+[NOTE]582350.0ns Packet #1685 Successfully Compared
+[NOTE]583050.0ns Packet #1686 Successfully Compared
+[NOTE]583150.0ns Packet #1687 Successfully Compared
+[NOTE]583850.0ns Packet #1688 Successfully Compared
+[NOTE]583950.0ns Packet #1689 Successfully Compared
+[NOTE]583950.0ns Packet #1690 Successfully Compared
+[NOTE]584050.0ns Packet #1691 Successfully Compared
+[NOTE]584650.0ns Packet #1692 Successfully Compared
+[NOTE]584750.0ns Packet #1693 Successfully Compared
+[NOTE]585450.0ns Packet #1694 Successfully Compared
+[NOTE]585550.0ns Packet #1695 Successfully Compared
+[NOTE]586350.0ns Packet #1696 Successfully Compared
+[NOTE]586450.0ns Packet #1697 Successfully Compared
+[NOTE]587150.0ns Packet #1698 Successfully Compared
+[NOTE]587950.0ns Packet #1699 Successfully Compared
+[NOTE]588050.0ns Packet #1700 Successfully Compared
+[NOTE]588150.0ns Packet #1701 Successfully Compared
+[NOTE]588150.0ns Packet #1702 Successfully Compared
+[NOTE]588850.0ns Packet #1703 Successfully Compared
+[NOTE]588850.0ns Packet #1704 Successfully Compared
+[NOTE]590450.0ns Packet #1705 Successfully Compared
+[NOTE]590550.0ns Packet #1706 Successfully Compared
+[NOTE]590650.0ns Packet #1707 Successfully Compared
+[NOTE]591350.0ns Packet #1708 Successfully Compared
+[NOTE]591350.0ns Packet #1709 Successfully Compared
+[NOTE]591450.0ns Packet #1710 Successfully Compared
+[NOTE]592050.0ns Packet #1711 Successfully Compared
+[NOTE]592150.0ns Packet #1712 Successfully Compared
+[NOTE]592250.0ns Packet #1713 Successfully Compared
+[NOTE]593050.0ns Packet #1714 Successfully Compared
+[NOTE]593150.0ns Packet #1715 Successfully Compared
+[NOTE]593850.0ns Packet #1716 Successfully Compared
+[NOTE]594650.0ns Packet #1717 Successfully Compared
+[NOTE]594650.0ns Packet #1718 Successfully Compared
+[NOTE]594650.0ns Packet #1719 Successfully Compared
+[NOTE]594750.0ns Packet #1720 Successfully Compared
+[NOTE]595550.0ns Packet #1721 Successfully Compared
+[NOTE]595550.0ns Packet #1722 Successfully Compared
+[NOTE]596450.0ns Packet #1723 Successfully Compared
+[NOTE]597250.0ns Packet #1724 Successfully Compared
+[NOTE]597950.0ns Packet #1725 Successfully Compared
+[NOTE]598750.0ns Packet #1726 Successfully Compared
+[NOTE]598850.0ns Packet #1727 Successfully Compared
+[NOTE]599650.0ns Packet #1728 Successfully Compared
+[NOTE]600450.0ns Packet #1729 Successfully Compared
+[NOTE]600550.0ns Packet #1730 Successfully Compared
+[NOTE]601250.0ns Packet #1731 Successfully Compared
+[NOTE]601250.0ns Packet #1732 Successfully Compared
+[NOTE]601350.0ns Packet #1733 Successfully Compared
+[NOTE]602150.0ns Packet #1734 Successfully Compared
+[NOTE]602850.0ns Packet #1735 Successfully Compared
+[NOTE]603050.0ns Packet #1736 Successfully Compared
+[NOTE]603050.0ns Packet #1737 Successfully Compared
+[NOTE]603750.0ns Packet #1738 Successfully Compared
+[NOTE]603850.0ns Packet #1739 Successfully Compared
+[NOTE]604550.0ns Packet #1740 Successfully Compared
+[NOTE]604650.0ns Packet #1741 Successfully Compared
+[NOTE]605350.0ns Packet #1742 Successfully Compared
+[NOTE]605450.0ns Packet #1743 Successfully Compared
+[NOTE]606150.0ns Packet #1744 Successfully Compared
+[NOTE]606950.0ns Packet #1745 Successfully Compared
+[NOTE]607050.0ns Packet #1746 Successfully Compared
+[NOTE]607150.0ns Packet #1747 Successfully Compared
+[NOTE]607150.0ns Packet #1748 Successfully Compared
+[NOTE]607950.0ns Packet #1749 Successfully Compared
+[NOTE]608650.0ns Packet #1750 Successfully Compared
+[NOTE]608650.0ns Packet #1751 Successfully Compared
+[NOTE]608750.0ns Packet #1752 Successfully Compared
+[NOTE]609550.0ns Packet #1753 Successfully Compared
+[NOTE]610250.0ns Packet #1754 Successfully Compared
+[NOTE]610250.0ns Packet #1755 Successfully Compared
+[NOTE]610450.0ns Packet #1756 Successfully Compared
+[NOTE]610450.0ns Packet #1757 Successfully Compared
+[NOTE]612050.0ns Packet #1758 Successfully Compared
+[NOTE]612750.0ns Packet #1759 Successfully Compared
+[NOTE]612750.0ns Packet #1760 Successfully Compared
+[NOTE]612850.0ns Packet #1761 Successfully Compared
+[NOTE]614550.0ns Packet #1762 Successfully Compared
+[NOTE]614550.0ns Packet #1763 Successfully Compared
+[NOTE]615250.0ns Packet #1764 Successfully Compared
+[NOTE]615250.0ns Packet #1765 Successfully Compared
+[NOTE]615250.0ns Packet #1766 Successfully Compared
+[NOTE]615350.0ns Packet #1767 Successfully Compared
+[NOTE]616150.0ns Packet #1768 Successfully Compared
+[NOTE]616150.0ns Packet #1769 Successfully Compared
+[NOTE]616950.0ns Packet #1770 Successfully Compared
+[NOTE]617050.0ns Packet #1771 Successfully Compared
+[NOTE]617850.0ns Packet #1772 Successfully Compared
+[NOTE]618550.0ns Packet #1773 Successfully Compared
+[NOTE]618550.0ns Packet #1774 Successfully Compared
+[NOTE]618650.0ns Packet #1775 Successfully Compared
+[NOTE]618650.0ns Packet #1776 Successfully Compared
+[NOTE]619350.0ns Packet #1777 Successfully Compared
+[NOTE]619350.0ns Packet #1778 Successfully Compared
+[NOTE]619350.0ns Packet #1779 Successfully Compared
+[NOTE]619450.0ns Packet #1780 Successfully Compared
+[NOTE]621050.0ns Packet #1781 Successfully Compared
+[NOTE]621050.0ns Packet #1782 Successfully Compared
+[NOTE]621150.0ns Packet #1783 Successfully Compared
+[NOTE]621150.0ns Packet #1784 Successfully Compared
+[NOTE]621850.0ns Packet #1785 Successfully Compared
+[NOTE]621850.0ns Packet #1786 Successfully Compared
+[NOTE]622750.0ns Packet #1787 Successfully Compared
+[NOTE]623450.0ns Packet #1788 Successfully Compared
+[NOTE]623450.0ns Packet #1789 Successfully Compared
+[NOTE]623550.0ns Packet #1790 Successfully Compared
+[NOTE]623550.0ns Packet #1791 Successfully Compared
+[NOTE]624350.0ns Packet #1792 Successfully Compared
+[NOTE]624350.0ns Packet #1793 Successfully Compared
+[NOTE]624350.0ns Packet #1794 Successfully Compared
+[NOTE]625150.0ns Packet #1795 Successfully Compared
+[NOTE]625150.0ns Packet #1796 Successfully Compared
+[NOTE]625150.0ns Packet #1797 Successfully Compared
+[NOTE]625950.0ns Packet #1798 Successfully Compared
+[NOTE]626050.0ns Packet #1799 Successfully Compared
+[NOTE]626850.0ns Packet #1800 Successfully Compared
+[NOTE]626850.0ns Packet #1801 Successfully Compared
+[NOTE]626850.0ns Packet #1802 Successfully Compared
+[NOTE]627650.0ns Packet #1803 Successfully Compared
+[NOTE]627650.0ns Packet #1804 Successfully Compared
+[NOTE]627650.0ns Packet #1805 Successfully Compared
+[NOTE]627650.0ns Packet #1806 Successfully Compared
+[NOTE]628450.0ns Packet #1807 Successfully Compared
+[NOTE]629350.0ns Packet #1808 Successfully Compared
+[NOTE]629350.0ns Packet #1809 Successfully Compared
+[NOTE]630050.0ns Packet #1810 Successfully Compared
+[NOTE]630150.0ns Packet #1811 Successfully Compared
+[NOTE]630150.0ns Packet #1812 Successfully Compared
+[NOTE]630150.0ns Packet #1813 Successfully Compared
+[NOTE]630950.0ns Packet #1814 Successfully Compared
+[NOTE]630950.0ns Packet #1815 Successfully Compared
+[NOTE]630950.0ns Packet #1816 Successfully Compared
+[NOTE]630950.0ns Packet #1817 Successfully Compared
+[NOTE]630950.0ns Packet #1818 Successfully Compared
+[NOTE]631850.0ns Packet #1819 Successfully Compared
+[NOTE]632550.0ns Packet #1820 Successfully Compared
+[NOTE]633450.0ns Packet #1821 Successfully Compared
+[NOTE]633450.0ns Packet #1822 Successfully Compared
+[NOTE]633450.0ns Packet #1823 Successfully Compared
+[NOTE]633450.0ns Packet #1824 Successfully Compared
+[NOTE]633450.0ns Packet #1825 Successfully Compared
+[NOTE]634250.0ns Packet #1826 Successfully Compared
+[NOTE]635050.0ns Packet #1827 Successfully Compared
+[NOTE]635950.0ns Packet #1828 Successfully Compared
+[NOTE]635950.0ns Packet #1829 Successfully Compared
+[NOTE]635950.0ns Packet #1830 Successfully Compared
+[NOTE]635950.0ns Packet #1831 Successfully Compared
+[NOTE]636650.0ns Packet #1832 Successfully Compared
+[NOTE]636750.0ns Packet #1833 Successfully Compared
+[NOTE]636750.0ns Packet #1834 Successfully Compared
+[NOTE]637550.0ns Packet #1835 Successfully Compared
+[NOTE]637550.0ns Packet #1836 Successfully Compared
+[NOTE]637550.0ns Packet #1837 Successfully Compared
+[NOTE]637550.0ns Packet #1838 Successfully Compared
+[NOTE]638350.0ns Packet #1839 Successfully Compared
+[NOTE]639250.0ns Packet #1840 Successfully Compared
+[NOTE]639250.0ns Packet #1841 Successfully Compared
+[NOTE]639250.0ns Packet #1842 Successfully Compared
+[NOTE]640050.0ns Packet #1843 Successfully Compared
+[NOTE]640050.0ns Packet #1844 Successfully Compared
+[NOTE]640050.0ns Packet #1845 Successfully Compared
+[NOTE]640050.0ns Packet #1846 Successfully Compared
+[NOTE]640850.0ns Packet #1847 Successfully Compared
+[NOTE]640850.0ns Packet #1848 Successfully Compared
+[NOTE]641650.0ns Packet #1849 Successfully Compared
+[NOTE]641750.0ns Packet #1850 Successfully Compared
+[NOTE]641750.0ns Packet #1851 Successfully Compared
+[NOTE]642550.0ns Packet #1852 Successfully Compared
+[NOTE]642550.0ns Packet #1853 Successfully Compared
+[NOTE]642550.0ns Packet #1854 Successfully Compared
+[NOTE]642550.0ns Packet #1855 Successfully Compared
+[NOTE]643350.0ns Packet #1856 Successfully Compared
+[NOTE]643350.0ns Packet #1857 Successfully Compared
+[NOTE]643350.0ns Packet #1858 Successfully Compared
+[NOTE]644150.0ns Packet #1859 Successfully Compared
+[NOTE]645050.0ns Packet #1860 Successfully Compared
+[NOTE]645050.0ns Packet #1861 Successfully Compared
+[NOTE]645050.0ns Packet #1862 Successfully Compared
+[NOTE]645050.0ns Packet #1863 Successfully Compared
+[NOTE]645050.0ns Packet #1864 Successfully Compared
+[NOTE]645850.0ns Packet #1865 Successfully Compared
+[NOTE]645850.0ns Packet #1866 Successfully Compared
+[NOTE]645850.0ns Packet #1867 Successfully Compared
+[NOTE]646650.0ns Packet #1868 Successfully Compared
+[NOTE]646650.0ns Packet #1869 Successfully Compared
+[NOTE]647450.0ns Packet #1870 Successfully Compared
+[NOTE]647550.0ns Packet #1871 Successfully Compared
+[NOTE]648250.0ns Packet #1872 Successfully Compared
+[NOTE]648350.0ns Packet #1873 Successfully Compared
+[NOTE]649150.0ns Packet #1874 Successfully Compared
+[NOTE]649150.0ns Packet #1875 Successfully Compared
+[NOTE]649150.0ns Packet #1876 Successfully Compared
+[NOTE]649950.0ns Packet #1877 Successfully Compared
+[NOTE]649950.0ns Packet #1878 Successfully Compared
+[NOTE]649950.0ns Packet #1879 Successfully Compared
+[NOTE]649950.0ns Packet #1880 Successfully Compared
+[NOTE]649950.0ns Packet #1881 Successfully Compared
+[NOTE]650750.0ns Packet #1882 Successfully Compared
+[NOTE]650750.0ns Packet #1883 Successfully Compared
+[NOTE]652350.0ns Packet #1884 Successfully Compared
+[NOTE]652450.0ns Packet #1885 Successfully Compared
+[NOTE]652450.0ns Packet #1886 Successfully Compared
+[NOTE]652450.0ns Packet #1887 Successfully Compared
+[NOTE]653250.0ns Packet #1888 Successfully Compared
+[NOTE]653250.0ns Packet #1889 Successfully Compared
+[NOTE]654050.0ns Packet #1890 Successfully Compared
+[NOTE]654850.0ns Packet #1891 Successfully Compared
+[NOTE]654950.0ns Packet #1892 Successfully Compared
+[NOTE]655650.0ns Packet #1893 Successfully Compared
+[NOTE]655750.0ns Packet #1894 Successfully Compared
+[NOTE]655750.0ns Packet #1895 Successfully Compared
+[NOTE]656550.0ns Packet #1896 Successfully Compared
+[NOTE]656550.0ns Packet #1897 Successfully Compared
+[NOTE]657350.0ns Packet #1898 Successfully Compared
+[NOTE]657350.0ns Packet #1899 Successfully Compared
+[NOTE]657350.0ns Packet #1900 Successfully Compared
+[NOTE]657450.0ns Packet #1901 Successfully Compared
+[NOTE]658150.0ns Packet #1902 Successfully Compared
+[NOTE]658250.0ns Packet #1903 Successfully Compared
+[NOTE]658250.0ns Packet #1904 Successfully Compared
+[NOTE]659050.0ns Packet #1905 Successfully Compared
+[NOTE]659050.0ns Packet #1906 Successfully Compared
+[NOTE]659750.0ns Packet #1907 Successfully Compared
+[NOTE]659850.0ns Packet #1908 Successfully Compared
+[NOTE]660650.0ns Packet #1909 Successfully Compared
+[NOTE]660650.0ns Packet #1910 Successfully Compared
+[NOTE]660650.0ns Packet #1911 Successfully Compared
+[NOTE]661450.0ns Packet #1912 Successfully Compared
+[NOTE]662350.0ns Packet #1913 Successfully Compared
+[NOTE]663850.0ns Packet #1914 Successfully Compared
+[NOTE]663850.0ns Packet #1915 Successfully Compared
+[NOTE]663950.0ns Packet #1916 Successfully Compared
+[NOTE]663950.0ns Packet #1917 Successfully Compared
+[NOTE]663950.0ns Packet #1918 Successfully Compared
+[NOTE]664750.0ns Packet #1919 Successfully Compared
+[NOTE]664750.0ns Packet #1920 Successfully Compared
+[NOTE]664850.0ns Packet #1921 Successfully Compared
+[NOTE]665650.0ns Packet #1922 Successfully Compared
+[NOTE]666350.0ns Packet #1923 Successfully Compared
+[NOTE]666350.0ns Packet #1924 Successfully Compared
+[NOTE]666450.0ns Packet #1925 Successfully Compared
+[NOTE]666450.0ns Packet #1926 Successfully Compared
+[NOTE]667250.0ns Packet #1927 Successfully Compared
+[NOTE]667250.0ns Packet #1928 Successfully Compared
+[NOTE]667250.0ns Packet #1929 Successfully Compared
+[NOTE]668150.0ns Packet #1930 Successfully Compared
+[NOTE]668950.0ns Packet #1931 Successfully Compared
+[NOTE]669650.0ns Packet #1932 Successfully Compared
+[NOTE]669650.0ns Packet #1933 Successfully Compared
+[NOTE]669750.0ns Packet #1934 Successfully Compared
+[NOTE]669750.0ns Packet #1935 Successfully Compared
+[NOTE]669750.0ns Packet #1936 Successfully Compared
+[NOTE]669750.0ns Packet #1937 Successfully Compared
+[NOTE]670550.0ns Packet #1938 Successfully Compared
+[NOTE]672150.0ns Packet #1939 Successfully Compared
+[NOTE]672150.0ns Packet #1940 Successfully Compared
+[NOTE]672250.0ns Packet #1941 Successfully Compared
+[NOTE]672250.0ns Packet #1942 Successfully Compared
+[NOTE]673050.0ns Packet #1943 Successfully Compared
+[NOTE]673850.0ns Packet #1944 Successfully Compared
+[NOTE]673850.0ns Packet #1945 Successfully Compared
+[NOTE]673850.0ns Packet #1946 Successfully Compared
+[NOTE]673850.0ns Packet #1947 Successfully Compared
+[NOTE]674650.0ns Packet #1948 Successfully Compared
+[NOTE]674750.0ns Packet #1949 Successfully Compared
+[NOTE]674750.0ns Packet #1950 Successfully Compared
+[NOTE]675450.0ns Packet #1951 Successfully Compared
+[NOTE]676350.0ns Packet #1952 Successfully Compared
+[NOTE]676350.0ns Packet #1953 Successfully Compared
+[NOTE]676350.0ns Packet #1954 Successfully Compared
+[NOTE]677150.0ns Packet #1955 Successfully Compared
+[NOTE]677150.0ns Packet #1956 Successfully Compared
+[NOTE]677150.0ns Packet #1957 Successfully Compared
+[NOTE]677250.0ns Packet #1958 Successfully Compared
+[NOTE]678050.0ns Packet #1959 Successfully Compared
+[NOTE]678750.0ns Packet #1960 Successfully Compared
+[NOTE]678750.0ns Packet #1961 Successfully Compared
+[NOTE]678850.0ns Packet #1962 Successfully Compared
+[NOTE]679650.0ns Packet #1963 Successfully Compared
+[NOTE]679650.0ns Packet #1964 Successfully Compared
+[NOTE]679650.0ns Packet #1965 Successfully Compared
+[NOTE]679650.0ns Packet #1966 Successfully Compared
+[NOTE]680450.0ns Packet #1967 Successfully Compared
+[NOTE]681250.0ns Packet #1968 Successfully Compared
+[NOTE]681250.0ns Packet #1969 Successfully Compared
+[NOTE]681350.0ns Packet #1970 Successfully Compared
+[NOTE]681350.0ns Packet #1971 Successfully Compared
+[NOTE]682150.0ns Packet #1972 Successfully Compared
+[NOTE]682150.0ns Packet #1973 Successfully Compared
+[NOTE]682950.0ns Packet #1974 Successfully Compared
+[NOTE]682950.0ns Packet #1975 Successfully Compared
+[NOTE]683750.0ns Packet #1976 Successfully Compared
+[NOTE]683750.0ns Packet #1977 Successfully Compared
+[NOTE]683850.0ns Packet #1978 Successfully Compared
+[NOTE]683850.0ns Packet #1979 Successfully Compared
+[NOTE]684550.0ns Packet #1980 Successfully Compared
+[NOTE]684550.0ns Packet #1981 Successfully Compared
+[NOTE]685450.0ns Packet #1982 Successfully Compared
+[NOTE]686350.0ns Packet #1983 Successfully Compared
+[NOTE]687050.0ns Packet #1984 Successfully Compared
+[NOTE]687050.0ns Packet #1985 Successfully Compared
+[NOTE]687050.0ns Packet #1986 Successfully Compared
+[NOTE]687850.0ns Packet #1987 Successfully Compared
+[NOTE]687850.0ns Packet #1988 Successfully Compared
+[NOTE]690350.0ns Packet #1989 Successfully Compared
+[NOTE]690350.0ns Packet #1990 Successfully Compared
+[NOTE]690350.0ns Packet #1991 Successfully Compared
+[NOTE]691150.0ns Packet #1992 Successfully Compared
+[NOTE]691150.0ns Packet #1993 Successfully Compared
+[NOTE]692850.0ns Packet #1994 Successfully Compared
+[NOTE]693650.0ns Packet #1995 Successfully Compared
+[NOTE]693650.0ns Packet #1996 Successfully Compared
+[NOTE]694450.0ns Packet #1997 Successfully Compared
+[NOTE]696950.0ns Packet #1998 Successfully Compared
+[NOTE]701050.0ns Packet #1999 Successfully Compared
+$finish at simulation time 701050.0ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 701050000 ps
+CPU Time:      0.680 seconds;       Data structure size:   0.1Mb
+Tue May 20 13:37:54 2025

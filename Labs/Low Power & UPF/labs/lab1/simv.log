@@ -1,0 +1,110 @@
+Command: /evprj153/projects/DuyQuang_DV1/Labs/ces_nlp_2019.06/labs/lab1/./simv -l simv.log +ntb_random_seed=1 +fsdb+mda
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP1-1_Full64; Runtime version W-2024.09-SP1-1_Full64;  May 20 15:36 2025
+VCD+ Writer W-2024.09-SP1-1_Full64 Copyright (c) 1991-2024 by Synopsys Inc.
+*Verdi* Loading libsscore_vcs202409.so
+FSDB Dumper for VCS, Release Verdi_W-2024.09-SP1-1, Linux x86_64/64bit, 01/11/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'novas.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda and +power dumping.
+*Verdi* : End of traversing.
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/decoder_PD3' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_3' of power domain 'router_test_top/dut/decoder_PD3' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/decoder_PD3' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_3' of power domain 'router_test_top/dut/decoder_PD3' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/decoder_PD3' started with voltage 1 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ROUTER' started in 'NORMAL' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'ROUTER.primary.power' of power domain 'router_test_top/dut/ROUTER' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'ROUTER.primary.ground' of power domain 'router_test_top/dut/ROUTER' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'ROUTER.primary.power' of power domain 'router_test_top/dut/ROUTER' started with voltage 1 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'ROUTER.primary.ground' of power domain 'router_test_top/dut/ROUTER' started with voltage 1 V.
+
+[00 ps] [INFO] [LP_SUPPLY_PAD_CALL] Supply Pad function 'UPF::supply_on' called for Supply Pad 'VDD'. Supply Pad value changed to '`{FULL_ON, 1080000}'. File: ./test.sv, Line: 127.
+
+[00 ps] [INFO] [LP_SUPPLY_PAD_CALL] Supply Pad function 'UPF::supply_on' called for Supply Pad 'VSS'. Supply Pad value changed to '`{FULL_ON, 0}'. File: ./test.sv, Line: 133.
+
+[00 ps] [INFO] [LP_PGN_VALUE_CHANGE] Voltage of the primary ground net 'VSS' of power domain 'router_test_top/dut/decoder_PD3' changed from 1 V to 0 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_3' of power domain 'router_test_top/dut/decoder_PD3' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_3' of power domain 'router_test_top/dut/decoder_PD3' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/decoder_PD3' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/pwr.ipwrcon_pd_n[3]' connected to control port 'ctrl' of power switch 'router_test_top/dut/decoder_SW_3' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/decoder_SW_3' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/decoder_SW_3' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/VDD_3' tied to output supply port 'out' of power switch 'router_test_top/dut/decoder_SW_3' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/VDD_3' tied to output supply port 'out' of power switch 'router_test_top/dut/decoder_SW_3' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/decoder_SW_3' started in decoder_PD3_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'VDD' for isolation strategy 'decoder_PD3_iso' of power domain 'router_test_top/dut/decoder_PD3' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'VSS' for isolation strategy 'decoder_PD3_iso' of power domain 'router_test_top/dut/decoder_PD3' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/pwr.ipwrcon_iso_n[3]' of isolation strategy 'decoder_PD3_iso' of power domain 'router_test_top/dut/decoder_PD3' started with value 'St1'. Isolation sense specified is 'low'.
+
+[73550000 ps] [INFO] [LP_ISO_EN] Isolation enabled for isolation strategy 'decoder_PD3_iso' of power domain 'router_test_top/dut/decoder_PD3'.
+
+[73550000 ps] [INFO] [LP_ISOEN_CHANGE] Isolation enable 'router_test_top/dut/pwr.ipwrcon_iso_n[3]' of isolation strategy 'decoder_PD3_iso' of power domain 'router_test_top/dut/decoder_PD3' changed from 'St1' to 'St0'. Isolation sense specified is 'low'.
+
+[73650000 ps] [INFO] [LP_PSW_STATE_CHANGE] State of power switch 'router_test_top/dut/decoder_SW_3' changed from decoder_PD3_SW_ON (ON) to decoder_PD3_SW_OFF (OFF).
+
+[73650000 ps] [INFO] [LP_PSW_CTRL_CHANGE] Signal 'router_test_top/dut/pwr.ipwrcon_pd_n[3]' connected to control port 'ctrl' of power switch 'router_test_top/dut/decoder_SW_3' changed from 'St0' to 'St1'.
+
+[73650000 ps] [INFO] [LP_PSW_OSP_STATE] State of supply net 'router_test_top/dut/VDD_3' tied to output supply port 'out' of power switch 'router_test_top/dut/decoder_SW_3' changed from FULL_ON to OFF.
+
+[73650000 ps] [INFO] [LP_PSW_OSP_VALUE] Voltage of supply net 'router_test_top/dut/VDD_3' tied to output supply port 'out' of power switch 'router_test_top/dut/decoder_SW_3' changed from 1.08 V to 0 V.
+
+[73650000 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_3' of power domain 'router_test_top/dut/decoder_PD3' changed from FULL_ON to OFF.
+
+[73650000 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_3' of power domain 'router_test_top/dut/decoder_PD3' changed from 1.08 V to 0 V.
+
+[73650000 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/decoder_PD3' state changed from 'NORMAL' to 'CORRUPT'.
+
+[123650000 ps] [INFO] [LP_PSW_STATE_CHANGE] State of power switch 'router_test_top/dut/decoder_SW_3' changed from decoder_PD3_SW_OFF (OFF) to decoder_PD3_SW_ON (ON).
+
+[123650000 ps] [INFO] [LP_PSW_CTRL_CHANGE] Signal 'router_test_top/dut/pwr.ipwrcon_pd_n[3]' connected to control port 'ctrl' of power switch 'router_test_top/dut/decoder_SW_3' changed from 'St1' to 'St0'.
+
+[123650000 ps] [INFO] [LP_PSW_OSP_STATE] State of supply net 'router_test_top/dut/VDD_3' tied to output supply port 'out' of power switch 'router_test_top/dut/decoder_SW_3' changed from OFF to FULL_ON.
+
+[123650000 ps] [INFO] [LP_PSW_OSP_VALUE] Voltage of supply net 'router_test_top/dut/VDD_3' tied to output supply port 'out' of power switch 'router_test_top/dut/decoder_SW_3' changed from 0 V to 1.08 V.
+
+[123650000 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_3' of power domain 'router_test_top/dut/decoder_PD3' changed from OFF to FULL_ON.
+
+[123650000 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_3' of power domain 'router_test_top/dut/decoder_PD3' changed from 0 V to 1.08 V.
+
+[123650000 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/decoder_PD3' state changed from 'CORRUPT' to 'NORMAL'.
+
+[123750000 ps] [INFO] [LP_ISO_DIS] Isolation disabled for isolation strategy 'decoder_PD3_iso' of power domain 'router_test_top/dut/decoder_PD3'.
+
+[123750000 ps] [INFO] [LP_ISOEN_CHANGE] Isolation enable 'router_test_top/dut/pwr.ipwrcon_iso_n[3]' of isolation strategy 'decoder_PD3_iso' of power domain 'router_test_top/dut/decoder_PD3' changed from 'St0' to 'St1'. Isolation sense specified is 'low'.
+
+
+*************Low Power Message Summary*******************
+
+INFO = 43, WARNING = 0, ERROR = 0, FATAL = 0
+
+*********************************************************
+
+$finish at simulation time             13985000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 139850000 ps
+CPU Time:      0.250 seconds;       Data structure size:   0.2Mb
+Tue May 20 15:36:03 2025

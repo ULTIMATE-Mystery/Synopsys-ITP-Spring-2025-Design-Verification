@@ -1,0 +1,351 @@
+Command: /evprj153/projects/DuyQuang_DV1/Labs/ces_uvm-1.2_2019.06/labs/lab3/./simv +ntb_random_seed=1 -l simv.log +UVM_TESTNAME=test_base +UVM_VERBOSITY=UVM_MEDIUM + + +UVM_TR_RECORD +UVM_LOG_RECORD
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP1-1; Runtime version W-2024.09-SP1-1;  May 20 16:23 2025
+UVM_INFO /global/apps/vcs/2024.09-SP1-1/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+VCD+ Writer W-2024.09-SP1-1 Copyright (c) 1991-2024 by Synopsys Inc.
+*Verdi* Enable Verdi Message Catcher.
+UVM_INFO /global/apps/vcs/2024.09-SP1-1/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv(294) @ 0: reporter [VERDI_TR_AUTO] +UVM_TR_RECORD implicitly enables recording_details to UVM_FULL for all components. For explicit control use +UVM_DISABLE_AUTO_COMPONENT and set recording_detail on components accordingly
+*Verdi* Loading libsscore_vcs202409.so
+FSDB Dumper for VCS, Release Verdi_W-2024.09-SP1-1, Linux, 01/11/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'novas.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+UVM_INFO @ 0.0ns: reporter [RNTST] Running test test_base...
+UVM_INFO reset_agent.sv(22) @ 0.0ns: uvm_test_top.env.r_agt [RSTCFG] Reset agent r_agt setting for is_active is: UVM_ACTIVE
+UVM_INFO driver.sv(101) @ 0.0ns: uvm_test_top.env.i_agt.drv [DRV_CFG] port_id is: -1
+*Verdi* Enable Verdi Recorder.
+Info: Verdi UVM-1.2 Hooks File 2022/05/26 
+UVM_INFO router_input_port_reset_sequence.sv(31) @ 0.0ns: uvm_test_top.env.i_agt.sqr@@router_input_port_reset_sequence [DRV_RST_SEQ] Using port_id = -1
+UVM_INFO driver.sv(126) @ 4250.0ns: uvm_test_top.env.i_agt.drv [DRV_RUN] 
+---------------------------------------------------------------------------------------------
+Name                           Type          Size  Value                                     
+---------------------------------------------------------------------------------------------
+req                            packet        -     @873                                      
+  sa                           integral      4     'h5                                       
+  da                           integral      4     'h4                                       
+  payload                      da(integral)  2     -                                         
+    [0]                        integral      8     'haf                                      
+    [1]                        integral      8     'h95                                      
+  begin_time                   time          64    1750.0ns                                  
+  depth                        int           32    'd2                                       
+  parent sequence (name)       string        15    packet_sequence                           
+  parent sequence (full name)  string        42    uvm_test_top.env.i_agt.sqr.packet_sequence
+  sequencer                    string        26    uvm_test_top.env.i_agt.sqr                
+---------------------------------------------------------------------------------------------
+
+UVM_INFO driver.sv(126) @ 5950.0ns: uvm_test_top.env.i_agt.drv [DRV_RUN] 
+---------------------------------------------------------------------------------------------
+Name                           Type          Size  Value                                     
+---------------------------------------------------------------------------------------------
+req                            packet        -     @883                                      
+  sa                           integral      4     'hd                                       
+  da                           integral      4     'h3                                       
+  payload                      da(integral)  1     -                                         
+    [0]                        integral      8     'h43                                      
+  begin_time                   time          64    4250.0ns                                  
+  depth                        int           32    'd2                                       
+  parent sequence (name)       string        15    packet_sequence                           
+  parent sequence (full name)  string        42    uvm_test_top.env.i_agt.sqr.packet_sequence
+  sequencer                    string        26    uvm_test_top.env.i_agt.sqr                
+---------------------------------------------------------------------------------------------
+
+UVM_INFO driver.sv(126) @ 8450.0ns: uvm_test_top.env.i_agt.drv [DRV_RUN] 
+---------------------------------------------------------------------------------------------
+Name                           Type          Size  Value                                     
+---------------------------------------------------------------------------------------------
+req                            packet        -     @893                                      
+  sa                           integral      4     'hb                                       
+  da                           integral      4     'h8                                       
+  payload                      da(integral)  2     -                                         
+    [0]                        integral      8     'hac                                      
+    [1]                        integral      8     'h44                                      
+  begin_time                   time          64    5950.0ns                                  
+  depth                        int           32    'd2                                       
+  parent sequence (name)       string        15    packet_sequence                           
+  parent sequence (full name)  string        42    uvm_test_top.env.i_agt.sqr.packet_sequence
+  sequencer                    string        26    uvm_test_top.env.i_agt.sqr                
+---------------------------------------------------------------------------------------------
+
+UVM_INFO driver.sv(126) @ 11750.0ns: uvm_test_top.env.i_agt.drv [DRV_RUN] 
+---------------------------------------------------------------------------------------------
+Name                           Type          Size  Value                                     
+---------------------------------------------------------------------------------------------
+req                            packet        -     @903                                      
+  sa                           integral      4     'he                                       
+  da                           integral      4     'h9                                       
+  payload                      da(integral)  3     -                                         
+    [0]                        integral      8     'hc7                                      
+    [1]                        integral      8     'h55                                      
+    [2]                        integral      8     'h56                                      
+  begin_time                   time          64    8450.0ns                                  
+  depth                        int           32    'd2                                       
+  parent sequence (name)       string        15    packet_sequence                           
+  parent sequence (full name)  string        42    uvm_test_top.env.i_agt.sqr.packet_sequence
+  sequencer                    string        26    uvm_test_top.env.i_agt.sqr                
+---------------------------------------------------------------------------------------------
+
+UVM_INFO driver.sv(126) @ 14250.0ns: uvm_test_top.env.i_agt.drv [DRV_RUN] 
+---------------------------------------------------------------------------------------------
+Name                           Type          Size  Value                                     
+---------------------------------------------------------------------------------------------
+req                            packet        -     @913                                      
+  sa                           integral      4     'h3                                       
+  da                           integral      4     'ha                                       
+  payload                      da(integral)  2     -                                         
+    [0]                        integral      8     'ha8                                      
+    [1]                        integral      8     'hbb                                      
+  begin_time                   time          64    11750.0ns                                 
+  depth                        int           32    'd2                                       
+  parent sequence (name)       string        15    packet_sequence                           
+  parent sequence (full name)  string        42    uvm_test_top.env.i_agt.sqr.packet_sequence
+  sequencer                    string        26    uvm_test_top.env.i_agt.sqr                
+---------------------------------------------------------------------------------------------
+
+UVM_INFO driver.sv(126) @ 19950.0ns: uvm_test_top.env.i_agt.drv [DRV_RUN] 
+---------------------------------------------------------------------------------------------
+Name                           Type          Size  Value                                     
+---------------------------------------------------------------------------------------------
+req                            packet        -     @923                                      
+  sa                           integral      4     'h4                                       
+  da                           integral      4     'he                                       
+  payload                      da(integral)  6     -                                         
+    [0]                        integral      8     'h56                                      
+    [1]                        integral      8     'h6d                                      
+    [2]                        integral      8     'h9c                                      
+    [3]                        integral      8     'h9                                       
+    [4]                        integral      8     'hf4                                      
+    [5]                        integral      8     'h4d                                      
+  begin_time                   time          64    14250.0ns                                 
+  depth                        int           32    'd2                                       
+  parent sequence (name)       string        15    packet_sequence                           
+  parent sequence (full name)  string        42    uvm_test_top.env.i_agt.sqr.packet_sequence
+  sequencer                    string        26    uvm_test_top.env.i_agt.sqr                
+---------------------------------------------------------------------------------------------
+
+UVM_INFO driver.sv(126) @ 28850.0ns: uvm_test_top.env.i_agt.drv [DRV_RUN] 
+---------------------------------------------------------------------------------------------
+Name                           Type          Size  Value                                     
+---------------------------------------------------------------------------------------------
+req                            packet        -     @933                                      
+  sa                           integral      4     'h0                                       
+  da                           integral      4     'h0                                       
+  payload                      da(integral)  10    -                                         
+    [0]                        integral      8     'h70                                      
+    [1]                        integral      8     'ha0                                      
+    [2]                        integral      8     'hf6                                      
+    [3]                        integral      8     'h5e                                      
+    [4]                        integral      8     'h61                                      
+    [5]                        integral      8     'h17                                      
+    [6]                        integral      8     'h47                                      
+    [7]                        integral      8     'h9d                                      
+    [8]                        integral      8     'hb9                                      
+    [9]                        integral      8     'hac                                      
+  begin_time                   time          64    19950.0ns                                 
+  depth                        int           32    'd2                                       
+  parent sequence (name)       string        15    packet_sequence                           
+  parent sequence (full name)  string        42    uvm_test_top.env.i_agt.sqr.packet_sequence
+  sequencer                    string        26    uvm_test_top.env.i_agt.sqr                
+---------------------------------------------------------------------------------------------
+
+UVM_INFO driver.sv(126) @ 37750.0ns: uvm_test_top.env.i_agt.drv [DRV_RUN] 
+---------------------------------------------------------------------------------------------
+Name                           Type          Size  Value                                     
+---------------------------------------------------------------------------------------------
+req                            packet        -     @943                                      
+  sa                           integral      4     'h4                                       
+  da                           integral      4     'ha                                       
+  payload                      da(integral)  10    -                                         
+    [0]                        integral      8     'ha3                                      
+    [1]                        integral      8     'h42                                      
+    [2]                        integral      8     'h28                                      
+    [3]                        integral      8     'hd1                                      
+    [4]                        integral      8     'h91                                      
+    [5]                        integral      8     'h3f                                      
+    [6]                        integral      8     'h19                                      
+    [7]                        integral      8     'h46                                      
+    [8]                        integral      8     'hf1                                      
+    [9]                        integral      8     'h31                                      
+  begin_time                   time          64    28850.0ns                                 
+  depth                        int           32    'd2                                       
+  parent sequence (name)       string        15    packet_sequence                           
+  parent sequence (full name)  string        42    uvm_test_top.env.i_agt.sqr.packet_sequence
+  sequencer                    string        26    uvm_test_top.env.i_agt.sqr                
+---------------------------------------------------------------------------------------------
+
+UVM_INFO driver.sv(126) @ 41050.0ns: uvm_test_top.env.i_agt.drv [DRV_RUN] 
+---------------------------------------------------------------------------------------------
+Name                           Type          Size  Value                                     
+---------------------------------------------------------------------------------------------
+req                            packet        -     @953                                      
+  sa                           integral      4     'hb                                       
+  da                           integral      4     'hc                                       
+  payload                      da(integral)  3     -                                         
+    [0]                        integral      8     'h25                                      
+    [1]                        integral      8     'h2c                                      
+    [2]                        integral      8     'hb2                                      
+  begin_time                   time          64    37750.0ns                                 
+  depth                        int           32    'd2                                       
+  parent sequence (name)       string        15    packet_sequence                           
+  parent sequence (full name)  string        42    uvm_test_top.env.i_agt.sqr.packet_sequence
+  sequencer                    string        26    uvm_test_top.env.i_agt.sqr                
+---------------------------------------------------------------------------------------------
+
+UVM_INFO driver.sv(126) @ 45950.0ns: uvm_test_top.env.i_agt.drv [DRV_RUN] 
+---------------------------------------------------------------------------------------------
+Name                           Type          Size  Value                                     
+---------------------------------------------------------------------------------------------
+req                            packet        -     @963                                      
+  sa                           integral      4     'hf                                       
+  da                           integral      4     'hd                                       
+  payload                      da(integral)  5     -                                         
+    [0]                        integral      8     'hfc                                      
+    [1]                        integral      8     'hf0                                      
+    [2]                        integral      8     'hbf                                      
+    [3]                        integral      8     'hec                                      
+    [4]                        integral      8     'he7                                      
+  begin_time                   time          64    41050.0ns                                 
+  depth                        int           32    'd2                                       
+  parent sequence (name)       string        15    packet_sequence                           
+  parent sequence (full name)  string        42    uvm_test_top.env.i_agt.sqr.packet_sequence
+  sequencer                    string        26    uvm_test_top.env.i_agt.sqr                
+---------------------------------------------------------------------------------------------
+
+UVM_INFO /global/apps/vcs/2024.09-SP1-1/etc/uvm-1.2/base/uvm_root.svh(589) @ 45950.0ns: reporter [UVMTOP] UVM testbench topology:
+------------------------------------------------------------------
+Name                        Type                    Size  Value   
+------------------------------------------------------------------
+uvm_test_top                test_base               -     @353    
+  env                       router_env              -     @365    
+    i_agt                   input_agent             -     @380    
+      drv                   driver                  -     @526    
+        rsp_port            uvm_analysis_port       -     @543    
+          recording_detail  uvm_verbosity           32    UVM_FULL
+        seq_item_port       uvm_seq_item_pull_port  -     @534    
+          recording_detail  uvm_verbosity           32    UVM_FULL
+        port_id             integral                32    -1      
+        recording_detail    uvm_verbosity           32    UVM_FULL
+      sqr                   uvm_sequencer           -     @403    
+        rsp_export          uvm_analysis_export     -     @411    
+          recording_detail  uvm_verbosity           32    UVM_FULL
+        seq_item_export     uvm_seq_item_pull_imp   -     @517    
+          recording_detail  uvm_verbosity           32    UVM_FULL
+        recording_detail    uvm_verbosity           32    UVM_FULL
+        arbitration_queue   array                   0     -       
+        lock_queue          array                   0     -       
+        num_last_reqs       integral                32    'd1     
+        num_last_rsps       integral                32    'd1     
+      recording_detail      uvm_verbosity           32    UVM_FULL
+    r_agt                   reset_agent             -     @393    
+      drv                   reset_driver            -     @693    
+        rsp_port            uvm_analysis_port       -     @710    
+          recording_detail  uvm_verbosity           32    UVM_FULL
+        seq_item_port       uvm_seq_item_pull_port  -     @701    
+          recording_detail  uvm_verbosity           32    UVM_FULL
+        recording_detail    uvm_verbosity           32    UVM_FULL
+      mon                   reset_monitor           -     @719    
+        analysis_port       uvm_analysis_port       -     @731    
+          recording_detail  uvm_verbosity           32    UVM_FULL
+        recording_detail    uvm_verbosity           32    UVM_FULL
+      sqr                   uvm_sequencer           -     @570    
+        rsp_export          uvm_analysis_export     -     @578    
+          recording_detail  uvm_verbosity           32    UVM_FULL
+        seq_item_export     uvm_seq_item_pull_imp   -     @684    
+          recording_detail  uvm_verbosity           32    UVM_FULL
+        recording_detail    uvm_verbosity           32    UVM_FULL
+        arbitration_queue   array                   0     -       
+        lock_queue          array                   0     -       
+        num_last_reqs       integral                32    'd1     
+        num_last_rsps       integral                32    'd1     
+      recording_detail      uvm_verbosity           32    UVM_FULL
+    recording_detail        uvm_verbosity           32    UVM_FULL
+  recording_detail          uvm_verbosity           32    UVM_FULL
+------------------------------------------------------------------
+
+UVM_INFO /global/apps/vcs/2024.09-SP1-1/etc/uvm-1.2/base/uvm_factory.svh(1645) @ 45950.0ns: reporter [UVM/FACTORY/PRINT] 
+#### Factory Configuration (*)
+
+  No instance or type overrides are registered with this factory
+
+All types registered with the factory: 75 total
+  Type Name
+  ---------
+  driver
+  input_agent
+  packet
+  packet_da_3
+  packet_sequence
+  packet_sequence_base
+  reset_agent
+  reset_driver
+  reset_monitor
+  reset_sequence
+  reset_tr
+  router_env
+  router_input_port_reset_sequence
+  snps_uvm_reg_bank_group
+  snps_uvm_reg_map
+  test_base
+  test_da_3_inst
+  test_da_3_seq
+  test_da_3_type
+(*) Types with no associated type name will be printed as <unknown>
+
+####
+
+
+UVM_INFO /global/apps/vcs/2024.09-SP1-1/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 45950.0ns: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /global/apps/vcs/2024.09-SP1-1/etc/uvm-1.2/base/uvm_report_server.svh(904) @ 45950.0ns: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   19
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[DRV_CFG]     1
+[DRV_RST_SEQ]     1
+[DRV_RUN]    10
+[RNTST]     1
+[RSTCFG]     1
+[UVM/FACTORY/PRINT]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[UVMTOP]     1
+[VERDI_TR_AUTO]     1
+
+$finish called from file "/global/apps/vcs/2024.09-SP1-1/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time  45950.0ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 45950000 ps
+CPU Time:      0.570 seconds;       Data structure size:   0.6Mb
+Tue May 20 16:23:15 2025

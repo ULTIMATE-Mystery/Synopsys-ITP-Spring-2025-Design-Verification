@@ -1,0 +1,2260 @@
+===============================================================================
+Module : assert_outputs
+===============================================================================
+SCORE  ASSERT 
+ 71.43  71.43 
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/./assert.sva
+
+Module self-instances :
+
+SCORE  ASSERT NAME                          
+ 71.43  71.43 router_test_top.dut.a_oport0  
+ 71.43  71.43 router_test_top.dut.a_oport1  
+ 71.43  71.43 router_test_top.dut.a_oport2  
+ 71.43  71.43 router_test_top.dut.a_oport3  
+ 71.43  71.43 router_test_top.dut.a_oport4  
+ 71.43  71.43 router_test_top.dut.a_oport5  
+ 71.43  71.43 router_test_top.dut.a_oport6  
+ 71.43  71.43 router_test_top.dut.a_oport7  
+ 71.43  71.43 router_test_top.dut.a_oport8  
+ 71.43  71.43 router_test_top.dut.a_oport9  
+ 71.43  71.43 router_test_top.dut.a_oport10 
+ 71.43  71.43 router_test_top.dut.a_oport11 
+ 71.43  71.43 router_test_top.dut.a_oport12 
+ 71.43  71.43 router_test_top.dut.a_oport13 
+ 71.43  71.43 router_test_top.dut.a_oport14 
+ 71.43  71.43 router_test_top.dut.a_oport15 
+
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Module : assert_outputs
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       2     2         100.00  2                 100.00  
+Cover properties 5     5         100.00  3                 60.00   
+Cover sequences  0     0                 0                         
+Total            7     7         100.00  5                 71.43   
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                           Attempts Real Successes Failures Incomplete 
+a_vld_lo_data_aligned_rsng_frm 110000   200            0        0          
+dout_unknown_check             110000   4648           0        0          
+
+
+-------------------------------------------------------------------------------
+
+Cover Directives for Properties: Details
+
+Name                       Attempts Matches Incomplete 
+cover_bytes[1].unnamed$$_0 110000   0       0          
+cover_bytes[2].unnamed$$_0 110000   81      0          
+cover_bytes[3].unnamed$$_0 110000   57      0          
+cover_bytes[4].unnamed$$_0 110000   62      0          
+cover_bytes[5].unnamed$$_0 110000   0       0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_oport0
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Module : 
+
+SCORE  ASSERT NAME           
+ 71.43  71.43 assert_outputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_oport0
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       2     2         100.00  2                 100.00  
+Cover properties 5     5         100.00  3                 60.00   
+Cover sequences  0     0                 0                         
+Total            7     7         100.00  5                 71.43   
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                           Attempts Real Successes Failures Incomplete 
+a_vld_lo_data_aligned_rsng_frm 6875     15             0        0          
+dout_unknown_check             6875     336            0        0          
+
+
+-------------------------------------------------------------------------------
+
+Cover Directives for Properties: Details
+
+Name                       Attempts Matches Incomplete 
+cover_bytes[1].unnamed$$_0 6875     0       0          
+cover_bytes[2].unnamed$$_0 6875     7       0          
+cover_bytes[3].unnamed$$_0 6875     4       0          
+cover_bytes[4].unnamed$$_0 6875     4       0          
+cover_bytes[5].unnamed$$_0 6875     0       0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_oport1
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Module : 
+
+SCORE  ASSERT NAME           
+ 71.43  71.43 assert_outputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_oport1
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       2     2         100.00  2                 100.00  
+Cover properties 5     5         100.00  3                 60.00   
+Cover sequences  0     0                 0                         
+Total            7     7         100.00  5                 71.43   
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                           Attempts Real Successes Failures Incomplete 
+a_vld_lo_data_aligned_rsng_frm 6875     16             0        0          
+dout_unknown_check             6875     336            0        0          
+
+
+-------------------------------------------------------------------------------
+
+Cover Directives for Properties: Details
+
+Name                       Attempts Matches Incomplete 
+cover_bytes[1].unnamed$$_0 6875     0       0          
+cover_bytes[2].unnamed$$_0 6875     10      0          
+cover_bytes[3].unnamed$$_0 6875     2       0          
+cover_bytes[4].unnamed$$_0 6875     4       0          
+cover_bytes[5].unnamed$$_0 6875     0       0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_oport2
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Module : 
+
+SCORE  ASSERT NAME           
+ 71.43  71.43 assert_outputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_oport2
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       2     2         100.00  2                 100.00  
+Cover properties 5     5         100.00  3                 60.00   
+Cover sequences  0     0                 0                         
+Total            7     7         100.00  5                 71.43   
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                           Attempts Real Successes Failures Incomplete 
+a_vld_lo_data_aligned_rsng_frm 6875     15             0        0          
+dout_unknown_check             6875     368            0        0          
+
+
+-------------------------------------------------------------------------------
+
+Cover Directives for Properties: Details
+
+Name                       Attempts Matches Incomplete 
+cover_bytes[1].unnamed$$_0 6875     0       0          
+cover_bytes[2].unnamed$$_0 6875     5       0          
+cover_bytes[3].unnamed$$_0 6875     4       0          
+cover_bytes[4].unnamed$$_0 6875     6       0          
+cover_bytes[5].unnamed$$_0 6875     0       0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_oport3
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Module : 
+
+SCORE  ASSERT NAME           
+ 71.43  71.43 assert_outputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_oport3
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       2     2         100.00  2                 100.00  
+Cover properties 5     5         100.00  3                 60.00   
+Cover sequences  0     0                 0                         
+Total            7     7         100.00  5                 71.43   
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                           Attempts Real Successes Failures Incomplete 
+a_vld_lo_data_aligned_rsng_frm 6875     10             0        0          
+dout_unknown_check             6875     240            0        0          
+
+
+-------------------------------------------------------------------------------
+
+Cover Directives for Properties: Details
+
+Name                       Attempts Matches Incomplete 
+cover_bytes[1].unnamed$$_0 6875     0       0          
+cover_bytes[2].unnamed$$_0 6875     3       0          
+cover_bytes[3].unnamed$$_0 6875     4       0          
+cover_bytes[4].unnamed$$_0 6875     3       0          
+cover_bytes[5].unnamed$$_0 6875     0       0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_oport4
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Module : 
+
+SCORE  ASSERT NAME           
+ 71.43  71.43 assert_outputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_oport4
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       2     2         100.00  2                 100.00  
+Cover properties 5     5         100.00  3                 60.00   
+Cover sequences  0     0                 0                         
+Total            7     7         100.00  5                 71.43   
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                           Attempts Real Successes Failures Incomplete 
+a_vld_lo_data_aligned_rsng_frm 6875     7              0        0          
+dout_unknown_check             6875     184            0        0          
+
+
+-------------------------------------------------------------------------------
+
+Cover Directives for Properties: Details
+
+Name                       Attempts Matches Incomplete 
+cover_bytes[1].unnamed$$_0 6875     0       0          
+cover_bytes[2].unnamed$$_0 6875     2       0          
+cover_bytes[3].unnamed$$_0 6875     1       0          
+cover_bytes[4].unnamed$$_0 6875     4       0          
+cover_bytes[5].unnamed$$_0 6875     0       0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_oport5
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Module : 
+
+SCORE  ASSERT NAME           
+ 71.43  71.43 assert_outputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_oport5
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       2     2         100.00  2                 100.00  
+Cover properties 5     5         100.00  3                 60.00   
+Cover sequences  0     0                 0                         
+Total            7     7         100.00  5                 71.43   
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                           Attempts Real Successes Failures Incomplete 
+a_vld_lo_data_aligned_rsng_frm 6875     14             0        0          
+dout_unknown_check             6875     304            0        0          
+
+
+-------------------------------------------------------------------------------
+
+Cover Directives for Properties: Details
+
+Name                       Attempts Matches Incomplete 
+cover_bytes[1].unnamed$$_0 6875     0       0          
+cover_bytes[2].unnamed$$_0 6875     7       0          
+cover_bytes[3].unnamed$$_0 6875     4       0          
+cover_bytes[4].unnamed$$_0 6875     3       0          
+cover_bytes[5].unnamed$$_0 6875     0       0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_oport6
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Module : 
+
+SCORE  ASSERT NAME           
+ 71.43  71.43 assert_outputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_oport6
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       2     2         100.00  2                 100.00  
+Cover properties 5     5         100.00  3                 60.00   
+Cover sequences  0     0                 0                         
+Total            7     7         100.00  5                 71.43   
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                           Attempts Real Successes Failures Incomplete 
+a_vld_lo_data_aligned_rsng_frm 6875     15             0        0          
+dout_unknown_check             6875     360            0        0          
+
+
+-------------------------------------------------------------------------------
+
+Cover Directives for Properties: Details
+
+Name                       Attempts Matches Incomplete 
+cover_bytes[1].unnamed$$_0 6875     0       0          
+cover_bytes[2].unnamed$$_0 6875     6       0          
+cover_bytes[3].unnamed$$_0 6875     3       0          
+cover_bytes[4].unnamed$$_0 6875     6       0          
+cover_bytes[5].unnamed$$_0 6875     0       0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_oport7
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Module : 
+
+SCORE  ASSERT NAME           
+ 71.43  71.43 assert_outputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_oport7
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       2     2         100.00  2                 100.00  
+Cover properties 5     5         100.00  3                 60.00   
+Cover sequences  0     0                 0                         
+Total            7     7         100.00  5                 71.43   
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                           Attempts Real Successes Failures Incomplete 
+a_vld_lo_data_aligned_rsng_frm 6875     12             0        0          
+dout_unknown_check             6875     280            0        0          
+
+
+-------------------------------------------------------------------------------
+
+Cover Directives for Properties: Details
+
+Name                       Attempts Matches Incomplete 
+cover_bytes[1].unnamed$$_0 6875     0       0          
+cover_bytes[2].unnamed$$_0 6875     4       0          
+cover_bytes[3].unnamed$$_0 6875     5       0          
+cover_bytes[4].unnamed$$_0 6875     3       0          
+cover_bytes[5].unnamed$$_0 6875     0       0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_oport8
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Module : 
+
+SCORE  ASSERT NAME           
+ 71.43  71.43 assert_outputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_oport8
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       2     2         100.00  2                 100.00  
+Cover properties 5     5         100.00  3                 60.00   
+Cover sequences  0     0                 0                         
+Total            7     7         100.00  5                 71.43   
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                           Attempts Real Successes Failures Incomplete 
+a_vld_lo_data_aligned_rsng_frm 6875     10             0        0          
+dout_unknown_check             6875     280            0        0          
+
+
+-------------------------------------------------------------------------------
+
+Cover Directives for Properties: Details
+
+Name                       Attempts Matches Incomplete 
+cover_bytes[1].unnamed$$_0 6875     0       0          
+cover_bytes[2].unnamed$$_0 6875     2       0          
+cover_bytes[3].unnamed$$_0 6875     1       0          
+cover_bytes[4].unnamed$$_0 6875     7       0          
+cover_bytes[5].unnamed$$_0 6875     0       0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_oport9
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Module : 
+
+SCORE  ASSERT NAME           
+ 71.43  71.43 assert_outputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_oport9
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       2     2         100.00  2                 100.00  
+Cover properties 5     5         100.00  3                 60.00   
+Cover sequences  0     0                 0                         
+Total            7     7         100.00  5                 71.43   
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                           Attempts Real Successes Failures Incomplete 
+a_vld_lo_data_aligned_rsng_frm 6875     10             0        0          
+dout_unknown_check             6875     272            0        0          
+
+
+-------------------------------------------------------------------------------
+
+Cover Directives for Properties: Details
+
+Name                       Attempts Matches Incomplete 
+cover_bytes[1].unnamed$$_0 6875     0       0          
+cover_bytes[2].unnamed$$_0 6875     1       0          
+cover_bytes[3].unnamed$$_0 6875     4       0          
+cover_bytes[4].unnamed$$_0 6875     5       0          
+cover_bytes[5].unnamed$$_0 6875     0       0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_oport10
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Module : 
+
+SCORE  ASSERT NAME           
+ 71.43  71.43 assert_outputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_oport10
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       2     2         100.00  2                 100.00  
+Cover properties 5     5         100.00  3                 60.00   
+Cover sequences  0     0                 0                         
+Total            7     7         100.00  5                 71.43   
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                           Attempts Real Successes Failures Incomplete 
+a_vld_lo_data_aligned_rsng_frm 6875     14             0        0          
+dout_unknown_check             6875     304            0        0          
+
+
+-------------------------------------------------------------------------------
+
+Cover Directives for Properties: Details
+
+Name                       Attempts Matches Incomplete 
+cover_bytes[1].unnamed$$_0 6875     0       0          
+cover_bytes[2].unnamed$$_0 6875     7       0          
+cover_bytes[3].unnamed$$_0 6875     4       0          
+cover_bytes[4].unnamed$$_0 6875     3       0          
+cover_bytes[5].unnamed$$_0 6875     0       0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_oport11
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Module : 
+
+SCORE  ASSERT NAME           
+ 71.43  71.43 assert_outputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_oport11
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       2     2         100.00  2                 100.00  
+Cover properties 5     5         100.00  3                 60.00   
+Cover sequences  0     0                 0                         
+Total            7     7         100.00  5                 71.43   
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                           Attempts Real Successes Failures Incomplete 
+a_vld_lo_data_aligned_rsng_frm 6875     13             0        0          
+dout_unknown_check             6875     280            0        0          
+
+
+-------------------------------------------------------------------------------
+
+Cover Directives for Properties: Details
+
+Name                       Attempts Matches Incomplete 
+cover_bytes[1].unnamed$$_0 6875     0       0          
+cover_bytes[2].unnamed$$_0 6875     7       0          
+cover_bytes[3].unnamed$$_0 6875     3       0          
+cover_bytes[4].unnamed$$_0 6875     3       0          
+cover_bytes[5].unnamed$$_0 6875     0       0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_oport12
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Module : 
+
+SCORE  ASSERT NAME           
+ 71.43  71.43 assert_outputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_oport12
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       2     2         100.00  2                 100.00  
+Cover properties 5     5         100.00  3                 60.00   
+Cover sequences  0     0                 0                         
+Total            7     7         100.00  5                 71.43   
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                           Attempts Real Successes Failures Incomplete 
+a_vld_lo_data_aligned_rsng_frm 6875     16             0        0          
+dout_unknown_check             6875     368            0        0          
+
+
+-------------------------------------------------------------------------------
+
+Cover Directives for Properties: Details
+
+Name                       Attempts Matches Incomplete 
+cover_bytes[1].unnamed$$_0 6875     0       0          
+cover_bytes[2].unnamed$$_0 6875     6       0          
+cover_bytes[3].unnamed$$_0 6875     6       0          
+cover_bytes[4].unnamed$$_0 6875     4       0          
+cover_bytes[5].unnamed$$_0 6875     0       0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_oport13
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Module : 
+
+SCORE  ASSERT NAME           
+ 71.43  71.43 assert_outputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_oport13
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       2     2         100.00  2                 100.00  
+Cover properties 5     5         100.00  3                 60.00   
+Cover sequences  0     0                 0                         
+Total            7     7         100.00  5                 71.43   
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                           Attempts Real Successes Failures Incomplete 
+a_vld_lo_data_aligned_rsng_frm 6875     11             0        0          
+dout_unknown_check             6875     264            0        0          
+
+
+-------------------------------------------------------------------------------
+
+Cover Directives for Properties: Details
+
+Name                       Attempts Matches Incomplete 
+cover_bytes[1].unnamed$$_0 6875     0       0          
+cover_bytes[2].unnamed$$_0 6875     3       0          
+cover_bytes[3].unnamed$$_0 6875     5       0          
+cover_bytes[4].unnamed$$_0 6875     3       0          
+cover_bytes[5].unnamed$$_0 6875     0       0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_oport14
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Module : 
+
+SCORE  ASSERT NAME           
+ 71.43  71.43 assert_outputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_oport14
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       2     2         100.00  2                 100.00  
+Cover properties 5     5         100.00  3                 60.00   
+Cover sequences  0     0                 0                         
+Total            7     7         100.00  5                 71.43   
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                           Attempts Real Successes Failures Incomplete 
+a_vld_lo_data_aligned_rsng_frm 6875     8              0        0          
+dout_unknown_check             6875     176            0        0          
+
+
+-------------------------------------------------------------------------------
+
+Cover Directives for Properties: Details
+
+Name                       Attempts Matches Incomplete 
+cover_bytes[1].unnamed$$_0 6875     0       0          
+cover_bytes[2].unnamed$$_0 6875     4       0          
+cover_bytes[3].unnamed$$_0 6875     2       0          
+cover_bytes[4].unnamed$$_0 6875     2       0          
+cover_bytes[5].unnamed$$_0 6875     0       0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_oport15
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+ 71.43  71.43 
+
+
+Module : 
+
+SCORE  ASSERT NAME           
+ 71.43  71.43 assert_outputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_oport15
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       2     2         100.00  2                 100.00  
+Cover properties 5     5         100.00  3                 60.00   
+Cover sequences  0     0                 0                         
+Total            7     7         100.00  5                 71.43   
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                           Attempts Real Successes Failures Incomplete 
+a_vld_lo_data_aligned_rsng_frm 6875     14             0        0          
+dout_unknown_check             6875     296            0        0          
+
+
+-------------------------------------------------------------------------------
+
+Cover Directives for Properties: Details
+
+Name                       Attempts Matches Incomplete 
+cover_bytes[1].unnamed$$_0 6875     0       0          
+cover_bytes[2].unnamed$$_0 6875     7       0          
+cover_bytes[3].unnamed$$_0 6875     5       0          
+cover_bytes[4].unnamed$$_0 6875     2       0          
+cover_bytes[5].unnamed$$_0 6875     0       0          
+
+
+===============================================================================
+Module : test
+===============================================================================
+SCORE  ASSERT 
+100.00 100.00 
+
+Module self-instances :
+
+SCORE  ASSERT NAME              
+100.00 100.00 router_test_top.t 
+
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Module : test
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       1     1         100.00  1                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            1     1         100.00  1                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                                                        Attempts Real Successes Failures Incomplete 
+get_payload.payload.unnamed$$_0.get_byte.valid.Unknown_dout 4648     4648           0        0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.t
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Module : 
+
+SCORE  ASSERT NAME 
+100.00 100.00 test 
+
+
+Parent : 
+
+SCORE  ASSERT NAME            
+--     --     router_test_top 
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Since this is the module's only instance, the coverage report is the same as for the module.
+===============================================================================
+Module : assert_inputs
+===============================================================================
+SCORE  ASSERT 
+100.00 100.00 
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/./assert.sva
+
+Module self-instances :
+
+SCORE  ASSERT NAME                          
+100.00 100.00 router_test_top.dut.a_iport0  
+100.00 100.00 router_test_top.dut.a_iport1  
+100.00 100.00 router_test_top.dut.a_iport2  
+100.00 100.00 router_test_top.dut.a_iport3  
+100.00 100.00 router_test_top.dut.a_iport4  
+100.00 100.00 router_test_top.dut.a_iport5  
+100.00 100.00 router_test_top.dut.a_iport6  
+100.00 100.00 router_test_top.dut.a_iport7  
+100.00 100.00 router_test_top.dut.a_iport8  
+100.00 100.00 router_test_top.dut.a_iport9  
+100.00 100.00 router_test_top.dut.a_iport10 
+100.00 100.00 router_test_top.dut.a_iport11 
+100.00 100.00 router_test_top.dut.a_iport12 
+100.00 100.00 router_test_top.dut.a_iport13 
+100.00 100.00 router_test_top.dut.a_iport14 
+100.00 100.00 router_test_top.dut.a_iport15 
+
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Module : assert_inputs
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       1     1         100.00  1                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            1     1         100.00  1                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name            Attempts Real Successes Failures Incomplete 
+a_vld_hi_in_pad 110000   200            0        0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_iport0
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Module : 
+
+SCORE  ASSERT NAME          
+100.00 100.00 assert_inputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_iport0
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       1     1         100.00  1                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            1     1         100.00  1                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name            Attempts Real Successes Failures Incomplete 
+a_vld_hi_in_pad 6875     12             0        0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_iport1
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Module : 
+
+SCORE  ASSERT NAME          
+100.00 100.00 assert_inputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_iport1
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       1     1         100.00  1                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            1     1         100.00  1                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name            Attempts Real Successes Failures Incomplete 
+a_vld_hi_in_pad 6875     12             0        0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_iport2
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Module : 
+
+SCORE  ASSERT NAME          
+100.00 100.00 assert_inputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_iport2
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       1     1         100.00  1                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            1     1         100.00  1                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name            Attempts Real Successes Failures Incomplete 
+a_vld_hi_in_pad 6875     14             0        0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_iport3
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Module : 
+
+SCORE  ASSERT NAME          
+100.00 100.00 assert_inputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_iport3
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       1     1         100.00  1                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            1     1         100.00  1                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name            Attempts Real Successes Failures Incomplete 
+a_vld_hi_in_pad 6875     12             0        0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_iport4
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Module : 
+
+SCORE  ASSERT NAME          
+100.00 100.00 assert_inputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_iport4
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       1     1         100.00  1                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            1     1         100.00  1                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name            Attempts Real Successes Failures Incomplete 
+a_vld_hi_in_pad 6875     20             0        0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_iport5
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Module : 
+
+SCORE  ASSERT NAME          
+100.00 100.00 assert_inputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_iport5
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       1     1         100.00  1                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            1     1         100.00  1                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name            Attempts Real Successes Failures Incomplete 
+a_vld_hi_in_pad 6875     14             0        0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_iport6
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Module : 
+
+SCORE  ASSERT NAME          
+100.00 100.00 assert_inputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_iport6
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       1     1         100.00  1                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            1     1         100.00  1                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name            Attempts Real Successes Failures Incomplete 
+a_vld_hi_in_pad 6875     10             0        0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_iport7
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Module : 
+
+SCORE  ASSERT NAME          
+100.00 100.00 assert_inputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_iport7
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       1     1         100.00  1                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            1     1         100.00  1                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name            Attempts Real Successes Failures Incomplete 
+a_vld_hi_in_pad 6875     15             0        0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_iport8
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Module : 
+
+SCORE  ASSERT NAME          
+100.00 100.00 assert_inputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_iport8
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       1     1         100.00  1                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            1     1         100.00  1                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name            Attempts Real Successes Failures Incomplete 
+a_vld_hi_in_pad 6875     13             0        0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_iport9
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Module : 
+
+SCORE  ASSERT NAME          
+100.00 100.00 assert_inputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_iport9
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       1     1         100.00  1                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            1     1         100.00  1                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name            Attempts Real Successes Failures Incomplete 
+a_vld_hi_in_pad 6875     8              0        0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_iport10
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Module : 
+
+SCORE  ASSERT NAME          
+100.00 100.00 assert_inputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_iport10
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       1     1         100.00  1                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            1     1         100.00  1                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name            Attempts Real Successes Failures Incomplete 
+a_vld_hi_in_pad 6875     15             0        0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_iport11
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Module : 
+
+SCORE  ASSERT NAME          
+100.00 100.00 assert_inputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_iport11
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       1     1         100.00  1                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            1     1         100.00  1                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name            Attempts Real Successes Failures Incomplete 
+a_vld_hi_in_pad 6875     9              0        0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_iport12
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Module : 
+
+SCORE  ASSERT NAME          
+100.00 100.00 assert_inputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_iport12
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       1     1         100.00  1                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            1     1         100.00  1                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name            Attempts Real Successes Failures Incomplete 
+a_vld_hi_in_pad 6875     13             0        0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_iport13
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Module : 
+
+SCORE  ASSERT NAME          
+100.00 100.00 assert_inputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_iport13
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       1     1         100.00  1                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            1     1         100.00  1                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name            Attempts Real Successes Failures Incomplete 
+a_vld_hi_in_pad 6875     13             0        0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_iport14
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Module : 
+
+SCORE  ASSERT NAME          
+100.00 100.00 assert_inputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_iport14
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       1     1         100.00  1                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            1     1         100.00  1                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name            Attempts Real Successes Failures Incomplete 
+a_vld_hi_in_pad 6875     12             0        0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut.a_iport15
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+100.00 100.00 
+
+
+Module : 
+
+SCORE  ASSERT NAME          
+100.00 100.00 assert_inputs 
+
+
+Parent : 
+
+SCORE  ASSERT NAME 
+--     --     dut  
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Instance : router_test_top.dut.a_iport15
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       1     1         100.00  1                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            1     1         100.00  1                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name            Attempts Real Successes Failures Incomplete 
+a_vld_hi_in_pad 6875     8              0        0          
+
+
+===============================================================================
+Module : router
+===============================================================================
+SCORE  ASSERT 
+--     --     
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/../../rtl/router.v
+
+Module self-instances :
+
+SCORE  ASSERT NAME                
+--     --     router_test_top.dut 
+
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top.dut
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+--     --     
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+ 75.00  75.00 
+
+
+Module : 
+
+SCORE  ASSERT NAME   
+--     --     router 
+
+
+Parent : 
+
+SCORE  ASSERT NAME            
+--     --     router_test_top 
+
+
+Subtrees :
+
+SCORE  ASSERT NAME      
+100.00 100.00 a_iport0  
+100.00 100.00 a_iport1  
+100.00 100.00 a_iport10 
+100.00 100.00 a_iport11 
+100.00 100.00 a_iport12 
+100.00 100.00 a_iport13 
+100.00 100.00 a_iport14 
+100.00 100.00 a_iport15 
+100.00 100.00 a_iport2  
+100.00 100.00 a_iport3  
+100.00 100.00 a_iport4  
+100.00 100.00 a_iport5  
+100.00 100.00 a_iport6  
+100.00 100.00 a_iport7  
+100.00 100.00 a_iport8  
+100.00 100.00 a_iport9  
+ 71.43  71.43 a_oport0  
+ 71.43  71.43 a_oport1  
+ 71.43  71.43 a_oport10 
+ 71.43  71.43 a_oport11 
+ 71.43  71.43 a_oport12 
+ 71.43  71.43 a_oport13 
+ 71.43  71.43 a_oport14 
+ 71.43  71.43 a_oport15 
+ 71.43  71.43 a_oport2  
+ 71.43  71.43 a_oport3  
+ 71.43  71.43 a_oport4  
+ 71.43  71.43 a_oport5  
+ 71.43  71.43 a_oport6  
+ 71.43  71.43 a_oport7  
+ 71.43  71.43 a_oport8  
+ 71.43  71.43 a_oport9  
+
+
+
+-------------------------------------------------------------------------------
+Since this is the module's only instance, the coverage report is the same as for the module.
+===============================================================================
+Module : router_test_top
+===============================================================================
+SCORE  ASSERT 
+--     --     
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/./router_test_top.sv
+
+Module self-instances :
+
+SCORE  ASSERT NAME            
+--     --     router_test_top 
+
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : router_test_top
+===============================================================================
+
+Instance :
+
+SCORE  ASSERT 
+--     --     
+
+
+Instance's subtree :
+
+SCORE  ASSERT 
+ 75.19  75.19 
+
+
+Module : 
+
+SCORE  ASSERT NAME            
+--     --     router_test_top 
+
+
+Parent : 
+
+none
+----------------
+
+
+Subtrees :
+
+SCORE  ASSERT NAME 
+ 75.00  75.00 dut  
+100.00 100.00 t    
+
+
+
+-------------------------------------------------------------------------------
+Since this is the module's only instance, the coverage report is the same as for the module.

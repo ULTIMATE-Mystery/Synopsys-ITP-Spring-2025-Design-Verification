@@ -1,0 +1,49 @@
+Design Hierarchy
+
+
+----------------
+SCORE  ASSERT                 
+ 75.19  75.19 router_test_top 
+  
+  ----------------
+  SCORE  ASSERT     
+   75.00  75.00 dut 
+    
+    ----------------
+    SCORE  ASSERT           
+    100.00 100.00 a_iport0  
+    100.00 100.00 a_iport1  
+    100.00 100.00 a_iport10 
+    100.00 100.00 a_iport11 
+    100.00 100.00 a_iport12 
+    100.00 100.00 a_iport13 
+    100.00 100.00 a_iport14 
+    100.00 100.00 a_iport15 
+    100.00 100.00 a_iport2  
+    100.00 100.00 a_iport3  
+    100.00 100.00 a_iport4  
+    100.00 100.00 a_iport5  
+    100.00 100.00 a_iport6  
+    100.00 100.00 a_iport7  
+    100.00 100.00 a_iport8  
+    100.00 100.00 a_iport9  
+     71.43  71.43 a_oport0  
+     71.43  71.43 a_oport1  
+     71.43  71.43 a_oport10 
+     71.43  71.43 a_oport11 
+     71.43  71.43 a_oport12 
+     71.43  71.43 a_oport13 
+     71.43  71.43 a_oport14 
+     71.43  71.43 a_oport15 
+     71.43  71.43 a_oport2  
+     71.43  71.43 a_oport3  
+     71.43  71.43 a_oport4  
+     71.43  71.43 a_oport5  
+     71.43  71.43 a_oport6  
+     71.43  71.43 a_oport7  
+     71.43  71.43 a_oport8  
+     71.43  71.43 a_oport9  
+  
+  ----------------
+  SCORE  ASSERT   
+  100.00 100.00 t 

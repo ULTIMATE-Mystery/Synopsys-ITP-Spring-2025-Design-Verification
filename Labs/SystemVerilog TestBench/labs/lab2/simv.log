@@ -1,0 +1,16 @@
+Command: /evprj153/projects/DuyQuang_DV1/Labs/ces_svtb_2019.06/labs/lab2/./simv -l simv.log +ntb_random_seed=1
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP1-1; Runtime version W-2024.09-SP1-1;  May 20 13:33 2025
+*Verdi* Loading libsscore_vcs202409.so
+FSDB Dumper for VCS, Release Verdi_W-2024.09-SP1-1, Linux, 01/11/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'novas.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+VCD+ Writer W-2024.09-SP1-1 Copyright (c) 1991-2024 by Synopsys Inc.
+$finish at simulation time  73550.0ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 73550000 ps
+CPU Time:      0.330 seconds;       Data structure size:   0.0Mb
+Tue May 20 13:33:31 2025

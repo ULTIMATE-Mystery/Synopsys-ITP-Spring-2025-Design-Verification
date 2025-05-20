@@ -1,0 +1,179 @@
+Assertions
+
+
+Assertions by Category
+           ASSERT PROPERTIES SEQUENCES
+Total          49         80         0
+Category 0     49         80         0
+
+-------------------------------------------------------------------------------
+
+Assertions by Severity
+           ASSERT PROPERTIES SEQUENCES
+Total          49         80         0
+Severity 0     49         80         0
+
+-------------------------------------------------------------------------------
+
+Summary for Assertions
+                 NUMBER PERCENT
+Total Number         49  100.00
+Uncovered             0    0.00
+Success              49  100.00
+Failure               0    0.00
+Incomplete            0    0.00
+Without Attempts      0    0.00
+
+-------------------------------------------------------------------------------
+
+Summary for Cover Properties
+             NUMBER PERCENT
+Total Number     80  100.00
+Uncovered        32   40.00
+Matches          48   60.00
+
+-------------------------------------------------------------------------------
+
+Detail Report for Assertions
+
+Assertions Success:
+                                  ASSERTIONS                                  CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+router_test_top.dut.a_iport0.a_vld_hi_in_pad                                         0        0     6875             12        0          0
+router_test_top.dut.a_iport1.a_vld_hi_in_pad                                         0        0     6875             12        0          0
+router_test_top.dut.a_iport10.a_vld_hi_in_pad                                        0        0     6875             15        0          0
+router_test_top.dut.a_iport11.a_vld_hi_in_pad                                        0        0     6875              9        0          0
+router_test_top.dut.a_iport12.a_vld_hi_in_pad                                        0        0     6875             13        0          0
+router_test_top.dut.a_iport13.a_vld_hi_in_pad                                        0        0     6875             13        0          0
+router_test_top.dut.a_iport14.a_vld_hi_in_pad                                        0        0     6875             12        0          0
+router_test_top.dut.a_iport15.a_vld_hi_in_pad                                        0        0     6875              8        0          0
+router_test_top.dut.a_iport2.a_vld_hi_in_pad                                         0        0     6875             14        0          0
+router_test_top.dut.a_iport3.a_vld_hi_in_pad                                         0        0     6875             12        0          0
+router_test_top.dut.a_iport4.a_vld_hi_in_pad                                         0        0     6875             20        0          0
+router_test_top.dut.a_iport5.a_vld_hi_in_pad                                         0        0     6875             14        0          0
+router_test_top.dut.a_iport6.a_vld_hi_in_pad                                         0        0     6875             10        0          0
+router_test_top.dut.a_iport7.a_vld_hi_in_pad                                         0        0     6875             15        0          0
+router_test_top.dut.a_iport8.a_vld_hi_in_pad                                         0        0     6875             13        0          0
+router_test_top.dut.a_iport9.a_vld_hi_in_pad                                         0        0     6875              8        0          0
+router_test_top.dut.a_oport0.a_vld_lo_data_aligned_rsng_frm                          0        0     6875             15        0          0
+router_test_top.dut.a_oport0.dout_unknown_check                                      0        0     6875            336        0          0
+router_test_top.dut.a_oport1.a_vld_lo_data_aligned_rsng_frm                          0        0     6875             16        0          0
+router_test_top.dut.a_oport1.dout_unknown_check                                      0        0     6875            336        0          0
+router_test_top.dut.a_oport10.a_vld_lo_data_aligned_rsng_frm                         0        0     6875             14        0          0
+router_test_top.dut.a_oport10.dout_unknown_check                                     0        0     6875            304        0          0
+router_test_top.dut.a_oport11.a_vld_lo_data_aligned_rsng_frm                         0        0     6875             13        0          0
+router_test_top.dut.a_oport11.dout_unknown_check                                     0        0     6875            280        0          0
+router_test_top.dut.a_oport12.a_vld_lo_data_aligned_rsng_frm                         0        0     6875             16        0          0
+router_test_top.dut.a_oport12.dout_unknown_check                                     0        0     6875            368        0          0
+router_test_top.dut.a_oport13.a_vld_lo_data_aligned_rsng_frm                         0        0     6875             11        0          0
+router_test_top.dut.a_oport13.dout_unknown_check                                     0        0     6875            264        0          0
+router_test_top.dut.a_oport14.a_vld_lo_data_aligned_rsng_frm                         0        0     6875              8        0          0
+router_test_top.dut.a_oport14.dout_unknown_check                                     0        0     6875            176        0          0
+router_test_top.dut.a_oport15.a_vld_lo_data_aligned_rsng_frm                         0        0     6875             14        0          0
+router_test_top.dut.a_oport15.dout_unknown_check                                     0        0     6875            296        0          0
+router_test_top.dut.a_oport2.a_vld_lo_data_aligned_rsng_frm                          0        0     6875             15        0          0
+router_test_top.dut.a_oport2.dout_unknown_check                                      0        0     6875            368        0          0
+router_test_top.dut.a_oport3.a_vld_lo_data_aligned_rsng_frm                          0        0     6875             10        0          0
+router_test_top.dut.a_oport3.dout_unknown_check                                      0        0     6875            240        0          0
+router_test_top.dut.a_oport4.a_vld_lo_data_aligned_rsng_frm                          0        0     6875              7        0          0
+router_test_top.dut.a_oport4.dout_unknown_check                                      0        0     6875            184        0          0
+router_test_top.dut.a_oport5.a_vld_lo_data_aligned_rsng_frm                          0        0     6875             14        0          0
+router_test_top.dut.a_oport5.dout_unknown_check                                      0        0     6875            304        0          0
+router_test_top.dut.a_oport6.a_vld_lo_data_aligned_rsng_frm                          0        0     6875             15        0          0
+router_test_top.dut.a_oport6.dout_unknown_check                                      0        0     6875            360        0          0
+router_test_top.dut.a_oport7.a_vld_lo_data_aligned_rsng_frm                          0        0     6875             12        0          0
+router_test_top.dut.a_oport7.dout_unknown_check                                      0        0     6875            280        0          0
+router_test_top.dut.a_oport8.a_vld_lo_data_aligned_rsng_frm                          0        0     6875             10        0          0
+router_test_top.dut.a_oport8.dout_unknown_check                                      0        0     6875            280        0          0
+router_test_top.dut.a_oport9.a_vld_lo_data_aligned_rsng_frm                          0        0     6875             10        0          0
+router_test_top.dut.a_oport9.dout_unknown_check                                      0        0     6875            272        0          0
+router_test_top.t.get_payload.payload.unnamed$$_0.get_byte.valid.Unknown_dout        0        0     4648           4648        0          0
+
+-------------------------------------------------------------------------------
+
+Detail Report for Cover Properties
+
+Cover Properties Uncovered:
+                    COVER PROPERTIES                     CATEGORY SEVERITY ATTEMPTS MATCHES INCOMPLETE
+router_test_top.dut.a_oport0.cover_bytes[1].unnamed$$_0         0        0     6875       0          0
+router_test_top.dut.a_oport0.cover_bytes[5].unnamed$$_0         0        0     6875       0          0
+router_test_top.dut.a_oport1.cover_bytes[1].unnamed$$_0         0        0     6875       0          0
+router_test_top.dut.a_oport1.cover_bytes[5].unnamed$$_0         0        0     6875       0          0
+router_test_top.dut.a_oport10.cover_bytes[1].unnamed$$_0        0        0     6875       0          0
+router_test_top.dut.a_oport10.cover_bytes[5].unnamed$$_0        0        0     6875       0          0
+router_test_top.dut.a_oport11.cover_bytes[1].unnamed$$_0        0        0     6875       0          0
+router_test_top.dut.a_oport11.cover_bytes[5].unnamed$$_0        0        0     6875       0          0
+router_test_top.dut.a_oport12.cover_bytes[1].unnamed$$_0        0        0     6875       0          0
+router_test_top.dut.a_oport12.cover_bytes[5].unnamed$$_0        0        0     6875       0          0
+router_test_top.dut.a_oport13.cover_bytes[1].unnamed$$_0        0        0     6875       0          0
+router_test_top.dut.a_oport13.cover_bytes[5].unnamed$$_0        0        0     6875       0          0
+router_test_top.dut.a_oport14.cover_bytes[1].unnamed$$_0        0        0     6875       0          0
+router_test_top.dut.a_oport14.cover_bytes[5].unnamed$$_0        0        0     6875       0          0
+router_test_top.dut.a_oport15.cover_bytes[1].unnamed$$_0        0        0     6875       0          0
+router_test_top.dut.a_oport15.cover_bytes[5].unnamed$$_0        0        0     6875       0          0
+router_test_top.dut.a_oport2.cover_bytes[1].unnamed$$_0         0        0     6875       0          0
+router_test_top.dut.a_oport2.cover_bytes[5].unnamed$$_0         0        0     6875       0          0
+router_test_top.dut.a_oport3.cover_bytes[1].unnamed$$_0         0        0     6875       0          0
+router_test_top.dut.a_oport3.cover_bytes[5].unnamed$$_0         0        0     6875       0          0
+router_test_top.dut.a_oport4.cover_bytes[1].unnamed$$_0         0        0     6875       0          0
+router_test_top.dut.a_oport4.cover_bytes[5].unnamed$$_0         0        0     6875       0          0
+router_test_top.dut.a_oport5.cover_bytes[1].unnamed$$_0         0        0     6875       0          0
+router_test_top.dut.a_oport5.cover_bytes[5].unnamed$$_0         0        0     6875       0          0
+router_test_top.dut.a_oport6.cover_bytes[1].unnamed$$_0         0        0     6875       0          0
+router_test_top.dut.a_oport6.cover_bytes[5].unnamed$$_0         0        0     6875       0          0
+router_test_top.dut.a_oport7.cover_bytes[1].unnamed$$_0         0        0     6875       0          0
+router_test_top.dut.a_oport7.cover_bytes[5].unnamed$$_0         0        0     6875       0          0
+router_test_top.dut.a_oport8.cover_bytes[1].unnamed$$_0         0        0     6875       0          0
+router_test_top.dut.a_oport8.cover_bytes[5].unnamed$$_0         0        0     6875       0          0
+router_test_top.dut.a_oport9.cover_bytes[1].unnamed$$_0         0        0     6875       0          0
+router_test_top.dut.a_oport9.cover_bytes[5].unnamed$$_0         0        0     6875       0          0
+
+Cover Properties Matches:
+                    COVER PROPERTIES                     CATEGORY SEVERITY ATTEMPTS MATCHES INCOMPLETE
+router_test_top.dut.a_oport0.cover_bytes[2].unnamed$$_0         0        0     6875       7          0
+router_test_top.dut.a_oport0.cover_bytes[3].unnamed$$_0         0        0     6875       4          0
+router_test_top.dut.a_oport0.cover_bytes[4].unnamed$$_0         0        0     6875       4          0
+router_test_top.dut.a_oport1.cover_bytes[2].unnamed$$_0         0        0     6875      10          0
+router_test_top.dut.a_oport1.cover_bytes[3].unnamed$$_0         0        0     6875       2          0
+router_test_top.dut.a_oport1.cover_bytes[4].unnamed$$_0         0        0     6875       4          0
+router_test_top.dut.a_oport10.cover_bytes[2].unnamed$$_0        0        0     6875       7          0
+router_test_top.dut.a_oport10.cover_bytes[3].unnamed$$_0        0        0     6875       4          0
+router_test_top.dut.a_oport10.cover_bytes[4].unnamed$$_0        0        0     6875       3          0
+router_test_top.dut.a_oport11.cover_bytes[2].unnamed$$_0        0        0     6875       7          0
+router_test_top.dut.a_oport11.cover_bytes[3].unnamed$$_0        0        0     6875       3          0
+router_test_top.dut.a_oport11.cover_bytes[4].unnamed$$_0        0        0     6875       3          0
+router_test_top.dut.a_oport12.cover_bytes[2].unnamed$$_0        0        0     6875       6          0
+router_test_top.dut.a_oport12.cover_bytes[3].unnamed$$_0        0        0     6875       6          0
+router_test_top.dut.a_oport12.cover_bytes[4].unnamed$$_0        0        0     6875       4          0
+router_test_top.dut.a_oport13.cover_bytes[2].unnamed$$_0        0        0     6875       3          0
+router_test_top.dut.a_oport13.cover_bytes[3].unnamed$$_0        0        0     6875       5          0
+router_test_top.dut.a_oport13.cover_bytes[4].unnamed$$_0        0        0     6875       3          0
+router_test_top.dut.a_oport14.cover_bytes[2].unnamed$$_0        0        0     6875       4          0
+router_test_top.dut.a_oport14.cover_bytes[3].unnamed$$_0        0        0     6875       2          0
+router_test_top.dut.a_oport14.cover_bytes[4].unnamed$$_0        0        0     6875       2          0
+router_test_top.dut.a_oport15.cover_bytes[2].unnamed$$_0        0        0     6875       7          0
+router_test_top.dut.a_oport15.cover_bytes[3].unnamed$$_0        0        0     6875       5          0
+router_test_top.dut.a_oport15.cover_bytes[4].unnamed$$_0        0        0     6875       2          0
+router_test_top.dut.a_oport2.cover_bytes[2].unnamed$$_0         0        0     6875       5          0
+router_test_top.dut.a_oport2.cover_bytes[3].unnamed$$_0         0        0     6875       4          0
+router_test_top.dut.a_oport2.cover_bytes[4].unnamed$$_0         0        0     6875       6          0
+router_test_top.dut.a_oport3.cover_bytes[2].unnamed$$_0         0        0     6875       3          0
+router_test_top.dut.a_oport3.cover_bytes[3].unnamed$$_0         0        0     6875       4          0
+router_test_top.dut.a_oport3.cover_bytes[4].unnamed$$_0         0        0     6875       3          0
+router_test_top.dut.a_oport4.cover_bytes[2].unnamed$$_0         0        0     6875       2          0
+router_test_top.dut.a_oport4.cover_bytes[3].unnamed$$_0         0        0     6875       1          0
+router_test_top.dut.a_oport4.cover_bytes[4].unnamed$$_0         0        0     6875       4          0
+router_test_top.dut.a_oport5.cover_bytes[2].unnamed$$_0         0        0     6875       7          0
+router_test_top.dut.a_oport5.cover_bytes[3].unnamed$$_0         0        0     6875       4          0
+router_test_top.dut.a_oport5.cover_bytes[4].unnamed$$_0         0        0     6875       3          0
+router_test_top.dut.a_oport6.cover_bytes[2].unnamed$$_0         0        0     6875       6          0
+router_test_top.dut.a_oport6.cover_bytes[3].unnamed$$_0         0        0     6875       3          0
+router_test_top.dut.a_oport6.cover_bytes[4].unnamed$$_0         0        0     6875       6          0
+router_test_top.dut.a_oport7.cover_bytes[2].unnamed$$_0         0        0     6875       4          0
+router_test_top.dut.a_oport7.cover_bytes[3].unnamed$$_0         0        0     6875       5          0
+router_test_top.dut.a_oport7.cover_bytes[4].unnamed$$_0         0        0     6875       3          0
+router_test_top.dut.a_oport8.cover_bytes[2].unnamed$$_0         0        0     6875       2          0
+router_test_top.dut.a_oport8.cover_bytes[3].unnamed$$_0         0        0     6875       1          0
+router_test_top.dut.a_oport8.cover_bytes[4].unnamed$$_0         0        0     6875       7          0
+router_test_top.dut.a_oport9.cover_bytes[2].unnamed$$_0         0        0     6875       1          0
+router_test_top.dut.a_oport9.cover_bytes[3].unnamed$$_0         0        0     6875       4          0
+router_test_top.dut.a_oport9.cover_bytes[4].unnamed$$_0         0        0     6875       5          0

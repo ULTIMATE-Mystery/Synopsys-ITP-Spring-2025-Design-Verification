@@ -1,0 +1,3801 @@
+Command: /evprj153/projects/DuyQuang_DV1/Labs/ces_nlp_2019.06/labs/lab3/./simv -l simv.log +ntb_random_seed=1 +fsdb+mda
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP1-1_Full64; Runtime version W-2024.09-SP1-1_Full64;  May 20 15:57 2025
+VCD+ Writer W-2024.09-SP1-1_Full64 Copyright (c) 1991-2024 by Synopsys Inc.
+*Verdi* Loading libsscore_vcs202409.so
+FSDB Dumper for VCS, Release Verdi_W-2024.09-SP1-1, Linux x86_64/64bit, 01/11/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'novas.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda and +power dumping.
+*Verdi* : End of traversing.
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip15/decoder_PD15' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_15' of power domain 'router_test_top/dut/ip15/decoder_PD15' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip15/decoder_PD15' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_15' of power domain 'router_test_top/dut/ip15/decoder_PD15' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip15/decoder_PD15' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip14/decoder_PD14' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_14' of power domain 'router_test_top/dut/ip14/decoder_PD14' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip14/decoder_PD14' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_14' of power domain 'router_test_top/dut/ip14/decoder_PD14' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip14/decoder_PD14' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip13/decoder_PD13' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_13' of power domain 'router_test_top/dut/ip13/decoder_PD13' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip13/decoder_PD13' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_13' of power domain 'router_test_top/dut/ip13/decoder_PD13' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip13/decoder_PD13' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip12/decoder_PD12' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_12' of power domain 'router_test_top/dut/ip12/decoder_PD12' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip12/decoder_PD12' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_12' of power domain 'router_test_top/dut/ip12/decoder_PD12' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip12/decoder_PD12' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip11/decoder_PD11' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_11' of power domain 'router_test_top/dut/ip11/decoder_PD11' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip11/decoder_PD11' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_11' of power domain 'router_test_top/dut/ip11/decoder_PD11' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip11/decoder_PD11' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip10/decoder_PD10' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_10' of power domain 'router_test_top/dut/ip10/decoder_PD10' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip10/decoder_PD10' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_10' of power domain 'router_test_top/dut/ip10/decoder_PD10' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip10/decoder_PD10' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip9/decoder_PD9' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_9' of power domain 'router_test_top/dut/ip9/decoder_PD9' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip9/decoder_PD9' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_9' of power domain 'router_test_top/dut/ip9/decoder_PD9' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip9/decoder_PD9' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip8/decoder_PD8' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_8' of power domain 'router_test_top/dut/ip8/decoder_PD8' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip8/decoder_PD8' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_8' of power domain 'router_test_top/dut/ip8/decoder_PD8' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip8/decoder_PD8' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip7/decoder_PD7' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_7' of power domain 'router_test_top/dut/ip7/decoder_PD7' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip7/decoder_PD7' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_7' of power domain 'router_test_top/dut/ip7/decoder_PD7' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip7/decoder_PD7' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip6/decoder_PD6' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_6' of power domain 'router_test_top/dut/ip6/decoder_PD6' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip6/decoder_PD6' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_6' of power domain 'router_test_top/dut/ip6/decoder_PD6' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip6/decoder_PD6' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip5/decoder_PD5' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_5' of power domain 'router_test_top/dut/ip5/decoder_PD5' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip5/decoder_PD5' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_5' of power domain 'router_test_top/dut/ip5/decoder_PD5' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip5/decoder_PD5' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip4/decoder_PD4' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_4' of power domain 'router_test_top/dut/ip4/decoder_PD4' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip4/decoder_PD4' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_4' of power domain 'router_test_top/dut/ip4/decoder_PD4' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip4/decoder_PD4' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip3/decoder_PD3' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_3' of power domain 'router_test_top/dut/ip3/decoder_PD3' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip3/decoder_PD3' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_3' of power domain 'router_test_top/dut/ip3/decoder_PD3' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip3/decoder_PD3' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip2/decoder_PD2' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_2' of power domain 'router_test_top/dut/ip2/decoder_PD2' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip2/decoder_PD2' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_2' of power domain 'router_test_top/dut/ip2/decoder_PD2' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip2/decoder_PD2' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip1/decoder_PD1' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_1' of power domain 'router_test_top/dut/ip1/decoder_PD1' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip1/decoder_PD1' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_1' of power domain 'router_test_top/dut/ip1/decoder_PD1' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip1/decoder_PD1' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip0/decoder_PD0' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_0' of power domain 'router_test_top/dut/ip0/decoder_PD0' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip0/decoder_PD0' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_0' of power domain 'router_test_top/dut/ip0/decoder_PD0' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip0/decoder_PD0' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op15/arbiter_PD15' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD15_switched' of power domain 'router_test_top/dut/op15/arbiter_PD15' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD15.ground' of power domain 'router_test_top/dut/op15/arbiter_PD15' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD15_switched' of power domain 'router_test_top/dut/op15/arbiter_PD15' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD15.ground' of power domain 'router_test_top/dut/op15/arbiter_PD15' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op14/arbiter_PD14' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD14_switched' of power domain 'router_test_top/dut/op14/arbiter_PD14' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD14.ground' of power domain 'router_test_top/dut/op14/arbiter_PD14' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD14_switched' of power domain 'router_test_top/dut/op14/arbiter_PD14' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD14.ground' of power domain 'router_test_top/dut/op14/arbiter_PD14' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op13/arbiter_PD13' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD13_switched' of power domain 'router_test_top/dut/op13/arbiter_PD13' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD13.ground' of power domain 'router_test_top/dut/op13/arbiter_PD13' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD13_switched' of power domain 'router_test_top/dut/op13/arbiter_PD13' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD13.ground' of power domain 'router_test_top/dut/op13/arbiter_PD13' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op12/arbiter_PD12' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD12_switched' of power domain 'router_test_top/dut/op12/arbiter_PD12' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD12.ground' of power domain 'router_test_top/dut/op12/arbiter_PD12' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD12_switched' of power domain 'router_test_top/dut/op12/arbiter_PD12' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD12.ground' of power domain 'router_test_top/dut/op12/arbiter_PD12' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op11/arbiter_PD11' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD11_switched' of power domain 'router_test_top/dut/op11/arbiter_PD11' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD11.ground' of power domain 'router_test_top/dut/op11/arbiter_PD11' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD11_switched' of power domain 'router_test_top/dut/op11/arbiter_PD11' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD11.ground' of power domain 'router_test_top/dut/op11/arbiter_PD11' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op10/arbiter_PD10' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD10_switched' of power domain 'router_test_top/dut/op10/arbiter_PD10' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD10.ground' of power domain 'router_test_top/dut/op10/arbiter_PD10' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD10_switched' of power domain 'router_test_top/dut/op10/arbiter_PD10' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD10.ground' of power domain 'router_test_top/dut/op10/arbiter_PD10' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op9/arbiter_PD9' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD9_switched' of power domain 'router_test_top/dut/op9/arbiter_PD9' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD9.ground' of power domain 'router_test_top/dut/op9/arbiter_PD9' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD9_switched' of power domain 'router_test_top/dut/op9/arbiter_PD9' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD9.ground' of power domain 'router_test_top/dut/op9/arbiter_PD9' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op8/arbiter_PD8' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD8_switched' of power domain 'router_test_top/dut/op8/arbiter_PD8' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD8.ground' of power domain 'router_test_top/dut/op8/arbiter_PD8' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD8_switched' of power domain 'router_test_top/dut/op8/arbiter_PD8' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD8.ground' of power domain 'router_test_top/dut/op8/arbiter_PD8' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op7/arbiter_PD7' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD7_switched' of power domain 'router_test_top/dut/op7/arbiter_PD7' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD7.ground' of power domain 'router_test_top/dut/op7/arbiter_PD7' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD7_switched' of power domain 'router_test_top/dut/op7/arbiter_PD7' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD7.ground' of power domain 'router_test_top/dut/op7/arbiter_PD7' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op6/arbiter_PD6' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD6_switched' of power domain 'router_test_top/dut/op6/arbiter_PD6' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD6.ground' of power domain 'router_test_top/dut/op6/arbiter_PD6' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD6_switched' of power domain 'router_test_top/dut/op6/arbiter_PD6' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD6.ground' of power domain 'router_test_top/dut/op6/arbiter_PD6' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op5/arbiter_PD5' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD5_switched' of power domain 'router_test_top/dut/op5/arbiter_PD5' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD5.ground' of power domain 'router_test_top/dut/op5/arbiter_PD5' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD5_switched' of power domain 'router_test_top/dut/op5/arbiter_PD5' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD5.ground' of power domain 'router_test_top/dut/op5/arbiter_PD5' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op4/arbiter_PD4' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD4_switched' of power domain 'router_test_top/dut/op4/arbiter_PD4' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD4.ground' of power domain 'router_test_top/dut/op4/arbiter_PD4' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD4_switched' of power domain 'router_test_top/dut/op4/arbiter_PD4' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD4.ground' of power domain 'router_test_top/dut/op4/arbiter_PD4' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op3/arbiter_PD3' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD3_switched' of power domain 'router_test_top/dut/op3/arbiter_PD3' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD3.ground' of power domain 'router_test_top/dut/op3/arbiter_PD3' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD3_switched' of power domain 'router_test_top/dut/op3/arbiter_PD3' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD3.ground' of power domain 'router_test_top/dut/op3/arbiter_PD3' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op2/arbiter_PD2' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD2_switched' of power domain 'router_test_top/dut/op2/arbiter_PD2' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD2.ground' of power domain 'router_test_top/dut/op2/arbiter_PD2' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD2_switched' of power domain 'router_test_top/dut/op2/arbiter_PD2' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD2.ground' of power domain 'router_test_top/dut/op2/arbiter_PD2' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op1/arbiter_PD1' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD1_switched' of power domain 'router_test_top/dut/op1/arbiter_PD1' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD1.ground' of power domain 'router_test_top/dut/op1/arbiter_PD1' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD1_switched' of power domain 'router_test_top/dut/op1/arbiter_PD1' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD1.ground' of power domain 'router_test_top/dut/op1/arbiter_PD1' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op0/arbiter_PD0' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD0_switched' of power domain 'router_test_top/dut/op0/arbiter_PD0' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD0.ground' of power domain 'router_test_top/dut/op0/arbiter_PD0' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD0_switched' of power domain 'router_test_top/dut/op0/arbiter_PD0' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD0.ground' of power domain 'router_test_top/dut/op0/arbiter_PD0' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ROUTER' started in 'NORMAL' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD' of power domain 'router_test_top/dut/ROUTER' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ROUTER' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD' of power domain 'router_test_top/dut/ROUTER' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ROUTER' started with voltage 0 V.
+
+[TRACE]     0.0ns :router_test_top.t.connect_supplies
+[00 ps] [INFO] [LP_SUPPLY_PAD_CALL] Supply Pad function 'UPF::supply_on' called for Supply Pad 'VDD'. Supply Pad value changed to '`{FULL_ON, 1080000}'. File: ./test.sv, Line: 327.
+
+[00 ps] [INFO] [LP_SUPPLY_PAD_CALL] Supply Pad function 'UPF::supply_on' called for Supply Pad 'VSS'. Supply Pad value changed to '`{FULL_ON, 0}'. File: ./test.sv, Line: 328.
+
+[TRACE]     0.0ns :router_test_top.t.reset
+[TRACE]  1650.0ns :router_test_top.t.run_packets
+[TRACE]  1650.0ns :router_test_top.t.gen
+[TRACE]  1650.0ns :router_test_top.t.send
+[TRACE]  1650.0ns :router_test_top.t.send_addrs
+[TRACE]  1650.0ns :router_test_top.t.recv
+[TRACE]  1650.0ns :router_test_top.t.get_payload
+[TRACE]  2050.0ns :router_test_top.t.send_pad
+[TRACE]  2550.0ns :router_test_top.t.send_payload
+[TRACE]  5150.0ns :router_test_top.t.check
+[TRACE]  5150.0ns :router_test_top.t.compare
+[NOTE]  5150.0ns Packet #0 Successfully Compared
+[TRACE]  5150.0ns :router_test_top.t.gen
+[TRACE]  5150.0ns :router_test_top.t.send
+[TRACE]  5150.0ns :router_test_top.t.send_addrs
+[TRACE]  5150.0ns :router_test_top.t.recv
+[TRACE]  5150.0ns :router_test_top.t.get_payload
+[TRACE]  5550.0ns :router_test_top.t.send_pad
+[TRACE]  6050.0ns :router_test_top.t.send_payload
+[TRACE]  9450.0ns :router_test_top.t.check
+[TRACE]  9450.0ns :router_test_top.t.compare
+[NOTE]  9450.0ns Packet #1 Successfully Compared
+[TRACE]  9450.0ns :router_test_top.t.gen
+[TRACE]  9450.0ns :router_test_top.t.send
+[TRACE]  9450.0ns :router_test_top.t.send_addrs
+[TRACE]  9450.0ns :router_test_top.t.recv
+[TRACE]  9450.0ns :router_test_top.t.get_payload
+[TRACE]  9850.0ns :router_test_top.t.send_pad
+[TRACE] 10350.0ns :router_test_top.t.send_payload
+[TRACE] 12950.0ns :router_test_top.t.check
+[TRACE] 12950.0ns :router_test_top.t.compare
+[NOTE] 12950.0ns Packet #2 Successfully Compared
+[TRACE] 12950.0ns :router_test_top.t.gen
+[TRACE] 12950.0ns :router_test_top.t.send
+[TRACE] 12950.0ns :router_test_top.t.send_addrs
+[TRACE] 12950.0ns :router_test_top.t.recv
+[TRACE] 12950.0ns :router_test_top.t.get_payload
+[TRACE] 13350.0ns :router_test_top.t.send_pad
+[TRACE] 13850.0ns :router_test_top.t.send_payload
+[TRACE] 17250.0ns :router_test_top.t.check
+[TRACE] 17250.0ns :router_test_top.t.compare
+[NOTE] 17250.0ns Packet #3 Successfully Compared
+[TRACE] 17250.0ns :router_test_top.t.gen
+[TRACE] 17250.0ns :router_test_top.t.send
+[TRACE] 17250.0ns :router_test_top.t.send_addrs
+[TRACE] 17250.0ns :router_test_top.t.recv
+[TRACE] 17250.0ns :router_test_top.t.get_payload
+[TRACE] 17650.0ns :router_test_top.t.send_pad
+[TRACE] 18150.0ns :router_test_top.t.send_payload
+[TRACE] 20750.0ns :router_test_top.t.check
+[TRACE] 20750.0ns :router_test_top.t.compare
+[NOTE] 20750.0ns Packet #4 Successfully Compared
+[TRACE] 20750.0ns :router_test_top.t.gen
+[TRACE] 20750.0ns :router_test_top.t.send
+[TRACE] 20750.0ns :router_test_top.t.send_addrs
+[TRACE] 20750.0ns :router_test_top.t.recv
+[TRACE] 20750.0ns :router_test_top.t.get_payload
+[TRACE] 21150.0ns :router_test_top.t.send_pad
+[TRACE] 21650.0ns :router_test_top.t.send_payload
+[TRACE] 24250.0ns :router_test_top.t.check
+[TRACE] 24250.0ns :router_test_top.t.compare
+[NOTE] 24250.0ns Packet #5 Successfully Compared
+[TRACE] 24250.0ns :router_test_top.t.gen
+[TRACE] 24250.0ns :router_test_top.t.send
+[TRACE] 24250.0ns :router_test_top.t.send_addrs
+[TRACE] 24250.0ns :router_test_top.t.recv
+[TRACE] 24250.0ns :router_test_top.t.get_payload
+[TRACE] 24650.0ns :router_test_top.t.send_pad
+[TRACE] 25150.0ns :router_test_top.t.send_payload
+[TRACE] 27750.0ns :router_test_top.t.check
+[TRACE] 27750.0ns :router_test_top.t.compare
+[NOTE] 27750.0ns Packet #6 Successfully Compared
+[TRACE] 27750.0ns :router_test_top.t.gen
+[TRACE] 27750.0ns :router_test_top.t.send
+[TRACE] 27750.0ns :router_test_top.t.send_addrs
+[TRACE] 27750.0ns :router_test_top.t.recv
+[TRACE] 27750.0ns :router_test_top.t.get_payload
+[TRACE] 28150.0ns :router_test_top.t.send_pad
+[TRACE] 28650.0ns :router_test_top.t.send_payload
+[TRACE] 31250.0ns :router_test_top.t.check
+[TRACE] 31250.0ns :router_test_top.t.compare
+[NOTE] 31250.0ns Packet #7 Successfully Compared
+[TRACE] 31250.0ns :router_test_top.t.gen
+[TRACE] 31250.0ns :router_test_top.t.send
+[TRACE] 31250.0ns :router_test_top.t.send_addrs
+[TRACE] 31250.0ns :router_test_top.t.recv
+[TRACE] 31250.0ns :router_test_top.t.get_payload
+[TRACE] 31650.0ns :router_test_top.t.send_pad
+[TRACE] 32150.0ns :router_test_top.t.send_payload
+[TRACE] 34750.0ns :router_test_top.t.check
+[TRACE] 34750.0ns :router_test_top.t.compare
+[NOTE] 34750.0ns Packet #8 Successfully Compared
+[TRACE] 34750.0ns :router_test_top.t.gen
+[TRACE] 34750.0ns :router_test_top.t.send
+[TRACE] 34750.0ns :router_test_top.t.send_addrs
+[TRACE] 34750.0ns :router_test_top.t.recv
+[TRACE] 34750.0ns :router_test_top.t.get_payload
+[TRACE] 35150.0ns :router_test_top.t.send_pad
+[TRACE] 35650.0ns :router_test_top.t.send_payload
+[TRACE] 36650.0ns :router_test_top.t.ip_power_cycle
+[TRACE] 36750.0ns :router_test_top.t.ip_power_off
+[TRACE] 37450.0ns :router_test_top.t.check
+[TRACE] 37450.0ns :router_test_top.t.compare
+[NOTE] 37450.0ns Packet #9 Successfully Compared
+[TRACE] 37450.0ns :router_test_top.t.gen
+[TRACE] 37450.0ns :router_test_top.t.send
+[TRACE] 37450.0ns :router_test_top.t.send_addrs
+[TRACE] 37450.0ns :router_test_top.t.recv
+[TRACE] 37450.0ns :router_test_top.t.get_payload
+[TRACE] 37850.0ns :router_test_top.t.send_pad
+[TRACE] 38350.0ns :router_test_top.t.send_payload
+[TRACE] 40150.0ns :router_test_top.t.check
+[TRACE] 40150.0ns :router_test_top.t.compare
+[NOTE] 40150.0ns Packet #10 Successfully Compared
+[TRACE] 40150.0ns :router_test_top.t.gen
+[TRACE] 40150.0ns :router_test_top.t.send
+[TRACE] 40150.0ns :router_test_top.t.send_addrs
+[TRACE] 40150.0ns :router_test_top.t.recv
+[TRACE] 40150.0ns :router_test_top.t.get_payload
+[TRACE] 40550.0ns :router_test_top.t.send_pad
+[TRACE] 41050.0ns :router_test_top.t.send_payload
+[TRACE] 43650.0ns :router_test_top.t.check
+[TRACE] 43650.0ns :router_test_top.t.compare
+[NOTE] 43650.0ns Packet #11 Successfully Compared
+[TRACE] 43650.0ns :router_test_top.t.gen
+[TRACE] 43650.0ns :router_test_top.t.send
+[TRACE] 43650.0ns :router_test_top.t.send_addrs
+[TRACE] 43650.0ns :router_test_top.t.recv
+[TRACE] 43650.0ns :router_test_top.t.get_payload
+[TRACE] 44050.0ns :router_test_top.t.send_pad
+[TRACE] 44550.0ns :router_test_top.t.send_payload
+[TRACE] 47150.0ns :router_test_top.t.check
+[TRACE] 47150.0ns :router_test_top.t.compare
+[NOTE] 47150.0ns Packet #12 Successfully Compared
+[TRACE] 47150.0ns :router_test_top.t.gen
+[TRACE] 47150.0ns :router_test_top.t.send
+[TRACE] 47150.0ns :router_test_top.t.send_addrs
+[TRACE] 47150.0ns :router_test_top.t.recv
+[TRACE] 47150.0ns :router_test_top.t.get_payload
+[TRACE] 47550.0ns :router_test_top.t.send_pad
+[TRACE] 48050.0ns :router_test_top.t.send_payload
+[TRACE] 49850.0ns :router_test_top.t.check
+[TRACE] 49850.0ns :router_test_top.t.compare
+[NOTE] 49850.0ns Packet #13 Successfully Compared
+[TRACE] 49850.0ns :router_test_top.t.gen
+[TRACE] 49850.0ns :router_test_top.t.send
+[TRACE] 49850.0ns :router_test_top.t.send_addrs
+[TRACE] 49850.0ns :router_test_top.t.recv
+[TRACE] 49850.0ns :router_test_top.t.get_payload
+[TRACE] 50250.0ns :router_test_top.t.send_pad
+[TRACE] 50750.0ns :router_test_top.t.send_payload
+[TRACE] 52550.0ns :router_test_top.t.check
+[TRACE] 52550.0ns :router_test_top.t.compare
+[NOTE] 52550.0ns Packet #14 Successfully Compared
+[TRACE] 52550.0ns :router_test_top.t.gen
+[TRACE] 52550.0ns :router_test_top.t.send
+[TRACE] 52550.0ns :router_test_top.t.send_addrs
+[TRACE] 52550.0ns :router_test_top.t.recv
+[TRACE] 52550.0ns :router_test_top.t.get_payload
+[TRACE] 52950.0ns :router_test_top.t.send_pad
+[TRACE] 53450.0ns :router_test_top.t.send_payload
+[TRACE] 56050.0ns :router_test_top.t.check
+[TRACE] 56050.0ns :router_test_top.t.compare
+[NOTE] 56050.0ns Packet #15 Successfully Compared
+[TRACE] 56050.0ns :router_test_top.t.gen
+[TRACE] 56050.0ns :router_test_top.t.send
+[TRACE] 56050.0ns :router_test_top.t.send_addrs
+[TRACE] 56050.0ns :router_test_top.t.recv
+[TRACE] 56050.0ns :router_test_top.t.get_payload
+[TRACE] 56450.0ns :router_test_top.t.send_pad
+[TRACE] 56950.0ns :router_test_top.t.send_payload
+[TRACE] 59550.0ns :router_test_top.t.check
+[TRACE] 59550.0ns :router_test_top.t.compare
+[NOTE] 59550.0ns Packet #16 Successfully Compared
+[TRACE] 59550.0ns :router_test_top.t.gen
+[TRACE] 59550.0ns :router_test_top.t.send
+[TRACE] 59550.0ns :router_test_top.t.send_addrs
+[TRACE] 59550.0ns :router_test_top.t.recv
+[TRACE] 59550.0ns :router_test_top.t.get_payload
+[TRACE] 59950.0ns :router_test_top.t.send_pad
+[TRACE] 60450.0ns :router_test_top.t.send_payload
+[TRACE] 63050.0ns :router_test_top.t.check
+[TRACE] 63050.0ns :router_test_top.t.compare
+[NOTE] 63050.0ns Packet #17 Successfully Compared
+[TRACE] 63050.0ns :router_test_top.t.gen
+[TRACE] 63050.0ns :router_test_top.t.send
+[TRACE] 63050.0ns :router_test_top.t.send_addrs
+[TRACE] 63050.0ns :router_test_top.t.recv
+[TRACE] 63050.0ns :router_test_top.t.get_payload
+[TRACE] 63450.0ns :router_test_top.t.send_pad
+[TRACE] 63950.0ns :router_test_top.t.send_payload
+[TRACE] 67350.0ns :router_test_top.t.check
+[TRACE] 67350.0ns :router_test_top.t.compare
+[NOTE] 67350.0ns Packet #18 Successfully Compared
+[TRACE] 67350.0ns :router_test_top.t.gen
+[TRACE] 67350.0ns :router_test_top.t.send
+[TRACE] 67350.0ns :router_test_top.t.send_addrs
+[TRACE] 67350.0ns :router_test_top.t.recv
+[TRACE] 67350.0ns :router_test_top.t.get_payload
+[TRACE] 67750.0ns :router_test_top.t.send_pad
+[TRACE] 68250.0ns :router_test_top.t.send_payload
+[TRACE] 70050.0ns :router_test_top.t.check
+[TRACE] 70050.0ns :router_test_top.t.compare
+[NOTE] 70050.0ns Packet #19 Successfully Compared
+[TRACE] 70050.0ns :router_test_top.t.gen
+[TRACE] 70050.0ns :router_test_top.t.send
+[TRACE] 70050.0ns :router_test_top.t.send_addrs
+[TRACE] 70050.0ns :router_test_top.t.recv
+[TRACE] 70050.0ns :router_test_top.t.get_payload
+[TRACE] 70450.0ns :router_test_top.t.send_pad
+[TRACE] 70950.0ns :router_test_top.t.send_payload
+[TRACE] 73550.0ns :router_test_top.t.check
+[TRACE] 73550.0ns :router_test_top.t.compare
+[NOTE] 73550.0ns Packet #20 Successfully Compared
+[TRACE] 73550.0ns :router_test_top.t.gen
+[TRACE] 73550.0ns :router_test_top.t.send
+[TRACE] 73550.0ns :router_test_top.t.send_addrs
+[TRACE] 73550.0ns :router_test_top.t.recv
+[TRACE] 73550.0ns :router_test_top.t.get_payload
+[TRACE] 73950.0ns :router_test_top.t.send_pad
+[TRACE] 74450.0ns :router_test_top.t.send_payload
+[TRACE] 76250.0ns :router_test_top.t.check
+[TRACE] 76250.0ns :router_test_top.t.compare
+[NOTE] 76250.0ns Packet #21 Successfully Compared
+[TRACE] 76250.0ns :router_test_top.t.gen
+[TRACE] 76250.0ns :router_test_top.t.send
+[TRACE] 76250.0ns :router_test_top.t.send_addrs
+[TRACE] 76250.0ns :router_test_top.t.recv
+[TRACE] 76250.0ns :router_test_top.t.get_payload
+[TRACE] 76650.0ns :router_test_top.t.send_pad
+[TRACE] 77150.0ns :router_test_top.t.send_payload
+[TRACE] 78950.0ns :router_test_top.t.check
+[TRACE] 78950.0ns :router_test_top.t.compare
+[NOTE] 78950.0ns Packet #22 Successfully Compared
+[TRACE] 78950.0ns :router_test_top.t.gen
+[TRACE] 78950.0ns :router_test_top.t.send
+[TRACE] 78950.0ns :router_test_top.t.send_addrs
+[TRACE] 78950.0ns :router_test_top.t.recv
+[TRACE] 78950.0ns :router_test_top.t.get_payload
+[TRACE] 79350.0ns :router_test_top.t.send_pad
+[TRACE] 79850.0ns :router_test_top.t.send_payload
+[TRACE] 81650.0ns :router_test_top.t.check
+[TRACE] 81650.0ns :router_test_top.t.compare
+[NOTE] 81650.0ns Packet #23 Successfully Compared
+[TRACE] 81650.0ns :router_test_top.t.gen
+[TRACE] 81650.0ns :router_test_top.t.send
+[TRACE] 81650.0ns :router_test_top.t.send_addrs
+[TRACE] 81650.0ns :router_test_top.t.recv
+[TRACE] 81650.0ns :router_test_top.t.get_payload
+[TRACE] 82050.0ns :router_test_top.t.send_pad
+[TRACE] 82550.0ns :router_test_top.t.send_payload
+[TRACE] 84350.0ns :router_test_top.t.check
+[TRACE] 84350.0ns :router_test_top.t.compare
+[NOTE] 84350.0ns Packet #24 Successfully Compared
+[TRACE] 84350.0ns :router_test_top.t.gen
+[TRACE] 84350.0ns :router_test_top.t.send
+[TRACE] 84350.0ns :router_test_top.t.send_addrs
+[TRACE] 84350.0ns :router_test_top.t.recv
+[TRACE] 84350.0ns :router_test_top.t.get_payload
+[TRACE] 84750.0ns :router_test_top.t.send_pad
+[TRACE] 85250.0ns :router_test_top.t.send_payload
+[TRACE] 86950.0ns :router_test_top.t.ip_power_on
+[TRACE] 87250.0ns :router_test_top.t.op_power_cycle
+[TRACE] 87450.0ns :router_test_top.t.op_power_off
+[TRACE] 88650.0ns :router_test_top.t.check
+[TRACE] 88650.0ns :router_test_top.t.compare
+[NOTE] 88650.0ns Packet #25 Successfully Compared
+[TRACE] 88650.0ns :router_test_top.t.gen
+[TRACE] 88650.0ns :router_test_top.t.send
+[TRACE] 88650.0ns :router_test_top.t.send_addrs
+[TRACE] 88650.0ns :router_test_top.t.recv
+[TRACE] 88650.0ns :router_test_top.t.get_payload
+[TRACE] 89050.0ns :router_test_top.t.send_pad
+[TRACE] 89550.0ns :router_test_top.t.send_payload
+[TRACE] 91350.0ns :router_test_top.t.check
+[TRACE] 91350.0ns :router_test_top.t.compare
+[NOTE] 91350.0ns Packet #26 Successfully Compared
+[TRACE] 91350.0ns :router_test_top.t.gen
+[TRACE] 91350.0ns :router_test_top.t.send
+[TRACE] 91350.0ns :router_test_top.t.send_addrs
+[TRACE] 91350.0ns :router_test_top.t.recv
+[TRACE] 91350.0ns :router_test_top.t.get_payload
+[TRACE] 91750.0ns :router_test_top.t.send_pad
+[TRACE] 92250.0ns :router_test_top.t.send_payload
+[TRACE] 94850.0ns :router_test_top.t.check
+[TRACE] 94850.0ns :router_test_top.t.compare
+[NOTE] 94850.0ns Packet #27 Successfully Compared
+[TRACE] 94850.0ns :router_test_top.t.gen
+[TRACE] 94850.0ns :router_test_top.t.send
+[TRACE] 94850.0ns :router_test_top.t.send_addrs
+[TRACE] 94850.0ns :router_test_top.t.recv
+[TRACE] 94850.0ns :router_test_top.t.get_payload
+[TRACE] 95250.0ns :router_test_top.t.send_pad
+[TRACE] 95750.0ns :router_test_top.t.send_payload
+[TRACE] 98350.0ns :router_test_top.t.check
+[TRACE] 98350.0ns :router_test_top.t.compare
+[NOTE] 98350.0ns Packet #28 Successfully Compared
+[TRACE] 98350.0ns :router_test_top.t.gen
+[TRACE] 98350.0ns :router_test_top.t.send
+[TRACE] 98350.0ns :router_test_top.t.send_addrs
+[TRACE] 98350.0ns :router_test_top.t.recv
+[TRACE] 98350.0ns :router_test_top.t.get_payload
+[TRACE] 98750.0ns :router_test_top.t.send_pad
+[TRACE] 99250.0ns :router_test_top.t.send_payload
+[TRACE]101050.0ns :router_test_top.t.check
+[TRACE]101050.0ns :router_test_top.t.compare
+[NOTE]101050.0ns Packet #29 Successfully Compared
+[TRACE]101050.0ns :router_test_top.t.gen
+[TRACE]101050.0ns :router_test_top.t.send
+[TRACE]101050.0ns :router_test_top.t.send_addrs
+[TRACE]101050.0ns :router_test_top.t.recv
+[TRACE]101050.0ns :router_test_top.t.get_payload
+[TRACE]101450.0ns :router_test_top.t.send_pad
+[TRACE]101950.0ns :router_test_top.t.send_payload
+[TRACE]103750.0ns :router_test_top.t.check
+[TRACE]103750.0ns :router_test_top.t.compare
+[NOTE]103750.0ns Packet #30 Successfully Compared
+[TRACE]103750.0ns :router_test_top.t.gen
+[TRACE]103750.0ns :router_test_top.t.send
+[TRACE]103750.0ns :router_test_top.t.send_addrs
+[TRACE]103750.0ns :router_test_top.t.recv
+[TRACE]103750.0ns :router_test_top.t.get_payload
+[TRACE]104150.0ns :router_test_top.t.send_pad
+[TRACE]104650.0ns :router_test_top.t.send_payload
+[TRACE]107250.0ns :router_test_top.t.check
+[TRACE]107250.0ns :router_test_top.t.compare
+[NOTE]107250.0ns Packet #31 Successfully Compared
+[TRACE]107250.0ns :router_test_top.t.gen
+[TRACE]107250.0ns :router_test_top.t.send
+[TRACE]107250.0ns :router_test_top.t.send_addrs
+[TRACE]107250.0ns :router_test_top.t.recv
+[TRACE]107250.0ns :router_test_top.t.get_payload
+[TRACE]107650.0ns :router_test_top.t.send_pad
+[TRACE]108150.0ns :router_test_top.t.send_payload
+[TRACE]111550.0ns :router_test_top.t.check
+[TRACE]111550.0ns :router_test_top.t.compare
+[NOTE]111550.0ns Packet #32 Successfully Compared
+[TRACE]111550.0ns :router_test_top.t.gen
+[TRACE]111550.0ns :router_test_top.t.send
+[TRACE]111550.0ns :router_test_top.t.send_addrs
+[TRACE]111550.0ns :router_test_top.t.recv
+[TRACE]111550.0ns :router_test_top.t.get_payload
+[TRACE]111950.0ns :router_test_top.t.send_pad
+[TRACE]112450.0ns :router_test_top.t.send_payload
+[TRACE]115050.0ns :router_test_top.t.check
+[TRACE]115050.0ns :router_test_top.t.compare
+[NOTE]115050.0ns Packet #33 Successfully Compared
+[TRACE]115050.0ns :router_test_top.t.gen
+[TRACE]115050.0ns :router_test_top.t.send
+[TRACE]115050.0ns :router_test_top.t.send_addrs
+[TRACE]115050.0ns :router_test_top.t.recv
+[TRACE]115050.0ns :router_test_top.t.get_payload
+[TRACE]115450.0ns :router_test_top.t.send_pad
+[TRACE]115950.0ns :router_test_top.t.send_payload
+[TRACE]119350.0ns :router_test_top.t.check
+[TRACE]119350.0ns :router_test_top.t.compare
+[NOTE]119350.0ns Packet #34 Successfully Compared
+[TRACE]119350.0ns :router_test_top.t.gen
+[TRACE]119350.0ns :router_test_top.t.send
+[TRACE]119350.0ns :router_test_top.t.send_addrs
+[TRACE]119350.0ns :router_test_top.t.recv
+[TRACE]119350.0ns :router_test_top.t.get_payload
+[TRACE]119750.0ns :router_test_top.t.send_pad
+[TRACE]120250.0ns :router_test_top.t.send_payload
+[TRACE]122850.0ns :router_test_top.t.check
+[TRACE]122850.0ns :router_test_top.t.compare
+[NOTE]122850.0ns Packet #35 Successfully Compared
+[TRACE]122850.0ns :router_test_top.t.gen
+[TRACE]122850.0ns :router_test_top.t.send
+[TRACE]122850.0ns :router_test_top.t.send_addrs
+[TRACE]122850.0ns :router_test_top.t.recv
+[TRACE]122850.0ns :router_test_top.t.get_payload
+[TRACE]123250.0ns :router_test_top.t.send_pad
+[TRACE]123750.0ns :router_test_top.t.send_payload
+[TRACE]127150.0ns :router_test_top.t.check
+[TRACE]127150.0ns :router_test_top.t.compare
+[NOTE]127150.0ns Packet #36 Successfully Compared
+[TRACE]127150.0ns :router_test_top.t.gen
+[TRACE]127150.0ns :router_test_top.t.send
+[TRACE]127150.0ns :router_test_top.t.send_addrs
+[TRACE]127150.0ns :router_test_top.t.recv
+[TRACE]127150.0ns :router_test_top.t.get_payload
+[TRACE]127550.0ns :router_test_top.t.send_pad
+[TRACE]127750.0ns :router_test_top.t.op_power_on
+[TRACE]128050.0ns :router_test_top.t.send_payload
+[TRACE]131450.0ns :router_test_top.t.check
+[TRACE]131450.0ns :router_test_top.t.compare
+[NOTE]131450.0ns Packet #37 Successfully Compared
+[TRACE]131450.0ns :router_test_top.t.gen
+[TRACE]131450.0ns :router_test_top.t.send
+[TRACE]131450.0ns :router_test_top.t.send_addrs
+[TRACE]131450.0ns :router_test_top.t.recv
+[TRACE]131450.0ns :router_test_top.t.get_payload
+[TRACE]131850.0ns :router_test_top.t.send_pad
+[TRACE]132350.0ns :router_test_top.t.send_payload
+[TRACE]134150.0ns :router_test_top.t.check
+[TRACE]134150.0ns :router_test_top.t.compare
+[NOTE]134150.0ns Packet #38 Successfully Compared
+[TRACE]134150.0ns :router_test_top.t.gen
+[TRACE]134150.0ns :router_test_top.t.send
+[TRACE]134150.0ns :router_test_top.t.send_addrs
+[TRACE]134150.0ns :router_test_top.t.recv
+[TRACE]134150.0ns :router_test_top.t.get_payload
+[TRACE]134550.0ns :router_test_top.t.send_pad
+[TRACE]135050.0ns :router_test_top.t.send_payload
+[TRACE]138450.0ns :router_test_top.t.check
+[TRACE]138450.0ns :router_test_top.t.compare
+[NOTE]138450.0ns Packet #39 Successfully Compared
+[TRACE]138450.0ns :router_test_top.t.gen
+[TRACE]138450.0ns :router_test_top.t.send
+[TRACE]138450.0ns :router_test_top.t.send_addrs
+[TRACE]138450.0ns :router_test_top.t.recv
+[TRACE]138450.0ns :router_test_top.t.get_payload
+[TRACE]138850.0ns :router_test_top.t.send_pad
+[TRACE]139350.0ns :router_test_top.t.send_payload
+[TRACE]142750.0ns :router_test_top.t.check
+[TRACE]142750.0ns :router_test_top.t.compare
+[NOTE]142750.0ns Packet #40 Successfully Compared
+[TRACE]142750.0ns :router_test_top.t.gen
+[TRACE]142750.0ns :router_test_top.t.send
+[TRACE]142750.0ns :router_test_top.t.send_addrs
+[TRACE]142750.0ns :router_test_top.t.recv
+[TRACE]142750.0ns :router_test_top.t.get_payload
+[TRACE]143150.0ns :router_test_top.t.send_pad
+[TRACE]143650.0ns :router_test_top.t.send_payload
+[TRACE]145450.0ns :router_test_top.t.check
+[TRACE]145450.0ns :router_test_top.t.compare
+[NOTE]145450.0ns Packet #41 Successfully Compared
+[TRACE]145450.0ns :router_test_top.t.gen
+[TRACE]145450.0ns :router_test_top.t.send
+[TRACE]145450.0ns :router_test_top.t.send_addrs
+[TRACE]145450.0ns :router_test_top.t.recv
+[TRACE]145450.0ns :router_test_top.t.get_payload
+[TRACE]145850.0ns :router_test_top.t.send_pad
+[TRACE]146350.0ns :router_test_top.t.send_payload
+[TRACE]148950.0ns :router_test_top.t.check
+[TRACE]148950.0ns :router_test_top.t.compare
+[NOTE]148950.0ns Packet #42 Successfully Compared
+[TRACE]148950.0ns :router_test_top.t.gen
+[TRACE]148950.0ns :router_test_top.t.send
+[TRACE]148950.0ns :router_test_top.t.send_addrs
+[TRACE]148950.0ns :router_test_top.t.recv
+[TRACE]148950.0ns :router_test_top.t.get_payload
+[TRACE]149350.0ns :router_test_top.t.send_pad
+[TRACE]149850.0ns :router_test_top.t.send_payload
+[TRACE]152450.0ns :router_test_top.t.check
+[TRACE]152450.0ns :router_test_top.t.compare
+[NOTE]152450.0ns Packet #43 Successfully Compared
+[TRACE]152450.0ns :router_test_top.t.gen
+[TRACE]152450.0ns :router_test_top.t.send
+[TRACE]152450.0ns :router_test_top.t.send_addrs
+[TRACE]152450.0ns :router_test_top.t.recv
+[TRACE]152450.0ns :router_test_top.t.get_payload
+[TRACE]152850.0ns :router_test_top.t.send_pad
+[TRACE]153350.0ns :router_test_top.t.send_payload
+[TRACE]155150.0ns :router_test_top.t.check
+[TRACE]155150.0ns :router_test_top.t.compare
+[NOTE]155150.0ns Packet #44 Successfully Compared
+[TRACE]155150.0ns :router_test_top.t.gen
+[TRACE]155150.0ns :router_test_top.t.send
+[TRACE]155150.0ns :router_test_top.t.send_addrs
+[TRACE]155150.0ns :router_test_top.t.recv
+[TRACE]155150.0ns :router_test_top.t.get_payload
+[TRACE]155550.0ns :router_test_top.t.send_pad
+[TRACE]156050.0ns :router_test_top.t.send_payload
+[TRACE]159450.0ns :router_test_top.t.check
+[TRACE]159450.0ns :router_test_top.t.compare
+[NOTE]159450.0ns Packet #45 Successfully Compared
+[TRACE]159450.0ns :router_test_top.t.gen
+[TRACE]159450.0ns :router_test_top.t.send
+[TRACE]159450.0ns :router_test_top.t.send_addrs
+[TRACE]159450.0ns :router_test_top.t.recv
+[TRACE]159450.0ns :router_test_top.t.get_payload
+[TRACE]159850.0ns :router_test_top.t.send_pad
+[TRACE]160350.0ns :router_test_top.t.send_payload
+[TRACE]163750.0ns :router_test_top.t.check
+[TRACE]163750.0ns :router_test_top.t.compare
+[NOTE]163750.0ns Packet #46 Successfully Compared
+[TRACE]163750.0ns :router_test_top.t.gen
+[TRACE]163750.0ns :router_test_top.t.send
+[TRACE]163750.0ns :router_test_top.t.send_addrs
+[TRACE]163750.0ns :router_test_top.t.recv
+[TRACE]163750.0ns :router_test_top.t.get_payload
+[TRACE]164150.0ns :router_test_top.t.send_pad
+[TRACE]164650.0ns :router_test_top.t.send_payload
+[TRACE]166450.0ns :router_test_top.t.check
+[TRACE]166450.0ns :router_test_top.t.compare
+[NOTE]166450.0ns Packet #47 Successfully Compared
+[TRACE]166450.0ns :router_test_top.t.gen
+[TRACE]166450.0ns :router_test_top.t.send
+[TRACE]166450.0ns :router_test_top.t.send_addrs
+[TRACE]166450.0ns :router_test_top.t.recv
+[TRACE]166450.0ns :router_test_top.t.get_payload
+[TRACE]166850.0ns :router_test_top.t.send_pad
+[TRACE]167350.0ns :router_test_top.t.send_payload
+[TRACE]169950.0ns :router_test_top.t.check
+[TRACE]169950.0ns :router_test_top.t.compare
+[NOTE]169950.0ns Packet #48 Successfully Compared
+[TRACE]169950.0ns :router_test_top.t.gen
+[TRACE]169950.0ns :router_test_top.t.send
+[TRACE]169950.0ns :router_test_top.t.send_addrs
+[TRACE]169950.0ns :router_test_top.t.recv
+[TRACE]169950.0ns :router_test_top.t.get_payload
+[TRACE]170350.0ns :router_test_top.t.send_pad
+[TRACE]170850.0ns :router_test_top.t.send_payload
+[TRACE]174250.0ns :router_test_top.t.check
+[TRACE]174250.0ns :router_test_top.t.compare
+[NOTE]174250.0ns Packet #49 Successfully Compared
+[TRACE]174250.0ns :router_test_top.t.gen
+[TRACE]174250.0ns :router_test_top.t.send
+[TRACE]174250.0ns :router_test_top.t.send_addrs
+[TRACE]174250.0ns :router_test_top.t.recv
+[TRACE]174250.0ns :router_test_top.t.get_payload
+[TRACE]174650.0ns :router_test_top.t.send_pad
+[TRACE]175150.0ns :router_test_top.t.send_payload
+[TRACE]176950.0ns :router_test_top.t.check
+[TRACE]176950.0ns :router_test_top.t.compare
+[NOTE]176950.0ns Packet #50 Successfully Compared
+[TRACE]176950.0ns :router_test_top.t.gen
+[TRACE]176950.0ns :router_test_top.t.send
+[TRACE]176950.0ns :router_test_top.t.send_addrs
+[TRACE]176950.0ns :router_test_top.t.recv
+[TRACE]176950.0ns :router_test_top.t.get_payload
+[TRACE]177350.0ns :router_test_top.t.send_pad
+[TRACE]177850.0ns :router_test_top.t.send_payload
+[TRACE]180450.0ns :router_test_top.t.check
+[TRACE]180450.0ns :router_test_top.t.compare
+[NOTE]180450.0ns Packet #51 Successfully Compared
+[TRACE]180450.0ns :router_test_top.t.gen
+[TRACE]180450.0ns :router_test_top.t.send
+[TRACE]180450.0ns :router_test_top.t.send_addrs
+[TRACE]180450.0ns :router_test_top.t.recv
+[TRACE]180450.0ns :router_test_top.t.get_payload
+[TRACE]180850.0ns :router_test_top.t.send_pad
+[TRACE]181350.0ns :router_test_top.t.send_payload
+[TRACE]183950.0ns :router_test_top.t.check
+[TRACE]183950.0ns :router_test_top.t.compare
+[NOTE]183950.0ns Packet #52 Successfully Compared
+[TRACE]183950.0ns :router_test_top.t.gen
+[TRACE]183950.0ns :router_test_top.t.send
+[TRACE]183950.0ns :router_test_top.t.send_addrs
+[TRACE]183950.0ns :router_test_top.t.recv
+[TRACE]183950.0ns :router_test_top.t.get_payload
+[TRACE]184350.0ns :router_test_top.t.send_pad
+[TRACE]184850.0ns :router_test_top.t.send_payload
+[TRACE]186650.0ns :router_test_top.t.check
+[TRACE]186650.0ns :router_test_top.t.compare
+[NOTE]186650.0ns Packet #53 Successfully Compared
+[TRACE]186650.0ns :router_test_top.t.gen
+[TRACE]186650.0ns :router_test_top.t.send
+[TRACE]186650.0ns :router_test_top.t.send_addrs
+[TRACE]186650.0ns :router_test_top.t.recv
+[TRACE]186650.0ns :router_test_top.t.get_payload
+[TRACE]187050.0ns :router_test_top.t.send_pad
+[TRACE]187550.0ns :router_test_top.t.send_payload
+[TRACE]190150.0ns :router_test_top.t.check
+[TRACE]190150.0ns :router_test_top.t.compare
+[NOTE]190150.0ns Packet #54 Successfully Compared
+[TRACE]190150.0ns :router_test_top.t.gen
+[TRACE]190150.0ns :router_test_top.t.send
+[TRACE]190150.0ns :router_test_top.t.send_addrs
+[TRACE]190150.0ns :router_test_top.t.recv
+[TRACE]190150.0ns :router_test_top.t.get_payload
+[TRACE]190550.0ns :router_test_top.t.send_pad
+[TRACE]191050.0ns :router_test_top.t.send_payload
+[TRACE]194450.0ns :router_test_top.t.check
+[TRACE]194450.0ns :router_test_top.t.compare
+[NOTE]194450.0ns Packet #55 Successfully Compared
+[TRACE]194450.0ns :router_test_top.t.gen
+[TRACE]194450.0ns :router_test_top.t.send
+[TRACE]194450.0ns :router_test_top.t.send_addrs
+[TRACE]194450.0ns :router_test_top.t.recv
+[TRACE]194450.0ns :router_test_top.t.get_payload
+[TRACE]194850.0ns :router_test_top.t.send_pad
+[TRACE]195350.0ns :router_test_top.t.send_payload
+[TRACE]197150.0ns :router_test_top.t.check
+[TRACE]197150.0ns :router_test_top.t.compare
+[NOTE]197150.0ns Packet #56 Successfully Compared
+[TRACE]197150.0ns :router_test_top.t.gen
+[TRACE]197150.0ns :router_test_top.t.send
+[TRACE]197150.0ns :router_test_top.t.send_addrs
+[TRACE]197150.0ns :router_test_top.t.recv
+[TRACE]197150.0ns :router_test_top.t.get_payload
+[TRACE]197550.0ns :router_test_top.t.send_pad
+[TRACE]198050.0ns :router_test_top.t.send_payload
+[TRACE]200650.0ns :router_test_top.t.check
+[TRACE]200650.0ns :router_test_top.t.compare
+[NOTE]200650.0ns Packet #57 Successfully Compared
+[TRACE]200650.0ns :router_test_top.t.gen
+[TRACE]200650.0ns :router_test_top.t.send
+[TRACE]200650.0ns :router_test_top.t.send_addrs
+[TRACE]200650.0ns :router_test_top.t.recv
+[TRACE]200650.0ns :router_test_top.t.get_payload
+[TRACE]201050.0ns :router_test_top.t.send_pad
+[TRACE]201550.0ns :router_test_top.t.send_payload
+[TRACE]204150.0ns :router_test_top.t.check
+[TRACE]204150.0ns :router_test_top.t.compare
+[NOTE]204150.0ns Packet #58 Successfully Compared
+[TRACE]204150.0ns :router_test_top.t.gen
+[TRACE]204150.0ns :router_test_top.t.send
+[TRACE]204150.0ns :router_test_top.t.send_addrs
+[TRACE]204150.0ns :router_test_top.t.recv
+[TRACE]204150.0ns :router_test_top.t.get_payload
+[TRACE]204550.0ns :router_test_top.t.send_pad
+[TRACE]205050.0ns :router_test_top.t.send_payload
+[TRACE]207650.0ns :router_test_top.t.check
+[TRACE]207650.0ns :router_test_top.t.compare
+[NOTE]207650.0ns Packet #59 Successfully Compared
+[TRACE]207650.0ns :router_test_top.t.gen
+[TRACE]207650.0ns :router_test_top.t.send
+[TRACE]207650.0ns :router_test_top.t.send_addrs
+[TRACE]207650.0ns :router_test_top.t.recv
+[TRACE]207650.0ns :router_test_top.t.get_payload
+[TRACE]208050.0ns :router_test_top.t.send_pad
+[TRACE]208550.0ns :router_test_top.t.send_payload
+[TRACE]211950.0ns :router_test_top.t.check
+[TRACE]211950.0ns :router_test_top.t.compare
+[NOTE]211950.0ns Packet #60 Successfully Compared
+[TRACE]211950.0ns :router_test_top.t.gen
+[TRACE]211950.0ns :router_test_top.t.send
+[TRACE]211950.0ns :router_test_top.t.send_addrs
+[TRACE]211950.0ns :router_test_top.t.recv
+[TRACE]211950.0ns :router_test_top.t.get_payload
+[TRACE]212350.0ns :router_test_top.t.send_pad
+[TRACE]212850.0ns :router_test_top.t.send_payload
+[TRACE]214650.0ns :router_test_top.t.check
+[TRACE]214650.0ns :router_test_top.t.compare
+[NOTE]214650.0ns Packet #61 Successfully Compared
+[TRACE]214650.0ns :router_test_top.t.gen
+[TRACE]214650.0ns :router_test_top.t.send
+[TRACE]214650.0ns :router_test_top.t.send_addrs
+[TRACE]214650.0ns :router_test_top.t.recv
+[TRACE]214650.0ns :router_test_top.t.get_payload
+[TRACE]215050.0ns :router_test_top.t.send_pad
+[TRACE]215550.0ns :router_test_top.t.send_payload
+[TRACE]218950.0ns :router_test_top.t.check
+[TRACE]218950.0ns :router_test_top.t.compare
+[NOTE]218950.0ns Packet #62 Successfully Compared
+[TRACE]218950.0ns :router_test_top.t.gen
+[TRACE]218950.0ns :router_test_top.t.send
+[TRACE]218950.0ns :router_test_top.t.send_addrs
+[TRACE]218950.0ns :router_test_top.t.recv
+[TRACE]218950.0ns :router_test_top.t.get_payload
+[TRACE]219350.0ns :router_test_top.t.send_pad
+[TRACE]219850.0ns :router_test_top.t.send_payload
+[TRACE]222450.0ns :router_test_top.t.check
+[TRACE]222450.0ns :router_test_top.t.compare
+[NOTE]222450.0ns Packet #63 Successfully Compared
+[TRACE]222450.0ns :router_test_top.t.gen
+[TRACE]222450.0ns :router_test_top.t.send
+[TRACE]222450.0ns :router_test_top.t.send_addrs
+[TRACE]222450.0ns :router_test_top.t.recv
+[TRACE]222450.0ns :router_test_top.t.get_payload
+[TRACE]222850.0ns :router_test_top.t.send_pad
+[TRACE]223350.0ns :router_test_top.t.send_payload
+[TRACE]226750.0ns :router_test_top.t.check
+[TRACE]226750.0ns :router_test_top.t.compare
+[NOTE]226750.0ns Packet #64 Successfully Compared
+[TRACE]226750.0ns :router_test_top.t.gen
+[TRACE]226750.0ns :router_test_top.t.send
+[TRACE]226750.0ns :router_test_top.t.send_addrs
+[TRACE]226750.0ns :router_test_top.t.recv
+[TRACE]226750.0ns :router_test_top.t.get_payload
+[TRACE]227150.0ns :router_test_top.t.send_pad
+[TRACE]227650.0ns :router_test_top.t.send_payload
+[TRACE]229450.0ns :router_test_top.t.check
+[TRACE]229450.0ns :router_test_top.t.compare
+[NOTE]229450.0ns Packet #65 Successfully Compared
+[TRACE]229450.0ns :router_test_top.t.gen
+[TRACE]229450.0ns :router_test_top.t.send
+[TRACE]229450.0ns :router_test_top.t.send_addrs
+[TRACE]229450.0ns :router_test_top.t.recv
+[TRACE]229450.0ns :router_test_top.t.get_payload
+[TRACE]229850.0ns :router_test_top.t.send_pad
+[TRACE]230350.0ns :router_test_top.t.send_payload
+[TRACE]232150.0ns :router_test_top.t.check
+[TRACE]232150.0ns :router_test_top.t.compare
+[NOTE]232150.0ns Packet #66 Successfully Compared
+[TRACE]232150.0ns :router_test_top.t.gen
+[TRACE]232150.0ns :router_test_top.t.send
+[TRACE]232150.0ns :router_test_top.t.send_addrs
+[TRACE]232150.0ns :router_test_top.t.recv
+[TRACE]232150.0ns :router_test_top.t.get_payload
+[TRACE]232550.0ns :router_test_top.t.send_pad
+[TRACE]233050.0ns :router_test_top.t.send_payload
+[TRACE]236450.0ns :router_test_top.t.check
+[TRACE]236450.0ns :router_test_top.t.compare
+[NOTE]236450.0ns Packet #67 Successfully Compared
+[TRACE]236450.0ns :router_test_top.t.gen
+[TRACE]236450.0ns :router_test_top.t.send
+[TRACE]236450.0ns :router_test_top.t.send_addrs
+[TRACE]236450.0ns :router_test_top.t.recv
+[TRACE]236450.0ns :router_test_top.t.get_payload
+[TRACE]236850.0ns :router_test_top.t.send_pad
+[TRACE]237350.0ns :router_test_top.t.send_payload
+[TRACE]239950.0ns :router_test_top.t.check
+[TRACE]239950.0ns :router_test_top.t.compare
+[NOTE]239950.0ns Packet #68 Successfully Compared
+[TRACE]239950.0ns :router_test_top.t.gen
+[TRACE]239950.0ns :router_test_top.t.send
+[TRACE]239950.0ns :router_test_top.t.send_addrs
+[TRACE]239950.0ns :router_test_top.t.recv
+[TRACE]239950.0ns :router_test_top.t.get_payload
+[TRACE]240350.0ns :router_test_top.t.send_pad
+[TRACE]240850.0ns :router_test_top.t.send_payload
+[TRACE]243450.0ns :router_test_top.t.check
+[TRACE]243450.0ns :router_test_top.t.compare
+[NOTE]243450.0ns Packet #69 Successfully Compared
+[TRACE]243450.0ns :router_test_top.t.gen
+[TRACE]243450.0ns :router_test_top.t.send
+[TRACE]243450.0ns :router_test_top.t.send_addrs
+[TRACE]243450.0ns :router_test_top.t.recv
+[TRACE]243450.0ns :router_test_top.t.get_payload
+[TRACE]243850.0ns :router_test_top.t.send_pad
+[TRACE]244350.0ns :router_test_top.t.send_payload
+[TRACE]246950.0ns :router_test_top.t.check
+[TRACE]246950.0ns :router_test_top.t.compare
+[NOTE]246950.0ns Packet #70 Successfully Compared
+[TRACE]246950.0ns :router_test_top.t.gen
+[TRACE]246950.0ns :router_test_top.t.send
+[TRACE]246950.0ns :router_test_top.t.send_addrs
+[TRACE]246950.0ns :router_test_top.t.recv
+[TRACE]246950.0ns :router_test_top.t.get_payload
+[TRACE]247350.0ns :router_test_top.t.send_pad
+[TRACE]247850.0ns :router_test_top.t.send_payload
+[TRACE]250450.0ns :router_test_top.t.check
+[TRACE]250450.0ns :router_test_top.t.compare
+[NOTE]250450.0ns Packet #71 Successfully Compared
+[TRACE]250450.0ns :router_test_top.t.gen
+[TRACE]250450.0ns :router_test_top.t.send
+[TRACE]250450.0ns :router_test_top.t.send_addrs
+[TRACE]250450.0ns :router_test_top.t.recv
+[TRACE]250450.0ns :router_test_top.t.get_payload
+[TRACE]250850.0ns :router_test_top.t.send_pad
+[TRACE]251350.0ns :router_test_top.t.send_payload
+[TRACE]253150.0ns :router_test_top.t.check
+[TRACE]253150.0ns :router_test_top.t.compare
+[NOTE]253150.0ns Packet #72 Successfully Compared
+[TRACE]253150.0ns :router_test_top.t.gen
+[TRACE]253150.0ns :router_test_top.t.send
+[TRACE]253150.0ns :router_test_top.t.send_addrs
+[TRACE]253150.0ns :router_test_top.t.recv
+[TRACE]253150.0ns :router_test_top.t.get_payload
+[TRACE]253550.0ns :router_test_top.t.send_pad
+[TRACE]254050.0ns :router_test_top.t.send_payload
+[TRACE]256650.0ns :router_test_top.t.check
+[TRACE]256650.0ns :router_test_top.t.compare
+[NOTE]256650.0ns Packet #73 Successfully Compared
+[TRACE]256650.0ns :router_test_top.t.gen
+[TRACE]256650.0ns :router_test_top.t.send
+[TRACE]256650.0ns :router_test_top.t.send_addrs
+[TRACE]256650.0ns :router_test_top.t.recv
+[TRACE]256650.0ns :router_test_top.t.get_payload
+[TRACE]257050.0ns :router_test_top.t.send_pad
+[TRACE]257550.0ns :router_test_top.t.send_payload
+[TRACE]260950.0ns :router_test_top.t.check
+[TRACE]260950.0ns :router_test_top.t.compare
+[NOTE]260950.0ns Packet #74 Successfully Compared
+[TRACE]260950.0ns :router_test_top.t.gen
+[TRACE]260950.0ns :router_test_top.t.send
+[TRACE]260950.0ns :router_test_top.t.send_addrs
+[TRACE]260950.0ns :router_test_top.t.recv
+[TRACE]260950.0ns :router_test_top.t.get_payload
+[TRACE]261350.0ns :router_test_top.t.send_pad
+[TRACE]261850.0ns :router_test_top.t.send_payload
+[TRACE]264450.0ns :router_test_top.t.check
+[TRACE]264450.0ns :router_test_top.t.compare
+[NOTE]264450.0ns Packet #75 Successfully Compared
+[TRACE]264450.0ns :router_test_top.t.gen
+[TRACE]264450.0ns :router_test_top.t.send
+[TRACE]264450.0ns :router_test_top.t.send_addrs
+[TRACE]264450.0ns :router_test_top.t.recv
+[TRACE]264450.0ns :router_test_top.t.get_payload
+[TRACE]264850.0ns :router_test_top.t.send_pad
+[TRACE]265350.0ns :router_test_top.t.send_payload
+[TRACE]267150.0ns :router_test_top.t.check
+[TRACE]267150.0ns :router_test_top.t.compare
+[NOTE]267150.0ns Packet #76 Successfully Compared
+[TRACE]267150.0ns :router_test_top.t.gen
+[TRACE]267150.0ns :router_test_top.t.send
+[TRACE]267150.0ns :router_test_top.t.send_addrs
+[TRACE]267150.0ns :router_test_top.t.recv
+[TRACE]267150.0ns :router_test_top.t.get_payload
+[TRACE]267550.0ns :router_test_top.t.send_pad
+[TRACE]268050.0ns :router_test_top.t.send_payload
+[TRACE]270650.0ns :router_test_top.t.check
+[TRACE]270650.0ns :router_test_top.t.compare
+[NOTE]270650.0ns Packet #77 Successfully Compared
+[TRACE]270650.0ns :router_test_top.t.gen
+[TRACE]270650.0ns :router_test_top.t.send
+[TRACE]270650.0ns :router_test_top.t.send_addrs
+[TRACE]270650.0ns :router_test_top.t.recv
+[TRACE]270650.0ns :router_test_top.t.get_payload
+[TRACE]271050.0ns :router_test_top.t.send_pad
+[TRACE]271550.0ns :router_test_top.t.send_payload
+[TRACE]273350.0ns :router_test_top.t.check
+[TRACE]273350.0ns :router_test_top.t.compare
+[NOTE]273350.0ns Packet #78 Successfully Compared
+[TRACE]273350.0ns :router_test_top.t.gen
+[TRACE]273350.0ns :router_test_top.t.send
+[TRACE]273350.0ns :router_test_top.t.send_addrs
+[TRACE]273350.0ns :router_test_top.t.recv
+[TRACE]273350.0ns :router_test_top.t.get_payload
+[TRACE]273750.0ns :router_test_top.t.send_pad
+[TRACE]274250.0ns :router_test_top.t.send_payload
+[TRACE]277650.0ns :router_test_top.t.check
+[TRACE]277650.0ns :router_test_top.t.compare
+[NOTE]277650.0ns Packet #79 Successfully Compared
+[TRACE]277650.0ns :router_test_top.t.gen
+[TRACE]277650.0ns :router_test_top.t.send
+[TRACE]277650.0ns :router_test_top.t.send_addrs
+[TRACE]277650.0ns :router_test_top.t.recv
+[TRACE]277650.0ns :router_test_top.t.get_payload
+[TRACE]278050.0ns :router_test_top.t.send_pad
+[TRACE]278550.0ns :router_test_top.t.send_payload
+[TRACE]281950.0ns :router_test_top.t.check
+[TRACE]281950.0ns :router_test_top.t.compare
+[NOTE]281950.0ns Packet #80 Successfully Compared
+[TRACE]281950.0ns :router_test_top.t.gen
+[TRACE]281950.0ns :router_test_top.t.send
+[TRACE]281950.0ns :router_test_top.t.send_addrs
+[TRACE]281950.0ns :router_test_top.t.recv
+[TRACE]281950.0ns :router_test_top.t.get_payload
+[TRACE]282350.0ns :router_test_top.t.send_pad
+[TRACE]282850.0ns :router_test_top.t.send_payload
+[TRACE]284650.0ns :router_test_top.t.check
+[TRACE]284650.0ns :router_test_top.t.compare
+[NOTE]284650.0ns Packet #81 Successfully Compared
+[TRACE]284650.0ns :router_test_top.t.gen
+[TRACE]284650.0ns :router_test_top.t.send
+[TRACE]284650.0ns :router_test_top.t.send_addrs
+[TRACE]284650.0ns :router_test_top.t.recv
+[TRACE]284650.0ns :router_test_top.t.get_payload
+[TRACE]285050.0ns :router_test_top.t.send_pad
+[TRACE]285550.0ns :router_test_top.t.send_payload
+[TRACE]288950.0ns :router_test_top.t.check
+[TRACE]288950.0ns :router_test_top.t.compare
+[NOTE]288950.0ns Packet #82 Successfully Compared
+[TRACE]288950.0ns :router_test_top.t.gen
+[TRACE]288950.0ns :router_test_top.t.send
+[TRACE]288950.0ns :router_test_top.t.send_addrs
+[TRACE]288950.0ns :router_test_top.t.recv
+[TRACE]288950.0ns :router_test_top.t.get_payload
+[TRACE]289350.0ns :router_test_top.t.send_pad
+[TRACE]289850.0ns :router_test_top.t.send_payload
+[TRACE]292450.0ns :router_test_top.t.check
+[TRACE]292450.0ns :router_test_top.t.compare
+[NOTE]292450.0ns Packet #83 Successfully Compared
+[TRACE]292450.0ns :router_test_top.t.gen
+[TRACE]292450.0ns :router_test_top.t.send
+[TRACE]292450.0ns :router_test_top.t.send_addrs
+[TRACE]292450.0ns :router_test_top.t.recv
+[TRACE]292450.0ns :router_test_top.t.get_payload
+[TRACE]292850.0ns :router_test_top.t.send_pad
+[TRACE]293350.0ns :router_test_top.t.send_payload
+[TRACE]295950.0ns :router_test_top.t.check
+[TRACE]295950.0ns :router_test_top.t.compare
+[NOTE]295950.0ns Packet #84 Successfully Compared
+[TRACE]295950.0ns :router_test_top.t.gen
+[TRACE]295950.0ns :router_test_top.t.send
+[TRACE]295950.0ns :router_test_top.t.send_addrs
+[TRACE]295950.0ns :router_test_top.t.recv
+[TRACE]295950.0ns :router_test_top.t.get_payload
+[TRACE]296350.0ns :router_test_top.t.send_pad
+[TRACE]296850.0ns :router_test_top.t.send_payload
+[TRACE]299450.0ns :router_test_top.t.check
+[TRACE]299450.0ns :router_test_top.t.compare
+[NOTE]299450.0ns Packet #85 Successfully Compared
+[TRACE]299450.0ns :router_test_top.t.gen
+[TRACE]299450.0ns :router_test_top.t.send
+[TRACE]299450.0ns :router_test_top.t.send_addrs
+[TRACE]299450.0ns :router_test_top.t.recv
+[TRACE]299450.0ns :router_test_top.t.get_payload
+[TRACE]299850.0ns :router_test_top.t.send_pad
+[TRACE]300350.0ns :router_test_top.t.send_payload
+[TRACE]302950.0ns :router_test_top.t.check
+[TRACE]302950.0ns :router_test_top.t.compare
+[NOTE]302950.0ns Packet #86 Successfully Compared
+[TRACE]302950.0ns :router_test_top.t.gen
+[TRACE]302950.0ns :router_test_top.t.send
+[TRACE]302950.0ns :router_test_top.t.send_addrs
+[TRACE]302950.0ns :router_test_top.t.recv
+[TRACE]302950.0ns :router_test_top.t.get_payload
+[TRACE]303350.0ns :router_test_top.t.send_pad
+[TRACE]303850.0ns :router_test_top.t.send_payload
+[TRACE]305650.0ns :router_test_top.t.check
+[TRACE]305650.0ns :router_test_top.t.compare
+[NOTE]305650.0ns Packet #87 Successfully Compared
+[TRACE]305650.0ns :router_test_top.t.gen
+[TRACE]305650.0ns :router_test_top.t.send
+[TRACE]305650.0ns :router_test_top.t.send_addrs
+[TRACE]305650.0ns :router_test_top.t.recv
+[TRACE]305650.0ns :router_test_top.t.get_payload
+[TRACE]306050.0ns :router_test_top.t.send_pad
+[TRACE]306550.0ns :router_test_top.t.send_payload
+[TRACE]309150.0ns :router_test_top.t.check
+[TRACE]309150.0ns :router_test_top.t.compare
+[NOTE]309150.0ns Packet #88 Successfully Compared
+[TRACE]309150.0ns :router_test_top.t.gen
+[TRACE]309150.0ns :router_test_top.t.send
+[TRACE]309150.0ns :router_test_top.t.send_addrs
+[TRACE]309150.0ns :router_test_top.t.recv
+[TRACE]309150.0ns :router_test_top.t.get_payload
+[TRACE]309550.0ns :router_test_top.t.send_pad
+[TRACE]310050.0ns :router_test_top.t.send_payload
+[TRACE]312650.0ns :router_test_top.t.check
+[TRACE]312650.0ns :router_test_top.t.compare
+[NOTE]312650.0ns Packet #89 Successfully Compared
+[TRACE]312650.0ns :router_test_top.t.gen
+[TRACE]312650.0ns :router_test_top.t.send
+[TRACE]312650.0ns :router_test_top.t.send_addrs
+[TRACE]312650.0ns :router_test_top.t.recv
+[TRACE]312650.0ns :router_test_top.t.get_payload
+[TRACE]313050.0ns :router_test_top.t.send_pad
+[TRACE]313550.0ns :router_test_top.t.send_payload
+[TRACE]316150.0ns :router_test_top.t.check
+[TRACE]316150.0ns :router_test_top.t.compare
+[NOTE]316150.0ns Packet #90 Successfully Compared
+[TRACE]316150.0ns :router_test_top.t.gen
+[TRACE]316150.0ns :router_test_top.t.send
+[TRACE]316150.0ns :router_test_top.t.send_addrs
+[TRACE]316150.0ns :router_test_top.t.recv
+[TRACE]316150.0ns :router_test_top.t.get_payload
+[TRACE]316550.0ns :router_test_top.t.send_pad
+[TRACE]317050.0ns :router_test_top.t.send_payload
+[TRACE]319650.0ns :router_test_top.t.check
+[TRACE]319650.0ns :router_test_top.t.compare
+[NOTE]319650.0ns Packet #91 Successfully Compared
+[TRACE]319650.0ns :router_test_top.t.gen
+[TRACE]319650.0ns :router_test_top.t.send
+[TRACE]319650.0ns :router_test_top.t.send_addrs
+[TRACE]319650.0ns :router_test_top.t.recv
+[TRACE]319650.0ns :router_test_top.t.get_payload
+[TRACE]320050.0ns :router_test_top.t.send_pad
+[TRACE]320550.0ns :router_test_top.t.send_payload
+[TRACE]323150.0ns :router_test_top.t.check
+[TRACE]323150.0ns :router_test_top.t.compare
+[NOTE]323150.0ns Packet #92 Successfully Compared
+[TRACE]323150.0ns :router_test_top.t.gen
+[TRACE]323150.0ns :router_test_top.t.send
+[TRACE]323150.0ns :router_test_top.t.send_addrs
+[TRACE]323150.0ns :router_test_top.t.recv
+[TRACE]323150.0ns :router_test_top.t.get_payload
+[TRACE]323550.0ns :router_test_top.t.send_pad
+[TRACE]324050.0ns :router_test_top.t.send_payload
+[TRACE]327450.0ns :router_test_top.t.check
+[TRACE]327450.0ns :router_test_top.t.compare
+[NOTE]327450.0ns Packet #93 Successfully Compared
+[TRACE]327450.0ns :router_test_top.t.gen
+[TRACE]327450.0ns :router_test_top.t.send
+[TRACE]327450.0ns :router_test_top.t.send_addrs
+[TRACE]327450.0ns :router_test_top.t.recv
+[TRACE]327450.0ns :router_test_top.t.get_payload
+[TRACE]327850.0ns :router_test_top.t.send_pad
+[TRACE]328350.0ns :router_test_top.t.send_payload
+[TRACE]330950.0ns :router_test_top.t.check
+[TRACE]330950.0ns :router_test_top.t.compare
+[NOTE]330950.0ns Packet #94 Successfully Compared
+[TRACE]330950.0ns :router_test_top.t.gen
+[TRACE]330950.0ns :router_test_top.t.send
+[TRACE]330950.0ns :router_test_top.t.send_addrs
+[TRACE]330950.0ns :router_test_top.t.recv
+[TRACE]330950.0ns :router_test_top.t.get_payload
+[TRACE]331350.0ns :router_test_top.t.send_pad
+[TRACE]331850.0ns :router_test_top.t.send_payload
+[TRACE]333650.0ns :router_test_top.t.check
+[TRACE]333650.0ns :router_test_top.t.compare
+[NOTE]333650.0ns Packet #95 Successfully Compared
+[TRACE]333650.0ns :router_test_top.t.gen
+[TRACE]333650.0ns :router_test_top.t.send
+[TRACE]333650.0ns :router_test_top.t.send_addrs
+[TRACE]333650.0ns :router_test_top.t.recv
+[TRACE]333650.0ns :router_test_top.t.get_payload
+[TRACE]334050.0ns :router_test_top.t.send_pad
+[TRACE]334550.0ns :router_test_top.t.send_payload
+[TRACE]336350.0ns :router_test_top.t.check
+[TRACE]336350.0ns :router_test_top.t.compare
+[NOTE]336350.0ns Packet #96 Successfully Compared
+[TRACE]336350.0ns :router_test_top.t.gen
+[TRACE]336350.0ns :router_test_top.t.send
+[TRACE]336350.0ns :router_test_top.t.send_addrs
+[TRACE]336350.0ns :router_test_top.t.recv
+[TRACE]336350.0ns :router_test_top.t.get_payload
+[TRACE]336750.0ns :router_test_top.t.send_pad
+[TRACE]337250.0ns :router_test_top.t.send_payload
+[TRACE]339050.0ns :router_test_top.t.check
+[TRACE]339050.0ns :router_test_top.t.compare
+[NOTE]339050.0ns Packet #97 Successfully Compared
+[TRACE]339050.0ns :router_test_top.t.gen
+[TRACE]339050.0ns :router_test_top.t.send
+[TRACE]339050.0ns :router_test_top.t.send_addrs
+[TRACE]339050.0ns :router_test_top.t.recv
+[TRACE]339050.0ns :router_test_top.t.get_payload
+[TRACE]339450.0ns :router_test_top.t.send_pad
+[TRACE]339950.0ns :router_test_top.t.send_payload
+[TRACE]343350.0ns :router_test_top.t.check
+[TRACE]343350.0ns :router_test_top.t.compare
+[NOTE]343350.0ns Packet #98 Successfully Compared
+[TRACE]343350.0ns :router_test_top.t.gen
+[TRACE]343350.0ns :router_test_top.t.send
+[TRACE]343350.0ns :router_test_top.t.send_addrs
+[TRACE]343350.0ns :router_test_top.t.recv
+[TRACE]343350.0ns :router_test_top.t.get_payload
+[TRACE]343750.0ns :router_test_top.t.send_pad
+[TRACE]344250.0ns :router_test_top.t.send_payload
+[TRACE]347650.0ns :router_test_top.t.check
+[TRACE]347650.0ns :router_test_top.t.compare
+[NOTE]347650.0ns Packet #99 Successfully Compared
+[TRACE]347650.0ns :router_test_top.t.gen
+[TRACE]347650.0ns :router_test_top.t.send
+[TRACE]347650.0ns :router_test_top.t.send_addrs
+[TRACE]347650.0ns :router_test_top.t.recv
+[TRACE]347650.0ns :router_test_top.t.get_payload
+[TRACE]348050.0ns :router_test_top.t.send_pad
+[TRACE]348550.0ns :router_test_top.t.send_payload
+[TRACE]351950.0ns :router_test_top.t.check
+[TRACE]351950.0ns :router_test_top.t.compare
+[NOTE]351950.0ns Packet #100 Successfully Compared
+[TRACE]351950.0ns :router_test_top.t.gen
+[TRACE]351950.0ns :router_test_top.t.send
+[TRACE]351950.0ns :router_test_top.t.send_addrs
+[TRACE]351950.0ns :router_test_top.t.recv
+[TRACE]351950.0ns :router_test_top.t.get_payload
+[TRACE]352350.0ns :router_test_top.t.send_pad
+[TRACE]352850.0ns :router_test_top.t.send_payload
+[TRACE]354650.0ns :router_test_top.t.check
+[TRACE]354650.0ns :router_test_top.t.compare
+[NOTE]354650.0ns Packet #101 Successfully Compared
+[TRACE]354650.0ns :router_test_top.t.gen
+[TRACE]354650.0ns :router_test_top.t.send
+[TRACE]354650.0ns :router_test_top.t.send_addrs
+[TRACE]354650.0ns :router_test_top.t.recv
+[TRACE]354650.0ns :router_test_top.t.get_payload
+[TRACE]355050.0ns :router_test_top.t.send_pad
+[TRACE]355550.0ns :router_test_top.t.send_payload
+[TRACE]358950.0ns :router_test_top.t.check
+[TRACE]358950.0ns :router_test_top.t.compare
+[NOTE]358950.0ns Packet #102 Successfully Compared
+[TRACE]358950.0ns :router_test_top.t.gen
+[TRACE]358950.0ns :router_test_top.t.send
+[TRACE]358950.0ns :router_test_top.t.send_addrs
+[TRACE]358950.0ns :router_test_top.t.recv
+[TRACE]358950.0ns :router_test_top.t.get_payload
+[TRACE]359350.0ns :router_test_top.t.send_pad
+[TRACE]359850.0ns :router_test_top.t.send_payload
+[TRACE]363250.0ns :router_test_top.t.check
+[TRACE]363250.0ns :router_test_top.t.compare
+[NOTE]363250.0ns Packet #103 Successfully Compared
+[TRACE]363250.0ns :router_test_top.t.gen
+[TRACE]363250.0ns :router_test_top.t.send
+[TRACE]363250.0ns :router_test_top.t.send_addrs
+[TRACE]363250.0ns :router_test_top.t.recv
+[TRACE]363250.0ns :router_test_top.t.get_payload
+[TRACE]363650.0ns :router_test_top.t.send_pad
+[TRACE]364150.0ns :router_test_top.t.send_payload
+[TRACE]367550.0ns :router_test_top.t.check
+[TRACE]367550.0ns :router_test_top.t.compare
+[NOTE]367550.0ns Packet #104 Successfully Compared
+[TRACE]367550.0ns :router_test_top.t.gen
+[TRACE]367550.0ns :router_test_top.t.send
+[TRACE]367550.0ns :router_test_top.t.send_addrs
+[TRACE]367550.0ns :router_test_top.t.recv
+[TRACE]367550.0ns :router_test_top.t.get_payload
+[TRACE]367950.0ns :router_test_top.t.send_pad
+[TRACE]368450.0ns :router_test_top.t.send_payload
+[TRACE]370250.0ns :router_test_top.t.check
+[TRACE]370250.0ns :router_test_top.t.compare
+[NOTE]370250.0ns Packet #105 Successfully Compared
+[TRACE]370250.0ns :router_test_top.t.gen
+[TRACE]370250.0ns :router_test_top.t.send
+[TRACE]370250.0ns :router_test_top.t.send_addrs
+[TRACE]370250.0ns :router_test_top.t.recv
+[TRACE]370250.0ns :router_test_top.t.get_payload
+[TRACE]370650.0ns :router_test_top.t.send_pad
+[TRACE]371150.0ns :router_test_top.t.send_payload
+[TRACE]374550.0ns :router_test_top.t.check
+[TRACE]374550.0ns :router_test_top.t.compare
+[NOTE]374550.0ns Packet #106 Successfully Compared
+[TRACE]374550.0ns :router_test_top.t.gen
+[TRACE]374550.0ns :router_test_top.t.send
+[TRACE]374550.0ns :router_test_top.t.send_addrs
+[TRACE]374550.0ns :router_test_top.t.recv
+[TRACE]374550.0ns :router_test_top.t.get_payload
+[TRACE]374950.0ns :router_test_top.t.send_pad
+[TRACE]375450.0ns :router_test_top.t.send_payload
+[TRACE]378050.0ns :router_test_top.t.check
+[TRACE]378050.0ns :router_test_top.t.compare
+[NOTE]378050.0ns Packet #107 Successfully Compared
+[TRACE]378050.0ns :router_test_top.t.gen
+[TRACE]378050.0ns :router_test_top.t.send
+[TRACE]378050.0ns :router_test_top.t.send_addrs
+[TRACE]378050.0ns :router_test_top.t.recv
+[TRACE]378050.0ns :router_test_top.t.get_payload
+[TRACE]378450.0ns :router_test_top.t.send_pad
+[TRACE]378950.0ns :router_test_top.t.send_payload
+[TRACE]380750.0ns :router_test_top.t.check
+[TRACE]380750.0ns :router_test_top.t.compare
+[NOTE]380750.0ns Packet #108 Successfully Compared
+[TRACE]380750.0ns :router_test_top.t.gen
+[TRACE]380750.0ns :router_test_top.t.send
+[TRACE]380750.0ns :router_test_top.t.send_addrs
+[TRACE]380750.0ns :router_test_top.t.recv
+[TRACE]380750.0ns :router_test_top.t.get_payload
+[TRACE]381150.0ns :router_test_top.t.send_pad
+[TRACE]381650.0ns :router_test_top.t.send_payload
+[TRACE]383450.0ns :router_test_top.t.check
+[TRACE]383450.0ns :router_test_top.t.compare
+[NOTE]383450.0ns Packet #109 Successfully Compared
+[TRACE]383450.0ns :router_test_top.t.gen
+[TRACE]383450.0ns :router_test_top.t.send
+[TRACE]383450.0ns :router_test_top.t.send_addrs
+[TRACE]383450.0ns :router_test_top.t.recv
+[TRACE]383450.0ns :router_test_top.t.get_payload
+[TRACE]383850.0ns :router_test_top.t.send_pad
+[TRACE]384350.0ns :router_test_top.t.send_payload
+[TRACE]386950.0ns :router_test_top.t.check
+[TRACE]386950.0ns :router_test_top.t.compare
+[NOTE]386950.0ns Packet #110 Successfully Compared
+[TRACE]386950.0ns :router_test_top.t.gen
+[TRACE]386950.0ns :router_test_top.t.send
+[TRACE]386950.0ns :router_test_top.t.send_addrs
+[TRACE]386950.0ns :router_test_top.t.recv
+[TRACE]386950.0ns :router_test_top.t.get_payload
+[TRACE]387350.0ns :router_test_top.t.send_pad
+[TRACE]387850.0ns :router_test_top.t.send_payload
+[TRACE]390450.0ns :router_test_top.t.check
+[TRACE]390450.0ns :router_test_top.t.compare
+[NOTE]390450.0ns Packet #111 Successfully Compared
+[TRACE]390450.0ns :router_test_top.t.gen
+[TRACE]390450.0ns :router_test_top.t.send
+[TRACE]390450.0ns :router_test_top.t.send_addrs
+[TRACE]390450.0ns :router_test_top.t.recv
+[TRACE]390450.0ns :router_test_top.t.get_payload
+[TRACE]390850.0ns :router_test_top.t.send_pad
+[TRACE]391350.0ns :router_test_top.t.send_payload
+[TRACE]393150.0ns :router_test_top.t.check
+[TRACE]393150.0ns :router_test_top.t.compare
+[NOTE]393150.0ns Packet #112 Successfully Compared
+[TRACE]393150.0ns :router_test_top.t.gen
+[TRACE]393150.0ns :router_test_top.t.send
+[TRACE]393150.0ns :router_test_top.t.send_addrs
+[TRACE]393150.0ns :router_test_top.t.recv
+[TRACE]393150.0ns :router_test_top.t.get_payload
+[TRACE]393550.0ns :router_test_top.t.send_pad
+[TRACE]394050.0ns :router_test_top.t.send_payload
+[TRACE]395850.0ns :router_test_top.t.check
+[TRACE]395850.0ns :router_test_top.t.compare
+[NOTE]395850.0ns Packet #113 Successfully Compared
+[TRACE]395850.0ns :router_test_top.t.gen
+[TRACE]395850.0ns :router_test_top.t.send
+[TRACE]395850.0ns :router_test_top.t.send_addrs
+[TRACE]395850.0ns :router_test_top.t.recv
+[TRACE]395850.0ns :router_test_top.t.get_payload
+[TRACE]396250.0ns :router_test_top.t.send_pad
+[TRACE]396750.0ns :router_test_top.t.send_payload
+[TRACE]398550.0ns :router_test_top.t.check
+[TRACE]398550.0ns :router_test_top.t.compare
+[NOTE]398550.0ns Packet #114 Successfully Compared
+[TRACE]398550.0ns :router_test_top.t.gen
+[TRACE]398550.0ns :router_test_top.t.send
+[TRACE]398550.0ns :router_test_top.t.send_addrs
+[TRACE]398550.0ns :router_test_top.t.recv
+[TRACE]398550.0ns :router_test_top.t.get_payload
+[TRACE]398950.0ns :router_test_top.t.send_pad
+[TRACE]399450.0ns :router_test_top.t.send_payload
+[TRACE]402850.0ns :router_test_top.t.check
+[TRACE]402850.0ns :router_test_top.t.compare
+[NOTE]402850.0ns Packet #115 Successfully Compared
+[TRACE]402850.0ns :router_test_top.t.gen
+[TRACE]402850.0ns :router_test_top.t.send
+[TRACE]402850.0ns :router_test_top.t.send_addrs
+[TRACE]402850.0ns :router_test_top.t.recv
+[TRACE]402850.0ns :router_test_top.t.get_payload
+[TRACE]403250.0ns :router_test_top.t.send_pad
+[TRACE]403750.0ns :router_test_top.t.send_payload
+[TRACE]405550.0ns :router_test_top.t.check
+[TRACE]405550.0ns :router_test_top.t.compare
+[NOTE]405550.0ns Packet #116 Successfully Compared
+[TRACE]405550.0ns :router_test_top.t.gen
+[TRACE]405550.0ns :router_test_top.t.send
+[TRACE]405550.0ns :router_test_top.t.send_addrs
+[TRACE]405550.0ns :router_test_top.t.recv
+[TRACE]405550.0ns :router_test_top.t.get_payload
+[TRACE]405950.0ns :router_test_top.t.send_pad
+[TRACE]406450.0ns :router_test_top.t.send_payload
+[TRACE]409050.0ns :router_test_top.t.check
+[TRACE]409050.0ns :router_test_top.t.compare
+[NOTE]409050.0ns Packet #117 Successfully Compared
+[TRACE]409050.0ns :router_test_top.t.gen
+[TRACE]409050.0ns :router_test_top.t.send
+[TRACE]409050.0ns :router_test_top.t.send_addrs
+[TRACE]409050.0ns :router_test_top.t.recv
+[TRACE]409050.0ns :router_test_top.t.get_payload
+[TRACE]409450.0ns :router_test_top.t.send_pad
+[TRACE]409950.0ns :router_test_top.t.send_payload
+[TRACE]412550.0ns :router_test_top.t.check
+[TRACE]412550.0ns :router_test_top.t.compare
+[NOTE]412550.0ns Packet #118 Successfully Compared
+[TRACE]412550.0ns :router_test_top.t.gen
+[TRACE]412550.0ns :router_test_top.t.send
+[TRACE]412550.0ns :router_test_top.t.send_addrs
+[TRACE]412550.0ns :router_test_top.t.recv
+[TRACE]412550.0ns :router_test_top.t.get_payload
+[TRACE]412950.0ns :router_test_top.t.send_pad
+[TRACE]413450.0ns :router_test_top.t.send_payload
+[TRACE]416850.0ns :router_test_top.t.check
+[TRACE]416850.0ns :router_test_top.t.compare
+[NOTE]416850.0ns Packet #119 Successfully Compared
+[TRACE]416850.0ns :router_test_top.t.gen
+[TRACE]416850.0ns :router_test_top.t.send
+[TRACE]416850.0ns :router_test_top.t.send_addrs
+[TRACE]416850.0ns :router_test_top.t.recv
+[TRACE]416850.0ns :router_test_top.t.get_payload
+[TRACE]417250.0ns :router_test_top.t.send_pad
+[TRACE]417750.0ns :router_test_top.t.send_payload
+[TRACE]421150.0ns :router_test_top.t.check
+[TRACE]421150.0ns :router_test_top.t.compare
+[NOTE]421150.0ns Packet #120 Successfully Compared
+[TRACE]421150.0ns :router_test_top.t.gen
+[TRACE]421150.0ns :router_test_top.t.send
+[TRACE]421150.0ns :router_test_top.t.send_addrs
+[TRACE]421150.0ns :router_test_top.t.recv
+[TRACE]421150.0ns :router_test_top.t.get_payload
+[TRACE]421550.0ns :router_test_top.t.send_pad
+[TRACE]422050.0ns :router_test_top.t.send_payload
+[TRACE]424650.0ns :router_test_top.t.check
+[TRACE]424650.0ns :router_test_top.t.compare
+[NOTE]424650.0ns Packet #121 Successfully Compared
+[TRACE]424650.0ns :router_test_top.t.gen
+[TRACE]424650.0ns :router_test_top.t.send
+[TRACE]424650.0ns :router_test_top.t.send_addrs
+[TRACE]424650.0ns :router_test_top.t.recv
+[TRACE]424650.0ns :router_test_top.t.get_payload
+[TRACE]425050.0ns :router_test_top.t.send_pad
+[TRACE]425550.0ns :router_test_top.t.send_payload
+[TRACE]428150.0ns :router_test_top.t.check
+[TRACE]428150.0ns :router_test_top.t.compare
+[NOTE]428150.0ns Packet #122 Successfully Compared
+[TRACE]428150.0ns :router_test_top.t.gen
+[TRACE]428150.0ns :router_test_top.t.send
+[TRACE]428150.0ns :router_test_top.t.send_addrs
+[TRACE]428150.0ns :router_test_top.t.recv
+[TRACE]428150.0ns :router_test_top.t.get_payload
+[TRACE]428550.0ns :router_test_top.t.send_pad
+[TRACE]429050.0ns :router_test_top.t.send_payload
+[TRACE]432450.0ns :router_test_top.t.check
+[TRACE]432450.0ns :router_test_top.t.compare
+[NOTE]432450.0ns Packet #123 Successfully Compared
+[TRACE]432450.0ns :router_test_top.t.gen
+[TRACE]432450.0ns :router_test_top.t.send
+[TRACE]432450.0ns :router_test_top.t.send_addrs
+[TRACE]432450.0ns :router_test_top.t.recv
+[TRACE]432450.0ns :router_test_top.t.get_payload
+[TRACE]432850.0ns :router_test_top.t.send_pad
+[TRACE]433350.0ns :router_test_top.t.send_payload
+[TRACE]435150.0ns :router_test_top.t.check
+[TRACE]435150.0ns :router_test_top.t.compare
+[NOTE]435150.0ns Packet #124 Successfully Compared
+[TRACE]435150.0ns :router_test_top.t.gen
+[TRACE]435150.0ns :router_test_top.t.send
+[TRACE]435150.0ns :router_test_top.t.send_addrs
+[TRACE]435150.0ns :router_test_top.t.recv
+[TRACE]435150.0ns :router_test_top.t.get_payload
+[TRACE]435550.0ns :router_test_top.t.send_pad
+[TRACE]436050.0ns :router_test_top.t.send_payload
+[TRACE]438650.0ns :router_test_top.t.check
+[TRACE]438650.0ns :router_test_top.t.compare
+[NOTE]438650.0ns Packet #125 Successfully Compared
+[TRACE]438650.0ns :router_test_top.t.gen
+[TRACE]438650.0ns :router_test_top.t.send
+[TRACE]438650.0ns :router_test_top.t.send_addrs
+[TRACE]438650.0ns :router_test_top.t.recv
+[TRACE]438650.0ns :router_test_top.t.get_payload
+[TRACE]439050.0ns :router_test_top.t.send_pad
+[TRACE]439550.0ns :router_test_top.t.send_payload
+[TRACE]442950.0ns :router_test_top.t.check
+[TRACE]442950.0ns :router_test_top.t.compare
+[NOTE]442950.0ns Packet #126 Successfully Compared
+[TRACE]442950.0ns :router_test_top.t.gen
+[TRACE]442950.0ns :router_test_top.t.send
+[TRACE]442950.0ns :router_test_top.t.send_addrs
+[TRACE]442950.0ns :router_test_top.t.recv
+[TRACE]442950.0ns :router_test_top.t.get_payload
+[TRACE]443350.0ns :router_test_top.t.send_pad
+[TRACE]443850.0ns :router_test_top.t.send_payload
+[TRACE]445650.0ns :router_test_top.t.check
+[TRACE]445650.0ns :router_test_top.t.compare
+[NOTE]445650.0ns Packet #127 Successfully Compared
+[TRACE]445650.0ns :router_test_top.t.gen
+[TRACE]445650.0ns :router_test_top.t.send
+[TRACE]445650.0ns :router_test_top.t.send_addrs
+[TRACE]445650.0ns :router_test_top.t.recv
+[TRACE]445650.0ns :router_test_top.t.get_payload
+[TRACE]446050.0ns :router_test_top.t.send_pad
+[TRACE]446550.0ns :router_test_top.t.send_payload
+[TRACE]449950.0ns :router_test_top.t.check
+[TRACE]449950.0ns :router_test_top.t.compare
+[NOTE]449950.0ns Packet #128 Successfully Compared
+[TRACE]449950.0ns :router_test_top.t.gen
+[TRACE]449950.0ns :router_test_top.t.send
+[TRACE]449950.0ns :router_test_top.t.send_addrs
+[TRACE]449950.0ns :router_test_top.t.recv
+[TRACE]449950.0ns :router_test_top.t.get_payload
+[TRACE]450350.0ns :router_test_top.t.send_pad
+[TRACE]450850.0ns :router_test_top.t.send_payload
+[TRACE]453450.0ns :router_test_top.t.check
+[TRACE]453450.0ns :router_test_top.t.compare
+[NOTE]453450.0ns Packet #129 Successfully Compared
+[TRACE]453450.0ns :router_test_top.t.gen
+[TRACE]453450.0ns :router_test_top.t.send
+[TRACE]453450.0ns :router_test_top.t.send_addrs
+[TRACE]453450.0ns :router_test_top.t.recv
+[TRACE]453450.0ns :router_test_top.t.get_payload
+[TRACE]453850.0ns :router_test_top.t.send_pad
+[TRACE]454350.0ns :router_test_top.t.send_payload
+[TRACE]456150.0ns :router_test_top.t.check
+[TRACE]456150.0ns :router_test_top.t.compare
+[NOTE]456150.0ns Packet #130 Successfully Compared
+[TRACE]456150.0ns :router_test_top.t.gen
+[TRACE]456150.0ns :router_test_top.t.send
+[TRACE]456150.0ns :router_test_top.t.send_addrs
+[TRACE]456150.0ns :router_test_top.t.recv
+[TRACE]456150.0ns :router_test_top.t.get_payload
+[TRACE]456550.0ns :router_test_top.t.send_pad
+[TRACE]457050.0ns :router_test_top.t.send_payload
+[TRACE]458850.0ns :router_test_top.t.check
+[TRACE]458850.0ns :router_test_top.t.compare
+[NOTE]458850.0ns Packet #131 Successfully Compared
+[TRACE]458850.0ns :router_test_top.t.gen
+[TRACE]458850.0ns :router_test_top.t.send
+[TRACE]458850.0ns :router_test_top.t.send_addrs
+[TRACE]458850.0ns :router_test_top.t.recv
+[TRACE]458850.0ns :router_test_top.t.get_payload
+[TRACE]459250.0ns :router_test_top.t.send_pad
+[TRACE]459750.0ns :router_test_top.t.send_payload
+[TRACE]462350.0ns :router_test_top.t.check
+[TRACE]462350.0ns :router_test_top.t.compare
+[NOTE]462350.0ns Packet #132 Successfully Compared
+[TRACE]462350.0ns :router_test_top.t.gen
+[TRACE]462350.0ns :router_test_top.t.send
+[TRACE]462350.0ns :router_test_top.t.send_addrs
+[TRACE]462350.0ns :router_test_top.t.recv
+[TRACE]462350.0ns :router_test_top.t.get_payload
+[TRACE]462750.0ns :router_test_top.t.send_pad
+[TRACE]463250.0ns :router_test_top.t.send_payload
+[TRACE]465050.0ns :router_test_top.t.check
+[TRACE]465050.0ns :router_test_top.t.compare
+[NOTE]465050.0ns Packet #133 Successfully Compared
+[TRACE]465050.0ns :router_test_top.t.gen
+[TRACE]465050.0ns :router_test_top.t.send
+[TRACE]465050.0ns :router_test_top.t.send_addrs
+[TRACE]465050.0ns :router_test_top.t.recv
+[TRACE]465050.0ns :router_test_top.t.get_payload
+[TRACE]465450.0ns :router_test_top.t.send_pad
+[TRACE]465950.0ns :router_test_top.t.send_payload
+[TRACE]468550.0ns :router_test_top.t.check
+[TRACE]468550.0ns :router_test_top.t.compare
+[NOTE]468550.0ns Packet #134 Successfully Compared
+[TRACE]468550.0ns :router_test_top.t.gen
+[TRACE]468550.0ns :router_test_top.t.send
+[TRACE]468550.0ns :router_test_top.t.send_addrs
+[TRACE]468550.0ns :router_test_top.t.recv
+[TRACE]468550.0ns :router_test_top.t.get_payload
+[TRACE]468950.0ns :router_test_top.t.send_pad
+[TRACE]469450.0ns :router_test_top.t.send_payload
+[TRACE]472850.0ns :router_test_top.t.check
+[TRACE]472850.0ns :router_test_top.t.compare
+[NOTE]472850.0ns Packet #135 Successfully Compared
+[TRACE]472850.0ns :router_test_top.t.gen
+[TRACE]472850.0ns :router_test_top.t.send
+[TRACE]472850.0ns :router_test_top.t.send_addrs
+[TRACE]472850.0ns :router_test_top.t.recv
+[TRACE]472850.0ns :router_test_top.t.get_payload
+[TRACE]473250.0ns :router_test_top.t.send_pad
+[TRACE]473750.0ns :router_test_top.t.send_payload
+[TRACE]475550.0ns :router_test_top.t.check
+[TRACE]475550.0ns :router_test_top.t.compare
+[NOTE]475550.0ns Packet #136 Successfully Compared
+[TRACE]475550.0ns :router_test_top.t.gen
+[TRACE]475550.0ns :router_test_top.t.send
+[TRACE]475550.0ns :router_test_top.t.send_addrs
+[TRACE]475550.0ns :router_test_top.t.recv
+[TRACE]475550.0ns :router_test_top.t.get_payload
+[TRACE]475950.0ns :router_test_top.t.send_pad
+[TRACE]476450.0ns :router_test_top.t.send_payload
+[TRACE]479850.0ns :router_test_top.t.check
+[TRACE]479850.0ns :router_test_top.t.compare
+[NOTE]479850.0ns Packet #137 Successfully Compared
+[TRACE]479850.0ns :router_test_top.t.gen
+[TRACE]479850.0ns :router_test_top.t.send
+[TRACE]479850.0ns :router_test_top.t.send_addrs
+[TRACE]479850.0ns :router_test_top.t.recv
+[TRACE]479850.0ns :router_test_top.t.get_payload
+[TRACE]480250.0ns :router_test_top.t.send_pad
+[TRACE]480750.0ns :router_test_top.t.send_payload
+[TRACE]484150.0ns :router_test_top.t.check
+[TRACE]484150.0ns :router_test_top.t.compare
+[NOTE]484150.0ns Packet #138 Successfully Compared
+[TRACE]484150.0ns :router_test_top.t.gen
+[TRACE]484150.0ns :router_test_top.t.send
+[TRACE]484150.0ns :router_test_top.t.send_addrs
+[TRACE]484150.0ns :router_test_top.t.recv
+[TRACE]484150.0ns :router_test_top.t.get_payload
+[TRACE]484550.0ns :router_test_top.t.send_pad
+[TRACE]485050.0ns :router_test_top.t.send_payload
+[TRACE]486850.0ns :router_test_top.t.check
+[TRACE]486850.0ns :router_test_top.t.compare
+[NOTE]486850.0ns Packet #139 Successfully Compared
+[TRACE]486850.0ns :router_test_top.t.gen
+[TRACE]486850.0ns :router_test_top.t.send
+[TRACE]486850.0ns :router_test_top.t.send_addrs
+[TRACE]486850.0ns :router_test_top.t.recv
+[TRACE]486850.0ns :router_test_top.t.get_payload
+[TRACE]487250.0ns :router_test_top.t.send_pad
+[TRACE]487750.0ns :router_test_top.t.send_payload
+[TRACE]490350.0ns :router_test_top.t.check
+[TRACE]490350.0ns :router_test_top.t.compare
+[NOTE]490350.0ns Packet #140 Successfully Compared
+[TRACE]490350.0ns :router_test_top.t.gen
+[TRACE]490350.0ns :router_test_top.t.send
+[TRACE]490350.0ns :router_test_top.t.send_addrs
+[TRACE]490350.0ns :router_test_top.t.recv
+[TRACE]490350.0ns :router_test_top.t.get_payload
+[TRACE]490750.0ns :router_test_top.t.send_pad
+[TRACE]491250.0ns :router_test_top.t.send_payload
+[TRACE]493050.0ns :router_test_top.t.check
+[TRACE]493050.0ns :router_test_top.t.compare
+[NOTE]493050.0ns Packet #141 Successfully Compared
+[TRACE]493050.0ns :router_test_top.t.gen
+[TRACE]493050.0ns :router_test_top.t.send
+[TRACE]493050.0ns :router_test_top.t.send_addrs
+[TRACE]493050.0ns :router_test_top.t.recv
+[TRACE]493050.0ns :router_test_top.t.get_payload
+[TRACE]493450.0ns :router_test_top.t.send_pad
+[TRACE]493950.0ns :router_test_top.t.send_payload
+[TRACE]495750.0ns :router_test_top.t.check
+[TRACE]495750.0ns :router_test_top.t.compare
+[NOTE]495750.0ns Packet #142 Successfully Compared
+[TRACE]495750.0ns :router_test_top.t.gen
+[TRACE]495750.0ns :router_test_top.t.send
+[TRACE]495750.0ns :router_test_top.t.send_addrs
+[TRACE]495750.0ns :router_test_top.t.recv
+[TRACE]495750.0ns :router_test_top.t.get_payload
+[TRACE]496150.0ns :router_test_top.t.send_pad
+[TRACE]496650.0ns :router_test_top.t.send_payload
+[TRACE]499250.0ns :router_test_top.t.check
+[TRACE]499250.0ns :router_test_top.t.compare
+[NOTE]499250.0ns Packet #143 Successfully Compared
+[TRACE]499250.0ns :router_test_top.t.gen
+[TRACE]499250.0ns :router_test_top.t.send
+[TRACE]499250.0ns :router_test_top.t.send_addrs
+[TRACE]499250.0ns :router_test_top.t.recv
+[TRACE]499250.0ns :router_test_top.t.get_payload
+[TRACE]499650.0ns :router_test_top.t.send_pad
+[TRACE]500150.0ns :router_test_top.t.send_payload
+[TRACE]502750.0ns :router_test_top.t.check
+[TRACE]502750.0ns :router_test_top.t.compare
+[NOTE]502750.0ns Packet #144 Successfully Compared
+[TRACE]502750.0ns :router_test_top.t.gen
+[TRACE]502750.0ns :router_test_top.t.send
+[TRACE]502750.0ns :router_test_top.t.send_addrs
+[TRACE]502750.0ns :router_test_top.t.recv
+[TRACE]502750.0ns :router_test_top.t.get_payload
+[TRACE]503150.0ns :router_test_top.t.send_pad
+[TRACE]503650.0ns :router_test_top.t.send_payload
+[TRACE]506250.0ns :router_test_top.t.check
+[TRACE]506250.0ns :router_test_top.t.compare
+[NOTE]506250.0ns Packet #145 Successfully Compared
+[TRACE]506250.0ns :router_test_top.t.gen
+[TRACE]506250.0ns :router_test_top.t.send
+[TRACE]506250.0ns :router_test_top.t.send_addrs
+[TRACE]506250.0ns :router_test_top.t.recv
+[TRACE]506250.0ns :router_test_top.t.get_payload
+[TRACE]506650.0ns :router_test_top.t.send_pad
+[TRACE]507150.0ns :router_test_top.t.send_payload
+[TRACE]510550.0ns :router_test_top.t.check
+[TRACE]510550.0ns :router_test_top.t.compare
+[NOTE]510550.0ns Packet #146 Successfully Compared
+[TRACE]510550.0ns :router_test_top.t.gen
+[TRACE]510550.0ns :router_test_top.t.send
+[TRACE]510550.0ns :router_test_top.t.send_addrs
+[TRACE]510550.0ns :router_test_top.t.recv
+[TRACE]510550.0ns :router_test_top.t.get_payload
+[TRACE]510950.0ns :router_test_top.t.send_pad
+[TRACE]511450.0ns :router_test_top.t.send_payload
+[TRACE]514850.0ns :router_test_top.t.check
+[TRACE]514850.0ns :router_test_top.t.compare
+[NOTE]514850.0ns Packet #147 Successfully Compared
+[TRACE]514850.0ns :router_test_top.t.gen
+[TRACE]514850.0ns :router_test_top.t.send
+[TRACE]514850.0ns :router_test_top.t.send_addrs
+[TRACE]514850.0ns :router_test_top.t.recv
+[TRACE]514850.0ns :router_test_top.t.get_payload
+[TRACE]515250.0ns :router_test_top.t.send_pad
+[TRACE]515750.0ns :router_test_top.t.send_payload
+[TRACE]518350.0ns :router_test_top.t.check
+[TRACE]518350.0ns :router_test_top.t.compare
+[NOTE]518350.0ns Packet #148 Successfully Compared
+[TRACE]518350.0ns :router_test_top.t.gen
+[TRACE]518350.0ns :router_test_top.t.send
+[TRACE]518350.0ns :router_test_top.t.send_addrs
+[TRACE]518350.0ns :router_test_top.t.recv
+[TRACE]518350.0ns :router_test_top.t.get_payload
+[TRACE]518750.0ns :router_test_top.t.send_pad
+[TRACE]519250.0ns :router_test_top.t.send_payload
+[TRACE]521850.0ns :router_test_top.t.check
+[TRACE]521850.0ns :router_test_top.t.compare
+[NOTE]521850.0ns Packet #149 Successfully Compared
+[TRACE]521850.0ns :router_test_top.t.gen
+[TRACE]521850.0ns :router_test_top.t.send
+[TRACE]521850.0ns :router_test_top.t.send_addrs
+[TRACE]521850.0ns :router_test_top.t.recv
+[TRACE]521850.0ns :router_test_top.t.get_payload
+[TRACE]522250.0ns :router_test_top.t.send_pad
+[TRACE]522750.0ns :router_test_top.t.send_payload
+[TRACE]524550.0ns :router_test_top.t.check
+[TRACE]524550.0ns :router_test_top.t.compare
+[NOTE]524550.0ns Packet #150 Successfully Compared
+[TRACE]524550.0ns :router_test_top.t.gen
+[TRACE]524550.0ns :router_test_top.t.send
+[TRACE]524550.0ns :router_test_top.t.send_addrs
+[TRACE]524550.0ns :router_test_top.t.recv
+[TRACE]524550.0ns :router_test_top.t.get_payload
+[TRACE]524950.0ns :router_test_top.t.send_pad
+[TRACE]525450.0ns :router_test_top.t.send_payload
+[TRACE]528050.0ns :router_test_top.t.check
+[TRACE]528050.0ns :router_test_top.t.compare
+[NOTE]528050.0ns Packet #151 Successfully Compared
+[TRACE]528050.0ns :router_test_top.t.gen
+[TRACE]528050.0ns :router_test_top.t.send
+[TRACE]528050.0ns :router_test_top.t.send_addrs
+[TRACE]528050.0ns :router_test_top.t.recv
+[TRACE]528050.0ns :router_test_top.t.get_payload
+[TRACE]528450.0ns :router_test_top.t.send_pad
+[TRACE]528950.0ns :router_test_top.t.send_payload
+[TRACE]531550.0ns :router_test_top.t.check
+[TRACE]531550.0ns :router_test_top.t.compare
+[NOTE]531550.0ns Packet #152 Successfully Compared
+[TRACE]531550.0ns :router_test_top.t.gen
+[TRACE]531550.0ns :router_test_top.t.send
+[TRACE]531550.0ns :router_test_top.t.send_addrs
+[TRACE]531550.0ns :router_test_top.t.recv
+[TRACE]531550.0ns :router_test_top.t.get_payload
+[TRACE]531950.0ns :router_test_top.t.send_pad
+[TRACE]532450.0ns :router_test_top.t.send_payload
+[TRACE]535850.0ns :router_test_top.t.check
+[TRACE]535850.0ns :router_test_top.t.compare
+[NOTE]535850.0ns Packet #153 Successfully Compared
+[TRACE]535850.0ns :router_test_top.t.gen
+[TRACE]535850.0ns :router_test_top.t.send
+[TRACE]535850.0ns :router_test_top.t.send_addrs
+[TRACE]535850.0ns :router_test_top.t.recv
+[TRACE]535850.0ns :router_test_top.t.get_payload
+[TRACE]536250.0ns :router_test_top.t.send_pad
+[TRACE]536750.0ns :router_test_top.t.send_payload
+[TRACE]538550.0ns :router_test_top.t.check
+[TRACE]538550.0ns :router_test_top.t.compare
+[NOTE]538550.0ns Packet #154 Successfully Compared
+[TRACE]538550.0ns :router_test_top.t.gen
+[TRACE]538550.0ns :router_test_top.t.send
+[TRACE]538550.0ns :router_test_top.t.send_addrs
+[TRACE]538550.0ns :router_test_top.t.recv
+[TRACE]538550.0ns :router_test_top.t.get_payload
+[TRACE]538950.0ns :router_test_top.t.send_pad
+[TRACE]539450.0ns :router_test_top.t.send_payload
+[TRACE]542850.0ns :router_test_top.t.check
+[TRACE]542850.0ns :router_test_top.t.compare
+[NOTE]542850.0ns Packet #155 Successfully Compared
+[TRACE]542850.0ns :router_test_top.t.gen
+[TRACE]542850.0ns :router_test_top.t.send
+[TRACE]542850.0ns :router_test_top.t.send_addrs
+[TRACE]542850.0ns :router_test_top.t.recv
+[TRACE]542850.0ns :router_test_top.t.get_payload
+[TRACE]543250.0ns :router_test_top.t.send_pad
+[TRACE]543750.0ns :router_test_top.t.send_payload
+[TRACE]547150.0ns :router_test_top.t.check
+[TRACE]547150.0ns :router_test_top.t.compare
+[NOTE]547150.0ns Packet #156 Successfully Compared
+[TRACE]547150.0ns :router_test_top.t.gen
+[TRACE]547150.0ns :router_test_top.t.send
+[TRACE]547150.0ns :router_test_top.t.send_addrs
+[TRACE]547150.0ns :router_test_top.t.recv
+[TRACE]547150.0ns :router_test_top.t.get_payload
+[TRACE]547550.0ns :router_test_top.t.send_pad
+[TRACE]548050.0ns :router_test_top.t.send_payload
+[TRACE]549850.0ns :router_test_top.t.check
+[TRACE]549850.0ns :router_test_top.t.compare
+[NOTE]549850.0ns Packet #157 Successfully Compared
+[TRACE]549850.0ns :router_test_top.t.gen
+[TRACE]549850.0ns :router_test_top.t.send
+[TRACE]549850.0ns :router_test_top.t.send_addrs
+[TRACE]549850.0ns :router_test_top.t.recv
+[TRACE]549850.0ns :router_test_top.t.get_payload
+[TRACE]550250.0ns :router_test_top.t.send_pad
+[TRACE]550750.0ns :router_test_top.t.send_payload
+[TRACE]552550.0ns :router_test_top.t.check
+[TRACE]552550.0ns :router_test_top.t.compare
+[NOTE]552550.0ns Packet #158 Successfully Compared
+[TRACE]552550.0ns :router_test_top.t.gen
+[TRACE]552550.0ns :router_test_top.t.send
+[TRACE]552550.0ns :router_test_top.t.send_addrs
+[TRACE]552550.0ns :router_test_top.t.recv
+[TRACE]552550.0ns :router_test_top.t.get_payload
+[TRACE]552950.0ns :router_test_top.t.send_pad
+[TRACE]553450.0ns :router_test_top.t.send_payload
+[TRACE]555250.0ns :router_test_top.t.check
+[TRACE]555250.0ns :router_test_top.t.compare
+[NOTE]555250.0ns Packet #159 Successfully Compared
+[TRACE]555250.0ns :router_test_top.t.gen
+[TRACE]555250.0ns :router_test_top.t.send
+[TRACE]555250.0ns :router_test_top.t.send_addrs
+[TRACE]555250.0ns :router_test_top.t.recv
+[TRACE]555250.0ns :router_test_top.t.get_payload
+[TRACE]555650.0ns :router_test_top.t.send_pad
+[TRACE]556150.0ns :router_test_top.t.send_payload
+[TRACE]558750.0ns :router_test_top.t.check
+[TRACE]558750.0ns :router_test_top.t.compare
+[NOTE]558750.0ns Packet #160 Successfully Compared
+[TRACE]558750.0ns :router_test_top.t.gen
+[TRACE]558750.0ns :router_test_top.t.send
+[TRACE]558750.0ns :router_test_top.t.send_addrs
+[TRACE]558750.0ns :router_test_top.t.recv
+[TRACE]558750.0ns :router_test_top.t.get_payload
+[TRACE]559150.0ns :router_test_top.t.send_pad
+[TRACE]559650.0ns :router_test_top.t.send_payload
+[TRACE]562250.0ns :router_test_top.t.check
+[TRACE]562250.0ns :router_test_top.t.compare
+[NOTE]562250.0ns Packet #161 Successfully Compared
+[TRACE]562250.0ns :router_test_top.t.gen
+[TRACE]562250.0ns :router_test_top.t.send
+[TRACE]562250.0ns :router_test_top.t.send_addrs
+[TRACE]562250.0ns :router_test_top.t.recv
+[TRACE]562250.0ns :router_test_top.t.get_payload
+[TRACE]562650.0ns :router_test_top.t.send_pad
+[TRACE]563150.0ns :router_test_top.t.send_payload
+[TRACE]565750.0ns :router_test_top.t.check
+[TRACE]565750.0ns :router_test_top.t.compare
+[NOTE]565750.0ns Packet #162 Successfully Compared
+[TRACE]565750.0ns :router_test_top.t.gen
+[TRACE]565750.0ns :router_test_top.t.send
+[TRACE]565750.0ns :router_test_top.t.send_addrs
+[TRACE]565750.0ns :router_test_top.t.recv
+[TRACE]565750.0ns :router_test_top.t.get_payload
+[TRACE]566150.0ns :router_test_top.t.send_pad
+[TRACE]566650.0ns :router_test_top.t.send_payload
+[TRACE]570050.0ns :router_test_top.t.check
+[TRACE]570050.0ns :router_test_top.t.compare
+[NOTE]570050.0ns Packet #163 Successfully Compared
+[TRACE]570050.0ns :router_test_top.t.gen
+[TRACE]570050.0ns :router_test_top.t.send
+[TRACE]570050.0ns :router_test_top.t.send_addrs
+[TRACE]570050.0ns :router_test_top.t.recv
+[TRACE]570050.0ns :router_test_top.t.get_payload
+[TRACE]570450.0ns :router_test_top.t.send_pad
+[TRACE]570950.0ns :router_test_top.t.send_payload
+[TRACE]572750.0ns :router_test_top.t.check
+[TRACE]572750.0ns :router_test_top.t.compare
+[NOTE]572750.0ns Packet #164 Successfully Compared
+[TRACE]572750.0ns :router_test_top.t.gen
+[TRACE]572750.0ns :router_test_top.t.send
+[TRACE]572750.0ns :router_test_top.t.send_addrs
+[TRACE]572750.0ns :router_test_top.t.recv
+[TRACE]572750.0ns :router_test_top.t.get_payload
+[TRACE]573150.0ns :router_test_top.t.send_pad
+[TRACE]573650.0ns :router_test_top.t.send_payload
+[TRACE]575450.0ns :router_test_top.t.check
+[TRACE]575450.0ns :router_test_top.t.compare
+[NOTE]575450.0ns Packet #165 Successfully Compared
+[TRACE]575450.0ns :router_test_top.t.gen
+[TRACE]575450.0ns :router_test_top.t.send
+[TRACE]575450.0ns :router_test_top.t.send_addrs
+[TRACE]575450.0ns :router_test_top.t.recv
+[TRACE]575450.0ns :router_test_top.t.get_payload
+[TRACE]575850.0ns :router_test_top.t.send_pad
+[TRACE]576350.0ns :router_test_top.t.send_payload
+[TRACE]578150.0ns :router_test_top.t.check
+[TRACE]578150.0ns :router_test_top.t.compare
+[NOTE]578150.0ns Packet #166 Successfully Compared
+[TRACE]578150.0ns :router_test_top.t.gen
+[TRACE]578150.0ns :router_test_top.t.send
+[TRACE]578150.0ns :router_test_top.t.send_addrs
+[TRACE]578150.0ns :router_test_top.t.recv
+[TRACE]578150.0ns :router_test_top.t.get_payload
+[TRACE]578550.0ns :router_test_top.t.send_pad
+[TRACE]579050.0ns :router_test_top.t.send_payload
+[TRACE]582450.0ns :router_test_top.t.check
+[TRACE]582450.0ns :router_test_top.t.compare
+[NOTE]582450.0ns Packet #167 Successfully Compared
+[TRACE]582450.0ns :router_test_top.t.gen
+[TRACE]582450.0ns :router_test_top.t.send
+[TRACE]582450.0ns :router_test_top.t.send_addrs
+[TRACE]582450.0ns :router_test_top.t.recv
+[TRACE]582450.0ns :router_test_top.t.get_payload
+[TRACE]582850.0ns :router_test_top.t.send_pad
+[TRACE]583350.0ns :router_test_top.t.send_payload
+[TRACE]585150.0ns :router_test_top.t.check
+[TRACE]585150.0ns :router_test_top.t.compare
+[NOTE]585150.0ns Packet #168 Successfully Compared
+[TRACE]585150.0ns :router_test_top.t.gen
+[TRACE]585150.0ns :router_test_top.t.send
+[TRACE]585150.0ns :router_test_top.t.send_addrs
+[TRACE]585150.0ns :router_test_top.t.recv
+[TRACE]585150.0ns :router_test_top.t.get_payload
+[TRACE]585550.0ns :router_test_top.t.send_pad
+[TRACE]586050.0ns :router_test_top.t.send_payload
+[TRACE]587850.0ns :router_test_top.t.check
+[TRACE]587850.0ns :router_test_top.t.compare
+[NOTE]587850.0ns Packet #169 Successfully Compared
+[TRACE]587850.0ns :router_test_top.t.gen
+[TRACE]587850.0ns :router_test_top.t.send
+[TRACE]587850.0ns :router_test_top.t.send_addrs
+[TRACE]587850.0ns :router_test_top.t.recv
+[TRACE]587850.0ns :router_test_top.t.get_payload
+[TRACE]588250.0ns :router_test_top.t.send_pad
+[TRACE]588750.0ns :router_test_top.t.send_payload
+[TRACE]591350.0ns :router_test_top.t.check
+[TRACE]591350.0ns :router_test_top.t.compare
+[NOTE]591350.0ns Packet #170 Successfully Compared
+[TRACE]632350.0ns :router_test_top.t.run_packets
+[TRACE]632350.0ns :router_test_top.t.gen
+[TRACE]632350.0ns :router_test_top.t.send
+[TRACE]632350.0ns :router_test_top.t.send_addrs
+[TRACE]632350.0ns :router_test_top.t.recv
+[TRACE]632350.0ns :router_test_top.t.get_payload
+[TRACE]632750.0ns :router_test_top.t.send_pad
+[TRACE]633250.0ns :router_test_top.t.send_payload
+[TRACE]635850.0ns :router_test_top.t.check
+[TRACE]635850.0ns :router_test_top.t.compare
+[NOTE]635850.0ns Packet #171 Successfully Compared
+[TRACE]635850.0ns :router_test_top.t.gen
+[TRACE]635850.0ns :router_test_top.t.send
+[TRACE]635850.0ns :router_test_top.t.send_addrs
+[TRACE]635850.0ns :router_test_top.t.recv
+[TRACE]635850.0ns :router_test_top.t.get_payload
+[TRACE]636250.0ns :router_test_top.t.send_pad
+[TRACE]636750.0ns :router_test_top.t.send_payload
+[TRACE]638550.0ns :router_test_top.t.check
+[TRACE]638550.0ns :router_test_top.t.compare
+[NOTE]638550.0ns Packet #172 Successfully Compared
+[TRACE]638550.0ns :router_test_top.t.gen
+[TRACE]638550.0ns :router_test_top.t.send
+[TRACE]638550.0ns :router_test_top.t.send_addrs
+[TRACE]638550.0ns :router_test_top.t.recv
+[TRACE]638550.0ns :router_test_top.t.get_payload
+[TRACE]638950.0ns :router_test_top.t.send_pad
+[TRACE]639450.0ns :router_test_top.t.send_payload
+[TRACE]642850.0ns :router_test_top.t.check
+[TRACE]642850.0ns :router_test_top.t.compare
+[NOTE]642850.0ns Packet #173 Successfully Compared
+[TRACE]642850.0ns :router_test_top.t.gen
+[TRACE]642850.0ns :router_test_top.t.send
+[TRACE]642850.0ns :router_test_top.t.send_addrs
+[TRACE]642850.0ns :router_test_top.t.recv
+[TRACE]642850.0ns :router_test_top.t.get_payload
+[TRACE]643250.0ns :router_test_top.t.send_pad
+[TRACE]643750.0ns :router_test_top.t.send_payload
+[TRACE]647150.0ns :router_test_top.t.check
+[TRACE]647150.0ns :router_test_top.t.compare
+[NOTE]647150.0ns Packet #174 Successfully Compared
+[TRACE]647150.0ns :router_test_top.t.gen
+[TRACE]647150.0ns :router_test_top.t.send
+[TRACE]647150.0ns :router_test_top.t.send_addrs
+[TRACE]647150.0ns :router_test_top.t.recv
+[TRACE]647150.0ns :router_test_top.t.get_payload
+[TRACE]647550.0ns :router_test_top.t.send_pad
+[TRACE]648050.0ns :router_test_top.t.send_payload
+[TRACE]650650.0ns :router_test_top.t.check
+[TRACE]650650.0ns :router_test_top.t.compare
+[NOTE]650650.0ns Packet #175 Successfully Compared
+[TRACE]650650.0ns :router_test_top.t.gen
+[TRACE]650650.0ns :router_test_top.t.send
+[TRACE]650650.0ns :router_test_top.t.send_addrs
+[TRACE]650650.0ns :router_test_top.t.recv
+[TRACE]650650.0ns :router_test_top.t.get_payload
+[TRACE]651050.0ns :router_test_top.t.send_pad
+[TRACE]651550.0ns :router_test_top.t.send_payload
+[TRACE]654150.0ns :router_test_top.t.check
+[TRACE]654150.0ns :router_test_top.t.compare
+[NOTE]654150.0ns Packet #176 Successfully Compared
+[TRACE]654150.0ns :router_test_top.t.gen
+[TRACE]654150.0ns :router_test_top.t.send
+[TRACE]654150.0ns :router_test_top.t.send_addrs
+[TRACE]654150.0ns :router_test_top.t.recv
+[TRACE]654150.0ns :router_test_top.t.get_payload
+[TRACE]654550.0ns :router_test_top.t.send_pad
+[TRACE]655050.0ns :router_test_top.t.send_payload
+[TRACE]657650.0ns :router_test_top.t.check
+[TRACE]657650.0ns :router_test_top.t.compare
+[NOTE]657650.0ns Packet #177 Successfully Compared
+[TRACE]657650.0ns :router_test_top.t.gen
+[TRACE]657650.0ns :router_test_top.t.send
+[TRACE]657650.0ns :router_test_top.t.send_addrs
+[TRACE]657650.0ns :router_test_top.t.recv
+[TRACE]657650.0ns :router_test_top.t.get_payload
+[TRACE]658050.0ns :router_test_top.t.send_pad
+[TRACE]658550.0ns :router_test_top.t.send_payload
+[TRACE]660350.0ns :router_test_top.t.check
+[TRACE]660350.0ns :router_test_top.t.compare
+[NOTE]660350.0ns Packet #178 Successfully Compared
+[TRACE]660350.0ns :router_test_top.t.gen
+[TRACE]660350.0ns :router_test_top.t.send
+[TRACE]660350.0ns :router_test_top.t.send_addrs
+[TRACE]660350.0ns :router_test_top.t.recv
+[TRACE]660350.0ns :router_test_top.t.get_payload
+[TRACE]660750.0ns :router_test_top.t.send_pad
+[TRACE]661250.0ns :router_test_top.t.send_payload
+[TRACE]664650.0ns :router_test_top.t.check
+[TRACE]664650.0ns :router_test_top.t.compare
+[NOTE]664650.0ns Packet #179 Successfully Compared
+[TRACE]664650.0ns :router_test_top.t.gen
+[TRACE]664650.0ns :router_test_top.t.send
+[TRACE]664650.0ns :router_test_top.t.send_addrs
+[TRACE]664650.0ns :router_test_top.t.recv
+[TRACE]664650.0ns :router_test_top.t.get_payload
+[TRACE]665050.0ns :router_test_top.t.send_pad
+[TRACE]665550.0ns :router_test_top.t.send_payload
+[TRACE]667350.0ns :router_test_top.t.ip_power_cycle
+[TRACE]667350.0ns :router_test_top.t.op_power_cycle
+[TRACE]667450.0ns :router_test_top.t.ip_power_off
+[TRACE]668950.0ns :router_test_top.t.check
+[TRACE]668950.0ns :router_test_top.t.compare
+[NOTE]668950.0ns Packet #180 Successfully Compared
+[TRACE]668950.0ns :router_test_top.t.gen
+[TRACE]668950.0ns :router_test_top.t.send
+[TRACE]668950.0ns :router_test_top.t.send_addrs
+[TRACE]668950.0ns :router_test_top.t.recv
+[TRACE]668950.0ns :router_test_top.t.get_payload
+[TRACE]669050.0ns :router_test_top.t.op_power_off
+[TRACE]669350.0ns :router_test_top.t.send_pad
+[TRACE]669850.0ns :router_test_top.t.send_payload
+[TRACE]673250.0ns :router_test_top.t.check
+[TRACE]673250.0ns :router_test_top.t.compare
+[NOTE]673250.0ns Packet #181 Successfully Compared
+[TRACE]673250.0ns :router_test_top.t.gen
+[TRACE]673250.0ns :router_test_top.t.send
+[TRACE]673250.0ns :router_test_top.t.send_addrs
+[TRACE]673250.0ns :router_test_top.t.recv
+[TRACE]673250.0ns :router_test_top.t.get_payload
+[TRACE]673650.0ns :router_test_top.t.send_pad
+[TRACE]674150.0ns :router_test_top.t.send_payload
+[TRACE]675950.0ns :router_test_top.t.check
+[TRACE]675950.0ns :router_test_top.t.compare
+[NOTE]675950.0ns Packet #182 Successfully Compared
+[TRACE]675950.0ns :router_test_top.t.gen
+[TRACE]675950.0ns :router_test_top.t.send
+[TRACE]675950.0ns :router_test_top.t.send_addrs
+[TRACE]675950.0ns :router_test_top.t.recv
+[TRACE]675950.0ns :router_test_top.t.get_payload
+[TRACE]676350.0ns :router_test_top.t.send_pad
+[TRACE]676850.0ns :router_test_top.t.send_payload
+[TRACE]678650.0ns :router_test_top.t.check
+[TRACE]678650.0ns :router_test_top.t.compare
+[NOTE]678650.0ns Packet #183 Successfully Compared
+[TRACE]678650.0ns :router_test_top.t.gen
+[TRACE]678650.0ns :router_test_top.t.send
+[TRACE]678650.0ns :router_test_top.t.send_addrs
+[TRACE]678650.0ns :router_test_top.t.recv
+[TRACE]678650.0ns :router_test_top.t.get_payload
+[TRACE]679050.0ns :router_test_top.t.send_pad
+[TRACE]679550.0ns :router_test_top.t.send_payload
+[TRACE]681350.0ns :router_test_top.t.check
+[TRACE]681350.0ns :router_test_top.t.compare
+[NOTE]681350.0ns Packet #184 Successfully Compared
+[TRACE]681350.0ns :router_test_top.t.gen
+[TRACE]681350.0ns :router_test_top.t.send
+[TRACE]681350.0ns :router_test_top.t.send_addrs
+[TRACE]681350.0ns :router_test_top.t.recv
+[TRACE]681350.0ns :router_test_top.t.get_payload
+[TRACE]681750.0ns :router_test_top.t.send_pad
+[TRACE]682250.0ns :router_test_top.t.send_payload
+[TRACE]684850.0ns :router_test_top.t.check
+[TRACE]684850.0ns :router_test_top.t.compare
+[NOTE]684850.0ns Packet #185 Successfully Compared
+[TRACE]684850.0ns :router_test_top.t.gen
+[TRACE]684850.0ns :router_test_top.t.send
+[TRACE]684850.0ns :router_test_top.t.send_addrs
+[TRACE]684850.0ns :router_test_top.t.recv
+[TRACE]684850.0ns :router_test_top.t.get_payload
+[TRACE]685250.0ns :router_test_top.t.send_pad
+[TRACE]685750.0ns :router_test_top.t.send_payload
+[TRACE]688350.0ns :router_test_top.t.check
+[TRACE]688350.0ns :router_test_top.t.compare
+[NOTE]688350.0ns Packet #186 Successfully Compared
+[TRACE]688350.0ns :router_test_top.t.gen
+[TRACE]688350.0ns :router_test_top.t.send
+[TRACE]688350.0ns :router_test_top.t.send_addrs
+[TRACE]688350.0ns :router_test_top.t.recv
+[TRACE]688350.0ns :router_test_top.t.get_payload
+[TRACE]688750.0ns :router_test_top.t.send_pad
+[TRACE]689250.0ns :router_test_top.t.send_payload
+[TRACE]691850.0ns :router_test_top.t.check
+[TRACE]691850.0ns :router_test_top.t.compare
+[NOTE]691850.0ns Packet #187 Successfully Compared
+[TRACE]691850.0ns :router_test_top.t.gen
+[TRACE]691850.0ns :router_test_top.t.send
+[TRACE]691850.0ns :router_test_top.t.send_addrs
+[TRACE]691850.0ns :router_test_top.t.recv
+[TRACE]691850.0ns :router_test_top.t.get_payload
+[TRACE]692250.0ns :router_test_top.t.send_pad
+[TRACE]692750.0ns :router_test_top.t.send_payload
+[TRACE]695350.0ns :router_test_top.t.check
+[TRACE]695350.0ns :router_test_top.t.compare
+[NOTE]695350.0ns Packet #188 Successfully Compared
+[TRACE]695350.0ns :router_test_top.t.gen
+[TRACE]695350.0ns :router_test_top.t.send
+[TRACE]695350.0ns :router_test_top.t.send_addrs
+[TRACE]695350.0ns :router_test_top.t.recv
+[TRACE]695350.0ns :router_test_top.t.get_payload
+[TRACE]695750.0ns :router_test_top.t.send_pad
+[TRACE]696250.0ns :router_test_top.t.send_payload
+[TRACE]698050.0ns :router_test_top.t.check
+[TRACE]698050.0ns :router_test_top.t.compare
+[NOTE]698050.0ns Packet #189 Successfully Compared
+[TRACE]698050.0ns :router_test_top.t.gen
+[TRACE]698050.0ns :router_test_top.t.send
+[TRACE]698050.0ns :router_test_top.t.send_addrs
+[TRACE]698050.0ns :router_test_top.t.recv
+[TRACE]698050.0ns :router_test_top.t.get_payload
+[TRACE]698450.0ns :router_test_top.t.send_pad
+[TRACE]698950.0ns :router_test_top.t.send_payload
+[TRACE]701550.0ns :router_test_top.t.check
+[TRACE]701550.0ns :router_test_top.t.compare
+[NOTE]701550.0ns Packet #190 Successfully Compared
+[TRACE]701550.0ns :router_test_top.t.gen
+[TRACE]701550.0ns :router_test_top.t.send
+[TRACE]701550.0ns :router_test_top.t.send_addrs
+[TRACE]701550.0ns :router_test_top.t.recv
+[TRACE]701550.0ns :router_test_top.t.get_payload
+[TRACE]701950.0ns :router_test_top.t.send_pad
+[TRACE]702450.0ns :router_test_top.t.send_payload
+[TRACE]704250.0ns :router_test_top.t.check
+[TRACE]704250.0ns :router_test_top.t.compare
+[NOTE]704250.0ns Packet #191 Successfully Compared
+[TRACE]704250.0ns :router_test_top.t.gen
+[TRACE]704250.0ns :router_test_top.t.send
+[TRACE]704250.0ns :router_test_top.t.send_addrs
+[TRACE]704250.0ns :router_test_top.t.recv
+[TRACE]704250.0ns :router_test_top.t.get_payload
+[TRACE]704650.0ns :router_test_top.t.send_pad
+[TRACE]705150.0ns :router_test_top.t.send_payload
+[TRACE]707650.0ns :router_test_top.t.ip_power_on
+[TRACE]707750.0ns :router_test_top.t.check
+[TRACE]707750.0ns :router_test_top.t.compare
+[NOTE]707750.0ns Packet #192 Successfully Compared
+[TRACE]707750.0ns :router_test_top.t.gen
+[TRACE]707750.0ns :router_test_top.t.send
+[TRACE]707750.0ns :router_test_top.t.send_addrs
+[TRACE]707750.0ns :router_test_top.t.recv
+[TRACE]707750.0ns :router_test_top.t.get_payload
+[TRACE]708150.0ns :router_test_top.t.send_pad
+[TRACE]708650.0ns :router_test_top.t.send_payload
+[TRACE]710450.0ns :router_test_top.t.check
+[TRACE]710450.0ns :router_test_top.t.compare
+[NOTE]710450.0ns Packet #193 Successfully Compared
+[TRACE]710450.0ns :router_test_top.t.gen
+[TRACE]710450.0ns :router_test_top.t.send
+[TRACE]710450.0ns :router_test_top.t.send_addrs
+[TRACE]710450.0ns :router_test_top.t.recv
+[TRACE]710450.0ns :router_test_top.t.get_payload
+[TRACE]710850.0ns :router_test_top.t.send_pad
+[TRACE]711350.0ns :router_test_top.t.send_payload
+[TRACE]714750.0ns :router_test_top.t.check
+[TRACE]714750.0ns :router_test_top.t.compare
+[NOTE]714750.0ns Packet #194 Successfully Compared
+[TRACE]714750.0ns :router_test_top.t.gen
+[TRACE]714750.0ns :router_test_top.t.send
+[TRACE]714750.0ns :router_test_top.t.send_addrs
+[TRACE]714750.0ns :router_test_top.t.recv
+[TRACE]714750.0ns :router_test_top.t.get_payload
+[TRACE]715150.0ns :router_test_top.t.send_pad
+[TRACE]715650.0ns :router_test_top.t.send_payload
+[TRACE]718250.0ns :router_test_top.t.check
+[TRACE]718250.0ns :router_test_top.t.compare
+[NOTE]718250.0ns Packet #195 Successfully Compared
+[TRACE]718250.0ns :router_test_top.t.gen
+[TRACE]718250.0ns :router_test_top.t.send
+[TRACE]718250.0ns :router_test_top.t.send_addrs
+[TRACE]718250.0ns :router_test_top.t.recv
+[TRACE]718250.0ns :router_test_top.t.get_payload
+[TRACE]718650.0ns :router_test_top.t.send_pad
+[TRACE]719150.0ns :router_test_top.t.send_payload
+[TRACE]719350.0ns :router_test_top.t.op_power_on
+[TRACE]721750.0ns :router_test_top.t.check
+[TRACE]721750.0ns :router_test_top.t.compare
+[NOTE]721750.0ns Packet #196 Successfully Compared
+[TRACE]721750.0ns :router_test_top.t.gen
+[TRACE]721750.0ns :router_test_top.t.send
+[TRACE]721750.0ns :router_test_top.t.send_addrs
+[TRACE]721750.0ns :router_test_top.t.recv
+[TRACE]721750.0ns :router_test_top.t.get_payload
+[TRACE]722150.0ns :router_test_top.t.send_pad
+[TRACE]722650.0ns :router_test_top.t.send_payload
+[TRACE]724450.0ns :router_test_top.t.check
+[TRACE]724450.0ns :router_test_top.t.compare
+[NOTE]724450.0ns Packet #197 Successfully Compared
+[TRACE]724450.0ns :router_test_top.t.gen
+[TRACE]724450.0ns :router_test_top.t.send
+[TRACE]724450.0ns :router_test_top.t.send_addrs
+[TRACE]724450.0ns :router_test_top.t.recv
+[TRACE]724450.0ns :router_test_top.t.get_payload
+[TRACE]724850.0ns :router_test_top.t.send_pad
+[TRACE]725350.0ns :router_test_top.t.send_payload
+[TRACE]727950.0ns :router_test_top.t.check
+[TRACE]727950.0ns :router_test_top.t.compare
+[NOTE]727950.0ns Packet #198 Successfully Compared
+[TRACE]727950.0ns :router_test_top.t.gen
+[TRACE]727950.0ns :router_test_top.t.send
+[TRACE]727950.0ns :router_test_top.t.send_addrs
+[TRACE]727950.0ns :router_test_top.t.recv
+[TRACE]727950.0ns :router_test_top.t.get_payload
+[TRACE]728350.0ns :router_test_top.t.send_pad
+[TRACE]728850.0ns :router_test_top.t.send_payload
+[TRACE]731450.0ns :router_test_top.t.check
+[TRACE]731450.0ns :router_test_top.t.compare
+[NOTE]731450.0ns Packet #199 Successfully Compared
+[TRACE]731450.0ns :router_test_top.t.gen
+[TRACE]731450.0ns :router_test_top.t.send
+[TRACE]731450.0ns :router_test_top.t.send_addrs
+[TRACE]731450.0ns :router_test_top.t.recv
+[TRACE]731450.0ns :router_test_top.t.get_payload
+[TRACE]731850.0ns :router_test_top.t.send_pad
+[TRACE]732350.0ns :router_test_top.t.send_payload
+[TRACE]734950.0ns :router_test_top.t.check
+[TRACE]734950.0ns :router_test_top.t.compare
+[NOTE]734950.0ns Packet #200 Successfully Compared
+[TRACE]734950.0ns :router_test_top.t.gen
+[TRACE]734950.0ns :router_test_top.t.send
+[TRACE]734950.0ns :router_test_top.t.send_addrs
+[TRACE]734950.0ns :router_test_top.t.recv
+[TRACE]734950.0ns :router_test_top.t.get_payload
+[TRACE]735350.0ns :router_test_top.t.send_pad
+[TRACE]735850.0ns :router_test_top.t.send_payload
+[TRACE]739250.0ns :router_test_top.t.check
+[TRACE]739250.0ns :router_test_top.t.compare
+[NOTE]739250.0ns Packet #201 Successfully Compared
+[TRACE]739250.0ns :router_test_top.t.gen
+[TRACE]739250.0ns :router_test_top.t.send
+[TRACE]739250.0ns :router_test_top.t.send_addrs
+[TRACE]739250.0ns :router_test_top.t.recv
+[TRACE]739250.0ns :router_test_top.t.get_payload
+[TRACE]739650.0ns :router_test_top.t.send_pad
+[TRACE]740150.0ns :router_test_top.t.send_payload
+[TRACE]742750.0ns :router_test_top.t.check
+[TRACE]742750.0ns :router_test_top.t.compare
+[NOTE]742750.0ns Packet #202 Successfully Compared
+[TRACE]742750.0ns :router_test_top.t.gen
+[TRACE]742750.0ns :router_test_top.t.send
+[TRACE]742750.0ns :router_test_top.t.send_addrs
+[TRACE]742750.0ns :router_test_top.t.recv
+[TRACE]742750.0ns :router_test_top.t.get_payload
+[TRACE]743150.0ns :router_test_top.t.send_pad
+[TRACE]743650.0ns :router_test_top.t.send_payload
+[TRACE]747050.0ns :router_test_top.t.check
+[TRACE]747050.0ns :router_test_top.t.compare
+[NOTE]747050.0ns Packet #203 Successfully Compared
+[TRACE]747050.0ns :router_test_top.t.gen
+[TRACE]747050.0ns :router_test_top.t.send
+[TRACE]747050.0ns :router_test_top.t.send_addrs
+[TRACE]747050.0ns :router_test_top.t.recv
+[TRACE]747050.0ns :router_test_top.t.get_payload
+[TRACE]747450.0ns :router_test_top.t.send_pad
+[TRACE]747950.0ns :router_test_top.t.send_payload
+[TRACE]751350.0ns :router_test_top.t.check
+[TRACE]751350.0ns :router_test_top.t.compare
+[NOTE]751350.0ns Packet #204 Successfully Compared
+[TRACE]751350.0ns :router_test_top.t.gen
+[TRACE]751350.0ns :router_test_top.t.send
+[TRACE]751350.0ns :router_test_top.t.send_addrs
+[TRACE]751350.0ns :router_test_top.t.recv
+[TRACE]751350.0ns :router_test_top.t.get_payload
+[TRACE]751750.0ns :router_test_top.t.send_pad
+[TRACE]752250.0ns :router_test_top.t.send_payload
+[TRACE]755650.0ns :router_test_top.t.check
+[TRACE]755650.0ns :router_test_top.t.compare
+[NOTE]755650.0ns Packet #205 Successfully Compared
+[TRACE]755650.0ns :router_test_top.t.gen
+[TRACE]755650.0ns :router_test_top.t.send
+[TRACE]755650.0ns :router_test_top.t.send_addrs
+[TRACE]755650.0ns :router_test_top.t.recv
+[TRACE]755650.0ns :router_test_top.t.get_payload
+[TRACE]756050.0ns :router_test_top.t.send_pad
+[TRACE]756550.0ns :router_test_top.t.send_payload
+[TRACE]758350.0ns :router_test_top.t.check
+[TRACE]758350.0ns :router_test_top.t.compare
+[NOTE]758350.0ns Packet #206 Successfully Compared
+[TRACE]758350.0ns :router_test_top.t.gen
+[TRACE]758350.0ns :router_test_top.t.send
+[TRACE]758350.0ns :router_test_top.t.send_addrs
+[TRACE]758350.0ns :router_test_top.t.recv
+[TRACE]758350.0ns :router_test_top.t.get_payload
+[TRACE]758750.0ns :router_test_top.t.send_pad
+[TRACE]759250.0ns :router_test_top.t.send_payload
+[TRACE]761850.0ns :router_test_top.t.check
+[TRACE]761850.0ns :router_test_top.t.compare
+[NOTE]761850.0ns Packet #207 Successfully Compared
+[TRACE]761850.0ns :router_test_top.t.gen
+[TRACE]761850.0ns :router_test_top.t.send
+[TRACE]761850.0ns :router_test_top.t.send_addrs
+[TRACE]761850.0ns :router_test_top.t.recv
+[TRACE]761850.0ns :router_test_top.t.get_payload
+[TRACE]762250.0ns :router_test_top.t.send_pad
+[TRACE]762750.0ns :router_test_top.t.send_payload
+[TRACE]764550.0ns :router_test_top.t.check
+[TRACE]764550.0ns :router_test_top.t.compare
+[NOTE]764550.0ns Packet #208 Successfully Compared
+[TRACE]764550.0ns :router_test_top.t.gen
+[TRACE]764550.0ns :router_test_top.t.send
+[TRACE]764550.0ns :router_test_top.t.send_addrs
+[TRACE]764550.0ns :router_test_top.t.recv
+[TRACE]764550.0ns :router_test_top.t.get_payload
+[TRACE]764950.0ns :router_test_top.t.send_pad
+[TRACE]765450.0ns :router_test_top.t.send_payload
+[TRACE]768050.0ns :router_test_top.t.check
+[TRACE]768050.0ns :router_test_top.t.compare
+[NOTE]768050.0ns Packet #209 Successfully Compared
+[TRACE]768050.0ns :router_test_top.t.gen
+[TRACE]768050.0ns :router_test_top.t.send
+[TRACE]768050.0ns :router_test_top.t.send_addrs
+[TRACE]768050.0ns :router_test_top.t.recv
+[TRACE]768050.0ns :router_test_top.t.get_payload
+[TRACE]768450.0ns :router_test_top.t.send_pad
+[TRACE]768950.0ns :router_test_top.t.send_payload
+[TRACE]772350.0ns :router_test_top.t.check
+[TRACE]772350.0ns :router_test_top.t.compare
+[NOTE]772350.0ns Packet #210 Successfully Compared
+[TRACE]772350.0ns :router_test_top.t.gen
+[TRACE]772350.0ns :router_test_top.t.send
+[TRACE]772350.0ns :router_test_top.t.send_addrs
+[TRACE]772350.0ns :router_test_top.t.recv
+[TRACE]772350.0ns :router_test_top.t.get_payload
+[TRACE]772750.0ns :router_test_top.t.send_pad
+[TRACE]773250.0ns :router_test_top.t.send_payload
+[TRACE]776650.0ns :router_test_top.t.check
+[TRACE]776650.0ns :router_test_top.t.compare
+[NOTE]776650.0ns Packet #211 Successfully Compared
+[TRACE]776650.0ns :router_test_top.t.gen
+[TRACE]776650.0ns :router_test_top.t.send
+[TRACE]776650.0ns :router_test_top.t.send_addrs
+[TRACE]776650.0ns :router_test_top.t.recv
+[TRACE]776650.0ns :router_test_top.t.get_payload
+[TRACE]777050.0ns :router_test_top.t.send_pad
+[TRACE]777550.0ns :router_test_top.t.send_payload
+[TRACE]779350.0ns :router_test_top.t.check
+[TRACE]779350.0ns :router_test_top.t.compare
+[NOTE]779350.0ns Packet #212 Successfully Compared
+[TRACE]779350.0ns :router_test_top.t.gen
+[TRACE]779350.0ns :router_test_top.t.send
+[TRACE]779350.0ns :router_test_top.t.send_addrs
+[TRACE]779350.0ns :router_test_top.t.recv
+[TRACE]779350.0ns :router_test_top.t.get_payload
+[TRACE]779750.0ns :router_test_top.t.send_pad
+[TRACE]780250.0ns :router_test_top.t.send_payload
+[TRACE]782850.0ns :router_test_top.t.check
+[TRACE]782850.0ns :router_test_top.t.compare
+[NOTE]782850.0ns Packet #213 Successfully Compared
+[TRACE]782850.0ns :router_test_top.t.gen
+[TRACE]782850.0ns :router_test_top.t.send
+[TRACE]782850.0ns :router_test_top.t.send_addrs
+[TRACE]782850.0ns :router_test_top.t.recv
+[TRACE]782850.0ns :router_test_top.t.get_payload
+[TRACE]783250.0ns :router_test_top.t.send_pad
+[TRACE]783750.0ns :router_test_top.t.send_payload
+[TRACE]786350.0ns :router_test_top.t.check
+[TRACE]786350.0ns :router_test_top.t.compare
+[NOTE]786350.0ns Packet #214 Successfully Compared
+[TRACE]786350.0ns :router_test_top.t.gen
+[TRACE]786350.0ns :router_test_top.t.send
+[TRACE]786350.0ns :router_test_top.t.send_addrs
+[TRACE]786350.0ns :router_test_top.t.recv
+[TRACE]786350.0ns :router_test_top.t.get_payload
+[TRACE]786750.0ns :router_test_top.t.send_pad
+[TRACE]787250.0ns :router_test_top.t.send_payload
+[TRACE]790650.0ns :router_test_top.t.check
+[TRACE]790650.0ns :router_test_top.t.compare
+[NOTE]790650.0ns Packet #215 Successfully Compared
+[TRACE]790650.0ns :router_test_top.t.gen
+[TRACE]790650.0ns :router_test_top.t.send
+[TRACE]790650.0ns :router_test_top.t.send_addrs
+[TRACE]790650.0ns :router_test_top.t.recv
+[TRACE]790650.0ns :router_test_top.t.get_payload
+[TRACE]791050.0ns :router_test_top.t.send_pad
+[TRACE]791550.0ns :router_test_top.t.send_payload
+[TRACE]794950.0ns :router_test_top.t.check
+[TRACE]794950.0ns :router_test_top.t.compare
+[NOTE]794950.0ns Packet #216 Successfully Compared
+[TRACE]794950.0ns :router_test_top.t.gen
+[TRACE]794950.0ns :router_test_top.t.send
+[TRACE]794950.0ns :router_test_top.t.send_addrs
+[TRACE]794950.0ns :router_test_top.t.recv
+[TRACE]794950.0ns :router_test_top.t.get_payload
+[TRACE]795350.0ns :router_test_top.t.send_pad
+[TRACE]795850.0ns :router_test_top.t.send_payload
+[TRACE]798450.0ns :router_test_top.t.check
+[TRACE]798450.0ns :router_test_top.t.compare
+[NOTE]798450.0ns Packet #217 Successfully Compared
+[TRACE]798450.0ns :router_test_top.t.gen
+[TRACE]798450.0ns :router_test_top.t.send
+[TRACE]798450.0ns :router_test_top.t.send_addrs
+[TRACE]798450.0ns :router_test_top.t.recv
+[TRACE]798450.0ns :router_test_top.t.get_payload
+[TRACE]798850.0ns :router_test_top.t.send_pad
+[TRACE]799350.0ns :router_test_top.t.send_payload
+[TRACE]801150.0ns :router_test_top.t.check
+[TRACE]801150.0ns :router_test_top.t.compare
+[NOTE]801150.0ns Packet #218 Successfully Compared
+[TRACE]801150.0ns :router_test_top.t.gen
+[TRACE]801150.0ns :router_test_top.t.send
+[TRACE]801150.0ns :router_test_top.t.send_addrs
+[TRACE]801150.0ns :router_test_top.t.recv
+[TRACE]801150.0ns :router_test_top.t.get_payload
+[TRACE]801550.0ns :router_test_top.t.send_pad
+[TRACE]802050.0ns :router_test_top.t.send_payload
+[TRACE]803850.0ns :router_test_top.t.check
+[TRACE]803850.0ns :router_test_top.t.compare
+[NOTE]803850.0ns Packet #219 Successfully Compared
+[TRACE]803850.0ns :router_test_top.t.gen
+[TRACE]803850.0ns :router_test_top.t.send
+[TRACE]803850.0ns :router_test_top.t.send_addrs
+[TRACE]803850.0ns :router_test_top.t.recv
+[TRACE]803850.0ns :router_test_top.t.get_payload
+[TRACE]804250.0ns :router_test_top.t.send_pad
+[TRACE]804750.0ns :router_test_top.t.send_payload
+[TRACE]806550.0ns :router_test_top.t.check
+[TRACE]806550.0ns :router_test_top.t.compare
+[NOTE]806550.0ns Packet #220 Successfully Compared
+[TRACE]806550.0ns :router_test_top.t.gen
+[TRACE]806550.0ns :router_test_top.t.send
+[TRACE]806550.0ns :router_test_top.t.send_addrs
+[TRACE]806550.0ns :router_test_top.t.recv
+[TRACE]806550.0ns :router_test_top.t.get_payload
+[TRACE]806950.0ns :router_test_top.t.send_pad
+[TRACE]807450.0ns :router_test_top.t.send_payload
+[TRACE]810850.0ns :router_test_top.t.check
+[TRACE]810850.0ns :router_test_top.t.compare
+[NOTE]810850.0ns Packet #221 Successfully Compared
+[TRACE]810850.0ns :router_test_top.t.gen
+[TRACE]810850.0ns :router_test_top.t.send
+[TRACE]810850.0ns :router_test_top.t.send_addrs
+[TRACE]810850.0ns :router_test_top.t.recv
+[TRACE]810850.0ns :router_test_top.t.get_payload
+[TRACE]811250.0ns :router_test_top.t.send_pad
+[TRACE]811750.0ns :router_test_top.t.send_payload
+[TRACE]813550.0ns :router_test_top.t.check
+[TRACE]813550.0ns :router_test_top.t.compare
+[NOTE]813550.0ns Packet #222 Successfully Compared
+[TRACE]813550.0ns :router_test_top.t.gen
+[TRACE]813550.0ns :router_test_top.t.send
+[TRACE]813550.0ns :router_test_top.t.send_addrs
+[TRACE]813550.0ns :router_test_top.t.recv
+[TRACE]813550.0ns :router_test_top.t.get_payload
+[TRACE]813950.0ns :router_test_top.t.send_pad
+[TRACE]814450.0ns :router_test_top.t.send_payload
+[TRACE]817850.0ns :router_test_top.t.check
+[TRACE]817850.0ns :router_test_top.t.compare
+[NOTE]817850.0ns Packet #223 Successfully Compared
+[TRACE]817850.0ns :router_test_top.t.gen
+[TRACE]817850.0ns :router_test_top.t.send
+[TRACE]817850.0ns :router_test_top.t.send_addrs
+[TRACE]817850.0ns :router_test_top.t.recv
+[TRACE]817850.0ns :router_test_top.t.get_payload
+[TRACE]818250.0ns :router_test_top.t.send_pad
+[TRACE]818750.0ns :router_test_top.t.send_payload
+[TRACE]820550.0ns :router_test_top.t.check
+[TRACE]820550.0ns :router_test_top.t.compare
+[NOTE]820550.0ns Packet #224 Successfully Compared
+[TRACE]820550.0ns :router_test_top.t.gen
+[TRACE]820550.0ns :router_test_top.t.send
+[TRACE]820550.0ns :router_test_top.t.send_addrs
+[TRACE]820550.0ns :router_test_top.t.recv
+[TRACE]820550.0ns :router_test_top.t.get_payload
+[TRACE]820950.0ns :router_test_top.t.send_pad
+[TRACE]821450.0ns :router_test_top.t.send_payload
+[TRACE]824850.0ns :router_test_top.t.check
+[TRACE]824850.0ns :router_test_top.t.compare
+[NOTE]824850.0ns Packet #225 Successfully Compared
+[TRACE]824850.0ns :router_test_top.t.gen
+[TRACE]824850.0ns :router_test_top.t.send
+[TRACE]824850.0ns :router_test_top.t.send_addrs
+[TRACE]824850.0ns :router_test_top.t.recv
+[TRACE]824850.0ns :router_test_top.t.get_payload
+[TRACE]825250.0ns :router_test_top.t.send_pad
+[TRACE]825750.0ns :router_test_top.t.send_payload
+[TRACE]827550.0ns :router_test_top.t.check
+[TRACE]827550.0ns :router_test_top.t.compare
+[NOTE]827550.0ns Packet #226 Successfully Compared
+[TRACE]827550.0ns :router_test_top.t.gen
+[TRACE]827550.0ns :router_test_top.t.send
+[TRACE]827550.0ns :router_test_top.t.send_addrs
+[TRACE]827550.0ns :router_test_top.t.recv
+[TRACE]827550.0ns :router_test_top.t.get_payload
+[TRACE]827950.0ns :router_test_top.t.send_pad
+[TRACE]828450.0ns :router_test_top.t.send_payload
+[TRACE]831050.0ns :router_test_top.t.check
+[TRACE]831050.0ns :router_test_top.t.compare
+[NOTE]831050.0ns Packet #227 Successfully Compared
+[TRACE]831050.0ns :router_test_top.t.gen
+[TRACE]831050.0ns :router_test_top.t.send
+[TRACE]831050.0ns :router_test_top.t.send_addrs
+[TRACE]831050.0ns :router_test_top.t.recv
+[TRACE]831050.0ns :router_test_top.t.get_payload
+[TRACE]831450.0ns :router_test_top.t.send_pad
+[TRACE]831950.0ns :router_test_top.t.send_payload
+[TRACE]833750.0ns :router_test_top.t.check
+[TRACE]833750.0ns :router_test_top.t.compare
+[NOTE]833750.0ns Packet #228 Successfully Compared
+[TRACE]833750.0ns :router_test_top.t.gen
+[TRACE]833750.0ns :router_test_top.t.send
+[TRACE]833750.0ns :router_test_top.t.send_addrs
+[TRACE]833750.0ns :router_test_top.t.recv
+[TRACE]833750.0ns :router_test_top.t.get_payload
+[TRACE]834150.0ns :router_test_top.t.send_pad
+[TRACE]834650.0ns :router_test_top.t.send_payload
+[TRACE]837250.0ns :router_test_top.t.check
+[TRACE]837250.0ns :router_test_top.t.compare
+[NOTE]837250.0ns Packet #229 Successfully Compared
+[TRACE]837250.0ns :router_test_top.t.gen
+[TRACE]837250.0ns :router_test_top.t.send
+[TRACE]837250.0ns :router_test_top.t.send_addrs
+[TRACE]837250.0ns :router_test_top.t.recv
+[TRACE]837250.0ns :router_test_top.t.get_payload
+[TRACE]837650.0ns :router_test_top.t.send_pad
+[TRACE]838150.0ns :router_test_top.t.send_payload
+[TRACE]840750.0ns :router_test_top.t.check
+[TRACE]840750.0ns :router_test_top.t.compare
+[NOTE]840750.0ns Packet #230 Successfully Compared
+[TRACE]840750.0ns :router_test_top.t.gen
+[TRACE]840750.0ns :router_test_top.t.send
+[TRACE]840750.0ns :router_test_top.t.send_addrs
+[TRACE]840750.0ns :router_test_top.t.recv
+[TRACE]840750.0ns :router_test_top.t.get_payload
+[TRACE]841150.0ns :router_test_top.t.send_pad
+[TRACE]841650.0ns :router_test_top.t.send_payload
+[TRACE]844250.0ns :router_test_top.t.check
+[TRACE]844250.0ns :router_test_top.t.compare
+[NOTE]844250.0ns Packet #231 Successfully Compared
+[TRACE]844250.0ns :router_test_top.t.gen
+[TRACE]844250.0ns :router_test_top.t.send
+[TRACE]844250.0ns :router_test_top.t.send_addrs
+[TRACE]844250.0ns :router_test_top.t.recv
+[TRACE]844250.0ns :router_test_top.t.get_payload
+[TRACE]844650.0ns :router_test_top.t.send_pad
+[TRACE]845150.0ns :router_test_top.t.send_payload
+[TRACE]847750.0ns :router_test_top.t.check
+[TRACE]847750.0ns :router_test_top.t.compare
+[NOTE]847750.0ns Packet #232 Successfully Compared
+[TRACE]847750.0ns :router_test_top.t.gen
+[TRACE]847750.0ns :router_test_top.t.send
+[TRACE]847750.0ns :router_test_top.t.send_addrs
+[TRACE]847750.0ns :router_test_top.t.recv
+[TRACE]847750.0ns :router_test_top.t.get_payload
+[TRACE]848150.0ns :router_test_top.t.send_pad
+[TRACE]848650.0ns :router_test_top.t.send_payload
+[TRACE]850450.0ns :router_test_top.t.check
+[TRACE]850450.0ns :router_test_top.t.compare
+[NOTE]850450.0ns Packet #233 Successfully Compared
+[TRACE]850450.0ns :router_test_top.t.gen
+[TRACE]850450.0ns :router_test_top.t.send
+[TRACE]850450.0ns :router_test_top.t.send_addrs
+[TRACE]850450.0ns :router_test_top.t.recv
+[TRACE]850450.0ns :router_test_top.t.get_payload
+[TRACE]850850.0ns :router_test_top.t.send_pad
+[TRACE]851350.0ns :router_test_top.t.send_payload
+[TRACE]853950.0ns :router_test_top.t.check
+[TRACE]853950.0ns :router_test_top.t.compare
+[NOTE]853950.0ns Packet #234 Successfully Compared
+[TRACE]853950.0ns :router_test_top.t.gen
+[TRACE]853950.0ns :router_test_top.t.send
+[TRACE]853950.0ns :router_test_top.t.send_addrs
+[TRACE]853950.0ns :router_test_top.t.recv
+[TRACE]853950.0ns :router_test_top.t.get_payload
+[TRACE]854350.0ns :router_test_top.t.send_pad
+[TRACE]854850.0ns :router_test_top.t.send_payload
+[TRACE]858250.0ns :router_test_top.t.check
+[TRACE]858250.0ns :router_test_top.t.compare
+[NOTE]858250.0ns Packet #235 Successfully Compared
+[TRACE]858250.0ns :router_test_top.t.gen
+[TRACE]858250.0ns :router_test_top.t.send
+[TRACE]858250.0ns :router_test_top.t.send_addrs
+[TRACE]858250.0ns :router_test_top.t.recv
+[TRACE]858250.0ns :router_test_top.t.get_payload
+[TRACE]858650.0ns :router_test_top.t.send_pad
+[TRACE]859150.0ns :router_test_top.t.send_payload
+[TRACE]861750.0ns :router_test_top.t.check
+[TRACE]861750.0ns :router_test_top.t.compare
+[NOTE]861750.0ns Packet #236 Successfully Compared
+[TRACE]861750.0ns :router_test_top.t.gen
+[TRACE]861750.0ns :router_test_top.t.send
+[TRACE]861750.0ns :router_test_top.t.send_addrs
+[TRACE]861750.0ns :router_test_top.t.recv
+[TRACE]861750.0ns :router_test_top.t.get_payload
+[TRACE]862150.0ns :router_test_top.t.send_pad
+[TRACE]862650.0ns :router_test_top.t.send_payload
+[TRACE]865250.0ns :router_test_top.t.check
+[TRACE]865250.0ns :router_test_top.t.compare
+[NOTE]865250.0ns Packet #237 Successfully Compared
+[TRACE]865250.0ns :router_test_top.t.gen
+[TRACE]865250.0ns :router_test_top.t.send
+[TRACE]865250.0ns :router_test_top.t.send_addrs
+[TRACE]865250.0ns :router_test_top.t.recv
+[TRACE]865250.0ns :router_test_top.t.get_payload
+[TRACE]865650.0ns :router_test_top.t.send_pad
+[TRACE]866150.0ns :router_test_top.t.send_payload
+[TRACE]868750.0ns :router_test_top.t.check
+[TRACE]868750.0ns :router_test_top.t.compare
+[NOTE]868750.0ns Packet #238 Successfully Compared
+[TRACE]868750.0ns :router_test_top.t.gen
+[TRACE]868750.0ns :router_test_top.t.send
+[TRACE]868750.0ns :router_test_top.t.send_addrs
+[TRACE]868750.0ns :router_test_top.t.recv
+[TRACE]868750.0ns :router_test_top.t.get_payload
+[TRACE]869150.0ns :router_test_top.t.send_pad
+[TRACE]869650.0ns :router_test_top.t.send_payload
+[TRACE]871450.0ns :router_test_top.t.check
+[TRACE]871450.0ns :router_test_top.t.compare
+[NOTE]871450.0ns Packet #239 Successfully Compared
+[TRACE]871450.0ns :router_test_top.t.gen
+[TRACE]871450.0ns :router_test_top.t.send
+[TRACE]871450.0ns :router_test_top.t.send_addrs
+[TRACE]871450.0ns :router_test_top.t.recv
+[TRACE]871450.0ns :router_test_top.t.get_payload
+[TRACE]871850.0ns :router_test_top.t.send_pad
+[TRACE]872350.0ns :router_test_top.t.send_payload
+[TRACE]875750.0ns :router_test_top.t.check
+[TRACE]875750.0ns :router_test_top.t.compare
+[NOTE]875750.0ns Packet #240 Successfully Compared
+[TRACE]875750.0ns :router_test_top.t.gen
+[TRACE]875750.0ns :router_test_top.t.send
+[TRACE]875750.0ns :router_test_top.t.send_addrs
+[TRACE]875750.0ns :router_test_top.t.recv
+[TRACE]875750.0ns :router_test_top.t.get_payload
+[TRACE]876150.0ns :router_test_top.t.send_pad
+[TRACE]876650.0ns :router_test_top.t.send_payload
+[TRACE]880050.0ns :router_test_top.t.check
+[TRACE]880050.0ns :router_test_top.t.compare
+[NOTE]880050.0ns Packet #241 Successfully Compared
+[TRACE]880050.0ns :router_test_top.t.gen
+[TRACE]880050.0ns :router_test_top.t.send
+[TRACE]880050.0ns :router_test_top.t.send_addrs
+[TRACE]880050.0ns :router_test_top.t.recv
+[TRACE]880050.0ns :router_test_top.t.get_payload
+[TRACE]880450.0ns :router_test_top.t.send_pad
+[TRACE]880950.0ns :router_test_top.t.send_payload
+[TRACE]882750.0ns :router_test_top.t.check
+[TRACE]882750.0ns :router_test_top.t.compare
+[NOTE]882750.0ns Packet #242 Successfully Compared
+[TRACE]882750.0ns :router_test_top.t.gen
+[TRACE]882750.0ns :router_test_top.t.send
+[TRACE]882750.0ns :router_test_top.t.send_addrs
+[TRACE]882750.0ns :router_test_top.t.recv
+[TRACE]882750.0ns :router_test_top.t.get_payload
+[TRACE]883150.0ns :router_test_top.t.send_pad
+[TRACE]883650.0ns :router_test_top.t.send_payload
+[TRACE]887050.0ns :router_test_top.t.check
+[TRACE]887050.0ns :router_test_top.t.compare
+[NOTE]887050.0ns Packet #243 Successfully Compared
+[TRACE]887050.0ns :router_test_top.t.gen
+[TRACE]887050.0ns :router_test_top.t.send
+[TRACE]887050.0ns :router_test_top.t.send_addrs
+[TRACE]887050.0ns :router_test_top.t.recv
+[TRACE]887050.0ns :router_test_top.t.get_payload
+[TRACE]887450.0ns :router_test_top.t.send_pad
+[TRACE]887950.0ns :router_test_top.t.send_payload
+[TRACE]891350.0ns :router_test_top.t.check
+[TRACE]891350.0ns :router_test_top.t.compare
+[NOTE]891350.0ns Packet #244 Successfully Compared
+[TRACE]891350.0ns :router_test_top.t.gen
+[TRACE]891350.0ns :router_test_top.t.send
+[TRACE]891350.0ns :router_test_top.t.send_addrs
+[TRACE]891350.0ns :router_test_top.t.recv
+[TRACE]891350.0ns :router_test_top.t.get_payload
+[TRACE]891750.0ns :router_test_top.t.send_pad
+[TRACE]892250.0ns :router_test_top.t.send_payload
+[TRACE]895650.0ns :router_test_top.t.check
+[TRACE]895650.0ns :router_test_top.t.compare
+[NOTE]895650.0ns Packet #245 Successfully Compared
+[TRACE]895650.0ns :router_test_top.t.gen
+[TRACE]895650.0ns :router_test_top.t.send
+[TRACE]895650.0ns :router_test_top.t.send_addrs
+[TRACE]895650.0ns :router_test_top.t.recv
+[TRACE]895650.0ns :router_test_top.t.get_payload
+[TRACE]896050.0ns :router_test_top.t.send_pad
+[TRACE]896550.0ns :router_test_top.t.send_payload
+[TRACE]899950.0ns :router_test_top.t.check
+[TRACE]899950.0ns :router_test_top.t.compare
+[NOTE]899950.0ns Packet #246 Successfully Compared
+[TRACE]899950.0ns :router_test_top.t.gen
+[TRACE]899950.0ns :router_test_top.t.send
+[TRACE]899950.0ns :router_test_top.t.send_addrs
+[TRACE]899950.0ns :router_test_top.t.recv
+[TRACE]899950.0ns :router_test_top.t.get_payload
+[TRACE]900350.0ns :router_test_top.t.send_pad
+[TRACE]900850.0ns :router_test_top.t.send_payload
+[TRACE]903450.0ns :router_test_top.t.check
+[TRACE]903450.0ns :router_test_top.t.compare
+[NOTE]903450.0ns Packet #247 Successfully Compared
+[TRACE]903450.0ns :router_test_top.t.gen
+[TRACE]903450.0ns :router_test_top.t.send
+[TRACE]903450.0ns :router_test_top.t.send_addrs
+[TRACE]903450.0ns :router_test_top.t.recv
+[TRACE]903450.0ns :router_test_top.t.get_payload
+[TRACE]903850.0ns :router_test_top.t.send_pad
+[TRACE]904350.0ns :router_test_top.t.send_payload
+[TRACE]906950.0ns :router_test_top.t.check
+[TRACE]906950.0ns :router_test_top.t.compare
+[NOTE]906950.0ns Packet #248 Successfully Compared
+[TRACE]906950.0ns :router_test_top.t.gen
+[TRACE]906950.0ns :router_test_top.t.send
+[TRACE]906950.0ns :router_test_top.t.send_addrs
+[TRACE]906950.0ns :router_test_top.t.recv
+[TRACE]906950.0ns :router_test_top.t.get_payload
+[TRACE]907350.0ns :router_test_top.t.send_pad
+[TRACE]907850.0ns :router_test_top.t.send_payload
+[TRACE]909650.0ns :router_test_top.t.check
+[TRACE]909650.0ns :router_test_top.t.compare
+[NOTE]909650.0ns Packet #249 Successfully Compared
+[TRACE]909650.0ns :router_test_top.t.gen
+[TRACE]909650.0ns :router_test_top.t.send
+[TRACE]909650.0ns :router_test_top.t.send_addrs
+[TRACE]909650.0ns :router_test_top.t.recv
+[TRACE]909650.0ns :router_test_top.t.get_payload
+[TRACE]910050.0ns :router_test_top.t.send_pad
+[TRACE]910550.0ns :router_test_top.t.send_payload
+[TRACE]912350.0ns :router_test_top.t.check
+[TRACE]912350.0ns :router_test_top.t.compare
+[NOTE]912350.0ns Packet #250 Successfully Compared
+[TRACE]912350.0ns :router_test_top.t.gen
+[TRACE]912350.0ns :router_test_top.t.send
+[TRACE]912350.0ns :router_test_top.t.send_addrs
+[TRACE]912350.0ns :router_test_top.t.recv
+[TRACE]912350.0ns :router_test_top.t.get_payload
+[TRACE]912750.0ns :router_test_top.t.send_pad
+[TRACE]913250.0ns :router_test_top.t.send_payload
+[TRACE]915850.0ns :router_test_top.t.check
+[TRACE]915850.0ns :router_test_top.t.compare
+[NOTE]915850.0ns Packet #251 Successfully Compared
+[TRACE]915850.0ns :router_test_top.t.gen
+[TRACE]915850.0ns :router_test_top.t.send
+[TRACE]915850.0ns :router_test_top.t.send_addrs
+[TRACE]915850.0ns :router_test_top.t.recv
+[TRACE]915850.0ns :router_test_top.t.get_payload
+[TRACE]916250.0ns :router_test_top.t.send_pad
+[TRACE]916750.0ns :router_test_top.t.send_payload
+[TRACE]918550.0ns :router_test_top.t.check
+[TRACE]918550.0ns :router_test_top.t.compare
+[NOTE]918550.0ns Packet #252 Successfully Compared
+[TRACE]918550.0ns :router_test_top.t.gen
+[TRACE]918550.0ns :router_test_top.t.send
+[TRACE]918550.0ns :router_test_top.t.send_addrs
+[TRACE]918550.0ns :router_test_top.t.recv
+[TRACE]918550.0ns :router_test_top.t.get_payload
+[TRACE]918950.0ns :router_test_top.t.send_pad
+[TRACE]919450.0ns :router_test_top.t.send_payload
+[TRACE]921250.0ns :router_test_top.t.check
+[TRACE]921250.0ns :router_test_top.t.compare
+[NOTE]921250.0ns Packet #253 Successfully Compared
+[TRACE]921250.0ns :router_test_top.t.gen
+[TRACE]921250.0ns :router_test_top.t.send
+[TRACE]921250.0ns :router_test_top.t.send_addrs
+[TRACE]921250.0ns :router_test_top.t.recv
+[TRACE]921250.0ns :router_test_top.t.get_payload
+[TRACE]921650.0ns :router_test_top.t.send_pad
+[TRACE]922150.0ns :router_test_top.t.send_payload
+[TRACE]925550.0ns :router_test_top.t.check
+[TRACE]925550.0ns :router_test_top.t.compare
+[NOTE]925550.0ns Packet #254 Successfully Compared
+[TRACE]925550.0ns :router_test_top.t.gen
+[TRACE]925550.0ns :router_test_top.t.send
+[TRACE]925550.0ns :router_test_top.t.send_addrs
+[TRACE]925550.0ns :router_test_top.t.recv
+[TRACE]925550.0ns :router_test_top.t.get_payload
+[TRACE]925950.0ns :router_test_top.t.send_pad
+[TRACE]926450.0ns :router_test_top.t.send_payload
+[TRACE]929850.0ns :router_test_top.t.check
+[TRACE]929850.0ns :router_test_top.t.compare
+[NOTE]929850.0ns Packet #255 Successfully Compared
+[TRACE]929850.0ns :router_test_top.t.gen
+[TRACE]929850.0ns :router_test_top.t.send
+[TRACE]929850.0ns :router_test_top.t.send_addrs
+[TRACE]929850.0ns :router_test_top.t.recv
+[TRACE]929850.0ns :router_test_top.t.get_payload
+[TRACE]930250.0ns :router_test_top.t.send_pad
+[TRACE]930750.0ns :router_test_top.t.send_payload
+[TRACE]932550.0ns :router_test_top.t.check
+[TRACE]932550.0ns :router_test_top.t.compare
+[NOTE]932550.0ns Packet #256 Successfully Compared
+[TRACE]932550.0ns :router_test_top.t.gen
+[TRACE]932550.0ns :router_test_top.t.send
+[TRACE]932550.0ns :router_test_top.t.send_addrs
+[TRACE]932550.0ns :router_test_top.t.recv
+[TRACE]932550.0ns :router_test_top.t.get_payload
+[TRACE]932950.0ns :router_test_top.t.send_pad
+[TRACE]933450.0ns :router_test_top.t.send_payload
+[TRACE]936850.0ns :router_test_top.t.check
+[TRACE]936850.0ns :router_test_top.t.compare
+[NOTE]936850.0ns Packet #257 Successfully Compared
+[TRACE]936850.0ns :router_test_top.t.gen
+[TRACE]936850.0ns :router_test_top.t.send
+[TRACE]936850.0ns :router_test_top.t.send_addrs
+[TRACE]936850.0ns :router_test_top.t.recv
+[TRACE]936850.0ns :router_test_top.t.get_payload
+[TRACE]937250.0ns :router_test_top.t.send_pad
+[TRACE]937750.0ns :router_test_top.t.send_payload
+[TRACE]941150.0ns :router_test_top.t.check
+[TRACE]941150.0ns :router_test_top.t.compare
+[NOTE]941150.0ns Packet #258 Successfully Compared
+[TRACE]941150.0ns :router_test_top.t.gen
+[TRACE]941150.0ns :router_test_top.t.send
+[TRACE]941150.0ns :router_test_top.t.send_addrs
+[TRACE]941150.0ns :router_test_top.t.recv
+[TRACE]941150.0ns :router_test_top.t.get_payload
+[TRACE]941550.0ns :router_test_top.t.send_pad
+[TRACE]942050.0ns :router_test_top.t.send_payload
+[TRACE]945450.0ns :router_test_top.t.check
+[TRACE]945450.0ns :router_test_top.t.compare
+[NOTE]945450.0ns Packet #259 Successfully Compared
+[TRACE]945450.0ns :router_test_top.t.gen
+[TRACE]945450.0ns :router_test_top.t.send
+[TRACE]945450.0ns :router_test_top.t.send_addrs
+[TRACE]945450.0ns :router_test_top.t.recv
+[TRACE]945450.0ns :router_test_top.t.get_payload
+[TRACE]945850.0ns :router_test_top.t.send_pad
+[TRACE]946350.0ns :router_test_top.t.send_payload
+[TRACE]948950.0ns :router_test_top.t.check
+[TRACE]948950.0ns :router_test_top.t.compare
+[NOTE]948950.0ns Packet #260 Successfully Compared
+[TRACE]948950.0ns :router_test_top.t.gen
+[TRACE]948950.0ns :router_test_top.t.send
+[TRACE]948950.0ns :router_test_top.t.send_addrs
+[TRACE]948950.0ns :router_test_top.t.recv
+[TRACE]948950.0ns :router_test_top.t.get_payload
+[TRACE]949350.0ns :router_test_top.t.send_pad
+[TRACE]949850.0ns :router_test_top.t.send_payload
+[TRACE]953250.0ns :router_test_top.t.check
+[TRACE]953250.0ns :router_test_top.t.compare
+[NOTE]953250.0ns Packet #261 Successfully Compared
+[TRACE]953250.0ns :router_test_top.t.gen
+[TRACE]953250.0ns :router_test_top.t.send
+[TRACE]953250.0ns :router_test_top.t.send_addrs
+[TRACE]953250.0ns :router_test_top.t.recv
+[TRACE]953250.0ns :router_test_top.t.get_payload
+[TRACE]953650.0ns :router_test_top.t.send_pad
+[TRACE]954150.0ns :router_test_top.t.send_payload
+[TRACE]955950.0ns :router_test_top.t.check
+[TRACE]955950.0ns :router_test_top.t.compare
+[NOTE]955950.0ns Packet #262 Successfully Compared
+[TRACE]955950.0ns :router_test_top.t.gen
+[TRACE]955950.0ns :router_test_top.t.send
+[TRACE]955950.0ns :router_test_top.t.send_addrs
+[TRACE]955950.0ns :router_test_top.t.recv
+[TRACE]955950.0ns :router_test_top.t.get_payload
+[TRACE]956350.0ns :router_test_top.t.send_pad
+[TRACE]956850.0ns :router_test_top.t.send_payload
+[TRACE]959450.0ns :router_test_top.t.check
+[TRACE]959450.0ns :router_test_top.t.compare
+[NOTE]959450.0ns Packet #263 Successfully Compared
+[TRACE]959450.0ns :router_test_top.t.gen
+[TRACE]959450.0ns :router_test_top.t.send
+[TRACE]959450.0ns :router_test_top.t.send_addrs
+[TRACE]959450.0ns :router_test_top.t.recv
+[TRACE]959450.0ns :router_test_top.t.get_payload
+[TRACE]959850.0ns :router_test_top.t.send_pad
+[TRACE]960350.0ns :router_test_top.t.send_payload
+[TRACE]963750.0ns :router_test_top.t.check
+[TRACE]963750.0ns :router_test_top.t.compare
+[NOTE]963750.0ns Packet #264 Successfully Compared
+[TRACE]963750.0ns :router_test_top.t.gen
+[TRACE]963750.0ns :router_test_top.t.send
+[TRACE]963750.0ns :router_test_top.t.send_addrs
+[TRACE]963750.0ns :router_test_top.t.recv
+[TRACE]963750.0ns :router_test_top.t.get_payload
+[TRACE]964150.0ns :router_test_top.t.send_pad
+[TRACE]964650.0ns :router_test_top.t.send_payload
+[TRACE]967250.0ns :router_test_top.t.check
+[TRACE]967250.0ns :router_test_top.t.compare
+[NOTE]967250.0ns Packet #265 Successfully Compared
+[TRACE]967250.0ns :router_test_top.t.gen
+[TRACE]967250.0ns :router_test_top.t.send
+[TRACE]967250.0ns :router_test_top.t.send_addrs
+[TRACE]967250.0ns :router_test_top.t.recv
+[TRACE]967250.0ns :router_test_top.t.get_payload
+[TRACE]967650.0ns :router_test_top.t.send_pad
+[TRACE]968150.0ns :router_test_top.t.send_payload
+[TRACE]969950.0ns :router_test_top.t.check
+[TRACE]969950.0ns :router_test_top.t.compare
+[NOTE]969950.0ns Packet #266 Successfully Compared
+[TRACE]969950.0ns :router_test_top.t.gen
+[TRACE]969950.0ns :router_test_top.t.send
+[TRACE]969950.0ns :router_test_top.t.send_addrs
+[TRACE]969950.0ns :router_test_top.t.recv
+[TRACE]969950.0ns :router_test_top.t.get_payload
+[TRACE]970350.0ns :router_test_top.t.send_pad
+[TRACE]970850.0ns :router_test_top.t.send_payload
+[TRACE]972650.0ns :router_test_top.t.check
+[TRACE]972650.0ns :router_test_top.t.compare
+[NOTE]972650.0ns Packet #267 Successfully Compared
+[TRACE]972650.0ns :router_test_top.t.gen
+[TRACE]972650.0ns :router_test_top.t.send
+[TRACE]972650.0ns :router_test_top.t.send_addrs
+[TRACE]972650.0ns :router_test_top.t.recv
+[TRACE]972650.0ns :router_test_top.t.get_payload
+[TRACE]973050.0ns :router_test_top.t.send_pad
+[TRACE]973550.0ns :router_test_top.t.send_payload
+[TRACE]976150.0ns :router_test_top.t.check
+[TRACE]976150.0ns :router_test_top.t.compare
+[NOTE]976150.0ns Packet #268 Successfully Compared
+[TRACE]976150.0ns :router_test_top.t.gen
+[TRACE]976150.0ns :router_test_top.t.send
+[TRACE]976150.0ns :router_test_top.t.send_addrs
+[TRACE]976150.0ns :router_test_top.t.recv
+[TRACE]976150.0ns :router_test_top.t.get_payload
+[TRACE]976550.0ns :router_test_top.t.send_pad
+[TRACE]977050.0ns :router_test_top.t.send_payload
+[TRACE]978850.0ns :router_test_top.t.check
+[TRACE]978850.0ns :router_test_top.t.compare
+[NOTE]978850.0ns Packet #269 Successfully Compared
+[TRACE]978850.0ns :router_test_top.t.gen
+[TRACE]978850.0ns :router_test_top.t.send
+[TRACE]978850.0ns :router_test_top.t.send_addrs
+[TRACE]978850.0ns :router_test_top.t.recv
+[TRACE]978850.0ns :router_test_top.t.get_payload
+[TRACE]979250.0ns :router_test_top.t.send_pad
+[TRACE]979750.0ns :router_test_top.t.send_payload
+[TRACE]982350.0ns :router_test_top.t.check
+[TRACE]982350.0ns :router_test_top.t.compare
+[NOTE]982350.0ns Packet #270 Successfully Compared
+[TRACE]982350.0ns :router_test_top.t.gen
+[TRACE]982350.0ns :router_test_top.t.send
+[TRACE]982350.0ns :router_test_top.t.send_addrs
+[TRACE]982350.0ns :router_test_top.t.recv
+[TRACE]982350.0ns :router_test_top.t.get_payload
+[TRACE]982750.0ns :router_test_top.t.send_pad
+[TRACE]983250.0ns :router_test_top.t.send_payload
+[TRACE]985050.0ns :router_test_top.t.check
+[TRACE]985050.0ns :router_test_top.t.compare
+[NOTE]985050.0ns Packet #271 Successfully Compared
+[TRACE]985050.0ns :router_test_top.t.gen
+[TRACE]985050.0ns :router_test_top.t.send
+[TRACE]985050.0ns :router_test_top.t.send_addrs
+[TRACE]985050.0ns :router_test_top.t.recv
+[TRACE]985050.0ns :router_test_top.t.get_payload
+[TRACE]985450.0ns :router_test_top.t.send_pad
+[TRACE]985950.0ns :router_test_top.t.send_payload
+[TRACE]989350.0ns :router_test_top.t.check
+[TRACE]989350.0ns :router_test_top.t.compare
+[NOTE]989350.0ns Packet #272 Successfully Compared
+[TRACE]989350.0ns :router_test_top.t.gen
+[TRACE]989350.0ns :router_test_top.t.send
+[TRACE]989350.0ns :router_test_top.t.send_addrs
+[TRACE]989350.0ns :router_test_top.t.recv
+[TRACE]989350.0ns :router_test_top.t.get_payload
+[TRACE]989750.0ns :router_test_top.t.send_pad
+[TRACE]990250.0ns :router_test_top.t.send_payload
+[TRACE]992850.0ns :router_test_top.t.check
+[TRACE]992850.0ns :router_test_top.t.compare
+[NOTE]992850.0ns Packet #273 Successfully Compared
+[TRACE]992850.0ns :router_test_top.t.gen
+[TRACE]992850.0ns :router_test_top.t.send
+[TRACE]992850.0ns :router_test_top.t.send_addrs
+[TRACE]992850.0ns :router_test_top.t.recv
+[TRACE]992850.0ns :router_test_top.t.get_payload
+[TRACE]993250.0ns :router_test_top.t.send_pad
+[TRACE]993750.0ns :router_test_top.t.send_payload
+[TRACE]995550.0ns :router_test_top.t.check
+[TRACE]995550.0ns :router_test_top.t.compare
+[NOTE]995550.0ns Packet #274 Successfully Compared
+[TRACE]995550.0ns :router_test_top.t.gen
+[TRACE]995550.0ns :router_test_top.t.send
+[TRACE]995550.0ns :router_test_top.t.send_addrs
+[TRACE]995550.0ns :router_test_top.t.recv
+[TRACE]995550.0ns :router_test_top.t.get_payload
+[TRACE]995950.0ns :router_test_top.t.send_pad
+[TRACE]996450.0ns :router_test_top.t.send_payload
+[TRACE]999050.0ns :router_test_top.t.check
+[TRACE]999050.0ns :router_test_top.t.compare
+[NOTE]999050.0ns Packet #275 Successfully Compared
+[TRACE]999050.0ns :router_test_top.t.gen
+[TRACE]999050.0ns :router_test_top.t.send
+[TRACE]999050.0ns :router_test_top.t.send_addrs
+[TRACE]999050.0ns :router_test_top.t.recv
+[TRACE]999050.0ns :router_test_top.t.get_payload
+[TRACE]999450.0ns :router_test_top.t.send_pad
+[TRACE]999950.0ns :router_test_top.t.send_payload
+[TRACE]1003350.0ns :router_test_top.t.check
+[TRACE]1003350.0ns :router_test_top.t.compare
+[NOTE]1003350.0ns Packet #276 Successfully Compared
+[TRACE]1003350.0ns :router_test_top.t.gen
+[TRACE]1003350.0ns :router_test_top.t.send
+[TRACE]1003350.0ns :router_test_top.t.send_addrs
+[TRACE]1003350.0ns :router_test_top.t.recv
+[TRACE]1003350.0ns :router_test_top.t.get_payload
+[TRACE]1003750.0ns :router_test_top.t.send_pad
+[TRACE]1004250.0ns :router_test_top.t.send_payload
+[TRACE]1006850.0ns :router_test_top.t.check
+[TRACE]1006850.0ns :router_test_top.t.compare
+[NOTE]1006850.0ns Packet #277 Successfully Compared
+[TRACE]1006850.0ns :router_test_top.t.gen
+[TRACE]1006850.0ns :router_test_top.t.send
+[TRACE]1006850.0ns :router_test_top.t.send_addrs
+[TRACE]1006850.0ns :router_test_top.t.recv
+[TRACE]1006850.0ns :router_test_top.t.get_payload
+[TRACE]1007250.0ns :router_test_top.t.send_pad
+[TRACE]1007750.0ns :router_test_top.t.send_payload
+[TRACE]1010350.0ns :router_test_top.t.check
+[TRACE]1010350.0ns :router_test_top.t.compare
+[NOTE]1010350.0ns Packet #278 Successfully Compared
+[TRACE]1010350.0ns :router_test_top.t.gen
+[TRACE]1010350.0ns :router_test_top.t.send
+[TRACE]1010350.0ns :router_test_top.t.send_addrs
+[TRACE]1010350.0ns :router_test_top.t.recv
+[TRACE]1010350.0ns :router_test_top.t.get_payload
+[TRACE]1010750.0ns :router_test_top.t.send_pad
+[TRACE]1011250.0ns :router_test_top.t.send_payload
+[TRACE]1013050.0ns :router_test_top.t.check
+[TRACE]1013050.0ns :router_test_top.t.compare
+[NOTE]1013050.0ns Packet #279 Successfully Compared
+[TRACE]1013050.0ns :router_test_top.t.gen
+[TRACE]1013050.0ns :router_test_top.t.send
+[TRACE]1013050.0ns :router_test_top.t.send_addrs
+[TRACE]1013050.0ns :router_test_top.t.recv
+[TRACE]1013050.0ns :router_test_top.t.get_payload
+[TRACE]1013450.0ns :router_test_top.t.send_pad
+[TRACE]1013950.0ns :router_test_top.t.send_payload
+[TRACE]1015750.0ns :router_test_top.t.check
+[TRACE]1015750.0ns :router_test_top.t.compare
+[NOTE]1015750.0ns Packet #280 Successfully Compared
+[TRACE]1015750.0ns :router_test_top.t.gen
+[TRACE]1015750.0ns :router_test_top.t.send
+[TRACE]1015750.0ns :router_test_top.t.send_addrs
+[TRACE]1015750.0ns :router_test_top.t.recv
+[TRACE]1015750.0ns :router_test_top.t.get_payload
+[TRACE]1016150.0ns :router_test_top.t.send_pad
+[TRACE]1016650.0ns :router_test_top.t.send_payload
+[TRACE]1020050.0ns :router_test_top.t.check
+[TRACE]1020050.0ns :router_test_top.t.compare
+[NOTE]1020050.0ns Packet #281 Successfully Compared
+[TRACE]1020050.0ns :router_test_top.t.gen
+[TRACE]1020050.0ns :router_test_top.t.send
+[TRACE]1020050.0ns :router_test_top.t.send_addrs
+[TRACE]1020050.0ns :router_test_top.t.recv
+[TRACE]1020050.0ns :router_test_top.t.get_payload
+[TRACE]1020450.0ns :router_test_top.t.send_pad
+[TRACE]1020950.0ns :router_test_top.t.send_payload
+[TRACE]1024350.0ns :router_test_top.t.check
+[TRACE]1024350.0ns :router_test_top.t.compare
+[NOTE]1024350.0ns Packet #282 Successfully Compared
+[TRACE]1024350.0ns :router_test_top.t.gen
+[TRACE]1024350.0ns :router_test_top.t.send
+[TRACE]1024350.0ns :router_test_top.t.send_addrs
+[TRACE]1024350.0ns :router_test_top.t.recv
+[TRACE]1024350.0ns :router_test_top.t.get_payload
+[TRACE]1024750.0ns :router_test_top.t.send_pad
+[TRACE]1025250.0ns :router_test_top.t.send_payload
+[TRACE]1027050.0ns :router_test_top.t.check
+[TRACE]1027050.0ns :router_test_top.t.compare
+[NOTE]1027050.0ns Packet #283 Successfully Compared
+[TRACE]1027050.0ns :router_test_top.t.gen
+[TRACE]1027050.0ns :router_test_top.t.send
+[TRACE]1027050.0ns :router_test_top.t.send_addrs
+[TRACE]1027050.0ns :router_test_top.t.recv
+[TRACE]1027050.0ns :router_test_top.t.get_payload
+[TRACE]1027450.0ns :router_test_top.t.send_pad
+[TRACE]1027950.0ns :router_test_top.t.send_payload
+[TRACE]1030550.0ns :router_test_top.t.check
+[TRACE]1030550.0ns :router_test_top.t.compare
+[NOTE]1030550.0ns Packet #284 Successfully Compared
+[TRACE]1030550.0ns :router_test_top.t.gen
+[TRACE]1030550.0ns :router_test_top.t.send
+[TRACE]1030550.0ns :router_test_top.t.send_addrs
+[TRACE]1030550.0ns :router_test_top.t.recv
+[TRACE]1030550.0ns :router_test_top.t.get_payload
+[TRACE]1030950.0ns :router_test_top.t.send_pad
+[TRACE]1031450.0ns :router_test_top.t.send_payload
+[TRACE]1033250.0ns :router_test_top.t.check
+[TRACE]1033250.0ns :router_test_top.t.compare
+[NOTE]1033250.0ns Packet #285 Successfully Compared
+[TRACE]1033250.0ns :router_test_top.t.gen
+[TRACE]1033250.0ns :router_test_top.t.send
+[TRACE]1033250.0ns :router_test_top.t.send_addrs
+[TRACE]1033250.0ns :router_test_top.t.recv
+[TRACE]1033250.0ns :router_test_top.t.get_payload
+[TRACE]1033650.0ns :router_test_top.t.send_pad
+[TRACE]1034150.0ns :router_test_top.t.send_payload
+[TRACE]1036750.0ns :router_test_top.t.check
+[TRACE]1036750.0ns :router_test_top.t.compare
+[NOTE]1036750.0ns Packet #286 Successfully Compared
+[TRACE]1036750.0ns :router_test_top.t.gen
+[TRACE]1036750.0ns :router_test_top.t.send
+[TRACE]1036750.0ns :router_test_top.t.send_addrs
+[TRACE]1036750.0ns :router_test_top.t.recv
+[TRACE]1036750.0ns :router_test_top.t.get_payload
+[TRACE]1037150.0ns :router_test_top.t.send_pad
+[TRACE]1037650.0ns :router_test_top.t.send_payload
+[TRACE]1040250.0ns :router_test_top.t.check
+[TRACE]1040250.0ns :router_test_top.t.compare
+[NOTE]1040250.0ns Packet #287 Successfully Compared
+[TRACE]1040250.0ns :router_test_top.t.gen
+[TRACE]1040250.0ns :router_test_top.t.send
+[TRACE]1040250.0ns :router_test_top.t.send_addrs
+[TRACE]1040250.0ns :router_test_top.t.recv
+[TRACE]1040250.0ns :router_test_top.t.get_payload
+[TRACE]1040650.0ns :router_test_top.t.send_pad
+[TRACE]1041150.0ns :router_test_top.t.send_payload
+[TRACE]1044550.0ns :router_test_top.t.check
+[TRACE]1044550.0ns :router_test_top.t.compare
+[NOTE]1044550.0ns Packet #288 Successfully Compared
+[TRACE]1044550.0ns :router_test_top.t.gen
+[TRACE]1044550.0ns :router_test_top.t.send
+[TRACE]1044550.0ns :router_test_top.t.send_addrs
+[TRACE]1044550.0ns :router_test_top.t.recv
+[TRACE]1044550.0ns :router_test_top.t.get_payload
+[TRACE]1044950.0ns :router_test_top.t.send_pad
+[TRACE]1045450.0ns :router_test_top.t.send_payload
+[TRACE]1047250.0ns :router_test_top.t.check
+[TRACE]1047250.0ns :router_test_top.t.compare
+[NOTE]1047250.0ns Packet #289 Successfully Compared
+[TRACE]1047250.0ns :router_test_top.t.gen
+[TRACE]1047250.0ns :router_test_top.t.send
+[TRACE]1047250.0ns :router_test_top.t.send_addrs
+[TRACE]1047250.0ns :router_test_top.t.recv
+[TRACE]1047250.0ns :router_test_top.t.get_payload
+[TRACE]1047650.0ns :router_test_top.t.send_pad
+[TRACE]1048150.0ns :router_test_top.t.send_payload
+[TRACE]1050750.0ns :router_test_top.t.check
+[TRACE]1050750.0ns :router_test_top.t.compare
+[NOTE]1050750.0ns Packet #290 Successfully Compared
+[TRACE]1050750.0ns :router_test_top.t.gen
+[TRACE]1050750.0ns :router_test_top.t.send
+[TRACE]1050750.0ns :router_test_top.t.send_addrs
+[TRACE]1050750.0ns :router_test_top.t.recv
+[TRACE]1050750.0ns :router_test_top.t.get_payload
+[TRACE]1051150.0ns :router_test_top.t.send_pad
+[TRACE]1051650.0ns :router_test_top.t.send_payload
+[TRACE]1054250.0ns :router_test_top.t.check
+[TRACE]1054250.0ns :router_test_top.t.compare
+[NOTE]1054250.0ns Packet #291 Successfully Compared
+[TRACE]1054250.0ns :router_test_top.t.gen
+[TRACE]1054250.0ns :router_test_top.t.send
+[TRACE]1054250.0ns :router_test_top.t.send_addrs
+[TRACE]1054250.0ns :router_test_top.t.recv
+[TRACE]1054250.0ns :router_test_top.t.get_payload
+[TRACE]1054650.0ns :router_test_top.t.send_pad
+[TRACE]1055150.0ns :router_test_top.t.send_payload
+[TRACE]1056950.0ns :router_test_top.t.check
+[TRACE]1056950.0ns :router_test_top.t.compare
+[NOTE]1056950.0ns Packet #292 Successfully Compared
+[TRACE]1056950.0ns :router_test_top.t.gen
+[TRACE]1056950.0ns :router_test_top.t.send
+[TRACE]1056950.0ns :router_test_top.t.send_addrs
+[TRACE]1056950.0ns :router_test_top.t.recv
+[TRACE]1056950.0ns :router_test_top.t.get_payload
+[TRACE]1057350.0ns :router_test_top.t.send_pad
+[TRACE]1057850.0ns :router_test_top.t.send_payload
+[TRACE]1061250.0ns :router_test_top.t.check
+[TRACE]1061250.0ns :router_test_top.t.compare
+[NOTE]1061250.0ns Packet #293 Successfully Compared
+[TRACE]1061250.0ns :router_test_top.t.gen
+[TRACE]1061250.0ns :router_test_top.t.send
+[TRACE]1061250.0ns :router_test_top.t.send_addrs
+[TRACE]1061250.0ns :router_test_top.t.recv
+[TRACE]1061250.0ns :router_test_top.t.get_payload
+[TRACE]1061650.0ns :router_test_top.t.send_pad
+[TRACE]1062150.0ns :router_test_top.t.send_payload
+[TRACE]1063950.0ns :router_test_top.t.check
+[TRACE]1063950.0ns :router_test_top.t.compare
+[NOTE]1063950.0ns Packet #294 Successfully Compared
+[TRACE]1063950.0ns :router_test_top.t.gen
+[TRACE]1063950.0ns :router_test_top.t.send
+[TRACE]1063950.0ns :router_test_top.t.send_addrs
+[TRACE]1063950.0ns :router_test_top.t.recv
+[TRACE]1063950.0ns :router_test_top.t.get_payload
+[TRACE]1064350.0ns :router_test_top.t.send_pad
+[TRACE]1064850.0ns :router_test_top.t.send_payload
+[TRACE]1067450.0ns :router_test_top.t.check
+[TRACE]1067450.0ns :router_test_top.t.compare
+[NOTE]1067450.0ns Packet #295 Successfully Compared
+[TRACE]1067450.0ns :router_test_top.t.gen
+[TRACE]1067450.0ns :router_test_top.t.send
+[TRACE]1067450.0ns :router_test_top.t.send_addrs
+[TRACE]1067450.0ns :router_test_top.t.recv
+[TRACE]1067450.0ns :router_test_top.t.get_payload
+[TRACE]1067850.0ns :router_test_top.t.send_pad
+[TRACE]1068350.0ns :router_test_top.t.send_payload
+[TRACE]1070950.0ns :router_test_top.t.check
+[TRACE]1070950.0ns :router_test_top.t.compare
+[NOTE]1070950.0ns Packet #296 Successfully Compared
+[TRACE]1070950.0ns :router_test_top.t.gen
+[TRACE]1070950.0ns :router_test_top.t.send
+[TRACE]1070950.0ns :router_test_top.t.send_addrs
+[TRACE]1070950.0ns :router_test_top.t.recv
+[TRACE]1070950.0ns :router_test_top.t.get_payload
+[TRACE]1071350.0ns :router_test_top.t.send_pad
+[TRACE]1071850.0ns :router_test_top.t.send_payload
+[TRACE]1073650.0ns :router_test_top.t.check
+[TRACE]1073650.0ns :router_test_top.t.compare
+[NOTE]1073650.0ns Packet #297 Successfully Compared
+[TRACE]1073650.0ns :router_test_top.t.gen
+[TRACE]1073650.0ns :router_test_top.t.send
+[TRACE]1073650.0ns :router_test_top.t.send_addrs
+[TRACE]1073650.0ns :router_test_top.t.recv
+[TRACE]1073650.0ns :router_test_top.t.get_payload
+[TRACE]1074050.0ns :router_test_top.t.send_pad
+[TRACE]1074550.0ns :router_test_top.t.send_payload
+[TRACE]1076350.0ns :router_test_top.t.check
+[TRACE]1076350.0ns :router_test_top.t.compare
+[NOTE]1076350.0ns Packet #298 Successfully Compared
+[TRACE]1076350.0ns :router_test_top.t.gen
+[TRACE]1076350.0ns :router_test_top.t.send
+[TRACE]1076350.0ns :router_test_top.t.send_addrs
+[TRACE]1076350.0ns :router_test_top.t.recv
+[TRACE]1076350.0ns :router_test_top.t.get_payload
+[TRACE]1076750.0ns :router_test_top.t.send_pad
+[TRACE]1077250.0ns :router_test_top.t.send_payload
+[TRACE]1079050.0ns :router_test_top.t.check
+[TRACE]1079050.0ns :router_test_top.t.compare
+[NOTE]1079050.0ns Packet #299 Successfully Compared
+[TRACE]1079050.0ns :router_test_top.t.gen
+[TRACE]1079050.0ns :router_test_top.t.send
+[TRACE]1079050.0ns :router_test_top.t.send_addrs
+[TRACE]1079050.0ns :router_test_top.t.recv
+[TRACE]1079050.0ns :router_test_top.t.get_payload
+[TRACE]1079450.0ns :router_test_top.t.send_pad
+[TRACE]1079950.0ns :router_test_top.t.send_payload
+[TRACE]1083350.0ns :router_test_top.t.check
+[TRACE]1083350.0ns :router_test_top.t.compare
+[NOTE]1083350.0ns Packet #300 Successfully Compared
+[TRACE]1083350.0ns :router_test_top.t.gen
+[TRACE]1083350.0ns :router_test_top.t.send
+[TRACE]1083350.0ns :router_test_top.t.send_addrs
+[TRACE]1083350.0ns :router_test_top.t.recv
+[TRACE]1083350.0ns :router_test_top.t.get_payload
+[TRACE]1083750.0ns :router_test_top.t.send_pad
+[TRACE]1084250.0ns :router_test_top.t.send_payload
+[TRACE]1087650.0ns :router_test_top.t.check
+[TRACE]1087650.0ns :router_test_top.t.compare
+[NOTE]1087650.0ns Packet #301 Successfully Compared
+[TRACE]1087650.0ns :router_test_top.t.gen
+[TRACE]1087650.0ns :router_test_top.t.send
+[TRACE]1087650.0ns :router_test_top.t.send_addrs
+[TRACE]1087650.0ns :router_test_top.t.recv
+[TRACE]1087650.0ns :router_test_top.t.get_payload
+[TRACE]1088050.0ns :router_test_top.t.send_pad
+[TRACE]1088550.0ns :router_test_top.t.send_payload
+[TRACE]1091950.0ns :router_test_top.t.check
+[TRACE]1091950.0ns :router_test_top.t.compare
+[NOTE]1091950.0ns Packet #302 Successfully Compared
+[TRACE]1091950.0ns :router_test_top.t.gen
+[TRACE]1091950.0ns :router_test_top.t.send
+[TRACE]1091950.0ns :router_test_top.t.send_addrs
+[TRACE]1091950.0ns :router_test_top.t.recv
+[TRACE]1091950.0ns :router_test_top.t.get_payload
+[TRACE]1092350.0ns :router_test_top.t.send_pad
+[TRACE]1092850.0ns :router_test_top.t.send_payload
+[TRACE]1096250.0ns :router_test_top.t.check
+[TRACE]1096250.0ns :router_test_top.t.compare
+[NOTE]1096250.0ns Packet #303 Successfully Compared
+[TRACE]1096250.0ns :router_test_top.t.gen
+[TRACE]1096250.0ns :router_test_top.t.send
+[TRACE]1096250.0ns :router_test_top.t.send_addrs
+[TRACE]1096250.0ns :router_test_top.t.recv
+[TRACE]1096250.0ns :router_test_top.t.get_payload
+[TRACE]1096650.0ns :router_test_top.t.send_pad
+[TRACE]1097150.0ns :router_test_top.t.send_payload
+[TRACE]1098950.0ns :router_test_top.t.check
+[TRACE]1098950.0ns :router_test_top.t.compare
+[NOTE]1098950.0ns Packet #304 Successfully Compared
+[TRACE]1098950.0ns :router_test_top.t.gen
+[TRACE]1098950.0ns :router_test_top.t.send
+[TRACE]1098950.0ns :router_test_top.t.send_addrs
+[TRACE]1098950.0ns :router_test_top.t.recv
+[TRACE]1098950.0ns :router_test_top.t.get_payload
+[TRACE]1099350.0ns :router_test_top.t.send_pad
+[TRACE]1099850.0ns :router_test_top.t.send_payload
+[TRACE]1102450.0ns :router_test_top.t.check
+[TRACE]1102450.0ns :router_test_top.t.compare
+[NOTE]1102450.0ns Packet #305 Successfully Compared
+[TRACE]1102450.0ns :router_test_top.t.gen
+[TRACE]1102450.0ns :router_test_top.t.send
+[TRACE]1102450.0ns :router_test_top.t.send_addrs
+[TRACE]1102450.0ns :router_test_top.t.recv
+[TRACE]1102450.0ns :router_test_top.t.get_payload
+[TRACE]1102850.0ns :router_test_top.t.send_pad
+[TRACE]1103350.0ns :router_test_top.t.send_payload
+[TRACE]1105150.0ns :router_test_top.t.check
+[TRACE]1105150.0ns :router_test_top.t.compare
+[NOTE]1105150.0ns Packet #306 Successfully Compared
+[TRACE]1105150.0ns :router_test_top.t.gen
+[TRACE]1105150.0ns :router_test_top.t.send
+[TRACE]1105150.0ns :router_test_top.t.send_addrs
+[TRACE]1105150.0ns :router_test_top.t.recv
+[TRACE]1105150.0ns :router_test_top.t.get_payload
+[TRACE]1105550.0ns :router_test_top.t.send_pad
+[TRACE]1106050.0ns :router_test_top.t.send_payload
+[TRACE]1109450.0ns :router_test_top.t.check
+[TRACE]1109450.0ns :router_test_top.t.compare
+[NOTE]1109450.0ns Packet #307 Successfully Compared
+[TRACE]1109450.0ns :router_test_top.t.gen
+[TRACE]1109450.0ns :router_test_top.t.send
+[TRACE]1109450.0ns :router_test_top.t.send_addrs
+[TRACE]1109450.0ns :router_test_top.t.recv
+[TRACE]1109450.0ns :router_test_top.t.get_payload
+[TRACE]1109850.0ns :router_test_top.t.send_pad
+[TRACE]1110350.0ns :router_test_top.t.send_payload
+[TRACE]1112950.0ns :router_test_top.t.check
+[TRACE]1112950.0ns :router_test_top.t.compare
+[NOTE]1112950.0ns Packet #308 Successfully Compared
+[TRACE]1112950.0ns :router_test_top.t.gen
+[TRACE]1112950.0ns :router_test_top.t.send
+[TRACE]1112950.0ns :router_test_top.t.send_addrs
+[TRACE]1112950.0ns :router_test_top.t.recv
+[TRACE]1112950.0ns :router_test_top.t.get_payload
+[TRACE]1113350.0ns :router_test_top.t.send_pad
+[TRACE]1113850.0ns :router_test_top.t.send_payload
+[TRACE]1117250.0ns :router_test_top.t.check
+[TRACE]1117250.0ns :router_test_top.t.compare
+[NOTE]1117250.0ns Packet #309 Successfully Compared
+[TRACE]1117250.0ns :router_test_top.t.gen
+[TRACE]1117250.0ns :router_test_top.t.send
+[TRACE]1117250.0ns :router_test_top.t.send_addrs
+[TRACE]1117250.0ns :router_test_top.t.recv
+[TRACE]1117250.0ns :router_test_top.t.get_payload
+[TRACE]1117650.0ns :router_test_top.t.send_pad
+[TRACE]1118150.0ns :router_test_top.t.send_payload
+[TRACE]1119950.0ns :router_test_top.t.check
+[TRACE]1119950.0ns :router_test_top.t.compare
+[NOTE]1119950.0ns Packet #310 Successfully Compared
+[TRACE]1119950.0ns :router_test_top.t.gen
+[TRACE]1119950.0ns :router_test_top.t.send
+[TRACE]1119950.0ns :router_test_top.t.send_addrs
+[TRACE]1119950.0ns :router_test_top.t.recv
+[TRACE]1119950.0ns :router_test_top.t.get_payload
+[TRACE]1120350.0ns :router_test_top.t.send_pad
+[TRACE]1120850.0ns :router_test_top.t.send_payload
+[TRACE]1122650.0ns :router_test_top.t.check
+[TRACE]1122650.0ns :router_test_top.t.compare
+[NOTE]1122650.0ns Packet #311 Successfully Compared
+[TRACE]1122650.0ns :router_test_top.t.gen
+[TRACE]1122650.0ns :router_test_top.t.send
+[TRACE]1122650.0ns :router_test_top.t.send_addrs
+[TRACE]1122650.0ns :router_test_top.t.recv
+[TRACE]1122650.0ns :router_test_top.t.get_payload
+[TRACE]1123050.0ns :router_test_top.t.send_pad
+[TRACE]1123550.0ns :router_test_top.t.send_payload
+[TRACE]1126950.0ns :router_test_top.t.check
+[TRACE]1126950.0ns :router_test_top.t.compare
+[NOTE]1126950.0ns Packet #312 Successfully Compared
+[TRACE]1126950.0ns :router_test_top.t.gen
+[TRACE]1126950.0ns :router_test_top.t.send
+[TRACE]1126950.0ns :router_test_top.t.send_addrs
+[TRACE]1126950.0ns :router_test_top.t.recv
+[TRACE]1126950.0ns :router_test_top.t.get_payload
+[TRACE]1127350.0ns :router_test_top.t.send_pad
+[TRACE]1127850.0ns :router_test_top.t.send_payload
+[TRACE]1131250.0ns :router_test_top.t.check
+[TRACE]1131250.0ns :router_test_top.t.compare
+[NOTE]1131250.0ns Packet #313 Successfully Compared
+[TRACE]1131250.0ns :router_test_top.t.gen
+[TRACE]1131250.0ns :router_test_top.t.send
+[TRACE]1131250.0ns :router_test_top.t.send_addrs
+[TRACE]1131250.0ns :router_test_top.t.recv
+[TRACE]1131250.0ns :router_test_top.t.get_payload
+[TRACE]1131650.0ns :router_test_top.t.send_pad
+[TRACE]1132150.0ns :router_test_top.t.send_payload
+[TRACE]1134750.0ns :router_test_top.t.check
+[TRACE]1134750.0ns :router_test_top.t.compare
+[NOTE]1134750.0ns Packet #314 Successfully Compared
+[TRACE]1134750.0ns :router_test_top.t.gen
+[TRACE]1134750.0ns :router_test_top.t.send
+[TRACE]1134750.0ns :router_test_top.t.send_addrs
+[TRACE]1134750.0ns :router_test_top.t.recv
+[TRACE]1134750.0ns :router_test_top.t.get_payload
+[TRACE]1135150.0ns :router_test_top.t.send_pad
+[TRACE]1135650.0ns :router_test_top.t.send_payload
+[TRACE]1138250.0ns :router_test_top.t.check
+[TRACE]1138250.0ns :router_test_top.t.compare
+[NOTE]1138250.0ns Packet #315 Successfully Compared
+[TRACE]1138250.0ns :router_test_top.t.gen
+[TRACE]1138250.0ns :router_test_top.t.send
+[TRACE]1138250.0ns :router_test_top.t.send_addrs
+[TRACE]1138250.0ns :router_test_top.t.recv
+[TRACE]1138250.0ns :router_test_top.t.get_payload
+[TRACE]1138650.0ns :router_test_top.t.send_pad
+[TRACE]1139150.0ns :router_test_top.t.send_payload
+[TRACE]1140950.0ns :router_test_top.t.check
+[TRACE]1140950.0ns :router_test_top.t.compare
+[NOTE]1140950.0ns Packet #316 Successfully Compared
+[TRACE]1140950.0ns :router_test_top.t.gen
+[TRACE]1140950.0ns :router_test_top.t.send
+[TRACE]1140950.0ns :router_test_top.t.send_addrs
+[TRACE]1140950.0ns :router_test_top.t.recv
+[TRACE]1140950.0ns :router_test_top.t.get_payload
+[TRACE]1141350.0ns :router_test_top.t.send_pad
+[TRACE]1141850.0ns :router_test_top.t.send_payload
+[TRACE]1143650.0ns :router_test_top.t.check
+[TRACE]1143650.0ns :router_test_top.t.compare
+[NOTE]1143650.0ns Packet #317 Successfully Compared
+[TRACE]1143650.0ns :router_test_top.t.gen
+[TRACE]1143650.0ns :router_test_top.t.send
+[TRACE]1143650.0ns :router_test_top.t.send_addrs
+[TRACE]1143650.0ns :router_test_top.t.recv
+[TRACE]1143650.0ns :router_test_top.t.get_payload
+[TRACE]1144050.0ns :router_test_top.t.send_pad
+[TRACE]1144550.0ns :router_test_top.t.send_payload
+[TRACE]1146350.0ns :router_test_top.t.check
+[TRACE]1146350.0ns :router_test_top.t.compare
+[NOTE]1146350.0ns Packet #318 Successfully Compared
+[TRACE]1146350.0ns :router_test_top.t.gen
+[TRACE]1146350.0ns :router_test_top.t.send
+[TRACE]1146350.0ns :router_test_top.t.send_addrs
+[TRACE]1146350.0ns :router_test_top.t.recv
+[TRACE]1146350.0ns :router_test_top.t.get_payload
+[TRACE]1146750.0ns :router_test_top.t.send_pad
+[TRACE]1147250.0ns :router_test_top.t.send_payload
+[TRACE]1150650.0ns :router_test_top.t.check
+[TRACE]1150650.0ns :router_test_top.t.compare
+[NOTE]1150650.0ns Packet #319 Successfully Compared
+[TRACE]1150650.0ns :router_test_top.t.gen
+[TRACE]1150650.0ns :router_test_top.t.send
+[TRACE]1150650.0ns :router_test_top.t.send_addrs
+[TRACE]1150650.0ns :router_test_top.t.recv
+[TRACE]1150650.0ns :router_test_top.t.get_payload
+[TRACE]1151050.0ns :router_test_top.t.send_pad
+[TRACE]1151550.0ns :router_test_top.t.send_payload
+[TRACE]1153350.0ns :router_test_top.t.check
+[TRACE]1153350.0ns :router_test_top.t.compare
+[NOTE]1153350.0ns Packet #320 Successfully Compared
+[TRACE]1153350.0ns :router_test_top.t.gen
+[TRACE]1153350.0ns :router_test_top.t.send
+[TRACE]1153350.0ns :router_test_top.t.send_addrs
+[TRACE]1153350.0ns :router_test_top.t.recv
+[TRACE]1153350.0ns :router_test_top.t.get_payload
+[TRACE]1153750.0ns :router_test_top.t.send_pad
+[TRACE]1154250.0ns :router_test_top.t.send_payload
+[TRACE]1156850.0ns :router_test_top.t.check
+[TRACE]1156850.0ns :router_test_top.t.compare
+[NOTE]1156850.0ns Packet #321 Successfully Compared
+[TRACE]1156850.0ns :router_test_top.t.gen
+[TRACE]1156850.0ns :router_test_top.t.send
+[TRACE]1156850.0ns :router_test_top.t.send_addrs
+[TRACE]1156850.0ns :router_test_top.t.recv
+[TRACE]1156850.0ns :router_test_top.t.get_payload
+[TRACE]1157250.0ns :router_test_top.t.send_pad
+[TRACE]1157750.0ns :router_test_top.t.send_payload
+[TRACE]1159550.0ns :router_test_top.t.check
+[TRACE]1159550.0ns :router_test_top.t.compare
+[NOTE]1159550.0ns Packet #322 Successfully Compared
+[TRACE]1159550.0ns :router_test_top.t.gen
+[TRACE]1159550.0ns :router_test_top.t.send
+[TRACE]1159550.0ns :router_test_top.t.send_addrs
+[TRACE]1159550.0ns :router_test_top.t.recv
+[TRACE]1159550.0ns :router_test_top.t.get_payload
+[TRACE]1159950.0ns :router_test_top.t.send_pad
+[TRACE]1160450.0ns :router_test_top.t.send_payload
+[TRACE]1163850.0ns :router_test_top.t.check
+[TRACE]1163850.0ns :router_test_top.t.compare
+[NOTE]1163850.0ns Packet #323 Successfully Compared
+[TRACE]1163850.0ns :router_test_top.t.gen
+[TRACE]1163850.0ns :router_test_top.t.send
+[TRACE]1163850.0ns :router_test_top.t.send_addrs
+[TRACE]1163850.0ns :router_test_top.t.recv
+[TRACE]1163850.0ns :router_test_top.t.get_payload
+[TRACE]1164250.0ns :router_test_top.t.send_pad
+[TRACE]1164750.0ns :router_test_top.t.send_payload
+[TRACE]1168150.0ns :router_test_top.t.check
+[TRACE]1168150.0ns :router_test_top.t.compare
+[NOTE]1168150.0ns Packet #324 Successfully Compared
+[TRACE]1168150.0ns :router_test_top.t.gen
+[TRACE]1168150.0ns :router_test_top.t.send
+[TRACE]1168150.0ns :router_test_top.t.send_addrs
+[TRACE]1168150.0ns :router_test_top.t.recv
+[TRACE]1168150.0ns :router_test_top.t.get_payload
+[TRACE]1168550.0ns :router_test_top.t.send_pad
+[TRACE]1169050.0ns :router_test_top.t.send_payload
+[TRACE]1170850.0ns :router_test_top.t.check
+[TRACE]1170850.0ns :router_test_top.t.compare
+[NOTE]1170850.0ns Packet #325 Successfully Compared
+[TRACE]1170850.0ns :router_test_top.t.gen
+[TRACE]1170850.0ns :router_test_top.t.send
+[TRACE]1170850.0ns :router_test_top.t.send_addrs
+[TRACE]1170850.0ns :router_test_top.t.recv
+[TRACE]1170850.0ns :router_test_top.t.get_payload
+[TRACE]1171250.0ns :router_test_top.t.send_pad
+[TRACE]1171750.0ns :router_test_top.t.send_payload
+[TRACE]1175150.0ns :router_test_top.t.check
+[TRACE]1175150.0ns :router_test_top.t.compare
+[NOTE]1175150.0ns Packet #326 Successfully Compared
+[TRACE]1175150.0ns :router_test_top.t.gen
+[TRACE]1175150.0ns :router_test_top.t.send
+[TRACE]1175150.0ns :router_test_top.t.send_addrs
+[TRACE]1175150.0ns :router_test_top.t.recv
+[TRACE]1175150.0ns :router_test_top.t.get_payload
+[TRACE]1175550.0ns :router_test_top.t.send_pad
+[TRACE]1176050.0ns :router_test_top.t.send_payload
+[TRACE]1177850.0ns :router_test_top.t.check
+[TRACE]1177850.0ns :router_test_top.t.compare
+[NOTE]1177850.0ns Packet #327 Successfully Compared
+[TRACE]1177850.0ns :router_test_top.t.gen
+[TRACE]1177850.0ns :router_test_top.t.send
+[TRACE]1177850.0ns :router_test_top.t.send_addrs
+[TRACE]1177850.0ns :router_test_top.t.recv
+[TRACE]1177850.0ns :router_test_top.t.get_payload
+[TRACE]1178250.0ns :router_test_top.t.send_pad
+[TRACE]1178750.0ns :router_test_top.t.send_payload
+[TRACE]1181350.0ns :router_test_top.t.check
+[TRACE]1181350.0ns :router_test_top.t.compare
+[NOTE]1181350.0ns Packet #328 Successfully Compared
+[TRACE]1181350.0ns :router_test_top.t.gen
+[TRACE]1181350.0ns :router_test_top.t.send
+[TRACE]1181350.0ns :router_test_top.t.send_addrs
+[TRACE]1181350.0ns :router_test_top.t.recv
+[TRACE]1181350.0ns :router_test_top.t.get_payload
+[TRACE]1181750.0ns :router_test_top.t.send_pad
+[TRACE]1182250.0ns :router_test_top.t.send_payload
+[TRACE]1184850.0ns :router_test_top.t.check
+[TRACE]1184850.0ns :router_test_top.t.compare
+[NOTE]1184850.0ns Packet #329 Successfully Compared
+[TRACE]1184850.0ns :router_test_top.t.gen
+[TRACE]1184850.0ns :router_test_top.t.send
+[TRACE]1184850.0ns :router_test_top.t.send_addrs
+[TRACE]1184850.0ns :router_test_top.t.recv
+[TRACE]1184850.0ns :router_test_top.t.get_payload
+[TRACE]1185250.0ns :router_test_top.t.send_pad
+[TRACE]1185750.0ns :router_test_top.t.send_payload
+[TRACE]1187550.0ns :router_test_top.t.check
+[TRACE]1187550.0ns :router_test_top.t.compare
+[NOTE]1187550.0ns Packet #330 Successfully Compared
+[TRACE]1187550.0ns :router_test_top.t.gen
+[TRACE]1187550.0ns :router_test_top.t.send
+[TRACE]1187550.0ns :router_test_top.t.send_addrs
+[TRACE]1187550.0ns :router_test_top.t.recv
+[TRACE]1187550.0ns :router_test_top.t.get_payload
+[TRACE]1187950.0ns :router_test_top.t.send_pad
+[TRACE]1188450.0ns :router_test_top.t.send_payload
+[TRACE]1191850.0ns :router_test_top.t.check
+[TRACE]1191850.0ns :router_test_top.t.compare
+[NOTE]1191850.0ns Packet #331 Successfully Compared
+[TRACE]1191850.0ns :router_test_top.t.gen
+[TRACE]1191850.0ns :router_test_top.t.send
+[TRACE]1191850.0ns :router_test_top.t.send_addrs
+[TRACE]1191850.0ns :router_test_top.t.recv
+[TRACE]1191850.0ns :router_test_top.t.get_payload
+[TRACE]1192250.0ns :router_test_top.t.send_pad
+[TRACE]1192750.0ns :router_test_top.t.send_payload
+[TRACE]1195350.0ns :router_test_top.t.check
+[TRACE]1195350.0ns :router_test_top.t.compare
+[NOTE]1195350.0ns Packet #332 Successfully Compared
+[TRACE]1195350.0ns :router_test_top.t.gen
+[TRACE]1195350.0ns :router_test_top.t.send
+[TRACE]1195350.0ns :router_test_top.t.send_addrs
+[TRACE]1195350.0ns :router_test_top.t.recv
+[TRACE]1195350.0ns :router_test_top.t.get_payload
+[TRACE]1195750.0ns :router_test_top.t.send_pad
+[TRACE]1196250.0ns :router_test_top.t.send_payload
+[TRACE]1199650.0ns :router_test_top.t.check
+[TRACE]1199650.0ns :router_test_top.t.compare
+[NOTE]1199650.0ns Packet #333 Successfully Compared
+[TRACE]1199650.0ns :router_test_top.t.gen
+[TRACE]1199650.0ns :router_test_top.t.send
+[TRACE]1199650.0ns :router_test_top.t.send_addrs
+[TRACE]1199650.0ns :router_test_top.t.recv
+[TRACE]1199650.0ns :router_test_top.t.get_payload
+[TRACE]1200050.0ns :router_test_top.t.send_pad
+[TRACE]1200550.0ns :router_test_top.t.send_payload
+[TRACE]1202350.0ns :router_test_top.t.check
+[TRACE]1202350.0ns :router_test_top.t.compare
+[NOTE]1202350.0ns Packet #334 Successfully Compared
+[TRACE]1202350.0ns :router_test_top.t.gen
+[TRACE]1202350.0ns :router_test_top.t.send
+[TRACE]1202350.0ns :router_test_top.t.send_addrs
+[TRACE]1202350.0ns :router_test_top.t.recv
+[TRACE]1202350.0ns :router_test_top.t.get_payload
+[TRACE]1202750.0ns :router_test_top.t.send_pad
+[TRACE]1203250.0ns :router_test_top.t.send_payload
+[TRACE]1205850.0ns :router_test_top.t.check
+[TRACE]1205850.0ns :router_test_top.t.compare
+[NOTE]1205850.0ns Packet #335 Successfully Compared
+[TRACE]1205850.0ns :router_test_top.t.gen
+[TRACE]1205850.0ns :router_test_top.t.send
+[TRACE]1205850.0ns :router_test_top.t.send_addrs
+[TRACE]1205850.0ns :router_test_top.t.recv
+[TRACE]1205850.0ns :router_test_top.t.get_payload
+[TRACE]1206250.0ns :router_test_top.t.send_pad
+[TRACE]1206750.0ns :router_test_top.t.send_payload
+[TRACE]1210150.0ns :router_test_top.t.check
+[TRACE]1210150.0ns :router_test_top.t.compare
+[NOTE]1210150.0ns Packet #336 Successfully Compared
+[TRACE]1210150.0ns :router_test_top.t.gen
+[TRACE]1210150.0ns :router_test_top.t.send
+[TRACE]1210150.0ns :router_test_top.t.send_addrs
+[TRACE]1210150.0ns :router_test_top.t.recv
+[TRACE]1210150.0ns :router_test_top.t.get_payload
+[TRACE]1210550.0ns :router_test_top.t.send_pad
+[TRACE]1211050.0ns :router_test_top.t.send_payload
+[TRACE]1213650.0ns :router_test_top.t.check
+[TRACE]1213650.0ns :router_test_top.t.compare
+[NOTE]1213650.0ns Packet #337 Successfully Compared
+[TRACE]1213650.0ns :router_test_top.t.gen
+[TRACE]1213650.0ns :router_test_top.t.send
+[TRACE]1213650.0ns :router_test_top.t.send_addrs
+[TRACE]1213650.0ns :router_test_top.t.recv
+[TRACE]1213650.0ns :router_test_top.t.get_payload
+[TRACE]1214050.0ns :router_test_top.t.send_pad
+[TRACE]1214550.0ns :router_test_top.t.send_payload
+[TRACE]1217950.0ns :router_test_top.t.check
+[TRACE]1217950.0ns :router_test_top.t.compare
+[NOTE]1217950.0ns Packet #338 Successfully Compared
+[TRACE]1217950.0ns :router_test_top.t.gen
+[TRACE]1217950.0ns :router_test_top.t.send
+[TRACE]1217950.0ns :router_test_top.t.send_addrs
+[TRACE]1217950.0ns :router_test_top.t.recv
+[TRACE]1217950.0ns :router_test_top.t.get_payload
+[TRACE]1218350.0ns :router_test_top.t.send_pad
+[TRACE]1218850.0ns :router_test_top.t.send_payload
+[TRACE]1221450.0ns :router_test_top.t.check
+[TRACE]1221450.0ns :router_test_top.t.compare
+[NOTE]1221450.0ns Packet #339 Successfully Compared
+[TRACE]1221450.0ns :router_test_top.t.gen
+[TRACE]1221450.0ns :router_test_top.t.send
+[TRACE]1221450.0ns :router_test_top.t.send_addrs
+[TRACE]1221450.0ns :router_test_top.t.recv
+[TRACE]1221450.0ns :router_test_top.t.get_payload
+[TRACE]1221850.0ns :router_test_top.t.send_pad
+[TRACE]1222350.0ns :router_test_top.t.send_payload
+[TRACE]1224150.0ns :router_test_top.t.check
+[TRACE]1224150.0ns :router_test_top.t.compare
+[NOTE]1224150.0ns Packet #340 Successfully Compared
+[TRACE]1224150.0ns :router_test_top.t.gen
+[TRACE]1224150.0ns :router_test_top.t.send
+[TRACE]1224150.0ns :router_test_top.t.send_addrs
+[TRACE]1224150.0ns :router_test_top.t.recv
+[TRACE]1224150.0ns :router_test_top.t.get_payload
+[TRACE]1224550.0ns :router_test_top.t.send_pad
+[TRACE]1225050.0ns :router_test_top.t.send_payload
+[TRACE]1228450.0ns :router_test_top.t.check
+[TRACE]1228450.0ns :router_test_top.t.compare
+[NOTE]1228450.0ns Packet #341 Successfully Compared
+[TRACE]1229450.0ns :router_test_top.t.ip_power_cycle
+[TRACE]1229550.0ns :router_test_top.t.ip_power_off
+[TRACE]1231450.0ns :router_test_top.t.ip_power_cycle
+[TRACE]1231550.0ns :router_test_top.t.ip_power_off
+[TRACE]1233750.0ns :router_test_top.t.ip_power_on
+[TRACE]1235750.0ns :router_test_top.t.ip_power_on
+
+*************Low Power Message Summary*******************
+
+INFO = 167, WARNING = 0, ERROR = 0, FATAL = 0
+
+*********************************************************
+
+$finish at simulation time 1237950.0ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1237950000 ps
+CPU Time:      0.580 seconds;       Data structure size:   0.6Mb
+Tue May 20 15:57:07 2025

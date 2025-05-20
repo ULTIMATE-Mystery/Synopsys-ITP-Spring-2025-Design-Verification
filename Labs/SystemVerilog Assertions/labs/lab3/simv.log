@@ -1,0 +1,500 @@
+Command: /evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/./simv -l simv.log +ntb_random_seed=1 +fsdb+functions -cm assert
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP1-1; Runtime version W-2024.09-SP1-1;  May 20 14:01 2025
+*Verdi* Loading libsscore_vcs202409.so
+FSDB Dumper for VCS, Release Verdi_W-2024.09-SP1-1, Linux, 01/11/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'novas.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +functions dumping.
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the SVA assertions, layer (0).
+*Verdi* : Enable +sva_success and +functions dumping.
+*Verdi* : End of traversing the SVA assertions.
+VCD+ Writer W-2024.09-SP1-1 Copyright (c) 1991-2024 by Synopsys Inc.
+[NOTE]  5150.0ns End of frame successfully checked
+[NOTE]  5150.0ns Packet #0 Successfully Compared
+[NOTE]  9450.0ns End of frame successfully checked
+[NOTE]  9450.0ns Packet #1 Successfully Compared
+[NOTE] 13750.0ns End of frame successfully checked
+[NOTE] 13750.0ns Packet #2 Successfully Compared
+[NOTE] 16450.0ns End of frame successfully checked
+[NOTE] 16450.0ns Packet #3 Successfully Compared
+[NOTE] 19150.0ns End of frame successfully checked
+[NOTE] 19150.0ns Packet #4 Successfully Compared
+[NOTE] 21850.0ns End of frame successfully checked
+[NOTE] 21850.0ns Packet #5 Successfully Compared
+[NOTE] 25350.0ns End of frame successfully checked
+[NOTE] 25350.0ns Packet #6 Successfully Compared
+[NOTE] 29650.0ns End of frame successfully checked
+[NOTE] 29650.0ns Packet #7 Successfully Compared
+[NOTE] 33950.0ns End of frame successfully checked
+[NOTE] 33950.0ns Packet #8 Successfully Compared
+[NOTE] 37450.0ns End of frame successfully checked
+[NOTE] 37450.0ns Packet #9 Successfully Compared
+[NOTE] 40950.0ns End of frame successfully checked
+[NOTE] 40950.0ns Packet #10 Successfully Compared
+[NOTE] 43650.0ns End of frame successfully checked
+[NOTE] 43650.0ns Packet #11 Successfully Compared
+[NOTE] 46350.0ns End of frame successfully checked
+[NOTE] 46350.0ns Packet #12 Successfully Compared
+[NOTE] 49050.0ns End of frame successfully checked
+[NOTE] 49050.0ns Packet #13 Successfully Compared
+[NOTE] 53350.0ns End of frame successfully checked
+[NOTE] 53350.0ns Packet #14 Successfully Compared
+[NOTE] 56050.0ns End of frame successfully checked
+[NOTE] 56050.0ns Packet #15 Successfully Compared
+[NOTE] 60350.0ns End of frame successfully checked
+[NOTE] 60350.0ns Packet #16 Successfully Compared
+[NOTE] 63850.0ns End of frame successfully checked
+[NOTE] 63850.0ns Packet #17 Successfully Compared
+[NOTE] 67350.0ns End of frame successfully checked
+[NOTE] 67350.0ns Packet #18 Successfully Compared
+[NOTE] 71650.0ns End of frame successfully checked
+[NOTE] 71650.0ns Packet #19 Successfully Compared
+[NOTE] 75950.0ns End of frame successfully checked
+[NOTE] 75950.0ns Packet #20 Successfully Compared
+[NOTE] 80250.0ns End of frame successfully checked
+[NOTE] 80250.0ns Packet #21 Successfully Compared
+[NOTE] 84550.0ns End of frame successfully checked
+[NOTE] 84550.0ns Packet #22 Successfully Compared
+[NOTE] 88050.0ns End of frame successfully checked
+[NOTE] 88050.0ns Packet #23 Successfully Compared
+[NOTE] 91550.0ns End of frame successfully checked
+[NOTE] 91550.0ns Packet #24 Successfully Compared
+[NOTE] 95850.0ns End of frame successfully checked
+[NOTE] 95850.0ns Packet #25 Successfully Compared
+[NOTE] 98550.0ns End of frame successfully checked
+[NOTE] 98550.0ns Packet #26 Successfully Compared
+[NOTE]101250.0ns End of frame successfully checked
+[NOTE]101250.0ns Packet #27 Successfully Compared
+[NOTE]103950.0ns End of frame successfully checked
+[NOTE]103950.0ns Packet #28 Successfully Compared
+[NOTE]108250.0ns End of frame successfully checked
+[NOTE]108250.0ns Packet #29 Successfully Compared
+[NOTE]111750.0ns End of frame successfully checked
+[NOTE]111750.0ns Packet #30 Successfully Compared
+[NOTE]114450.0ns End of frame successfully checked
+[NOTE]114450.0ns Packet #31 Successfully Compared
+[NOTE]117150.0ns End of frame successfully checked
+[NOTE]117150.0ns Packet #32 Successfully Compared
+[NOTE]120650.0ns End of frame successfully checked
+[NOTE]120650.0ns Packet #33 Successfully Compared
+[NOTE]124150.0ns End of frame successfully checked
+[NOTE]124150.0ns Packet #34 Successfully Compared
+[NOTE]126850.0ns End of frame successfully checked
+[NOTE]126850.0ns Packet #35 Successfully Compared
+[NOTE]131150.0ns End of frame successfully checked
+[NOTE]131150.0ns Packet #36 Successfully Compared
+[NOTE]134650.0ns End of frame successfully checked
+[NOTE]134650.0ns Packet #37 Successfully Compared
+[NOTE]137350.0ns End of frame successfully checked
+[NOTE]137350.0ns Packet #38 Successfully Compared
+[NOTE]141650.0ns End of frame successfully checked
+[NOTE]141650.0ns Packet #39 Successfully Compared
+[NOTE]145150.0ns End of frame successfully checked
+[NOTE]145150.0ns Packet #40 Successfully Compared
+[NOTE]149450.0ns End of frame successfully checked
+[NOTE]149450.0ns Packet #41 Successfully Compared
+[NOTE]152150.0ns End of frame successfully checked
+[NOTE]152150.0ns Packet #42 Successfully Compared
+[NOTE]156450.0ns End of frame successfully checked
+[NOTE]156450.0ns Packet #43 Successfully Compared
+[NOTE]159950.0ns End of frame successfully checked
+[NOTE]159950.0ns Packet #44 Successfully Compared
+[NOTE]162650.0ns End of frame successfully checked
+[NOTE]162650.0ns Packet #45 Successfully Compared
+[NOTE]165350.0ns End of frame successfully checked
+[NOTE]165350.0ns Packet #46 Successfully Compared
+[NOTE]168050.0ns End of frame successfully checked
+[NOTE]168050.0ns Packet #47 Successfully Compared
+[NOTE]170750.0ns End of frame successfully checked
+[NOTE]170750.0ns Packet #48 Successfully Compared
+[NOTE]174250.0ns End of frame successfully checked
+[NOTE]174250.0ns Packet #49 Successfully Compared
+[NOTE]176950.0ns End of frame successfully checked
+[NOTE]176950.0ns Packet #50 Successfully Compared
+[NOTE]179650.0ns End of frame successfully checked
+[NOTE]179650.0ns Packet #51 Successfully Compared
+[NOTE]183150.0ns End of frame successfully checked
+[NOTE]183150.0ns Packet #52 Successfully Compared
+[NOTE]185850.0ns End of frame successfully checked
+[NOTE]185850.0ns Packet #53 Successfully Compared
+[NOTE]188550.0ns End of frame successfully checked
+[NOTE]188550.0ns Packet #54 Successfully Compared
+[NOTE]192850.0ns End of frame successfully checked
+[NOTE]192850.0ns Packet #55 Successfully Compared
+[NOTE]196350.0ns End of frame successfully checked
+[NOTE]196350.0ns Packet #56 Successfully Compared
+[NOTE]199050.0ns End of frame successfully checked
+[NOTE]199050.0ns Packet #57 Successfully Compared
+[NOTE]203350.0ns End of frame successfully checked
+[NOTE]203350.0ns Packet #58 Successfully Compared
+[NOTE]206850.0ns End of frame successfully checked
+[NOTE]206850.0ns Packet #59 Successfully Compared
+[NOTE]209550.0ns End of frame successfully checked
+[NOTE]209550.0ns Packet #60 Successfully Compared
+[NOTE]212250.0ns End of frame successfully checked
+[NOTE]212250.0ns Packet #61 Successfully Compared
+[NOTE]215750.0ns End of frame successfully checked
+[NOTE]215750.0ns Packet #62 Successfully Compared
+[NOTE]218450.0ns End of frame successfully checked
+[NOTE]218450.0ns Packet #63 Successfully Compared
+[NOTE]222750.0ns End of frame successfully checked
+[NOTE]222750.0ns Packet #64 Successfully Compared
+[NOTE]226250.0ns End of frame successfully checked
+[NOTE]226250.0ns Packet #65 Successfully Compared
+[NOTE]229750.0ns End of frame successfully checked
+[NOTE]229750.0ns Packet #66 Successfully Compared
+[NOTE]232450.0ns End of frame successfully checked
+[NOTE]232450.0ns Packet #67 Successfully Compared
+[NOTE]235150.0ns End of frame successfully checked
+[NOTE]235150.0ns Packet #68 Successfully Compared
+[NOTE]238650.0ns End of frame successfully checked
+[NOTE]238650.0ns Packet #69 Successfully Compared
+[NOTE]242950.0ns End of frame successfully checked
+[NOTE]242950.0ns Packet #70 Successfully Compared
+[NOTE]246450.0ns End of frame successfully checked
+[NOTE]246450.0ns Packet #71 Successfully Compared
+[NOTE]249150.0ns End of frame successfully checked
+[NOTE]249150.0ns Packet #72 Successfully Compared
+[NOTE]251850.0ns End of frame successfully checked
+[NOTE]251850.0ns Packet #73 Successfully Compared
+[NOTE]256150.0ns End of frame successfully checked
+[NOTE]256150.0ns Packet #74 Successfully Compared
+[NOTE]258850.0ns End of frame successfully checked
+[NOTE]258850.0ns Packet #75 Successfully Compared
+[NOTE]263150.0ns End of frame successfully checked
+[NOTE]263150.0ns Packet #76 Successfully Compared
+[NOTE]266650.0ns End of frame successfully checked
+[NOTE]266650.0ns Packet #77 Successfully Compared
+[NOTE]270950.0ns End of frame successfully checked
+[NOTE]270950.0ns Packet #78 Successfully Compared
+[NOTE]275250.0ns End of frame successfully checked
+[NOTE]275250.0ns Packet #79 Successfully Compared
+[NOTE]277950.0ns End of frame successfully checked
+[NOTE]277950.0ns Packet #80 Successfully Compared
+[NOTE]280650.0ns End of frame successfully checked
+[NOTE]280650.0ns Packet #81 Successfully Compared
+[NOTE]283350.0ns End of frame successfully checked
+[NOTE]283350.0ns Packet #82 Successfully Compared
+[NOTE]286850.0ns End of frame successfully checked
+[NOTE]286850.0ns Packet #83 Successfully Compared
+[NOTE]289550.0ns End of frame successfully checked
+[NOTE]289550.0ns Packet #84 Successfully Compared
+[NOTE]293850.0ns End of frame successfully checked
+[NOTE]293850.0ns Packet #85 Successfully Compared
+[NOTE]297350.0ns End of frame successfully checked
+[NOTE]297350.0ns Packet #86 Successfully Compared
+[NOTE]301650.0ns End of frame successfully checked
+[NOTE]301650.0ns Packet #87 Successfully Compared
+[NOTE]305150.0ns End of frame successfully checked
+[NOTE]305150.0ns Packet #88 Successfully Compared
+[NOTE]309450.0ns End of frame successfully checked
+[NOTE]309450.0ns Packet #89 Successfully Compared
+[NOTE]313750.0ns End of frame successfully checked
+[NOTE]313750.0ns Packet #90 Successfully Compared
+[NOTE]317250.0ns End of frame successfully checked
+[NOTE]317250.0ns Packet #91 Successfully Compared
+[NOTE]321550.0ns End of frame successfully checked
+[NOTE]321550.0ns Packet #92 Successfully Compared
+[NOTE]325850.0ns End of frame successfully checked
+[NOTE]325850.0ns Packet #93 Successfully Compared
+[NOTE]330150.0ns End of frame successfully checked
+[NOTE]330150.0ns Packet #94 Successfully Compared
+[NOTE]332850.0ns End of frame successfully checked
+[NOTE]332850.0ns Packet #95 Successfully Compared
+[NOTE]335550.0ns End of frame successfully checked
+[NOTE]335550.0ns Packet #96 Successfully Compared
+[NOTE]339050.0ns End of frame successfully checked
+[NOTE]339050.0ns Packet #97 Successfully Compared
+[NOTE]342550.0ns End of frame successfully checked
+[NOTE]342550.0ns Packet #98 Successfully Compared
+[NOTE]345250.0ns End of frame successfully checked
+[NOTE]345250.0ns Packet #99 Successfully Compared
+[NOTE]349550.0ns End of frame successfully checked
+[NOTE]349550.0ns Packet #100 Successfully Compared
+[NOTE]353050.0ns End of frame successfully checked
+[NOTE]353050.0ns Packet #101 Successfully Compared
+[NOTE]355750.0ns End of frame successfully checked
+[NOTE]355750.0ns Packet #102 Successfully Compared
+[NOTE]359250.0ns End of frame successfully checked
+[NOTE]359250.0ns Packet #103 Successfully Compared
+[NOTE]361950.0ns End of frame successfully checked
+[NOTE]361950.0ns Packet #104 Successfully Compared
+[NOTE]364650.0ns End of frame successfully checked
+[NOTE]364650.0ns Packet #105 Successfully Compared
+[NOTE]368950.0ns End of frame successfully checked
+[NOTE]368950.0ns Packet #106 Successfully Compared
+[NOTE]373250.0ns End of frame successfully checked
+[NOTE]373250.0ns Packet #107 Successfully Compared
+[NOTE]375950.0ns End of frame successfully checked
+[NOTE]375950.0ns Packet #108 Successfully Compared
+[NOTE]380250.0ns End of frame successfully checked
+[NOTE]380250.0ns Packet #109 Successfully Compared
+[NOTE]383750.0ns End of frame successfully checked
+[NOTE]383750.0ns Packet #110 Successfully Compared
+[NOTE]388050.0ns End of frame successfully checked
+[NOTE]388050.0ns Packet #111 Successfully Compared
+[NOTE]392350.0ns End of frame successfully checked
+[NOTE]392350.0ns Packet #112 Successfully Compared
+[NOTE]396650.0ns End of frame successfully checked
+[NOTE]396650.0ns Packet #113 Successfully Compared
+[NOTE]399350.0ns End of frame successfully checked
+[NOTE]399350.0ns Packet #114 Successfully Compared
+[NOTE]402050.0ns End of frame successfully checked
+[NOTE]402050.0ns Packet #115 Successfully Compared
+[NOTE]404750.0ns End of frame successfully checked
+[NOTE]404750.0ns Packet #116 Successfully Compared
+[NOTE]409050.0ns End of frame successfully checked
+[NOTE]409050.0ns Packet #117 Successfully Compared
+[NOTE]413350.0ns End of frame successfully checked
+[NOTE]413350.0ns Packet #118 Successfully Compared
+[NOTE]416050.0ns End of frame successfully checked
+[NOTE]416050.0ns Packet #119 Successfully Compared
+[NOTE]419550.0ns End of frame successfully checked
+[NOTE]419550.0ns Packet #120 Successfully Compared
+[NOTE]422250.0ns End of frame successfully checked
+[NOTE]422250.0ns Packet #121 Successfully Compared
+[NOTE]426550.0ns End of frame successfully checked
+[NOTE]426550.0ns Packet #122 Successfully Compared
+[NOTE]430050.0ns End of frame successfully checked
+[NOTE]430050.0ns Packet #123 Successfully Compared
+[NOTE]432750.0ns End of frame successfully checked
+[NOTE]432750.0ns Packet #124 Successfully Compared
+[NOTE]435450.0ns End of frame successfully checked
+[NOTE]435450.0ns Packet #125 Successfully Compared
+[NOTE]438150.0ns End of frame successfully checked
+[NOTE]438150.0ns Packet #126 Successfully Compared
+[NOTE]442450.0ns End of frame successfully checked
+[NOTE]442450.0ns Packet #127 Successfully Compared
+[NOTE]445950.0ns End of frame successfully checked
+[NOTE]445950.0ns Packet #128 Successfully Compared
+[NOTE]450250.0ns End of frame successfully checked
+[NOTE]450250.0ns Packet #129 Successfully Compared
+[NOTE]453750.0ns End of frame successfully checked
+[NOTE]453750.0ns Packet #130 Successfully Compared
+[NOTE]457250.0ns End of frame successfully checked
+[NOTE]457250.0ns Packet #131 Successfully Compared
+[NOTE]460750.0ns End of frame successfully checked
+[NOTE]460750.0ns Packet #132 Successfully Compared
+[NOTE]464250.0ns End of frame successfully checked
+[NOTE]464250.0ns Packet #133 Successfully Compared
+[NOTE]468550.0ns End of frame successfully checked
+[NOTE]468550.0ns Packet #134 Successfully Compared
+[NOTE]472050.0ns End of frame successfully checked
+[NOTE]472050.0ns Packet #135 Successfully Compared
+[NOTE]475550.0ns End of frame successfully checked
+[NOTE]475550.0ns Packet #136 Successfully Compared
+[NOTE]478250.0ns End of frame successfully checked
+[NOTE]478250.0ns Packet #137 Successfully Compared
+[NOTE]480950.0ns End of frame successfully checked
+[NOTE]480950.0ns Packet #138 Successfully Compared
+[NOTE]485250.0ns End of frame successfully checked
+[NOTE]485250.0ns Packet #139 Successfully Compared
+[NOTE]487950.0ns End of frame successfully checked
+[NOTE]487950.0ns Packet #140 Successfully Compared
+[NOTE]491450.0ns End of frame successfully checked
+[NOTE]491450.0ns Packet #141 Successfully Compared
+[NOTE]494950.0ns End of frame successfully checked
+[NOTE]494950.0ns Packet #142 Successfully Compared
+[NOTE]498450.0ns End of frame successfully checked
+[NOTE]498450.0ns Packet #143 Successfully Compared
+[NOTE]502750.0ns End of frame successfully checked
+[NOTE]502750.0ns Packet #144 Successfully Compared
+[NOTE]506250.0ns End of frame successfully checked
+[NOTE]506250.0ns Packet #145 Successfully Compared
+[NOTE]508950.0ns End of frame successfully checked
+[NOTE]508950.0ns Packet #146 Successfully Compared
+[NOTE]511650.0ns End of frame successfully checked
+[NOTE]511650.0ns Packet #147 Successfully Compared
+[NOTE]515950.0ns End of frame successfully checked
+[NOTE]515950.0ns Packet #148 Successfully Compared
+[NOTE]520250.0ns End of frame successfully checked
+[NOTE]520250.0ns Packet #149 Successfully Compared
+[NOTE]524550.0ns End of frame successfully checked
+[NOTE]524550.0ns Packet #150 Successfully Compared
+[NOTE]527250.0ns End of frame successfully checked
+[NOTE]527250.0ns Packet #151 Successfully Compared
+[NOTE]531550.0ns End of frame successfully checked
+[NOTE]531550.0ns Packet #152 Successfully Compared
+[NOTE]535050.0ns End of frame successfully checked
+[NOTE]535050.0ns Packet #153 Successfully Compared
+[NOTE]538550.0ns End of frame successfully checked
+[NOTE]538550.0ns Packet #154 Successfully Compared
+[NOTE]541250.0ns End of frame successfully checked
+[NOTE]541250.0ns Packet #155 Successfully Compared
+[NOTE]545550.0ns End of frame successfully checked
+[NOTE]545550.0ns Packet #156 Successfully Compared
+[NOTE]548250.0ns End of frame successfully checked
+[NOTE]548250.0ns Packet #157 Successfully Compared
+[NOTE]550950.0ns End of frame successfully checked
+[NOTE]550950.0ns Packet #158 Successfully Compared
+[NOTE]554450.0ns End of frame successfully checked
+[NOTE]554450.0ns Packet #159 Successfully Compared
+[NOTE]558750.0ns End of frame successfully checked
+[NOTE]558750.0ns Packet #160 Successfully Compared
+[NOTE]562250.0ns End of frame successfully checked
+[NOTE]562250.0ns Packet #161 Successfully Compared
+[NOTE]564950.0ns End of frame successfully checked
+[NOTE]564950.0ns Packet #162 Successfully Compared
+[NOTE]569250.0ns End of frame successfully checked
+[NOTE]569250.0ns Packet #163 Successfully Compared
+[NOTE]573550.0ns End of frame successfully checked
+[NOTE]573550.0ns Packet #164 Successfully Compared
+[NOTE]576250.0ns End of frame successfully checked
+[NOTE]576250.0ns Packet #165 Successfully Compared
+[NOTE]578950.0ns End of frame successfully checked
+[NOTE]578950.0ns Packet #166 Successfully Compared
+[NOTE]581650.0ns End of frame successfully checked
+[NOTE]581650.0ns Packet #167 Successfully Compared
+[NOTE]585950.0ns End of frame successfully checked
+[NOTE]585950.0ns Packet #168 Successfully Compared
+[NOTE]589450.0ns End of frame successfully checked
+[NOTE]589450.0ns Packet #169 Successfully Compared
+[NOTE]592150.0ns End of frame successfully checked
+[NOTE]592150.0ns Packet #170 Successfully Compared
+[NOTE]596450.0ns End of frame successfully checked
+[NOTE]596450.0ns Packet #171 Successfully Compared
+[NOTE]599150.0ns End of frame successfully checked
+[NOTE]599150.0ns Packet #172 Successfully Compared
+[NOTE]603450.0ns End of frame successfully checked
+[NOTE]603450.0ns Packet #173 Successfully Compared
+[NOTE]607750.0ns End of frame successfully checked
+[NOTE]607750.0ns Packet #174 Successfully Compared
+[NOTE]610450.0ns End of frame successfully checked
+[NOTE]610450.0ns Packet #175 Successfully Compared
+[NOTE]613150.0ns End of frame successfully checked
+[NOTE]613150.0ns Packet #176 Successfully Compared
+[NOTE]616650.0ns End of frame successfully checked
+[NOTE]616650.0ns Packet #177 Successfully Compared
+[NOTE]620150.0ns End of frame successfully checked
+[NOTE]620150.0ns Packet #178 Successfully Compared
+[NOTE]622850.0ns End of frame successfully checked
+[NOTE]622850.0ns Packet #179 Successfully Compared
+[NOTE]625550.0ns End of frame successfully checked
+[NOTE]625550.0ns Packet #180 Successfully Compared
+[NOTE]628250.0ns End of frame successfully checked
+[NOTE]628250.0ns Packet #181 Successfully Compared
+[NOTE]632550.0ns End of frame successfully checked
+[NOTE]632550.0ns Packet #182 Successfully Compared
+[NOTE]636850.0ns End of frame successfully checked
+[NOTE]636850.0ns Packet #183 Successfully Compared
+[NOTE]640350.0ns End of frame successfully checked
+[NOTE]640350.0ns Packet #184 Successfully Compared
+[NOTE]643850.0ns End of frame successfully checked
+[NOTE]643850.0ns Packet #185 Successfully Compared
+[NOTE]647350.0ns End of frame successfully checked
+[NOTE]647350.0ns Packet #186 Successfully Compared
+[NOTE]650050.0ns End of frame successfully checked
+[NOTE]650050.0ns Packet #187 Successfully Compared
+[NOTE]652750.0ns End of frame successfully checked
+[NOTE]652750.0ns Packet #188 Successfully Compared
+[NOTE]655450.0ns End of frame successfully checked
+[NOTE]655450.0ns Packet #189 Successfully Compared
+[NOTE]658150.0ns End of frame successfully checked
+[NOTE]658150.0ns Packet #190 Successfully Compared
+[NOTE]662450.0ns End of frame successfully checked
+[NOTE]662450.0ns Packet #191 Successfully Compared
+[NOTE]665150.0ns End of frame successfully checked
+[NOTE]665150.0ns Packet #192 Successfully Compared
+[NOTE]669450.0ns End of frame successfully checked
+[NOTE]669450.0ns Packet #193 Successfully Compared
+[NOTE]672150.0ns End of frame successfully checked
+[NOTE]672150.0ns Packet #194 Successfully Compared
+[NOTE]675650.0ns End of frame successfully checked
+[NOTE]675650.0ns Packet #195 Successfully Compared
+[NOTE]678350.0ns End of frame successfully checked
+[NOTE]678350.0ns Packet #196 Successfully Compared
+[NOTE]681050.0ns End of frame successfully checked
+[NOTE]681050.0ns Packet #197 Successfully Compared
+[NOTE]683750.0ns End of frame successfully checked
+[NOTE]683750.0ns Packet #198 Successfully Compared
+[NOTE]686450.0ns End of frame successfully checked
+[NOTE]686450.0ns Packet #199 Successfully Compared
+$finish at simulation time 687450.0ns
+"./assert.sva", 42: router_test_top.dut.a_oport15.cover_bytes[1].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport15.cover_bytes[2].unnamed$$_0, 6875 attempts, 7 match
+"./assert.sva", 42: router_test_top.dut.a_oport15.cover_bytes[3].unnamed$$_0, 6875 attempts, 5 match
+"./assert.sva", 42: router_test_top.dut.a_oport15.cover_bytes[4].unnamed$$_0, 6875 attempts, 2 match
+"./assert.sva", 42: router_test_top.dut.a_oport15.cover_bytes[5].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport14.cover_bytes[1].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport14.cover_bytes[2].unnamed$$_0, 6875 attempts, 4 match
+"./assert.sva", 42: router_test_top.dut.a_oport14.cover_bytes[3].unnamed$$_0, 6875 attempts, 2 match
+"./assert.sva", 42: router_test_top.dut.a_oport14.cover_bytes[4].unnamed$$_0, 6875 attempts, 2 match
+"./assert.sva", 42: router_test_top.dut.a_oport14.cover_bytes[5].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport13.cover_bytes[1].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport13.cover_bytes[2].unnamed$$_0, 6875 attempts, 3 match
+"./assert.sva", 42: router_test_top.dut.a_oport13.cover_bytes[3].unnamed$$_0, 6875 attempts, 5 match
+"./assert.sva", 42: router_test_top.dut.a_oport13.cover_bytes[4].unnamed$$_0, 6875 attempts, 3 match
+"./assert.sva", 42: router_test_top.dut.a_oport13.cover_bytes[5].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport12.cover_bytes[1].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport12.cover_bytes[2].unnamed$$_0, 6875 attempts, 6 match
+"./assert.sva", 42: router_test_top.dut.a_oport12.cover_bytes[3].unnamed$$_0, 6875 attempts, 6 match
+"./assert.sva", 42: router_test_top.dut.a_oport12.cover_bytes[4].unnamed$$_0, 6875 attempts, 4 match
+"./assert.sva", 42: router_test_top.dut.a_oport12.cover_bytes[5].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport11.cover_bytes[1].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport11.cover_bytes[2].unnamed$$_0, 6875 attempts, 7 match
+"./assert.sva", 42: router_test_top.dut.a_oport11.cover_bytes[3].unnamed$$_0, 6875 attempts, 3 match
+"./assert.sva", 42: router_test_top.dut.a_oport11.cover_bytes[4].unnamed$$_0, 6875 attempts, 3 match
+"./assert.sva", 42: router_test_top.dut.a_oport11.cover_bytes[5].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport10.cover_bytes[1].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport10.cover_bytes[2].unnamed$$_0, 6875 attempts, 7 match
+"./assert.sva", 42: router_test_top.dut.a_oport10.cover_bytes[3].unnamed$$_0, 6875 attempts, 4 match
+"./assert.sva", 42: router_test_top.dut.a_oport10.cover_bytes[4].unnamed$$_0, 6875 attempts, 3 match
+"./assert.sva", 42: router_test_top.dut.a_oport10.cover_bytes[5].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport9.cover_bytes[1].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport9.cover_bytes[2].unnamed$$_0, 6875 attempts, 1 match
+"./assert.sva", 42: router_test_top.dut.a_oport9.cover_bytes[3].unnamed$$_0, 6875 attempts, 4 match
+"./assert.sva", 42: router_test_top.dut.a_oport9.cover_bytes[4].unnamed$$_0, 6875 attempts, 5 match
+"./assert.sva", 42: router_test_top.dut.a_oport9.cover_bytes[5].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport8.cover_bytes[1].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport8.cover_bytes[2].unnamed$$_0, 6875 attempts, 2 match
+"./assert.sva", 42: router_test_top.dut.a_oport8.cover_bytes[3].unnamed$$_0, 6875 attempts, 1 match
+"./assert.sva", 42: router_test_top.dut.a_oport8.cover_bytes[4].unnamed$$_0, 6875 attempts, 7 match
+"./assert.sva", 42: router_test_top.dut.a_oport8.cover_bytes[5].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport7.cover_bytes[1].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport7.cover_bytes[2].unnamed$$_0, 6875 attempts, 4 match
+"./assert.sva", 42: router_test_top.dut.a_oport7.cover_bytes[3].unnamed$$_0, 6875 attempts, 5 match
+"./assert.sva", 42: router_test_top.dut.a_oport7.cover_bytes[4].unnamed$$_0, 6875 attempts, 3 match
+"./assert.sva", 42: router_test_top.dut.a_oport7.cover_bytes[5].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport6.cover_bytes[1].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport6.cover_bytes[2].unnamed$$_0, 6875 attempts, 6 match
+"./assert.sva", 42: router_test_top.dut.a_oport6.cover_bytes[3].unnamed$$_0, 6875 attempts, 3 match
+"./assert.sva", 42: router_test_top.dut.a_oport6.cover_bytes[4].unnamed$$_0, 6875 attempts, 6 match
+"./assert.sva", 42: router_test_top.dut.a_oport6.cover_bytes[5].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport5.cover_bytes[1].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport5.cover_bytes[2].unnamed$$_0, 6875 attempts, 7 match
+"./assert.sva", 42: router_test_top.dut.a_oport5.cover_bytes[3].unnamed$$_0, 6875 attempts, 4 match
+"./assert.sva", 42: router_test_top.dut.a_oport5.cover_bytes[4].unnamed$$_0, 6875 attempts, 3 match
+"./assert.sva", 42: router_test_top.dut.a_oport5.cover_bytes[5].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport4.cover_bytes[1].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport4.cover_bytes[2].unnamed$$_0, 6875 attempts, 2 match
+"./assert.sva", 42: router_test_top.dut.a_oport4.cover_bytes[3].unnamed$$_0, 6875 attempts, 1 match
+"./assert.sva", 42: router_test_top.dut.a_oport4.cover_bytes[4].unnamed$$_0, 6875 attempts, 4 match
+"./assert.sva", 42: router_test_top.dut.a_oport4.cover_bytes[5].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport3.cover_bytes[1].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport3.cover_bytes[2].unnamed$$_0, 6875 attempts, 3 match
+"./assert.sva", 42: router_test_top.dut.a_oport3.cover_bytes[3].unnamed$$_0, 6875 attempts, 4 match
+"./assert.sva", 42: router_test_top.dut.a_oport3.cover_bytes[4].unnamed$$_0, 6875 attempts, 3 match
+"./assert.sva", 42: router_test_top.dut.a_oport3.cover_bytes[5].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport2.cover_bytes[1].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport2.cover_bytes[2].unnamed$$_0, 6875 attempts, 5 match
+"./assert.sva", 42: router_test_top.dut.a_oport2.cover_bytes[3].unnamed$$_0, 6875 attempts, 4 match
+"./assert.sva", 42: router_test_top.dut.a_oport2.cover_bytes[4].unnamed$$_0, 6875 attempts, 6 match
+"./assert.sva", 42: router_test_top.dut.a_oport2.cover_bytes[5].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport1.cover_bytes[1].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport1.cover_bytes[2].unnamed$$_0, 6875 attempts, 10 match
+"./assert.sva", 42: router_test_top.dut.a_oport1.cover_bytes[3].unnamed$$_0, 6875 attempts, 2 match
+"./assert.sva", 42: router_test_top.dut.a_oport1.cover_bytes[4].unnamed$$_0, 6875 attempts, 4 match
+"./assert.sva", 42: router_test_top.dut.a_oport1.cover_bytes[5].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport0.cover_bytes[1].unnamed$$_0, 6875 attempts, 0 match
+"./assert.sva", 42: router_test_top.dut.a_oport0.cover_bytes[2].unnamed$$_0, 6875 attempts, 7 match
+"./assert.sva", 42: router_test_top.dut.a_oport0.cover_bytes[3].unnamed$$_0, 6875 attempts, 4 match
+"./assert.sva", 42: router_test_top.dut.a_oport0.cover_bytes[4].unnamed$$_0, 6875 attempts, 4 match
+"./assert.sva", 42: router_test_top.dut.a_oport0.cover_bytes[5].unnamed$$_0, 6875 attempts, 0 match
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 687450000 ps
+CPU Time:      0.690 seconds;       Data structure size:   0.1Mb
+Tue May 20 14:01:18 2025

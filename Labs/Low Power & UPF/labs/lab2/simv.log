@@ -1,0 +1,1876 @@
+Command: /evprj153/projects/DuyQuang_DV1/Labs/ces_nlp_2019.06/labs/lab2/./simv -l simv.log +ntb_random_seed=1 +fsdb+mda
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP1-1_Full64; Runtime version W-2024.09-SP1-1_Full64;  May 20 15:39 2025
+VCD+ Writer W-2024.09-SP1-1_Full64 Copyright (c) 1991-2024 by Synopsys Inc.
+*Verdi* Loading libsscore_vcs202409.so
+FSDB Dumper for VCS, Release Verdi_W-2024.09-SP1-1, Linux x86_64/64bit, 01/11/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'novas.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda and +power dumping.
+*Verdi* : End of traversing.
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip15/decoder_PD15' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_15' of power domain 'router_test_top/dut/ip15/decoder_PD15' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip15/decoder_PD15' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_15' of power domain 'router_test_top/dut/ip15/decoder_PD15' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip15/decoder_PD15' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip14/decoder_PD14' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_14' of power domain 'router_test_top/dut/ip14/decoder_PD14' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip14/decoder_PD14' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_14' of power domain 'router_test_top/dut/ip14/decoder_PD14' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip14/decoder_PD14' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip13/decoder_PD13' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_13' of power domain 'router_test_top/dut/ip13/decoder_PD13' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip13/decoder_PD13' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_13' of power domain 'router_test_top/dut/ip13/decoder_PD13' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip13/decoder_PD13' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip12/decoder_PD12' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_12' of power domain 'router_test_top/dut/ip12/decoder_PD12' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip12/decoder_PD12' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_12' of power domain 'router_test_top/dut/ip12/decoder_PD12' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip12/decoder_PD12' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip11/decoder_PD11' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_11' of power domain 'router_test_top/dut/ip11/decoder_PD11' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip11/decoder_PD11' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_11' of power domain 'router_test_top/dut/ip11/decoder_PD11' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip11/decoder_PD11' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip10/decoder_PD10' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_10' of power domain 'router_test_top/dut/ip10/decoder_PD10' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip10/decoder_PD10' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_10' of power domain 'router_test_top/dut/ip10/decoder_PD10' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip10/decoder_PD10' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip9/decoder_PD9' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_9' of power domain 'router_test_top/dut/ip9/decoder_PD9' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip9/decoder_PD9' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_9' of power domain 'router_test_top/dut/ip9/decoder_PD9' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip9/decoder_PD9' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip8/decoder_PD8' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_8' of power domain 'router_test_top/dut/ip8/decoder_PD8' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip8/decoder_PD8' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_8' of power domain 'router_test_top/dut/ip8/decoder_PD8' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip8/decoder_PD8' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip7/decoder_PD7' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_7' of power domain 'router_test_top/dut/ip7/decoder_PD7' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip7/decoder_PD7' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_7' of power domain 'router_test_top/dut/ip7/decoder_PD7' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip7/decoder_PD7' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip6/decoder_PD6' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_6' of power domain 'router_test_top/dut/ip6/decoder_PD6' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip6/decoder_PD6' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_6' of power domain 'router_test_top/dut/ip6/decoder_PD6' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip6/decoder_PD6' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip5/decoder_PD5' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_5' of power domain 'router_test_top/dut/ip5/decoder_PD5' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip5/decoder_PD5' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_5' of power domain 'router_test_top/dut/ip5/decoder_PD5' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip5/decoder_PD5' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip4/decoder_PD4' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_4' of power domain 'router_test_top/dut/ip4/decoder_PD4' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip4/decoder_PD4' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_4' of power domain 'router_test_top/dut/ip4/decoder_PD4' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip4/decoder_PD4' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip3/decoder_PD3' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_3' of power domain 'router_test_top/dut/ip3/decoder_PD3' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip3/decoder_PD3' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_3' of power domain 'router_test_top/dut/ip3/decoder_PD3' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip3/decoder_PD3' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip2/decoder_PD2' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_2' of power domain 'router_test_top/dut/ip2/decoder_PD2' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip2/decoder_PD2' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_2' of power domain 'router_test_top/dut/ip2/decoder_PD2' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip2/decoder_PD2' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip1/decoder_PD1' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_1' of power domain 'router_test_top/dut/ip1/decoder_PD1' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip1/decoder_PD1' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_1' of power domain 'router_test_top/dut/ip1/decoder_PD1' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip1/decoder_PD1' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ip0/decoder_PD0' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_0' of power domain 'router_test_top/dut/ip0/decoder_PD0' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip0/decoder_PD0' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_0' of power domain 'router_test_top/dut/ip0/decoder_PD0' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ip0/decoder_PD0' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op15/arbiter_PD15' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD15_switched' of power domain 'router_test_top/dut/op15/arbiter_PD15' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD15.ground' of power domain 'router_test_top/dut/op15/arbiter_PD15' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD15_switched' of power domain 'router_test_top/dut/op15/arbiter_PD15' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD15.ground' of power domain 'router_test_top/dut/op15/arbiter_PD15' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op14/arbiter_PD14' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD14_switched' of power domain 'router_test_top/dut/op14/arbiter_PD14' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD14.ground' of power domain 'router_test_top/dut/op14/arbiter_PD14' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD14_switched' of power domain 'router_test_top/dut/op14/arbiter_PD14' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD14.ground' of power domain 'router_test_top/dut/op14/arbiter_PD14' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op13/arbiter_PD13' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD13_switched' of power domain 'router_test_top/dut/op13/arbiter_PD13' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD13.ground' of power domain 'router_test_top/dut/op13/arbiter_PD13' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD13_switched' of power domain 'router_test_top/dut/op13/arbiter_PD13' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD13.ground' of power domain 'router_test_top/dut/op13/arbiter_PD13' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op12/arbiter_PD12' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD12_switched' of power domain 'router_test_top/dut/op12/arbiter_PD12' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD12.ground' of power domain 'router_test_top/dut/op12/arbiter_PD12' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD12_switched' of power domain 'router_test_top/dut/op12/arbiter_PD12' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD12.ground' of power domain 'router_test_top/dut/op12/arbiter_PD12' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op11/arbiter_PD11' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD11_switched' of power domain 'router_test_top/dut/op11/arbiter_PD11' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD11.ground' of power domain 'router_test_top/dut/op11/arbiter_PD11' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD11_switched' of power domain 'router_test_top/dut/op11/arbiter_PD11' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD11.ground' of power domain 'router_test_top/dut/op11/arbiter_PD11' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op10/arbiter_PD10' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD10_switched' of power domain 'router_test_top/dut/op10/arbiter_PD10' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD10.ground' of power domain 'router_test_top/dut/op10/arbiter_PD10' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD10_switched' of power domain 'router_test_top/dut/op10/arbiter_PD10' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD10.ground' of power domain 'router_test_top/dut/op10/arbiter_PD10' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op9/arbiter_PD9' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD9_switched' of power domain 'router_test_top/dut/op9/arbiter_PD9' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD9.ground' of power domain 'router_test_top/dut/op9/arbiter_PD9' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD9_switched' of power domain 'router_test_top/dut/op9/arbiter_PD9' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD9.ground' of power domain 'router_test_top/dut/op9/arbiter_PD9' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op8/arbiter_PD8' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD8_switched' of power domain 'router_test_top/dut/op8/arbiter_PD8' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD8.ground' of power domain 'router_test_top/dut/op8/arbiter_PD8' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD8_switched' of power domain 'router_test_top/dut/op8/arbiter_PD8' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD8.ground' of power domain 'router_test_top/dut/op8/arbiter_PD8' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op7/arbiter_PD7' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD7_switched' of power domain 'router_test_top/dut/op7/arbiter_PD7' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD7.ground' of power domain 'router_test_top/dut/op7/arbiter_PD7' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD7_switched' of power domain 'router_test_top/dut/op7/arbiter_PD7' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD7.ground' of power domain 'router_test_top/dut/op7/arbiter_PD7' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op6/arbiter_PD6' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD6_switched' of power domain 'router_test_top/dut/op6/arbiter_PD6' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD6.ground' of power domain 'router_test_top/dut/op6/arbiter_PD6' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD6_switched' of power domain 'router_test_top/dut/op6/arbiter_PD6' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD6.ground' of power domain 'router_test_top/dut/op6/arbiter_PD6' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op5/arbiter_PD5' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD5_switched' of power domain 'router_test_top/dut/op5/arbiter_PD5' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD5.ground' of power domain 'router_test_top/dut/op5/arbiter_PD5' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD5_switched' of power domain 'router_test_top/dut/op5/arbiter_PD5' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD5.ground' of power domain 'router_test_top/dut/op5/arbiter_PD5' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op4/arbiter_PD4' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD4_switched' of power domain 'router_test_top/dut/op4/arbiter_PD4' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD4.ground' of power domain 'router_test_top/dut/op4/arbiter_PD4' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD4_switched' of power domain 'router_test_top/dut/op4/arbiter_PD4' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD4.ground' of power domain 'router_test_top/dut/op4/arbiter_PD4' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op3/arbiter_PD3' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD3_switched' of power domain 'router_test_top/dut/op3/arbiter_PD3' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD3.ground' of power domain 'router_test_top/dut/op3/arbiter_PD3' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD3_switched' of power domain 'router_test_top/dut/op3/arbiter_PD3' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD3.ground' of power domain 'router_test_top/dut/op3/arbiter_PD3' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op2/arbiter_PD2' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD2_switched' of power domain 'router_test_top/dut/op2/arbiter_PD2' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD2.ground' of power domain 'router_test_top/dut/op2/arbiter_PD2' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD2_switched' of power domain 'router_test_top/dut/op2/arbiter_PD2' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD2.ground' of power domain 'router_test_top/dut/op2/arbiter_PD2' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op1/arbiter_PD1' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD1_switched' of power domain 'router_test_top/dut/op1/arbiter_PD1' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD1.ground' of power domain 'router_test_top/dut/op1/arbiter_PD1' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD1_switched' of power domain 'router_test_top/dut/op1/arbiter_PD1' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD1.ground' of power domain 'router_test_top/dut/op1/arbiter_PD1' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/op0/arbiter_PD0' started in 'CORRUPT' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD_arbiter_PD0_switched' of power domain 'router_test_top/dut/op0/arbiter_PD0' started in UNDETERMINED state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'SS_arbiter_PD0.ground' of power domain 'router_test_top/dut/op0/arbiter_PD0' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD_arbiter_PD0_switched' of power domain 'router_test_top/dut/op0/arbiter_PD0' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'SS_arbiter_PD0.ground' of power domain 'router_test_top/dut/op0/arbiter_PD0' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_PD_INIT_STATE] Power domain 'router_test_top/dut/ROUTER' started in 'NORMAL' state.
+
+[00 ps] [INFO] [LP_PPN_INIT_STATE] Primary power net 'VDD' of power domain 'router_test_top/dut/ROUTER' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PGN_INIT_STATE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ROUTER' started in FULL_ON state.
+
+[00 ps] [INFO] [LP_PPN_INIT_VALUE] Primary power net 'VDD' of power domain 'router_test_top/dut/ROUTER' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PGN_INIT_VALUE] Primary ground net 'VSS' of power domain 'router_test_top/dut/ROUTER' started with voltage 0 V.
+
+[00 ps] [INFO] [LP_SUPPLY_PAD_CALL] Supply Pad function 'UPF::supply_on' called for Supply Pad 'VDD'. Supply Pad value changed to '`{FULL_ON, 1080000}'. File: ./test.sv, Line: 315.
+
+[00 ps] [INFO] [LP_SUPPLY_PAD_CALL] Supply Pad function 'UPF::supply_on' called for Supply Pad 'VSS'. Supply Pad value changed to '`{FULL_ON, 0}'. File: ./test.sv, Line: 316.
+
+[00 ps] [INFO] [LP_SS_INIT] Supply Set 'router_test_top/dut/op2/arbiter_PD2.primary' initialized to state 'DEFAULT_CORRUPT' with simstate 'CORRUPT'.
+
+[00 ps] [INFO] [LP_SS_INIT] Supply Set 'router_test_top/dut/ip0/decoder_PD0.primary' initialized to state 'DEFAULT_CORRUPT' with simstate 'CORRUPT'.
+
+[00 ps] [INFO] [LP_SS_INITS] Supply Set 'router_test_top/dut/ROUTER.primary' initialized to states 'HV, GND' with simstate 'NORMAL'.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_0' of power domain 'router_test_top/dut/ip0/decoder_PD0' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_0' of power domain 'router_test_top/dut/ip0/decoder_PD0' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_1' of power domain 'router_test_top/dut/ip1/decoder_PD1' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_1' of power domain 'router_test_top/dut/ip1/decoder_PD1' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_2' of power domain 'router_test_top/dut/ip2/decoder_PD2' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_2' of power domain 'router_test_top/dut/ip2/decoder_PD2' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_3' of power domain 'router_test_top/dut/ip3/decoder_PD3' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_3' of power domain 'router_test_top/dut/ip3/decoder_PD3' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_4' of power domain 'router_test_top/dut/ip4/decoder_PD4' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_4' of power domain 'router_test_top/dut/ip4/decoder_PD4' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_5' of power domain 'router_test_top/dut/ip5/decoder_PD5' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_5' of power domain 'router_test_top/dut/ip5/decoder_PD5' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_6' of power domain 'router_test_top/dut/ip6/decoder_PD6' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_6' of power domain 'router_test_top/dut/ip6/decoder_PD6' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_7' of power domain 'router_test_top/dut/ip7/decoder_PD7' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_7' of power domain 'router_test_top/dut/ip7/decoder_PD7' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_8' of power domain 'router_test_top/dut/ip8/decoder_PD8' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_8' of power domain 'router_test_top/dut/ip8/decoder_PD8' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_9' of power domain 'router_test_top/dut/ip9/decoder_PD9' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_9' of power domain 'router_test_top/dut/ip9/decoder_PD9' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_10' of power domain 'router_test_top/dut/ip10/decoder_PD10' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_10' of power domain 'router_test_top/dut/ip10/decoder_PD10' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_11' of power domain 'router_test_top/dut/ip11/decoder_PD11' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_11' of power domain 'router_test_top/dut/ip11/decoder_PD11' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_12' of power domain 'router_test_top/dut/ip12/decoder_PD12' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_12' of power domain 'router_test_top/dut/ip12/decoder_PD12' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_13' of power domain 'router_test_top/dut/ip13/decoder_PD13' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_13' of power domain 'router_test_top/dut/ip13/decoder_PD13' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_14' of power domain 'router_test_top/dut/ip14/decoder_PD14' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_14' of power domain 'router_test_top/dut/ip14/decoder_PD14' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_15' of power domain 'router_test_top/dut/ip15/decoder_PD15' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_15' of power domain 'router_test_top/dut/ip15/decoder_PD15' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_arbiter_PD0_switched' of power domain 'router_test_top/dut/op0/arbiter_PD0' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_arbiter_PD0_switched' of power domain 'router_test_top/dut/op0/arbiter_PD0' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_arbiter_PD1_switched' of power domain 'router_test_top/dut/op1/arbiter_PD1' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_arbiter_PD1_switched' of power domain 'router_test_top/dut/op1/arbiter_PD1' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_arbiter_PD2_switched' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_arbiter_PD2_switched' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_arbiter_PD3_switched' of power domain 'router_test_top/dut/op3/arbiter_PD3' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_arbiter_PD3_switched' of power domain 'router_test_top/dut/op3/arbiter_PD3' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_arbiter_PD4_switched' of power domain 'router_test_top/dut/op4/arbiter_PD4' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_arbiter_PD4_switched' of power domain 'router_test_top/dut/op4/arbiter_PD4' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_arbiter_PD5_switched' of power domain 'router_test_top/dut/op5/arbiter_PD5' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_arbiter_PD5_switched' of power domain 'router_test_top/dut/op5/arbiter_PD5' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_arbiter_PD6_switched' of power domain 'router_test_top/dut/op6/arbiter_PD6' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_arbiter_PD6_switched' of power domain 'router_test_top/dut/op6/arbiter_PD6' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_arbiter_PD7_switched' of power domain 'router_test_top/dut/op7/arbiter_PD7' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_arbiter_PD7_switched' of power domain 'router_test_top/dut/op7/arbiter_PD7' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_arbiter_PD8_switched' of power domain 'router_test_top/dut/op8/arbiter_PD8' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_arbiter_PD8_switched' of power domain 'router_test_top/dut/op8/arbiter_PD8' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_arbiter_PD9_switched' of power domain 'router_test_top/dut/op9/arbiter_PD9' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_arbiter_PD9_switched' of power domain 'router_test_top/dut/op9/arbiter_PD9' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_arbiter_PD10_switched' of power domain 'router_test_top/dut/op10/arbiter_PD10' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_arbiter_PD10_switched' of power domain 'router_test_top/dut/op10/arbiter_PD10' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_arbiter_PD11_switched' of power domain 'router_test_top/dut/op11/arbiter_PD11' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_arbiter_PD11_switched' of power domain 'router_test_top/dut/op11/arbiter_PD11' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_arbiter_PD12_switched' of power domain 'router_test_top/dut/op12/arbiter_PD12' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_arbiter_PD12_switched' of power domain 'router_test_top/dut/op12/arbiter_PD12' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_arbiter_PD13_switched' of power domain 'router_test_top/dut/op13/arbiter_PD13' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_arbiter_PD13_switched' of power domain 'router_test_top/dut/op13/arbiter_PD13' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_arbiter_PD14_switched' of power domain 'router_test_top/dut/op14/arbiter_PD14' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_arbiter_PD14_switched' of power domain 'router_test_top/dut/op14/arbiter_PD14' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_arbiter_PD15_switched' of power domain 'router_test_top/dut/op15/arbiter_PD15' changed from UNDETERMINED to FULL_ON.
+
+[00 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_arbiter_PD15_switched' of power domain 'router_test_top/dut/op15/arbiter_PD15' changed from 0 V to 1.08 V.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip0/decoder_PD0' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip1/decoder_PD1' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip2/decoder_PD2' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip3/decoder_PD3' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip4/decoder_PD4' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip5/decoder_PD5' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip6/decoder_PD6' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip7/decoder_PD7' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip8/decoder_PD8' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip9/decoder_PD9' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip10/decoder_PD10' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip11/decoder_PD11' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip12/decoder_PD12' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip13/decoder_PD13' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip14/decoder_PD14' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip15/decoder_PD15' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/op0/arbiter_PD0' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/op1/arbiter_PD1' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/op2/arbiter_PD2' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/op3/arbiter_PD3' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/op4/arbiter_PD4' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/op5/arbiter_PD5' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/op6/arbiter_PD6' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/op7/arbiter_PD7' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/op8/arbiter_PD8' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/op9/arbiter_PD9' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/op10/arbiter_PD10' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/op11/arbiter_PD11' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/op12/arbiter_PD12' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/op13/arbiter_PD13' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/op14/arbiter_PD14' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/op15/arbiter_PD15' state changed from 'CORRUPT' to 'NORMAL'.
+
+[00 ps] [INFO] [LP_SS_STATE_CHANGE] Supply Set 'router_test_top/dut/ip0/decoder_PD0.primary' transitioned to state 'decoder_PD0_ON' with simstate 'NORMAL'.
+
+[00 ps] [INFO] [LP_SS_STATE_CHANGE] Supply Set 'router_test_top/dut/op2/arbiter_PD2.primary' transitioned to state 'arbiter_PD2_ON' with simstate 'NORMAL'.
+
+[00 ps] [INFO] [LP_PST_INIT_STATE] Design started with 'all_on' state in pst 'router_test_top/dut/router_pst'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/ip15/pwr.ipwrcon_pd_n[15]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip15/decoder_SW_15' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/ip15/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip15/decoder_SW_15' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/ip15/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip15/decoder_SW_15' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/ip15/VDD_15' tied to output supply port 'out' of power switch 'router_test_top/dut/ip15/decoder_SW_15' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/ip15/VDD_15' tied to output supply port 'out' of power switch 'router_test_top/dut/ip15/decoder_SW_15' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/ip15/decoder_SW_15' started in decoder_PD15_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'decoder_PD15.default_isolation.power' for isolation strategy 'decoder_PD15_iso' of power domain 'router_test_top/dut/ip15/decoder_PD15' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'decoder_PD15.default_isolation.ground' for isolation strategy 'decoder_PD15_iso' of power domain 'router_test_top/dut/ip15/decoder_PD15' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/ip15/pwr.ipwrcon_iso_n[15]' of isolation strategy 'decoder_PD15_iso' of power domain 'router_test_top/dut/ip15/decoder_PD15' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/ip14/pwr.ipwrcon_pd_n[14]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip14/decoder_SW_14' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/ip14/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip14/decoder_SW_14' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/ip14/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip14/decoder_SW_14' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/ip14/VDD_14' tied to output supply port 'out' of power switch 'router_test_top/dut/ip14/decoder_SW_14' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/ip14/VDD_14' tied to output supply port 'out' of power switch 'router_test_top/dut/ip14/decoder_SW_14' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/ip14/decoder_SW_14' started in decoder_PD14_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'decoder_PD14.default_isolation.power' for isolation strategy 'decoder_PD14_iso' of power domain 'router_test_top/dut/ip14/decoder_PD14' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'decoder_PD14.default_isolation.ground' for isolation strategy 'decoder_PD14_iso' of power domain 'router_test_top/dut/ip14/decoder_PD14' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/ip14/pwr.ipwrcon_iso_n[14]' of isolation strategy 'decoder_PD14_iso' of power domain 'router_test_top/dut/ip14/decoder_PD14' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/ip13/pwr.ipwrcon_pd_n[13]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip13/decoder_SW_13' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/ip13/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip13/decoder_SW_13' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/ip13/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip13/decoder_SW_13' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/ip13/VDD_13' tied to output supply port 'out' of power switch 'router_test_top/dut/ip13/decoder_SW_13' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/ip13/VDD_13' tied to output supply port 'out' of power switch 'router_test_top/dut/ip13/decoder_SW_13' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/ip13/decoder_SW_13' started in decoder_PD13_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'decoder_PD13.default_isolation.power' for isolation strategy 'decoder_PD13_iso' of power domain 'router_test_top/dut/ip13/decoder_PD13' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'decoder_PD13.default_isolation.ground' for isolation strategy 'decoder_PD13_iso' of power domain 'router_test_top/dut/ip13/decoder_PD13' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/ip13/pwr.ipwrcon_iso_n[13]' of isolation strategy 'decoder_PD13_iso' of power domain 'router_test_top/dut/ip13/decoder_PD13' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/ip12/pwr.ipwrcon_pd_n[12]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip12/decoder_SW_12' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/ip12/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip12/decoder_SW_12' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/ip12/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip12/decoder_SW_12' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/ip12/VDD_12' tied to output supply port 'out' of power switch 'router_test_top/dut/ip12/decoder_SW_12' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/ip12/VDD_12' tied to output supply port 'out' of power switch 'router_test_top/dut/ip12/decoder_SW_12' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/ip12/decoder_SW_12' started in decoder_PD12_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'decoder_PD12.default_isolation.power' for isolation strategy 'decoder_PD12_iso' of power domain 'router_test_top/dut/ip12/decoder_PD12' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'decoder_PD12.default_isolation.ground' for isolation strategy 'decoder_PD12_iso' of power domain 'router_test_top/dut/ip12/decoder_PD12' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/ip12/pwr.ipwrcon_iso_n[12]' of isolation strategy 'decoder_PD12_iso' of power domain 'router_test_top/dut/ip12/decoder_PD12' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/ip11/pwr.ipwrcon_pd_n[11]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip11/decoder_SW_11' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/ip11/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip11/decoder_SW_11' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/ip11/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip11/decoder_SW_11' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/ip11/VDD_11' tied to output supply port 'out' of power switch 'router_test_top/dut/ip11/decoder_SW_11' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/ip11/VDD_11' tied to output supply port 'out' of power switch 'router_test_top/dut/ip11/decoder_SW_11' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/ip11/decoder_SW_11' started in decoder_PD11_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'decoder_PD11.default_isolation.power' for isolation strategy 'decoder_PD11_iso' of power domain 'router_test_top/dut/ip11/decoder_PD11' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'decoder_PD11.default_isolation.ground' for isolation strategy 'decoder_PD11_iso' of power domain 'router_test_top/dut/ip11/decoder_PD11' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/ip11/pwr.ipwrcon_iso_n[11]' of isolation strategy 'decoder_PD11_iso' of power domain 'router_test_top/dut/ip11/decoder_PD11' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/ip10/pwr.ipwrcon_pd_n[10]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip10/decoder_SW_10' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/ip10/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip10/decoder_SW_10' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/ip10/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip10/decoder_SW_10' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/ip10/VDD_10' tied to output supply port 'out' of power switch 'router_test_top/dut/ip10/decoder_SW_10' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/ip10/VDD_10' tied to output supply port 'out' of power switch 'router_test_top/dut/ip10/decoder_SW_10' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/ip10/decoder_SW_10' started in decoder_PD10_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'decoder_PD10.default_isolation.power' for isolation strategy 'decoder_PD10_iso' of power domain 'router_test_top/dut/ip10/decoder_PD10' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'decoder_PD10.default_isolation.ground' for isolation strategy 'decoder_PD10_iso' of power domain 'router_test_top/dut/ip10/decoder_PD10' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/ip10/pwr.ipwrcon_iso_n[10]' of isolation strategy 'decoder_PD10_iso' of power domain 'router_test_top/dut/ip10/decoder_PD10' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/ip9/pwr.ipwrcon_pd_n[9]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip9/decoder_SW_9' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/ip9/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip9/decoder_SW_9' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/ip9/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip9/decoder_SW_9' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/ip9/VDD_9' tied to output supply port 'out' of power switch 'router_test_top/dut/ip9/decoder_SW_9' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/ip9/VDD_9' tied to output supply port 'out' of power switch 'router_test_top/dut/ip9/decoder_SW_9' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/ip9/decoder_SW_9' started in decoder_PD9_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'decoder_PD9.default_isolation.power' for isolation strategy 'decoder_PD9_iso' of power domain 'router_test_top/dut/ip9/decoder_PD9' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'decoder_PD9.default_isolation.ground' for isolation strategy 'decoder_PD9_iso' of power domain 'router_test_top/dut/ip9/decoder_PD9' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/ip9/pwr.ipwrcon_iso_n[9]' of isolation strategy 'decoder_PD9_iso' of power domain 'router_test_top/dut/ip9/decoder_PD9' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/ip8/pwr.ipwrcon_pd_n[8]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip8/decoder_SW_8' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/ip8/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip8/decoder_SW_8' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/ip8/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip8/decoder_SW_8' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/ip8/VDD_8' tied to output supply port 'out' of power switch 'router_test_top/dut/ip8/decoder_SW_8' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/ip8/VDD_8' tied to output supply port 'out' of power switch 'router_test_top/dut/ip8/decoder_SW_8' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/ip8/decoder_SW_8' started in decoder_PD8_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'decoder_PD8.default_isolation.power' for isolation strategy 'decoder_PD8_iso' of power domain 'router_test_top/dut/ip8/decoder_PD8' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'decoder_PD8.default_isolation.ground' for isolation strategy 'decoder_PD8_iso' of power domain 'router_test_top/dut/ip8/decoder_PD8' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/ip8/pwr.ipwrcon_iso_n[8]' of isolation strategy 'decoder_PD8_iso' of power domain 'router_test_top/dut/ip8/decoder_PD8' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/ip7/pwr.ipwrcon_pd_n[7]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip7/decoder_SW_7' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/ip7/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip7/decoder_SW_7' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/ip7/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip7/decoder_SW_7' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/ip7/VDD_7' tied to output supply port 'out' of power switch 'router_test_top/dut/ip7/decoder_SW_7' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/ip7/VDD_7' tied to output supply port 'out' of power switch 'router_test_top/dut/ip7/decoder_SW_7' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/ip7/decoder_SW_7' started in decoder_PD7_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'decoder_PD7.default_isolation.power' for isolation strategy 'decoder_PD7_iso' of power domain 'router_test_top/dut/ip7/decoder_PD7' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'decoder_PD7.default_isolation.ground' for isolation strategy 'decoder_PD7_iso' of power domain 'router_test_top/dut/ip7/decoder_PD7' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/ip7/pwr.ipwrcon_iso_n[7]' of isolation strategy 'decoder_PD7_iso' of power domain 'router_test_top/dut/ip7/decoder_PD7' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/ip6/pwr.ipwrcon_pd_n[6]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip6/decoder_SW_6' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/ip6/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip6/decoder_SW_6' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/ip6/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip6/decoder_SW_6' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/ip6/VDD_6' tied to output supply port 'out' of power switch 'router_test_top/dut/ip6/decoder_SW_6' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/ip6/VDD_6' tied to output supply port 'out' of power switch 'router_test_top/dut/ip6/decoder_SW_6' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/ip6/decoder_SW_6' started in decoder_PD6_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'decoder_PD6.default_isolation.power' for isolation strategy 'decoder_PD6_iso' of power domain 'router_test_top/dut/ip6/decoder_PD6' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'decoder_PD6.default_isolation.ground' for isolation strategy 'decoder_PD6_iso' of power domain 'router_test_top/dut/ip6/decoder_PD6' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/ip6/pwr.ipwrcon_iso_n[6]' of isolation strategy 'decoder_PD6_iso' of power domain 'router_test_top/dut/ip6/decoder_PD6' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/ip5/pwr.ipwrcon_pd_n[5]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip5/decoder_SW_5' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/ip5/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip5/decoder_SW_5' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/ip5/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip5/decoder_SW_5' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/ip5/VDD_5' tied to output supply port 'out' of power switch 'router_test_top/dut/ip5/decoder_SW_5' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/ip5/VDD_5' tied to output supply port 'out' of power switch 'router_test_top/dut/ip5/decoder_SW_5' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/ip5/decoder_SW_5' started in decoder_PD5_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'decoder_PD5.default_isolation.power' for isolation strategy 'decoder_PD5_iso' of power domain 'router_test_top/dut/ip5/decoder_PD5' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'decoder_PD5.default_isolation.ground' for isolation strategy 'decoder_PD5_iso' of power domain 'router_test_top/dut/ip5/decoder_PD5' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/ip5/pwr.ipwrcon_iso_n[5]' of isolation strategy 'decoder_PD5_iso' of power domain 'router_test_top/dut/ip5/decoder_PD5' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/ip4/pwr.ipwrcon_pd_n[4]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip4/decoder_SW_4' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/ip4/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip4/decoder_SW_4' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/ip4/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip4/decoder_SW_4' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/ip4/VDD_4' tied to output supply port 'out' of power switch 'router_test_top/dut/ip4/decoder_SW_4' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/ip4/VDD_4' tied to output supply port 'out' of power switch 'router_test_top/dut/ip4/decoder_SW_4' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/ip4/decoder_SW_4' started in decoder_PD4_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'decoder_PD4.default_isolation.power' for isolation strategy 'decoder_PD4_iso' of power domain 'router_test_top/dut/ip4/decoder_PD4' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'decoder_PD4.default_isolation.ground' for isolation strategy 'decoder_PD4_iso' of power domain 'router_test_top/dut/ip4/decoder_PD4' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/ip4/pwr.ipwrcon_iso_n[4]' of isolation strategy 'decoder_PD4_iso' of power domain 'router_test_top/dut/ip4/decoder_PD4' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/ip3/pwr.ipwrcon_pd_n[3]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip3/decoder_SW_3' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/ip3/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip3/decoder_SW_3' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/ip3/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip3/decoder_SW_3' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/ip3/VDD_3' tied to output supply port 'out' of power switch 'router_test_top/dut/ip3/decoder_SW_3' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/ip3/VDD_3' tied to output supply port 'out' of power switch 'router_test_top/dut/ip3/decoder_SW_3' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/ip3/decoder_SW_3' started in decoder_PD3_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'decoder_PD3.default_isolation.power' for isolation strategy 'decoder_PD3_iso' of power domain 'router_test_top/dut/ip3/decoder_PD3' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'decoder_PD3.default_isolation.ground' for isolation strategy 'decoder_PD3_iso' of power domain 'router_test_top/dut/ip3/decoder_PD3' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/ip3/pwr.ipwrcon_iso_n[3]' of isolation strategy 'decoder_PD3_iso' of power domain 'router_test_top/dut/ip3/decoder_PD3' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/ip2/pwr.ipwrcon_pd_n[2]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip2/decoder_SW_2' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/ip2/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip2/decoder_SW_2' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/ip2/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip2/decoder_SW_2' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/ip2/VDD_2' tied to output supply port 'out' of power switch 'router_test_top/dut/ip2/decoder_SW_2' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/ip2/VDD_2' tied to output supply port 'out' of power switch 'router_test_top/dut/ip2/decoder_SW_2' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/ip2/decoder_SW_2' started in decoder_PD2_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'decoder_PD2.default_isolation.power' for isolation strategy 'decoder_PD2_iso' of power domain 'router_test_top/dut/ip2/decoder_PD2' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'decoder_PD2.default_isolation.ground' for isolation strategy 'decoder_PD2_iso' of power domain 'router_test_top/dut/ip2/decoder_PD2' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/ip2/pwr.ipwrcon_iso_n[2]' of isolation strategy 'decoder_PD2_iso' of power domain 'router_test_top/dut/ip2/decoder_PD2' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/ip1/pwr.ipwrcon_pd_n[1]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip1/decoder_SW_1' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/ip1/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip1/decoder_SW_1' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/ip1/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip1/decoder_SW_1' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/ip1/VDD_1' tied to output supply port 'out' of power switch 'router_test_top/dut/ip1/decoder_SW_1' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/ip1/VDD_1' tied to output supply port 'out' of power switch 'router_test_top/dut/ip1/decoder_SW_1' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/ip1/decoder_SW_1' started in decoder_PD1_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'decoder_PD1.default_isolation.power' for isolation strategy 'decoder_PD1_iso' of power domain 'router_test_top/dut/ip1/decoder_PD1' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'decoder_PD1.default_isolation.ground' for isolation strategy 'decoder_PD1_iso' of power domain 'router_test_top/dut/ip1/decoder_PD1' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/ip1/pwr.ipwrcon_iso_n[1]' of isolation strategy 'decoder_PD1_iso' of power domain 'router_test_top/dut/ip1/decoder_PD1' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/ip0/pwr.ipwrcon_pd_n[0]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip0/decoder_SW_0' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/ip0/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip0/decoder_SW_0' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/ip0/VDD' tied to input supply port 'in' of power switch 'router_test_top/dut/ip0/decoder_SW_0' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/ip0/VDD_0' tied to output supply port 'out' of power switch 'router_test_top/dut/ip0/decoder_SW_0' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/ip0/VDD_0' tied to output supply port 'out' of power switch 'router_test_top/dut/ip0/decoder_SW_0' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/ip0/decoder_SW_0' started in decoder_PD0_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'decoder_PD0.default_isolation.power' for isolation strategy 'decoder_PD0_iso' of power domain 'router_test_top/dut/ip0/decoder_PD0' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'decoder_PD0.default_isolation.ground' for isolation strategy 'decoder_PD0_iso' of power domain 'router_test_top/dut/ip0/decoder_PD0' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/ip0/pwr.ipwrcon_iso_n[0]' of isolation strategy 'decoder_PD0_iso' of power domain 'router_test_top/dut/ip0/decoder_PD0' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/op15/pwr.opwrcon_pd_n[15]' connected to control port 'ctrl' of power switch 'router_test_top/dut/op15/Output_SW_15' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/op15/SS_arbiter_PD15.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op15/Output_SW_15' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/op15/SS_arbiter_PD15.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op15/Output_SW_15' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/op15/VDD_arbiter_PD15_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op15/Output_SW_15' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/op15/VDD_arbiter_PD15_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op15/Output_SW_15' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/op15/Output_SW_15' started in arbiter_PD15_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_RETPN_INIT] Retention power net 'VDD' for retention strategy 'arbiter_PD15_ret' of power domain 'router_test_top/dut/op15/arbiter_PD15' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_RETGN_INIT] Retention ground net 'VSS' for retention strategy 'arbiter_PD15_ret' of power domain 'router_test_top/dut/op15/arbiter_PD15' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_SAVE_INIT] Save signal 'router_test_top/dut/op15/pwr.opwrcon_save_n[15]' for retention strategy 'arbiter_PD15_ret' of power domain 'router_test_top/dut/op15/arbiter_PD15' started with a value 'St1'. Save sense specified is 'low'.
+
+[00 ps] [INFO] [LP_RESTORE_INIT] Restore signal 'router_test_top/dut/op15/pwr.opwrcon_restore_n[15]' for retention strategy 'arbiter_PD15_ret' of power domain 'router_test_top/dut/op15/arbiter_PD15' started with a value 'St1'. Restore sense specified is 'low'.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'VDD' for isolation strategy 'arbiter_PD15_iso' of power domain 'router_test_top/dut/op15/arbiter_PD15' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'VSS' for isolation strategy 'arbiter_PD15_iso' of power domain 'router_test_top/dut/op15/arbiter_PD15' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/op15/pwr.opwrcon_iso_n[15]' of isolation strategy 'arbiter_PD15_iso' of power domain 'router_test_top/dut/op15/arbiter_PD15' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/op14/pwr.opwrcon_pd_n[14]' connected to control port 'ctrl' of power switch 'router_test_top/dut/op14/Output_SW_14' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/op14/SS_arbiter_PD14.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op14/Output_SW_14' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/op14/SS_arbiter_PD14.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op14/Output_SW_14' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/op14/VDD_arbiter_PD14_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op14/Output_SW_14' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/op14/VDD_arbiter_PD14_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op14/Output_SW_14' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/op14/Output_SW_14' started in arbiter_PD14_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_RETPN_INIT] Retention power net 'VDD' for retention strategy 'arbiter_PD14_ret' of power domain 'router_test_top/dut/op14/arbiter_PD14' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_RETGN_INIT] Retention ground net 'VSS' for retention strategy 'arbiter_PD14_ret' of power domain 'router_test_top/dut/op14/arbiter_PD14' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_SAVE_INIT] Save signal 'router_test_top/dut/op14/pwr.opwrcon_save_n[14]' for retention strategy 'arbiter_PD14_ret' of power domain 'router_test_top/dut/op14/arbiter_PD14' started with a value 'St1'. Save sense specified is 'low'.
+
+[00 ps] [INFO] [LP_RESTORE_INIT] Restore signal 'router_test_top/dut/op14/pwr.opwrcon_restore_n[14]' for retention strategy 'arbiter_PD14_ret' of power domain 'router_test_top/dut/op14/arbiter_PD14' started with a value 'St1'. Restore sense specified is 'low'.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'VDD' for isolation strategy 'arbiter_PD14_iso' of power domain 'router_test_top/dut/op14/arbiter_PD14' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'VSS' for isolation strategy 'arbiter_PD14_iso' of power domain 'router_test_top/dut/op14/arbiter_PD14' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/op14/pwr.opwrcon_iso_n[14]' of isolation strategy 'arbiter_PD14_iso' of power domain 'router_test_top/dut/op14/arbiter_PD14' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/op13/pwr.opwrcon_pd_n[13]' connected to control port 'ctrl' of power switch 'router_test_top/dut/op13/Output_SW_13' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/op13/SS_arbiter_PD13.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op13/Output_SW_13' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/op13/SS_arbiter_PD13.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op13/Output_SW_13' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/op13/VDD_arbiter_PD13_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op13/Output_SW_13' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/op13/VDD_arbiter_PD13_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op13/Output_SW_13' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/op13/Output_SW_13' started in arbiter_PD13_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_RETPN_INIT] Retention power net 'VDD' for retention strategy 'arbiter_PD13_ret' of power domain 'router_test_top/dut/op13/arbiter_PD13' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_RETGN_INIT] Retention ground net 'VSS' for retention strategy 'arbiter_PD13_ret' of power domain 'router_test_top/dut/op13/arbiter_PD13' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_SAVE_INIT] Save signal 'router_test_top/dut/op13/pwr.opwrcon_save_n[13]' for retention strategy 'arbiter_PD13_ret' of power domain 'router_test_top/dut/op13/arbiter_PD13' started with a value 'St1'. Save sense specified is 'low'.
+
+[00 ps] [INFO] [LP_RESTORE_INIT] Restore signal 'router_test_top/dut/op13/pwr.opwrcon_restore_n[13]' for retention strategy 'arbiter_PD13_ret' of power domain 'router_test_top/dut/op13/arbiter_PD13' started with a value 'St1'. Restore sense specified is 'low'.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'VDD' for isolation strategy 'arbiter_PD13_iso' of power domain 'router_test_top/dut/op13/arbiter_PD13' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'VSS' for isolation strategy 'arbiter_PD13_iso' of power domain 'router_test_top/dut/op13/arbiter_PD13' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/op13/pwr.opwrcon_iso_n[13]' of isolation strategy 'arbiter_PD13_iso' of power domain 'router_test_top/dut/op13/arbiter_PD13' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/op12/pwr.opwrcon_pd_n[12]' connected to control port 'ctrl' of power switch 'router_test_top/dut/op12/Output_SW_12' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/op12/SS_arbiter_PD12.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op12/Output_SW_12' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/op12/SS_arbiter_PD12.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op12/Output_SW_12' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/op12/VDD_arbiter_PD12_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op12/Output_SW_12' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/op12/VDD_arbiter_PD12_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op12/Output_SW_12' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/op12/Output_SW_12' started in arbiter_PD12_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_RETPN_INIT] Retention power net 'VDD' for retention strategy 'arbiter_PD12_ret' of power domain 'router_test_top/dut/op12/arbiter_PD12' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_RETGN_INIT] Retention ground net 'VSS' for retention strategy 'arbiter_PD12_ret' of power domain 'router_test_top/dut/op12/arbiter_PD12' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_SAVE_INIT] Save signal 'router_test_top/dut/op12/pwr.opwrcon_save_n[12]' for retention strategy 'arbiter_PD12_ret' of power domain 'router_test_top/dut/op12/arbiter_PD12' started with a value 'St1'. Save sense specified is 'low'.
+
+[00 ps] [INFO] [LP_RESTORE_INIT] Restore signal 'router_test_top/dut/op12/pwr.opwrcon_restore_n[12]' for retention strategy 'arbiter_PD12_ret' of power domain 'router_test_top/dut/op12/arbiter_PD12' started with a value 'St1'. Restore sense specified is 'low'.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'VDD' for isolation strategy 'arbiter_PD12_iso' of power domain 'router_test_top/dut/op12/arbiter_PD12' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'VSS' for isolation strategy 'arbiter_PD12_iso' of power domain 'router_test_top/dut/op12/arbiter_PD12' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/op12/pwr.opwrcon_iso_n[12]' of isolation strategy 'arbiter_PD12_iso' of power domain 'router_test_top/dut/op12/arbiter_PD12' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/op11/pwr.opwrcon_pd_n[11]' connected to control port 'ctrl' of power switch 'router_test_top/dut/op11/Output_SW_11' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/op11/SS_arbiter_PD11.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op11/Output_SW_11' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/op11/SS_arbiter_PD11.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op11/Output_SW_11' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/op11/VDD_arbiter_PD11_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op11/Output_SW_11' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/op11/VDD_arbiter_PD11_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op11/Output_SW_11' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/op11/Output_SW_11' started in arbiter_PD11_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_RETPN_INIT] Retention power net 'VDD' for retention strategy 'arbiter_PD11_ret' of power domain 'router_test_top/dut/op11/arbiter_PD11' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_RETGN_INIT] Retention ground net 'VSS' for retention strategy 'arbiter_PD11_ret' of power domain 'router_test_top/dut/op11/arbiter_PD11' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_SAVE_INIT] Save signal 'router_test_top/dut/op11/pwr.opwrcon_save_n[11]' for retention strategy 'arbiter_PD11_ret' of power domain 'router_test_top/dut/op11/arbiter_PD11' started with a value 'St1'. Save sense specified is 'low'.
+
+[00 ps] [INFO] [LP_RESTORE_INIT] Restore signal 'router_test_top/dut/op11/pwr.opwrcon_restore_n[11]' for retention strategy 'arbiter_PD11_ret' of power domain 'router_test_top/dut/op11/arbiter_PD11' started with a value 'St1'. Restore sense specified is 'low'.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'VDD' for isolation strategy 'arbiter_PD11_iso' of power domain 'router_test_top/dut/op11/arbiter_PD11' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'VSS' for isolation strategy 'arbiter_PD11_iso' of power domain 'router_test_top/dut/op11/arbiter_PD11' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/op11/pwr.opwrcon_iso_n[11]' of isolation strategy 'arbiter_PD11_iso' of power domain 'router_test_top/dut/op11/arbiter_PD11' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/op10/pwr.opwrcon_pd_n[10]' connected to control port 'ctrl' of power switch 'router_test_top/dut/op10/Output_SW_10' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/op10/SS_arbiter_PD10.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op10/Output_SW_10' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/op10/SS_arbiter_PD10.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op10/Output_SW_10' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/op10/VDD_arbiter_PD10_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op10/Output_SW_10' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/op10/VDD_arbiter_PD10_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op10/Output_SW_10' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/op10/Output_SW_10' started in arbiter_PD10_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_RETPN_INIT] Retention power net 'VDD' for retention strategy 'arbiter_PD10_ret' of power domain 'router_test_top/dut/op10/arbiter_PD10' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_RETGN_INIT] Retention ground net 'VSS' for retention strategy 'arbiter_PD10_ret' of power domain 'router_test_top/dut/op10/arbiter_PD10' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_SAVE_INIT] Save signal 'router_test_top/dut/op10/pwr.opwrcon_save_n[10]' for retention strategy 'arbiter_PD10_ret' of power domain 'router_test_top/dut/op10/arbiter_PD10' started with a value 'St1'. Save sense specified is 'low'.
+
+[00 ps] [INFO] [LP_RESTORE_INIT] Restore signal 'router_test_top/dut/op10/pwr.opwrcon_restore_n[10]' for retention strategy 'arbiter_PD10_ret' of power domain 'router_test_top/dut/op10/arbiter_PD10' started with a value 'St1'. Restore sense specified is 'low'.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'VDD' for isolation strategy 'arbiter_PD10_iso' of power domain 'router_test_top/dut/op10/arbiter_PD10' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'VSS' for isolation strategy 'arbiter_PD10_iso' of power domain 'router_test_top/dut/op10/arbiter_PD10' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/op10/pwr.opwrcon_iso_n[10]' of isolation strategy 'arbiter_PD10_iso' of power domain 'router_test_top/dut/op10/arbiter_PD10' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/op9/pwr.opwrcon_pd_n[9]' connected to control port 'ctrl' of power switch 'router_test_top/dut/op9/Output_SW_9' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/op9/SS_arbiter_PD9.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op9/Output_SW_9' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/op9/SS_arbiter_PD9.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op9/Output_SW_9' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/op9/VDD_arbiter_PD9_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op9/Output_SW_9' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/op9/VDD_arbiter_PD9_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op9/Output_SW_9' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/op9/Output_SW_9' started in arbiter_PD9_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_RETPN_INIT] Retention power net 'VDD' for retention strategy 'arbiter_PD9_ret' of power domain 'router_test_top/dut/op9/arbiter_PD9' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_RETGN_INIT] Retention ground net 'VSS' for retention strategy 'arbiter_PD9_ret' of power domain 'router_test_top/dut/op9/arbiter_PD9' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_SAVE_INIT] Save signal 'router_test_top/dut/op9/pwr.opwrcon_save_n[9]' for retention strategy 'arbiter_PD9_ret' of power domain 'router_test_top/dut/op9/arbiter_PD9' started with a value 'St1'. Save sense specified is 'low'.
+
+[00 ps] [INFO] [LP_RESTORE_INIT] Restore signal 'router_test_top/dut/op9/pwr.opwrcon_restore_n[9]' for retention strategy 'arbiter_PD9_ret' of power domain 'router_test_top/dut/op9/arbiter_PD9' started with a value 'St1'. Restore sense specified is 'low'.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'VDD' for isolation strategy 'arbiter_PD9_iso' of power domain 'router_test_top/dut/op9/arbiter_PD9' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'VSS' for isolation strategy 'arbiter_PD9_iso' of power domain 'router_test_top/dut/op9/arbiter_PD9' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/op9/pwr.opwrcon_iso_n[9]' of isolation strategy 'arbiter_PD9_iso' of power domain 'router_test_top/dut/op9/arbiter_PD9' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/op8/pwr.opwrcon_pd_n[8]' connected to control port 'ctrl' of power switch 'router_test_top/dut/op8/Output_SW_8' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/op8/SS_arbiter_PD8.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op8/Output_SW_8' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/op8/SS_arbiter_PD8.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op8/Output_SW_8' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/op8/VDD_arbiter_PD8_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op8/Output_SW_8' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/op8/VDD_arbiter_PD8_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op8/Output_SW_8' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/op8/Output_SW_8' started in arbiter_PD8_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_RETPN_INIT] Retention power net 'VDD' for retention strategy 'arbiter_PD8_ret' of power domain 'router_test_top/dut/op8/arbiter_PD8' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_RETGN_INIT] Retention ground net 'VSS' for retention strategy 'arbiter_PD8_ret' of power domain 'router_test_top/dut/op8/arbiter_PD8' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_SAVE_INIT] Save signal 'router_test_top/dut/op8/pwr.opwrcon_save_n[8]' for retention strategy 'arbiter_PD8_ret' of power domain 'router_test_top/dut/op8/arbiter_PD8' started with a value 'St1'. Save sense specified is 'low'.
+
+[00 ps] [INFO] [LP_RESTORE_INIT] Restore signal 'router_test_top/dut/op8/pwr.opwrcon_restore_n[8]' for retention strategy 'arbiter_PD8_ret' of power domain 'router_test_top/dut/op8/arbiter_PD8' started with a value 'St1'. Restore sense specified is 'low'.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'VDD' for isolation strategy 'arbiter_PD8_iso' of power domain 'router_test_top/dut/op8/arbiter_PD8' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'VSS' for isolation strategy 'arbiter_PD8_iso' of power domain 'router_test_top/dut/op8/arbiter_PD8' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/op8/pwr.opwrcon_iso_n[8]' of isolation strategy 'arbiter_PD8_iso' of power domain 'router_test_top/dut/op8/arbiter_PD8' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/op7/pwr.opwrcon_pd_n[7]' connected to control port 'ctrl' of power switch 'router_test_top/dut/op7/Output_SW_7' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/op7/SS_arbiter_PD7.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op7/Output_SW_7' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/op7/SS_arbiter_PD7.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op7/Output_SW_7' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/op7/VDD_arbiter_PD7_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op7/Output_SW_7' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/op7/VDD_arbiter_PD7_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op7/Output_SW_7' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/op7/Output_SW_7' started in arbiter_PD7_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_RETPN_INIT] Retention power net 'VDD' for retention strategy 'arbiter_PD7_ret' of power domain 'router_test_top/dut/op7/arbiter_PD7' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_RETGN_INIT] Retention ground net 'VSS' for retention strategy 'arbiter_PD7_ret' of power domain 'router_test_top/dut/op7/arbiter_PD7' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_SAVE_INIT] Save signal 'router_test_top/dut/op7/pwr.opwrcon_save_n[7]' for retention strategy 'arbiter_PD7_ret' of power domain 'router_test_top/dut/op7/arbiter_PD7' started with a value 'St1'. Save sense specified is 'low'.
+
+[00 ps] [INFO] [LP_RESTORE_INIT] Restore signal 'router_test_top/dut/op7/pwr.opwrcon_restore_n[7]' for retention strategy 'arbiter_PD7_ret' of power domain 'router_test_top/dut/op7/arbiter_PD7' started with a value 'St1'. Restore sense specified is 'low'.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'VDD' for isolation strategy 'arbiter_PD7_iso' of power domain 'router_test_top/dut/op7/arbiter_PD7' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'VSS' for isolation strategy 'arbiter_PD7_iso' of power domain 'router_test_top/dut/op7/arbiter_PD7' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/op7/pwr.opwrcon_iso_n[7]' of isolation strategy 'arbiter_PD7_iso' of power domain 'router_test_top/dut/op7/arbiter_PD7' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/op6/pwr.opwrcon_pd_n[6]' connected to control port 'ctrl' of power switch 'router_test_top/dut/op6/Output_SW_6' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/op6/SS_arbiter_PD6.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op6/Output_SW_6' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/op6/SS_arbiter_PD6.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op6/Output_SW_6' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/op6/VDD_arbiter_PD6_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op6/Output_SW_6' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/op6/VDD_arbiter_PD6_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op6/Output_SW_6' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/op6/Output_SW_6' started in arbiter_PD6_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_RETPN_INIT] Retention power net 'VDD' for retention strategy 'arbiter_PD6_ret' of power domain 'router_test_top/dut/op6/arbiter_PD6' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_RETGN_INIT] Retention ground net 'VSS' for retention strategy 'arbiter_PD6_ret' of power domain 'router_test_top/dut/op6/arbiter_PD6' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_SAVE_INIT] Save signal 'router_test_top/dut/op6/pwr.opwrcon_save_n[6]' for retention strategy 'arbiter_PD6_ret' of power domain 'router_test_top/dut/op6/arbiter_PD6' started with a value 'St1'. Save sense specified is 'low'.
+
+[00 ps] [INFO] [LP_RESTORE_INIT] Restore signal 'router_test_top/dut/op6/pwr.opwrcon_restore_n[6]' for retention strategy 'arbiter_PD6_ret' of power domain 'router_test_top/dut/op6/arbiter_PD6' started with a value 'St1'. Restore sense specified is 'low'.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'VDD' for isolation strategy 'arbiter_PD6_iso' of power domain 'router_test_top/dut/op6/arbiter_PD6' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'VSS' for isolation strategy 'arbiter_PD6_iso' of power domain 'router_test_top/dut/op6/arbiter_PD6' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/op6/pwr.opwrcon_iso_n[6]' of isolation strategy 'arbiter_PD6_iso' of power domain 'router_test_top/dut/op6/arbiter_PD6' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/op5/pwr.opwrcon_pd_n[5]' connected to control port 'ctrl' of power switch 'router_test_top/dut/op5/Output_SW_5' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/op5/SS_arbiter_PD5.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op5/Output_SW_5' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/op5/SS_arbiter_PD5.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op5/Output_SW_5' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/op5/VDD_arbiter_PD5_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op5/Output_SW_5' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/op5/VDD_arbiter_PD5_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op5/Output_SW_5' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/op5/Output_SW_5' started in arbiter_PD5_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_RETPN_INIT] Retention power net 'VDD' for retention strategy 'arbiter_PD5_ret' of power domain 'router_test_top/dut/op5/arbiter_PD5' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_RETGN_INIT] Retention ground net 'VSS' for retention strategy 'arbiter_PD5_ret' of power domain 'router_test_top/dut/op5/arbiter_PD5' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_SAVE_INIT] Save signal 'router_test_top/dut/op5/pwr.opwrcon_save_n[5]' for retention strategy 'arbiter_PD5_ret' of power domain 'router_test_top/dut/op5/arbiter_PD5' started with a value 'St1'. Save sense specified is 'low'.
+
+[00 ps] [INFO] [LP_RESTORE_INIT] Restore signal 'router_test_top/dut/op5/pwr.opwrcon_restore_n[5]' for retention strategy 'arbiter_PD5_ret' of power domain 'router_test_top/dut/op5/arbiter_PD5' started with a value 'St1'. Restore sense specified is 'low'.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'VDD' for isolation strategy 'arbiter_PD5_iso' of power domain 'router_test_top/dut/op5/arbiter_PD5' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'VSS' for isolation strategy 'arbiter_PD5_iso' of power domain 'router_test_top/dut/op5/arbiter_PD5' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/op5/pwr.opwrcon_iso_n[5]' of isolation strategy 'arbiter_PD5_iso' of power domain 'router_test_top/dut/op5/arbiter_PD5' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/op4/pwr.opwrcon_pd_n[4]' connected to control port 'ctrl' of power switch 'router_test_top/dut/op4/Output_SW_4' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/op4/SS_arbiter_PD4.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op4/Output_SW_4' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/op4/SS_arbiter_PD4.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op4/Output_SW_4' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/op4/VDD_arbiter_PD4_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op4/Output_SW_4' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/op4/VDD_arbiter_PD4_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op4/Output_SW_4' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/op4/Output_SW_4' started in arbiter_PD4_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_RETPN_INIT] Retention power net 'VDD' for retention strategy 'arbiter_PD4_ret' of power domain 'router_test_top/dut/op4/arbiter_PD4' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_RETGN_INIT] Retention ground net 'VSS' for retention strategy 'arbiter_PD4_ret' of power domain 'router_test_top/dut/op4/arbiter_PD4' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_SAVE_INIT] Save signal 'router_test_top/dut/op4/pwr.opwrcon_save_n[4]' for retention strategy 'arbiter_PD4_ret' of power domain 'router_test_top/dut/op4/arbiter_PD4' started with a value 'St1'. Save sense specified is 'low'.
+
+[00 ps] [INFO] [LP_RESTORE_INIT] Restore signal 'router_test_top/dut/op4/pwr.opwrcon_restore_n[4]' for retention strategy 'arbiter_PD4_ret' of power domain 'router_test_top/dut/op4/arbiter_PD4' started with a value 'St1'. Restore sense specified is 'low'.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'VDD' for isolation strategy 'arbiter_PD4_iso' of power domain 'router_test_top/dut/op4/arbiter_PD4' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'VSS' for isolation strategy 'arbiter_PD4_iso' of power domain 'router_test_top/dut/op4/arbiter_PD4' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/op4/pwr.opwrcon_iso_n[4]' of isolation strategy 'arbiter_PD4_iso' of power domain 'router_test_top/dut/op4/arbiter_PD4' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/op3/pwr.opwrcon_pd_n[3]' connected to control port 'ctrl' of power switch 'router_test_top/dut/op3/Output_SW_3' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/op3/SS_arbiter_PD3.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op3/Output_SW_3' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/op3/SS_arbiter_PD3.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op3/Output_SW_3' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/op3/VDD_arbiter_PD3_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op3/Output_SW_3' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/op3/VDD_arbiter_PD3_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op3/Output_SW_3' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/op3/Output_SW_3' started in arbiter_PD3_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_RETPN_INIT] Retention power net 'VDD' for retention strategy 'arbiter_PD3_ret' of power domain 'router_test_top/dut/op3/arbiter_PD3' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_RETGN_INIT] Retention ground net 'VSS' for retention strategy 'arbiter_PD3_ret' of power domain 'router_test_top/dut/op3/arbiter_PD3' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_SAVE_INIT] Save signal 'router_test_top/dut/op3/pwr.opwrcon_save_n[3]' for retention strategy 'arbiter_PD3_ret' of power domain 'router_test_top/dut/op3/arbiter_PD3' started with a value 'St1'. Save sense specified is 'low'.
+
+[00 ps] [INFO] [LP_RESTORE_INIT] Restore signal 'router_test_top/dut/op3/pwr.opwrcon_restore_n[3]' for retention strategy 'arbiter_PD3_ret' of power domain 'router_test_top/dut/op3/arbiter_PD3' started with a value 'St1'. Restore sense specified is 'low'.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'VDD' for isolation strategy 'arbiter_PD3_iso' of power domain 'router_test_top/dut/op3/arbiter_PD3' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'VSS' for isolation strategy 'arbiter_PD3_iso' of power domain 'router_test_top/dut/op3/arbiter_PD3' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/op3/pwr.opwrcon_iso_n[3]' of isolation strategy 'arbiter_PD3_iso' of power domain 'router_test_top/dut/op3/arbiter_PD3' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/op2/pwr.opwrcon_pd_n[2]' connected to control port 'ctrl' of power switch 'router_test_top/dut/op2/Output_SW_2' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/op2/SS_arbiter_PD2.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op2/Output_SW_2' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/op2/SS_arbiter_PD2.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op2/Output_SW_2' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/op2/VDD_arbiter_PD2_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op2/Output_SW_2' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/op2/VDD_arbiter_PD2_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op2/Output_SW_2' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/op2/Output_SW_2' started in arbiter_PD2_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_RETPN_INIT] Retention power net 'VDD' for retention strategy 'arbiter_PD2_ret' of power domain 'router_test_top/dut/op2/arbiter_PD2' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_RETGN_INIT] Retention ground net 'VSS' for retention strategy 'arbiter_PD2_ret' of power domain 'router_test_top/dut/op2/arbiter_PD2' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_SAVE_INIT] Save signal 'router_test_top/dut/op2/pwr.opwrcon_save_n[2]' for retention strategy 'arbiter_PD2_ret' of power domain 'router_test_top/dut/op2/arbiter_PD2' started with a value 'St1'. Save sense specified is 'low'.
+
+[00 ps] [INFO] [LP_RESTORE_INIT] Restore signal 'router_test_top/dut/op2/pwr.opwrcon_restore_n[2]' for retention strategy 'arbiter_PD2_ret' of power domain 'router_test_top/dut/op2/arbiter_PD2' started with a value 'St1'. Restore sense specified is 'low'.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'VDD' for isolation strategy 'arbiter_PD2_iso' of power domain 'router_test_top/dut/op2/arbiter_PD2' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'VSS' for isolation strategy 'arbiter_PD2_iso' of power domain 'router_test_top/dut/op2/arbiter_PD2' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/op2/pwr.opwrcon_iso_n[2]' of isolation strategy 'arbiter_PD2_iso' of power domain 'router_test_top/dut/op2/arbiter_PD2' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/op1/pwr.opwrcon_pd_n[1]' connected to control port 'ctrl' of power switch 'router_test_top/dut/op1/Output_SW_1' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/op1/SS_arbiter_PD1.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op1/Output_SW_1' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/op1/SS_arbiter_PD1.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op1/Output_SW_1' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/op1/VDD_arbiter_PD1_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op1/Output_SW_1' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/op1/VDD_arbiter_PD1_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op1/Output_SW_1' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/op1/Output_SW_1' started in arbiter_PD1_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_RETPN_INIT] Retention power net 'VDD' for retention strategy 'arbiter_PD1_ret' of power domain 'router_test_top/dut/op1/arbiter_PD1' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_RETGN_INIT] Retention ground net 'VSS' for retention strategy 'arbiter_PD1_ret' of power domain 'router_test_top/dut/op1/arbiter_PD1' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_SAVE_INIT] Save signal 'router_test_top/dut/op1/pwr.opwrcon_save_n[1]' for retention strategy 'arbiter_PD1_ret' of power domain 'router_test_top/dut/op1/arbiter_PD1' started with a value 'St1'. Save sense specified is 'low'.
+
+[00 ps] [INFO] [LP_RESTORE_INIT] Restore signal 'router_test_top/dut/op1/pwr.opwrcon_restore_n[1]' for retention strategy 'arbiter_PD1_ret' of power domain 'router_test_top/dut/op1/arbiter_PD1' started with a value 'St1'. Restore sense specified is 'low'.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'VDD' for isolation strategy 'arbiter_PD1_iso' of power domain 'router_test_top/dut/op1/arbiter_PD1' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'VSS' for isolation strategy 'arbiter_PD1_iso' of power domain 'router_test_top/dut/op1/arbiter_PD1' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/op1/pwr.opwrcon_iso_n[1]' of isolation strategy 'arbiter_PD1_iso' of power domain 'router_test_top/dut/op1/arbiter_PD1' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PSW_CTRL_INIT_VALUE] Signal 'router_test_top/dut/op0/pwr.opwrcon_pd_n[0]' connected to control port 'ctrl' of power switch 'router_test_top/dut/op0/Output_SW_0' started with a value 'St0'.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_STATE] Supply net 'router_test_top/dut/op0/SS_arbiter_PD0.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op0/Output_SW_0' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_ISP_INIT_VALUE] Supply net 'router_test_top/dut/op0/SS_arbiter_PD0.power' tied to input supply port 'in' of power switch 'router_test_top/dut/op0/Output_SW_0' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_STATE] Supply net 'router_test_top/dut/op0/VDD_arbiter_PD0_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op0/Output_SW_0' started with state FULL_ON.
+
+[00 ps] [INFO] [LP_PSW_OSP_INIT_VALUE] Supply net 'router_test_top/dut/op0/VDD_arbiter_PD0_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op0/Output_SW_0' started with voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PSW_INIT_STATE] Power switch 'router_test_top/dut/op0/Output_SW_0' started in arbiter_PD0_SW_ON (ON) state.
+
+[00 ps] [INFO] [LP_RETPN_INIT] Retention power net 'VDD' for retention strategy 'arbiter_PD0_ret' of power domain 'router_test_top/dut/op0/arbiter_PD0' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_RETGN_INIT] Retention ground net 'VSS' for retention strategy 'arbiter_PD0_ret' of power domain 'router_test_top/dut/op0/arbiter_PD0' started with FULL_ON state.
+
+[00 ps] [INFO] [LP_SAVE_INIT] Save signal 'router_test_top/dut/op0/pwr.opwrcon_save_n[0]' for retention strategy 'arbiter_PD0_ret' of power domain 'router_test_top/dut/op0/arbiter_PD0' started with a value 'St1'. Save sense specified is 'low'.
+
+[00 ps] [INFO] [LP_RESTORE_INIT] Restore signal 'router_test_top/dut/op0/pwr.opwrcon_restore_n[0]' for retention strategy 'arbiter_PD0_ret' of power domain 'router_test_top/dut/op0/arbiter_PD0' started with a value 'St1'. Restore sense specified is 'low'.
+
+[00 ps] [INFO] [LP_ISOPN_INIT] Isolation power net 'VDD' for isolation strategy 'arbiter_PD0_iso' of power domain 'router_test_top/dut/op0/arbiter_PD0' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOGN_INIT] Isolation ground net 'VSS' for isolation strategy 'arbiter_PD0_iso' of power domain 'router_test_top/dut/op0/arbiter_PD0' started in state FULL_ON.
+
+[00 ps] [INFO] [LP_ISOEN_INIT_VALUE] Isolation enable 'router_test_top/dut/op0/pwr.opwrcon_iso_n[0]' of isolation strategy 'arbiter_PD0_iso' of power domain 'router_test_top/dut/op0/arbiter_PD0' started with value 'St1'. Isolation sense specified is 'low'.
+
+[00 ps] [INFO] [LP_PORT_STATE_INIT] Supply Source 'router_test_top/dut/ip0/decoder_SW_0/out' initialized to 'decoder_PD0_ON' state with root net 'router_test_top/dut/ip0/decoder_SW_0/out' at state 'FULL_ON' and voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PORT_STATE_INIT] Supply Source 'router_test_top/dut/op2/Output_SW_2/out' initialized to 'arbiter_PD2_ON' state with root net 'router_test_top/dut/op2/Output_SW_2/out' at state 'FULL_ON' and voltage 1.08 V.
+
+[00 ps] [INFO] [LP_PORT_STATE_INIT] Supply Source 'router_test_top/dut/VSS' initialized to 'GND' state with root net 'router_test_top/dut/VSS' at state 'FULL_ON' and voltage 0 V.
+
+[00 ps] [INFO] [LP_PORT_STATE_INIT] Supply Source 'router_test_top/dut/VDD' initialized to 'HV' state with root net 'router_test_top/dut/VDD' at state 'FULL_ON' and voltage 1.08 V.
+
+[NOTE]  5150.0ns Packet #0 Successfully Compared
+[NOTE]  9450.0ns Packet #1 Successfully Compared
+[NOTE] 12950.0ns Packet #2 Successfully Compared
+[NOTE] 17250.0ns Packet #3 Successfully Compared
+[NOTE] 20750.0ns Packet #4 Successfully Compared
+[NOTE] 24250.0ns Packet #5 Successfully Compared
+[NOTE] 27750.0ns Packet #6 Successfully Compared
+[NOTE] 31250.0ns Packet #7 Successfully Compared
+[NOTE] 34750.0ns Packet #8 Successfully Compared
+[36850000 ps] [INFO] [LP_ISO_EN] Isolation enabled for isolation strategy 'decoder_PD0_iso' of power domain 'router_test_top/dut/ip0/decoder_PD0'.
+
+[36850000 ps] [INFO] [LP_ISOEN_CHANGE] Isolation enable 'router_test_top/dut/ip0/pwr.ipwrcon_iso_n[0]' of isolation strategy 'decoder_PD0_iso' of power domain 'router_test_top/dut/ip0/decoder_PD0' changed from 'St1' to 'St0'. Isolation sense specified is 'low'.
+
+[36950000 ps] [INFO] [LP_PSW_STATE_CHANGE] State of power switch 'router_test_top/dut/ip0/decoder_SW_0' changed from decoder_PD0_SW_ON (ON) to decoder_PD0_SW_OFF (OFF).
+
+[36950000 ps] [INFO] [LP_PSW_CTRL_CHANGE] Signal 'router_test_top/dut/ip0/pwr.ipwrcon_pd_n[0]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip0/decoder_SW_0' changed from 'St0' to 'St1'.
+
+[36950000 ps] [INFO] [LP_PSW_OSP_STATE] State of supply net 'router_test_top/dut/ip0/VDD_0' tied to output supply port 'out' of power switch 'router_test_top/dut/ip0/decoder_SW_0' changed from FULL_ON to OFF.
+
+[36950000 ps] [INFO] [LP_PSW_OSP_VALUE] Voltage of supply net 'router_test_top/dut/ip0/VDD_0' tied to output supply port 'out' of power switch 'router_test_top/dut/ip0/decoder_SW_0' changed from 1.08 V to 0 V.
+
+[36950000 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_0' of power domain 'router_test_top/dut/ip0/decoder_PD0' changed from FULL_ON to OFF.
+
+[36950000 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_0' of power domain 'router_test_top/dut/ip0/decoder_PD0' changed from 1.08 V to 0 V.
+
+[36950000 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip0/decoder_PD0' state changed from 'NORMAL' to 'CORRUPT'.
+
+[36950000 ps] [INFO] [LP_SS_STATE_CHANGE] Supply Set 'router_test_top/dut/ip0/decoder_PD0.primary' transitioned to state 'decoder_PD0_OFF' with simstate 'CORRUPT'.
+
+[36950000 ps] [INFO] [LP_PST_STATE_CHANGE] Design state changed from 'all_on' to 'ip0_off' in pst 'router_test_top/dut/router_pst'.
+
+[36950000 ps] [INFO] [LP_PORT_STATE_CHANGE] Supply Source 'router_test_top/dut/ip0/decoder_SW_0/out' changed to 'decoder_PD0_OFF' state with root net 'router_test_top/dut/ip0/decoder_SW_0/out' at state 'OFF' and voltage 0 V.
+
+[NOTE] 37450.0ns Packet #9 Successfully Compared
+[NOTE] 40150.0ns Packet #10 Successfully Compared
+[NOTE] 43650.0ns Packet #11 Successfully Compared
+[NOTE] 47150.0ns Packet #12 Successfully Compared
+[NOTE] 49850.0ns Packet #13 Successfully Compared
+[NOTE] 52550.0ns Packet #14 Successfully Compared
+[NOTE] 56050.0ns Packet #15 Successfully Compared
+[NOTE] 59550.0ns Packet #16 Successfully Compared
+[NOTE] 63050.0ns Packet #17 Successfully Compared
+[NOTE] 67350.0ns Packet #18 Successfully Compared
+[NOTE] 70050.0ns Packet #19 Successfully Compared
+[NOTE] 73550.0ns Packet #20 Successfully Compared
+[NOTE] 76250.0ns Packet #21 Successfully Compared
+[NOTE] 78950.0ns Packet #22 Successfully Compared
+[NOTE] 81650.0ns Packet #23 Successfully Compared
+[NOTE] 84350.0ns Packet #24 Successfully Compared
+[86950000 ps] [INFO] [LP_PSW_STATE_CHANGE] State of power switch 'router_test_top/dut/ip0/decoder_SW_0' changed from decoder_PD0_SW_OFF (OFF) to decoder_PD0_SW_ON (ON).
+
+[86950000 ps] [INFO] [LP_PSW_CTRL_CHANGE] Signal 'router_test_top/dut/ip0/pwr.ipwrcon_pd_n[0]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip0/decoder_SW_0' changed from 'St1' to 'St0'.
+
+[86950000 ps] [INFO] [LP_PSW_OSP_STATE] State of supply net 'router_test_top/dut/ip0/VDD_0' tied to output supply port 'out' of power switch 'router_test_top/dut/ip0/decoder_SW_0' changed from OFF to FULL_ON.
+
+[86950000 ps] [INFO] [LP_PSW_OSP_VALUE] Voltage of supply net 'router_test_top/dut/ip0/VDD_0' tied to output supply port 'out' of power switch 'router_test_top/dut/ip0/decoder_SW_0' changed from 0 V to 1.08 V.
+
+[86950000 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_0' of power domain 'router_test_top/dut/ip0/decoder_PD0' changed from OFF to FULL_ON.
+
+[86950000 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_0' of power domain 'router_test_top/dut/ip0/decoder_PD0' changed from 0 V to 1.08 V.
+
+[86950000 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip0/decoder_PD0' state changed from 'CORRUPT' to 'NORMAL'.
+
+[86950000 ps] [INFO] [LP_SS_STATE_CHANGE] Supply Set 'router_test_top/dut/ip0/decoder_PD0.primary' transitioned to state 'decoder_PD0_ON' with simstate 'NORMAL'.
+
+[86950000 ps] [INFO] [LP_PST_STATE_CHANGE] Design state changed from 'ip0_off' to 'all_on' in pst 'router_test_top/dut/router_pst'.
+
+[86950000 ps] [INFO] [LP_PORT_STATE_CHANGE] Supply Source 'router_test_top/dut/ip0/decoder_SW_0/out' changed to 'decoder_PD0_ON' state with root net 'router_test_top/dut/ip0/decoder_SW_0/out' at state 'FULL_ON' and voltage 1.08 V.
+
+[87050000 ps] [INFO] [LP_ISO_DIS] Isolation disabled for isolation strategy 'decoder_PD0_iso' of power domain 'router_test_top/dut/ip0/decoder_PD0'.
+
+[87050000 ps] [INFO] [LP_ISOEN_CHANGE] Isolation enable 'router_test_top/dut/ip0/pwr.ipwrcon_iso_n[0]' of isolation strategy 'decoder_PD0_iso' of power domain 'router_test_top/dut/ip0/decoder_PD0' changed from 'St0' to 'St1'. Isolation sense specified is 'low'.
+
+[87450000 ps] [INFO] [LP_SAVE_CHANGE] Save signal 'router_test_top/dut/op2/pwr.opwrcon_save_n[2]' for retention strategy 'arbiter_PD2_ret' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from 'St1' to 'St0'. Save sense specified is 'low'.
+
+[87450000 ps] [INFO] [LP_SAVE_ON] Save asserted for retention strategy 'arbiter_PD2_ret' of power domain 'router_test_top/dut/op2/arbiter_PD2'.
+
+[87550000 ps] [INFO] [LP_SAVE_CHANGE] Save signal 'router_test_top/dut/op2/pwr.opwrcon_save_n[2]' for retention strategy 'arbiter_PD2_ret' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from 'St0' to 'St1'. Save sense specified is 'low'.
+
+[87550000 ps] [INFO] [LP_SAVE_OFF] Save deasserted for retention strategy 'arbiter_PD2_ret' of power domain 'router_test_top/dut/op2/arbiter_PD2'.
+
+[87650000 ps] [INFO] [LP_ISO_EN] Isolation enabled for isolation strategy 'arbiter_PD2_iso' of power domain 'router_test_top/dut/op2/arbiter_PD2'.
+
+[87650000 ps] [INFO] [LP_ISOEN_CHANGE] Isolation enable 'router_test_top/dut/op2/pwr.opwrcon_iso_n[2]' of isolation strategy 'arbiter_PD2_iso' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from 'St1' to 'St0'. Isolation sense specified is 'low'.
+
+[87750000 ps] [INFO] [LP_PSW_STATE_CHANGE] State of power switch 'router_test_top/dut/op2/Output_SW_2' changed from arbiter_PD2_SW_ON (ON) to arbiter_PD2_SW_OFF (OFF).
+
+[87750000 ps] [INFO] [LP_PSW_CTRL_CHANGE] Signal 'router_test_top/dut/op2/pwr.opwrcon_pd_n[2]' connected to control port 'ctrl' of power switch 'router_test_top/dut/op2/Output_SW_2' changed from 'St0' to 'St1'.
+
+[87750000 ps] [INFO] [LP_PSW_OSP_STATE] State of supply net 'router_test_top/dut/op2/VDD_arbiter_PD2_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op2/Output_SW_2' changed from FULL_ON to OFF.
+
+[87750000 ps] [INFO] [LP_PSW_OSP_VALUE] Voltage of supply net 'router_test_top/dut/op2/VDD_arbiter_PD2_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op2/Output_SW_2' changed from 1.08 V to 0 V.
+
+[87750000 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_arbiter_PD2_switched' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from FULL_ON to OFF.
+
+[87750000 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_arbiter_PD2_switched' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from 1.08 V to 0 V.
+
+[87750000 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/op2/arbiter_PD2' state changed from 'NORMAL' to 'CORRUPT'.
+
+[87750000 ps] [INFO] [LP_SS_STATE_CHANGE] Supply Set 'router_test_top/dut/op2/arbiter_PD2.primary' transitioned to state 'arbiter_PD2_OFF' with simstate 'CORRUPT'.
+
+[87750000 ps] [INFO] [LP_PST_STATE_CHANGE] Design state changed from 'all_on' to 'op2_off' in pst 'router_test_top/dut/router_pst'.
+
+[87750000 ps] [INFO] [LP_PORT_STATE_CHANGE] Supply Source 'router_test_top/dut/op2/Output_SW_2/out' changed to 'arbiter_PD2_OFF' state with root net 'router_test_top/dut/op2/Output_SW_2/out' at state 'OFF' and voltage 0 V.
+
+[NOTE] 88650.0ns Packet #25 Successfully Compared
+[NOTE] 91350.0ns Packet #26 Successfully Compared
+[NOTE] 94850.0ns Packet #27 Successfully Compared
+[NOTE] 98350.0ns Packet #28 Successfully Compared
+[NOTE]101050.0ns Packet #29 Successfully Compared
+[NOTE]103750.0ns Packet #30 Successfully Compared
+[NOTE]107250.0ns Packet #31 Successfully Compared
+[NOTE]111550.0ns Packet #32 Successfully Compared
+[NOTE]115050.0ns Packet #33 Successfully Compared
+[NOTE]119350.0ns Packet #34 Successfully Compared
+[NOTE]122850.0ns Packet #35 Successfully Compared
+[NOTE]127150.0ns Packet #36 Successfully Compared
+[127750000 ps] [INFO] [LP_PSW_STATE_CHANGE] State of power switch 'router_test_top/dut/op2/Output_SW_2' changed from arbiter_PD2_SW_OFF (OFF) to arbiter_PD2_SW_ON (ON).
+
+[127750000 ps] [INFO] [LP_PSW_CTRL_CHANGE] Signal 'router_test_top/dut/op2/pwr.opwrcon_pd_n[2]' connected to control port 'ctrl' of power switch 'router_test_top/dut/op2/Output_SW_2' changed from 'St1' to 'St0'.
+
+[127750000 ps] [INFO] [LP_PSW_OSP_STATE] State of supply net 'router_test_top/dut/op2/VDD_arbiter_PD2_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op2/Output_SW_2' changed from OFF to FULL_ON.
+
+[127750000 ps] [INFO] [LP_PSW_OSP_VALUE] Voltage of supply net 'router_test_top/dut/op2/VDD_arbiter_PD2_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op2/Output_SW_2' changed from 0 V to 1.08 V.
+
+[127750000 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_arbiter_PD2_switched' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from OFF to FULL_ON.
+
+[127750000 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_arbiter_PD2_switched' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from 0 V to 1.08 V.
+
+[127750000 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/op2/arbiter_PD2' state changed from 'CORRUPT' to 'NORMAL'.
+
+[127750000 ps] [INFO] [LP_SS_STATE_CHANGE] Supply Set 'router_test_top/dut/op2/arbiter_PD2.primary' transitioned to state 'arbiter_PD2_ON' with simstate 'NORMAL'.
+
+[127750000 ps] [INFO] [LP_PST_STATE_CHANGE] Design state changed from 'op2_off' to 'all_on' in pst 'router_test_top/dut/router_pst'.
+
+[127750000 ps] [INFO] [LP_PORT_STATE_CHANGE] Supply Source 'router_test_top/dut/op2/Output_SW_2/out' changed to 'arbiter_PD2_ON' state with root net 'router_test_top/dut/op2/Output_SW_2/out' at state 'FULL_ON' and voltage 1.08 V.
+
+[127850000 ps] [INFO] [LP_RESTORE_CHANGE] Restore signal 'router_test_top/dut/op2/pwr.opwrcon_restore_n[2]' for retention strategy 'arbiter_PD2_ret' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from 'St1' to 'St0'. Restore sense specified is 'low'.
+
+[127850000 ps] [INFO] [LP_RESTORE_ON] Restore asserted for retention strategy 'arbiter_PD2_ret' of power domain 'router_test_top/dut/op2/arbiter_PD2'.
+
+[127950000 ps] [INFO] [LP_RESTORE_CHANGE] Restore signal 'router_test_top/dut/op2/pwr.opwrcon_restore_n[2]' for retention strategy 'arbiter_PD2_ret' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from 'St0' to 'St1'. Restore sense specified is 'low'.
+
+[127950000 ps] [INFO] [LP_RESTORE_OFF] Restore deasserted for retention strategy 'arbiter_PD2_ret' of power domain 'router_test_top/dut/op2/arbiter_PD2'.
+
+[128050000 ps] [INFO] [LP_ISO_DIS] Isolation disabled for isolation strategy 'arbiter_PD2_iso' of power domain 'router_test_top/dut/op2/arbiter_PD2'.
+
+[128050000 ps] [INFO] [LP_ISOEN_CHANGE] Isolation enable 'router_test_top/dut/op2/pwr.opwrcon_iso_n[2]' of isolation strategy 'arbiter_PD2_iso' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from 'St0' to 'St1'. Isolation sense specified is 'low'.
+
+[NOTE]131450.0ns Packet #37 Successfully Compared
+[NOTE]134150.0ns Packet #38 Successfully Compared
+[NOTE]138450.0ns Packet #39 Successfully Compared
+[NOTE]142750.0ns Packet #40 Successfully Compared
+[NOTE]145450.0ns Packet #41 Successfully Compared
+[NOTE]148950.0ns Packet #42 Successfully Compared
+[NOTE]152450.0ns Packet #43 Successfully Compared
+[NOTE]155150.0ns Packet #44 Successfully Compared
+[NOTE]159450.0ns Packet #45 Successfully Compared
+[NOTE]163750.0ns Packet #46 Successfully Compared
+[NOTE]166450.0ns Packet #47 Successfully Compared
+[NOTE]169950.0ns Packet #48 Successfully Compared
+[NOTE]174250.0ns Packet #49 Successfully Compared
+[NOTE]176950.0ns Packet #50 Successfully Compared
+[NOTE]180450.0ns Packet #51 Successfully Compared
+[NOTE]183950.0ns Packet #52 Successfully Compared
+[NOTE]186650.0ns Packet #53 Successfully Compared
+[NOTE]190150.0ns Packet #54 Successfully Compared
+[NOTE]194450.0ns Packet #55 Successfully Compared
+[NOTE]197150.0ns Packet #56 Successfully Compared
+[NOTE]200650.0ns Packet #57 Successfully Compared
+[NOTE]204150.0ns Packet #58 Successfully Compared
+[NOTE]207650.0ns Packet #59 Successfully Compared
+[NOTE]211950.0ns Packet #60 Successfully Compared
+[NOTE]214650.0ns Packet #61 Successfully Compared
+[NOTE]218950.0ns Packet #62 Successfully Compared
+[NOTE]222450.0ns Packet #63 Successfully Compared
+[NOTE]226750.0ns Packet #64 Successfully Compared
+[NOTE]229450.0ns Packet #65 Successfully Compared
+[NOTE]232150.0ns Packet #66 Successfully Compared
+[NOTE]236450.0ns Packet #67 Successfully Compared
+[NOTE]239950.0ns Packet #68 Successfully Compared
+[NOTE]243450.0ns Packet #69 Successfully Compared
+[NOTE]246950.0ns Packet #70 Successfully Compared
+[NOTE]250450.0ns Packet #71 Successfully Compared
+[NOTE]253150.0ns Packet #72 Successfully Compared
+[NOTE]256650.0ns Packet #73 Successfully Compared
+[NOTE]260950.0ns Packet #74 Successfully Compared
+[NOTE]264450.0ns Packet #75 Successfully Compared
+[NOTE]267150.0ns Packet #76 Successfully Compared
+[NOTE]270650.0ns Packet #77 Successfully Compared
+[NOTE]273350.0ns Packet #78 Successfully Compared
+[NOTE]277650.0ns Packet #79 Successfully Compared
+[NOTE]281950.0ns Packet #80 Successfully Compared
+[NOTE]284650.0ns Packet #81 Successfully Compared
+[NOTE]288950.0ns Packet #82 Successfully Compared
+[NOTE]292450.0ns Packet #83 Successfully Compared
+[NOTE]295950.0ns Packet #84 Successfully Compared
+[NOTE]299450.0ns Packet #85 Successfully Compared
+[NOTE]302950.0ns Packet #86 Successfully Compared
+[NOTE]305650.0ns Packet #87 Successfully Compared
+[NOTE]309150.0ns Packet #88 Successfully Compared
+[NOTE]312650.0ns Packet #89 Successfully Compared
+[NOTE]316150.0ns Packet #90 Successfully Compared
+[NOTE]319650.0ns Packet #91 Successfully Compared
+[NOTE]323150.0ns Packet #92 Successfully Compared
+[NOTE]327450.0ns Packet #93 Successfully Compared
+[NOTE]330950.0ns Packet #94 Successfully Compared
+[NOTE]333650.0ns Packet #95 Successfully Compared
+[NOTE]336350.0ns Packet #96 Successfully Compared
+[NOTE]339050.0ns Packet #97 Successfully Compared
+[NOTE]343350.0ns Packet #98 Successfully Compared
+[NOTE]347650.0ns Packet #99 Successfully Compared
+[NOTE]351950.0ns Packet #100 Successfully Compared
+[NOTE]354650.0ns Packet #101 Successfully Compared
+[NOTE]358950.0ns Packet #102 Successfully Compared
+[NOTE]363250.0ns Packet #103 Successfully Compared
+[NOTE]367550.0ns Packet #104 Successfully Compared
+[NOTE]370250.0ns Packet #105 Successfully Compared
+[NOTE]374550.0ns Packet #106 Successfully Compared
+[NOTE]378050.0ns Packet #107 Successfully Compared
+[NOTE]380750.0ns Packet #108 Successfully Compared
+[NOTE]383450.0ns Packet #109 Successfully Compared
+[NOTE]386950.0ns Packet #110 Successfully Compared
+[NOTE]390450.0ns Packet #111 Successfully Compared
+[NOTE]393150.0ns Packet #112 Successfully Compared
+[NOTE]395850.0ns Packet #113 Successfully Compared
+[NOTE]398550.0ns Packet #114 Successfully Compared
+[NOTE]402850.0ns Packet #115 Successfully Compared
+[NOTE]405550.0ns Packet #116 Successfully Compared
+[NOTE]409050.0ns Packet #117 Successfully Compared
+[NOTE]412550.0ns Packet #118 Successfully Compared
+[NOTE]416850.0ns Packet #119 Successfully Compared
+[NOTE]421150.0ns Packet #120 Successfully Compared
+[NOTE]424650.0ns Packet #121 Successfully Compared
+[NOTE]428150.0ns Packet #122 Successfully Compared
+[NOTE]432450.0ns Packet #123 Successfully Compared
+[NOTE]435150.0ns Packet #124 Successfully Compared
+[NOTE]438650.0ns Packet #125 Successfully Compared
+[NOTE]442950.0ns Packet #126 Successfully Compared
+[NOTE]445650.0ns Packet #127 Successfully Compared
+[NOTE]449950.0ns Packet #128 Successfully Compared
+[NOTE]453450.0ns Packet #129 Successfully Compared
+[NOTE]456150.0ns Packet #130 Successfully Compared
+[NOTE]458850.0ns Packet #131 Successfully Compared
+[NOTE]462350.0ns Packet #132 Successfully Compared
+[NOTE]465050.0ns Packet #133 Successfully Compared
+[NOTE]468550.0ns Packet #134 Successfully Compared
+[NOTE]472850.0ns Packet #135 Successfully Compared
+[NOTE]475550.0ns Packet #136 Successfully Compared
+[NOTE]479850.0ns Packet #137 Successfully Compared
+[NOTE]484150.0ns Packet #138 Successfully Compared
+[NOTE]486850.0ns Packet #139 Successfully Compared
+[NOTE]490350.0ns Packet #140 Successfully Compared
+[NOTE]493050.0ns Packet #141 Successfully Compared
+[NOTE]495750.0ns Packet #142 Successfully Compared
+[NOTE]499250.0ns Packet #143 Successfully Compared
+[NOTE]502750.0ns Packet #144 Successfully Compared
+[NOTE]506250.0ns Packet #145 Successfully Compared
+[NOTE]510550.0ns Packet #146 Successfully Compared
+[NOTE]514850.0ns Packet #147 Successfully Compared
+[NOTE]518350.0ns Packet #148 Successfully Compared
+[NOTE]521850.0ns Packet #149 Successfully Compared
+[NOTE]524550.0ns Packet #150 Successfully Compared
+[NOTE]528050.0ns Packet #151 Successfully Compared
+[NOTE]531550.0ns Packet #152 Successfully Compared
+[NOTE]535850.0ns Packet #153 Successfully Compared
+[NOTE]538550.0ns Packet #154 Successfully Compared
+[NOTE]542850.0ns Packet #155 Successfully Compared
+[NOTE]547150.0ns Packet #156 Successfully Compared
+[NOTE]549850.0ns Packet #157 Successfully Compared
+[NOTE]552550.0ns Packet #158 Successfully Compared
+[NOTE]555250.0ns Packet #159 Successfully Compared
+[NOTE]558750.0ns Packet #160 Successfully Compared
+[NOTE]562250.0ns Packet #161 Successfully Compared
+[NOTE]565750.0ns Packet #162 Successfully Compared
+[NOTE]570050.0ns Packet #163 Successfully Compared
+[NOTE]572750.0ns Packet #164 Successfully Compared
+[NOTE]575450.0ns Packet #165 Successfully Compared
+[NOTE]578150.0ns Packet #166 Successfully Compared
+[NOTE]582450.0ns Packet #167 Successfully Compared
+[NOTE]585150.0ns Packet #168 Successfully Compared
+[NOTE]587850.0ns Packet #169 Successfully Compared
+[NOTE]591350.0ns Packet #170 Successfully Compared
+[NOTE]635850.0ns Packet #171 Successfully Compared
+[NOTE]638550.0ns Packet #172 Successfully Compared
+[NOTE]642850.0ns Packet #173 Successfully Compared
+[NOTE]647150.0ns Packet #174 Successfully Compared
+[NOTE]650650.0ns Packet #175 Successfully Compared
+[NOTE]654150.0ns Packet #176 Successfully Compared
+[NOTE]657650.0ns Packet #177 Successfully Compared
+[NOTE]660350.0ns Packet #178 Successfully Compared
+[NOTE]664650.0ns Packet #179 Successfully Compared
+[667550000 ps] [INFO] [LP_ISO_EN] Isolation enabled for isolation strategy 'decoder_PD0_iso' of power domain 'router_test_top/dut/ip0/decoder_PD0'.
+
+[667550000 ps] [INFO] [LP_ISOEN_CHANGE] Isolation enable 'router_test_top/dut/ip0/pwr.ipwrcon_iso_n[0]' of isolation strategy 'decoder_PD0_iso' of power domain 'router_test_top/dut/ip0/decoder_PD0' changed from 'St1' to 'St0'. Isolation sense specified is 'low'.
+
+[667650000 ps] [INFO] [LP_PSW_STATE_CHANGE] State of power switch 'router_test_top/dut/ip0/decoder_SW_0' changed from decoder_PD0_SW_ON (ON) to decoder_PD0_SW_OFF (OFF).
+
+[667650000 ps] [INFO] [LP_PSW_CTRL_CHANGE] Signal 'router_test_top/dut/ip0/pwr.ipwrcon_pd_n[0]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip0/decoder_SW_0' changed from 'St0' to 'St1'.
+
+[667650000 ps] [INFO] [LP_PSW_OSP_STATE] State of supply net 'router_test_top/dut/ip0/VDD_0' tied to output supply port 'out' of power switch 'router_test_top/dut/ip0/decoder_SW_0' changed from FULL_ON to OFF.
+
+[667650000 ps] [INFO] [LP_PSW_OSP_VALUE] Voltage of supply net 'router_test_top/dut/ip0/VDD_0' tied to output supply port 'out' of power switch 'router_test_top/dut/ip0/decoder_SW_0' changed from 1.08 V to 0 V.
+
+[667650000 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_0' of power domain 'router_test_top/dut/ip0/decoder_PD0' changed from FULL_ON to OFF.
+
+[667650000 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_0' of power domain 'router_test_top/dut/ip0/decoder_PD0' changed from 1.08 V to 0 V.
+
+[667650000 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip0/decoder_PD0' state changed from 'NORMAL' to 'CORRUPT'.
+
+[667650000 ps] [INFO] [LP_SS_STATE_CHANGE] Supply Set 'router_test_top/dut/ip0/decoder_PD0.primary' transitioned to state 'decoder_PD0_OFF' with simstate 'CORRUPT'.
+
+[667650000 ps] [INFO] [LP_PST_STATE_CHANGE] Design state changed from 'all_on' to 'ip0_off' in pst 'router_test_top/dut/router_pst'.
+
+[667650000 ps] [INFO] [LP_PORT_STATE_CHANGE] Supply Source 'router_test_top/dut/ip0/decoder_SW_0/out' changed to 'decoder_PD0_OFF' state with root net 'router_test_top/dut/ip0/decoder_SW_0/out' at state 'OFF' and voltage 0 V.
+
+[NOTE]668950.0ns Packet #180 Successfully Compared
+[669050000 ps] [INFO] [LP_SAVE_CHANGE] Save signal 'router_test_top/dut/op2/pwr.opwrcon_save_n[2]' for retention strategy 'arbiter_PD2_ret' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from 'St1' to 'St0'. Save sense specified is 'low'.
+
+[669050000 ps] [INFO] [LP_SAVE_ON] Save asserted for retention strategy 'arbiter_PD2_ret' of power domain 'router_test_top/dut/op2/arbiter_PD2'.
+
+[669150000 ps] [INFO] [LP_SAVE_CHANGE] Save signal 'router_test_top/dut/op2/pwr.opwrcon_save_n[2]' for retention strategy 'arbiter_PD2_ret' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from 'St0' to 'St1'. Save sense specified is 'low'.
+
+[669150000 ps] [INFO] [LP_SAVE_OFF] Save deasserted for retention strategy 'arbiter_PD2_ret' of power domain 'router_test_top/dut/op2/arbiter_PD2'.
+
+[669250000 ps] [INFO] [LP_ISO_EN] Isolation enabled for isolation strategy 'arbiter_PD2_iso' of power domain 'router_test_top/dut/op2/arbiter_PD2'.
+
+[669250000 ps] [INFO] [LP_ISOEN_CHANGE] Isolation enable 'router_test_top/dut/op2/pwr.opwrcon_iso_n[2]' of isolation strategy 'arbiter_PD2_iso' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from 'St1' to 'St0'. Isolation sense specified is 'low'.
+
+[669350000 ps] [INFO] [LP_PSW_STATE_CHANGE] State of power switch 'router_test_top/dut/op2/Output_SW_2' changed from arbiter_PD2_SW_ON (ON) to arbiter_PD2_SW_OFF (OFF).
+
+[669350000 ps] [INFO] [LP_PSW_CTRL_CHANGE] Signal 'router_test_top/dut/op2/pwr.opwrcon_pd_n[2]' connected to control port 'ctrl' of power switch 'router_test_top/dut/op2/Output_SW_2' changed from 'St0' to 'St1'.
+
+[669350000 ps] [INFO] [LP_PSW_OSP_STATE] State of supply net 'router_test_top/dut/op2/VDD_arbiter_PD2_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op2/Output_SW_2' changed from FULL_ON to OFF.
+
+[669350000 ps] [INFO] [LP_PSW_OSP_VALUE] Voltage of supply net 'router_test_top/dut/op2/VDD_arbiter_PD2_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op2/Output_SW_2' changed from 1.08 V to 0 V.
+
+[669350000 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_arbiter_PD2_switched' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from FULL_ON to OFF.
+
+[669350000 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_arbiter_PD2_switched' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from 1.08 V to 0 V.
+
+[669350000 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/op2/arbiter_PD2' state changed from 'NORMAL' to 'CORRUPT'.
+
+[669350000 ps] [INFO] [LP_SS_STATE_CHANGE] Supply Set 'router_test_top/dut/op2/arbiter_PD2.primary' transitioned to state 'arbiter_PD2_OFF' with simstate 'CORRUPT'.
+
+[669350000 ps] [INFO] [LP_PST_STATE_CHANGE] Design state changed from 'ip0_off' to 'ip0_op2_off' in pst 'router_test_top/dut/router_pst'.
+
+[669350000 ps] [INFO] [LP_PORT_STATE_CHANGE] Supply Source 'router_test_top/dut/op2/Output_SW_2/out' changed to 'arbiter_PD2_OFF' state with root net 'router_test_top/dut/op2/Output_SW_2/out' at state 'OFF' and voltage 0 V.
+
+[NOTE]673250.0ns Packet #181 Successfully Compared
+[NOTE]675950.0ns Packet #182 Successfully Compared
+[NOTE]678650.0ns Packet #183 Successfully Compared
+[NOTE]681350.0ns Packet #184 Successfully Compared
+[NOTE]684850.0ns Packet #185 Successfully Compared
+[NOTE]688350.0ns Packet #186 Successfully Compared
+[NOTE]691850.0ns Packet #187 Successfully Compared
+[NOTE]695350.0ns Packet #188 Successfully Compared
+[NOTE]698050.0ns Packet #189 Successfully Compared
+[NOTE]701550.0ns Packet #190 Successfully Compared
+[NOTE]704250.0ns Packet #191 Successfully Compared
+[707650000 ps] [INFO] [LP_PSW_STATE_CHANGE] State of power switch 'router_test_top/dut/ip0/decoder_SW_0' changed from decoder_PD0_SW_OFF (OFF) to decoder_PD0_SW_ON (ON).
+
+[707650000 ps] [INFO] [LP_PSW_CTRL_CHANGE] Signal 'router_test_top/dut/ip0/pwr.ipwrcon_pd_n[0]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip0/decoder_SW_0' changed from 'St1' to 'St0'.
+
+[707650000 ps] [INFO] [LP_PSW_OSP_STATE] State of supply net 'router_test_top/dut/ip0/VDD_0' tied to output supply port 'out' of power switch 'router_test_top/dut/ip0/decoder_SW_0' changed from OFF to FULL_ON.
+
+[707650000 ps] [INFO] [LP_PSW_OSP_VALUE] Voltage of supply net 'router_test_top/dut/ip0/VDD_0' tied to output supply port 'out' of power switch 'router_test_top/dut/ip0/decoder_SW_0' changed from 0 V to 1.08 V.
+
+[707650000 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_0' of power domain 'router_test_top/dut/ip0/decoder_PD0' changed from OFF to FULL_ON.
+
+[707650000 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_0' of power domain 'router_test_top/dut/ip0/decoder_PD0' changed from 0 V to 1.08 V.
+
+[707650000 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip0/decoder_PD0' state changed from 'CORRUPT' to 'NORMAL'.
+
+[707650000 ps] [INFO] [LP_SS_STATE_CHANGE] Supply Set 'router_test_top/dut/ip0/decoder_PD0.primary' transitioned to state 'decoder_PD0_ON' with simstate 'NORMAL'.
+
+[707650000 ps] [INFO] [LP_PST_STATE_CHANGE] Design state changed from 'ip0_op2_off' to 'op2_off' in pst 'router_test_top/dut/router_pst'.
+
+[707650000 ps] [INFO] [LP_PORT_STATE_CHANGE] Supply Source 'router_test_top/dut/ip0/decoder_SW_0/out' changed to 'decoder_PD0_ON' state with root net 'router_test_top/dut/ip0/decoder_SW_0/out' at state 'FULL_ON' and voltage 1.08 V.
+
+[NOTE]707750.0ns Packet #192 Successfully Compared
+[707750000 ps] [INFO] [LP_ISO_DIS] Isolation disabled for isolation strategy 'decoder_PD0_iso' of power domain 'router_test_top/dut/ip0/decoder_PD0'.
+
+[707750000 ps] [INFO] [LP_ISOEN_CHANGE] Isolation enable 'router_test_top/dut/ip0/pwr.ipwrcon_iso_n[0]' of isolation strategy 'decoder_PD0_iso' of power domain 'router_test_top/dut/ip0/decoder_PD0' changed from 'St0' to 'St1'. Isolation sense specified is 'low'.
+
+[NOTE]710450.0ns Packet #193 Successfully Compared
+[NOTE]714750.0ns Packet #194 Successfully Compared
+[NOTE]718250.0ns Packet #195 Successfully Compared
+[719350000 ps] [INFO] [LP_PSW_STATE_CHANGE] State of power switch 'router_test_top/dut/op2/Output_SW_2' changed from arbiter_PD2_SW_OFF (OFF) to arbiter_PD2_SW_ON (ON).
+
+[719350000 ps] [INFO] [LP_PSW_CTRL_CHANGE] Signal 'router_test_top/dut/op2/pwr.opwrcon_pd_n[2]' connected to control port 'ctrl' of power switch 'router_test_top/dut/op2/Output_SW_2' changed from 'St1' to 'St0'.
+
+[719350000 ps] [INFO] [LP_PSW_OSP_STATE] State of supply net 'router_test_top/dut/op2/VDD_arbiter_PD2_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op2/Output_SW_2' changed from OFF to FULL_ON.
+
+[719350000 ps] [INFO] [LP_PSW_OSP_VALUE] Voltage of supply net 'router_test_top/dut/op2/VDD_arbiter_PD2_switched' tied to output supply port 'out' of power switch 'router_test_top/dut/op2/Output_SW_2' changed from 0 V to 1.08 V.
+
+[719350000 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_arbiter_PD2_switched' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from OFF to FULL_ON.
+
+[719350000 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_arbiter_PD2_switched' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from 0 V to 1.08 V.
+
+[719350000 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/op2/arbiter_PD2' state changed from 'CORRUPT' to 'NORMAL'.
+
+[719350000 ps] [INFO] [LP_SS_STATE_CHANGE] Supply Set 'router_test_top/dut/op2/arbiter_PD2.primary' transitioned to state 'arbiter_PD2_ON' with simstate 'NORMAL'.
+
+[719350000 ps] [INFO] [LP_PST_STATE_CHANGE] Design state changed from 'op2_off' to 'all_on' in pst 'router_test_top/dut/router_pst'.
+
+[719350000 ps] [INFO] [LP_PORT_STATE_CHANGE] Supply Source 'router_test_top/dut/op2/Output_SW_2/out' changed to 'arbiter_PD2_ON' state with root net 'router_test_top/dut/op2/Output_SW_2/out' at state 'FULL_ON' and voltage 1.08 V.
+
+[719450000 ps] [INFO] [LP_RESTORE_CHANGE] Restore signal 'router_test_top/dut/op2/pwr.opwrcon_restore_n[2]' for retention strategy 'arbiter_PD2_ret' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from 'St1' to 'St0'. Restore sense specified is 'low'.
+
+[719450000 ps] [INFO] [LP_RESTORE_ON] Restore asserted for retention strategy 'arbiter_PD2_ret' of power domain 'router_test_top/dut/op2/arbiter_PD2'.
+
+[719550000 ps] [INFO] [LP_RESTORE_CHANGE] Restore signal 'router_test_top/dut/op2/pwr.opwrcon_restore_n[2]' for retention strategy 'arbiter_PD2_ret' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from 'St0' to 'St1'. Restore sense specified is 'low'.
+
+[719550000 ps] [INFO] [LP_RESTORE_OFF] Restore deasserted for retention strategy 'arbiter_PD2_ret' of power domain 'router_test_top/dut/op2/arbiter_PD2'.
+
+[719650000 ps] [INFO] [LP_ISO_DIS] Isolation disabled for isolation strategy 'arbiter_PD2_iso' of power domain 'router_test_top/dut/op2/arbiter_PD2'.
+
+[719650000 ps] [INFO] [LP_ISOEN_CHANGE] Isolation enable 'router_test_top/dut/op2/pwr.opwrcon_iso_n[2]' of isolation strategy 'arbiter_PD2_iso' of power domain 'router_test_top/dut/op2/arbiter_PD2' changed from 'St0' to 'St1'. Isolation sense specified is 'low'.
+
+[NOTE]721750.0ns Packet #196 Successfully Compared
+[NOTE]724450.0ns Packet #197 Successfully Compared
+[NOTE]727950.0ns Packet #198 Successfully Compared
+[NOTE]731450.0ns Packet #199 Successfully Compared
+[NOTE]734950.0ns Packet #200 Successfully Compared
+[NOTE]739250.0ns Packet #201 Successfully Compared
+[NOTE]742750.0ns Packet #202 Successfully Compared
+[NOTE]747050.0ns Packet #203 Successfully Compared
+[NOTE]751350.0ns Packet #204 Successfully Compared
+[NOTE]755650.0ns Packet #205 Successfully Compared
+[NOTE]758350.0ns Packet #206 Successfully Compared
+[NOTE]761850.0ns Packet #207 Successfully Compared
+[NOTE]764550.0ns Packet #208 Successfully Compared
+[NOTE]768050.0ns Packet #209 Successfully Compared
+[NOTE]772350.0ns Packet #210 Successfully Compared
+[NOTE]776650.0ns Packet #211 Successfully Compared
+[NOTE]779350.0ns Packet #212 Successfully Compared
+[NOTE]782850.0ns Packet #213 Successfully Compared
+[NOTE]786350.0ns Packet #214 Successfully Compared
+[NOTE]790650.0ns Packet #215 Successfully Compared
+[NOTE]794950.0ns Packet #216 Successfully Compared
+[NOTE]798450.0ns Packet #217 Successfully Compared
+[NOTE]801150.0ns Packet #218 Successfully Compared
+[NOTE]803850.0ns Packet #219 Successfully Compared
+[NOTE]806550.0ns Packet #220 Successfully Compared
+[NOTE]810850.0ns Packet #221 Successfully Compared
+[NOTE]813550.0ns Packet #222 Successfully Compared
+[NOTE]817850.0ns Packet #223 Successfully Compared
+[NOTE]820550.0ns Packet #224 Successfully Compared
+[NOTE]824850.0ns Packet #225 Successfully Compared
+[NOTE]827550.0ns Packet #226 Successfully Compared
+[NOTE]831050.0ns Packet #227 Successfully Compared
+[NOTE]833750.0ns Packet #228 Successfully Compared
+[NOTE]837250.0ns Packet #229 Successfully Compared
+[NOTE]840750.0ns Packet #230 Successfully Compared
+[NOTE]844250.0ns Packet #231 Successfully Compared
+[NOTE]847750.0ns Packet #232 Successfully Compared
+[NOTE]850450.0ns Packet #233 Successfully Compared
+[NOTE]853950.0ns Packet #234 Successfully Compared
+[NOTE]858250.0ns Packet #235 Successfully Compared
+[NOTE]861750.0ns Packet #236 Successfully Compared
+[NOTE]865250.0ns Packet #237 Successfully Compared
+[NOTE]868750.0ns Packet #238 Successfully Compared
+[NOTE]871450.0ns Packet #239 Successfully Compared
+[NOTE]875750.0ns Packet #240 Successfully Compared
+[NOTE]880050.0ns Packet #241 Successfully Compared
+[NOTE]882750.0ns Packet #242 Successfully Compared
+[NOTE]887050.0ns Packet #243 Successfully Compared
+[NOTE]891350.0ns Packet #244 Successfully Compared
+[NOTE]895650.0ns Packet #245 Successfully Compared
+[NOTE]899950.0ns Packet #246 Successfully Compared
+[NOTE]903450.0ns Packet #247 Successfully Compared
+[NOTE]906950.0ns Packet #248 Successfully Compared
+[NOTE]909650.0ns Packet #249 Successfully Compared
+[NOTE]912350.0ns Packet #250 Successfully Compared
+[NOTE]915850.0ns Packet #251 Successfully Compared
+[NOTE]918550.0ns Packet #252 Successfully Compared
+[NOTE]921250.0ns Packet #253 Successfully Compared
+[NOTE]925550.0ns Packet #254 Successfully Compared
+[NOTE]929850.0ns Packet #255 Successfully Compared
+[NOTE]932550.0ns Packet #256 Successfully Compared
+[NOTE]936850.0ns Packet #257 Successfully Compared
+[NOTE]941150.0ns Packet #258 Successfully Compared
+[NOTE]945450.0ns Packet #259 Successfully Compared
+[NOTE]948950.0ns Packet #260 Successfully Compared
+[NOTE]953250.0ns Packet #261 Successfully Compared
+[NOTE]955950.0ns Packet #262 Successfully Compared
+[NOTE]959450.0ns Packet #263 Successfully Compared
+[NOTE]963750.0ns Packet #264 Successfully Compared
+[NOTE]967250.0ns Packet #265 Successfully Compared
+[NOTE]969950.0ns Packet #266 Successfully Compared
+[NOTE]972650.0ns Packet #267 Successfully Compared
+[NOTE]976150.0ns Packet #268 Successfully Compared
+[NOTE]978850.0ns Packet #269 Successfully Compared
+[NOTE]982350.0ns Packet #270 Successfully Compared
+[NOTE]985050.0ns Packet #271 Successfully Compared
+[NOTE]989350.0ns Packet #272 Successfully Compared
+[NOTE]992850.0ns Packet #273 Successfully Compared
+[NOTE]995550.0ns Packet #274 Successfully Compared
+[NOTE]999050.0ns Packet #275 Successfully Compared
+[NOTE]1003350.0ns Packet #276 Successfully Compared
+[NOTE]1006850.0ns Packet #277 Successfully Compared
+[NOTE]1010350.0ns Packet #278 Successfully Compared
+[NOTE]1013050.0ns Packet #279 Successfully Compared
+[NOTE]1015750.0ns Packet #280 Successfully Compared
+[NOTE]1020050.0ns Packet #281 Successfully Compared
+[NOTE]1024350.0ns Packet #282 Successfully Compared
+[NOTE]1027050.0ns Packet #283 Successfully Compared
+[NOTE]1030550.0ns Packet #284 Successfully Compared
+[NOTE]1033250.0ns Packet #285 Successfully Compared
+[NOTE]1036750.0ns Packet #286 Successfully Compared
+[NOTE]1040250.0ns Packet #287 Successfully Compared
+[NOTE]1044550.0ns Packet #288 Successfully Compared
+[NOTE]1047250.0ns Packet #289 Successfully Compared
+[NOTE]1050750.0ns Packet #290 Successfully Compared
+[NOTE]1054250.0ns Packet #291 Successfully Compared
+[NOTE]1056950.0ns Packet #292 Successfully Compared
+[NOTE]1061250.0ns Packet #293 Successfully Compared
+[NOTE]1063950.0ns Packet #294 Successfully Compared
+[NOTE]1067450.0ns Packet #295 Successfully Compared
+[NOTE]1070950.0ns Packet #296 Successfully Compared
+[NOTE]1073650.0ns Packet #297 Successfully Compared
+[NOTE]1076350.0ns Packet #298 Successfully Compared
+[NOTE]1079050.0ns Packet #299 Successfully Compared
+[NOTE]1083350.0ns Packet #300 Successfully Compared
+[NOTE]1087650.0ns Packet #301 Successfully Compared
+[NOTE]1091950.0ns Packet #302 Successfully Compared
+[NOTE]1096250.0ns Packet #303 Successfully Compared
+[NOTE]1098950.0ns Packet #304 Successfully Compared
+[NOTE]1102450.0ns Packet #305 Successfully Compared
+[NOTE]1105150.0ns Packet #306 Successfully Compared
+[NOTE]1109450.0ns Packet #307 Successfully Compared
+[NOTE]1112950.0ns Packet #308 Successfully Compared
+[NOTE]1117250.0ns Packet #309 Successfully Compared
+[NOTE]1119950.0ns Packet #310 Successfully Compared
+[NOTE]1122650.0ns Packet #311 Successfully Compared
+[NOTE]1126950.0ns Packet #312 Successfully Compared
+[NOTE]1131250.0ns Packet #313 Successfully Compared
+[NOTE]1134750.0ns Packet #314 Successfully Compared
+[NOTE]1138250.0ns Packet #315 Successfully Compared
+[NOTE]1140950.0ns Packet #316 Successfully Compared
+[NOTE]1143650.0ns Packet #317 Successfully Compared
+[NOTE]1146350.0ns Packet #318 Successfully Compared
+[NOTE]1150650.0ns Packet #319 Successfully Compared
+[NOTE]1153350.0ns Packet #320 Successfully Compared
+[NOTE]1156850.0ns Packet #321 Successfully Compared
+[NOTE]1159550.0ns Packet #322 Successfully Compared
+[NOTE]1163850.0ns Packet #323 Successfully Compared
+[NOTE]1168150.0ns Packet #324 Successfully Compared
+[NOTE]1170850.0ns Packet #325 Successfully Compared
+[NOTE]1175150.0ns Packet #326 Successfully Compared
+[NOTE]1177850.0ns Packet #327 Successfully Compared
+[NOTE]1181350.0ns Packet #328 Successfully Compared
+[NOTE]1184850.0ns Packet #329 Successfully Compared
+[NOTE]1187550.0ns Packet #330 Successfully Compared
+[NOTE]1191850.0ns Packet #331 Successfully Compared
+[NOTE]1195350.0ns Packet #332 Successfully Compared
+[NOTE]1199650.0ns Packet #333 Successfully Compared
+[NOTE]1202350.0ns Packet #334 Successfully Compared
+[NOTE]1205850.0ns Packet #335 Successfully Compared
+[NOTE]1210150.0ns Packet #336 Successfully Compared
+[NOTE]1213650.0ns Packet #337 Successfully Compared
+[NOTE]1217950.0ns Packet #338 Successfully Compared
+[NOTE]1221450.0ns Packet #339 Successfully Compared
+[NOTE]1224150.0ns Packet #340 Successfully Compared
+[NOTE]1228450.0ns Packet #341 Successfully Compared
+[1229650000 ps] [INFO] [LP_ISO_EN] Isolation enabled for isolation strategy 'decoder_PD1_iso' of power domain 'router_test_top/dut/ip1/decoder_PD1'.
+
+[1229650000 ps] [INFO] [LP_ISOEN_CHANGE] Isolation enable 'router_test_top/dut/ip1/pwr.ipwrcon_iso_n[1]' of isolation strategy 'decoder_PD1_iso' of power domain 'router_test_top/dut/ip1/decoder_PD1' changed from 'St1' to 'St0'. Isolation sense specified is 'low'.
+
+[1229750000 ps] [INFO] [LP_PSW_STATE_CHANGE] State of power switch 'router_test_top/dut/ip1/decoder_SW_1' changed from decoder_PD1_SW_ON (ON) to decoder_PD1_SW_OFF (OFF).
+
+[1229750000 ps] [INFO] [LP_PSW_CTRL_CHANGE] Signal 'router_test_top/dut/ip1/pwr.ipwrcon_pd_n[1]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip1/decoder_SW_1' changed from 'St0' to 'St1'.
+
+[1229750000 ps] [INFO] [LP_PSW_OSP_STATE] State of supply net 'router_test_top/dut/ip1/VDD_1' tied to output supply port 'out' of power switch 'router_test_top/dut/ip1/decoder_SW_1' changed from FULL_ON to OFF.
+
+[1229750000 ps] [INFO] [LP_PSW_OSP_VALUE] Voltage of supply net 'router_test_top/dut/ip1/VDD_1' tied to output supply port 'out' of power switch 'router_test_top/dut/ip1/decoder_SW_1' changed from 1.08 V to 0 V.
+
+[1229750000 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_1' of power domain 'router_test_top/dut/ip1/decoder_PD1' changed from FULL_ON to OFF.
+
+[1229750000 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_1' of power domain 'router_test_top/dut/ip1/decoder_PD1' changed from 1.08 V to 0 V.
+
+[1229750000 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip1/decoder_PD1' state changed from 'NORMAL' to 'CORRUPT'.
+
+[1233750000 ps] [INFO] [LP_PSW_STATE_CHANGE] State of power switch 'router_test_top/dut/ip1/decoder_SW_1' changed from decoder_PD1_SW_OFF (OFF) to decoder_PD1_SW_ON (ON).
+
+[1233750000 ps] [INFO] [LP_PSW_CTRL_CHANGE] Signal 'router_test_top/dut/ip1/pwr.ipwrcon_pd_n[1]' connected to control port 'ctrl' of power switch 'router_test_top/dut/ip1/decoder_SW_1' changed from 'St1' to 'St0'.
+
+[1233750000 ps] [INFO] [LP_PSW_OSP_STATE] State of supply net 'router_test_top/dut/ip1/VDD_1' tied to output supply port 'out' of power switch 'router_test_top/dut/ip1/decoder_SW_1' changed from OFF to FULL_ON.
+
+[1233750000 ps] [INFO] [LP_PSW_OSP_VALUE] Voltage of supply net 'router_test_top/dut/ip1/VDD_1' tied to output supply port 'out' of power switch 'router_test_top/dut/ip1/decoder_SW_1' changed from 0 V to 1.08 V.
+
+[1233750000 ps] [INFO] [LP_PPN_STATE_CHANGE] State of the primary power net 'VDD_1' of power domain 'router_test_top/dut/ip1/decoder_PD1' changed from OFF to FULL_ON.
+
+[1233750000 ps] [INFO] [LP_PPN_VALUE_CHANGE] Voltage of the primary power net 'VDD_1' of power domain 'router_test_top/dut/ip1/decoder_PD1' changed from 0 V to 1.08 V.
+
+[1233750000 ps] [INFO] [LP_PD_STATE_CHANGE] Power domain 'router_test_top/dut/ip1/decoder_PD1' state changed from 'CORRUPT' to 'NORMAL'.
+
+[1233850000 ps] [INFO] [LP_ISO_DIS] Isolation disabled for isolation strategy 'decoder_PD1_iso' of power domain 'router_test_top/dut/ip1/decoder_PD1'.
+
+[1233850000 ps] [INFO] [LP_ISOEN_CHANGE] Isolation enable 'router_test_top/dut/ip1/pwr.ipwrcon_iso_n[1]' of isolation strategy 'decoder_PD1_iso' of power domain 'router_test_top/dut/ip1/decoder_PD1' changed from 'St0' to 'St1'. Isolation sense specified is 'low'.
+
+
+*************Low Power Message Summary*******************
+
+INFO = 755, WARNING = 0, ERROR = 0, FATAL = 0
+
+*********************************************************
+
+$finish at simulation time 1237950.0ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1237950000 ps
+CPU Time:      0.570 seconds;       Data structure size:   0.6Mb
+Tue May 20 15:39:18 2025

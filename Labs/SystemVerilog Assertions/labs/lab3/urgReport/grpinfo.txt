@@ -1,0 +1,1342 @@
+Group : router_test_top.dut.a_oport12::cov_packet_size
+
+===============================================================================
+Group : router_test_top.dut.a_oport12::cov_packet_size
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 30.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/assert.sva
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   router_test_top.dut.a_oport12::cov_packet_size
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 69       66        3       30.00   
+
+
+Variables for Group  router_test_top.dut.a_oport12::cov_packet_size
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+num_bytes  5        2         3       60.00   100  1      1        0                    
+misaligned 64       64        0       0.00    100  1      1        64                   
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable num_bytes
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        2         3       60.00   
+
+
+User Defined Bins for num_bytes
+
+
+Uncovered bins
+
+NAME        COUNT AT LEAST NUMBER 
+num_bytes_1 0     1        1      
+num_bytes_5 0     1        1      
+
+
+Excluded/Illegal bins
+
+NAME           COUNT STATUS  
+not_legal_size 0     Illegal 
+
+
+Covered bins
+
+NAME        COUNT AT LEAST 
+num_bytes_2 6     1        
+num_bytes_3 6     1        
+num_bytes_4 4     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable misaligned
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       64        0       0.00    
+
+
+Automatically Generated Bins for misaligned
+
+
+Uncovered bins
+
+NAME                                             COUNT AT LEAST NUMBER 
+[auto[0:67108863] - auto[4227858432:4294967295]] --    --       64     
+
+
+Group : router_test_top.dut.a_oport6::cov_packet_size
+
+===============================================================================
+Group : router_test_top.dut.a_oport6::cov_packet_size
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 30.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/assert.sva
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   router_test_top.dut.a_oport6::cov_packet_size
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 69       66        3       30.00   
+
+
+Variables for Group  router_test_top.dut.a_oport6::cov_packet_size
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+num_bytes  5        2         3       60.00   100  1      1        0                    
+misaligned 64       64        0       0.00    100  1      1        64                   
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable num_bytes
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        2         3       60.00   
+
+
+User Defined Bins for num_bytes
+
+
+Uncovered bins
+
+NAME        COUNT AT LEAST NUMBER 
+num_bytes_1 0     1        1      
+num_bytes_5 0     1        1      
+
+
+Excluded/Illegal bins
+
+NAME           COUNT STATUS  
+not_legal_size 0     Illegal 
+
+
+Covered bins
+
+NAME        COUNT AT LEAST 
+num_bytes_2 6     1        
+num_bytes_3 3     1        
+num_bytes_4 6     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable misaligned
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       64        0       0.00    
+
+
+Automatically Generated Bins for misaligned
+
+
+Uncovered bins
+
+NAME                                             COUNT AT LEAST NUMBER 
+[auto[0:67108863] - auto[4227858432:4294967295]] --    --       64     
+
+
+Group : router_test_top.dut.a_oport7::cov_packet_size
+
+===============================================================================
+Group : router_test_top.dut.a_oport7::cov_packet_size
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 30.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/assert.sva
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   router_test_top.dut.a_oport7::cov_packet_size
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 69       66        3       30.00   
+
+
+Variables for Group  router_test_top.dut.a_oport7::cov_packet_size
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+num_bytes  5        2         3       60.00   100  1      1        0                    
+misaligned 64       64        0       0.00    100  1      1        64                   
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable num_bytes
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        2         3       60.00   
+
+
+User Defined Bins for num_bytes
+
+
+Uncovered bins
+
+NAME        COUNT AT LEAST NUMBER 
+num_bytes_1 0     1        1      
+num_bytes_5 0     1        1      
+
+
+Excluded/Illegal bins
+
+NAME           COUNT STATUS  
+not_legal_size 0     Illegal 
+
+
+Covered bins
+
+NAME        COUNT AT LEAST 
+num_bytes_2 4     1        
+num_bytes_3 5     1        
+num_bytes_4 3     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable misaligned
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       64        0       0.00    
+
+
+Automatically Generated Bins for misaligned
+
+
+Uncovered bins
+
+NAME                                             COUNT AT LEAST NUMBER 
+[auto[0:67108863] - auto[4227858432:4294967295]] --    --       64     
+
+
+Group : router_test_top.dut.a_oport11::cov_packet_size
+
+===============================================================================
+Group : router_test_top.dut.a_oport11::cov_packet_size
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 30.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/assert.sva
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   router_test_top.dut.a_oport11::cov_packet_size
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 69       66        3       30.00   
+
+
+Variables for Group  router_test_top.dut.a_oport11::cov_packet_size
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+num_bytes  5        2         3       60.00   100  1      1        0                    
+misaligned 64       64        0       0.00    100  1      1        64                   
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable num_bytes
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        2         3       60.00   
+
+
+User Defined Bins for num_bytes
+
+
+Uncovered bins
+
+NAME        COUNT AT LEAST NUMBER 
+num_bytes_1 0     1        1      
+num_bytes_5 0     1        1      
+
+
+Excluded/Illegal bins
+
+NAME           COUNT STATUS  
+not_legal_size 0     Illegal 
+
+
+Covered bins
+
+NAME        COUNT AT LEAST 
+num_bytes_2 7     1        
+num_bytes_3 3     1        
+num_bytes_4 3     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable misaligned
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       64        0       0.00    
+
+
+Automatically Generated Bins for misaligned
+
+
+Uncovered bins
+
+NAME                                             COUNT AT LEAST NUMBER 
+[auto[0:67108863] - auto[4227858432:4294967295]] --    --       64     
+
+
+Group : router_test_top.dut.a_oport10::cov_packet_size
+
+===============================================================================
+Group : router_test_top.dut.a_oport10::cov_packet_size
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 30.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/assert.sva
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   router_test_top.dut.a_oport10::cov_packet_size
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 69       66        3       30.00   
+
+
+Variables for Group  router_test_top.dut.a_oport10::cov_packet_size
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+num_bytes  5        2         3       60.00   100  1      1        0                    
+misaligned 64       64        0       0.00    100  1      1        64                   
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable num_bytes
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        2         3       60.00   
+
+
+User Defined Bins for num_bytes
+
+
+Uncovered bins
+
+NAME        COUNT AT LEAST NUMBER 
+num_bytes_1 0     1        1      
+num_bytes_5 0     1        1      
+
+
+Excluded/Illegal bins
+
+NAME           COUNT STATUS  
+not_legal_size 0     Illegal 
+
+
+Covered bins
+
+NAME        COUNT AT LEAST 
+num_bytes_2 7     1        
+num_bytes_3 4     1        
+num_bytes_4 3     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable misaligned
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       64        0       0.00    
+
+
+Automatically Generated Bins for misaligned
+
+
+Uncovered bins
+
+NAME                                             COUNT AT LEAST NUMBER 
+[auto[0:67108863] - auto[4227858432:4294967295]] --    --       64     
+
+
+Group : router_test_top.dut.a_oport15::cov_packet_size
+
+===============================================================================
+Group : router_test_top.dut.a_oport15::cov_packet_size
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 30.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/assert.sva
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   router_test_top.dut.a_oport15::cov_packet_size
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 69       66        3       30.00   
+
+
+Variables for Group  router_test_top.dut.a_oport15::cov_packet_size
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+num_bytes  5        2         3       60.00   100  1      1        0                    
+misaligned 64       64        0       0.00    100  1      1        64                   
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable num_bytes
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        2         3       60.00   
+
+
+User Defined Bins for num_bytes
+
+
+Uncovered bins
+
+NAME        COUNT AT LEAST NUMBER 
+num_bytes_1 0     1        1      
+num_bytes_5 0     1        1      
+
+
+Excluded/Illegal bins
+
+NAME           COUNT STATUS  
+not_legal_size 0     Illegal 
+
+
+Covered bins
+
+NAME        COUNT AT LEAST 
+num_bytes_2 7     1        
+num_bytes_3 5     1        
+num_bytes_4 2     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable misaligned
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       64        0       0.00    
+
+
+Automatically Generated Bins for misaligned
+
+
+Uncovered bins
+
+NAME                                             COUNT AT LEAST NUMBER 
+[auto[0:67108863] - auto[4227858432:4294967295]] --    --       64     
+
+
+Group : router_test_top.dut.a_oport8::cov_packet_size
+
+===============================================================================
+Group : router_test_top.dut.a_oport8::cov_packet_size
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 30.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/assert.sva
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   router_test_top.dut.a_oport8::cov_packet_size
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 69       66        3       30.00   
+
+
+Variables for Group  router_test_top.dut.a_oport8::cov_packet_size
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+num_bytes  5        2         3       60.00   100  1      1        0                    
+misaligned 64       64        0       0.00    100  1      1        64                   
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable num_bytes
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        2         3       60.00   
+
+
+User Defined Bins for num_bytes
+
+
+Uncovered bins
+
+NAME        COUNT AT LEAST NUMBER 
+num_bytes_1 0     1        1      
+num_bytes_5 0     1        1      
+
+
+Excluded/Illegal bins
+
+NAME           COUNT STATUS  
+not_legal_size 0     Illegal 
+
+
+Covered bins
+
+NAME        COUNT AT LEAST 
+num_bytes_2 2     1        
+num_bytes_3 1     1        
+num_bytes_4 7     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable misaligned
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       64        0       0.00    
+
+
+Automatically Generated Bins for misaligned
+
+
+Uncovered bins
+
+NAME                                             COUNT AT LEAST NUMBER 
+[auto[0:67108863] - auto[4227858432:4294967295]] --    --       64     
+
+
+Group : router_test_top.dut.a_oport0::cov_packet_size
+
+===============================================================================
+Group : router_test_top.dut.a_oport0::cov_packet_size
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 30.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/assert.sva
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   router_test_top.dut.a_oport0::cov_packet_size
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 69       66        3       30.00   
+
+
+Variables for Group  router_test_top.dut.a_oport0::cov_packet_size
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+num_bytes  5        2         3       60.00   100  1      1        0                    
+misaligned 64       64        0       0.00    100  1      1        64                   
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable num_bytes
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        2         3       60.00   
+
+
+User Defined Bins for num_bytes
+
+
+Uncovered bins
+
+NAME        COUNT AT LEAST NUMBER 
+num_bytes_1 0     1        1      
+num_bytes_5 0     1        1      
+
+
+Excluded/Illegal bins
+
+NAME           COUNT STATUS  
+not_legal_size 0     Illegal 
+
+
+Covered bins
+
+NAME        COUNT AT LEAST 
+num_bytes_2 7     1        
+num_bytes_3 4     1        
+num_bytes_4 4     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable misaligned
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       64        0       0.00    
+
+
+Automatically Generated Bins for misaligned
+
+
+Uncovered bins
+
+NAME                                             COUNT AT LEAST NUMBER 
+[auto[0:67108863] - auto[4227858432:4294967295]] --    --       64     
+
+
+Group : router_test_top.dut.a_oport2::cov_packet_size
+
+===============================================================================
+Group : router_test_top.dut.a_oport2::cov_packet_size
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 30.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/assert.sva
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   router_test_top.dut.a_oport2::cov_packet_size
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 69       66        3       30.00   
+
+
+Variables for Group  router_test_top.dut.a_oport2::cov_packet_size
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+num_bytes  5        2         3       60.00   100  1      1        0                    
+misaligned 64       64        0       0.00    100  1      1        64                   
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable num_bytes
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        2         3       60.00   
+
+
+User Defined Bins for num_bytes
+
+
+Uncovered bins
+
+NAME        COUNT AT LEAST NUMBER 
+num_bytes_1 0     1        1      
+num_bytes_5 0     1        1      
+
+
+Excluded/Illegal bins
+
+NAME           COUNT STATUS  
+not_legal_size 0     Illegal 
+
+
+Covered bins
+
+NAME        COUNT AT LEAST 
+num_bytes_2 5     1        
+num_bytes_3 4     1        
+num_bytes_4 6     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable misaligned
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       64        0       0.00    
+
+
+Automatically Generated Bins for misaligned
+
+
+Uncovered bins
+
+NAME                                             COUNT AT LEAST NUMBER 
+[auto[0:67108863] - auto[4227858432:4294967295]] --    --       64     
+
+
+Group : router_test_top.dut.a_oport9::cov_packet_size
+
+===============================================================================
+Group : router_test_top.dut.a_oport9::cov_packet_size
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 30.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/assert.sva
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   router_test_top.dut.a_oport9::cov_packet_size
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 69       66        3       30.00   
+
+
+Variables for Group  router_test_top.dut.a_oport9::cov_packet_size
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+num_bytes  5        2         3       60.00   100  1      1        0                    
+misaligned 64       64        0       0.00    100  1      1        64                   
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable num_bytes
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        2         3       60.00   
+
+
+User Defined Bins for num_bytes
+
+
+Uncovered bins
+
+NAME        COUNT AT LEAST NUMBER 
+num_bytes_1 0     1        1      
+num_bytes_5 0     1        1      
+
+
+Excluded/Illegal bins
+
+NAME           COUNT STATUS  
+not_legal_size 0     Illegal 
+
+
+Covered bins
+
+NAME        COUNT AT LEAST 
+num_bytes_2 1     1        
+num_bytes_3 4     1        
+num_bytes_4 5     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable misaligned
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       64        0       0.00    
+
+
+Automatically Generated Bins for misaligned
+
+
+Uncovered bins
+
+NAME                                             COUNT AT LEAST NUMBER 
+[auto[0:67108863] - auto[4227858432:4294967295]] --    --       64     
+
+
+Group : router_test_top.dut.a_oport5::cov_packet_size
+
+===============================================================================
+Group : router_test_top.dut.a_oport5::cov_packet_size
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 30.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/assert.sva
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   router_test_top.dut.a_oport5::cov_packet_size
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 69       66        3       30.00   
+
+
+Variables for Group  router_test_top.dut.a_oport5::cov_packet_size
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+num_bytes  5        2         3       60.00   100  1      1        0                    
+misaligned 64       64        0       0.00    100  1      1        64                   
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable num_bytes
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        2         3       60.00   
+
+
+User Defined Bins for num_bytes
+
+
+Uncovered bins
+
+NAME        COUNT AT LEAST NUMBER 
+num_bytes_1 0     1        1      
+num_bytes_5 0     1        1      
+
+
+Excluded/Illegal bins
+
+NAME           COUNT STATUS  
+not_legal_size 0     Illegal 
+
+
+Covered bins
+
+NAME        COUNT AT LEAST 
+num_bytes_2 7     1        
+num_bytes_3 4     1        
+num_bytes_4 3     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable misaligned
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       64        0       0.00    
+
+
+Automatically Generated Bins for misaligned
+
+
+Uncovered bins
+
+NAME                                             COUNT AT LEAST NUMBER 
+[auto[0:67108863] - auto[4227858432:4294967295]] --    --       64     
+
+
+Group : router_test_top.dut.a_oport1::cov_packet_size
+
+===============================================================================
+Group : router_test_top.dut.a_oport1::cov_packet_size
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 30.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/assert.sva
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   router_test_top.dut.a_oport1::cov_packet_size
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 69       66        3       30.00   
+
+
+Variables for Group  router_test_top.dut.a_oport1::cov_packet_size
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+num_bytes  5        2         3       60.00   100  1      1        0                    
+misaligned 64       64        0       0.00    100  1      1        64                   
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable num_bytes
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        2         3       60.00   
+
+
+User Defined Bins for num_bytes
+
+
+Uncovered bins
+
+NAME        COUNT AT LEAST NUMBER 
+num_bytes_1 0     1        1      
+num_bytes_5 0     1        1      
+
+
+Excluded/Illegal bins
+
+NAME           COUNT STATUS  
+not_legal_size 0     Illegal 
+
+
+Covered bins
+
+NAME        COUNT AT LEAST 
+num_bytes_2 10    1        
+num_bytes_3 2     1        
+num_bytes_4 4     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable misaligned
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       64        0       0.00    
+
+
+Automatically Generated Bins for misaligned
+
+
+Uncovered bins
+
+NAME                                             COUNT AT LEAST NUMBER 
+[auto[0:67108863] - auto[4227858432:4294967295]] --    --       64     
+
+
+Group : router_test_top.dut.a_oport13::cov_packet_size
+
+===============================================================================
+Group : router_test_top.dut.a_oport13::cov_packet_size
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 30.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/assert.sva
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   router_test_top.dut.a_oport13::cov_packet_size
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 69       66        3       30.00   
+
+
+Variables for Group  router_test_top.dut.a_oport13::cov_packet_size
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+num_bytes  5        2         3       60.00   100  1      1        0                    
+misaligned 64       64        0       0.00    100  1      1        64                   
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable num_bytes
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        2         3       60.00   
+
+
+User Defined Bins for num_bytes
+
+
+Uncovered bins
+
+NAME        COUNT AT LEAST NUMBER 
+num_bytes_1 0     1        1      
+num_bytes_5 0     1        1      
+
+
+Excluded/Illegal bins
+
+NAME           COUNT STATUS  
+not_legal_size 0     Illegal 
+
+
+Covered bins
+
+NAME        COUNT AT LEAST 
+num_bytes_2 3     1        
+num_bytes_3 5     1        
+num_bytes_4 3     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable misaligned
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       64        0       0.00    
+
+
+Automatically Generated Bins for misaligned
+
+
+Uncovered bins
+
+NAME                                             COUNT AT LEAST NUMBER 
+[auto[0:67108863] - auto[4227858432:4294967295]] --    --       64     
+
+
+Group : router_test_top.dut.a_oport3::cov_packet_size
+
+===============================================================================
+Group : router_test_top.dut.a_oport3::cov_packet_size
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 30.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/assert.sva
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   router_test_top.dut.a_oport3::cov_packet_size
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 69       66        3       30.00   
+
+
+Variables for Group  router_test_top.dut.a_oport3::cov_packet_size
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+num_bytes  5        2         3       60.00   100  1      1        0                    
+misaligned 64       64        0       0.00    100  1      1        64                   
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable num_bytes
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        2         3       60.00   
+
+
+User Defined Bins for num_bytes
+
+
+Uncovered bins
+
+NAME        COUNT AT LEAST NUMBER 
+num_bytes_1 0     1        1      
+num_bytes_5 0     1        1      
+
+
+Excluded/Illegal bins
+
+NAME           COUNT STATUS  
+not_legal_size 0     Illegal 
+
+
+Covered bins
+
+NAME        COUNT AT LEAST 
+num_bytes_2 3     1        
+num_bytes_3 4     1        
+num_bytes_4 3     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable misaligned
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       64        0       0.00    
+
+
+Automatically Generated Bins for misaligned
+
+
+Uncovered bins
+
+NAME                                             COUNT AT LEAST NUMBER 
+[auto[0:67108863] - auto[4227858432:4294967295]] --    --       64     
+
+
+Group : router_test_top.dut.a_oport14::cov_packet_size
+
+===============================================================================
+Group : router_test_top.dut.a_oport14::cov_packet_size
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 30.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/assert.sva
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   router_test_top.dut.a_oport14::cov_packet_size
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 69       66        3       30.00   
+
+
+Variables for Group  router_test_top.dut.a_oport14::cov_packet_size
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+num_bytes  5        2         3       60.00   100  1      1        0                    
+misaligned 64       64        0       0.00    100  1      1        64                   
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable num_bytes
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        2         3       60.00   
+
+
+User Defined Bins for num_bytes
+
+
+Uncovered bins
+
+NAME        COUNT AT LEAST NUMBER 
+num_bytes_1 0     1        1      
+num_bytes_5 0     1        1      
+
+
+Excluded/Illegal bins
+
+NAME           COUNT STATUS  
+not_legal_size 0     Illegal 
+
+
+Covered bins
+
+NAME        COUNT AT LEAST 
+num_bytes_2 4     1        
+num_bytes_3 2     1        
+num_bytes_4 2     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable misaligned
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       64        0       0.00    
+
+
+Automatically Generated Bins for misaligned
+
+
+Uncovered bins
+
+NAME                                             COUNT AT LEAST NUMBER 
+[auto[0:67108863] - auto[4227858432:4294967295]] --    --       64     
+
+
+Group : router_test_top.dut.a_oport4::cov_packet_size
+
+===============================================================================
+Group : router_test_top.dut.a_oport4::cov_packet_size
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 30.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/assert.sva
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   router_test_top.dut.a_oport4::cov_packet_size
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 69       66        3       30.00   
+
+
+Variables for Group  router_test_top.dut.a_oport4::cov_packet_size
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+num_bytes  5        2         3       60.00   100  1      1        0                    
+misaligned 64       64        0       0.00    100  1      1        64                   
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable num_bytes
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        2         3       60.00   
+
+
+User Defined Bins for num_bytes
+
+
+Uncovered bins
+
+NAME        COUNT AT LEAST NUMBER 
+num_bytes_1 0     1        1      
+num_bytes_5 0     1        1      
+
+
+Excluded/Illegal bins
+
+NAME           COUNT STATUS  
+not_legal_size 0     Illegal 
+
+
+Covered bins
+
+NAME        COUNT AT LEAST 
+num_bytes_2 2     1        
+num_bytes_3 1     1        
+num_bytes_4 4     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable misaligned
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 64       64        0       0.00    
+
+
+Automatically Generated Bins for misaligned
+
+
+Uncovered bins
+
+NAME                                             COUNT AT LEAST NUMBER 
+[auto[0:67108863] - auto[4227858432:4294967295]] --    --       64     

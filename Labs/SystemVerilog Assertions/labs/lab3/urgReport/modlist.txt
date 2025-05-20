@@ -1,0 +1,15 @@
+Design Module List
+
+Total Module Definition Coverage Summary 
+SCORE  ASSERT 
+ 77.78  77.78 
+
+
+Total modules in report: 5
+-------------------------------------------------------------------------------
+SCORE  ASSERT NAME            
+ 71.43  71.43 assert_outputs  
+100.00 100.00 test            
+100.00 100.00 assert_inputs   
+--     --     router          
+--     --     router_test_top 
