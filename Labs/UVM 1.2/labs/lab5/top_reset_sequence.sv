@@ -14,8 +14,7 @@ class top_reset_sequence extends uvm_sequence;
   // `uvm_declare_p_sequencer(top_reset_sequencer)
   //
   // ToDo
-
-
+	`uvm_declare_p_sequencer(top_reset_sequencer)
 
   // Lab 5 - Task 1, Step 5
   //
@@ -29,9 +28,8 @@ class top_reset_sequence extends uvm_sequence;
   // router_input_port_reset_sequence  i_seq;
   //
   // ToDo
-
-
-
+	reset_sequence                    r_seq;
+ 	router_input_port_reset_sequence  i_seq;
 
   // Lab 5 - Task 4, Step 6
   //
@@ -40,7 +38,7 @@ class top_reset_sequence extends uvm_sequence;
   // uvm_event reset_event = uvm_event_pool::get_global("reset");
   //
   // ToDo
-
+	uvm_event reset_event = uvm_event_pool::get_global("reset");
 
   function new(string name="virtual_reset_sequence");
     super.new(name);    
@@ -71,12 +69,13 @@ class top_reset_sequence extends uvm_sequence;
     //
     // ToDo
 
-
-
-
-
-
-
+    /*
+		// For UVM-1.1 & UVM-1.2    
+    `uvm_do_on(r_seq, p_sequencer.r_sqr);
+    foreach (p_sequencer.pkt_sqr[i]) begin
+    	`uvm_do_on(i_seq, p_sequencer.pkt_sqr[i]);
+    end
+		*/
 
     // Lab 5 - Task 3, Step 2
     //
@@ -98,16 +97,19 @@ class top_reset_sequence extends uvm_sequence;
     //
     // ToDo
 
-
-
-
-
-
-
-
-
-
-
+		/*
+		// For UVM-1.1 & UVM-1.2
+    fork
+    	`uvm_do_on(r_seq, p_sequencer.r_sqr);
+    	foreach (p_sequencer.pkt_sqr[i]) begin
+  			fork
+  				int j = i;
+    			`uvm_do_on(i_seq, p_sequencer.pkt_sqr[j]);
+    		join_none
+    	end
+		join
+		*/
+				
     // Lab 5 - Task 4, Step 7
     //
     // Comment out the above code.
@@ -131,15 +133,20 @@ class top_reset_sequence extends uvm_sequence;
     //
     // ToDo
 
-
-
-
-
-
-
-
-
-
+		// For UVM-1.1 & UVM-1.2
+    
+    fork
+    	`uvm_do_on(r_seq, p_sequencer.r_sqr);
+    	foreach (p_sequencer.pkt_sqr[i]) begin
+    		fork
+    			int j = i;
+    			begin
+    				reset_event.wait_on();
+    				`uvm_do_on(i_seq, p_sequencer.pkt_sqr[j]);
+    			end
+    		join_none
+    	end
+    join
 
   endtask: body
 

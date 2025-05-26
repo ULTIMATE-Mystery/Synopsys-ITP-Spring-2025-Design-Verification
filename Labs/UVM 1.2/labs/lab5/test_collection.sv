@@ -12,8 +12,7 @@ class test_base extends uvm_test;
   // top_reset_sequencer  top_reset_sqr;
   //
   // ToDo
-
-
+	top_reset_sequencer top_reset_sqr;
 
   function new(string name, uvm_component parent);
     super.new(name, parent);
@@ -39,8 +38,7 @@ class test_base extends uvm_test;
     // top_reset_sqr = top_reset_sequencer::type_id::create("top_reset_sqr", this);
     //
     // ToDo
-
-
+		top_reset_sqr = top_reset_sequencer::type_id::create("top_reset_sqr", this);
 
     // Lab 5 - Task 2, Step 4
     //
@@ -52,8 +50,7 @@ class test_base extends uvm_test;
     // uvm_config_db #(uvm_object_wrapper)::set(this, "env.r_agt.sqr.reset_phase", "default_sequence", null);
     //
     // ToDo
-
-
+		uvm_config_db #(uvm_object_wrapper)::set(this, "env.r_agt.sqr.reset_phase", "default_sequence", null);
 
     // Lab 5 - Task 2, Step 5
     //
@@ -62,8 +59,7 @@ class test_base extends uvm_test;
     // uvm_config_db #(uvm_object_wrapper)::set(this, "env.i_agt[*].sqr.reset_phase", "default_sequence", null);
     //
     // ToDo
-
-
+		uvm_config_db #(uvm_object_wrapper)::set(this, "env.i_agt[*].sqr.reset_phase", "default_sequence", null);
 
     // Lab 5 - Task 2, Step 6
     //
@@ -72,7 +68,7 @@ class test_base extends uvm_test;
     // uvm_config_db #(uvm_object_wrapper)::set(this, "top_reset_sqr.reset_phase", "default_sequence", top_reset_sequence::get_type());
     //
     // ToDo
-
+		uvm_config_db #(uvm_object_wrapper)::set(this, "top_reset_sqr.reset_phase", "default_sequence", top_reset_sequence::get_type());
 
     set_type_override_by_type(scoreboard::get_type(),ms_scoreboard::get_type());
   endfunction: build_phase
@@ -90,10 +86,9 @@ class test_base extends uvm_test;
     // end
     //
     // ToDo
-
-
-
-
+		foreach (env.i_agt[i]) begin
+    	top_reset_sqr.pkt_sqr.push_back(env.i_agt[i].sqr);
+    end
 
     // Lab 5 - Task 2, Step 8
     //
@@ -102,8 +97,7 @@ class test_base extends uvm_test;
     // top_reset_sqr.r_sqr = env.r_agt.sqr;
     //
     // ToDo
-
-
+		top_reset_sqr.r_sqr = env.r_agt.sqr;
 
   endfunction: connect_phase
 
