@@ -18,8 +18,7 @@ class top_reset_sequencer extends uvm_sequencer;
   // host_sequencer h_sqr;
   //
   // ToDo
-
-
+	host_sequencer h_sqr;
 
   function new(string name, uvm_component parent);
     super.new(name, parent);    

@@ -52,14 +52,11 @@ class reg_adapter extends uvm_reg_adapter;
     // return tr;
     //
     // ToDo
-
-
-
-
-
-
-
-
+		tr = host_data::type_id::create("tr");
+    tr.addr = rw.addr;
+    tr.data = rw.data;
+    tr.kind = rw.kind;
+    return tr;
 
   endfunction
 
@@ -81,13 +78,13 @@ class reg_adapter extends uvm_reg_adapter;
     // rw.status = tr.status;
     //
     // ToDo
-
-
-
-
-
-
-
+		if (!$cast(tr, bus_item)) begin
+    	`uvm_fatal("NOT_HOST_REG_TYPE", "bus_item is not correct type");
+    end
+    rw.addr   = tr.addr;
+    rw.data   = tr.data;
+    rw.kind   = tr.kind;
+    rw.status = tr.status;
 
   endfunction
 endclass

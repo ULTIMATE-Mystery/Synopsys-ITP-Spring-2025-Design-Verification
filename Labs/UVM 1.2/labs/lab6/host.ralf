@@ -8,40 +8,40 @@
 register HOST_ID {
 #  ToDo
   field REV_ID {
-
-
-
+		bits 8;
+		access ro;
+		reset 'h03;
   }
   field CHIP_ID {
-
-
-
+		bits 8;
+		access ro;
+		reset 'h5a;
   }
 }
 
 register LOCK {
 #  ToDo
   field LOCK {
-
-
-
+		bits 16;
+		access w1c;
+		reset 'hffff;
   }
 }
 
 register R_ARRAY {
 #  ToDo
   field H_REG {
-
-
-
+		bits 16;
+		access rw;
+		reset 'h0000;
   }
 }
 
 memory RAM {
 #  ToDo
-
-
-
+	size 4k;
+	bits 16;
+	access rw;
 }
 
 #

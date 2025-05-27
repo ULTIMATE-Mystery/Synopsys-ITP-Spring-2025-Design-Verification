@@ -49,8 +49,7 @@ class test_base extends uvm_test;
     // uvm_config_db #(string)::set(this, "env", "hdl_path", "router_test_top.dut");
     //
     // ToDo
-
-
+		uvm_config_db #(string)::set(this, "env", "hdl_path", "router_test_top.dut");
 
     set_type_override_by_type(scoreboard::get_type(),ms_scoreboard::get_type());
   endfunction: build_phase
@@ -72,8 +71,7 @@ class test_base extends uvm_test;
     // top_reset_sqr.h_sqr = env.h_agt.sqr;
     //
     // ToDo
-
-
+		top_reset_sqr.h_sqr = env.h_agt.sqr;
 
   endfunction: connect_phase
 
@@ -88,8 +86,7 @@ class test_base extends uvm_test;
     // env.regmodel.set_coverage(UVM_CVR_ALL);
     //
     // ToDo
-
-
+		env.regmodel.set_coverage(UVM_CVR_ALL);
 
   endfunction: end_of_elaboration_phase
 
@@ -193,9 +190,9 @@ class test_host_bfm extends test_base;
     // uvm_config_db #(uvm_object_wrapper)::set(this, "env.h_agt.sqr.main_phase", "default_sequence", host_bfm_sequence::get_type());
     //
     // ToDo
-
-
-
+		uvm_config_db #(uvm_object_wrapper)::set(this, "env.*.configure_phase", "default_sequence", null);
+    uvm_config_db #(uvm_object_wrapper)::set(this, "env.*.main_phase", "default_sequence", null);
+    uvm_config_db #(uvm_object_wrapper)::set(this, "env.h_agt.sqr.main_phase", "default_sequence", host_bfm_sequence::get_type());
 
   endfunction: build_phase
 endclass: test_host_bfm
@@ -221,9 +218,9 @@ class test_host_ral extends test_base;
     // uvm_config_db #(uvm_object_wrapper)::set(this, "env.h_agt.sqr.main_phase", "default_sequence", host_ral_test_sequence::get_type());
     //
     // ToDo
-
-
-
+		uvm_config_db #(uvm_object_wrapper)::set(this, "env.*.configure_phase", "default_sequence", null);
+    uvm_config_db #(uvm_object_wrapper)::set(this, "env.*.main_phase", "default_sequence", null);
+    uvm_config_db #(uvm_object_wrapper)::set(this, "env.h_agt.sqr.main_phase", "default_sequence", host_ral_test_sequence::get_type());
 
   endfunction: build_phase
 endclass: test_host_ral
@@ -239,7 +236,6 @@ endclass: test_host_ral
 // Uncomment the following class
 //
 // ToDo
-/*
 class test_ral_selftest extends test_base;
   `uvm_component_utils(test_ral_selftest)
   string                 seq_name="uvm_reg_bit_bash_seq";
@@ -269,4 +265,3 @@ class test_ral_selftest extends test_base;
     phase.drop_objection(this, "Done with register tests");
   endtask: run_phase
 endclass: test_ral_selftest
-*/

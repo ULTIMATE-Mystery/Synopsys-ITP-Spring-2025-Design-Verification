@@ -13,8 +13,7 @@ class router_env extends uvm_env;
   // host_agent  h_agt;
   //
   // ToDo
-
-
+	host_agent  h_agt;
 
   // Lab 6 - Task 12, Step 2
   //
@@ -25,9 +24,8 @@ class router_env extends uvm_env;
   // reg_adapter adapter;
   //
   // ToDo
-
-
-
+	ral_block_host_regmodel regmodel;
+  reg_adapter adapter;
 
   // Lab 6 - Task 17, Steps 2 & 3
   //
@@ -40,9 +38,8 @@ class router_env extends uvm_env;
   // hreg_predictor hreg_predict;
   //
   // ToDo
-
-
-
+	typedef uvm_reg_predictor #(host_data) hreg_predictor;
+  hreg_predictor hreg_predict;
 
   function new(string name, uvm_component parent);
     super.new(name, parent);
@@ -77,9 +74,7 @@ class router_env extends uvm_env;
     // h_agt = host_agent::type_id::create("h_agt", this);
     //
     // ToDo
-
-
-
+		h_agt = host_agent::type_id::create("h_agt", this);
 
     // Lab 6 - Task 12, Step 3
     //
@@ -88,8 +83,7 @@ class router_env extends uvm_env;
     // adapter = reg_adapter::type_id::create("adapter", this);
     //
     // ToDo
-
-
+		adapter = reg_adapter::type_id::create("adapter", this);
 
     // Lab 6 - Task 12, Step 4, 5 & 6
     //
@@ -113,20 +107,21 @@ class router_env extends uvm_env;
     // uvm_config_db #(ral_block_host_regmodel)::set(this, h_agt.get_name(), "regmodel", regmodel);
     //
     // ToDo
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		uvm_config_db #(ral_block_host_regmodel)::get(this, "", "regmodel", regmodel);
+    
+    if (regmodel == null) begin
+    	string hdl_path;
+    	`uvm_info("HOST_CFG", "Self constructing regmodel", UVM_MEDIUM);
+    	if (!uvm_config_db #(string)::get(this, "", "hdl_path", hdl_path)) begin
+    		`uvm_warning("HOST_CFG", "HDL path for DPI backdoor not set!");
+    	end
+    	regmodel = ral_block_host_regmodel::type_id::create("regmodel", this);
+    	regmodel.build();
+    	regmodel.lock_model();
+    	regmodel.set_hdl_path_root(hdl_path);
+    end
+    
+   	uvm_config_db #(ral_block_host_regmodel)::set(this, h_agt.get_name(), "regmodel", regmodel);
 
     // Lab 6 - Task 15, Step 5
     //
@@ -135,9 +130,8 @@ class router_env extends uvm_env;
     // uvm_config_db #(uvm_object_wrapper)::set(this, {h_agt.get_name(), ".", "sqr.configure_phase"}, "default_sequence", ral_port_unlock_sequence::get_type());
     //
     // ToDo
-
-
-
+		uvm_config_db #(uvm_object_wrapper)::set(this, {h_agt.get_name(), ".", "sqr.configure_phase"}, "default_sequence", ral_port_unlock_sequence::get_type());
+ 
     // Lab 6 - Task 17, Step 4
     //
     // Construct the predictor object.
@@ -145,8 +139,7 @@ class router_env extends uvm_env;
     // hreg_predict = hreg_predictor::type_id::create("h_reg_predict", this);
     //
     // ToDo
-
-
+		hreg_predict = hreg_predictor::type_id::create("h_reg_predict", this);
 
   endfunction: build_phase
 
@@ -168,8 +161,7 @@ class router_env extends uvm_env;
     // regmodel.default_map.set_sequencer(h_agt.sqr, adapter);
     //
     // ToDo
-
-
+		regmodel.default_map.set_sequencer(h_agt.sqr, adapter);
 
     // Lab 6 - Task 17, Step 5
     //
@@ -178,7 +170,7 @@ class router_env extends uvm_env;
     // First, turn off the auto predict.
     // Then, set the predictor's map to the regmodel's map.
     // And, set the predictor's adapter to the adapter being used by the sequencer.
-    // Finally,. connect the host_agent's analysis por to the predictor's bus_in
+    // Finally, connect the host_agent's analysis port to the predictor's bus_in
     // analysis port.
     //
     // regmodel.default_map.set_auto_predict(0);
@@ -187,11 +179,10 @@ class router_env extends uvm_env;
     // h_agt.analysis_port.connect(hreg_predict.bus_in);
     //
     // ToDo
-
-
-
-
-
+		regmodel.default_map.set_auto_predict(0);
+    hreg_predict.map = regmodel.get_default_map();
+    hreg_predict.adapter = adapter;
+    h_agt.analysis_port.connect(hreg_predict.bus_in);
 
   endfunction: connect_phase
 

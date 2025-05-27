@@ -15,8 +15,7 @@ class top_reset_sequence extends uvm_sequence;
   // host_reset_sequence    h_seq;
   //
   // ToDo
-
-
+	host_reset_sequence    h_seq;
 
   function new(string name="virtual_reset_sequence");
     super.new(name);    
@@ -75,14 +74,11 @@ class top_reset_sequence extends uvm_sequence;
       //
       // ToDo
 
-
-
-
-
-
-
-
-
+			// For UVM-1.1 & UVM-1.2
+      begin
+      	reset_event.wait_on();
+      	`uvm_do_on(h_seq, p_sequencer.h_sqr);
+      end
 
     join
 

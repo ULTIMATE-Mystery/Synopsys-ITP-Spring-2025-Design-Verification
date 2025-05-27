@@ -86,58 +86,54 @@ class host_bfm_sequence extends host_sequence_base;
   // Uncomment the following code:
   // ToDo
 
-/*
   //
   // For UVM-1.1 & UVM-1.2
   //
-     virtual task body();
-      `uvm_info("TRACE", $sformatf("%m"), UVM_HIGH);
-      `uvm_do_with(req, {addr == 'h0; kind == UVM_READ;});
-      if (req.data != 'h5a03) begin
-        `uvm_fatal("BFM_ERR", $sformatf("HOST_ID is %4h instead of 'h5a03", req.data));
-      end else begin
-        `uvm_info("BFM_TEST", $sformatf("HOST_ID is %4h the expected value is 'h5a03", req.data), UVM_MEDIUM);
-      end
+  virtual task body();
+ 		`uvm_info("TRACE", $sformatf("%m"), UVM_HIGH);
+    `uvm_do_with(req, {addr == 'h0; kind == UVM_READ;});
+    if (req.data != 'h5a03) begin
+    	`uvm_fatal("BFM_ERR", $sformatf("HOST_ID is %4h instead of 'h5a03", req.data));
+   	end else begin
+    	`uvm_info("BFM_TEST", $sformatf("HOST_ID is %4h the expected value is 'h5a03", req.data), UVM_MEDIUM);
+   	end
+ 
+   	`uvm_do_with(req, {addr == 'h100; kind == UVM_READ;});
+   	if (req.data != '1) begin
+    	`uvm_fatal("BFM_ERR", $sformatf("LOCK is %4h instead of 'hffff", req.data));
+   	end
+   	`uvm_do_with(req, {addr == 'h100; data == '1; kind == UVM_WRITE;});
+   	`uvm_do_with(req, {addr == 'h100; kind == UVM_READ;});
+    if (req.data != '0) begin
+    	`uvm_fatal("BFM_ERR", $sformatf("LOCK is %4h instead of 'h0000", req.data));
+   	end else begin
+    	`uvm_info("BFM_TEST", $sformatf("LOCK is %4h the expected value is 'h0000", req.data), UVM_MEDIUM);
+   	end
   
-      `uvm_do_with(req, {addr == 'h100; kind == UVM_READ;});
-      if (req.data != '1) begin
-        `uvm_fatal("BFM_ERR", $sformatf("LOCK is %4h instead of 'hffff", req.data));
-      end
-      `uvm_do_with(req, {addr == 'h100; data == '1; kind == UVM_WRITE;});
-      `uvm_do_with(req, {addr == 'h100; kind == UVM_READ;});
-      if (req.data != '0) begin
-        `uvm_fatal("BFM_ERR", $sformatf("LOCK is %4h instead of 'h0000", req.data));
-      end else begin
-        `uvm_info("BFM_TEST", $sformatf("LOCK is %4h the expected value is 'h0000", req.data), UVM_MEDIUM);
-      end
+  	for (int i=0; i<256; i++) begin
+   		`uvm_do_with(req, {addr == 'h1000+i; data == (i ^ (i >> 1)); kind == UVM_WRITE;});
+   	end
+   	for (int i=0; i<256; i++) begin
+   		`uvm_do_with(req, {addr == 'h1000+i; kind == UVM_READ;});
+     	if (req.data != (i ^ (i >> 1))) begin
+     		`uvm_fatal("BFM_ERR", $sformatf("R_ARRAY is %4h instead of %4h", req.data, i ^ (i >> 1)));
+    	end
+  	end
+   	`uvm_info("BFM_TEST", "R_ARRAY contains the expected values", UVM_MEDIUM);
   
-      for (int i=0; i<256; i++) begin
-        `uvm_do_with(req, {addr == 'h1000+i; data == (i ^ (i >> 1)); kind == UVM_WRITE;});
+  	for (int i=0; i<4096; i++) begin
+    	`uvm_do_with(req, {addr == 'h4000+i; data == 16'b1 << i%16; kind == UVM_WRITE;});
+   	end
+   	for (int i=0; i<4096; i++) begin
+    	`uvm_do_with(req, {addr == 'h4000+i; kind == UVM_READ;});
+     	if (req.data != 16'b1 << i%16) begin
+     		`uvm_fatal("BFM_ERR", $sformatf("RAM[%4h] is %4h instead of %4h", i, req.data, 16'b1 << i%16));
       end
-      for (int i=0; i<256; i++) begin
-        `uvm_do_with(req, {addr == 'h1000+i; kind == UVM_READ;});
-        if (req.data != (i ^ (i >> 1))) begin
-          `uvm_fatal("BFM_ERR", $sformatf("R_ARRAY is %4h instead of %4h", req.data, i ^ (i >> 1)));
-        end
-      end
-      `uvm_info("BFM_TEST", "R_ARRAY contains the expected values", UVM_MEDIUM);
-  
-      for (int i=0; i<4096; i++) begin
-        `uvm_do_with(req, {addr == 'h4000+i; data == 16'b1 << i%16; kind == UVM_WRITE;});
-      end
-      for (int i=0; i<4096; i++) begin
-        `uvm_do_with(req, {addr == 'h4000+i; kind == UVM_READ;});
-        if (req.data != 16'b1 << i%16) begin
-          `uvm_fatal("BFM_ERR", $sformatf("RAM[%4h] is %4h instead of %4h", i, req.data, 16'b1 << i%16));
-        end
-      end
-      `uvm_info("BFM_TEST", "RAM contains the expected values", UVM_MEDIUM);
-    endtask: body
-*/
-
+   	end
+  	`uvm_info("BFM_TEST", "RAM contains the expected values", UVM_MEDIUM);
+	endtask: body
 
 endclass: host_bfm_sequence
-
 
 //
 // The following is the RAL configuration sequence base.  It contains the
@@ -151,8 +147,7 @@ class host_ral_sequence_base extends uvm_reg_sequence #(host_sequence_base);
   // Create an instance of ral_block_host_regmodel called regmodel.
   //
   // ToDo
-
-
+	ral_block_host_regmodel regmodel;
 
   function new(string name = "host_ral_sequence_base");
     super.new(name);
@@ -174,10 +169,12 @@ class host_ral_sequence_base extends uvm_reg_sequence #(host_sequence_base);
     // end
     //
     // ToDo
-
-
-
-
+		if (!uvm_config_db#(ral_block_host_regmodel)::get(p_sqr.get_parent(), "", "regmodel", regmodel)) begin
+    	`uvm_info("RAL_CFG", "regmodel not set through configuration.  Make sure it is set by other mechanisms", UVM_MEDIUM);
+    end
+    if (regmodel == null) begin
+    	`uvm_fatal("RAL_CFG", "regmodel not set");
+    end
 
   endtask: pre_start
 endclass: host_ral_sequence_base
@@ -212,8 +209,6 @@ class host_ral_test_sequence extends host_ral_sequence_base;
   //
   // Uncomment the following code:
   // ToDo
-
-/*
   virtual task body();
     uvm_status_e status;
     uvm_reg_data_t data;
@@ -265,7 +260,6 @@ class host_ral_test_sequence extends host_ral_sequence_base;
     end
     `uvm_info("RAL_TEST", "RAM contains the expected values", UVM_MEDIUM);
   endtask: body
-*/
 
 endclass: host_ral_test_sequence
 
@@ -278,7 +272,6 @@ endclass: host_ral_test_sequence
   // Uncomment the following code:
   // ToDo
 
-/*
 class ral_port_unlock_sequence extends host_ral_sequence_base;
   `uvm_object_utils(ral_port_unlock_sequence)
 
@@ -294,4 +287,3 @@ class ral_port_unlock_sequence extends host_ral_sequence_base;
     regmodel.LOCK.write(.status(status), .value('1), .path(UVM_FRONTDOOR), .parent(this));
   endtask: body
 endclass: ral_port_unlock_sequence
-*/
