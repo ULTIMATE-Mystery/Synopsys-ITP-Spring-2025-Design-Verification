@@ -1,11 +1,12 @@
 Tests
 
 Total Coverage Summary 
-SCORE  ASSERT GROUP  
- 52.60  75.19  30.00 
+SCORE  GROUP  
+  8.33   8.33 
 
 
 Total tests in report: 1
 -------------------------------------------------------------------------------
 Data from the following tests was used to generate this report
-simv/test
+simv/test 
+

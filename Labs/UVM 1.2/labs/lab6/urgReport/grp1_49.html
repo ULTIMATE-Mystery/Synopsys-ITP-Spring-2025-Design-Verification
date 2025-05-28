@@ -3,13 +3,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
-<title>Unified Coverage Report :: Group :: router_test_top.dut.a_oport6::cov_packet_size</title>
+<title>Unified Coverage Report :: Group Instance : R_ARRAY[183]_bits</title>
 <link type="text/css" rel="stylesheet" href="css/.urg.css">
 <link type="text/css" rel="stylesheet" href="css/.layout.css">
 <link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
 <script type="text/javascript" src="js/.jquery.js"></script>
 <script type="text/javascript" src="js/.jquery-ui.js"></script>
 <script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.colResizable.js"></script>
 <script type="text/javascript" src="js/.layout.js"></script>
 <script type="text/javascript" src="js/.breadcrumb.js"></script>
 <script type="text/javascript">
@@ -23,7 +24,8 @@ $(document).ready(function () {
     spacing_open: 4,
     spacing_closed: 4,
     north: {
-      size: 76
+      size: 76,
+      initClosed: true
     },
     south: {
       size: 45,
@@ -32,8 +34,15 @@ $(document).ready(function () {
     west: {
       size: 500,
       resizable: true,
-      initClosed: false
+      initClosed: true
     }
+  });
+  westLayout = $('div.ui-layout-west').layout({
+    north__paneSelector: ".ui-layout-west-inner-north",
+    center__paneSelector: ".ui-layout-west-inner-center", 
+    north__size: 100,
+    spacing_open: 4,
+    spacing_closed: 4
   });
   centerLayout = $('div.ui-layout-center').layout({
     north__paneSelector: ".ui-layout-center-inner-north",
@@ -42,183 +51,372 @@ $(document).ready(function () {
     spacing_open: 4,
     spacing_closed: 4
   });
+  $("table").colResizable({    liveDrag:true,
+    fixed:false,
+    draggingClass:"dragging"
+  });
 });
 </script>
 </head>
 <body onLoad="initPage();"><div class="ui-layout-north">
-<div class="logo"></div>
-<center class="pagetitle">Group : router_test_top.dut.a_oport6::cov_packet_size</center>
-<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | <a href="asserts.html" ><b>asserts</b></a></div>
-
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | hierarchy | modlist | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | asserts</div>
 </div>
 <div class="ui-layout-west">
-<div>
-<div class=modhdr>
-<br clear=all>
-<span class=titlename>Group : <a href="#"  onclick="showContent('router_test_top.dut.a_oport6::cov_packet_size')">router_test_top.dut.a_oport6::cov_packet_size</a></span>
-<br clear=all>
-<table align=left>
-<tr class="sortablehead">
-<td><b>SCORE</b></td><td>WEIGHT</td><td>GOAL</td><td>AT LEAST</td><td>AUTO BIN MAX</td><td>PRINT MISSING</td></tr><tr>
-<td class="s2 cl rt"> 30.00</td>
-<td class="wht cl rt">1     </td>
-<td class="wht cl rt">100   </td>
-<td class="wht cl rt">1     </td>
-<td class="wht cl rt">64    </td>
-<td class="wht cl rt">64    </td>
-</tr></table><br clear=all>
-<br clear=all>
-<span class=repname>Source File(s) : </span>
-<br clear=all>
-<a href="javascript:void(0);"  onclick="openSrcFile('/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/assert.sva')">/evprj153/projects/DuyQuang_DV1/Labs/ces_sva_2019.06/labs/lab3/assert.sva</a><br clear=all>
-<br clear=all>
+<div class="ui-layout-west-inner-north">
 </div>
-<hr>
-<br clear=all>
-<span class=repname>Summary for Group   router_test_top.dut.a_oport6::cov_packet_size
-</span>
-<br clear=all>
-<br clear=all>
-<table align=left>
-<tr class="sortablehead">
-<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s0">
-<td><a href="#var_tbl_router_test_top.dut.a_oport6::cov_packet_size" >Variables</a></td>
-<td class="rt">69</td>
-<td class="rt">66</td>
-<td class="rt">3</td>
-<td class="rt">30.00 </td>
-</tr></table><br clear=all>
-<br clear=all>
-<span class="repname" id="var_tbl_router_test_top.dut.a_oport6::cov_packet_size">Variables for Group  router_test_top.dut.a_oport6::cov_packet_size
-</span>
-<br clear=all>
-<table align=left class="sortable">
-<tr class="sortablehead">
-<td class="alfsrt">VARIABLE</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td><td>GOAL</td><td>WEIGHT</td><td>AT LEAST</td><td>AUTO BIN MAX</td><td>COMMENT</td></tr><tr class="s6">
-<td><a href="#inst_tag_router_test_top.dut.a_oport6::cov_packet_size.num_bytes"  onclick="checkLink(this)" target="detailFrame">num_bytes</a></td>
-<td class="rt">5</td>
-<td class="rt">2</td>
-<td class="rt">3</td>
-<td class="rt">60.00 </td>
-<td class="rt">100</td>
-<td class="rt">1</td>
-<td class="rt">1</td>
-<td class="rt">0</td>
-<td></td>
-</tr><tr class="s0">
-<td><a href="#inst_tag_router_test_top.dut.a_oport6::cov_packet_size.misaligned"  onclick="checkLink(this)" target="detailFrame">misaligned</a></td>
-<td class="rt">64</td>
-<td class="rt">64</td>
-<td class="rt">0</td>
-<td class="rt">0.00  </td>
-<td class="rt">100</td>
-<td class="rt">1</td>
-<td class="rt">1</td>
-<td class="rt">64</td>
-<td></td>
-</tr></table><br clear=all>
+<div class="ui-layout-west-inner-center">
 </div>
 </div>
 <div class="ui-layout-center">
 <div class="ui-layout-center-inner-center">
-<div>
 <br clear=all>
-<a name="inst_tag_router_test_top.dut.a_oport6::cov_packet_size.num_bytes"></a><span class="repname" id="inst_tag_router_test_top.dut.a_oport6::cov_packet_size.num_bytes">Summary for Variable num_bytes</span>
-<br clear=all>
-<br clear=all>
-<table align=left>
-<tr class="sortablehead">
-<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s6">
-<td>User Defined Bins</td>
-<td class="rt">5</td>
-<td class="rt">2</td>
-<td class="rt">3</td>
-<td class="rt">60.00 </td>
-</tr></table><br clear=all>
-<br clear=all>
-<span class=repname>User Defined Bins for num_bytes</span>
-<br clear=all>
-<br clear=all>
-<span class=repname>Uncovered bins</span>
-<br clear=all>
-<table align=left class="sortable">
-<tr class="sortablehead">
-<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td><td>NUMBER</td></tr><tr class="s3">
-<td>num_bytes_1</td>
-<td class="rt">0</td>
-<td class="rt">1</td>
-<td class="rt">1</td>
-</tr><tr class="s3">
-<td>num_bytes_5</td>
-<td class="rt">0</td>
-<td class="rt">1</td>
-<td class="rt">1</td>
-</tr></table><br clear=all>
-<br clear=all>
-<span class=repname>Excluded/Illegal bins</span>
-<br clear=all>
-<table align=left>
-<tr class="sortablehead">
-<td class="alfsrt">NAME</td><td>COUNT</td><td class="alfsrt">STATUS</td></tr><tr class="wht">
-<td>not_legal_size</td>
-<td class="rt">0</td>
-<td>Illegal</td>
-</tr></table><br clear=all>
-<br clear=all>
-<span class=repname>Covered bins</span>
-<br clear=all>
-<table align=left class="sortable">
-<tr class="sortablehead">
-<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td></tr><tr class="s10">
-<td>num_bytes_2</td>
-<td class="rt">6</td>
-<td class="rt">1</td>
-</tr><tr class="s10">
-<td>num_bytes_3</td>
-<td class="rt">3</td>
-<td class="rt">1</td>
-</tr><tr class="s10">
-<td>num_bytes_4</td>
-<td class="rt">6</td>
-<td class="rt">1</td>
-</tr></table><br clear=all>
-<hr>
-<br clear=all>
-<a name="inst_tag_router_test_top.dut.a_oport6::cov_packet_size.misaligned"></a><span class="repname" id="inst_tag_router_test_top.dut.a_oport6::cov_packet_size.misaligned">Summary for Variable misaligned</span>
+<a name="inst_tag_R_ARRAY[183]_bits.H_REG"></a><span class="repname" id="inst_tag_R_ARRAY[183]_bits.H_REG">Summary for Variable H_REG</span>
 <br clear=all>
 <br clear=all>
 <table align=left>
 <tr class="sortablehead">
 <td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s0">
-<td>Automatically Generated Bins</td>
+<td>User Defined Bins</td>
 <td class="rt">64</td>
 <td class="rt">64</td>
 <td class="rt">0</td>
 <td class="rt">0.00  </td>
 </tr></table><br clear=all>
 <br clear=all>
-<span class=repname>Automatically Generated Bins for misaligned</span>
+<span class=repname>User Defined Bins for H_REG</span>
 <br clear=all>
 <br clear=all>
 <span class=repname>Uncovered bins</span>
 <br clear=all>
-<table align=left>
+<table align=left class="sortable">
 <tr class="sortablehead">
 <td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td><td>NUMBER</td></tr><tr class="s3">
-<td nowrap>[auto[0:67108863] - auto[4227858432:4294967295]]</td>
-<td align=center nowrap>--</td>
-<td align=center nowrap>--</td>
-<td class="rt">64</td>
+<td>bit_15_rd_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_15_rd_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_15_wr_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_15_wr_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_14_rd_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_14_rd_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_14_wr_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_14_wr_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_13_rd_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_13_rd_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_13_wr_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_13_wr_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_12_rd_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_12_rd_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_12_wr_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_12_wr_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_11_rd_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_11_rd_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_11_wr_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_11_wr_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_10_rd_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_10_rd_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_10_wr_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_10_wr_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_9_rd_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_9_rd_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_9_wr_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_9_wr_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_8_rd_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_8_rd_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_8_wr_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_8_wr_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_7_rd_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_7_rd_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_7_wr_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_7_wr_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_6_rd_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_6_rd_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_6_wr_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_6_wr_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_5_rd_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_5_rd_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_5_wr_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_5_wr_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_4_rd_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_4_rd_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_4_wr_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_4_wr_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_3_rd_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_3_rd_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_3_wr_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_3_wr_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_2_rd_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_2_rd_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_2_wr_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_2_wr_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_1_rd_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_1_rd_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_1_wr_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_1_wr_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_0_rd_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_0_rd_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_0_wr_as_1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr><tr class="s3">
+<td>bit_0_wr_as_0</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
 </tr></table><br clear=all>
-</div>
 </div>
 <div class="ui-layout-center-inner-north">
 <div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
   <ul>
     <li>
-      <a href="#inst_tag_router_test_top.dut.a_oport6::cov_packet_size.num_bytes">Variable : num_bytes</a>    </li>
-    <li>
-      <a href="#inst_tag_router_test_top.dut.a_oport6::cov_packet_size.misaligned">Variable : misaligned</a>    </li>
+      <a href="#inst_tag_R_ARRAY[183]_bits.H_REG">Variable : H_REG</a>    </li>
   </ul>
 </div>
 </div>

@@ -1,86 +1,32 @@
-<session version="1.1" release="W-2024.09-SP1-1" timestp="2025-05-20 21:05:52 GMT">
+<session version="1.1" release="T-2022.06-SP1" timestp="2025-05-28 07:26:09 GMT">
   <info>
-    <attr name="datetime" value="Tue May 20 14:08:03 2025
+    <attr name="datetime" value="Wed May 28 14:26:15 2025
 "/>
     <attr name="command" value="urg -dir simv.vdb -format text"/>
-    <attr name="top_instance" value="assert_binds,rtslicef,router_test_top"/>
   </info>
   <hvp>
     <datadef>
-      <metdef name="Assert" type="ratio" aggregator="average" builtin="1" />
       <metdef name="Group" type="percent" aggregator="average" builtin="1" />
     </datadef>
   </hvp>
   <old_coverage>
   <scope type="top" name="top">
-    <metric name="Assert" value="97/129" />
-    <metric name="Group" value="30%" />
+    <metric name="Group" value="8.33333%" />
   </scope>
   <scope type="instance" name="top">
   </scope>
   <scope type="group" name="top">
-    <scope type="group" name="router_test_top.dut.a_oport12::cov_packet_size">
-      <metric name="Group" value="30%" />
+    <scope type="group" name="router_stimulus_pkg::ral_reg_R_ARRAY::cg_bits">
+      <metric name="Group" value="0%" />
     </scope>
-    <scope type="group" name="router_test_top.dut.a_oport6::cov_packet_size">
-      <metric name="Group" value="30%" />
+    <scope type="group" name="router_stimulus_pkg::ral_reg_HOST_ID::cg_bits">
+      <metric name="Group" value="0%" />
     </scope>
-    <scope type="group" name="router_test_top.dut.a_oport7::cov_packet_size">
-      <metric name="Group" value="30%" />
-    </scope>
-    <scope type="group" name="router_test_top.dut.a_oport11::cov_packet_size">
-      <metric name="Group" value="30%" />
-    </scope>
-    <scope type="group" name="router_test_top.dut.a_oport10::cov_packet_size">
-      <metric name="Group" value="30%" />
-    </scope>
-    <scope type="group" name="router_test_top.dut.a_oport15::cov_packet_size">
-      <metric name="Group" value="30%" />
-    </scope>
-    <scope type="group" name="router_test_top.dut.a_oport8::cov_packet_size">
-      <metric name="Group" value="30%" />
-    </scope>
-    <scope type="group" name="router_test_top.dut.a_oport0::cov_packet_size">
-      <metric name="Group" value="30%" />
-    </scope>
-    <scope type="group" name="router_test_top.dut.a_oport2::cov_packet_size">
-      <metric name="Group" value="30%" />
-    </scope>
-    <scope type="group" name="router_test_top.dut.a_oport9::cov_packet_size">
-      <metric name="Group" value="30%" />
-    </scope>
-    <scope type="group" name="router_test_top.dut.a_oport5::cov_packet_size">
-      <metric name="Group" value="30%" />
-    </scope>
-    <scope type="group" name="router_test_top.dut.a_oport1::cov_packet_size">
-      <metric name="Group" value="30%" />
-    </scope>
-    <scope type="group" name="router_test_top.dut.a_oport13::cov_packet_size">
-      <metric name="Group" value="30%" />
-    </scope>
-    <scope type="group" name="router_test_top.dut.a_oport3::cov_packet_size">
-      <metric name="Group" value="30%" />
-    </scope>
-    <scope type="group" name="router_test_top.dut.a_oport14::cov_packet_size">
-      <metric name="Group" value="30%" />
-    </scope>
-    <scope type="group" name="router_test_top.dut.a_oport4::cov_packet_size">
-      <metric name="Group" value="30%" />
+    <scope type="group" name="router_stimulus_pkg::ral_reg_LOCK::cg_bits">
+      <metric name="Group" value="25%" />
     </scope>
   </scope>
   <scope type="assert" name="Statistics">
-    <scorelist type="total" name="Design Hierarchy Assert">
-      <score name="Assert" value="97/129" />
-      <score name="Score" value="75.19" />
-    </scorelist>
-    <scorelist type="total" name="Module List Assert">
-      <score name="Assert" value="7/9" />
-      <score name="Score" value="77.78" />
-    </scorelist>
-    <scorelist type="total" name="Assertion">
-      <score name="Assert" value="97/129" />
-      <score name="Score" value="75.19" />
-    </scorelist>
   </scope>
   </old_coverage>
 </session>

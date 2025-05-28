@@ -1,26 +1,14 @@
 Testbench Group List
 
 Total Groups Coverage Summary 
-SCORE  WEIGHT 
- 30.00 1      
+SCORE  INST SCORE WEIGHT 
+  8.33   0.10     1      
 
 
-Total groups in report: 16
+Total groups in report: 3
 -------------------------------------------------------------------------------
-SCORE  WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                                           
- 30.00 1      100    1        0            64           64                    router_test_top.dut.a_oport12::cov_packet_size 
- 30.00 1      100    1        0            64           64                    router_test_top.dut.a_oport6::cov_packet_size  
- 30.00 1      100    1        0            64           64                    router_test_top.dut.a_oport7::cov_packet_size  
- 30.00 1      100    1        0            64           64                    router_test_top.dut.a_oport11::cov_packet_size 
- 30.00 1      100    1        0            64           64                    router_test_top.dut.a_oport10::cov_packet_size 
- 30.00 1      100    1        0            64           64                    router_test_top.dut.a_oport15::cov_packet_size 
- 30.00 1      100    1        0            64           64                    router_test_top.dut.a_oport8::cov_packet_size  
- 30.00 1      100    1        0            64           64                    router_test_top.dut.a_oport0::cov_packet_size  
- 30.00 1      100    1        0            64           64                    router_test_top.dut.a_oport2::cov_packet_size  
- 30.00 1      100    1        0            64           64                    router_test_top.dut.a_oport9::cov_packet_size  
- 30.00 1      100    1        0            64           64                    router_test_top.dut.a_oport5::cov_packet_size  
- 30.00 1      100    1        0            64           64                    router_test_top.dut.a_oport1::cov_packet_size  
- 30.00 1      100    1        0            64           64                    router_test_top.dut.a_oport13::cov_packet_size 
- 30.00 1      100    1        0            64           64                    router_test_top.dut.a_oport3::cov_packet_size  
- 30.00 1      100    1        0            64           64                    router_test_top.dut.a_oport14::cov_packet_size 
- 30.00 1      100    1        0            64           64                    router_test_top.dut.a_oport4::cov_packet_size  
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                                          
+  0.00   0.00    1      100    1        1            64           64                    router_stimulus_pkg::ral_reg_R_ARRAY::cg_bits 
+  0.00   0.00    1      100    1        1            64           64                    router_stimulus_pkg::ral_reg_HOST_ID::cg_bits 
+ 25.00  25.00    1      100    1        1            64           64                    router_stimulus_pkg::ral_reg_LOCK::cg_bits    
+
