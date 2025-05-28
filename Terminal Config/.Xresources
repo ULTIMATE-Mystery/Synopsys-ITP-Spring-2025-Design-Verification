@@ -1,0 +1,17 @@
+! === Base Colors ===
+XTerm*foreground: #ffffff
+XTerm*background: #000000
+
+! === Font ===
+XTerm*faceName: Monospace
+XTerm*faceSize: 9 
+
+! === Enable Copy/Paste ===
+XTerm.vt100.translations: #override \
+	Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+	Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+
+! === Cursor ===
+XTerm*cursorBlink: true
+XTerm*cursorColor: white
+XTerm*cursorColorBackground: black
