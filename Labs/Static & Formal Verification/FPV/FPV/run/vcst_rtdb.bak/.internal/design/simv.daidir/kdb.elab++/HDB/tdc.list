@@ -1,4 +1,0 @@
-../design/traffic.v
-../design/vlog_street_ctrl_fsm.v
-../sva/bind_traffic.sva
-../sva/traffic.sva

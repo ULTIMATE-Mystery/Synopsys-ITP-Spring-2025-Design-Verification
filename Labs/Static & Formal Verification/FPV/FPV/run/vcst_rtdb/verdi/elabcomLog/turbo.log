@@ -1,3 +1,0 @@
-Command Line: /home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/vcs-mx/linux64/bin/elabcom -simflow -KDBRESOLVER -simvdaidir /home/shtp/ITP2025/Labs/FPV/FPV/run/vcst_rtdb/.internal/design/simv.daidir -Xprefer_tech_lib -saveLevel -logdir /home/shtp/ITP2025/Labs/FPV/FPV/run/vcst_rtdb/verdi/elabcomLog -silent -ssy -ssv -ssz +disable_message+C00373 -partialdesign -saveLevel -use_old_scope_tree -q -logdir /home/shtp/ITP2025/Labs/FPV/FPV/run/vcst_rtdb/.internal/design/simv.daidir/kdbresolverLog
-uname(Linux shtp23 3.10.0-1160.el7.x86_64 #1 SMP Mon Oct 19 16:18:59 UTC 2020 x86_64)
-au time 0.024092 0.006910 0.009820 delta 20398080 20398080 total 140476416 140476416

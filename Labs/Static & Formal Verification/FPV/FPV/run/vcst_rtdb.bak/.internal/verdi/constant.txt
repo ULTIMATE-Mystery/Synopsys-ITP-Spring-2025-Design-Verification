@@ -1,3 +1,0 @@
-#delimiter /  
-#sig_name,  af(float,min), sp(float,average), timing_critical(text,last) 
-traffic.rst,0,0,C:0 

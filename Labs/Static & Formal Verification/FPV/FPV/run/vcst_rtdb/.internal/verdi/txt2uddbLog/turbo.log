@@ -1,3 +1,0 @@
-Command Line: /home/shtp/ShareData/0-Server/2-Lab/Tools/verdi/T-2022.06-SP1-1/platform/LINUXAMD64/bin/txt2uddb txt2uddbLog/verdiconstant.txt.temp -o /home/shtp/ITP2025/Labs/FPV/FPV/run/vcst_rtdb/.internal/verdiconstant.uddb
-uname(Linux shtp23 3.10.0-1160.el7.x86_64 #1 SMP Mon Oct 19 16:18:59 UTC 2020 x86_64)
-au time 0.021227 0.002954 0.007192 delta 15663104 15663104 total 122376192 122376192

@@ -1,0 +1,58 @@
+
+  Summary Results
+   Property Summary: FPV
+   -----------------
+   > Assertion
+     - # found        : 16
+     - # proven       : 16
+
+   > Vacuity
+     - # found        : 10
+     - # non_vacuous  : 10
+
+   > Cover
+     - # found        : 8
+     - # covered      : 8
+
+   > Constraint
+     - # found        : 3
+
+
+  List Results
+   Property List:
+   --------------
+   > Assertion
+     # Assertion: 16
+     [   0] proven                   (non_vacuous)  -  traffic.chk.assert_green_no_waiting_first
+     [   1] proven                   (non_vacuous)  -  traffic.chk.assert_green_no_waiting_main
+     [   2] proven                                  -  traffic.chk.assert_gyr_oh_first
+     [   3] proven                                  -  traffic.chk.assert_gyr_oh_main
+     [   4] proven                   (non_vacuous)  -  traffic.chk.assert_hazard_in_first
+     [   5] proven                   (non_vacuous)  -  traffic.chk.assert_hazard_in_main
+     [   6] proven                   (non_vacuous)  -  traffic.chk.assert_honor_waiting_first
+     [   7] proven                   (non_vacuous)  -  traffic.chk.assert_honor_waiting_main
+     [   8] proven                                  -  traffic.chk.assert_no_both_green
+     [   9] proven                                  -  traffic.chk.assert_no_both_yellow
+     [  10] proven                   (non_vacuous)  -  traffic.chk.assert_signal_sequencing_on_first
+     [  11] proven                   (non_vacuous)  -  traffic.chk.assert_signal_sequencing_on_main
+     [  12] proven                                  -  traffic.chk.assert_state_oh_first
+     [  13] proven                                  -  traffic.chk.assert_state_oh_main
+     [  24] proven                                  -  traffic.main.oh_state_out
+     [  25] proven                                  -  traffic.first.oh_state_out
+
+   > Cover
+     # Cover: 8
+     [  16] covered     (depth=1)                   -  traffic.chk.cov_both_red
+     [  17] covered     (depth=6)                   -  traffic.chk.cov_green_first_for_one_cycle
+     [  18] covered     (depth=3)                   -  traffic.chk.cov_green_main_for_one_cycle
+     [  19] covered     (depth=4)                   -  traffic.chk.cov_green_with_waiting_on_first
+     [  20] covered     (depth=2)                   -  traffic.chk.cov_green_with_waiting_on_main
+     [  21] covered     (depth=5)                   -  traffic.chk.cov_green_without_waiting_on_first
+     [  22] covered     (depth=2)                   -  traffic.chk.cov_green_without_waiting_on_main
+     [  23] covered     (depth=4)                   -  traffic.chk.cov_waiting_on_both_streets_for_max_wait
+
+   > Constraint
+     # Constraint: 3
+     [  14] constrained              (non_vacuous)  -  traffic.chk.assume_continuous_waiting_first
+     [  15] constrained              (non_vacuous)  -  traffic.chk.assume_continuous_waiting_main
+     [  26] constrained                             -  constant_26 - rst==0

@@ -1,3 +1,0 @@
-Command Line: /home/shtp/ShareData/0-Server/2-Lab/Tools/vc_static/R-2020.12-SP2-13/verdi/platform/LINUXAMD64/bin/Novas -vcst -vcstOpts {-demo -file run.tcl -prompt vcf -mode64 -fmode _default -new_verdi_comm} -lca
-uname(Linux shtp23 3.10.0-1160.el7.x86_64 #1 SMP Mon Oct 19 16:18:59 UTC 2020 x86_64)
-au time 2079.198430 36.475498 49.019482 delta 336658432 336658432 total 839991296 839991296

@@ -1,9 +1,9 @@
 
                                    VC Static 
 
-              Version R-2020.12-SP2-13 for linux64 - Dec 08, 2022 
+              Version T-2022.06-SP2-3 for linux64 - Apr 21, 2023 
 
-                    Copyright (c) 2010 - 2022 Synopsys, Inc.
+                    Copyright (c) 2010 - 2023 Synopsys, Inc.
    This software and the associated documentation are proprietary to Synopsys,
  Inc. This software may only be used in accordance with the terms and conditions
  of a written license agreement with Synopsys, Inc. All other use, reproduction,
@@ -19,36 +19,35 @@
             Inclusivity and Diversity" (Refer to article 000036315 at
                         https://solvnetplus.synopsys.com)
 restore_session -level default
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-MasterSourceFile run.tcl
+MasterSourceFile run_batch.tcl
 set_fml_appmode FPV
+########################################################
+## Setup Specific to DUT
+########################################################
 set design traffic
+########################################################
+## Compile & Setup
+########################################################
+# Compilation Step
+# Option 1: Use read_file for unified read-compile-elaborate
+# Compile and elaborate the design and SVA files in one command using 'read_file' 
 read_file -top $design -format sverilog -sva -vcs {-f ../design/filelist +define+INLINE_SVA ../sva/traffic.sva ../sva/bind_traffic.sva}
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'AlmaLinux release 8.4 (Electric Cheetah)' is not supported on
+  'x86_64' officially, assuming linux compatibility by default. Set 
+  VCS_ARCH_OVERRIDE to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
 Info: Invoking New SVA Compiler Instrument...
 Info: SVAC-NC Start
 Info: SVAC-NC Finished
 Info: Invoking Simon...
 Info: Simon VCS Start
 =======================================================
-VCS CPU Time(s)     :0.11
-SIMON CPU Time(s)   :0.08
-SIMON Total Time(s) :0.03
-Peak Memory(MB)     :341
+VCS CPU Time(s)     :0.12
+SIMON CPU Time(s)   :0.17
+SIMON Total Time(s) :0.06
+Peak Memory(MB)     :452
 =======================================================
 Info: Simon VCS Finished
 Info: Simon call complete 
@@ -57,32 +56,118 @@ Verdi KDB elaboration done and the database successfully generated: 0 error(s), 
 [Info] DB_COPT045: Vcs analyzer task has finished.
 [Info] PROP_I_COLLECT: Collecting Source Properties from the view:traffic.
 # Gate Counts 
-Number of Flat Instances = 609
-Number of Operator = 609
+Number of Flat Instances = 653
+Number of Operator = 653
 Number of Libcells = 0
 Number of Black-Box Instances = 0
 
+# Option 2: Use analyze + elaborate for unified usage model
+# This alternative splits the compilation into two steps
 # analyze -format sverilog -vcs {-f ../design/filelist +define+INLINE_SVA ../sva/traffic.sva ../sva/bind_traffic.sva}
-# elaborate $design -sva 
+# elaborate $design -sva
+# Clock Definitions 
 create_clock clk -period 100
+# Reset Definitions 
 create_reset rst -sense high
+# Initialisation Commands 
 sim_run -stable
 [Info] SIM_I_CREATE: Create Simulation Model.
 sim_save_reset
+########################################################
+## Proof
+########################################################
+check_fv -block 
+[Info] FORMAL_I_CREATE: Create Formal Model:traffic.
+[Warning] POTENTIAL_SETUP_ISSUES: There are potential setup issues. Please run check_fv_setup to confirm.
+	  Reset: 1  Clock: 0  Glitch: 0  Osc_loop: 0  Osc_seq: 0
+[Info] FORMAL_I_RUN: Starting formal verification for check_fv
+	  Id: 0  Goals: 34  Constraints: 2  Block Mode: true
+[Info] LIC_RT_CHECKOUT: VC Formal run time license checkout. Base:1  FPV:1.
+[Info] BITLEVEL_MODEL_STATS: Generated model with 674 gates, 12 inputs, 102 registers, 0 initial constraints, 2 constraints.
+[Info] BITLEVEL_MODEL_STATS: Generated model with 415 gates, 12 inputs, 96 registers, 0 initial constraints, 2 constraints.
+[Info] PROP_I_RESULT: traffic.chk.assert_green_no_waiting_first  checking  vacuity  00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_green_no_waiting_first  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_green_no_waiting_main  checking  vacuity  00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_green_no_waiting_main  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_gyr_oh_first  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_gyr_oh_main  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_hazard_in_first  checking  vacuity  00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_hazard_in_first  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_hazard_in_main  checking  vacuity  00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_hazard_in_main  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_honor_waiting_first  checking  vacuity  00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_honor_waiting_first  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_honor_waiting_main  checking  vacuity  00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_honor_waiting_main  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_no_both_green  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_no_both_yellow  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_signal_sequencing_on_first  checking  vacuity  00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_signal_sequencing_on_first  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_signal_sequencing_on_main  checking  vacuity  00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_signal_sequencing_on_main  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_state_oh_first  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_state_oh_main  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assume_continuous_waiting_first  checking  vacuity  00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assume_continuous_waiting_main  checking  vacuity  00:00:04
+[Info] PROP_I_RESULT: traffic.chk.cov_both_red  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.cov_green_first_for_one_cycle  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.cov_green_main_for_one_cycle  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.cov_green_with_waiting_on_first  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.cov_green_with_waiting_on_main  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.cov_green_without_waiting_on_first  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.cov_green_without_waiting_on_main  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.cov_waiting_on_both_streets_for_max_wait  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.main.oh_state_out  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.first.oh_state_out  checking    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_honor_waiting_first  non_vacuous  vacuity  00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assume_continuous_waiting_first  non_vacuous  vacuity  00:00:04
+[Info] PROP_I_RESULT: traffic.chk.cov_both_red  covered:1    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assume_continuous_waiting_main  non_vacuous  vacuity  00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_honor_waiting_main  non_vacuous  vacuity  00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_green_no_waiting_first  non_vacuous  vacuity  00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_hazard_in_main  non_vacuous  vacuity  00:00:04
+[Info] PROP_I_RESULT: traffic.chk.cov_green_without_waiting_on_main  covered:2    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.cov_green_with_waiting_on_main  covered:2    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_signal_sequencing_on_main  non_vacuous  vacuity  00:00:04
+[Info] PROP_I_RESULT: traffic.chk.cov_green_main_for_one_cycle  covered:3    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_hazard_in_first  non_vacuous  vacuity  00:00:04
+[Info] PROP_I_RESULT: traffic.chk.cov_green_with_waiting_on_first  covered:4    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.cov_waiting_on_both_streets_for_max_wait  covered:4    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_green_no_waiting_main  non_vacuous  vacuity  00:00:04
+[Info] PROP_I_RESULT: traffic.chk.cov_green_without_waiting_on_first  covered:5    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_signal_sequencing_on_first  non_vacuous  vacuity  00:00:04
+[Info] PROP_I_RESULT: traffic.chk.cov_green_first_for_one_cycle  covered:6    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_gyr_oh_first  proven    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_gyr_oh_main  proven    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_state_oh_first  proven    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_state_oh_main  proven    00:00:04
+[Info] PROP_I_RESULT: traffic.main.oh_state_out  proven    00:00:04
+[Info] PROP_I_RESULT: traffic.first.oh_state_out  proven    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_signal_sequencing_on_first  proven    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_signal_sequencing_on_main  proven    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_green_no_waiting_main  proven    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_hazard_in_first  proven    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_hazard_in_main  proven    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_no_both_green  proven    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_no_both_yellow  proven    00:00:04
+[Info] PROP_I_RESULT: traffic.chk.assert_green_no_waiting_first  proven    00:00:15
+[Info] PROP_I_RESULT: traffic.chk.assert_honor_waiting_first  proven    00:00:15
+[Info] PROP_I_RESULT: traffic.chk.assert_honor_waiting_main  proven    00:00:17
+########################################################
+## Reports
+########################################################
+report_fv -list > results.txt
+########################################################
+## Save Session
+########################################################
+save_session -session batch_results
+[Info] SAVED_SESSION: Saved session (vcst_rtdb (as batch_results_rtdb)).
 
-action aaMonetBanffSavePropDBToStream -reset -summary 1 -trigger
-action aaVerdiWaitAnnotation -trigger
-action aaMonetSetReuseWave -data {}
-action aaMonetBanffSavePropDBToStream -reset -summary 1 -trigger
-report_constant -xml > /home/shtp/ITP2025/Labs/FPV/FPV/run/vcst_rtdb/.internal/verdi/constant.xml ; verdi_cmd verdiVcstConstantReport -xmlFile /home/shtp/ITP2025/Labs/FPV/FPV/run/vcst_rtdb/.internal/verdi/constant.xml
-report_constant -xml > /home/shtp/ITP2025/Labs/FPV/FPV/run/vcst_rtdb/.internal/verdi/constant.xml
-verdi_cmd verdiVcstConstantGet -xmlFile /home/shtp/ITP2025/Labs/FPV/FPV/run/vcst_rtdb/.internal/verdi/constant.xml -updateComplexity
-check_fv
-[Error] LICENSE_CHECKOUT_ERROR: Unable to checkout license for VC Formal.
-Error: 0
-	Use error_info for more info. (CMD-013)
 =======================================================
-Total Time(S)  :1463.37
-CPU Time(S)    :2.10
-Peak Memory(MB):1313
+Total Time(S)  :33.03
+CPU Time(S)    :6.11
+Peak Memory(MB):1730
+========================Formal=========================
+Engine Wall Time(S)    :24.26
+Engine Peak Memory(MB) :351
 =======================================================
