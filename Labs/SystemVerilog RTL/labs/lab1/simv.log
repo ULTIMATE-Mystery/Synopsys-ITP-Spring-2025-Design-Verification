@@ -1,0 +1,14 @@
+Command: /evprj153/projects/DuyQuang_DV1/Labs/ces_svrtl_2019.03/labs/lab1/./simv -l simv.log +vpdfile+traffic_light.vpd +ntb_random_seed=1 +
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP1-1; Runtime version W-2024.09-SP1-1;  Jun  1 04:12 2025
+Message: From $vcdpluson at time 0: [VCD+-SVFN]: 
+Setting VPD File by "+vpdfile+" switch to traffic_light.vpd.
+
+VCD+ Writer W-2024.09-SP1-1 Copyright (c) 1991-2024 by Synopsys Inc.
+$finish called from file "./test/traffic_light_test_top.sv", line 24.
+$finish at simulation time     203.5s
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 203500000000000 ps
+CPU Time:      0.300 seconds;       Data structure size:   0.0Mb
+Sun Jun  1 04:12:06 2025

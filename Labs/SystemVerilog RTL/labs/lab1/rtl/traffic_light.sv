@@ -3,8 +3,7 @@
 // Create the enum data type.
 //
 // ToDo:
-
-
+typedef enum logic[2:0] {RED = 3'b001, GREEN = 3'b010, YELLOW = 3'b100} state_e;
 
 module traffic_light(input logic clk, reset_n, output logic green_on, yellow_on, red_on);
 // Lab 1 Task 4 Step 5
@@ -12,8 +11,8 @@ module traffic_light(input logic clk, reset_n, output logic green_on, yellow_on,
 // Change state and nxt_state to the enum data type.
 //
 // ToDo:
-logic [2:0] state, nxt_state;
-
+// logic [2:0] state, nxt_state;
+state_e state, nxt_state;
 
 logic [5:0] count_seconds;
 logic       reset_count;
@@ -30,25 +29,32 @@ always_comb begin
   red_on       = 1'b0;
   green_on     = 1'b0;
   yellow_on    = 1'b0;
-  case(1'b1)
-    state[0]: begin
+  // case(1'b1)
+  case(state)
+    // state[0]: begin
+  	RED: begin
                 red_on = 1'b1;
                 if (count_seconds >= 20) begin
-                  nxt_state    = 3'b010;
+                  // nxt_state    = 3'b010;
+                  nxt_state 	 = GREEN;
                   reset_count  = 1'b1;
                 end
               end
-    state[1]: begin
+    // state[1]: begin
+    GREEN: begin
                 green_on = 1'b1;
                 if (count_seconds >= 20) begin
-                  nxt_state    = 3'b100;
+                  // nxt_state    = 3'b100;
+                  nxt_state    = YELLOW;
                   reset_count  = 1'b1;
                 end
               end
-    state[2]: begin
+    // state[2]: begin
+    YELLOW: begin
                 yellow_on = 1'b1;
                 if (count_seconds >= 3) begin
-                  nxt_state    = 3'b001;
+                  // nxt_state    = 3'b001;
+                  nxt_state    = RED;
                   reset_count  = 1'b1;
                 end
               end
@@ -58,7 +64,8 @@ end
 
 always_ff @(posedge clk or negedge reset_n) begin
   if (!reset_n) begin
-    state     <= 3'b001;
+    // state     <= 3'b001;
+    state     <= RED;
   end else begin
     state     <= nxt_state;
   end

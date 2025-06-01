@@ -22,9 +22,10 @@ module unintentional_latch (clk, rst_n, A, B, selA, dout);
     // end
     //
     // ToDo:
-
-
-
+		else begin
+    	B = 0;
+    end
+		
   end
 
   // Debug message for source
@@ -51,8 +52,9 @@ module unintentional_latch (clk, rst_n, A, B, selA, dout);
     // end
     //
     // ToDo:
-
-
+		else begin
+    	B = 0;
+    end
 
   end
 

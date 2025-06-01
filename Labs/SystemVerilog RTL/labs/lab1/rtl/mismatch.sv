@@ -30,9 +30,9 @@ module mismatch (clk, rst_n, A, B, C, D, dout);
   // the new SystemVerilog combinatorial coding style.
   //
   // ToDo:
-
-
-
+	always_comb begin
+		D = (A & B) | C;
+	end
 
   // Debug message for source
   `ifdef SYNTHESIS

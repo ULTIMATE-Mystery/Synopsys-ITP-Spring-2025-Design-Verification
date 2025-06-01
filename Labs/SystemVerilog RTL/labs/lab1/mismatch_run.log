@@ -1,0 +1,418 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version W-2024.09-SP2 for linux64 - Nov 28, 2024 
+
+                    Copyright (c) 1988 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+# run.tcl
+source ../../script/common_setup.tcl
+saed32nm.v
+source ../../script/dc_setup.tcl
+set define_list "$_lang"
+sverilog
+analyze -format sverilog -define $define_list $_rtl.sv
+Running PRESTO HDLC
+Compiling source file ./rtl/mismatch.sv
+Presto compilation completed successfully.
+Loading db file '/evprj153/projects/DuyQuang_DV1/Labs/ces_svrtl_2019.03/ref/SAED32_2012-12-25/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p75v125c.db'
+1
+elaborate $_rtl
+Loading db file '/global/apps/syn/2024.09-SP2/libraries/syn/gtech.db'
+Loading db file '/global/apps/syn/2024.09-SP2/libraries/syn/standard.sldb'
+  Loading link library 'saed32hvt_ss0p75v125c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+$display output: SYNTHESIS SVERILOG
+
+Inferred memory devices in process in routine 'mismatch' in file
+	 ./rtl/mismatch.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|      dout_reg       | Flip-flop |   1   |  N  | N  | None  | Async | N  |  46  |
+==================================================================================
+Presto compilation completed successfully. (mismatch)
+Module: mismatch, Ports: 7, Input: 5, Output: 2, Inout: 0
+Module: mismatch, Registers: 1, Async set/reset: 1, Sync set/reset: 0
+Information: Module mismatch report end. (ELAB-965)
+Elaborated 1 design.
+Current design is now 'mismatch'.
+1
+link
+
+  Linking design 'mismatch'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  mismatch                    /evprj153/projects/DuyQuang_DV1/Labs/ces_svrtl_2019.03/labs/lab1/mismatch.db
+  saed32hvt_ss0p75v125c (library) /evprj153/projects/DuyQuang_DV1/Labs/ces_svrtl_2019.03/ref/SAED32_2012-12-25/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p75v125c.db
+
+1
+write_file -format verilog -output unmapped/${_rtl}_unmapped.v
+Writing verilog file '/evprj153/projects/DuyQuang_DV1/Labs/ces_svrtl_2019.03/labs/lab1/unmapped/mismatch_unmapped.v'.
+1
+write_file -format ddc     -output unmapped/${_rtl}_unmapped.ddc
+Writing ddc file 'unmapped/mismatch_unmapped.ddc'.
+1
+source ../../script/constraint.tcl
+1
+compile_ultra
+Loading db file '/global/apps/syn/2024.09-SP2/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing leakage power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | W-2024.09-DWBB_202409.2 |     *     |
+| Licensed DW Building Blocks        | W-2024.09-DWBB_202409.2 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Command Line | compile_ultra                                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 4                                      |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 1                                      |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 1                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 0                                      |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+  Simplifying Design 'mismatch'
+
+Loaded alib file './alib-52/saed32hvt_ss0p75v125c.db.alib'
+Module: DW01_NAND2, Ports: 3, Input: 2, Output: 1, Inout: 0
+Module: DW01_NAND2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'mismatch'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'PMT3_HVT' in the library 'saed32hvt_ss0p75v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT2_HVT' in the library 'saed32hvt_ss0p75v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT1_HVT' in the library 'saed32hvt_ss0p75v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT3_HVT' in the library 'saed32hvt_ss0p75v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT2_HVT' in the library 'saed32hvt_ss0p75v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT1_HVT' in the library 'saed32hvt_ss0p75v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+Threshold voltage group cell usage:
+>> saed32cell_hvt 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+
+Threshold voltage group cell usage:
+>> saed32cell_hvt 100.00%
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+
+Threshold voltage group cell usage:
+>> saed32cell_hvt 100.00%
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+
+Threshold voltage group cell usage:
+>> saed32cell_hvt 100.00%
+
+  Beginning Isolate Ports
+  -----------------------
+
+Threshold voltage group cell usage:
+>> saed32cell_hvt 100.00%
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+
+Threshold voltage group cell usage:
+>> saed32cell_hvt 100.00%
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+    0:00:02       9.7      0.00       0.0       0.0                           110703.6094
+Loading db file '/evprj153/projects/DuyQuang_DV1/Labs/ces_svrtl_2019.03/ref/SAED32_2012-12-25/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p75v125c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1
+write_file -format verilog -output mapped/${_rtl}_mapped.v
+Writing verilog file '/evprj153/projects/DuyQuang_DV1/Labs/ces_svrtl_2019.03/labs/lab1/mapped/mismatch_mapped.v'.
+1
+write_file -format ddc     -output mapped/${_rtl}_mapped.ddc
+Writing ddc file 'mapped/mismatch_mapped.ddc'.
+1
+report_qor
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : qor
+Design : mismatch
+Version: W-2024.09-SP2
+Date   : Sun Jun  1 02:41:52 2025
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:               1.00
+  Critical Path Length:          1.33
+  Critical Path Slack:           0.26
+  Critical Path Clk Period:      4.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:                  2
+  Buf/Inv Cell Count:               0
+  Buf Cell Count:                   0
+  Inv Cell Count:                   0
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:         1
+  Sequential Cell Count:            1
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:        2.541440
+  Noncombinational Area:     7.116032
+  Buf/Inv Area:              0.000000
+  Total Buffer Area:             0.00
+  Total Inverter Area:           0.00
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.681417
+  -----------------------------------
+  Cell Area:                 9.657472
+  Design Area:              10.338889
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:             7
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: evprj153-0003
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.00
+  Logic Optimization:                  0.03
+  Mapping Optimization:                0.16
+  -----------------------------------------
+  Overall Compile Time:                3.04
+  Overall Compile Wall Clock Time:     3.40
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
+exit
+
+Memory usage for this session 231 Mbytes.
+Memory usage for this session including child processes 231 Mbytes.
+CPU usage for this session 6 seconds ( 0.00 hours ).
+Elapsed time for this session 7 seconds ( 0.00 hours ).
+
+Thank you...
