@@ -21,9 +21,9 @@ module encryptor_test_top;
   // Add the remapped gate-level module here:
   //
   // ToDo:
-
-
-
+	encryptor_WIDTH16_BUF_SIZE16 encryptor_WIDTH16_BUF_SIZE16( {>>{ clk }}, 
+		{>>{ reset_n }}, {>>{ wr_n }}, {>>{ rd_n }}, {>>{ key }}, {>>{ din }}, 
+    {>>{ empty }}, {>>{ full }}, {>>{ dout }} );
 
 `else
   encryptor#(WIDTH, BUF_SIZE) dut(.*);

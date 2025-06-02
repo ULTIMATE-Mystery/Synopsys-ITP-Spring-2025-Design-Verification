@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Check Design Report</title>
+</head>
+<style type="text/css">
+.posthidden {display:none}
+.postshown {display:inline padding-left:0}
+</style>
+<style>
+ul.list {  list-style-type:circle; margin:0px;  }
+.dot {
+height: 5px;
+width: 5px;
+background-color: black;
+border-radius: 50%;
+display: inline-block;
+vertical-align: middle;
+margin-right: 5px;
+ }
+</style>
+<script type="text/Javascript">
+function expandcollapse (postid) {
+  whichpost = document.getElementById(postid);
+  if (whichpost.className=="postshown")
+  { whichpost.className="posthidden"; }
+  else { whichpost.className="postshown"; } };
+</script>
+<body bgcolor="#C0C0FF">
+<center><h1>Check Design Report</h1><p></center>
+<br><b>Inputs/Outputs</b><br>
+<div style="color:#505050">0 Undriven outputs (LINT-5)</div>
+<div style="color:#505050">0 Multiply driven inputs (LINT-6)</div>
+<div style="color:#505050">0 Unloaded inputs (LINT-8)</div>
+<div style="color:#505050">0 Unconnected ports (LINT-28)</div>
+<div style="color:#505050">0 Feedthrough (LINT-29)</div>
+<div style="color:#505050">0 Shorted outputs (LINT-31)</div>
+<div style="color:#505050">0 Constant outputs (LINT-52)</div>
+<div style="color:#505050">0 Externally driven outputs (LINT-64)</div>
+<div style="color:#505050">0 Input & Output ports multiply driven (LINT-65)</div>
+<div style="color:#505050">0 Port direction conflicts with RTL (LINT-68)</div>
+<div style="color:#505050">0 Port direction conflicts with RTL (LINT-69)</div>
+<div style="color:#505050">0 Port direction conflicts with RTL (LINT-70)</div>
+<div style="color:#505050">0 Output ports multiply driven (LINT-71)</div>
+<br><b>Cells</b><br>
+<div style="color:#505050">0 Cells with unconnected inputs (LINT-0)</div>
+<div style="color:#505050">0 Cells do not drive (LINT-1)</div>
+<div style="color:#505050">0 Cells do not have output pins (LINT-10)</div>
+<div style="color:#505050">0 Connected to power or ground (LINT-32)</div>
+<div style="color:#505050">0 Nets connected to multiple pins on same cell (LINT-33)</div>
+<div style="color:#505050">0 Leaf pins connected to undriven nets (LINT-58)</div>
+<div style="color:#505050">0 Cells have undriven hier pins (LINT-59)</div>
+<div style="color:#505050">0 Hier pins without driver and load (LINT-60)</div>
+<div style="color:#505050">0 Cell is unmapped (LINT-61)</div>
+<div style="color:#505050">0 Output pin connected to constant (LINT-67)</div>
+<br><b>Designs</b><br>
+<div style="color:#505050">0 Design has no outputs ports (LINT-25)</div>
+<div style="color:#505050">0 Black box (LINT-55)</div>
+<br><b>Nets</b><br>
+<div style="color:#505050">0 Unloaded nets (LINT-2)</div>
+<div style="color:#505050">0 Undriven nets (LINT-3)</div>
+<div style="color:#505050">0 Net has multiple drivers (LINT-4)</div>
+<div style="color:#505050">0 Net is wired or (LINT-35)</div>
+<div style="color:#505050">0 Net type is unknown (LINT-38)</div>
+<div style="color:#505050">0 Connection class error (LINT-47)</div>
+<div style="color:#505050">0 Shorted power & ground (LINT-53)</div>
+<div style="color:#505050">0 Multiply driven net with constant driver (LINT-54)</div>
+<div style="color:#505050">0 Net type is unknown (LINT-56)</div>
+<div style="color:#505050">0 Wire loop (LINT-66)</div>
+<br><b>Tristate</b><br>
+<div style="color:#505050">0 A tristate bus has a non tri-state driver (LINT-34)</div>
+<div style="color:#505050">0 A tristate bus has a non tristate driver (LINT-62)</div>
+<div style="color:#505050">0 Single tristate driver drives an input pin (LINT-63)</div>
+<br><b>Total Messages Reported = 0</b><br>
+<hr><center><i>Sun Jun  1 15:34:02 2025
+</i></center>
+</body>
+</html>

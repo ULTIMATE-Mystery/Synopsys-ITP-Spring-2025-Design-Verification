@@ -16,7 +16,10 @@ module fifo_test_top;
   // Add the remapped gate-level module here:
   //
   // ToDo:
-
+	fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16 fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16( 
+		{>>{ clk }}, {>>{ reset_n }}, {>>{ fifo_if.rd_n }}, 
+    {>>{ fifo_if.wr_n }}, {>>{ fifo_if.empty }}, {>>{ fifo_if.full }}, 
+    {>>{ fifo_if.din }}, {>>{ fifo_if.dout }} );
 
 `else
   // Lab 2 Task 5 Step 2
@@ -24,6 +27,7 @@ module fifo_test_top;
   // Convert the fifo instantiation to the interface.
   //
   // ToDo:
+  /*
   fifo#(WIDTH, BUF_SIZE) dut(.*,
                              .rd_n  (fifo_if.rd_n),
                              .wr_n  (fifo_if.wr_n),
@@ -31,6 +35,8 @@ module fifo_test_top;
                              .empty (fifo_if.empty),
                              .din   (fifo_if.din),
                              .dout  (fifo_if.dout));
+	*/
+	fifo #(WIDTH, BUF_SIZE) dut(.*);
 `endif
 
   always begin

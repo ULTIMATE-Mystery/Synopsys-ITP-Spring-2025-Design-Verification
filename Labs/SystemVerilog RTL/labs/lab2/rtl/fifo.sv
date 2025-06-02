@@ -20,7 +20,9 @@
 // Convert the module port list to use the fifo_io interface and modport.
 //
 // ToDo:
-module fifo #(WIDTH=8, BUF_SIZE=16) (input logic clk, reset_n, rd_n, wr_n, logic[WIDTH-1:0] din, output logic empty, full, logic[WIDTH-1:0] dout);
+// module fifo #(WIDTH=8, BUF_SIZE=16) (input logic clk, reset_n, rd_n, wr_n, logic[WIDTH-1:0] din, output logic empty, full, logic[WIDTH-1:0] dout);
+
+module fifo #(WIDTH=8, BUF_SIZE=16) (input logic clk, reset_n, fifo_io.fifo fifo_if);
 
 logic [WIDTH-1:0]            reg_buffer [BUF_SIZE];
 logic [$clog2(BUF_SIZE):0]   count;
@@ -47,9 +49,9 @@ logic [$clog2(BUF_SIZE)-1:0] wr_address,
 //
 // ToDo:
 
-assign dout    = reg_buffer[rd_address];
-assign empty   = ((count == 0) && wr_n)        || ((count == 1)          && wr_n && !rd_n);
-assign full    = ((count == BUF_SIZE) && rd_n) || ((count == BUF_SIZE-1) && !wr_n && rd_n);
+assign fifo_if.dout    = reg_buffer[rd_address];
+assign fifo_if.empty   = ((count == 0) && fifo_if.wr_n)        || ((count == 1)          && fifo_if.wr_n && !fifo_if.rd_n);
+assign fifo_if.full    = ((count == BUF_SIZE) && fifo_if.rd_n) || ((count == BUF_SIZE-1) && !fifo_if.wr_n && fifo_if.rd_n);
 
 always_ff @(posedge clk or negedge reset_n) begin
   if (!reset_n) begin
@@ -57,14 +59,14 @@ always_ff @(posedge clk or negedge reset_n) begin
     rd_address <= 0;
     count <= 0;
   end else begin
-    case ({wr_n, rd_n})
+    case ({fifo_if.wr_n, fifo_if.rd_n})
       2'b00: begin 
-               reg_buffer[wr_address] <= din;
+               reg_buffer[wr_address] <= fifo_if.din;
                wr_address <= wr_address + 1;
                rd_address <= rd_address + 1;
              end
       2'b01: begin
-               reg_buffer[wr_address] <= din;
+               reg_buffer[wr_address] <= fifo_if.din;
                wr_address <= wr_address + 1;
                count <= count + 1;
              end

@@ -1,0 +1,432 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version W-2024.09-SP2 for linux64 - Nov 28, 2024 
+
+                    Copyright (c) 1988 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+# fifo_run.tcl
+source ../../script/common_setup.tcl
+saed32nm.v
+source ../../script/dc_setup.tcl
+set param_list "WIDTH=$_width, BUF_SIZE=$_size"
+WIDTH=16, BUF_SIZE=16
+# Lab 2 Task 8 Step 2
+#
+# Perform three changes:
+# One   - add the wrapper_fifo.sv file to the analyze list.
+# Two   - change the elaborate command to elaborate the wrapper_fifo.
+# Three - add a current_design command to set the current design to the fifo with new name (with the parameter).
+#
+# ToDo:
+analyze -format sverilog { fifo_io.sv fifo.sv wrapper_fifo.sv }
+Running PRESTO HDLC
+Compiling source file ./rtl/fifo_io.sv
+Information:  ./rtl/fifo_io.sv:18: List () of one, unnamed, port is ignored. (VER-988)
+Compiling source file ./rtl/fifo.sv
+Compiling source file ./rtl/wrapper_fifo.sv
+Presto compilation completed successfully.
+Loading db file '/evprj153/projects/DuyQuang_DV1/Labs/ces_svrtl_2019.03/ref/SAED32_2012-12-25/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p75v125c.db'
+1
+elaborate wrapper_fifo -param $param_list
+Loading db file '/global/apps/syn/2024.09-SP2/libraries/syn/gtech.db'
+Loading db file '/global/apps/syn/2024.09-SP2/libraries/syn/standard.sldb'
+  Loading link library 'saed32hvt_ss0p75v125c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (wrapper_fifo_WIDTH16_BUF_SIZE16)
+Module: wrapper_fifo_WIDTH16_BUF_SIZE16, Ports: 2, Input: 2, Output: 0, Inout: 0
+Module: wrapper_fifo_WIDTH16_BUF_SIZE16, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module wrapper_fifo_WIDTH16_BUF_SIZE16 report end. (ELAB-965)
+Elaborated 1 design.
+Current design is now 'wrapper_fifo_WIDTH16_BUF_SIZE16'.
+Information: Building the design 'fifo' instantiated from design 'wrapper_fifo_WIDTH16_BUF_SIZE16' with
+	the parameters "16,16|((N%fifo_if%I%WORK/fifo_io%%16)(N%reset_n%)(N%clk%))". (HDL-193)
+Warning:  ./rtl/fifo.sv:54: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block in file
+	'./rtl/fifo.sv'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     62     |    auto/auto     | always block at line 56 |
+===========================================================
+
+Inferred memory devices in process in routine 'fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16' in file
+	 ./rtl/fifo.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|   reg_buffer_reg    | Flip-flop |  256  |  Y  | N  | None  | None  | N  |  56  |
+|   wr_address_reg    | Flip-flop |   4   |  Y  | N  | None  | Async | N  |  56  |
+|   rd_address_reg    | Flip-flop |   4   |  Y  | N  | None  | Async | N  |  56  |
+|      count_reg      | Flip-flop |   5   |  Y  | N  | None  | Async | N  |  56  |
+==================================================================================
+Statistics for MUX_OPs
+======================================================================================
+|                 block name/line                  | Inputs | Outputs | # sel inputs |
+======================================================================================
+| fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16/52 |   16   |   16    |      4       |
+======================================================================================
+Presto compilation completed successfully. (fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16)
+Module: fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16, Ports: 38, Input: 20, Output: 18, Inout: 0
+Module: fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16, Registers: 269, Async set/reset: 13, Sync set/reset: 0
+Information: Module fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16 report end. (ELAB-965)
+1
+current_design [get_designs fifo*]
+Current design is 'fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16'.
+{fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16}
+link
+
+  Linking design 'fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (2 designs)               /evprj153/projects/DuyQuang_DV1/Labs/ces_svrtl_2019.03/labs/lab2/fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16.db, etc
+  saed32hvt_ss0p75v125c (library) /evprj153/projects/DuyQuang_DV1/Labs/ces_svrtl_2019.03/ref/SAED32_2012-12-25/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p75v125c.db
+
+1
+write_file -format verilog -output unmapped/fifo_unmapped.v
+Writing verilog file '/evprj153/projects/DuyQuang_DV1/Labs/ces_svrtl_2019.03/labs/lab2/unmapped/fifo_unmapped.v'.
+Warning: Module fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16 contains unmapped components.  The output netlist might not be read back into the system. (VO-12)
+1
+write_file -format ddc     -output unmapped/fifo_unmapped.ddc
+Writing ddc file 'unmapped/fifo_unmapped.ddc'.
+1
+check_design -html check_design.html
+ 
+****************************************
+check_design summary:
+Version:     W-2024.09-SP2
+Date:        Sun Jun  1 14:55:06 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               3
+    Cells do not drive (LINT-1)                                     3
+--------------------------------------------------------------------------------
+
+Warning: In design 'fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16', cell 'C1215' does not drive any nets. (LINT-1)
+Warning: In design 'fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16', cell 'C1216' does not drive any nets. (LINT-1)
+Warning: In design 'fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16', cell 'C1217' does not drive any nets. (LINT-1)
+Information: printing check_design report in html format.
+1
+source ../../script/constraint.tcl
+1
+compile_ultra
+Loading db file '/global/apps/syn/2024.09-SP2/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing leakage power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | W-2024.09-DWBB_202409.2 |     *     |
+| Licensed DW Building Blocks        | W-2024.09-DWBB_202409.2 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Command Line | compile_ultra                                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 421                                    |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 269                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 1                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 36                                     |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 3 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16'
+
+Loaded alib file './alib-52/saed32hvt_ss0p75v125c.db.alib'
+Module: DW01_NAND2, Ports: 3, Input: 2, Output: 1, Inout: 0
+Module: DW01_NAND2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16'
+Information: Added key list 'DesignWare' to design 'fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16'. (DDB-72)
+ Implement Synthetic for 'fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'PMT3_HVT' in the library 'saed32hvt_ss0p75v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT2_HVT' in the library 'saed32hvt_ss0p75v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'PMT1_HVT' in the library 'saed32hvt_ss0p75v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT3_HVT' in the library 'saed32hvt_ss0p75v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT2_HVT' in the library 'saed32hvt_ss0p75v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'NMT1_HVT' in the library 'saed32hvt_ss0p75v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+Threshold voltage group cell usage:
+>> saed32cell_hvt 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:06    6099.2      3.92    1037.6      12.2                           132738728.0000
+    0:00:06    6097.7      3.92    1037.5      12.3                           132738360.0000
+
+Threshold voltage group cell usage:
+>> saed32cell_hvt 100.00%
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:06    6097.7      3.92    1037.5      12.3                           132738360.0000
+    0:00:06    6097.7      3.92    1037.5      12.3                           132738360.0000
+
+Threshold voltage group cell usage:
+>> saed32cell_hvt 100.00%
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+
+Threshold voltage group cell usage:
+>> saed32cell_hvt 100.00%
+
+  Beginning Isolate Ports
+  -----------------------
+
+Threshold voltage group cell usage:
+>> saed32cell_hvt 100.00%
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:06    3858.7      4.77    1108.5      11.7                           42288624.0000
+    0:00:09    3939.7      3.87     998.3      12.2                           44829400.0000
+    0:00:09    3939.7      3.87     998.3      12.2                           44829400.0000
+    0:00:10    3833.3      3.87    1011.4      12.2                           26758144.0000
+
+Threshold voltage group cell usage:
+>> saed32cell_hvt 100.00%
+    0:00:10    3833.3      3.87    1011.4      12.2                           26758144.0000
+    0:00:10    3827.4      4.31    1018.3      12.5                           26754080.0000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:10    3801.0      4.30    1015.7      12.5                           26540324.0000
+    0:00:10    3797.2      4.17    1013.4      12.4                           26517090.0000
+    0:00:10    3797.2      4.17    1013.4      12.4                           26517090.0000
+    0:00:10    3797.2      4.17    1013.4      12.4                           26517090.0000
+    0:00:10    3797.2      4.17    1013.4      12.4                           26517090.0000
+    0:00:10    3796.4      4.17    1012.8      12.4                           26543542.0000
+    0:00:10    3796.4      4.17    1012.8      12.4                           26543542.0000
+    0:00:15    3836.8      4.03    1010.7      12.6                           27491786.0000
+    0:00:15    3836.8      4.03    1010.7      12.6                           27491786.0000
+    0:00:15    3834.3      4.00    1010.1      12.6                           27490052.0000
+    0:00:15    3834.3      4.00    1010.1      12.6                           27490052.0000
+    0:00:16    3846.0      3.98    1010.1      12.6                           27971710.0000
+    0:00:16    3846.0      3.98    1010.1      12.6                           27971710.0000
+    0:00:17    3811.4      3.86    1008.1      12.6                           26819684.0000
+    0:00:17    3811.4      3.86    1008.1      12.6                           26819684.0000
+    0:00:20    3811.4      3.86    1008.1      12.6                           26819684.0000
+    0:00:20    3811.4      3.86    1008.1      12.6                           26819684.0000
+    0:00:20    3811.4      3.86    1008.1      12.6                           26819684.0000
+    0:00:20    3811.4      3.86    1008.1      12.6                           26819684.0000
+    0:00:22    3811.4      3.86    1008.1      12.6                           26819684.0000
+    0:00:22    3811.4      3.86    1008.1      12.6                           26819684.0000
+    0:00:23    3811.4      3.86    1008.1      12.6                           26819684.0000
+    0:00:23    3811.4      3.86    1008.1      12.6                           26819684.0000
+    0:00:25    3811.4      3.86    1008.1      12.6                           26819684.0000
+
+
+  Beginning Design Rule Fixing  (max_transition)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:25    3811.4      3.86    1008.1      12.6                           26819684.0000
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+    0:00:25    3825.4      4.00    1010.6       0.0                           26677656.0000
+    0:00:31    3832.2      3.94    1010.0       0.0                           26879108.0000
+    0:00:31    3832.2      3.92    1009.5       0.0                           26829118.0000
+    0:00:33    3832.2      3.92    1009.5       0.0                           26829118.0000
+    0:00:33    3832.2      3.92    1009.5       0.0                           26829118.0000
+    0:00:33    3832.2      3.92    1009.5       0.0                           26829118.0000
+    0:00:33    3832.2      3.92    1009.5       0.0                           26829118.0000
+    0:00:36    3832.2      3.92    1009.5       0.0                           26829118.0000
+    0:00:36    3832.2      3.92    1009.5       0.0                           26829118.0000
+    0:00:36    3807.8      3.82    1007.8      12.2                           26379352.0000
+    0:00:36    3807.8      3.82    1007.8      12.2                           26379352.0000
+    0:00:38    3843.2      3.82     988.8      12.2                           27602502.0000
+    0:00:38    3843.2      3.82     988.8      12.2                           27602502.0000
+    0:00:39    3868.1      3.79     972.1      12.2                           28370848.0000
+    0:00:39    3868.1      3.79     972.1      12.2                           28370848.0000
+    0:00:41    3868.1      3.79     972.1      12.2                           28370848.0000
+    0:00:41    3868.1      3.79     972.1      12.2                           28370848.0000
+    0:00:41    3868.1      3.79     972.1      12.2                           28370848.0000
+    0:00:41    3868.1      3.79     972.1      12.2                           28370848.0000
+    0:00:43    3868.1      3.79     972.1      12.2                           28370848.0000
+    0:00:43    3868.1      3.79     972.1      12.2                           28370848.0000
+    0:00:43    3868.1      3.79     972.1      12.2                           28370848.0000
+    0:00:43    3868.1      3.79     972.1      12.2                           28370848.0000
+    0:00:45    3868.1      3.79     972.1      12.2                           28370848.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:45    3868.1      3.79     972.1      12.2                           28370848.0000
+    0:00:45    3740.2      3.92     980.1      13.3                           24697534.0000
+    0:00:45    3741.8      3.80     977.7      13.3                           24700502.0000
+    0:00:45    3741.8      3.80     977.7      13.3                           24700502.0000
+    0:00:45    3741.8      3.80     977.7      13.3                           24700502.0000
+    0:00:46    3812.9      3.78     977.0       0.0                           24763480.0000
+    0:00:46    3812.9      3.77     976.9       0.0                           24800656.0000
+    0:00:46    3812.9      3.77     976.9       0.0                           24800656.0000
+    0:00:46    3813.2      3.77     976.8       0.0                           24805808.0000
+    0:00:46    3813.2      3.77     976.8       0.0                           24805808.0000
+    0:00:46    3813.2      3.77     976.8       0.0                           24805808.0000
+    0:00:46    3812.9      3.77     976.8       0.0                           24804780.0000
+Loading db file '/evprj153/projects/DuyQuang_DV1/Labs/ces_svrtl_2019.03/ref/SAED32_2012-12-25/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p75v125c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1
+write_file -format verilog -output mapped/fifo_mapped.v
+Writing verilog file '/evprj153/projects/DuyQuang_DV1/Labs/ces_svrtl_2019.03/labs/lab2/mapped/fifo_mapped.v'.
+1
+write_file -format ddc -output mapped/fifo_mapped.ddc
+Writing ddc file 'mapped/fifo_mapped.ddc'.
+1
+# The following is for simulation
+# Procedure for retrieving design from memory
+proc get_design_from_inst { inst } {
+  return [get_attribute [get_cells $inst] ref_name]
+}
+# Lab 2 Task 9 Step 2
+#
+# Perform three changes:
+# One   - set current design back to the wrapper module.
+# Two   - extract the fifo instance from the wrapper module.
+# Three - write out the fifo instance as a SystemVerilog module.
+#
+# ToDo:
+current_design [get_designs wrapper_fifo*]
+Current design is 'wrapper_fifo_WIDTH16_BUF_SIZE16'.
+{wrapper_fifo_WIDTH16_BUF_SIZE16}
+set dut [get_design_from_inst fifo_inst]
+fifo_WIDTH16_BUF_SIZE16_I_fifo_if_fifo_io__16
+write_file -format svsim -output wrapper/fifo_wrapper.sv $dut
+Writing svsim file '/evprj153/projects/DuyQuang_DV1/Labs/ces_svrtl_2019.03/labs/lab2/wrapper/fifo_wrapper.sv'.
+1
+exit
+
+Memory usage for this session 237 Mbytes.
+Memory usage for this session including child processes 237 Mbytes.
+CPU usage for this session 50 seconds ( 0.01 hours ).
+Elapsed time for this session 52 seconds ( 0.01 hours ).
+
+Thank you...

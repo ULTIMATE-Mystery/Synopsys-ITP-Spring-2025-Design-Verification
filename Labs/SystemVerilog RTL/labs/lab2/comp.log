@@ -1,0 +1,131 @@
+Command: vcs -sverilog +vcs+vcdpluson -timescale=1ns/100ps -l comp.log -o simv_gate \
+-v ../../ref/SAED32_2012-12-25/lib/stdcell_hvt/verilog/saed32nm_hvt.v +define+DESIGN=encryptor+GATE++ \
++warn=noTFIPC -pvalue+encryptor_test_top.WIDTH=16 -pvalue+encryptor_test_top.BUF_SIZE=16 \
+./rtl/fifo_io.sv ./mapped/encryptor_mapped.v ./test/encryptor_test_top.sv
+                         Chronologic VCS (TM)
+         Version W-2024.09-SP1-1 -- Sun Jun  1 15:40:05 2025
+
+                    Copyright (c) 1991 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+
+Warning-[DEPRECATED_BUILD] Deprecated 32-Bit Architecture
+  VCS will not support 32-Bit Architecture in future releases.
+  Please use 64-Bit Architecture to avoid a warning.
+
+Parsing design file './rtl/fifo_io.sv'
+Parsing design file './mapped/encryptor_mapped.v'
+Parsing design file './test/encryptor_test_top.sv'
+Parsing library file '../../ref/SAED32_2012-12-25/lib/stdcell_hvt/verilog/saed32nm_hvt.v'
+Top Level Modules:
+       encryptor_test_top
+
+Warning-[UII-L] Interface not instantiated
+./rtl/fifo_io.sv, 16
+fifo_io
+  Interface 'fifo_io' defined in logic library 'work' is never instantiated in
+  design. It will be ignored.
+
+assign 16 encryptor_test_top.WIDTH (Command line)
+assign 16 encryptor_test_top.BUF_SIZE (Command line)
+TimeScale is 1 ps / 1 ps
+
+Warning-[DDTC] Duplicate Timing Check is disabled
+../../ref/SAED32_2012-12-25/lib/stdcell_hvt/verilog/saed32nm_hvt.v, 3798
+  The below duplicate timing check will be disabled:
+  $width(negedge RSTB, 0, 0, notifier);
+
+
+Warning-[DDTC] Duplicate Timing Check is disabled
+../../ref/SAED32_2012-12-25/lib/stdcell_hvt/verilog/saed32nm_hvt.v, 4391
+  The below duplicate timing check will be disabled:
+  $width(negedge SETB, 0, 0, notifier);
+
+
+Warning-[DDTC] Duplicate Timing Check is disabled
+../../ref/SAED32_2012-12-25/lib/stdcell_hvt/verilog/saed32nm_hvt.v, 4499
+  The below duplicate timing check will be disabled:
+  $width(negedge SETB, 0, 0, notifier);
+
+Starting vcs inline pass...
+42 modules and 4 UDPs read.
+recompiling module encryptor_test_top
+recompiling module AND2X1_HVT
+recompiling module AND2X2_HVT
+recompiling module AND3X1_HVT
+recompiling module AND4X1_HVT
+recompiling module AO21X1_HVT
+recompiling module AO22X1_HVT
+recompiling module AOI21X1_HVT
+recompiling module AOI22X1_HVT
+recompiling module DFFARX1_HVT
+recompiling module DFFASX1_HVT
+recompiling module DFFASX2_HVT
+recompiling module DFFX1_HVT
+recompiling module IBUFFX4_HVT
+recompiling module INVX0_HVT
+recompiling module INVX1_HVT
+recompiling module INVX2_HVT
+recompiling module INVX4_HVT
+recompiling module INVX8_HVT
+recompiling module MUX21X1_HVT
+recompiling module MUX21X2_HVT
+recompiling module NAND2X0_HVT
+recompiling module NAND2X1_HVT
+recompiling module NAND2X2_HVT
+recompiling module NAND2X4_HVT
+recompiling module NAND3X0_HVT
+recompiling module NAND3X1_HVT
+recompiling module NBUFFX2_HVT
+recompiling module NBUFFX4_HVT
+recompiling module NBUFFX8_HVT
+recompiling module NOR2X0_HVT
+recompiling module NOR2X2_HVT
+recompiling module OA21X1_HVT
+recompiling module OA22X1_HVT
+recompiling module OAI21X2_HVT
+recompiling module OAI22X1_HVT
+recompiling module OR2X1_HVT
+recompiling module OR2X2_HVT
+recompiling module OR3X1_HVT
+recompiling module XNOR2X2_HVT
+recompiling module XOR2X1_HVT
+recompiling module XOR2X2_HVT
+All of 42 modules done
+make[1]: Entering directory '/evprj153/projects/DuyQuang_DV1/Labs/ces_svrtl_2019.03/labs/lab2/csrc' \
+
+make[1]: Warning: File 'filelist.cu' has modification time 339 s in the future
+make[2]: Warning: File 'filelist.cu' has modification time 339 s in the future
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[2]: Warning: File 'filelist.cu' has modification time 339 s in the future
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+if [ -x ../simv_gate ]; then chmod a-x ../simv_gate; fi
+g++  -o ../simv_gate      -m32 -m32 -rdynamic  -Wl,-rpath='$ORIGIN'/simv_gate.daidir \
+-Wl,-rpath=./simv_gate.daidir -Wl,-rpath=/global/apps/vcs/2024.09-SP1-1/linux/lib \
+-L/global/apps/vcs/2024.09-SP1-1/linux/lib  -Wl,-rpath-link=./   objs/amcQw_d.o  \
+_1381112_archive_1.so objs/udps/W7e2i.o objs/udps/eAW1F.o objs/udps/Gjg4Z.o objs/udps/Z0GwU.o \
+SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o \
+-lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /global/apps/vcs/2024.09-SP1-1/linux/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   \
+/global/apps/vcs/2024.09-SP1-1/linux/lib/vcs_save_restore_new.o /global/apps/verdi/2024.09-SP1-1/share/PLI/VCS/LINUX/pli.a \
+/global/apps/vcs/2024.09-SP1-1/linux/lib/ctype-stubs_32.a -ldl  -lc -lm -lpthread \
+-ldl 
+../simv_gate up to date
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory '/evprj153/projects/DuyQuang_DV1/Labs/ces_svrtl_2019.03/labs/lab2/csrc' \
+
+CPU time: .602 seconds to compile + .363 seconds to elab + .318 seconds to link

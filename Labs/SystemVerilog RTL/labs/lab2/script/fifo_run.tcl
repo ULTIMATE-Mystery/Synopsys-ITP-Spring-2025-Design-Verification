@@ -13,9 +13,10 @@ set param_list "WIDTH=$_width, BUF_SIZE=$_size"
 # Three - add a current_design command to set the current design to the fifo with new name (with the parameter).
 #
 # ToDo:
-analyze -format sverilog { fifo_io.sv fifo.sv }
-elaborate fifo -param $param_list
+analyze -format sverilog { fifo_io.sv fifo.sv wrapper_fifo.sv }
+elaborate wrapper_fifo -param $param_list
 
+current_design [get_designs fifo*]
 
 link
 
@@ -47,6 +48,8 @@ proc get_design_from_inst { inst } {
 #
 # ToDo:
 
-
+current_design [get_designs wrapper_fifo*]
+set dut [get_design_from_inst fifo_inst]
+write_file -format svsim -output wrapper/fifo_wrapper.sv $dut
 
 exit

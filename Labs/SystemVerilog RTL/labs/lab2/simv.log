@@ -1,0 +1,51 @@
+Command: /evprj153/projects/DuyQuang_DV1/Labs/ces_svrtl_2019.03/labs/lab2/./simv -l simv.log +vpdfile+encryptor.vpd +ntb_random_seed=1 +
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP1-1; Runtime version W-2024.09-SP1-1;  Jun  1 15:29 2025
+Message: From $vcdpluson at time 0: [VCD+-SVFN]: 
+Setting VPD File by "+vpdfile+" switch to encryptor.vpd.
+
+VCD+ Writer W-2024.09-SP1-1 Copyright (c) 1991-2024 by Synopsys Inc.
+Original data is: 0011001111111101, key = 2
+Original data is: 0000001111100010, key = 2
+Original data is: 1011001010010111, key = 2
+Original data is: 1100101111110001, key = 2
+Original data is: 0000000011000101, key = 2
+Original data is: 1100011011101100, key = 2
+Original data is: 0111101001001000, key = 2
+Original data is: 1101010000001100, key = 2
+Original data is: 0010101100101100, key = 2
+Original data is: 0011100001101011, key = 2
+Original data is: 0000100100011011, key = 2
+Original data is: 0010111001000101, key = 2
+Original data is: 0000111011110100, key = 2
+Original data is: 1100110101101100, key = 2
+Original data is: 1001011101100111, key = 2
+Original data is: 1000010010001100, key = 2
+MATCHED: expected is: 1100111111110100, actual is: 1100111111110100
+MATCHED: expected is: 0000111110001000, actual is: 0000111110001000
+MATCHED: expected is: 1100101001011110, actual is: 1100101001011110
+MATCHED: expected is: 0010111111000111, actual is: 0010111111000111
+MATCHED: expected is: 0000001100010100, actual is: 0000001100010100
+MATCHED: expected is: 0001101110110011, actual is: 0001101110110011
+MATCHED: expected is: 1110100100100001, actual is: 1110100100100001
+MATCHED: expected is: 0101000000110011, actual is: 0101000000110011
+MATCHED: expected is: 1010110010110000, actual is: 1010110010110000
+MATCHED: expected is: 1110000110101100, actual is: 1110000110101100
+MATCHED: expected is: 0010010001101100, actual is: 0010010001101100
+MATCHED: expected is: 1011100100010100, actual is: 1011100100010100
+MATCHED: expected is: 0011101111010000, actual is: 0011101111010000
+MATCHED: expected is: 0011010110110011, actual is: 0011010110110011
+MATCHED: expected is: 0101110110011110, actual is: 0101110110011110
+MATCHED: expected is: 0001001000110010, actual is: 0001001000110010
+
+
+RTL level simulation PASSED! All values matched for "encryptor".
+
+
+$finish called from file "./test/encryptor_test_top.sv", line 109.
+$finish at simulation time                38500
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 3850000 ps
+CPU Time:      0.310 seconds;       Data structure size:   0.0Mb
+Sun Jun  1 15:29:11 2025
